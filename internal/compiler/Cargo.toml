@@ -32,11 +32,14 @@ software-renderer = ["image", "dep:resvg", "fontdue", "i-slint-common/shared-fon
 
 default = []
 
+# Enable Arbitrary support for fuzzing
+arbitrary = ["smol_str/arbitrary", "dep:arbitrary"]
+
 [dependencies]
 i-slint-common = { workspace = true, features = ["default"] }
 
+arbitrary = { version = "1", optional = true, features = ["derive"] }
 num_enum = "0.7"
-strum = { workspace = true }
 rowan = "0.15.5"
 smol_str = "0.2.0"
 derive_more = "0.99.5"
