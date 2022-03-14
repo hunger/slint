@@ -35,6 +35,9 @@ default = []
 # Enable Arbitrary support for fuzzing
 arbitrary = ["smol_str/arbitrary", "dep:arbitrary"]
 
+# Enable fuzzing
+fuzzing = ["smol_str/arbitrary", "arbitrary"]
+
 [dependencies]
 i-slint-common = { workspace = true, features = ["default"] }
 
