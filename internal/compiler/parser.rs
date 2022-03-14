@@ -190,6 +190,7 @@ macro_rules! declare_syntax {
     => {
         #[repr(u16)]
         #[derive(Debug, Copy, Clone, Eq, PartialEq, num_enum::IntoPrimitive, num_enum::TryFromPrimitive, Hash, Ord, PartialOrd)]
+        #[cfg_attr(feature = "fuzzing", derive(arbitrary::Arbitrary))]
         pub enum SyntaxKind {
             Error,
             Eof,
@@ -458,6 +459,7 @@ impl From<SyntaxKind> for rowan::SyntaxKind {
 }
 
 #[derive(Clone, Debug)]
+#[cfg_attr(feature = "fuzzing", derive(arbitrary::Arbitrary))]
 pub struct Token {
     pub kind: SyntaxKind,
     pub text: SmolStr,
