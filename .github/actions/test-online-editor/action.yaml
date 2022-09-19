@@ -30,7 +30,8 @@ runs:
 
     - uses: ./.github/actions/install-nodejs
       with:
-        module-cache: "npm"
+        package-manager: "npm"
+        package-lock: tools/online_editor/package-lock.json
 
     - name: Install NPM dependencies
       run: npm install
