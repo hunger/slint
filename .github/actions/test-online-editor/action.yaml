@@ -28,6 +28,10 @@ runs:
       with:
         name: ${{ inputs.wasm-binaries }}
 
+    - uses: ./.github/actions/install-nodejs
+      with:
+        module-cache: "npm"
+
     - name: Install NPM dependencies
       run: npm install
       shell: bash
@@ -45,7 +49,7 @@ runs:
       env:
         DEBUG: "cypress:server:args"
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       if: failure()
       with:
         name: cypress-screenshots-chrome
