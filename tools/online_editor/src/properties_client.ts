@@ -40,6 +40,7 @@ export async function change_property(
             ],
         } as ExecuteCommandParams);
 
+        console.log("setBinding result:", result);
         return result;
     }
     return new Promise((accept) => accept({ diagnostics: [] }));
