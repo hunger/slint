@@ -707,6 +707,7 @@ impl Item for FocusScope {
         };
         match r {
             EventResult::Accept => KeyEventResult::EventAccepted,
+            EventResult::FooBar => todo!(),
             EventResult::Reject => KeyEventResult::EventIgnored,
         }
     }
