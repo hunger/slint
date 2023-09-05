@@ -48,6 +48,12 @@ extern "C" {
     pub type CurrentElementInformationCallbackFunction;
     #[wasm_bindgen(typescript_type = "Promise<WrappedInstance>")]
     pub type InstancePromise;
+    #[wasm_bindgen(typescript_type = "Promise<PreviewConnector>")]
+    pub type PreviewConnectorPromise;
+
+    // Make console.log available!
+    #[wasm_bindgen(js_namespace = console)]
+    fn log(s: &str);
 }
 
 /// Compile the content of a string.
@@ -344,6 +350,106 @@ impl WrappedInstance {
 /// to ignore.
 #[wasm_bindgen]
 pub fn run_event_loop() -> Result<(), JsValue> {
-    slint_interpreter::run_event_loop().map_err(|e| -> JsValue { format!("{e}").into() })?;
-    Ok(())
+    log("run_event_loop called on the rust side");
+    slint_interpreter::run_event_loop().map_err(|e| -> JsValue { format!("{e}").into() })
+}
+
+#[wasm_bindgen]
+pub struct PreviewConnector {
+    ui: super::ui::PreviewUi,
+}
+
+#[wasm_bindgen]
+impl PreviewConnector {
+    #[wasm_bindgen(constructor)]
+    pub fn new() -> Result<PreviewConnectorPromise, JsValue> {
+        console_error_panic_hook::set_once();
+
+        Ok(JsValue::from(js_sys::Promise::new(&mut |resolve, reject| {
+            let resolve = send_wrapper::SendWrapper::new(resolve);
+            let reject_c = send_wrapper::SendWrapper::new(reject.clone());
+            if let Err(e) = slint_interpreter::invoke_from_event_loop(move || {
+                match super::ui::PreviewUi::new() {
+                    Ok(ui) => resolve.take().call1(&JsValue::UNDEFINED, &JsValue::from(Self { ui })).unwrap_throw(),
+                    Err(e) => reject_c.take().call1(&JsValue::UNDEFINED, &JsValue::from(format!("Failed to construct Preview UI: {e}"))).unwrap_throw(),
+                };
+            }) {
+                reject
+                    .call1(
+                        &JsValue::UNDEFINED,
+                        &JsValue::from(
+                            format!("internal error: Failed to queue closure for event loop invocation: {e}"),
+                        ),
+                    )
+                    .unwrap_throw();
+            }
+        })).unchecked_into::<PreviewConnectorPromise>())
+    }
+
+    #[wasm_bindgen(constructor)]
+    pub fn show_ui(&self) -> Result<js_sys::Promise, JsValue> {
+        log("Showing UI");
+        self.invoke_from_event_loop_wrapped_in_promise(|instance| instance.show())
+    }
+
+    fn invoke_from_event_loop_wrapped_in_promise(
+        &self,
+        callback: impl FnOnce(&super::ui::PreviewUi) -> Result<(), slint_interpreter::PlatformError>
+            + 'static,
+    ) -> Result<js_sys::Promise, JsValue> {
+        let callback = std::cell::RefCell::new(Some(callback));
+        Ok(js_sys::Promise::new(&mut |resolve, reject| {
+            let inst_weak = self.ui.as_weak();
+
+            if let Err(e) = slint::invoke_from_event_loop({
+                let params = send_wrapper::SendWrapper::new((
+                    resolve,
+                    reject.clone(),
+                    callback.take().unwrap(),
+                ));
+                move || {
+                    let (resolve, reject, callback) = params.take();
+                    match inst_weak.upgrade() {
+                        Some(instance) => match callback(&instance) {
+                            Ok(()) => {
+                                resolve.call0(&JsValue::UNDEFINED).unwrap_throw();
+                            }
+                            Err(e) => {
+                                reject
+                                    .call1(
+                                        &JsValue::UNDEFINED,
+                                        &JsValue::from(format!(
+                                            "Invocation on PreviewUi from within event loop failed: {e}"
+                                        )),
+                                    )
+                                    .unwrap_throw();
+                            }
+                        },
+                        None => {
+                            reject
+                            .call1(
+                                &JsValue::UNDEFINED,
+                                &JsValue::from(format!(
+                                    "Invocation on PreviewUi failed because instance was deleted too soon"
+                                )),
+                            )
+                            .unwrap_throw();
+                        }
+                    }
+                }
+            }) {
+                reject
+                .call1(
+                    &JsValue::UNDEFINED,
+                    &JsValue::from(
+                        format!("internal error: Failed to queue closure for event loop invocation: {e}"),
+                    ),
+                )
+                .unwrap_throw();
+            }
+        }))
+    }
+    // pub fn canvas(&self) -> web_sys::HtmlCanvasElement {
+    //     self.canvas.clone()
+    // }
 }

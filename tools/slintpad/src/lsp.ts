@@ -241,65 +241,65 @@ class PreviewerBackend {
         base_url: string,
         load_callback: (_url: string) => Promise<string>,
     ): Promise<monaco.editor.IMarkerData[]> {
-        if (this.#canvas_id == null) {
-            return Promise.resolve([]);
-        }
-
-        const { component, diagnostics, error_string } =
-            await slint_preview.compile_from_string_with_style(
-                source,
-                base_url,
-                style,
-                load_callback,
-            );
-
-        this.#client_port.postMessage({
-            type: "ErrorReport",
-            data: error_string,
-        });
-
-        const markers = diagnostics.map(function (x) {
-            return {
-                severity: 3 - x.level,
-                message: x.message,
-                source: x.fileName,
-                startLineNumber: x.lineNumber,
-                startColumn: x.columnNumber,
-                endLineNumber: x.lineNumber,
-                endColumn: -1,
-            };
-        });
-
-        if (component != null) {
-            // It's not enough for the canvas element to exist, in order to extract a webgl rendering
-            // context, the element needs to be attached to the window's dom.
-            if (this.#instance == null) {
-                try {
-                    if (!is_event_loop_running) {
-                        slint_preview.run_event_loop();
-                        // this will trigger a JS exception, so this line will never be reached!
-                    }
-                } catch (e) {
-                    // The winit event loop, when targeting wasm, throws a JavaScript exception to break out of
-                    // Rust without running any destructors. Don't rethrow the exception but swallow it, as
-                    // this is no error and we truly want to resolve the promise of this function by returning
-                    // the model markers.
-                    is_event_loop_running = true; // Assume the winit caused the exception and that the event loop is up now
-                }
-                this.#instance = (async () => {
-                    let new_instance = await component.create(this.canvas_id!); // eslint-disable-line
-                    await new_instance.show();
-                    return new_instance;
-                })();
-            } else {
-                this.#instance = component.create_with_existing_window(
-                    await this.#instance,
-                );
-                await this.configure_picker_mode();
-            }
-        }
-
-        return Promise.resolve(markers);
+        // if (this.#canvas_id == null) {
+        return Promise.resolve([]);
+        // }
+        //
+        // const { component, diagnostics, error_string } =
+        //     await slint_preview.compile_from_string_with_style(
+        //         source,
+        //         base_url,
+        //         style,
+        //         load_callback,
+        //     );
+        //
+        // this.#client_port.postMessage({
+        //     type: "ErrorReport",
+        //     data: error_string,
+        // });
+        //
+        // const markers = diagnostics.map(function (x) {
+        //     return {
+        //         severity: 3 - x.level,
+        //         message: x.message,
+        //         source: x.fileName,
+        //         startLineNumber: x.lineNumber,
+        //         startColumn: x.columnNumber,
+        //         endLineNumber: x.lineNumber,
+        //         endColumn: -1,
+        //     };
+        // });
+        //
+        // if (component != null) {
+        //     // It's not enough for the canvas element to exist, in order to extract a webgl rendering
+        //     // context, the element needs to be attached to the window's dom.
+        //     if (this.#instance == null) {
+        //         try {
+        //             if (!is_event_loop_running) {
+        //                 slint_preview.run_event_loop();
+        //                 // this will trigger a JS exception, so this line will never be reached!
+        //             }
+        //         } catch (e) {
+        //             // The winit event loop, when targeting wasm, throws a JavaScript exception to break out of
+        //             // Rust without running any destructors. Don't rethrow the exception but swallow it, as
+        //             // this is no error and we truly want to resolve the promise of this function by returning
+        //             // the model markers.
+        //             is_event_loop_running = true; // Assume the winit caused the exception and that the event loop is up now
+        //         }
+        //         this.#instance = (async () => {
+        //             let new_instance = await component.create(this.canvas_id!); // eslint-disable-line
+        //             await new_instance.show();
+        //             return new_instance;
+        //         })();
+        //     } else {
+        //         this.#instance = component.create_with_existing_window(
+        //             await this.#instance,
+        //         );
+        //         await this.configure_picker_mode();
+        //     }
+        // }
+        //
+        // return Promise.resolve(markers);
     }
 
     private async highlight(file_path: string, offset: number) {
@@ -329,6 +329,10 @@ export class Previewer {
                 this.#on_highlight_request(data.url, data.start, data.end);
             }
         };
+    }
+
+    get preview_connector(): slint_preview.PreviewConnector {
+        return slint_preview.PreviewConnector.new();
     }
 
     get canvas_id() {

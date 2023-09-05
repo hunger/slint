@@ -439,6 +439,7 @@ class DockWidgets {
 }
 
 function setup(lsp: Lsp) {
+    console.log("Setting up LSP");
     commands.addCommand("slint:compile", {
         label: "Compile",
         iconClass: "fa fa-magic",
@@ -468,25 +469,29 @@ function setup(lsp: Lsp) {
     const editor = new EditorWidget(lsp);
     const dock = new DockPanel();
 
-    lsp.previewer.on_highlight_request = (
-        url: string,
-        start: { line: number; column: number },
-        _end: { line: number; column: number },
-    ) => {
-        if (url === "") {
-            return;
-        }
+    console.log("Setting up LSP: 1");
 
-        editor.goto_position(
-            url,
-            LspRange.create(
-                start.line - 1,
-                start.column - 1,
-                start.line - 1, // Highlight a position, not the entire range
-                start.column - 1,
-            ),
-        );
-    };
+    // lsp.previewer.on_highlight_request = (
+    //     url: string,
+    //     start: { line: number; column: number },
+    //     _end: { line: number; column: number },
+    // ) => {
+    //     if (url === "") {
+    //         return;
+    //     }
+    //
+    //     editor.goto_position(
+    //         url,
+    //         LspRange.create(
+    //             start.line - 1,
+    //             start.column - 1,
+    //             start.line - 1, // Highlight a position, not the entire range
+    //             start.column - 1,
+    //         ),
+    //     );
+    // };
+
+    console.log("Setting up LSP: 2");
 
     const dock_widgets = new DockWidgets(
         dock,
@@ -547,9 +552,10 @@ function setup(lsp: Lsp) {
 
                 return properties;
             },
-            { mode: "tab-after", ref: "Welcome" },
+            { mode: "tab-after", ref: "welcome" },
         ],
     );
+    console.log("Setting up LSP: 3");
 
     editor.onPositionChange = (pos) => {
         (dock_widgets.widget("Outline") as OutlineWidget)?.position_changed(
@@ -570,6 +576,7 @@ function setup(lsp: Lsp) {
     main.id = "main";
     main.addWidget(editor);
     main.addWidget(dock);
+    console.log("Setting up LSP: 4");
 
     commands.execute("slint:restore-dock-layout");
 
@@ -583,15 +590,22 @@ function setup(lsp: Lsp) {
 
     Widget.attach(menu_bar, document.body);
     Widget.attach(main, document.body);
+    console.log("Setting up LSP: 5");
 }
 
 function main() {
     Promise.all([wait_for_service_worker(), lsp_waiter.wait_for_lsp()])
         .then(([_sw, lsp]) => {
+            console.log("Promises for service worker and LSP resolved");
             setup(lsp);
+
             document.body.getElementsByClassName("loader")[0].remove();
         })
-        .catch(() => {
+        .catch((e) => {
+            console.log(
+                "Promises for service worker and LSP did NOT resolve:",
+                e,
+            );
             const div = document.createElement("div");
             div.className = "browser-error";
             div.innerHTML =
