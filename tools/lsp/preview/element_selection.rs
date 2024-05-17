@@ -408,34 +408,7 @@ mod tests {
     use i_slint_core::lengths::LogicalPoint;
     use slint_interpreter::ComponentInstance;
 
-    fn demo_app() -> ComponentInstance {
-        crate::preview::test::compile_test(
-            "fluent",
-            r#"import { Button } from "std-widgets.slint";
-
-component SomeComponent { // 69
-    @children
-}
-
-component Main { // 109
-    width: 200px;
-    height: 200px;
-
-    HorizontalLayout { // 160
-        Rectangle { // 194
-            SomeComponent { // 225
-                Button { // 264
-                    text: "Press me";
-                }
-            }
-        }
-    }
-}
-
-export component Entry inherits Main { /* @lsp:ignore-node */ } // 401
-"#,
-        )
-    }
+    use crate::preview::test::demo_app;
 
     #[test]
     fn test_find_covering_elements() {

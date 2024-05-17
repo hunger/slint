@@ -522,7 +522,7 @@ fn find_drop_location(
 fn find_move_location(
     component_instance: &ComponentInstance,
     position: LogicalPoint,
-    selected_element: common::ElementRcNode,
+    selected_element: &common::ElementRcNode,
     component_type: &str,
 ) -> Option<DropInformation> {
     let se = selected_element.clone();
@@ -608,14 +608,39 @@ pub fn can_drop_at(position: LogicalPoint, component_type: &str) -> bool {
     dm.is_some()
 }
 
+fn workspace_edit_compiles(
+    component_instance: &ComponentInstance,
+    edit: &lsp_types::WorkspaceEdit,
+) -> bool {
+    true
+}
+
 /// Find the Element to insert into. None means we can not insert at this point.
-pub fn can_move_to(mouse_position: LogicalPoint, element_node: common::ElementRcNode) -> bool {
+pub fn can_move_to(
+    position: LogicalPoint,
+    mouse_position: LogicalPoint,
+    element_node: common::ElementRcNode,
+) -> bool {
+    let Some(component_instance) = preview::component_instance() else {
+        return false;
+    };
     let component_type = element_node.component_type();
     let dm = &super::component_instance()
-        .and_then(|ci| find_move_location(&ci, mouse_position, element_node, &component_type));
+        .and_then(|ci| find_move_location(&ci, mouse_position, &element_node, &component_type));
 
-    preview::set_drop_mark(&dm.as_ref().and_then(|dm| dm.drop_mark.clone()));
-    dm.is_some()
+    if let Some(dm) = dm {
+        if let Some((edit, _)) =
+            create_move_element_workspace_edit(&component_instance, &dm, element_node, position)
+        {
+            if workspace_edit_compiles(&component_instance, &edit) {
+                preview::set_drop_mark(&dm.drop_mark);
+                return true;
+            }
+        }
+    }
+
+    preview::set_drop_mark(&None);
+    false
 }
 
 /// Extra data on an added Element, relevant to the Preview side only.
@@ -978,7 +1003,6 @@ pub fn create_move_element_workspace_edit(
     ))
 }
 
-
 /// Find a location in a file that would be a good place to insert the new component at
 ///
 /// Return a WorkspaceEdit to send to the editor and extra info for the live preview in
@@ -989,13 +1013,73 @@ pub fn move_element_to(
     mouse_position: LogicalPoint,
 ) -> Option<(lsp_types::WorkspaceEdit, DropData)> {
     let component_instance = preview::component_instance()?;
-    let Some(drop_info) =
-        find_move_location(&component_instance, mouse_position, element.clone(), &element.component_type())
-    else {
+    let Some(drop_info) = find_move_location(
+        &component_instance,
+        mouse_position,
+        &element,
+        &element.component_type(),
+    ) else {
         element_selection::reselect_element();
         // Can not drop here: Ignore the move
         return None;
     };
 
     create_move_element_workspace_edit(&component_instance, &drop_info, element, position)
+}
+
+#[cfg(test)]
+mod tests {
+    use std::path::PathBuf;
+
+    use i_slint_core::lengths::LogicalPoint;
+    use slint_interpreter::ComponentInstance;
+
+    use crate::preview::test;
+    use crate::util;
+
+    use super::workspace_edit_compiles;
+
+    fn workspace_edit_setup(
+        edits: Vec<(usize, usize, &str)>,
+    ) -> (ComponentInstance, lsp_types::WorkspaceEdit) {
+        let component_instance = test::demo_app();
+        let tl = component_instance.definition().type_loader();
+        let doc = tl.get_document(&test::compile_test_path()).unwrap();
+        let source_file = &doc.node.as_ref().unwrap().source_file;
+
+        let edits = edits
+            .iter()
+            .map(|(so, eo, t)| lsp_types::TextEdit {
+                range: util::map_range(
+                    source_file,
+                    rowan::TextRange::new(
+                        rowan::TextSize::new(*so as u32),
+                        rowan::TextSize::new(*eo as u32),
+                    ),
+                ),
+                new_text: t.to_string(),
+            })
+            .collect();
+
+        let workspace_edit =
+            crate::common::create_workspace_edit_from_source_file(source_file, edits).unwrap();
+
+        (component_instance, workspace_edit)
+    }
+
+    #[test]
+    fn test_workspace_edit_compiles_ok() {
+        let (component_instance, workspace_edit) =
+            workspace_edit_setup(vec![(194, 194, "foo := ")]);
+
+        assert_eq!(workspace_edit_compiles(&component_instance, &workspace_edit), true);
+    }
+
+    #[test]
+    fn test_workspace_edit_compiles_fails() {
+        let (component_instance, workspace_edit) =
+            workspace_edit_setup(vec![(194, 194, "foobar ")]);
+
+        assert_eq!(workspace_edit_compiles(&component_instance, &workspace_edit), false);
+    }
 }

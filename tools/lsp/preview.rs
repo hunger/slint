@@ -299,8 +299,8 @@ fn resize_selected_element_impl(rect: LogicalRect) {
 }
 
 // triggered from the UI, running in UI thread
-fn can_move_selected_element(_x: f32, _y: f32, mouse_x: f32, mouse_y: f32) -> bool {
-    // let position = LogicalPoint::new(x, y);
+fn can_move_selected_element(x: f32, y: f32, mouse_x: f32, mouse_y: f32) -> bool {
+    let position = LogicalPoint::new(x, y);
     let mouse_position = LogicalPoint::new(mouse_x, mouse_y);
     let Some(selected) = selected_element() else {
         return false;
@@ -309,7 +309,7 @@ fn can_move_selected_element(_x: f32, _y: f32, mouse_x: f32, mouse_y: f32) -> bo
         return false;
     };
 
-    drop_location::can_move_to(mouse_position, selected_element_node)
+    drop_location::can_move_to(position, mouse_position, selected_element_node)
 }
 
 // triggered from the UI, running in UI thread
@@ -909,13 +909,19 @@ pub fn is_element_node_ignored(node: &syntax_nodes::Element) -> bool {
 
 #[cfg(test)]
 mod test {
+    use std::path::PathBuf;
+
     use slint_interpreter::ComponentInstance;
+
+    pub fn compile_test_path() -> PathBuf {
+        std::path::PathBuf::from("/test_data.slint")
+    }
 
     #[track_caller]
     pub fn compile_test(style: &str, source_code: &str) -> ComponentInstance {
         i_slint_backend_testing::init_no_event_loop();
 
-        let path = std::path::PathBuf::from("/test_data.slint");
+        let path = compile_test_path();
         let (diagnostics, component_definition) = spin_on::spin_on(super::parse_source(
             vec![],
             std::collections::HashMap::new(),
@@ -936,5 +942,34 @@ mod test {
         assert!(diagnostics.is_empty());
 
         component_definition.unwrap().create().unwrap()
+    }
+
+    pub fn demo_app() -> ComponentInstance {
+        compile_test(
+            "fluent",
+            r#"import { Button } from "std-widgets.slint";
+
+component SomeComponent { // 69
+    @children
+}
+
+component Main { // 109
+    width: 200px;
+    height: 200px;
+
+    HorizontalLayout { // 160
+        Rectangle { // 194
+            SomeComponent { // 225
+                Button { // 264
+                    text: "Press me";
+                }
+            }
+        }
+    }
+}
+
+export component Entry inherits Main { /* @lsp:ignore-node */ } // 401
+"#,
+        )
     }
 }
