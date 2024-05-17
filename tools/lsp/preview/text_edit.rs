@@ -216,12 +216,12 @@ impl TextEditor {
         self.apply(text_edit)
     }
 
-    pub fn finalize(mut self) -> (String, TextOffsetAdjustments, (usize, usize)) {
+    pub fn finalize(self) -> Option<(String, TextOffsetAdjustments, (usize, usize))> {
         if self.original_offset_range.0 == usize::MAX {
-            self.original_offset_range.0 = 0;
+            return None;
         }
 
-        (self.contents, self.adjustments, self.original_offset_range)
+        Some((self.contents, self.adjustments, self.original_offset_range))
     }
 }
 
@@ -820,7 +820,7 @@ geh"#
     };
     assert!(editor.apply(&edit).is_ok());
 
-    let result = editor.finalize();
+    let result = editor.finalize().unwrap();
     assert!(result.0.is_empty());
     assert_eq!(result.1.adjust(42), 31);
     assert_eq!(result.2 .0, 0);
@@ -851,7 +851,7 @@ geh"#
     };
     assert!(editor.apply(&edit).is_ok());
 
-    let result = editor.finalize();
+    let result = editor.finalize().unwrap();
     assert_eq!(
         &result.0,
         r#"abc
@@ -895,7 +895,7 @@ geh"#
     };
     assert!(editor.apply(&edit).is_ok());
 
-    let result = editor.finalize();
+    let result = editor.finalize().unwrap();
     assert_eq!(&result.0, "REPLACEMENT");
     assert_eq!(result.1.adjust(42), 42);
     assert_eq!(result.2 .0, 0);
