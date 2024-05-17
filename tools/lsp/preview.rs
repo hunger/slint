@@ -944,10 +944,7 @@ mod test {
         component_definition.unwrap().create().unwrap()
     }
 
-    pub fn demo_app() -> ComponentInstance {
-        compile_test(
-            "fluent",
-            r#"import { Button } from "std-widgets.slint";
+    pub const DEMO_CODE: &str = r#"import { Button } from "std-widgets.slint";
 
 component SomeComponent { // 69
     @children
@@ -969,7 +966,9 @@ component Main { // 109
 }
 
 export component Entry inherits Main { /* @lsp:ignore-node */ } // 401
-"#,
-        )
+"#;
+
+    pub fn demo_app() -> ComponentInstance {
+        compile_test("fluent", DEMO_CODE)
     }
 }
