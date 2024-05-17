@@ -16,9 +16,9 @@ impl TextOffsetAdjustment {
         let new_text_length = edit.new_text.len() as u32;
         let (start_offset, end_offset) = {
             let so = source_file
-                .offset(edit.range.start.line as usize, edit.range.start.character as usize);
+                .offset(edit.range.start.line as usize + 1, edit.range.start.character as usize + 1);
             let eo =
-                source_file.offset(edit.range.end.line as usize, edit.range.end.character as usize);
+                source_file.offset(edit.range.end.line as usize + 1, edit.range.end.character as usize + 1);
             (std::cmp::min(so, eo) as u32, std::cmp::max(so, eo) as u32)
         };
 
@@ -174,9 +174,9 @@ impl TextEditor {
             let start_range = &text_edit.range.start;
             let end_range = &text_edit.range.end;
             let start_offset =
-                self.source_file.offset(start_range.line as usize, start_range.character as usize);
+                self.source_file.offset(start_range.line as usize + 1, start_range.character as usize + 1);
             let end_offset =
-                self.source_file.offset(end_range.line as usize, end_range.character as usize);
+                self.source_file.offset(end_range.line as usize + 1, end_range.character as usize + 1);
             (start_offset, end_offset)
         };
 
@@ -325,8 +325,8 @@ fn test_edit_iterator_changes_one_one() {
             lsp_types::Url::parse("file://foo/bar.slint").unwrap(),
             vec![lsp_types::TextEdit {
                 range: lsp_types::Range::new(
-                    lsp_types::Position::new(23, 42),
-                    lsp_types::Position::new(42, 23),
+                    lsp_types::Position::new(22, 41),
+                    lsp_types::Position::new(41, 22),
                 ),
                 new_text: "Replacement".to_string(),
             }],
@@ -340,8 +340,8 @@ fn test_edit_iterator_changes_one_one() {
     assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
     assert_eq!(r.0.version, None);
     assert_eq!(&r.1.new_text, "Replacement");
-    assert_eq!(&r.1.range.start, &lsp_types::Position::new(23, 42));
-    assert_eq!(&r.1.range.end, &lsp_types::Position::new(42, 23));
+    assert_eq!(&r.1.range.start, &lsp_types::Position::new(22, 41));
+    assert_eq!(&r.1.range.end, &lsp_types::Position::new(41, 22));
     assert!(it.next().is_none());
     assert!(it.next().is_none());
 }
@@ -354,15 +354,15 @@ fn test_edit_iterator_changes_one_two() {
             vec![
                 lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(23, 42),
-                        lsp_types::Position::new(42, 23),
+                        lsp_types::Position::new(22, 41),
+                        lsp_types::Position::new(41, 22),
                     ),
                     new_text: "Replacement".to_string(),
                 },
                 lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(44, 12),
-                        lsp_types::Position::new(44, 13),
+                        lsp_types::Position::new(43, 11),
+                        lsp_types::Position::new(43, 12),
                     ),
                     new_text: "Foo".to_string(),
                 },
@@ -378,15 +378,15 @@ fn test_edit_iterator_changes_one_two() {
     assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
     assert_eq!(r.0.version, None);
     assert_eq!(&r.1.new_text, "Replacement");
-    assert_eq!(&r.1.range.start, &lsp_types::Position::new(23, 42));
-    assert_eq!(&r.1.range.end, &lsp_types::Position::new(42, 23));
+    assert_eq!(&r.1.range.start, &lsp_types::Position::new(22, 41));
+    assert_eq!(&r.1.range.end, &lsp_types::Position::new(41, 22));
 
     let r = it.next().unwrap();
     assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
     assert_eq!(r.0.version, None);
     assert_eq!(&r.1.new_text, "Foo");
-    assert_eq!(&r.1.range.start, &lsp_types::Position::new(44, 12));
-    assert_eq!(&r.1.range.end, &lsp_types::Position::new(44, 13));
+    assert_eq!(&r.1.range.start, &lsp_types::Position::new(43, 11));
+    assert_eq!(&r.1.range.end, &lsp_types::Position::new(43, 12));
 
     assert!(it.next().is_none());
 }
@@ -399,8 +399,8 @@ fn test_edit_iterator_changes_two() {
                 lsp_types::Url::parse("file://foo/bar.slint").unwrap(),
                 vec![lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(23, 42),
-                        lsp_types::Position::new(42, 23),
+                        lsp_types::Position::new(22, 41),
+                        lsp_types::Position::new(41, 22),
                     ),
                     new_text: "Replacement".to_string(),
                 }],
@@ -409,8 +409,8 @@ fn test_edit_iterator_changes_two() {
                 lsp_types::Url::parse("file://foo/baz.slint").unwrap(),
                 vec![lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(44, 12),
-                        lsp_types::Position::new(44, 13),
+                        lsp_types::Position::new(43, 11),
+                        lsp_types::Position::new(43, 12),
                     ),
                     new_text: "Foo".to_string(),
                 }],
@@ -430,16 +430,16 @@ fn test_edit_iterator_changes_two() {
             assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
             assert_eq!(r.0.version, None);
             assert_eq!(&r.1.new_text, "Replacement");
-            assert_eq!(&r.1.range.start, &lsp_types::Position::new(23, 42));
-            assert_eq!(&r.1.range.end, &lsp_types::Position::new(42, 23));
+            assert_eq!(&r.1.range.start, &lsp_types::Position::new(22, 41));
+            assert_eq!(&r.1.range.end, &lsp_types::Position::new(41, 22));
             seen1 = true;
         } else {
             assert_eq!(seen2, false);
             assert_eq!(&r.0.uri.to_string(), "file://foo/baz.slint");
             assert_eq!(r.0.version, None);
             assert_eq!(&r.1.new_text, "Foo");
-            assert_eq!(&r.1.range.start, &lsp_types::Position::new(44, 12));
-            assert_eq!(&r.1.range.end, &lsp_types::Position::new(44, 13));
+            assert_eq!(&r.1.range.start, &lsp_types::Position::new(43, 11));
+            assert_eq!(&r.1.range.end, &lsp_types::Position::new(43, 12));
             seen2 = true;
         }
     }
@@ -501,8 +501,8 @@ fn test_edit_iterator_document_changes_one_one() {
             lsp_types::TextDocumentEdit {
                 edits: vec![lsp_types::OneOf::Left(lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(23, 42),
-                        lsp_types::Position::new(42, 23),
+                        lsp_types::Position::new(22, 41),
+                        lsp_types::Position::new(41, 22),
                     ),
                     new_text: "Replacement".to_string(),
                 })],
@@ -520,8 +520,8 @@ fn test_edit_iterator_document_changes_one_one() {
     assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
     assert_eq!(r.0.version, Some(99));
     assert_eq!(&r.1.new_text, "Replacement");
-    assert_eq!(&r.1.range.start, &lsp_types::Position::new(23, 42));
-    assert_eq!(&r.1.range.end, &lsp_types::Position::new(42, 23));
+    assert_eq!(&r.1.range.start, &lsp_types::Position::new(22, 41));
+    assert_eq!(&r.1.range.end, &lsp_types::Position::new(41, 22));
     assert!(it.next().is_none());
     assert!(it.next().is_none());
 }
@@ -535,16 +535,16 @@ fn test_edit_iterator_document_changes_one_two() {
                 edits: vec![
                     lsp_types::OneOf::Left(lsp_types::TextEdit {
                         range: lsp_types::Range::new(
-                            lsp_types::Position::new(23, 42),
-                            lsp_types::Position::new(42, 23),
+                            lsp_types::Position::new(22, 41),
+                            lsp_types::Position::new(41, 22),
                         ),
                         new_text: "Replacement".to_string(),
                     }),
                     lsp_types::OneOf::Right(lsp_types::AnnotatedTextEdit {
                         text_edit: lsp_types::TextEdit {
                             range: lsp_types::Range::new(
-                                lsp_types::Position::new(44, 12),
-                                lsp_types::Position::new(44, 13),
+                                lsp_types::Position::new(43, 11),
+                                lsp_types::Position::new(43, 12),
                             ),
                             new_text: "Foo".to_string(),
                         },
@@ -565,15 +565,15 @@ fn test_edit_iterator_document_changes_one_two() {
     assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
     assert_eq!(r.0.version, Some(99));
     assert_eq!(&r.1.new_text, "Replacement");
-    assert_eq!(&r.1.range.start, &lsp_types::Position::new(23, 42));
-    assert_eq!(&r.1.range.end, &lsp_types::Position::new(42, 23));
+    assert_eq!(&r.1.range.start, &lsp_types::Position::new(22, 41));
+    assert_eq!(&r.1.range.end, &lsp_types::Position::new(41, 22));
 
     let r = it.next().unwrap();
     assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
     assert_eq!(r.0.version, Some(99));
     assert_eq!(&r.1.new_text, "Foo");
-    assert_eq!(&r.1.range.start, &lsp_types::Position::new(44, 12));
-    assert_eq!(&r.1.range.end, &lsp_types::Position::new(44, 13));
+    assert_eq!(&r.1.range.start, &lsp_types::Position::new(43, 11));
+    assert_eq!(&r.1.range.end, &lsp_types::Position::new(43, 12));
     assert!(it.next().is_none());
     assert!(it.next().is_none());
 }
@@ -586,8 +586,8 @@ fn test_edit_iterator_document_changes_two() {
             lsp_types::TextDocumentEdit {
                 edits: vec![lsp_types::OneOf::Left(lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(23, 42),
-                        lsp_types::Position::new(42, 23),
+                        lsp_types::Position::new(22, 41),
+                        lsp_types::Position::new(41, 22),
                     ),
                     new_text: "Replacement".to_string(),
                 })],
@@ -600,8 +600,8 @@ fn test_edit_iterator_document_changes_two() {
                 edits: vec![lsp_types::OneOf::Right(lsp_types::AnnotatedTextEdit {
                     text_edit: lsp_types::TextEdit {
                         range: lsp_types::Range::new(
-                            lsp_types::Position::new(44, 12),
-                            lsp_types::Position::new(44, 13),
+                            lsp_types::Position::new(43, 11),
+                            lsp_types::Position::new(43, 12),
                         ),
                         new_text: "Foo".to_string(),
                     },
@@ -621,15 +621,15 @@ fn test_edit_iterator_document_changes_two() {
     assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
     assert_eq!(r.0.version, Some(99));
     assert_eq!(&r.1.new_text, "Replacement");
-    assert_eq!(&r.1.range.start, &lsp_types::Position::new(23, 42));
-    assert_eq!(&r.1.range.end, &lsp_types::Position::new(42, 23));
+    assert_eq!(&r.1.range.start, &lsp_types::Position::new(22, 41));
+    assert_eq!(&r.1.range.end, &lsp_types::Position::new(41, 22));
 
     let r = it.next().unwrap();
     assert_eq!(&r.0.uri.to_string(), "file://foo/baz.slint");
     assert_eq!(r.0.version, Some(98));
     assert_eq!(&r.1.new_text, "Foo");
-    assert_eq!(&r.1.range.start, &lsp_types::Position::new(44, 12));
-    assert_eq!(&r.1.range.end, &lsp_types::Position::new(44, 13));
+    assert_eq!(&r.1.range.start, &lsp_types::Position::new(43, 11));
+    assert_eq!(&r.1.range.end, &lsp_types::Position::new(43, 12));
     assert!(it.next().is_none());
     assert!(it.next().is_none());
 }
@@ -642,8 +642,8 @@ fn test_edit_iterator_document_mixed() {
                 lsp_types::Url::parse("file://foo/bar.slint").unwrap(),
                 vec![lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(23, 42),
-                        lsp_types::Position::new(42, 23),
+                        lsp_types::Position::new(22, 41),
+                        lsp_types::Position::new(41, 22),
                     ),
                     new_text: "Replacement".to_string(),
                 }],
@@ -652,8 +652,8 @@ fn test_edit_iterator_document_mixed() {
                 lsp_types::Url::parse("file://foo/baz.slint").unwrap(),
                 vec![lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(44, 12),
-                        lsp_types::Position::new(44, 13),
+                        lsp_types::Position::new(43, 11),
+                        lsp_types::Position::new(43, 12),
                     ),
                     new_text: "Foo".to_string(),
                 }],
@@ -663,8 +663,8 @@ fn test_edit_iterator_document_mixed() {
             lsp_types::TextDocumentEdit {
                 edits: vec![lsp_types::OneOf::Left(lsp_types::TextEdit {
                     range: lsp_types::Range::new(
-                        lsp_types::Position::new(23, 42),
-                        lsp_types::Position::new(42, 23),
+                        lsp_types::Position::new(22, 41),
+                        lsp_types::Position::new(41, 22),
                     ),
                     new_text: "Doc Replacement".to_string(),
                 })],
@@ -677,8 +677,8 @@ fn test_edit_iterator_document_mixed() {
                 edits: vec![lsp_types::OneOf::Right(lsp_types::AnnotatedTextEdit {
                     text_edit: lsp_types::TextEdit {
                         range: lsp_types::Range::new(
-                            lsp_types::Position::new(44, 12),
-                            lsp_types::Position::new(44, 13),
+                            lsp_types::Position::new(43, 11),
+                            lsp_types::Position::new(43, 12),
                         ),
                         new_text: "Doc Foo".to_string(),
                     },
@@ -704,8 +704,8 @@ fn test_edit_iterator_document_mixed() {
             assert_eq!(&r.0.uri.to_string(), "file://foo/bar.slint");
             assert_eq!(r.0.version, None);
             assert_eq!(&r.1.new_text, "Replacement");
-            assert_eq!(&r.1.range.start, &lsp_types::Position::new(23, 42));
-            assert_eq!(&r.1.range.end, &lsp_types::Position::new(42, 23));
+            assert_eq!(&r.1.range.start, &lsp_types::Position::new(22, 41));
+            assert_eq!(&r.1.range.end, &lsp_types::Position::new(41, 22));
             seen[0] = true;
         } else if r.0.uri.to_string() == "file://foo/baz.slint" {
             assert_eq!(seen[1], false);
@@ -714,8 +714,8 @@ fn test_edit_iterator_document_mixed() {
             assert_eq!(&r.0.uri.to_string(), "file://foo/baz.slint");
             assert_eq!(r.0.version, None);
             assert_eq!(&r.1.new_text, "Foo");
-            assert_eq!(&r.1.range.start, &lsp_types::Position::new(44, 12));
-            assert_eq!(&r.1.range.end, &lsp_types::Position::new(44, 13));
+            assert_eq!(&r.1.range.start, &lsp_types::Position::new(43, 11));
+            assert_eq!(&r.1.range.end, &lsp_types::Position::new(43, 12));
             seen[1] = true;
         } else if r.0.uri.to_string() == "file://doc/bar.slint" {
             assert_eq!(seen[0], true);
@@ -725,8 +725,8 @@ fn test_edit_iterator_document_mixed() {
             assert_eq!(&r.0.uri.to_string(), "file://doc/bar.slint");
             assert_eq!(r.0.version, Some(99));
             assert_eq!(&r.1.new_text, "Doc Replacement");
-            assert_eq!(&r.1.range.start, &lsp_types::Position::new(23, 42));
-            assert_eq!(&r.1.range.end, &lsp_types::Position::new(42, 23));
+            assert_eq!(&r.1.range.start, &lsp_types::Position::new(22, 41));
+            assert_eq!(&r.1.range.end, &lsp_types::Position::new(41, 22));
             seen[2] = true;
         } else {
             assert_eq!(seen[0], true);
@@ -736,8 +736,8 @@ fn test_edit_iterator_document_mixed() {
             assert_eq!(&r.0.uri.to_string(), "file://doc/baz.slint");
             assert_eq!(r.0.version, Some(98));
             assert_eq!(&r.1.new_text, "Doc Foo");
-            assert_eq!(&r.1.range.start, &lsp_types::Position::new(44, 12));
-            assert_eq!(&r.1.range.end, &lsp_types::Position::new(44, 13));
+            assert_eq!(&r.1.range.start, &lsp_types::Position::new(43, 11));
+            assert_eq!(&r.1.range.end, &lsp_types::Position::new(43, 12));
             seen[3] = true;
         }
     }
@@ -766,8 +766,8 @@ fn test_texteditor_version_mismatch() {
 
     let edit = lsp_types::TextEdit {
         range: lsp_types::Range::new(
-            lsp_types::Position::new(1, 1),
-            lsp_types::Position::new(1, 1),
+            lsp_types::Position::new(0, 0),
+            lsp_types::Position::new(0, 0),
         ),
         new_text: "Foobar".to_string(),
     };
@@ -788,8 +788,8 @@ fn test_texteditor_edit_out_of_range() {
 
     let edit = lsp_types::TextEdit {
         range: lsp_types::Range::new(
-            lsp_types::Position::new(2, 3),
-            lsp_types::Position::new(2, 4),
+            lsp_types::Position::new(1, 2),
+            lsp_types::Position::new(1, 3),
         ),
         new_text: "Foobar".to_string(),
     };
@@ -813,8 +813,8 @@ geh"#
 
     let edit = lsp_types::TextEdit {
         range: lsp_types::Range::new(
-            lsp_types::Position::new(1, 1),
-            lsp_types::Position::new(3, 4),
+            lsp_types::Position::new(0, 0),
+            lsp_types::Position::new(2, 3),
         ),
         new_text: "".to_string(),
     };
@@ -844,8 +844,8 @@ geh"#
 
     let edit = lsp_types::TextEdit {
         range: lsp_types::Range::new(
-            lsp_types::Position::new(2, 1),
-            lsp_types::Position::new(2, 4),
+            lsp_types::Position::new(1, 0),
+            lsp_types::Position::new(1, 3),
         ),
         new_text: "REPLACEMENT".to_string(),
     };
@@ -880,16 +880,16 @@ geh"#
 
     let edit = lsp_types::TextEdit {
         range: lsp_types::Range::new(
-            lsp_types::Position::new(1, 1),
-            lsp_types::Position::new(3, 4),
+            lsp_types::Position::new(0, 0),
+            lsp_types::Position::new(2, 3),
         ),
         new_text: "".to_string(),
     };
     assert!(editor.apply(&edit).is_ok());
     let edit = lsp_types::TextEdit {
         range: lsp_types::Range::new(
-            lsp_types::Position::new(1, 1),
-            lsp_types::Position::new(1, 1),
+            lsp_types::Position::new(0, 0),
+            lsp_types::Position::new(0, 0),
         ),
         new_text: "REPLACEMENT".to_string(),
     };
