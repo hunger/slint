@@ -901,3 +901,40 @@ geh"#
     assert_eq!(result.2 .0, 0);
     assert_eq!(result.2 .1, 3 * 3 + 2);
 }
+
+#[test]
+fn test_texteditor_demo_edit_1() {
+    use i_slint_compiler::diagnostics::SourceFileInner;
+
+    let source_file = std::rc::Rc::new(SourceFileInner::new(
+        std::path::PathBuf::from("/tmp/foo.slint"),
+        crate::preview::test::DEMO_CODE.to_string(),
+        Some(42),
+    ));
+
+    let mut editor = TextEditor::new(source_file.clone()).unwrap();
+
+    let edit = lsp_types::TextEdit {
+        range: lsp_types::Range::new(
+            lsp_types::Position::new(11, 8),
+            lsp_types::Position::new(11, 8),
+        ),
+        new_text: "foobar := ".to_string(),
+    };
+    assert!(editor.apply(&edit).is_ok());
+    let edit = lsp_types::TextEdit {
+        range: lsp_types::Range::new(
+            lsp_types::Position::new(13, 24),
+            lsp_types::Position::new(15, 15),
+        ),
+        new_text: "".to_string(),
+    };
+    assert!(editor.apply(&edit).is_ok());
+
+    let result = editor.finalize().unwrap();
+    assert!(&result.0.contains("Button { }"));
+    assert!(&result.0.contains("foobar := Rectangle {"));
+    assert_eq!(result.1.adjust(42), 42);
+    assert_eq!(result.2.0, 194);
+    assert_eq!(result.2.1, 333);
+}
