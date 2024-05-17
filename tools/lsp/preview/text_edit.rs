@@ -1,6 +1,15 @@
 // Copyright © SixtyFPS GmbH <info@slint.dev>
 // SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-1.2 OR LicenseRef-Slint-commercial
 
+use std::collections::HashMap;
+
+use slint_interpreter::ComponentInstance;
+
+#[cfg(target_arch = "wasm32")]
+use crate::wasm_prelude::*;
+
+use crate::common;
+
 #[derive(Clone, Debug)]
 pub struct TextOffsetAdjustment {
     pub start_offset: u32,
@@ -15,10 +24,12 @@ impl TextOffsetAdjustment {
     ) -> Self {
         let new_text_length = edit.new_text.len() as u32;
         let (start_offset, end_offset) = {
-            let so = source_file
-                .offset(edit.range.start.line as usize + 1, edit.range.start.character as usize + 1);
-            let eo =
-                source_file.offset(edit.range.end.line as usize + 1, edit.range.end.character as usize + 1);
+            let so = source_file.offset(
+                edit.range.start.line as usize + 1,
+                edit.range.start.character as usize + 1,
+            );
+            let eo = source_file
+                .offset(edit.range.end.line as usize + 1, edit.range.end.character as usize + 1);
             (std::cmp::min(so, eo) as u32, std::cmp::max(so, eo) as u32)
         };
 
@@ -57,6 +68,10 @@ impl TextOffsetAdjustments {
         let total_adjustment =
             self.0.iter().fold(0_i64, |acc, a| acc + i64::from(a.adjust(input)) - input_);
         (input_ + total_adjustment) as u32
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.0.is_empty()
     }
 }
 
@@ -173,10 +188,12 @@ impl TextEditor {
         let current_offset = {
             let start_range = &text_edit.range.start;
             let end_range = &text_edit.range.end;
-            let start_offset =
-                self.source_file.offset(start_range.line as usize + 1, start_range.character as usize + 1);
-            let end_offset =
-                self.source_file.offset(end_range.line as usize + 1, end_range.character as usize + 1);
+            let start_offset = self
+                .source_file
+                .offset(start_range.line as usize + 1, start_range.character as usize + 1);
+            let end_offset = self
+                .source_file
+                .offset(end_range.line as usize + 1, end_range.character as usize + 1);
             (start_offset, end_offset)
         };
 
@@ -217,12 +234,60 @@ impl TextEditor {
     }
 
     pub fn finalize(self) -> Option<(String, TextOffsetAdjustments, (usize, usize))> {
-        if self.original_offset_range.0 == usize::MAX {
-            return None;
+        (!self.adjustments.is_empty()).then_some((self.contents, self.adjustments, self.original_offset_range))
+    }
+}
+
+pub struct EditedText {
+    pub url: lsp_types::Url,
+    pub contents: String,
+    pub adjustments: TextOffsetAdjustments,
+    pub original_range: (usize, usize),
+}
+
+pub fn apply_workspace_edit(
+    component_instance: &ComponentInstance,
+    workspace_edit: &lsp_types::WorkspaceEdit,
+) -> common::Result<Vec<EditedText>> {
+    let tl = component_instance.definition().type_loader();
+    let mut processing = HashMap::new();
+
+    for (doc, edit) in EditIterator::new(workspace_edit) {
+        let Ok(path) = doc.uri.to_file_path() else {
+            continue;
+        };
+
+        // This is ugly but necessary sonce the constructor might error out:-/
+        if !processing.contains_key(&path) {
+            let Some(document) = tl.get_document(&path) else {
+                continue;
+            };
+            let Some(document_node) = &document.node else {
+                continue;
+            };
+            let editor = TextEditor::new(document_node.source_file.clone())?;
+            processing.insert(path.clone(), editor);
         }
 
-        Some((self.contents, self.adjustments, self.original_offset_range))
+        processing
+            .get_mut(&path)
+            .expect("just added if missing")
+            .apply_versioned(edit, doc.version)?;
     }
+
+    Ok(processing
+        .drain()
+        .filter_map(|(k, v)| {
+            let edit_result = v.finalize()?;
+            let url = lsp_types::Url::from_file_path(k).ok()?;
+            Some(EditedText {
+                url,
+                contents: edit_result.0,
+                adjustments: edit_result.1,
+                original_range: edit_result.2,
+            })
+        })
+        .collect())
 }
 
 #[test]
@@ -935,6 +1000,6 @@ fn test_texteditor_demo_edit_1() {
     assert!(&result.0.contains("Button { }"));
     assert!(&result.0.contains("foobar := Rectangle {"));
     assert_eq!(result.1.adjust(42), 42);
-    assert_eq!(result.2.0, 194);
-    assert_eq!(result.2.1, 333);
+    assert_eq!(result.2 .0, 194);
+    assert_eq!(result.2 .1, 333);
 }

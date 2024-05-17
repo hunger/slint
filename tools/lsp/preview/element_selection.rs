@@ -406,13 +406,12 @@ mod tests {
     use std::path::PathBuf;
 
     use i_slint_core::lengths::LogicalPoint;
-    use slint_interpreter::ComponentInstance;
 
-    use crate::preview::test::demo_app;
+    use crate::preview::test;
 
     #[test]
     fn test_find_covering_elements() {
-        let component_instance = demo_app();
+        let component_instance = test::demo_app();
 
         let mut covers_center = super::collect_all_element_nodes_covering(
             LogicalPoint::new(100.0, 100.0),
@@ -458,7 +457,7 @@ mod tests {
 
     #[test]
     fn test_element_selection() {
-        let component_instance = demo_app();
+        let component_instance = test::demo_app();
 
         let button_path = PathBuf::from("builtin:/fluent-base/button.slint");
         let mut covers_center = super::collect_all_element_nodes_covering(

@@ -465,7 +465,7 @@ fn is_recursive_inclusion(
         .and_then(|rn| {
             rn.with_element_node(|node| {
                 node.parent()
-                    .map(|p| Into::<syntax_nodes::Component>::into(p))
+                    .map(Into::<syntax_nodes::Component>::into)
                     .map(|c| c.DeclaredIdentifier().text().to_string())
             })
         })
@@ -610,8 +610,31 @@ pub fn can_drop_at(position: LogicalPoint, component_type: &str) -> bool {
 
 fn workspace_edit_compiles(
     component_instance: &ComponentInstance,
-    edit: &lsp_types::WorkspaceEdit,
+    workspace_edit: &lsp_types::WorkspaceEdit,
 ) -> bool {
+    let Ok(mut result) = text_edit::apply_workspace_edit(component_instance, workspace_edit) else {
+        return false;
+    };
+
+    for r in &mut result {
+        let Ok(path) = r.url.to_file_path() else {
+            return false;
+        };
+
+        let mut diag = i_slint_compiler::diagnostics::BuildDiagnostics::default();
+        let _new_doc_node = i_slint_compiler::parser::parse(
+            std::mem::take(&mut r.contents),
+            Some(&path),
+            Some(i32::MIN),
+            &mut diag,
+        );
+        let had_error = diag.has_error();
+
+        if had_error {
+            return false;
+        }
+    }
+
     true
 }
 
@@ -630,7 +653,7 @@ pub fn can_move_to(
 
     if let Some(dm) = dm {
         if let Some((edit, _)) =
-            create_move_element_workspace_edit(&component_instance, &dm, element_node, position)
+            create_move_element_workspace_edit(&component_instance, dm, element_node, position)
         {
             if workspace_edit_compiles(&component_instance, &edit) {
                 preview::set_drop_mark(&dm.drop_mark);
@@ -1029,9 +1052,6 @@ pub fn move_element_to(
 
 #[cfg(test)]
 mod tests {
-    use std::path::PathBuf;
-
-    use i_slint_core::lengths::LogicalPoint;
     use slint_interpreter::ComponentInstance;
 
     use crate::preview::test;
@@ -1049,15 +1069,15 @@ mod tests {
 
         let edits = edits
             .iter()
-            .map(|(so, eo, t)| lsp_types::TextEdit {
-                range: util::map_range(
+            .map(|(so, eo, t)| {
+                let range = util::map_range(
                     source_file,
                     rowan::TextRange::new(
                         rowan::TextSize::new(*so as u32),
                         rowan::TextSize::new(*eo as u32),
                     ),
-                ),
-                new_text: t.to_string(),
+                );
+                lsp_types::TextEdit { range, new_text: t.to_string() }
             })
             .collect();
 
@@ -1078,7 +1098,7 @@ mod tests {
     #[test]
     fn test_workspace_edit_compiles_fails() {
         let (component_instance, workspace_edit) =
-            workspace_edit_setup(vec![(194, 194, "foobar ")]);
+            workspace_edit_setup(vec![(194, 194, "FOOBAR ")]);
 
         assert_eq!(workspace_edit_compiles(&component_instance, &workspace_edit), false);
     }
