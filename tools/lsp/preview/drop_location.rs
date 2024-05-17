@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-1.2 OR LicenseRef-Slint-commercial
 
 use i_slint_compiler::diagnostics::SourceFile;
+use i_slint_compiler::object_tree;
 use i_slint_compiler::parser::{syntax_nodes, SyntaxKind, SyntaxNode};
 use i_slint_core::lengths::{LogicalPoint, LogicalRect, LogicalSize};
 use slint_interpreter::ComponentInstance;
@@ -465,7 +466,7 @@ fn is_recursive_inclusion(
         .and_then(|rn| {
             rn.with_element_node(|node| {
                 node.parent()
-                    .map(|p| Into::<syntax_nodes::Component>::into(p))
+                    .map(Into::<syntax_nodes::Component>::into)
                     .map(|c| c.DeclaredIdentifier().text().to_string())
             })
         })
@@ -480,8 +481,11 @@ fn find_element_to_drop_into(
     filter: Box<dyn Fn(&common::ElementRcNode) -> bool>,
     component_type: &str,
 ) -> Option<common::ElementRcNode> {
+    eprintln!("find_element_to_drop_into(pos: {position:?}, ...): STARTED");
     let all_element_nodes = drop_target_element_nodes(component_instance, position, filter);
+    eprintln!("find_element_to_drop_into(pos: {position:?}, ...): with {} in all_element_nodes", all_element_nodes.len());
     if is_recursive_inclusion(&all_element_nodes.last(), component_type) {
+    eprintln!("find_element_to_drop_into(pos: {position:?}, ...): Recursive inclusion => NONE");
         return None;
     }
 
@@ -541,6 +545,7 @@ fn find_filtered_location(
     mark: Box<dyn Fn(&common::ElementRcNode) -> bool>,
     component_type: &str,
 ) -> Option<DropInformation> {
+    eprintln!("find_filtered_location(pos: {position:?}, ...): Started");
     let drop_target_node =
         find_element_to_drop_into(component_instance, position, filter, component_type)?;
 
@@ -553,6 +558,7 @@ fn find_filtered_location(
         if drop_target_node.layout_kind() == ui::LayoutKind::None
             && element_type.accepts_child_element(component_type, &doc.local_registry).is_err()
         {
+    eprintln!("find_filtered_location(pos: {position:?}, ...): Returning None!");
             return None;
         }
     }
@@ -610,8 +616,58 @@ pub fn can_drop_at(position: LogicalPoint, component_type: &str) -> bool {
 
 fn workspace_edit_compiles(
     component_instance: &ComponentInstance,
-    edit: &lsp_types::WorkspaceEdit,
+    workspace_edit: &lsp_types::WorkspaceEdit,
 ) -> bool {
+    let Ok(mut result) = text_edit::apply_workspace_edit(component_instance, workspace_edit) else {
+        return false;
+    };
+
+    for r in &mut result {
+        let Ok(path) = r.url.to_file_path() else {
+            return false;
+        };
+
+        let mut diag = i_slint_compiler::diagnostics::BuildDiagnostics::default();
+        let new_syntax_node: syntax_nodes::Document = i_slint_compiler::parser::parse(
+            std::mem::take(&mut r.contents),
+            Some(&path),
+            Some(i32::MIN),
+            &mut diag,
+        )
+        .into();
+        if diag.has_error() {
+            return false;
+        }
+
+        let mut diag = i_slint_compiler::diagnostics::BuildDiagnostics::default();
+
+        let tl = component_instance.definition().type_loader();
+        let Some(current_document) = tl.get_document(&path) else {
+            return false;
+        };
+        let type_register =
+            std::rc::Rc::new(std::cell::RefCell::new(current_document.local_registry.clone()));
+
+        // TODO: Can I find better foreign imports and reexports?!
+        let new_document = object_tree::Document::from_node(
+            new_syntax_node,
+            vec![],
+            object_tree::Exports::default(),
+            &mut diag,
+            &type_register,
+        );
+        if diag.has_error() {
+            return false;
+        }
+
+        let mut diag = i_slint_compiler::diagnostics::BuildDiagnostics::default();
+        i_slint_compiler::passes::run_import_passes(&new_document, &tl, &mut diag);
+
+        if diag.has_error() {
+            return false;
+        }
+    }
+
     true
 }
 
@@ -621,6 +677,9 @@ pub fn can_move_to(
     mouse_position: LogicalPoint,
     element_node: common::ElementRcNode,
 ) -> bool {
+    eprintln!(
+        "can_move_to: {position:?}, mouse: {mouse_position:?}, element: {element_node:?}: Started"
+    );
     let Some(component_instance) = preview::component_instance() else {
         return false;
     };
@@ -629,18 +688,32 @@ pub fn can_move_to(
         .and_then(|ci| find_move_location(&ci, mouse_position, &element_node, &component_type));
 
     if let Some(dm) = dm {
+        eprintln!("can_move_to: Create workspace edit");
+        let now = std::time::Instant::now();
         if let Some((edit, _)) =
-            create_move_element_workspace_edit(&component_instance, &dm, element_node, position)
+            create_move_element_workspace_edit(&component_instance, dm, element_node, position)
         {
-            if workspace_edit_compiles(&component_instance, &edit) {
-                preview::set_drop_mark(&dm.drop_mark);
-                return true;
+            eprintln!("can_move_to pos: Create workspace edit -- compile");
+            if !workspace_edit_compiles(&component_instance, &edit) {
+                eprintln!(
+                    "can_move_to: Create workspace edit -- compile OK, {}ms",
+                    now.elapsed().as_millis()
+                );
+                preview::set_drop_mark(&None);
+                return false;
             }
+            eprintln!(
+                "can_move_to: Create workspace edit -- compile NOT ok, {}ms",
+                now.elapsed().as_millis()
+            );
         }
+        eprintln!("can_move_to: Create workspace edit -- NONE created!");
+        preview::set_drop_mark(&dm.drop_mark);
+    } else {
+        preview::set_drop_mark(&None);
     }
 
-    preview::set_drop_mark(&None);
-    false
+    dm.is_some()
 }
 
 /// Extra data on an added Element, relevant to the Preview side only.
@@ -874,12 +947,14 @@ pub fn create_move_element_workspace_edit(
     element: common::ElementRcNode,
     position: LogicalPoint,
 ) -> Option<(lsp_types::WorkspaceEdit, DropData)> {
+    eprintln!("create_move_element_workspace_edit(...): Started");
     let component_type = element.component_type();
     let parent_of_element = element.parent();
 
     let placeholder_text = if Some(&drop_info.target_element_node) == parent_of_element.as_ref() {
         // We are moving within ourselves!
 
+        eprintln!("          create_move_element_workspace_edit: 1");
         let size = element.geometries(component_instance).first().map(|g| g.size)?;
 
         if drop_info.target_element_node.layout_kind() == ui::LayoutKind::None {
@@ -898,6 +973,7 @@ pub fn create_move_element_workspace_edit(
             };
 
             if child_index == drop_info.child_index {
+                eprintln!("create_move_element_workspace_edit(...): Dropped onto myself: NONE");
                 element_selection::reselect_element();
                 // Dropped onto myself: Ignore the move
                 return None;
@@ -911,6 +987,7 @@ pub fn create_move_element_workspace_edit(
     } else {
         String::new()
     };
+    eprintln!("     create_move_element_workspace_edit: placeholder: {placeholder_text}");
 
     let new_text = {
         let element_text_lines = extract_text_of_element(&element, &["x", "y"]);
@@ -940,6 +1017,7 @@ pub fn create_move_element_workspace_edit(
             tmp
         }
     };
+    eprintln!("     create_move_element_workspace_edit: new_text: {new_text}");
 
     let (path, _) = drop_info.target_element_node.path_and_offset();
 
@@ -997,6 +1075,7 @@ pub fn create_move_element_workspace_edit(
         lsp_types::TextEdit { range: lsp_types::Range::new(start_pos, end_pos), new_text },
     ));
 
+    eprintln!("create_move_element_workspace_edit(...): created new edit, DONE");
     Some((
         common::create_workspace_edit_from_source_files(edits)?,
         DropData { selection_offset, path },
@@ -1029,15 +1108,10 @@ pub fn move_element_to(
 
 #[cfg(test)]
 mod tests {
-    use std::path::PathBuf;
-
-    use i_slint_core::lengths::LogicalPoint;
     use slint_interpreter::ComponentInstance;
 
     use crate::preview::test;
     use crate::util;
-
-    use super::workspace_edit_compiles;
 
     fn workspace_edit_setup(
         edits: Vec<(usize, usize, &str)>,
@@ -1049,15 +1123,15 @@ mod tests {
 
         let edits = edits
             .iter()
-            .map(|(so, eo, t)| lsp_types::TextEdit {
-                range: util::map_range(
+            .map(|(so, eo, t)| {
+                let range = util::map_range(
                     source_file,
                     rowan::TextRange::new(
                         rowan::TextSize::new(*so as u32),
                         rowan::TextSize::new(*eo as u32),
                     ),
-                ),
-                new_text: t.to_string(),
+                );
+                lsp_types::TextEdit { range, new_text: t.to_string() }
             })
             .collect();
 
@@ -1072,14 +1146,25 @@ mod tests {
         let (component_instance, workspace_edit) =
             workspace_edit_setup(vec![(194, 194, "foo := ")]);
 
-        assert_eq!(workspace_edit_compiles(&component_instance, &workspace_edit), true);
+        assert_eq!(super::workspace_edit_compiles(&component_instance, &workspace_edit), true);
     }
 
     #[test]
-    fn test_workspace_edit_compiles_fails() {
+    fn test_workspace_edit_compiles_parse_fails() {
         let (component_instance, workspace_edit) =
-            workspace_edit_setup(vec![(194, 194, "foobar ")]);
+            workspace_edit_setup(vec![(194, 194, "FOOBAR ")]);
 
-        assert_eq!(workspace_edit_compiles(&component_instance, &workspace_edit), false);
+        assert_eq!(super::workspace_edit_compiles(&component_instance, &workspace_edit), false);
+    }
+
+    #[test]
+    fn test_workspace_edit_compiles_passes_fail() {
+        let (component_instance, workspace_edit) = workspace_edit_setup(vec![(
+            194,
+            194,
+            "property <bool> foobar: root.foobar;\n        ",
+        )]);
+
+        assert_eq!(super::workspace_edit_compiles(&component_instance, &workspace_edit), false);
     }
 }
