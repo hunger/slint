@@ -170,7 +170,6 @@ pub fn main() {
     // It's disabled in release mode so it doesn't bloat up the file size.
     #[cfg(all(debug_assertions, target_arch = "wasm32"))]
     console_error_panic_hook::set_once();
-
     let main_window = MainWindow::new().unwrap();
 
     let state = Rc::new(RefCell::new(AppState {

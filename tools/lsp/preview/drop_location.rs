@@ -618,6 +618,7 @@ fn workspace_edit_compiles(
     component_instance: &ComponentInstance,
     workspace_edit: &lsp_types::WorkspaceEdit,
 ) -> bool {
+    eprintln!("Compile testing...");
     let Ok(mut result) = text_edit::apply_workspace_edit(component_instance, workspace_edit) else {
         return false;
     };
@@ -626,6 +627,12 @@ fn workspace_edit_compiles(
         let Ok(path) = r.url.to_file_path() else {
             return false;
         };
+
+        eprintln!("*** Text with edit applied to {path:?} ***:\n");
+        for (line, content) in r.contents.split('\n').enumerate() {
+            eprintln!("  {:3}: {content}", line + 1);
+        }
+        eprintln!("\n*** *** *** ***");
 
         let mut diag = i_slint_compiler::diagnostics::BuildDiagnostics::default();
         let new_syntax_node: syntax_nodes::Document = i_slint_compiler::parser::parse(
@@ -636,6 +643,7 @@ fn workspace_edit_compiles(
         )
         .into();
         if diag.has_error() {
+            eprintln!("Parsing failed: {:?}", diag.to_string_vec());
             return false;
         }
 
@@ -657,6 +665,7 @@ fn workspace_edit_compiles(
             &type_register,
         );
         if diag.has_error() {
+            eprintln!("Document Creation failed: {:?}", diag.to_string_vec());
             return false;
         }
 
@@ -664,6 +673,7 @@ fn workspace_edit_compiles(
         i_slint_compiler::passes::run_import_passes(&new_document, &tl, &mut diag);
 
         if diag.has_error() {
+            eprintln!("Passes failed: {:?}", diag.to_string_vec());
             return false;
         }
     }
@@ -1113,10 +1123,39 @@ mod tests {
     use crate::preview::test;
     use crate::util;
 
+    pub const DEMO_CODE: &str = r#"import { Button } from "std-widgets.slint";
+
+component SomeComponent { // 69
+    @children
+}
+
+component Main { // 109
+    width: 200px;
+    height: 200px;
+
+    HorizontalLayout { // 160
+        Rectangle { // 194
+            SomeComponent { // 225
+                property <length> button-width: 80px;
+                Button { // 318
+                    width: parent.button-width;
+                    text: "Press me";
+                }
+            }
+        }
+        Rectangle { // 470
+            background: Colors.blue;
+        }
+    }
+}
+
+export component Entry inherits Main { /* @lsp:ignore-node */ } // 582
+"#;
+    
     fn workspace_edit_setup(
         edits: Vec<(usize, usize, &str)>,
     ) -> (ComponentInstance, lsp_types::WorkspaceEdit) {
-        let component_instance = test::demo_app();
+        let component_instance = test::compile_test("fluent", DEMO_CODE);
         let tl = component_instance.definition().type_loader();
         let doc = tl.get_document(&test::compile_test_path()).unwrap();
         let source_file = &doc.node.as_ref().unwrap().source_file;
@@ -1166,5 +1205,37 @@ mod tests {
         )]);
 
         assert_eq!(super::workspace_edit_compiles(&component_instance, &workspace_edit), false);
+    }
+
+    #[test]
+    fn test_workspace_edit_compiles_move_element_fail() {
+        let (component_instance, workspace_edit) = workspace_edit_setup(vec![(
+            314,
+            450,
+            "",
+        ),
+        (
+            460,
+            461,
+            "    Button { // 318\n                width: parent.button_width;\n                text: \"Press me\";\n            }\n        "
+        )]);
+
+        assert_eq!(super::workspace_edit_compiles(&component_instance, &workspace_edit), false);
+    }
+
+    #[test]
+    fn test_workspace_edit_compiles_move_element_ok() {
+        let (component_instance, workspace_edit) = workspace_edit_setup(vec![(
+            466,
+            540,
+            "",
+        ),
+        (
+            194,
+            194,
+            "Rectangle { // 470\n              background: Colors.blue;\n        }\n        "
+        ),]);
+
+        assert_eq!(super::workspace_edit_compiles(&component_instance, &workspace_edit), true);
     }
 }
