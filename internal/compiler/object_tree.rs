@@ -2615,7 +2615,12 @@ impl Exports {
                 let en = en.clone();
                 let either = match either {
                     itertools::Either::Left(l) => {
-                        itertools::Either::Left(snapshotter.snapshot_component(l))
+                        itertools::Either::Left(if !snapshotter.has_component(l) {
+                            snapshotter.create_component(l)
+                        } else {
+                            Weak::upgrade(&snapshotter.use_component(l))
+                                .expect("Component should cleanly upgrade here")
+                        })
                     }
                     itertools::Either::Right(r) => itertools::Either::Right(r.clone()),
                 };
