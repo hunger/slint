@@ -158,6 +158,13 @@ impl Snapshotter {
 
         let components = std::mem::take(&mut self.keep_alive);
         for (s, t) in components {
+            let sstr = format!("{s:?}");
+            let tstr = format!("{t:?}");
+            for (i, (s, t)) in sstr.chars().zip(tstr.chars()).enumerate() {
+                if s != t {
+                    eprintln!("DIFF at offset {i}: {s}, {t}");
+                }
+            }
             assert_eq!(format!("{s:?}"), format!("{t:?}"));
         }
         
