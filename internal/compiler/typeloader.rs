@@ -146,11 +146,31 @@ impl Snapshotter {
 
         let mut elements = std::mem::take(&mut self.keep_alive_elements);
 
+        let mut control_group = Vec::new();
+
         while !elements.is_empty() {
             for (s, t) in elements.iter_mut() {
                 self.snapshot_element(s, &mut t.borrow_mut());
+                control_group.push((s.clone(), t.clone()));
             }
             elements = std::mem::take(&mut self.keep_alive_elements);
+        }
+
+        let components = std::mem::take(&mut self.keep_alive);
+        for (s, t) in components {
+            assert_eq!(format!("{s:?}"), format!("{t:?}"));
+        }
+        
+        for (s, t) in control_group {
+            let sstr = format!("{s:?}");
+            let tstr = format!("{t:?}");
+            for (i, (s, t)) in sstr.chars().zip(tstr.chars()).enumerate() {
+                if s != t {
+                    eprintln!("DIFF at offset {i}: {s}, {t}");
+                }
+            }
+            assert_eq!(sstr, tstr);
+            assert_eq!(format!("{:?}", s.borrow().base_type), format!("{:?}", t.borrow().base_type));
         }
 
         assert!(self.keep_alive_elements.is_empty());
