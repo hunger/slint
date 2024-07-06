@@ -56,9 +56,9 @@ export component PropertyEditor inherits SideBarElement {
                         private property <string> property-value: property.defined-at.expression-value;
 
                         private property <bool> is-defined: self.property-value != "";
+                        private property <bool> is-simple: property.defined-at.simple-expression-value[0] != "" && !self.force-to-complex;
 
                         private property <bool> force-to-complex: false;
-                        private property <bool> simple-mode: (property-type == "bool" && (property-value == "true" || property-value == "false")) && !self.force-to-complex;
 
                         private property <brush> text-foreground: property-row.is-defined ? Palette.foreground : Palette.foreground.transparentize(0.5);
 
@@ -87,7 +87,7 @@ export component PropertyEditor inherits SideBarElement {
                                 vertical-alignment: center;
                                 color: property-row.text-foreground;
 
-                                text: property-row.simple-mode ? "S" : "K";
+                                text: property-row.is-simple ? "S" : "K";
                             }
 
                             clicked() => { property-row.force-to-complex = !property-row.force-to-complex; }
@@ -98,20 +98,46 @@ export component PropertyEditor inherits SideBarElement {
 
                             private property <bool> have-simple-ui: false;
 
-                            if property-row.simple-mode && property-row.property-type == "bool": CheckBox {
-                                checked: property-row.property-value == "true";
+                            if property-row.is-simple && property.defined-at.simple-expression-value[0] == "bool": CheckBox {
+                                checked: property.defined-at.simple-expression-value[1] == "true";
 
                                 toggled() => {
-                                    Api.set-binding(
+                                    Api.set-simple-binding(
                                         root.current-element.source-uri,
                                         root.current-element.source-version,
                                         root.current-element.range.start,
                                         property.name,
-                                        self.checked ? "true" : "false",
+                                        ["bool", self.checked ? "true" : "false"],
                                     );
                                 }
                             }
-                            if !property-row.simple-mode: LineEdit {
+                            if property-row.is-simple && property.defined-at.simple-expression-value[0] == "string": LineEdit {
+                                width: 100%;
+                                height: 100%; // otherwise this gets too high and covers several rows.
+                                text: property.defined-at.simple-expression-value[1];
+
+                                edited(text) => {
+                                    overlay.visible = !Api.test-simple-binding(
+                                        root.current-element.source-uri,
+                                        root.current-element.source-version,
+                                        root.current-element.range.start,
+                                        property.name,
+                                        ["string", text],
+                                    );
+                                }
+
+                                accepted(text) => {
+                                    Api.set-simple-binding(
+                                        root.current-element.source-uri,
+                                        root.current-element.source-version,
+                                        root.current-element.range.start,
+                                        property.name,
+                                        ["string", text],
+                                    );
+                                }
+                            }
+
+                            if !property-row.is-simple: LineEdit {
                                 width: 100%;
                                 height: 100%; // otherwise this gets too high and covers several rows.
                                 text: property.defined-at.expression-value;
