@@ -476,7 +476,7 @@ impl ElementRcNode {
 
 pub fn create_text_document_edit(
     uri: Url,
-    version: UrlVersion,
+    version: SourceFileVersion,
     edits: Vec<TextEdit>,
 ) -> lsp_types::TextDocumentEdit {
     let edits = edits
@@ -677,7 +677,7 @@ pub enum PreviewToLspMessage {
     /// Show a status message in the editor
     Status { message: String, health: crate::lsp_ext::Health },
     /// Report diagnostics to editor.
-    Diagnostics { uri: Url, diagnostics: Vec<lsp_types::Diagnostic> },
+    Diagnostics { uri: Url, version: UrlVersion, diagnostics: Vec<lsp_types::Diagnostic> },
     /// Show a document in the editor.
     ShowDocument { file: Url, selection: lsp_types::Range },
     /// Switch between native and WASM preview (if supported)
@@ -754,11 +754,12 @@ pub mod lsp_to_editor {
     pub fn notify_lsp_diagnostics(
         sender: &crate::ServerNotifier,
         uri: lsp_types::Url,
+        version: super::SourceFileVersion,
         diagnostics: Vec<lsp_types::Diagnostic>,
     ) -> Option<()> {
         sender
             .send_notification::<lsp_types::notification::PublishDiagnostics>(
-                lsp_types::PublishDiagnosticsParams { uri, diagnostics, version: None },
+                lsp_types::PublishDiagnosticsParams { uri, diagnostics, version },
             )
             .ok()
     }

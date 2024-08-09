@@ -285,6 +285,11 @@ impl Diagnostic {
     pub fn source_file(&self) -> Option<&Path> {
         self.span.source_file().map(|sf| sf.path())
     }
+
+    /// return the path of the source file where this error is attached
+    pub fn source_version(&self) -> Option<i32> {
+        self.span.source_file().and_then(|sf| sf.version())
+    }
 }
 
 impl std::fmt::Display for Diagnostic {
