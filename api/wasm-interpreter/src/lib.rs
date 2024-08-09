@@ -62,6 +62,22 @@ pub async fn compile_from_string(
     compile_from_string_with_style(source, base_url, String::new(), optional_import_callback).await
 }
 
+async fn load_file(
+    path: String,
+    load_file: &js_sys::Function,
+) -> std::io::Result<(String, Option<i32>)> {
+    let reply_promise = load_file
+        .call1(&JsValue::UNDEFINED, &path.into())
+        .map_err(|x| std::io::Error::new(std::io::ErrorKind::Other, format!("{x:?}")))?;
+    let reply_future = wasm_bindgen_futures::JsFuture::from(js_sys::Promise::from(reply_promise));
+    let js_value = reply_future
+        .await
+        .map_err(|e| std::io::Error::new(std::io::ErrorKind::Other, format!("{e:?}")))?;
+
+    return Ok(serde_wasm_bindgen::from_value(js_value)
+        .map_err(|e| std::io::Error::new(std::io::ErrorKind::Other, format!("{e:?}")))?);
+}
+
 /// Same as [`compile_from_string`], but also takes a style parameter
 #[wasm_bindgen]
 pub async fn compile_from_string_with_style(
@@ -81,23 +97,12 @@ pub async fn compile_from_string_with_style(
 
     if let Some(load_callback) = optional_import_callback {
         let open_import_fallback = move |file_name: &Path| -> core::pin::Pin<
-            Box<dyn core::future::Future<Output = Option<std::io::Result<String>>>>,
+            Box<dyn core::future::Future<Output = Option<std::io::Result<(String, Option<i32>)>>>>,
         > {
             Box::pin({
                 let load_callback = js_sys::Function::from(load_callback.clone());
                 let file_name: String = file_name.to_string_lossy().into();
-                async move {
-                    let result = load_callback.call1(&JsValue::UNDEFINED, &file_name.into());
-                    let promise: js_sys::Promise = result.unwrap().into();
-                    let future = wasm_bindgen_futures::JsFuture::from(promise);
-                    match future.await {
-                        Ok(js_ok) => Some(Ok(js_ok.as_string().unwrap_or_default())),
-                        Err(js_err) => Some(Err(std::io::Error::new(
-                            std::io::ErrorKind::Other,
-                            js_err.as_string().unwrap_or_default(),
-                        ))),
-                    }
-                }
+                async move { Some(self::load_file(file_name, &load_callback).await) }
             })
         };
         compiler.set_file_loader(open_import_fallback);

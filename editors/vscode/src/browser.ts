@@ -50,7 +50,7 @@ function startClient(
                     let contents = await vscode.workspace.fs.readFile(
                         Uri.parse(param, true),
                     );
-                    return new TextDecoder().decode(contents);
+                    return [ new TextDecoder().decode(contents), null ];
                 });
             });
 

@@ -576,7 +576,11 @@ impl ComponentCompiler {
         file_loader_fallback: impl Fn(
                 &Path,
             ) -> core::pin::Pin<
-                Box<dyn core::future::Future<Output = Option<std::io::Result<String>>>>,
+                Box<
+                    dyn core::future::Future<
+                        Output = Option<std::io::Result<(String, Option<i32>)>>,
+                    >,
+                >,
             > + 'static,
     ) {
         self.config.open_import_fallback =
@@ -779,7 +783,11 @@ impl Compiler {
         file_loader_fallback: impl Fn(
                 &Path,
             ) -> core::pin::Pin<
-                Box<dyn core::future::Future<Output = Option<std::io::Result<String>>>>,
+                Box<
+                    dyn core::future::Future<
+                        Output = Option<std::io::Result<(String, Option<i32>)>>,
+                    >,
+                >,
             > + 'static,
     ) {
         self.config.open_import_fallback =
@@ -834,7 +842,28 @@ impl Compiler {
     /// If that is not used, then it is fine to use a very simple executor, such as the one
     /// provided by the `spin_on` crate
     pub async fn build_from_source(&self, source_code: String, path: PathBuf) -> CompilationResult {
-        crate::dynamic_item_tree::load(source_code, path, None, self.config.clone()).await
+        self.build_from_versioned_source(source_code, None, path).await
+    }
+
+    /// Compile some .slint code
+    ///
+    /// The `path` argument will be used for diagnostics and to compute relative
+    /// paths while importing.
+    ///
+    /// Any diagnostics produced during the compilation, such as warnings or errors, can be retrieved
+    /// after the call using [`CompilationResult::diagnostics()`].
+    ///
+    /// This function is `async` but in practice, this is only asynchronous if
+    /// [`Self::set_file_loader`] is set and its future is actually asynchronous.
+    /// If that is not used, then it is fine to use a very simple executor, such as the one
+    /// provided by the `spin_on` crate
+    pub async fn build_from_versioned_source(
+        &self,
+        source_code: String,
+        version: SourceFileVersion,
+        path: PathBuf,
+    ) -> CompilationResult {
+        crate::dynamic_item_tree::load(source_code, path, version, self.config.clone()).await
     }
 }
 

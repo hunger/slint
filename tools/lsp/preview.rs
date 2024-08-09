@@ -8,7 +8,7 @@ use crate::common::{
 use crate::lsp_ext::Health;
 use crate::preview::element_selection::ElementSelection;
 use crate::util;
-use i_slint_compiler::diagnostics;
+use i_slint_compiler::diagnostics::{self, SourceFileVersion};
 use i_slint_compiler::object_tree::ElementRc;
 use i_slint_compiler::parser::syntax_nodes;
 use i_slint_core::component_factory::FactoryContext;
@@ -1076,12 +1076,13 @@ async fn parse_source(
     library_paths: HashMap<String, PathBuf>,
     path: PathBuf,
     source_code: String,
+    version: SourceFileVersion,
     style: String,
     component: Option<String>,
     file_loader_fallback: impl Fn(
             &Path,
         ) -> core::pin::Pin<
-            Box<dyn core::future::Future<Output = Option<std::io::Result<String>>>>,
+            Box<dyn core::future::Future<Output = Option<std::io::Result<(String, Option<i32>)>>>>,
         > + 'static,
 ) -> (Vec<diagnostics::Diagnostic>, Option<ComponentDefinition>) {
     let mut builder = slint_interpreter::Compiler::default();
@@ -1104,7 +1105,7 @@ async fn parse_source(
     builder.set_library_paths(library_paths);
     builder.set_file_loader(file_loader_fallback);
 
-    let result = builder.build_from_source(source_code, path).await;
+    let result = builder.build_from_versioned_source(source_code, version, path).await;
 
     let compiled = result.components().next();
     (result.diagnostics().collect(), compiled)
@@ -1119,17 +1120,18 @@ async fn reload_preview_impl(
     start_parsing();
 
     let path = component.url.to_file_path().unwrap_or(PathBuf::from(&component.url.to_string()));
-    let (_, source) = get_url_from_cache(&component.url).unwrap_or_default();
+    let (version, source) = get_url_from_cache(&component.url).unwrap_or_default();
     let (diagnostics, compiled) = parse_source(
         config.include_paths,
         config.library_paths,
         path,
         source,
+        version,
         style,
         component.component.clone(),
         |path| {
             let path = path.to_owned();
-            Box::pin(async move { get_path_from_cache(&path).map(|(_, c)| Result::Ok(c)) })
+            Box::pin(async move { get_path_from_cache(&path).map(|(v, c)| Result::Ok((c, v))) })
         },
     )
     .await;
@@ -1550,6 +1552,7 @@ pub mod test {
             std::collections::HashMap::new(),
             path,
             source_code.to_string(),
+            Some(25),
             style.to_string(),
             None,
             move |path| {
@@ -1563,7 +1566,7 @@ pub mod test {
                             "path not found",
                         )));
                     };
-                    Some(Ok(source.clone()))
+                    Some(Ok((source.clone(), Some(24))))
                 })
             },
         ));
