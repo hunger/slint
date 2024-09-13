@@ -114,6 +114,10 @@ component ExpandableGroup {
                             );
                         }
                     }
+                    if property.value.kind == PropertyValueKind.code: CodeButton {
+                        element-information <=> root.element-information;
+                        property-information: property;
+                    }
                 }
             }
         }
