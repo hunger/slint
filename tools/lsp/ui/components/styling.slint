@@ -50,6 +50,7 @@ export global EditorSizeSettings {
     in property <length> header-height: 32px;
     in property <length> item-height: 24px;
     in property <length> side-bar-width: 280px;
+    in property <length> side-bar-dropshadow-width: 5px;
     in property <length> default-icon-width: 20px;
 }
 
@@ -58,6 +59,8 @@ export global EditorPalette {
     out property <brush> state-hovered: root.dark-color-scheme ? #ffffff.with-alpha(0.2) : #000000.with-alpha(0.2);
     
     property <bool> dark-color-scheme: Palette.color-scheme == ColorScheme.dark;
+
+    out property <color> side-bar-dropshadow-color: #777;
 }
 
 export global EditorAnimationSettings {

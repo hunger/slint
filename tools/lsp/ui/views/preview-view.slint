@@ -157,6 +157,9 @@ export component PreviewView {
     in property <DropMark> drop-mark <=> Api.drop-mark;
     in property <component-factory> preview-area <=> Api.preview-area;
     in property <bool> design-mode <=> Api.design-mode;
+    in property <length> left-margin;
+    in property <length> right-margin;
+
     in-out property <bool> select-mode: false;
 
     out property <bool> preview-visible: preview-area-container.has-component && !diagnostics.diagnostics-open;
@@ -173,14 +176,19 @@ export component PreviewView {
     scroll-view := ScrollView {
         out property <length> border: 30px;
 
-        width: 100%;
+        width: parent.width - left-margin - right-margin;
         height: 100%;
+
+        x: left-margin;
+
         viewport-width: drawing-rect.width;
         viewport-height: drawing-rect.height;
 
+        viewport-x: root.width - self.viewport-width - left-margin;
+
         drawing-rect := Rectangle {
-            width: max(scroll-view.visible-width, main-resizer.width + scroll-view.border);
-            height: max(scroll-view.visible-height, main-resizer.height + scroll-view.border);
+            width: max(root.width, main-resizer.width + scroll-view.border);
+            height: max(root.height, main-resizer.height + scroll-view.border);
 
             unselect-area := TouchArea {
                 clicked => {
