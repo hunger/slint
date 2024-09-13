@@ -125,7 +125,7 @@ export component PropertyView {
     in property <[PropertyGroup]> properties <=> Api.properties;
 
     property <length> key-width: self.width / 2.5;
-    property <bool> element-loaded: root.current-element.properties.length > 0;
+    property <bool> element-loaded: root.properties.length > 0;
 
     width: EditorSizeSettings.property-bar-width;
 
@@ -154,6 +154,8 @@ export component PropertyView {
 
                 for group in root.properties : ExpandableGroup {
                     text: group.group-name;
+
+                    element-information <=> root.current-element;
                     properties: group.properties;
                 }
             }
