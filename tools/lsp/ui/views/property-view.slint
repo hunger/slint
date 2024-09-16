@@ -1,14 +1,19 @@
 // Copyright © SixtyFPS GmbH <info@slint.dev>
 // SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
 
-import { LineEdit, Palette, VerticalBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox } from "std-widgets.slint";
+import { LineEdit, Palette, VerticalBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
 
 import { Api, ElementInformation, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
 import { GroupHeader } from "../components/group.slint";
 import { BodyStrongText } from "../components/body-strong-text.slint";
 import { BodyText } from "../components/body-text.slint";
 import { StateLayer } from "../components/state-layer.slint";
-import { EditorSizeSettings, Icons, EditorAnimationSettings, EditorSpaceSettings, EditorSizeSettings } from "../components/styling.slint";
+import { EditorSizeSettings, Icons, EditorAnimationSettings, EditorSpaceSettings, EditorSizeSettings, EditorFontSettings } from "../components/styling.slint";
+
+export global style {
+    out property <length> grid-margin:5px;
+    out property <length> min-distance:5px;
+}
 
 component CodeButton inherits Button {
     in property <ElementInformation> element-information;
@@ -41,13 +46,249 @@ component ResetButton inherits Button {
     }
 }
 
+component LengthProperty {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    in property <string> property-name;
+    HorizontalLayout {
+        spacing: EditorSpaceSettings.default-spacing;
+        BodyText {
+            text: property-name;
+            horizontal-stretch: 0;
+        }
+
+        Rectangle {
+            width: EditorSpaceSettings.default-padding;
+            horizontal-stretch: 1;
+        }
+
+        // alignment: stretch;
+        LineEdit {
+            text: "15";
+            width: 80px;
+            horizontal-stretch: 0;
+        }
+
+        ComboBox {
+            model: [
+                "px",
+                "pt",
+                "in",
+                "mm",
+                "cm",
+            ];
+            width: 80px;
+            horizontal-stretch: 0;
+        }
+    }
+}
+
+component ColourWidget inherits Rectangle {
+    property <int> gVal:30;
+    z: 1;
+    width: 100%;
+    background: Palette.alternate-background;
+    VerticalLayout {
+        padding: 5px;
+        spacing: -10pt;
+        HorizontalBox {
+
+            // alignment: stretch;
+            Rectangle {
+                background: red;
+                width: 30px;
+            }
+
+            hex := LineEdit {
+                text: "#ff0000";
+                horizontal-stretch: 0;
+                width: 80px;
+            }
+        }
+
+        HorizontalBox {
+            ComboBox {
+                model: ["RGB", "RGBA", "HSL", "Palettes"];
+                // width: 80px;
+                horizontal-stretch: 0;
+                width: 100%;
+            }
+        }
+
+        HorizontalBox {
+
+            // alignment: stretch;
+            Text {
+                text: "r:";
+                width: 20px;
+                vertical-alignment: center;
+            }
+
+            Slider {
+                visible: (parent.width > 200px);
+                value: 255;
+            }
+
+            SpinBox {
+                // horizontal-stretch: 1;
+                width: 100%;
+                value: 255;
+                maximum: 255;
+            }
+        }
+
+        HorizontalBox {
+
+            // alignment: stretch;
+            Text {
+                text: "g:";
+                width: 20px;
+                horizontal-stretch: 1;
+                vertical-alignment: center;
+            }
+
+            Rectangle {
+                visible: (root.width > 200px);
+                Slider {
+                    z: 1;
+                    x: 0;
+                    value: gVal;
+                }
+
+                Rectangle {
+                    width: gVal * 1px;
+                    height: 3px;
+                    background: green;
+                    x: 0;
+                    y: 0;
+                }
+            }
+
+            SpinBox {
+                // horizontal-stretch: 1;
+                width: 100%;
+                value: gVal;
+                maximum: 255;
+            }
+        }
+
+        HorizontalBox {
+
+            // alignment: stretch;
+            Text {
+                text: "b:";
+                width: 20px;
+                horizontal-stretch: 1;
+                vertical-alignment: center;
+            }
+
+            Slider {
+                visible: (parent.width > 200px);
+                value: 0;
+            }
+
+            SpinBox {
+                // horizontal-stretch: 1;
+                width: 100%;
+                value: 0;
+                maximum: 255;
+            }
+        }
+    }
+}
+
+export component ExpandableProperty inherits Rectangle {
+    callback toggled;
+    in-out property <bool> checked:true;
+    property <duration> dur:300ms;
+    in-out property <color> headerBG: Palette.alternate-background;
+    in-out property <bool> enabled:true;
+    in property <string> title: "Title";
+    clip:true;
+    width: 100%;
+    z:1;
+    height: header.height +10px + (root.checked ? content.preferred-height : 0px);
+    animate height { duration: dur; easing: ease-out; }
+
+    VerticalLayout {
+        Rectangle {height: 10px;}
+        touch-area:=TouchArea {
+            
+            clicked => {
+                debug("hit");
+                if (root.enabled) {
+                    root.checked = !root.checked;
+                    root.toggled();
+                }
+            }
+            state-layer := StateLayer {
+                width: 100%;
+                height: 100%;
+                has-hover: touch-area.has-hover;
+                pressed: touch-area.pressed;
+            }
+
+            header := Rectangle {
+                width: 100%;
+                height: 60px;
+                background: headerBG;
+            }
+
+
+            HorizontalLayout {
+                width: 100%;
+                x:10px;
+                accordionIcon:=Image {
+                    source:Icons.add;
+                    colorize: Palette.foreground;
+                    horizontal-stretch: 0;
+                    horizontal-alignment: right;
+                    vertical-alignment: center;
+                    width:20px;
+                    rotation-angle: root.checked ? 180deg : 0deg ;
+                    animate rotation-angle {duration: dur/2; easing: ease-in;
+                         
+                    }
+                }
+                Rectangle {width: 10px;}
+                // Text {
+                //     text: root.checked ? "↓" : "→";
+                //     width: 30px;
+                //     font-size: 20px;
+                //     vertical-alignment: center;
+                // }
+                Text {
+                    text: root.title;
+                    horizontal-stretch: 1;
+                    font-size: EditorFontSettings.body.font-size;
+                    font-weight: EditorFontSettings.body.font-weight;
+                    vertical-alignment: center;
+                }
+            }
+        }
+        content := Rectangle {
+            width: 100%;
+            background: headerBG;
+            // visible: root.checked ? false : true;
+            height: root.checked ? self.preferred-height : 0px;
+            animate height { 
+                duration: dur;
+                easing: ease-out;
+            }
+            VerticalLayout {
+                @children
+                spacing: -5pt;
+            }  
+        }
+            // Rectangle {height:40px;}
+    }
+}
 component ExpandableGroup {
     in property <ElementInformation> element-information;
     in property <string> text;
     in property <[PropertyInformation]> properties;
 
     property <bool> open: true;
-    
     Rectangle {
         background: Palette.alternate-background;
 
@@ -66,7 +307,7 @@ component ExpandableGroup {
                     has-hover: touch-area.has-hover;
                     pressed: touch-area.pressed;
                 }
-                
+
                 HorizontalBox {
                     icon-image := Image {
                         width: EditorSizeSettings.default-icon-width;
@@ -74,7 +315,6 @@ component ExpandableGroup {
                         source: Icons.drop-down;
                         rotation-origin-x: self.width / 2;
                         rotation-origin-y: self.height / 2;
-                        
                         states [
                             closed when !root.open: {
                                 rotation-angle: -0.25turn;
@@ -83,25 +323,23 @@ component ExpandableGroup {
 
                         animate rotation-angle { duration: EditorAnimationSettings.roation-duration; }
                     }
-                    
+
                     BodyStrongText {
                         text: root.text;
                     }
                 }
             }
 
-            if root.open : VerticalBox {
-                for property in root.properties : HorizontalLayout {
+            if root.open: VerticalBox {
+                for property in root.properties: HorizontalLayout {
                     spacing: parent.spacing;
-                    
-                    BodyText {
-                        min-width: EditorSizeSettings.min-prefix-text-width;
-                        text: property.name;
-                    }
 
-                    if property.value.kind == PropertyValueKind.string: LineEdit {
-                        text: property.value.value-string;
+                    if property.value.kind == PropertyValueKind.string: HorizontalLayout {
+                        LengthProperty {
+                            property-name: property.name;
+                        }
 
+                        /*
                         edited(text) => {
                             // overlay.visible = !Api.test-string-binding(
                             //     root.element-information.source-uri,
@@ -129,12 +367,23 @@ component ExpandableGroup {
                                 property.value.tr-plural-expression,
                             );
                         }
+                    */
+                    }
+                    if (property.value.kind == PropertyValueKind.color || property.value.kind == PropertyValueKind.brush): ExpandableProperty {
+                        title:  property.name;
+                        ColourWidget { }
                     }
                     if property.value.kind == PropertyValueKind.code: HorizontalLayout {
+                        BodyText {
+                            min-width: EditorSizeSettings.min-prefix-text-width;
+                            text: property.name;
+                        }
+
                         ResetButton {
                             element-information <=> root.element-information;
                             property-information: property;
                         }
+
                         CodeButton {
                             element-information <=> root.element-information;
                             property-information: property;
@@ -166,15 +415,15 @@ export component PropertyView {
             title: @tr("{} Properties", root.current-element.type-name);
             vertical-stretch: 0;
         }
-        
-        if !root.element-loaded : Text {
+
+        if !root.element-loaded: Text {
             text: @tr("Select an Element");
             horizontal-alignment: center;
             vertical-alignment: center;
             vertical-stretch: 1;
         }
 
-        if root.element-loaded : ScrollView {
+        if root.element-loaded: ScrollView {
             VerticalBox {
                 alignment: start;
 
@@ -185,6 +434,7 @@ export component PropertyView {
                     properties: group.properties;
                 }
             }
+
             // VerticalLayout {
             //     if root.current-element.properties.length > 0: Rectangle {
             //         VerticalLayout {
