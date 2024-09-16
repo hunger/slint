@@ -120,16 +120,23 @@ component ColourWidget inherits Rectangle {
     background: Palette.alternate-background;
     VerticalLayout {
         padding: 5px;
+        spacing: EditorSpaceSettings.default-spacing;
         HorizontalLayout {
             BodyText {
                 text: title;
                 horizontal-stretch: 0;
             }
+
+            Rectangle {
+                width: EditorSpaceSettings.default-spacing;
+                horizontal-stretch: 1;
+            }
+
             // alignment: stretch;
             Rectangle {
                 background: red;
-                // width: 30px;
-                horizontal-stretch: 1;
+                width: EditorSizeSettings.default-icon-width;
+                horizontal-stretch: 0;
             }
 
             hex := LineEdit {
@@ -236,16 +243,21 @@ export component ExpandableProperty inherits Rectangle {
     in-out property <color> headerBG: Palette.alternate-background;
     in-out property <bool> enabled:true;
     in property <string> title: "Title";
-    clip:true;
+    clip: true;
     width: 100%;
-    z:1;
+    z: 1;
     height: header.height + EditorSpaceSettings.default-spacing + (root.checked ? content.preferred-height : 0px);
-    animate height { duration: dur; easing: ease-out; }
+    animate height {
+        duration: dur;
+        easing: ease-out;
+    }
 
     VerticalLayout {
-        Rectangle {height: 10px;}
-        touch-area:=TouchArea {
-            
+        Rectangle {
+            height: 10px;
+        }
+
+        touch-area := TouchArea {
             clicked => {
                 debug("hit");
                 if (root.enabled) {
@@ -266,42 +278,45 @@ export component ExpandableProperty inherits Rectangle {
                 background: headerBG;
             }
 
-
             HorizontalLayout {
                 width: 100%;
-                x:10px;
-                accordionIcon:=Image {
-                    source:Icons.add;
+                x: EditorSpaceSettings.default-padding;
+                accordionIcon := Image {
+                    y:EditorSpaceSettings.default-padding;
+                    source: Icons.add;
                     colorize: Palette.foreground;
                     horizontal-stretch: 0;
                     horizontal-alignment: right;
                     vertical-alignment: center;
-                    width:20px;
-                    rotation-angle: root.checked ? 180deg : 0deg ;
-                    animate rotation-angle {duration: dur/2; easing: ease-in;
-                         
+                    width: 20px;
+                    rotation-angle: root.checked ? 180deg : 0deg;
+                    animate rotation-angle {
+                        duration: dur / 2;
+                        easing: ease-in;
                     }
                 }
+
                 content := Rectangle {
                     width: 100%;
                     background: headerBG;
                     // visible: root.checked ? false : true;
                     height: root.checked ? self.preferred-height : 0px;
-                    animate height { 
+                    animate height {
                         duration: dur;
                         easing: ease-out;
                     }
                     VerticalLayout {
                         @children
                         spacing: -5pt;
-                    }  
+                    }
                 }
             }
         }
 
-            // Rectangle {height:40px;}
+        // Rectangle {height:40px;}
     }
 }
+
 component ExpandableGroup {
     in property <ElementInformation> element-information;
     in property <string> text;
@@ -352,7 +367,7 @@ component ExpandableGroup {
 
             if root.open: VerticalBox {
                 for property in root.properties: HorizontalLayout {
-                    spacing: parent.spacing;
+                    // spacing: parent.spacing;
 
                     if property.value.kind == PropertyValueKind.float: HorizontalLayout {
                         FloatWidget {
@@ -361,7 +376,7 @@ component ExpandableGroup {
                         }
                     }
                     if (property.value.kind == PropertyValueKind.color || property.value.kind == PropertyValueKind.brush): ExpandableProperty {
-                        title:  property.name;
+                        title: property.name;
                         ColourWidget { }
                     }
                     if property.value.kind == PropertyValueKind.code: HorizontalLayout {
