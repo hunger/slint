@@ -46,14 +46,17 @@ component ResetButton inherits Button {
     }
 }
 
-component LengthProperty {
+component FloatWidget {
     in property <ElementInformation> element-information;
     in property <PropertyInformation> property-information;
-    in property <string> property-name;
+
+    private property <string> current-unit;
+
     HorizontalLayout {
         spacing: EditorSpaceSettings.default-spacing;
+
         BodyText {
-            text: property-name;
+            text: property-information.name;
             horizontal-stretch: 0;
         }
 
@@ -63,22 +66,48 @@ component LengthProperty {
         }
 
         // alignment: stretch;
-        LineEdit {
-            text: "15";
-            width: 80px;
-            horizontal-stretch: 0;
+        number := LineEdit {
+            text: property-information.value.value-float;
+
+            horizontal-stretch: 1;
+
+            accepted(text) => {
+                Api.set-code-binding(
+                    root.element-information.source-uri,
+                    root.element-information.source-version,
+                    root.element-information.range.start,
+                    root.property-information.name,
+                    number.text + root.current-unit,
+                );
+            }
         }
 
-        ComboBox {
-            model: [
-                "px",
-                "pt",
-                "in",
-                "mm",
-                "cm",
-            ];
-            width: 80px;
-            horizontal-stretch: 0;
+        if property-information.value.visual-items.length > 1: ComboBox {
+            model: property-information.value.visual-items;
+            current-index: property-information.value.code == "" ? property-information.value.default-selection : property-information.value.value-int;
+
+            changed current-index => {
+                root.current-unit = self.model[self.current-index];
+            }
+
+            horizontal-stretch: 1;
+
+            selected(unit) => {
+                Api.set-code-binding(
+                    root.element-information.source-uri,
+                    root.element-information.source-version,
+                    root.element-information.range.start,
+                    root.property-information.name,
+                    number.text + root.current-unit,
+                );
+            }
+        }
+        if property-information.value.visual-items.length == 1: Text {
+            text: property-information.value.visual-items[0];
+
+            changed text => {
+                root.current-unit = self.text;
+            }
         }
     }
 }
@@ -334,40 +363,11 @@ component ExpandableGroup {
                 for property in root.properties: HorizontalLayout {
                     spacing: parent.spacing;
 
-                    if property.value.kind == PropertyValueKind.string: HorizontalLayout {
-                        LengthProperty {
-                            property-name: property.name;
+                    if property.value.kind == PropertyValueKind.float: HorizontalLayout {
+                        FloatWidget {
+                            element-information <=> root.element-information;
+                            property-information: property;
                         }
-
-                        /*
-                        edited(text) => {
-                            // overlay.visible = !Api.test-string-binding(
-                            //     root.element-information.source-uri,
-                            //     root.element-information.source-version,
-                            //     root.element-information.range.start,
-                            //     property.name,
-                            //     text,
-                            //     property.value.is-translatable,
-                            //     property.value.tr-context,
-                            //     property.value.tr-plural,
-                            //     property.value.tr-plural-expression,
-                            // );
-                        }
-
-                        accepted(text) => {
-                            Api.set-string-binding(
-                                root.element-information.source-uri,
-                                root.element-information.source-version,
-                                root.element-information.range.start,
-                                property.name,
-                                text,
-                                property.value.is-translatable,
-                                property.value.tr-context,
-                                property.value.tr-plural,
-                                property.value.tr-plural-expression,
-                            );
-                        }
-                    */
                     }
                     if (property.value.kind == PropertyValueKind.color || property.value.kind == PropertyValueKind.brush): ExpandableProperty {
                         title:  property.name;
