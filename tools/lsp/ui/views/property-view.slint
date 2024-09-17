@@ -129,35 +129,166 @@ component FloatWidget inherits HorizontalLayout {
     }
 }
 
-component ColorWidget inherits HorizontalLayout {
+component ImageWidget {
     in property <ElementInformation> element-information;
     in property <PropertyInformation> property-information;
 
-    spacing: EditorSpaceSettings.default-spacing;
-    alignment: space-between;
-    width: 100%;
-
-    NameLabel {
-        property-name: property-information.name;
-    }
-
     HorizontalLayout {
-        spacing: parent.spacing;
+        spacing: EditorSpaceSettings.default-spacing;
 
-        alignment: end;
-
-        Rectangle {
-            height: 1.8rem;
-            width: 2 * self.height;
-            
-            background: property-information.value.value-brush;
-            border-width: 1px;
-            border-color: Palette.foreground;
+        BodyText {
+            text: "source:";
+            horizontal-stretch: 0;
         }
 
-        Text {
-            vertical-alignment: center;
-            text: property-information.value.value-string;
+        Rectangle {
+            width: EditorSpaceSettings.default-padding;
+            horizontal-stretch: 1;
+        }
+
+        // alignment: stretch;
+        Button {
+            text: "Browse...";
+        }
+
+        Rectangle {
+            border-color: Palette.border;
+            width: 50px;
+            height: 50px;
+            Image { }
+        }
+    }
+}
+
+component ColorWidget inherits Rectangle {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+
+    property <int> gVal:30;
+    in property <string> title:"Colour";
+    background: Palette.alternate-background;
+    VerticalLayout {
+        spacing: EditorSpaceSettings.default-spacing;
+        HorizontalLayout {
+            padding-top: EditorSpaceSettings.property-spacing;
+            alignment: stretch;
+            BodyText {
+                text: title;
+                font-size: 1rem;
+                horizontal-stretch: 0;
+            }
+
+            Rectangle {
+                width: EditorSpaceSettings.default-spacing;
+                horizontal-stretch: 1;
+            }
+
+            // alignment: stretch;
+            Rectangle {
+                background: red;
+                width: EditorSizeSettings.default-icon-width;
+                horizontal-stretch: 0;
+            }
+
+            hex := LineEdit {
+                text: "#ff0000";
+                horizontal-stretch: 0;
+                min-width: EditorSizeSettings.hex-size;
+            }
+        }
+
+        HorizontalLayout {
+            padding-top: EditorSpaceSettings.property-spacing;
+            spacing: EditorSpaceSettings.default-spacing;
+            alignment: stretch;
+            ComboBox {
+                model: ["RGB", "RGBA", "HSL", "Palettes"];
+                horizontal-stretch: 1;
+            }
+        }
+
+        HorizontalLayout {
+            padding-top: EditorSpaceSettings.property-spacing;
+            spacing: EditorSpaceSettings.default-spacing;
+            alignment: stretch;
+            Text {
+                text: "r:";
+                horizontal-stretch: 0;
+                vertical-alignment: center;
+            }
+
+            // Slider {
+            //     visible: (parent.width > 200px);
+            //     value: 255;
+            // }
+
+            LineEdit {
+                input-type: number;
+                horizontal-stretch: 1;
+                text: 255;
+                min-width: 10rem;
+            }
+        }
+
+        HorizontalLayout {
+            spacing: EditorSpaceSettings.default-spacing;
+            padding-top: EditorSpaceSettings.property-spacing;
+
+            alignment: stretch;
+            Text {
+                text: "g:";
+                horizontal-stretch: 0;
+                vertical-alignment: center;
+            }
+
+            /*
+            Rectangle {
+                visible: (root.width > 200px);
+                Slider {
+                    z: 1;
+                    x: 0;
+                    value: gVal;
+                }
+
+                Rectangle {
+                    width: gVal * 1px;
+                    height: 3px;
+                    background: green;
+                    x: 0;
+                    y: 0;
+                }
+            }
+            */
+
+            LineEdit {
+                input-type: number;
+                horizontal-stretch: 1;
+                text: gVal;
+                min-width: 10rem;
+            }
+        }
+
+        HorizontalLayout {
+            spacing: EditorSpaceSettings.default-spacing;
+            padding-top: EditorSpaceSettings.property-spacing;
+            alignment: stretch;
+            Text {
+                text: "b:";
+                horizontal-stretch: 0;
+                vertical-alignment: center;
+            }
+
+            // Slider {
+            //     visible: (parent.width > 200px);
+            //     value: 0;
+            // }
+
+            LineEdit {
+                input-type: number;
+                horizontal-stretch: 1;
+                min-width: 10rem;
+                text: 0;
+            }
         }
     }
 }
@@ -177,20 +308,19 @@ export component ExpandableProperty inherits Rectangle {
     }
 
     VerticalLayout {
-        x: 0;
+        x:0;
         spacing: EditorSpaceSettings.default-spacing;
         Rectangle {
             height: 5px;
         }
-
         touch-area := TouchArea {
             clicked => {
+                debug("hit");
                 if (root.enabled) {
                     root.checked = !root.checked;
                     root.toggled();
                 }
             }
-
             state-layer := StateLayer {
                 width: 100%;
                 height: 100%;
@@ -225,6 +355,7 @@ export component ExpandableProperty inherits Rectangle {
 
                 content := Rectangle {
                     background: headerBG;
+                    // visible: root.checked ? false : true;
                     height: root.checked ? self.preferred-height : 10px;
                     animate height {
                         duration: dur;
@@ -237,6 +368,8 @@ export component ExpandableProperty inherits Rectangle {
                 }
             }
         }
+
+        // Rectangle {height:40px;}
     }
 }
 
@@ -371,6 +504,10 @@ component ExpandableGroup {
                         }
                     }
                     if property.value.kind == PropertyValueKind.float:  FloatWidget {
+                        element-information <=> root.element-information;
+                        property-information: property;
+                    }
+                    if property.value.kind == PropertyValueKind.image: ImageWidget {
                         element-information <=> root.element-information;
                         property-information: property;
                     }

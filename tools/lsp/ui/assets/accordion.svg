@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="accordion" transform="matrix(1,0,0,1,-283.075,-239.515)">
+        <rect x="283.075" y="239.515" width="67.855" height="67.855" style="fill:none;"/>
+        <g transform="matrix(0.57587,0,0,-1.70603,125.053,695.812)">
+            <path d="M293.444,251.78C290.633,252.739 290.657,254.288 293.498,255.236C296.339,256.185 300.928,256.177 303.738,255.218L333.321,245.125L362.904,255.218C365.714,256.177 370.303,256.185 373.144,255.236C375.985,254.288 376.009,252.739 373.198,251.78L338.468,239.931C337.108,239.467 335.255,239.206 333.321,239.206C331.387,239.206 329.534,239.467 328.174,239.931L293.444,251.78Z"/>
+        </g>
+    </g>
+</svg>
