@@ -93,7 +93,7 @@ export struct PropertyValue {
     visual-items: [string], // enum (enum members), float (units)
     tr-context: string, // string
     tr-plural: string, // string
-    tr-plural-expression: string, // string
+    tr-plural-expression: string, //: string,
     code: string, // ALWAYS, empty if property is not explicitly defined
 }
 
@@ -146,9 +146,9 @@ export global Api {
     // enable editing mode
     in property <bool> show-preview-ui: true;
     // Design-mode engaged!
-    in-out property <bool> design-mode;
+    in-out property <bool> design-mode: true;
     // std-widgets are used (=> show style dropdown)
-    in-out property <bool> uses-widgets;
+    in-out property <bool> uses-widgets: false;
 
     // ## Component Data for ComponentList:
     // All the components
