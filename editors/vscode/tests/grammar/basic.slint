@@ -1,0 +1,149 @@
+# SYNTAX TEST "source.slint" "Simple tmGrammar test"
+
+  // Some comment
+# ^^^^^^^^^^^^^^^ comment.line.double-slash
+
+      /* Test
+#       ^^^^^ comment.block
+     */
+# ^^^ comment.block
+      /* /* Test */
+#       ^^^^^^^^^^^ comment.block
+     */
+# ^^^ comment.block
+  import{}from"std-widgets.slint";
+# ^^^^^^ keyword.other
+#         ^^^^ keyword.other
+#             ^^^^^^^^^^^^^^^^^^^ string.quoted.double
+  import { Button}from  "std-widgets.slint"  ;
+# ^^^^^^ keyword.other
+#          ^^^^^^ storage.type
+#                 ^^^^ keyword.other
+#                       ^^^^^^^^^^^^^^^^^^^ string.quoted.double
+  import { Button as Foo, AboutSlint }from  "std-widgets.slint"  ;
+# ^^^^^^ keyword.other
+#          ^^^^^^ storage.type
+#                 ^^ keyword.other
+#                    ^^^ storage.type
+#                         ^^^^^^^^^^ storage.type
+#                                     ^^^^ keyword.other
+#                                           ^^^^^^^^^^^^^^^^^^^ string.quoted.double
+  import {
+# ^^^^^^ keyword.other
+     Button__ as Foo--   ,
+#    ^^^^^^^^ storage.type
+#             ^^ keyword.other
+#                ^^^^^ storage.type
+     AboutSlint 
+#    ^^^^^^^^^^ storage.type
+  } from  "std-widgets.slint"  ;
+#   ^^^^ keyword.other
+#         ^^^^^^^^^^^^^^^^^^^ string.quoted.double
+  export { Foo as Bar-Ista, AboutSlint }
+# ^^^^^^ keyword.other
+#          ^^^ storage.type
+#              ^^ keyword.other
+#                 ^^^^^^^^ storage.type
+#                           ^^^^^^^^^^ storage.type
+  export {Foo as Bar-Ista,AboutSlint}
+# ^^^^^^ keyword.other
+#         ^^^ storage.type
+#             ^^ keyword.other
+#                ^^^^^^^^ storage.type
+#                         ^^^^^^^^^^ storage.type
+  struct Foobar {
+# ^^^^^^ keyword.other
+#        ^^^^^^ storage.type
+    foo-bar: string, // test
+#   ^^^^^^^ variable.parameter
+#            ^^^^^^ storage.type
+#                    ^^^^^^^ comment.line.double-slash
+  }
+
+  export global b     {}
+# ^^^^^^ keyword.other
+#        ^^^^^^ keyword.other
+#               ^ storage.type
+
+      
+  export component b     {}
+# ^^^^^^ keyword.other
+#        ^^^^^^^^^ keyword.other
+#                  ^ storage.type
+  export component b     inherits B_----____ay {}
+# ^^^^^^ keyword.other
+#        ^^^^^^^^^ keyword.other
+#                  ^ storage.type
+#                        ^^^^^^^^ keyword.other
+#                                 ^^^^^^^^^^^ storage.type
+  export 
+# ^^^^^^ keyword.other
+  component b
+# ^^^^^^^^^ keyword.other
+#           ^ storage.type
+  inherits B_----____ay {}
+# ^^^^^^^^ keyword.other
+#          ^^^^^^^^^^^ storage.type
+
+  component b
+# ^^^^^^^^^ keyword.other
+#           ^ storage.type
+  inherits B_----____ay {
+# ^^^^^^^^ keyword.other
+#          ^^^^^^^^^^^ storage.type
+   /* test */ property <int> foo;
+#    ^^^^^^ comment.block
+#             ^^^^^^^^ keyword.other 
+#                       ^^^ storage.type
+#                            ^^^ variable.parameter
+
+   property <color> bar <=> root.baz-feed;
+#  ^^^^^^^^ keyword.other 
+#            ^^^^^ storage.type
+#                           ^^^^ variable.language
+#                                ^^^^^^^^ variable.other
+   property <color> bar: Colors.aquamarine ;
+#  ^^^^^^^^ keyword.other 
+#            ^^^^^ storage.type
+#                        ^^^^^^ support.class
+#                               ^^^^^^^^^^ support.constant
+   property <color> bar: #ff00ff00 ;
+#  ^^^^^^^^ keyword.other 
+#            ^^^^^ storage.type
+#                        ^^^^^^^^^ constant.other
+   property <color> bar: -5px;
+#  ^^^^^^^^ keyword.other 
+#            ^^^^^ storage.type
+#                        ^^^^ constant.numeric
+   property <color> bar:+5% ;
+#  ^^^^^^^^ keyword.other 
+#            ^^^^^ storage.type
+#                       ^^^ constant.numeric
+   property <color> bar:5rem; // Foobar
+#  ^^^^^^^^ keyword.other 
+#            ^^^^^ storage.type
+#                       ^^^^ constant.numeric
+#                               ^^^^^^^^^^ comment.line.double-slash
+
+  callback foo-bar(name: type, second: type2) -> return-type;
+# ^^^^^^^^ keyword.other
+#          ^^^^^^^ entity.name.function
+#                  ^^^^ variable.parameter
+#                        ^^^^ storage.type
+#                              ^^^^^^ variable.parameter
+#                                      ^^^^^ storage.type
+#                                                ^^^^^^^^^^^ storage.type
+  function foobar(name: type, second) -> boolean {
+# ^^^^^^^^ keyword.other
+#          ^^^^^^ entity.name.function
+#                 ^^^^ variable.parameter
+#                       ^^^^ storage.type
+#                             ^^^^^^ variable.parameter
+#                                        ^^^^^^^ storage.type
+      if true {
+#     ^^ keyword.conditional
+#        ^^^^ variable.language
+         foobar = 32;
+      }
+  }
+}
