@@ -8,189 +8,23 @@
 
 This crate is the main entry point for embedding user interfaces designed with
 [Slint](https://slint.rs/) in Rust programs.
+
+This is the Rust API Refence documentation, see
 */
-#![doc = concat!("If you are new to Slint, start with the [Walk-through **tutorial**](https://slint.dev/releases/", env!("CARGO_PKG_VERSION"), "/docs/slint/src/quickstart)")]
-/*! If you are already familiar with Slint, the following topics provide related information.
+#![doc = concat!("[Slint Reference Manual](https://slint.dev/releases/", env!("CARGO_PKG_VERSION"), "/docs/slint)")]
 
-## Topics
-
+/*! for an introduction and Slint language and for integration of the Slint
+language into Rust projects.
 */
-#![doc = concat!("- [The Slint Language Documentation](https://slint.dev/releases/", env!("CARGO_PKG_VERSION"), "/docs/slint)")]
-/*! - [Type mappings between .slint and Rust](docs::type_mappings)
- - [Feature flags and backend selection](docs::cargo_features)
- - [Slint on Microcontrollers](docs::mcu)
 
-## How to use this crate:
-
-Designs of user interfaces are described in the `.slint` design markup language. There are three ways
-of including them in Rust:
-
- - The `.slint` code is [inline in a macro](#the-slint-code-in-a-macro).
- - The `.slint` code in [external files compiled with `build.rs`](#the-slint-code-in-external-files-is-compiled-with-buildrs)
+/*! # Feature flags and backend selection.
+Use the following feature flags in your Cargo.toml to enable additional features.
 */
-#![doc = concat!(" - The `.slint` code is loaded dynamically at run-time from the file system, by using the [interpreter API](https://slint.dev/releases/", env!("CARGO_PKG_VERSION"), "/docs/rust/slint_interpreter/).")]
+#![cfg_attr(feature = "document-features", doc = document_features::document_features!())]
 /*!
-
-With the first two methods, the markup code is translated to Rust code and each component is turned into a Rust
-struct with functions. Use these functions to instantiate and show the component, and
-to access declared properties. Check out our [sample component](docs::generated_code::SampleComponent) for more
-information about the generation functions and how to use them.
-
-### The .slint code in a macro
-
-This method combines your Rust code with the `.slint` design markup in one file, using a macro:
-
-```rust
-slint::slint!{
-    export component HelloWorld {
-        Text {
-            text: "hello world";
-            color: green;
-        }
-    }
-}
-fn main() {
-#   return; // Don't run a window in an example
-    HelloWorld::new().unwrap().run().unwrap();
-}
-```
-
-### The .slint code in external files is compiled with `build.rs`
-
-When your design becomes bigger in terms of markup code, you may want move it to a dedicated*/
-#![doc = concat!("`.slint` file. It's also possible to split a `.slint` file into multiple files using [modules](https://slint.dev/releases/", env!("CARGO_PKG_VERSION"), "/docs/slint/src/language/syntax/modules.html).")]
-/*!Use a [build script](https://doc.rust-lang.org/cargo/reference/build-scripts.html) to compile
-your main `.slint` file:
-
-In your Cargo.toml add a `build` assignment and use the `slint-build` crate in `build-dependencies`:
-
-```toml
-[package]
-...
-build = "build.rs"
-edition = "2021"
-
-[dependencies]
-slint = "1.8.0"
-...
-
-[build-dependencies]
-slint-build = "1.8.0"
-```
-
-Use the API of the slint-build crate in the `build.rs` file:
-
-```rust,no_run
-fn main() {
-    slint_build::compile("ui/hello.slint").unwrap();
-}
-```
-
-Finally, use the [`include_modules!`] macro in your `main.rs`:
-
-```ignore
-slint::include_modules!();
-fn main() {
-    HelloWorld::new().unwrap().run().unwrap();
-}
-```
-
-Use our [Template Repository](https://github.com/slint-ui/slint-rust-template) to create a skeleton file
-hierarchy that uses this method:
-
-1. Download and extract the [ZIP archive of the Rust Template](https://github.com/slint-ui/slint-rust-template/archive/refs/heads/main.zip).
-2. Rename the extracted directory and change into it:
-
-```bash
-mv slint-rust-template-main my-project
-cd my-project
-```
-
-## Generated components
-
-Exported component from the macro or the main file that inherit `Window` or `Dialog` is mapped to a Rust structure.
-
-The components are generated and re-exported to the location of the [`include_modules!`] or [`slint!`] macro.
-It is represented as a struct with the same name as the component.
-
-For example, if you have
-
-```slint,no-preview
-export component MyComponent inherits Window { /*...*/ }
-```
-
-in the .slint file, it will create a
-```rust
-struct MyComponent{ /*...*/ }
-```
-
-See also our [sample component](docs::generated_code::SampleComponent) for more information about the API of the generated struct.
-
-A component is instantiated using the [`fn new() -> Self`](docs::generated_code::SampleComponent::new) function. The following
-convenience functions are available through the [`ComponentHandle`] implementation:
-
-  - [`fn clone_strong(&self) -> Self`](docs::generated_code::SampleComponent::clone_strong): creates a strongly referenced clone of the component instance.
-  - [`fn as_weak(&self) -> Weak`](docs::generated_code::SampleComponent::as_weak): to create a [weak](Weak) reference to the component instance.
-  - [`fn show(&self)`](docs::generated_code::SampleComponent::show): to show the window of the component.
-  - [`fn hide(&self)`](docs::generated_code::SampleComponent::hide): to hide the window of the component.
-  - [`fn run(&self)`](docs::generated_code::SampleComponent::run): a convenience function that first calls `show()`,
-    followed by spinning the event loop, and `hide()` when returning from the event loop.
-  - [`fn global<T: Global<Self>>(&self) -> T`](docs::generated_code::SampleComponent::global): an accessor to the global singletons,
-
-For each top-level property
-  - A setter [`fn set_<property_name>(&self, value: <PropertyType>)`](docs::generated_code::SampleComponent::set_counter)
-  - A getter [`fn get_<property_name>(&self) -> <PropertyType>`](docs::generated_code::SampleComponent::get_counter)
-
-For each top-level callback
-  - [`fn invoke_<callback_name>(&self)`](docs::generated_code::SampleComponent::invoke_hello): to invoke the callback
-  - [`fn on_<callback_name>(&self, callback: impl Fn(<CallbackArgs>) + 'static)`](docs::generated_code::SampleComponent::on_hello): to set the callback handler.
-
-Note: All dashes (`-`) are replaced by underscores (`_`) in names of types or functions.
-
-After instantiating the component, call [`ComponentHandle::run()`] on show it on the screen and spin the event loop to
-react to input events. To show multiple components simultaneously, call [`ComponentHandle::show()`] on each instance.
-Call [`run_event_loop()`] when you're ready to enter the event loop.
-
-The generated component struct acts as a handle holding a strong reference (similar to an `Rc`). The `Clone` trait is
-not implemented. Instead you need to make explicit [`ComponentHandle::clone_strong`] and [`ComponentHandle::as_weak`]
-calls. A strong reference should not be captured by the closures given to a callback, as this would produce a reference
-loop and leak the component. Instead, the callback function should capture a weak component.
-
-## Threading and Event-loop
-
-For platform-specific reasons, the event loop must run in the main thread, in most backends, and all the components
-must be created in the same thread as the thread the event loop is running or is going to run.
-
-You should perform the minimum amount of work in the main thread and delegate the actual logic to another
-thread to avoid blocking animations. Use the [`invoke_from_event_loop`] function to communicate from your worker thread to the UI thread.
-
-To run a function with a delay or with an interval use a [`Timer`].
-
-To run an async function or a future, use [`spawn_local()`].
-
-## Exported Global singletons
-
+More information about the backend and renderers is available in the
 */
-#![doc = concat!("When you export a [global singleton](https://slint.dev/releases/", env!("CARGO_PKG_VERSION"), "/docs/slint/src/language/syntax/globals.html) from the main file,")]
-/*! it is also generated with the exported name. Like the main component, the generated struct have
-inherent method to access the properties and callback:
-
-For each property
-  - A setter: `fn set_<property_name>(&self, value: <PropertyType>)`
-  - A getter: `fn get_<property_name>(&self) -> <PropertyType>`
-
-For each callback
-  - `fn invoke_<callback_name>(&self, <CallbackArgs>) -> <ReturnValue>` to invoke the callback
-  - `fn on_<callback_name>(&self, callback: impl Fn(<CallbackArgs>) + 'static)` to set the callback handler.
-
-The global can be accessed with the [`ComponentHandle::global()`] function, or with [`Global::get()`]
-
-See the [documentation of the `Global` trait](Global) for an example.
-
-**Note**: Global singletons are instantiated once per component. When declaring multiple components for `export` to Rust,
-each instance will have their own instance of associated globals singletons.
-*/
-
+#![doc = concat!("[Slint Documentation](https://slint.dev/releases/", env!("CARGO_PKG_VERSION"), "/docs/slint/src/advanced/backends_and_renderers.html)")]
 #![warn(missing_docs)]
 #![deny(unsafe_code)]
 #![doc(html_logo_url = "https://slint.dev/logo/slint-logo-square-light.svg")]
@@ -394,8 +228,11 @@ macro_rules! init_translations {
 ///
 /// The primary interface is the [`platform::Platform`] trait. Pass your implementation of it to Slint by calling
 /// [`platform::set_platform()`] early on in your application, before creating any Slint components.
-///
-/// The [Slint on Microcontrollers](crate::docs::mcu) documentation has additional examples.
+
+/// The
+#[doc = concat!("[Slint Documentation](https://slint.dev/releases/", env!("CARGO_PKG_VERSION"), "/docs/slint/src/rust/mcu.html)")]
+/// has additional examples.
+
 pub mod platform {
     pub use i_slint_core::platform::*;
 
@@ -425,6 +262,3 @@ pub struct VersionCheck_1_9_0;
 
 #[cfg(doctest)]
 mod compile_fail_tests;
-
-#[cfg(doc)]
-pub mod docs;
