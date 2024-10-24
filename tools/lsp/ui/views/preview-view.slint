@@ -40,6 +40,11 @@ component SelectionFrame {
             } else {
                 return SelectionPalette.layout-element-selection-secondary;
             }
+        } else if selection.is-interactive {
+            if selection.is-primary {
+                return SelectionPalette.interactive-element-selection-primary;
+            } else {
+                return SelectionPalette.interactive-element-selection-secondary;
             }
         } else {
             if selection.is-primary {
