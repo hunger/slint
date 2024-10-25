@@ -79,6 +79,7 @@ export component Resizer {
 
         ta := TouchArea {
             enabled: root.is-moveable;
+
             private property <length> x-offset: self.mouse-x - self.pressed-x;
             private property <length> y-offset: self.mouse-y - self.pressed-y;
             private property <KeyboardModifiers> modifiers;
@@ -106,7 +107,8 @@ export component Resizer {
                 if self.has-moved && event.button == PointerEventButton.left && event.kind == PointerEventKind.up {
                     root.move-to(root.x-position + x-offset, root.y-position + y-offset, root.x-position + self.mouse-x, root.y-position + self.mouse-y);
                     self.has-moved = false;
-                } else if event.button == PointerEventButton.middle  {
+                } else {
+                    debug("Forwarding from resizer ", event);
                     root.pointer-event(self.mouse-x, self.mouse-y, event);
                 }
             }

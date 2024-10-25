@@ -101,7 +101,7 @@ component SelectionFrame {
 
         pointer-event(x, y, event) => {
             if event.button == PointerEventButton.middle && event.kind == PointerEventKind.down {
-                root.selection-stack-at(x, y);
+                root.selection-stack-at(root.selection.geometry.x + x, root.selection.geometry.y + y);
             } else if event.button == PointerEventButton.middle && event.kind == PointerEventKind.up {
                 root.close-selection-stack();
             }
@@ -109,10 +109,10 @@ component SelectionFrame {
 
         scroll-event(event) => {
             if event.delta-y > 0 {
-                root.select-to-back();
+                root.select-behind();
                 return EventResult.accept;
             } else if event.delta-y < 0 {
-                root.select-to-front();
+                root.select-before();
                 return EventResult.accept;
             }
             return EventResult.reject;
@@ -436,6 +436,7 @@ export component PreviewView {
                         }
                         close-selection-stack() => {
                             selection-popup.close-selection-stack();
+                            root.select-mode = false;
                         }
                         select-before => {
                             selection-popup.select-before();
