@@ -71,6 +71,7 @@ pub fn create_ui(style: String, experimental: bool) -> Result<PreviewUi, Platfor
     api.on_unselect(super::element_selection::unselect_element);
     api.on_reselect(super::element_selection::reselect_element);
     api.on_select_at(super::element_selection::select_element_at);
+    api.on_selection_stack_at(super::element_selection::selection_stack_at);
     api.on_select_behind(super::element_selection::select_element_behind);
     api.on_can_drop(super::can_drop_component);
     api.on_drop(super::drop_component);

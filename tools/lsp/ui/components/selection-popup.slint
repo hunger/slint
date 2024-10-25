@@ -1,0 +1,151 @@
+// Copyright © SixtyFPS GmbH <info@slint.dev>
+// SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
+
+import { ListView, Palette } from "std-widgets.slint";
+import { EditorFontSettings, EditorSpaceSettings, SelectionPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+
+export component SelectionPopup {
+    public function show-selection-stack(x: length, y: length) {
+        self.selection-x = x;
+        self.selection-y = y;
+        self.selection-stack = selection-stack;
+
+        Api.select-at(self.selection-x, self.selection-y, true);
+        self.selection-stack = Api.selection-stack-at(self.selection-x, self.selection-y);
+
+        popup.show();
+    }
+
+    public function close-selection-stack() {
+        self.selection-x = 0;
+        self.selection-y = 0;
+        self.selection-stack = [];
+
+        popup.close();
+    }
+
+    public function select-behind() {
+        Api.select-behind(self.selection-x, self.selection-y, true, false);
+        self.selection-stack = Api.selection-stack-at(self.selection-x, self.selection-y);
+    }
+
+    public function select-before() {
+        Api.select-behind(self.selection-x, self.selection-y, true, true);
+        self.selection-stack = Api.selection-stack-at(self.selection-x, self.selection-y);
+    }
+
+    in property <length> max-popup-height;
+
+    private property <length> selection-x;
+    private property <length> selection-y;
+    private property <[SelectionStackFrame]> selection-stack;
+
+    popup := PopupWindow {
+        private property <length> measured-rect-size: 50px;
+        private property <length> frame-height: self.measured-rect-size + EditorSpaceSettings.default-padding * 2;
+
+        x: 20px;
+        y: 20px;
+
+        private property <int> max-visible-frames: Math.floor((root.max-popup-height / 1px) / (self.frame-height / 1px));
+        private property <int> visible-frames: Math.min(self.max-visible-frames, root.selection-stack.length);
+
+        width: 250px;
+        height: visible-frames * frame-height;
+
+        function select-frame(index: int) {
+            if index >= 0 {
+                list-view.viewport-y = (index - (self.visible-frames / 2)) * self.frame-height;
+            } else {
+                list-view.viewport-x = 0px;
+            }
+        }
+
+        list-view := ListView {
+            for frame[index] in root.selection-stack: frame-rect := Rectangle {
+                width: 100%;
+                height: popup.frame-height;
+
+                background: frame.is-selected ? Palette.alternate-background : Palette.background;
+
+                if frame.is-selected: Rectangle {
+                    init() => {
+                        popup.select-frame(index);
+                    }
+                }
+
+                function frame-color(frame: SelectionStackFrame) -> brush {
+                    if frame.is-interactive {
+                        return SelectionPalette.interactive-element-selection-secondary;
+                    } else if frame.is-layout {
+                        return SelectionPalette.layout-element-selection-secondary;
+                    } else {
+                        return SelectionPalette.general-element-selection-secondary;
+                    }
+                }
+                function frame-background(frame: SelectionStackFrame) -> brush {
+                    if frame.is-interactive {
+                        return SelectionPalette.interactive-element-selection-primary;
+                    } else if frame.is-layout {
+                        return SelectionPalette.layout-element-selection-primary;
+                    } else {
+                        return SelectionPalette.general-element-selection-primary;
+                    }
+                }
+
+                function calculate_pos(p: length, percent: float) -> length {
+                    return Math.round((measure-rect.width / 1px) * percent) * 1px;
+                }
+                function calculate_size(p: length, percent: float) -> length {
+                    return Math.max(Math.round((p / 1px) * percent), 2) * 1px;
+                }
+
+                HorizontalLayout {
+                    padding: EditorSpaceSettings.default-padding;
+                    spacing: EditorSpaceSettings.default-spacing;
+
+                    Rectangle {
+                        width: EditorSpaceSettings.group-indent * frame.embedding-level;
+                        height: 100%;
+                    }
+
+                    Rectangle {
+                        clip: true;
+                        width: popup.measured-rect-size + EditorSpaceSettings.default-padding;
+
+                        measure-rect := Rectangle {
+                            width: popup.measured-rect-size;
+                            height: popup.measured-rect-size;
+
+                            border-color: black;
+                            border-width: 1px;
+                            placeholder-rect := Rectangle {
+                                x: calculate_pos(measure-rect.width, frame.x);
+                                y: calculate_pos(measure-rect.height, frame.y);
+                                width: calculate_size(measure-rect.width, frame.width);
+                                height: calculate_size(measure-rect.height, frame.height);
+
+                                border-color: frame-rect.frame-color(frame);
+                                border-width: 1px;
+                                background: frame-rect.frame-background(frame);
+                            }
+                        }
+                    }
+
+                    VerticalLayout {
+                        spacing: EditorSpaceSettings.default-spacing;
+                        Text {
+                            text: frame.type-name;
+                        }
+
+                        Text {
+                            text: frame.id;
+                            font-weight: EditorFontSettings.bold-font-weight;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

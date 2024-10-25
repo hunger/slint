@@ -5,9 +5,9 @@ use std::{path::PathBuf, rc::Rc};
 
 use i_slint_compiler::{
     object_tree::{Component, ElementRc},
-    parser::TextSize,
+    parser::{SyntaxKind, TextSize},
 };
-use i_slint_core::lengths::LogicalPoint;
+use i_slint_core::lengths::{LogicalPoint, LogicalRect};
 use slint_interpreter::ComponentInstance;
 
 use crate::common;
@@ -80,8 +80,12 @@ fn element_covers_point(
     position: LogicalPoint,
     component_instance: &ComponentInstance,
     selected_element: &ElementRc,
-) -> bool {
-    component_instance.element_positions(selected_element).iter().any(|p| p.contains(position))
+) -> Option<LogicalRect> {
+    component_instance
+        .element_positions(selected_element)
+        .iter()
+        .find(|p| p.contains(position))
+        .copied()
 }
 
 pub fn unselect_element() {
@@ -162,6 +166,7 @@ pub struct SelectionCandidate {
     pub component_stack: Vec<Rc<Component>>,
     pub element: ElementRc,
     pub debug_index: usize,
+    pub geometry: LogicalRect,
 }
 
 impl SelectionCandidate {
@@ -178,7 +183,12 @@ impl std::fmt::Debug for SelectionCandidate {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let tmp = self.component_stack.iter().map(|c| c.id.clone()).collect::<Vec<_>>();
         let component = format!("{:?}", tmp);
-        write!(f, "SelectionCandidate {{ {:?} in {component} }}", self.as_element_node())
+        write!(
+            f,
+            "SelectionCandidate {{ {:?} in {component} }}@({:?})",
+            self.as_element_node(),
+            self.geometry
+        )
     }
 }
 
@@ -218,13 +228,14 @@ fn collect_all_element_nodes_covering_impl(
         component_stack.pop();
     }
 
-    if element_covers_point(position, component_instance, &ce) {
+    if let Some(geometry) = element_covers_point(position, component_instance, &ce) {
         for (i, _) in ce.borrow().debug.iter().enumerate().rev() {
             // All nodes have the same geometry
             result.push(SelectionCandidate {
                 element: ce.clone(),
                 debug_index: i,
                 component_stack: component_stack.clone(),
+                geometry: geometry.clone(),
             });
         }
     }
@@ -234,6 +245,7 @@ pub fn collect_all_element_nodes_covering(
     position: LogicalPoint,
     component_instance: &ComponentInstance,
 ) -> Vec<SelectionCandidate> {
+    eprintln!("collect elements covering {position:?}");
     let root_element = root_element(component_instance);
     let mut elements = Vec::new();
     collect_all_element_nodes_covering_impl(
@@ -287,6 +299,103 @@ pub fn select_element_at(x: f32, y: f32, enter_component: bool) {
     select_element_node(&component_instance, &en, Some(position));
 }
 
+pub fn selection_stack_at(
+    x: f32,
+    y: f32,
+) -> slint::ModelRc<crate::preview::ui::SelectionStackFrame> {
+    let Some(component_instance) = &super::component_instance() else {
+        return Default::default();
+    };
+    let root_element = root_element(component_instance);
+    let Some(root_geometry) = component_instance.element_positions(&root_element).first().cloned()
+    else {
+        return Default::default();
+    };
+
+    let main_node = {
+        let Some(root_node) = common::ElementRcNode::new(root_element, 0) else {
+            return Default::default();
+        };
+        find_main_node(&root_node)
+    };
+
+    let position = LogicalPoint::new(x, y);
+
+    let (known_components, selected) = crate::preview::PREVIEW_STATE.with(|preview_state| {
+        let preview_state = preview_state.borrow();
+
+        let known_components = preview_state.known_components.clone();
+        let selected = preview_state.selected.as_ref().and_then(|s| s.as_element_node());
+
+        (known_components, selected)
+    });
+
+    let result = collect_all_element_nodes_covering(position, component_instance)
+        .iter()
+        .filter(|sn| filter_nodes_for_selection(sn, true, &main_node).is_some())
+        .map(|sc| {
+            let (type_name, id, is_layout, is_interactive, is_selected) = sc
+                .as_element_node()
+                .map(|en| {
+                    let is_selected = selected.as_ref() == Some(&en);
+
+                    en.with_element_debug(|el, layout| {
+                        let id = el
+                            .parent()
+                            .and_then(|p| {
+                                if p.kind() == SyntaxKind::SubElement {
+                                    p.child_token(SyntaxKind::Identifier)
+                                        .map(|t| t.text().to_string())
+                                } else {
+                                    None
+                                }
+                            })
+                            .unwrap_or_default();
+
+                        let type_name = el
+                            .QualifiedName()
+                            .map(|qn| qn.text().to_string().trim().to_string())
+                            .unwrap_or_default();
+
+                        let is_interactive = known_components
+                            .iter()
+                            .position(|kc| kc.name.as_str() == type_name.as_str())
+                            .map(|index| known_components.get(index).unwrap().is_interactive)
+                            .unwrap_or_default();
+
+                        (type_name, id, layout.is_some(), is_interactive, is_selected)
+                    })
+                })
+                .unwrap_or((String::new(), String::new(), false, false, false));
+
+            let width = (sc.geometry.size.width as f32 / root_geometry.size.width as f32) * 100.0;
+            let height =
+                (sc.geometry.size.height as f32 / root_geometry.size.height as f32) * 100.0;
+            let x = ((sc.geometry.origin.x as f32 + root_geometry.origin.x)
+                / root_geometry.size.width as f32)
+                * 100.0;
+            let y = ((sc.geometry.origin.y as f32 + root_geometry.origin.y)
+                / root_geometry.size.height as f32)
+                * 100.0;
+
+            crate::preview::ui::SelectionStackFrame {
+                width,
+                height,
+                x,
+                y,
+                embedding_level: sc.component_stack.len() as i32,
+                is_selected,
+                is_layout,
+                is_interactive,
+                type_name: type_name.into(),
+                id: id.into(),
+            }
+        })
+        .collect::<Vec<_>>();
+
+    Rc::new(slint::VecModel::from(result)).into()
+}
+
 pub fn parent_layout_kind(element: &common::ElementRcNode) -> ui::LayoutKind {
     element.parent().map(|p| p.layout_kind()).unwrap_or(ui::LayoutKind::None)
 }
@@ -296,7 +405,9 @@ fn filter_nodes_for_selection(
     enter_component: bool,
     main_node: &common::ElementRcNode,
 ) -> Option<common::ElementRcNode> {
-    let en = selection_candidate.as_element_node()?;
+    let Some(en) = selection_candidate.as_element_node() else {
+        return None;
+    };
 
     if en.with_element_node(common::is_element_node_ignored) {
         return None;

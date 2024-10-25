@@ -39,12 +39,6 @@ component ResizeHandle inherits Rectangle {
         moved() => {
             root.resize(x-offset, y-offset, false);
         }
-
-        pointer-event(event) => {
-            if event.button == PointerEventButton.left && event.kind == PointerEventKind.up {
-                root.resize(x-offset, y-offset, true);
-            }
-        }
     }
 }
 

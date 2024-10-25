@@ -64,6 +64,19 @@ export struct DropMark {
     y2: length,
 }
 
+export struct SelectionStackFrame {
+    width: percent,
+    height: percent,
+    x: percent,
+    y: percent,
+    embedding-level: int,
+    is-layout: bool,
+    is-interactive: bool,
+    is-selected: bool,
+    type-name: string,
+    id: string,
+}
+
 /// A Range in a source
 export struct Range {
     start: int,
@@ -319,6 +332,8 @@ export global Api {
     callback selected-element-delete();
 
     // ## Element selection:
+    callback selection-stack-at(x: length, y: length) -> [SelectionStackFrame];
+
     callback select-at(x: length, y: length, enter-component: bool);
     callback select-behind(x: length, y: length, enter-component: bool, reverse: bool);
     callback reselect();
