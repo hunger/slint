@@ -68,7 +68,11 @@ component SelectionFrame {
     callback resize(x: length, y: length, width: length, height: length);
     callback can-move-to(x: length, y: length, mouse-x: length, mouse-y: length) -> bool;
     callback move-to(x: length, y: length, mouse-x: length, mouse-y: length);
-    callback select-behind(x: length, y: length, enter-component: bool, same-file: bool);
+    callback select-through(x: length, y: length, enter-component: bool, reverse: bool);
+    callback selection-stack-at(x: length, y: length);
+    callback close-selection-stack();
+    callback select-before();
+    callback select-behind();
     callback selected-element-delete();
 
     if !root.interactive || !selection.is-primary: Rectangle {
@@ -84,7 +88,7 @@ component SelectionFrame {
         }
 
         double-clicked(x, y, modifiers) => {
-            root.select-behind(root.selection.geometry.x + x, root.selection.geometry.y + y, modifiers.control, modifiers.shift);
+            root.select-through(root.selection.geometry.x + x, root.selection.geometry.y + y, modifiers.control, modifiers.shift);
         }
 
         changed has-hover => {
@@ -93,6 +97,25 @@ component SelectionFrame {
             } else {
                 StatusLineApi.help-text = "";
             }
+        }
+
+        pointer-event(x, y, event) => {
+            if event.button == PointerEventButton.middle && event.kind == PointerEventKind.down {
+                root.selection-stack-at(x, y);
+            } else if event.button == PointerEventButton.middle && event.kind == PointerEventKind.up {
+                root.close-selection-stack();
+            }
+        }
+
+        scroll-event(event) => {
+            if event.delta-y > 0 {
+                root.select-to-back();
+                return EventResult.accept;
+            } else if event.delta-y < 0 {
+                root.select-to-front();
+                return EventResult.accept;
+            }
+            return EventResult.reject;
         }
 
         is-moveable: root.selection.is-moveable;
@@ -404,8 +427,21 @@ export component PreviewView {
                             Api.selected-element-delete();
                         }
 
-                        select-behind(x, y, c, f) => {
+                        select-through(x, y, c, f) => {
                             Api.select-behind(x, y, c, f);
+                        }
+
+                        selection-stack-at(x, y) => {
+                            selection-popup.show-selection-stack(x, y);
+                        }
+                        close-selection-stack() => {
+                            selection-popup.close-selection-stack();
+                        }
+                        select-before => {
+                            selection-popup.select-before();
+                        }
+                        select-behind => {
+                            selection-popup.select-behind();
                         }
                     }
                 }
