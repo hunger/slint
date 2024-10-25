@@ -26,13 +26,17 @@ export component SelectionPopup {
     }
 
     public function select-behind() {
-        Api.select-behind(self.selection-x, self.selection-y, true, false);
-        self.selection-stack = Api.selection-stack-at(self.selection-x, self.selection-y);
+        if self.selection-stack.length > 0 {
+            Api.select-behind(self.selection-x, self.selection-y, true, false);
+            self.selection-stack = Api.selection-stack-at(self.selection-x, self.selection-y);
+        }
     }
 
     public function select-before() {
-        Api.select-behind(self.selection-x, self.selection-y, true, true);
-        self.selection-stack = Api.selection-stack-at(self.selection-x, self.selection-y);
+        if self.selection-stack.length > 0 {
+            Api.select-behind(self.selection-x, self.selection-y, true, true);
+            self.selection-stack = Api.selection-stack-at(self.selection-x, self.selection-y);
+        }
     }
 
     in property <length> max-popup-height;
