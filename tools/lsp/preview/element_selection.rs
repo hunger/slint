@@ -201,13 +201,16 @@ fn collect_all_element_nodes_covering_impl(
     component_stack: &mut Vec<Rc<Component>>,
     result: &mut Vec<SelectionCandidate>,
 ) {
+    let debug_id = result.len();
     let ce = self_or_embedded_component_root(current_element);
     let Some(component) = ce.borrow().enclosing_component.upgrade() else {
+        eprintln!("   {debug_id}: >>> early exit: No enclosing component");
         return;
     };
     let component_root_element = component.root_element.clone();
 
     let must_pop = if Rc::ptr_eq(&component_root_element, &ce) {
+        eprintln!("   {debug_id}: Visiting new component {:?}", component.id);
         component_stack.push(component.clone());
         true
     } else {
@@ -225,10 +228,12 @@ fn collect_all_element_nodes_covering_impl(
     }
 
     if must_pop {
+        eprintln!("   {debug_id}: Leaving new component {:?}", component.id);
         component_stack.pop();
     }
 
     if let Some(geometry) = element_covers_point(position, component_instance, &ce) {
+        eprintln!("    {debug_id}: *** Adding {} debug nodes.", ce.borrow().debug.len());
         for (i, _) in ce.borrow().debug.iter().enumerate().rev() {
             // All nodes have the same geometry
             result.push(SelectionCandidate {
@@ -238,6 +243,8 @@ fn collect_all_element_nodes_covering_impl(
                 geometry: geometry.clone(),
             });
         }
+    } else {
+        eprintln!("   {debug_id}: ***: No geometry, not adding anything");
     }
 }
 
@@ -245,9 +252,9 @@ pub fn collect_all_element_nodes_covering(
     position: LogicalPoint,
     component_instance: &ComponentInstance,
 ) -> Vec<SelectionCandidate> {
-    eprintln!("collect elements covering {position:?}");
     let root_element = root_element(component_instance);
     let mut elements = Vec::new();
+    eprintln!("COLLECTION ELEMENTS at {position:?}");
     collect_all_element_nodes_covering_impl(
         position,
         component_instance,
@@ -255,16 +262,8 @@ pub fn collect_all_element_nodes_covering(
         &mut vec![],
         &mut elements,
     );
+    eprintln!("COLLECTION ELEMENTS at {position:?} DONE");
     elements
-}
-
-fn find_main_node(root_node: &common::ElementRcNode) -> common::ElementRcNode {
-    if root_node.children().is_empty() {
-        // Things got merged into one ElementRc, no real connection remains:-/
-        root_node.next_element_rc_node().unwrap_or_else(|| root_node.clone())
-    } else {
-        root_node.clone()
-    }
 }
 
 fn select_element_at_impl(
@@ -272,13 +271,8 @@ fn select_element_at_impl(
     position: LogicalPoint,
     enter_component: bool,
 ) -> Option<common::ElementRcNode> {
-    let root_node = common::ElementRcNode::new(root_element(component_instance), 0)?;
-    // The main node is the first non-ignored node below the root
-    // This is to find the first "real" element in the preview, ignoring the
-    // synthetic nodes we added on top to make the preview work.
-    let main_node = find_main_node(&root_node);
     for sc in &collect_all_element_nodes_covering(position, component_instance) {
-        if let Some(en) = filter_nodes_for_selection(sc, enter_component, &main_node) {
+        if let Some(en) = filter_nodes_for_selection(sc, enter_component) {
             return Some(en);
         }
     }
@@ -312,13 +306,6 @@ pub fn selection_stack_at(
         return Default::default();
     };
 
-    let main_node = {
-        let Some(root_node) = common::ElementRcNode::new(root_element, 0) else {
-            return Default::default();
-        };
-        find_main_node(&root_node)
-    };
-
     let position = LogicalPoint::new(x, y);
 
     let (known_components, mut selected) = crate::preview::PREVIEW_STATE.with(|preview_state| {
@@ -335,7 +322,7 @@ pub fn selection_stack_at(
 
     let result = collect_all_element_nodes_covering(position, component_instance)
         .iter()
-        .filter(|sn| filter_nodes_for_selection(sn, true, &main_node).is_some())
+        .filter(|sn| filter_nodes_for_selection(sn, true).is_some())
         .map(|sc| {
             let (type_name, id, is_layout, is_interactive, is_selected) = sc
                 .as_element_node()
@@ -413,20 +400,23 @@ pub fn parent_layout_kind(element: &common::ElementRcNode) -> ui::LayoutKind {
 fn filter_nodes_for_selection(
     selection_candidate: &SelectionCandidate,
     enter_component: bool,
-    main_node: &common::ElementRcNode,
 ) -> Option<common::ElementRcNode> {
     let Some(en) = selection_candidate.as_element_node() else {
+        eprintln!("Filtered out {selection_candidate:?} => Can't convert to element node");
         return None;
     };
 
     if en.with_element_node(common::is_element_node_ignored) {
+        eprintln!("Filtered out {selection_candidate:?} => is ignored");
         return None;
     }
 
-    if !enter_component && !main_node.is_same_component_as(&en) {
+    if !selection_candidate.component_stack.is_empty() && !enter_component {
+        eprintln!("Filtered out {selection_candidate:?} => other component and no enter_component");
         return None;
     }
 
+    eprintln!("ACCEPTED {selection_candidate:?}");
     Some(en)
 }
 
@@ -449,9 +439,6 @@ pub fn select_element_behind_impl(
         (start_position, elements.len().saturating_sub(current_selection_position + 1))
     };
 
-    let root_node = common::ElementRcNode::new(root_element(component_instance), 0)?;
-    let main_node = find_main_node(&root_node);
-
     for i in 0..iterations {
         let mapped_index = if reverse {
             assert!(i <= start_position);
@@ -460,11 +447,9 @@ pub fn select_element_behind_impl(
             assert!(i + start_position < elements.len());
             start_position + i
         };
-        if let Some(en) = filter_nodes_for_selection(
-            elements.get(mapped_index).unwrap(),
-            enter_component,
-            &main_node,
-        ) {
+        if let Some(en) =
+            filter_nodes_for_selection(elements.get(mapped_index).unwrap(), enter_component)
+        {
             return Some(en);
         }
     }
