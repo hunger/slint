@@ -321,11 +321,14 @@ pub fn selection_stack_at(
 
     let position = LogicalPoint::new(x, y);
 
-    let (known_components, selected) = crate::preview::PREVIEW_STATE.with(|preview_state| {
+    let (known_components, mut selected) = crate::preview::PREVIEW_STATE.with(|preview_state| {
         let preview_state = preview_state.borrow();
 
         let known_components = preview_state.known_components.clone();
-        let selected = preview_state.selected.as_ref().and_then(|s| s.as_element_node());
+        let selected =
+            preview_state.selected.as_ref().and_then(|s| s.as_element_node()).filter(|en| {
+                en.geometries(component_instance).iter().any(|gr| gr.contains(position))
+            });
 
         (known_components, selected)
     });
@@ -337,7 +340,14 @@ pub fn selection_stack_at(
             let (type_name, id, is_layout, is_interactive, is_selected) = sc
                 .as_element_node()
                 .map(|en| {
-                    let is_selected = selected.as_ref() == Some(&en);
+                    let is_selected = if selected.is_none() {
+                        eprintln!("Using first as selection");
+                        select_element_node(component_instance, &en, Some(position));
+                        selected = Some(en.clone());
+                        true
+                    } else {
+                        selected.as_ref() == Some(&en)
+                    };
 
                     en.with_element_debug(|el, layout| {
                         let id = el
