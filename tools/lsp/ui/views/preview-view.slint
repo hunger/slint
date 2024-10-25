@@ -100,9 +100,9 @@ component SelectionFrame {
         }
 
         pointer-event(x, y, event) => {
-            if event.button == PointerEventButton.middle && event.kind == PointerEventKind.down {
+            if event.button == PointerEventButton.right && event.kind == PointerEventKind.down {
                 root.selection-stack-at(root.selection.geometry.x + x, root.selection.geometry.y + y);
-            } else if event.button == PointerEventButton.middle && event.kind == PointerEventKind.up {
+            } else if event.button == PointerEventButton.right && event.kind == PointerEventKind.up {
                 root.close-selection-stack();
             }
         }
