@@ -11,7 +11,6 @@ export component SelectionPopup {
         self.selection-y = y;
         self.selection-stack = selection-stack;
 
-        Api.select-at(self.selection-x, self.selection-y, true);
         self.selection-stack = Api.selection-stack-at(self.selection-x, self.selection-y);
 
         popup.show();
