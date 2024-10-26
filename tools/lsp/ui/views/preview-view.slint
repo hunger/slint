@@ -103,7 +103,7 @@ component SelectionFrame {
             if event.button == PointerEventButton.right && event.kind == PointerEventKind.down {
                 root.selection-stack-at(root.selection.geometry.x + x, root.selection.geometry.y + y);
             } else if event.button == PointerEventButton.right && event.kind == PointerEventKind.up {
-                root.close-selection-stack();
+            //     root.close-selection-stack();
             }
         }
 
@@ -370,15 +370,15 @@ export component PreviewView {
                                 Api.select-at(self.selection-x, self.selection-y, event.modifiers.control);
                             }
                             root.select-mode = false;
-                        } else if (event.kind == PointerEventKind.down && event.button == PointerEventButton.middle) {
+                        } else if (event.kind == PointerEventKind.down && event.button == PointerEventButton.right) {
                             self.selection-x = self.mouse-x;
                             self.selection-y = self.mouse-y;
                             self.selection-kind = SelectionKind.select-at;
 
                             selection-popup.show-selection-stack(self.selection-x, self.selection-y);
-                        } else if (event.kind == PointerEventKind.up && event.button == PointerEventButton.middle) {
+                        } else if (event.kind == PointerEventKind.up && event.button == PointerEventButton.right) {
                             self.selection-kind = SelectionKind.none;
-                            selection-popup.close-selection-stack();
+                            // selection-popup.close-selection-stack();
                             root.select-mode = false;
                         }
                         self.selection-kind = SelectionKind.none;

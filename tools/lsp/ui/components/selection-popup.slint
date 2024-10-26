@@ -5,16 +5,17 @@ import { ListView, Palette } from "std-widgets.slint";
 import { EditorFontSettings, EditorSpaceSettings, SelectionPalette } from "./styling.slint";
 import { Api, SelectionStackFrame } from "../api.slint";
 
-component PopupInner {
+component PopupInner inherits Rectangle {
     in property <length> max-popup-height: 600px;
-
+    property <percent> window-height: 100%;
+    property <percent> window-width: 100%;
     in property <length> selection-x: 0px;
     in property <length> selection-y: 0px;
     in property <[SelectionStackFrame]> selection-stack: [
         {
             width: 100%,
-            height: 100%,
-            x: 0%,
+            height: 40%,
+            x: 10%,
             y: 0%,
             embedding-level: 0,
             is-layout: false,
@@ -33,7 +34,6 @@ component PopupInner {
             is-interactive: false,
             is-selected: true,
             type-name: "TypeB",
-            id: "some_b",
         },
         {
             width: 50%,
@@ -48,6 +48,18 @@ component PopupInner {
             id: "some_a",
         },
         {
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+            embedding-level: 2,
+            is-layout: false,
+            is-interactive: false,
+            is-selected: false,
+            type-name: "Rectangle",
+            id: "alsoInteractive",
+        },
+        {
             width: 50%,
             height: 50%,
             x: 0%,
@@ -56,28 +68,43 @@ component PopupInner {
             is-layout: true,
             is-interactive: false,
             is-selected: false,
-            type-name: "TypeB",
-            id: "some_b",
+            type-name: "VerticalLayout",
         },
         {
-            width: 50%,
-            height: 50%,
+            width: 10%,
+            height: 5%,
             x: 25%,
             y: 25%,
             embedding-level: 0,
             is-layout: false,
             is-interactive: false,
             is-selected: false,
-            type-name: "TypeB",
-            id: "some_b",
+            type-name: "Text",
+        },
+        {
+            width: 50%,
+            height: 100%,
+            x: 0%,
+            y: 0%,
+            embedding-level: 0,
+            is-layout: false,
+            is-interactive: false,
+            is-selected: false,
+            type-name: "Window",
+            id: "",
         }
     ];
-    
-    private property <length> measured-rect-size: 50px;
-    private property <length> frame-height: self.measured-rect-size + EditorSpaceSettings.default-padding * 2;
+    private property <length> max-rect-size: 40px;
+    private property <length> frame-height: self.max-rect-size + EditorSpaceSettings.default-padding * 2;
 
     private property <int> max-visible-frames: Math.floor((root.max-popup-height / 1px) / (self.frame-height / 1px));
     private property <int> visible-frames: Math.min(self.max-visible-frames, root.selection-stack.length);
+    border-radius: 5px;
+    border-width: 0.5px;
+    background: Palette.background;
+    drop-shadow-blur: 10px;
+    drop-shadow-color: black;
+    border-color: lightgray;
 
     width: 250px;
     height: visible-frames * frame-height;
@@ -89,21 +116,40 @@ component PopupInner {
             list-view.viewport-x = 0px;
         }
     }
+    for frame[index] in root.selection-stack: find-window := Rectangle {
+        init() => {
+            if frame.type-name == "Window" {
+                root.window-height = frame.height;
+                root.window-width = frame.width;
+                debug(root.window-height);
+                // debug("Window size: " + root.window-width + " by " + root.window-height);
+            }
+        }
+    }
 
     list-view := ListView {
         for frame[index] in root.selection-stack: frame-rect := Rectangle {
             width: 100%;
             height: root.frame-height;
-
-            background: frame.is-selected ? Palette.alternate-background : Palette.background;
+            background: frame.is-selected ? Palette.alternate-background : transparent;
+            Rectangle {
+                height: 1px;
+                background: Palette.foreground.transparentize(0.9);
+                y: 0;
+            }
 
             if frame.is-selected: Rectangle {
+                y: 0;
+
+                background: Palette.accent-background;
                 init() => {
                     root.select-frame(index);
                 }
             }
 
             function frame-color(frame: SelectionStackFrame) -> brush {
+                return SelectionPalette.interactive-element-selection-secondary;
+
                 if frame.is-interactive {
                     return SelectionPalette.interactive-element-selection-secondary;
                 } else if frame.is-layout {
@@ -114,11 +160,12 @@ component PopupInner {
             }
             function frame-background(frame: SelectionStackFrame) -> brush {
                 if frame.is-interactive {
-                    return SelectionPalette.interactive-element-selection-primary;
+                    return Palette.accent-background.transparentize(0.8); //SelectionPalette.interactive-element-selection-primary;
                 } else if frame.is-layout {
-                    return SelectionPalette.layout-element-selection-primary;
+                    return transparent; //SelectionPalette.layout-element-selection-primary;
                 } else {
-                    return SelectionPalette.general-element-selection-primary;
+                    return Colors.gray;
+                    //this could be frame.color - for any shape whatever is most visible;
                 }
             }
 
@@ -130,24 +177,35 @@ component PopupInner {
             }
 
             HorizontalLayout {
-                padding: EditorSpaceSettings.default-padding / 2.0;
-                spacing: EditorSpaceSettings.default-spacing;
+                visible: (frame.type-name == "Window") ? false : true;
+                padding-left: EditorSpaceSettings.default-padding / 2.0;
+                spacing: EditorSpaceSettings.default-spacing / 2.0;
 
                 Rectangle {
                     width: EditorSpaceSettings.group-indent * frame.embedding-level;
                     height: 100%;
+                    background: Palette.alternate-background;
+                    Rectangle {
+                        x: parent.width;
+                        width: 1px;
+                        height: 100%;
+                        // background: Palette.foreground;
+                    }
                 }
-
+/*
+            width: root.window-height > root.window-width ? 100% : root.window-width;
+            height: root.window-height <= root.window-width ? 100% : root.window-height;
+*/
                 Rectangle {
                     clip: true;
-                    width: root.measured-rect-size + EditorSpaceSettings.default-padding;
-                    height: root.measured-rect-size + EditorSpaceSettings.default-padding;
-
+                    y: EditorSpaceSettings.default-padding/2;
+                    width: root.max-rect-size + EditorSpaceSettings.default-padding;
+                    height: root.max-rect-size + EditorSpaceSettings.default-padding;
                     measure-rect := Rectangle {
-                        width: root.measured-rect-size;
-                        height: root.measured-rect-size;
+                        width: root.window-width * root.max-rect-size;
+                        height: root.window-height * root.max-rect-size;
 
-                        border-color: black;
+                        border-color: frame.is-selected ? Palette.accent-foreground.transparentize(0.6) : Palette.foreground.transparentize(0.85);
                         border-width: 1px;
                         placeholder-rect := Rectangle {
                             x: calculate_pos(measure-rect.width, frame.x);
@@ -156,23 +214,48 @@ component PopupInner {
                             height: calculate_size(measure-rect.height, frame.height);
 
                             border-color: frame-rect.frame-color(frame);
-                            border-width: 1px;
+                            border-width: 0.5px;
                             background: frame-rect.frame-background(frame);
+                            if frame.is-layout: Rectangle {
+                                border-color: Palette.foreground;
+                                border-width: 0.5px;
+                                Rectangle {
+                                    background: Palette.foreground;
+                                    height: 0.5px;
+                                }
+
+                                Rectangle {
+                                    background: Palette.foreground;
+                                    width: 0.5px;
+                                }
+                            }
+                            if frame.is-interactive: Rectangle {
+                                border-color: Palette.foreground;
+                                border-width: 0.5px;
+                                clip: true;
+                            }
                         }
                     }
                 }
 
                 VerticalLayout {
-                    padding: EditorSpaceSettings.default-padding / 2.0;
+                    padding-top: EditorSpaceSettings.default-padding;
+                    padding-left: EditorSpaceSettings.default-padding;
                     spacing: EditorSpaceSettings.default-spacing;
+                    alignment: center;
 
-                    Text {
-                        text: frame.type-name;
+                    if frame.id != "": Text {
+                        text: frame.id;
+                        color: frame.is-selected ? Palette.accent-foreground : Palette.foreground;
+                        font-weight: EditorFontSettings.bold-font-weight;
+                        font-size: EditorFontSettings.label.font-size;
                     }
 
                     Text {
-                        text: frame.id;
-                        font-weight: EditorFontSettings.bold-font-weight;
+                        text: frame.type-name + (frame.is-interactive ? " (TouchArea)" : "");
+                        color: frame.is-selected ? Palette.accent-foreground : Palette.foreground;
+                        font-size: EditorFontSettings.label-sub.font-size;
+                        font-italic: true;
                     }
                 }
             }
@@ -222,11 +305,8 @@ export component SelectionPopup {
         x: 20px;
         y: 20px;
 
-        width <=> inner.width;
-        height <=> inner.height;
-
         init() => {
-            debug("PopupWindow initialized: ", self.width, "x", self.height);
+            debug("PopupWindow initialized");
         }
 
         in property <length> max-popup-height: root.max-popup-height;
@@ -234,11 +314,13 @@ export component SelectionPopup {
         in property <length> selection-x: root.selection-x;
         in property <length> selection-y: root.selection-y;
 
-        inner := PopupInner {
-            max-popup-height <=> popup.max-popup-height;
-            selection-stack <=> popup.selection-stack;
-            selection-x <=> popup.selection-x;
-            selection-y <=> popup.selection-y;
+        VerticalLayout {
+            inner := PopupInner {
+                max-popup-height <=> popup.max-popup-height;
+                selection-stack <=> popup.selection-stack;
+                selection-x <=> popup.selection-x;
+                selection-y <=> popup.selection-y;
+            }
         }
     }
 }

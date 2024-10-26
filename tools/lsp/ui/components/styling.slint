@@ -21,9 +21,9 @@ export struct TextStyle {
 }
 
 export global EditorFontSettings {
-    out property <int> light-font-weight: 300;
+    out property <int> light-font-weight: 100;
     out property <int> regular-font-weight: 400;
-    out property <int> semibold-font-weight: 600;
+    out property <int> semibold-font-weight: 700;
     out property <int> bold-font-weight: 900;
     
     out property <TextStyle> header: {
@@ -35,6 +35,15 @@ export global EditorFontSettings {
         font-size: 14 * 0.0769rem,
         font-weight: root.regular-font-weight
     };
+    out property <TextStyle> label: {
+        font-size: 14 * 0.0769rem,
+        font-weight: root.regular-font-weight
+    };
+    out property <TextStyle> label-sub: {
+        font-size: 14 * 0.0769rem,
+        font-weight: root.light-font-weight
+    };
+
     
     out property <TextStyle> body-strong: {
         font-size: 16 * 0.0769rem,
@@ -80,8 +89,8 @@ export global SelectionPalette {
     out property <brush> general-element-selection-secondary: #2379f480;
     out property <brush> layout-element-selection-primary: #ff0000ff;
     out property <brush> layout-element-selection-secondary: #ff000080;
-    out property <brush> interactive-element-selection-primary: #ff00ffff;
-    out property <brush> interactive-element-selection-secondary: #ff00ff80;
+    out property <brush> interactive-element-selection-primary: #ff00ff22;
+    out property <brush> interactive-element-selection-secondary: gray;
     
     out property <brush> drop-mark-foreground: #00ff00ff;
     out property <brush> drop-mark-background: #00ff0080;

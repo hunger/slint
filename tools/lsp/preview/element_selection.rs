@@ -360,7 +360,7 @@ pub fn selection_stack_at(
                             .map(|index| known_components.get(index).unwrap().is_interactive)
                             .unwrap_or_default();
 
-                        (type_name, id, layout.is_some(), is_interactive, is_selected)
+                        (type_name, id,layout.is_some(), is_interactive, is_selected)
                     })
                 })
                 .unwrap_or((String::new(), String::new(), false, false, false));
