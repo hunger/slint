@@ -461,7 +461,8 @@ export component PreviewView {
     }
 
     selection-popup := SelectionPopup {
-        max-popup-height: root.height;
+        preview-width: root.preview-area-width;
+        preview-height: root.preview-area-height;
     }
 
     // Diagnostics overlay:

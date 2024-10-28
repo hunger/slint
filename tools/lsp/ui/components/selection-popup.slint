@@ -6,9 +6,9 @@ import { EditorFontSettings, EditorSpaceSettings, SelectionPalette } from "./sty
 import { Api, SelectionStackFrame } from "../api.slint";
 
 component PopupInner inherits Rectangle {
-    in property <length> max-popup-height: 600px;
-    property <percent> window-height: 100%;
-    property <percent> window-width: 100%;
+    in property <length> preview-width: 200px;
+    in property <length> preview-height: 400px;
+    private property <float> aspect-ratio: preview-width / preview-height;
     in property <length> selection-x: 0px;
     in property <length> selection-y: 0px;
     in property <[SelectionStackFrame]> selection-stack: [
@@ -97,7 +97,7 @@ component PopupInner inherits Rectangle {
     private property <length> max-rect-size: 40px;
     private property <length> frame-height: self.max-rect-size + EditorSpaceSettings.default-padding * 2;
 
-    private property <int> max-visible-frames: Math.floor((root.max-popup-height / 1px) / (self.frame-height / 1px));
+    private property <int> max-visible-frames: Math.floor(((root.preview-height / 1px) * 0.8) / (self.frame-height / 1px));
     private property <int> visible-frames: Math.min(self.max-visible-frames, root.selection-stack.length);
     border-radius: 5px;
     border-width: 0.5px;
@@ -114,16 +114,6 @@ component PopupInner inherits Rectangle {
             list-view.viewport-y = (index - (self.visible-frames / 2)) * self.frame-height;
         } else {
             list-view.viewport-x = 0px;
-        }
-    }
-    for frame[index] in root.selection-stack: find-window := Rectangle {
-        init() => {
-            if frame.type-name == "Window" {
-                root.window-height = frame.height;
-                root.window-width = frame.width;
-                debug(root.window-height);
-                // debug("Window size: " + root.window-width + " by " + root.window-height);
-            }
         }
     }
 
@@ -170,7 +160,7 @@ component PopupInner inherits Rectangle {
             }
 
             function calculate_pos(p: length, percent: float) -> length {
-                return Math.round((measure-rect.width / 1px) * percent) * 1px;
+                return Math.round((p / 1px) * percent) * 1px;
             }
             function calculate_size(p: length, percent: float) -> length {
                 return Math.max(Math.round((p / 1px) * percent), 2) * 1px;
@@ -192,18 +182,19 @@ component PopupInner inherits Rectangle {
                         // background: Palette.foreground;
                     }
                 }
-/*
-            width: root.window-height > root.window-width ? 100% : root.window-width;
-            height: root.window-height <= root.window-width ? 100% : root.window-height;
-*/
                 Rectangle {
                     clip: true;
                     y: EditorSpaceSettings.default-padding/2;
                     width: root.max-rect-size + EditorSpaceSettings.default-padding;
                     height: root.max-rect-size + EditorSpaceSettings.default-padding;
                     measure-rect := Rectangle {
-                        width: root.window-width * root.max-rect-size;
-                        height: root.window-height * root.max-rect-size;
+                        function calculate_aspect_ration_box(aspect-ratio: float, max-rect-length: length) -> length {
+                            debug("Size: aspect-ratio: ", aspect-ratio,"box length = ", max-rect-length);
+                            return Math.min(aspect-ratio, 1.0) * max-rect-length;
+                        }
+                        
+                        width: calculate_aspect_ration_box(root.aspect-ratio, root.max-rect-size);
+                        height: calculate_aspect_ration_box(1.0 / root.aspect-ratio, root.max-rect-size);
 
                         border-color: frame.is-selected ? Palette.accent-foreground.transparentize(0.6) : Palette.foreground.transparentize(0.85);
                         border-width: 1px;
@@ -295,7 +286,8 @@ export component SelectionPopup {
         }
     }
 
-    in property <length> max-popup-height;
+    in property <length> preview-width;
+    in property <length> preview-height;
 
     private property <[SelectionStackFrame]> selection-stack;
     private property <length> selection-x;
@@ -309,14 +301,16 @@ export component SelectionPopup {
             debug("PopupWindow initialized");
         }
 
-        in property <length> max-popup-height: root.max-popup-height;
+        in property <length> preview-width: root.preview-width;
+        in property <length> preview-height: root.preview-height;
         in property <[SelectionStackFrame]> selection-stack: root.selection-stack;
         in property <length> selection-x: root.selection-x;
         in property <length> selection-y: root.selection-y;
 
         VerticalLayout {
             inner := PopupInner {
-                max-popup-height <=> popup.max-popup-height;
+                preview-width <=> popup.preview-width;
+                preview-height <=> popup.preview-height;
                 selection-stack <=> popup.selection-stack;
                 selection-x <=> popup.selection-x;
                 selection-y <=> popup.selection-y;
