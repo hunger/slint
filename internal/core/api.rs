@@ -257,6 +257,8 @@ fn logical_physical_size() {
 #[derive(Clone)]
 #[non_exhaustive]
 pub enum GraphicsAPI<'a> {
+    /// Pure software rendering
+    Software,
     /// The rendering is done using OpenGL.
     NativeOpenGL {
         /// Use this function pointer to obtain access to the OpenGL implementation - similar to `eglGetProcAddress`.
@@ -275,6 +277,7 @@ pub enum GraphicsAPI<'a> {
 impl<'a> core::fmt::Debug for GraphicsAPI<'a> {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         match self {
+            GraphicsAPI::Software => write!(f, "GrpahicsAPI::Software"),
             GraphicsAPI::NativeOpenGL { .. } => write!(f, "GraphicsAPI::NativeOpenGL"),
             GraphicsAPI::WebGL { context_type, .. } => {
                 write!(f, "GraphicsAPI::WebGL(context_type = {})", context_type)
