@@ -404,6 +404,7 @@ pub struct SoftwareRenderer {
     maybe_window_adapter: RefCell<Option<Weak<dyn crate::window::WindowAdapter>>>,
     rotation: Cell<RenderingRotation>,
     rendering_metrics_collector: Option<Rc<RenderingMetricsCollector>>,
+    rendering_notifier: RefCell<Option<Box<dyn crate::api::RenderingNotifier>>>,
 }
 
 impl Default for SoftwareRenderer {
@@ -417,6 +418,7 @@ impl Default for SoftwareRenderer {
             maybe_window_adapter: Default::default(),
             rotation: Default::default(),
             rendering_metrics_collector: RenderingMetricsCollector::new("software"),
+            rendering_notifier: RefCell::new(None),
         }
     }
 }
@@ -498,6 +500,14 @@ impl SoftwareRenderer {
         else {
             return Default::default();
         };
+        {
+            if let Some(notifier) = &mut (*self.rendering_notifier.borrow_mut()) {
+                notifier.notify(
+                    crate::api::RenderingState::BeforeRendering,
+                    &crate::api::GraphicsAPI::Software,
+                );
+            }
+        }
         let window_inner = WindowInner::from_pub(window.window());
         let factor = ScaleFactor::new(window_inner.scale_factor());
         let rotation = self.rotation.get();
@@ -544,7 +554,7 @@ impl SoftwareRenderer {
             buffer_renderer,
         );
 
-        window_inner
+        let result = window_inner
             .draw_contents(|components| {
                 let logical_size = (size.cast() / factor).cast();
                 for (component, origin) in components {
@@ -599,7 +609,16 @@ impl SoftwareRenderer {
 
                 dirty_region
             })
-            .unwrap_or_default()
+            .unwrap_or_default();
+
+        if let Some(notifier) = &mut (*self.rendering_notifier.borrow_mut()) {
+            notifier.notify(
+                crate::api::RenderingState::AfterRendering,
+                &crate::api::GraphicsAPI::Software,
+            );
+        }
+
+        result
     }
 
     /// Render the window, line by line, into the line buffer provided by the [`LineBufferProvider`].
@@ -674,6 +693,14 @@ impl RendererSealed for SoftwareRenderer {
         text_wrap: TextWrap,
     ) -> LogicalSize {
         fonts::text_size(font_request, text, max_width, scale_factor, text_wrap)
+    }
+
+    fn set_rendering_notifier(
+        &self,
+        callback: Box<dyn crate::api::RenderingNotifier>,
+    ) -> Result<(), crate::api::SetRenderingNotifierError> {
+        self.rendering_notifier.replace(Some(callback));
+        Ok(())
     }
 
     fn font_metrics(
