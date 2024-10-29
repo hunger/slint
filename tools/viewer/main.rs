@@ -18,6 +18,8 @@ use std::path::PathBuf;
 use std::sync::atomic::{AtomicU32, Ordering};
 use std::sync::{Arc, Mutex};
 
+mod headless;
+
 struct Error(Box<dyn std::error::Error>);
 impl std::fmt::Debug for Error {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -111,7 +113,11 @@ fn main() -> Result<()> {
     }
 
     if let Some(backend) = &args.backend {
-        std::env::set_var("SLINT_BACKEND", backend);
+        if backend.as_str() == "headless" {
+            headless::init();
+        } else {
+            std::env::set_var("SLINT_BACKEND", backend);
+        }
     }
 
     #[cfg(feature = "gettext")]
