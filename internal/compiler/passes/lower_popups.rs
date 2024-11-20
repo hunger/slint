@@ -172,6 +172,8 @@ fn lower_popup_window(
             }
         }
     };
+    const ABOUT_TO_CLOSE: &str = "about-to-close";
+    let about_to_close_callback = popup_window_element.borrow_mut().bindings.remove(ABOUT_TO_CLOSE);
 
     let popup_comp = Rc::new(Component {
         root_element: popup_window_element.clone(),
@@ -198,6 +200,7 @@ fn lower_popup_window(
         drop(popup_mut);
         let dummy1 = NamedReference::new(&popup_comp.root_element, name.clone());
         let dummy2 = NamedReference::new(&popup_comp.root_element, name.clone());
+
         let mut popup_mut = popup_comp.root_element.borrow_mut();
         popup_mut.geometry_props.as_mut().unwrap().x = dummy1;
         popup_mut.geometry_props.as_mut().unwrap().y = dummy2;
@@ -232,6 +235,7 @@ fn lower_popup_window(
         y: coord_y,
         close_policy,
         parent_element: parent_element.clone(),
+        about_to_close_callback,
     });
 }
 

@@ -614,7 +614,7 @@ fn call_builtin_function(
                 .expect("Invalid internal enumeration representation for close policy");
 
                 crate::dynamic_item_tree::show_popup(
-                    popup_window,
+                    popup_window.clone(),
                     component,
                     popup,
                     |instance_ref| {

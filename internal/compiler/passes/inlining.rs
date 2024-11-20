@@ -451,6 +451,7 @@ fn duplicate_popup(p: &PopupWindow, mapping: &mut Mapping, priority_delta: i32) 
             .get(&element_key(p.parent_element.clone()))
             .expect("Parent element must be in the mapping")
             .clone(),
+        about_to_close_callback: p.about_to_close_callback.clone(),
     }
 }
 

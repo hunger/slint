@@ -289,6 +289,7 @@ pub struct PopupWindow {
     pub y: NamedReference,
     pub close_policy: EnumerationValue,
     pub parent_element: ElementRc,
+    pub about_to_close_callback: Option<RefCell<BindingExpression>>,
 }
 
 #[derive(Debug, Clone)]

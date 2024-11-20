@@ -447,7 +447,10 @@ export component PopupWindow {
     in property <length> anchor_width;*/
     in property <bool> close-on-click;
     in property <PopupClosePolicy> close-policy; // constexpr hardcoded in typeregister.rs
-    //show() is hardcoded in typeregister.rs
+
+    // show() is hardcoded in typeregister.rs
+    // close() is hardcoded in typeregister.rs
+    callback about-to-close;
 }
 
 // Also not a real Item. Actually not an element at all

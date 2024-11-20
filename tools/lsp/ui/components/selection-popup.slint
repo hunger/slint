@@ -342,6 +342,10 @@ export component SelectionPopup {
         x: root.selection-x + 10px;
         y: root.selection-y + 10px;
 
+        about-to-close() => {
+            debug("Closing PopupWindow");
+        }
+
         VerticalLayout {
             inner := PopupInner {
                 preview-width <=> popup.preview-width;
