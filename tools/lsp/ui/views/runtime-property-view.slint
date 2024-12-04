@@ -1,0 +1,57 @@
+// Copyright © SixtyFPS GmbH <info@slint.dev>
+// SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
+
+import { Palette, VerticalBox, ScrollView }  from "std-widgets.slint";
+
+import { ExpandableGroup } from "../components/property-widgets.slint";
+
+import { Api, ColorData, ElementInformation, RuntimeComponent, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader } from "../components/group.slint";
+import { EditorSizeSettings, EditorSpaceSettings } from "../components/styling.slint";
+
+import { BooleanWidget, ColorWidget, CodeWidget, EnumWidget, ExpandableGroup, FloatWidget, IntegerWidget, StringWidget } from "../components/property-widgets.slint";
+
+export component RuntimePropertyView {
+    in property <bool> enabled;
+
+    property <[RuntimeComponent]> runtime-components <=> Api.runtime-components;
+
+    property <length> key-width: self.width / 2.5;
+    property <bool> element-loaded: root.runtime-components.length > 0;
+
+    width: EditorSizeSettings.property-bar-width;
+
+    content-layer := VerticalLayout {
+        GroupHeader {
+            title: @tr("Runtime Properties");
+            vertical-stretch: 0;
+        }
+
+        if !root.element-loaded: Text {
+            text: @tr("Waiting for preview to load");
+            horizontal-alignment: center;
+            vertical-alignment: center;
+            vertical-stretch: 1;
+        }
+
+        if root.element-loaded: ScrollView {
+            preferred-height: component.preferred-height;
+            component := VerticalBox {
+                alignment: start;
+
+                for ep in root.runtime-components: ExpandableGroup {
+                    enabled: root.enabled;
+
+                    text: ep.component-name;
+                    panel-width: content-layer.width;
+                }
+            }
+        }
+    }
+
+    Rectangle {
+        x: 0;
+        width: 1px;
+        background: Palette.border;
+    }
+}

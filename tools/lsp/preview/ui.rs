@@ -13,7 +13,7 @@ use slint_interpreter::{DiagnosticLevel, PlatformError};
 use smol_str::SmolStr;
 
 use crate::common::{self, ComponentInformation};
-use crate::preview::{properties, SelectionNotification};
+use crate::preview::{properties, runtime_properties, SelectionNotification};
 
 #[cfg(target_arch = "wasm32")]
 use crate::wasm_prelude::*;
@@ -798,6 +798,123 @@ fn update_grouped_properties(
             }
         }
     }
+}
+
+pub fn ui_set_runtime_properties(
+    ui: &PreviewUi,
+    runtime_properties: &HashMap<
+        runtime_properties::RuntimeComponent,
+        Vec<runtime_properties::RuntimeProperty>,
+    >,
+) {
+    // fn map_compiler_type(ty: &langtype::Type) -> ExportedPropertyType {
+    //     use langtype::Type;
+
+    //     let name = ty.to_string().into();
+
+    //     match ty {
+    //         Type::Float32
+    //         | Type::Duration
+    //         | Type::PhysicalLength
+    //         | Type::LogicalLength
+    //         | Type::Rem
+    //         | Type::Angle
+    //         | Type::Percent => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::Float, is_array: false }
+    //         }
+    //         Type::Int32 => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::Integer, is_array: false }
+    //         }
+    //         Type::String => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::String, is_array: false }
+    //         }
+    //         Type::Color => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::Color, is_array: false }
+    //         }
+    //         Type::Image => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::Code, is_array: false }
+    //         }
+    //         Type::Bool => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::Boolean, is_array: false }
+    //         }
+    //         Type::Brush => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::Brush, is_array: false }
+    //         }
+    //         Type::Array(t) => {
+    //             let mut result = map_compiler_type(t);
+    //             result.is_array = true;
+    //             result
+    //         }
+    //         Type::Struct(_) => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::Code, is_array: false }
+    //         }
+    //         Type::Enumeration(_) => {
+    //             ExportedPropertyType { name, kind: PropertyValueKind::Enum, is_array: false }
+    //         }
+    //         _ => ExportedPropertyType { name, kind: PropertyValueKind::Code, is_array: false },
+    //     }
+    // }
+
+    // fn map_exported_property(
+    //     ep: &exported_properties::RuntimeProperty,
+    // ) -> ExportedPropertyInformation {
+    //     let has_getter = matches!(
+    //         ep.visibility,
+    //         i_slint_compiler::object_tree::PropertyVisibility::Output
+    //             | i_slint_compiler::object_tree::PropertyVisibility::InOut
+    //     );
+    //     let has_setter = matches!(
+    //         ep.visibility,
+    //         i_slint_compiler::object_tree::PropertyVisibility::Input
+    //             | i_slint_compiler::object_tree::PropertyVisibility::InOut
+    //     );
+    //     ExportedPropertyInformation {
+    //         name: ep.name.clone().into(),
+    //         has_getter,
+    //         has_setter,
+    //         type_info: map_compiler_type(&ep.ty),
+    //         value: Default::default(),
+    //     }
+    // }
+
+    let mut result: Vec<RuntimeComponent> = vec![];
+
+    if let Some(main) = runtime_properties.get(&runtime_properties::RuntimeComponent::Main) {
+        eprintln!("Exported Properties for <MAIN>:");
+        for p in main {
+            eprintln!("   * {}", p.name);
+        }
+
+        let properties = vec![];
+        // let properties = main.iter().map(|ep| map_exported_property(&ep)).collect::<Vec<_>>();
+
+        result.push(RuntimeComponent {
+            component_name: "<MAIN>".to_string().into(),
+            properties: Rc::new(slint::VecModel::from(properties)).into(),
+        })
+    }
+    for component_key in
+        runtime_properties.keys().filter(|k| **k != runtime_properties::RuntimeComponent::Main)
+    {
+        eprintln!("Exported Properties for {component_key:?}:");
+        if let Some(component) = runtime_properties.get(component_key) {
+            for p in component {
+                eprintln!("   * {}", p.name);
+            }
+
+            let properties = vec![];
+            // let properties =
+            //     component.iter().map(|ep| map_exported_property(&ep)).collect::<Vec<_>>();
+
+            result.push(RuntimeComponent {
+                component_name: component_key.to_string().into(),
+                properties: Rc::new(slint::VecModel::from(properties)).into(),
+            });
+        }
+    }
+
+    let api = ui.global::<Api>();
+    api.set_runtime_components(Rc::new(slint::VecModel::from(result)).into())
 }
 
 fn update_properties(

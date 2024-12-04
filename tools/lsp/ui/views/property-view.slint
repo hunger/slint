@@ -3,7 +3,9 @@
 
 import { Palette, VerticalBox, ScrollView }  from "std-widgets.slint";
 
-import { Api, ElementInformation, PropertyGroup, PropertyInformation, PropertyValueKind } from "../api.slint";
+import { ExpandableGroup } from "../components/property-widgets.slint";
+
+import { Api, ColorData, ElementInformation, RuntimeComponent, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
 import { GroupHeader } from "../components/group.slint";
 import { EditorSizeSettings, EditorSpaceSettings } from "../components/styling.slint";
 
@@ -106,3 +108,4 @@ export component PropertyView {
         background: Palette.border;
     }
 }
+
