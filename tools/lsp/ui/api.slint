@@ -445,6 +445,8 @@ export global Api {
     callback set-color-binding(element-url: string, element-version: int, element-offset: int, property-name: string, property-value: color);
     callback set-string-binding(element-url: string, element-version: int, element-offset: int, property-name: string, value: string, is_translatable: bool, tr_context: string, tr_plural: string, tr_plural_exprression: string);
 
+    callback set-exported-property(name: string, value: string);
+
     // Get the property declaration/definition ranges
     callback property-declaration-ranges(property-name: string) -> PropertyDeclaration;
 }

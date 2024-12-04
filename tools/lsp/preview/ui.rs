@@ -98,6 +98,11 @@ pub fn create_ui(style: String, experimental: bool) -> Result<PreviewUi, Platfor
     api.on_set_color_binding(super::set_color_binding);
     api.on_set_string_binding(super::set_string_binding);
     api.on_property_declaration_ranges(super::property_declaration_ranges);
+    api.on_set_exported_property(|name, value| {
+        let name = name.to_string();
+        let value = value.to_string();
+        crate::preview::set_exported_property(name, value);
+    });
 
     api.on_string_to_color(|s| string_to_color(&s.to_string()).unwrap_or_default());
     api.on_string_is_color(|s| string_to_color(&s.to_string()).is_some());

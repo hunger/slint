@@ -768,6 +768,13 @@ export component PropertyView {
     width: EditorSizeSettings.property-bar-width;
 
     content-layer := VerticalLayout {
+        Button {
+            text: "Toggle me";
+            checkable: true;
+            clicked() => {
+                Api.set-exported-property("change-me", "\{self.checked? "true" : "false"}");
+            }
+        }
         GroupHeader {
             title: @tr("{} Properties", root.current-element.type-name);
             vertical-stretch: 0;

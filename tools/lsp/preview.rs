@@ -570,6 +570,17 @@ fn set_binding(
     }
 }
 
+pub fn set_exported_property(name: String, value: String) {
+    let Some(component_instance) = component_instance() else {
+        return;
+    };
+
+    if name == "change-me" {
+        let _ =
+            component_instance.set_property(&name, slint_interpreter::Value::Bool(value == "true"));
+    }
+}
+
 // triggered from the UI, running in UI thread
 fn show_component(name: slint::SharedString, url: slint::SharedString) {
     let name = name.to_string();
@@ -1791,6 +1802,10 @@ fn update_preview_area(
                 ui,
                 compiled,
                 Box::new(move |instance| {
+                    eprintln!("Exported properties:");
+                    for p in instance.definition().properties() {
+                        eprintln!(" * {p:?}");
+                    }
                     if let Some(rtl) = instance.definition().raw_type_loader() {
                         shared_document_cache.replace(Some(Rc::new(
                             common::DocumentCache::new_from_raw_parts(
