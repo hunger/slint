@@ -1225,6 +1225,7 @@ export component PreviewDataPropertyValueWidget inherits VerticalLayout {
     }
 
     if root.preview-data.kind == PreviewDataKind.Value: PropertyValueWidget {
+        root.value.edited-value = text;
         property-value <=> root.value;
         property-name: root.preview-data.name;
         enabled: root.preview-data.has-setter;
