@@ -1,0 +1,27 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layidth;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text !pt
+                }
+                                                                             er]> layers: [ {
+           default-key-width-u: 10.0,
+           ro:s: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { keyimport { %utt||   e###############      struct Piece  {
+    pok-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: br  #######################ush,
+    game-backUUUUUUUUUUU#l> test: array[2][1].b == "ok" && layers[0].rows[0].key-slots[0].spacer;
+}

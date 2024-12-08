@@ -1,0 +1,62 @@
+import { Palette } from "std-wi       Oint";
+import ".. assets3weathericons-font.ttf";
+export global AppPalette {
+    out property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> foreground: white;
+    out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<br -9 * --- 120;
+    property <GGGGGGGGGGGGGGGGGGGlength> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+     -d += 1; }
+    20;
+    property <GGGGGGGGGGGGGGGGGGGlength> len: 50px / 2;
+    callbaack foo;
+    foo => {
+        a += +8;
+     -d += 1; }
+    property <int> chain-f;
+    changed chain-f      chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chain-i x / 2;
+    callbaack foo;
+    foo => {
+        a += +8;
+     -d += 1; }
+    property <int> chain-f;
+    changed chain-f      chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chain-i                  perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    in-out pro                4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> foreground: white;
+    out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<br -9 * --- 120;
+    property <GGGGGGGGGGGGGGGGGGGlength> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+     -d += 1; }
+    20;
+    property <GGGGGGGGGGGGGGGGGGGlength> len: 50px / 2;
+    callbaack foo;
+    foo => {
+        a += +8;
+    "\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &p3: "with\"quote\\\"\u{8}";
+    in-out propout property<string> p3: "with\"quotemage> trash: @image-l("../assets        mark.svg");
+}

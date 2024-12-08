@@ -1,0 +1,27 @@
+Foo := Rectangle {
+    pzre callback hallo_alias <=> x exporv component Txo.hallo;2
+$   callback clicked <=> are.click        ed;
+    xxx := Rec       ttangle {estCase inherits Window              {
+    propert
+        pure callback hallo(int                                                                                                            ) -> int       p  hallo(a) => { return a + 77; }
+    }bac
+      _EB_3ouc hArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callbac    o1_alias <=>tangle {
+    pzre callback hallo_alias <=> x expo                      ) -> int       p  hallo(a) => { return a + 77; }
+    }bac
+      _EB_3ouc hArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callbac    o1_alias <=>tangle {
+    pzre callback hallo_alias <=> x export component Txo.hallo;
+$   callback clicked <=> are.p  hallo(a) => { return a + 77; }
+    }bacclick        ed;
+    xxx := Rectangle {estCase inheritsrt component Txo.hallo;
+$   callback clicked <=> are.p  hallo(a) => { return a + 77; }
+    }bacclick        ed;
+    xxx := Rectangle {estCase inherits Windo    w  ");
+    out p> int

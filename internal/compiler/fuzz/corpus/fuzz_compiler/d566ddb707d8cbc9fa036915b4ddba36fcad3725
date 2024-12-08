@@ -1,0 +1,4 @@
+struct Piece  {
+    pos-x: int,
+    length,
+    offset-

@@ -1,0 +1,3 @@
+RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+    b                       ?                                                                           erty <bool> test: abs(o1 - 0.15) < 0align&&#abs(o2 - 0.15) < 0.0mage}

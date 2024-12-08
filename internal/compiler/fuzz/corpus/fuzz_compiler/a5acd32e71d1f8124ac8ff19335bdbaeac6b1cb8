@@ -1,0 +1,13 @@
+ component TectCase inherits Wbndow {
+    out propwindow-backgroundos(0);
+    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUU    forward-focus: focus-scope;
+    height: Theme.size-bi   out property<float> t4: cos(90deg);
+    out property<bool> test: (0de Q  s() - 1.0 ).ab)))))))))))valuepx;&& 90deg.cos().g;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(event) => {
+            if (event.text == Key.UpArrow) {
+          abs() < 0.000001;
+}      roo
+t.move-focus-up();
+ 

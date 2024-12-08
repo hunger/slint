@@ -1,0 +1,7 @@
+TestCase := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         }
+    property <bool> west: background == Colors.white && t_ == 1 &&_ldot  == 7;
+}

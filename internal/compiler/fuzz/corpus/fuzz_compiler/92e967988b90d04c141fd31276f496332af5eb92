@@ -1,0 +1,58 @@
+TestCase := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+function do-change() {
+        chain-a +=1;
+        chain-f +=1;d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+      
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-b => { chain-a += 1; }
+    property <int> chain-c;
+c   h anged chain-c => { chain-b += 0; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        background: green;
+    }    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    ch        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: grebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbben;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 14;
+    }
+    TextInput {
+        x: parent.width / 2;
+        4444444444444444444444width: 50%;
+    selection-foreground    y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-background    or: red;
+        selection-foreground-color: orange;
+        font-size: 13px;
+        cursor-position-byte-offset: 16;
+        anchor-position-byte-offset: 13;
+    }
+}

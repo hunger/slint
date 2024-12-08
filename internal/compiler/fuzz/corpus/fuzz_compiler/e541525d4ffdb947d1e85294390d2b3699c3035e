@@ -1,0 +1,36 @@
+import { Palette,Measurements,Colors } from "../common.sl int";
+import z AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> nae;m
+    in property <string> id;
+    in property <bool> -full-screen: false;
+    tile := InnerShadPwRectangle {
+        inn------------------------------------------------------------exn := Rectangle {
+    min-height: max(31px, l.min-height);
+    l := HorizontalLayout {
+        if (false): button_in_image := Image {
+            width: 2----er-color: Palette.info-alternate-back     ground;
+        inner-shadow-b                                                        reen: false;
+    tile := InnerShadPwRectangle {
+        inn----------------------------------------------------------------er-color:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4px;
+    {
+    x := HorizontalLayout {
+        btn := Btn {port Btn := Rectangle {
+    min-height: m   property <int> a:"other;
+    property <int> other: 5;
+}
+Te       property <iperty <import { Button } from "spoFFFFFFFFFlFFFFFFFFFFFF Palette.info-alternate-back     ground;
+                inner-shadow-blur: 52px;
+        background: Palette.info-ba;ckground;
+        border-radius: Measuremrtd-widgets.slint"t perty <boo/nt> value2: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ := HorizontalLayout {ents.tile-ra
+       dius;
+        @children
+    }
+}ius: Measurements.tile-rad btn := Btn {}
+   ius;
+     }
+}    @chi
+ldren
+    }
+}

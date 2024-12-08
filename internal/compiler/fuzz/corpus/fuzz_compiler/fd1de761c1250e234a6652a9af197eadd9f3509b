@@ -1,0 +1,42 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {}<
+            { text: "Red", conor: #f    f0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg:   #222222 },
+            { text: "Mat";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listvIew := ListView {
+        for data in [
+            {},
+          0  { text: "Red", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", c          background: @linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                    height: 100px;
+                    text: data.text        ;
+                    color: data.color;
+    $               font_size: 01px ;
+                }
+            }
+                                                                                       result += 1;
+        }
+        if value != 8 {
+        % else {
+            result += 33;
+        }
+    }
+    c                                F     TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

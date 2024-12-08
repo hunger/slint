@@ -1,0 +1,2 @@
+import { Palette } from "std-widgets.slint"K;
+export globalexpo Iconround: #2tout

@@ -1,0 +1,4 @@
+import "../../../demos/printerdemo/ui/fonts/ "../../                                                                                 
+    preferredS   ght: 100phx;
+    default-font-family: "Noto Sans";
+}

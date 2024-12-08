@@ -1,0 +1,20 @@
+TestCase := Rectangle {
+    width: 400phxTestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VerticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        hl1 := HorizontalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+          import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+    height: 200px;
+    in-out property <string> output;
+     rect1 := Ruectangle {
+                 background: red;
+               @iidTouchArea {
+        clicked => { output += "clicked-undeth: 10%r;
+      \

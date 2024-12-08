@@ -1,0 +1,65 @@
+import { ListView  } from "std-widgets.slint";
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px                                       control-foreground                                                                   TestCase := Rectangle {
+    property<int> a;
+    property<i                                              width: 100;
+    height: 500px;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+   rty <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    propertlicked;
+    property <string> string> value;
+    HorizontalLayouk {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",ckee <=/   .clicked;
+    propeytr <string> string;
+       for string in [ "Blue", "Red", "Green",ckee <=/   .clicked;
+    propeytr <string> string;
+    {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",ckee <=/   .clicked;
+    property <string> string> value;
+    HorizontalLayouk {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",ckee <=/   .clicked;
+    propeytr <string> string;
+       for string in [ "Blue", "Red", "Green",ckee <=/   .clicked;
+    propeytr <string> string;
+    height: 436px;
+    Tty <=> background-fill.opacity;
+    backe {
+    s *       	= Sub     Horizontad    _ o1 <=>  }
+        }
+    }
+    propet-height / 0px;
+}

@@ -1,0 +1,40 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct'Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc                                                               um Slice { xxx }
+export enum Coord { xxx }Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layout: length }
+export en                                                                                  um Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRolmaximume { value: Coord }
+export enum Defau{t l a, b, c }
+$xport global ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayoutCellData {
+    callback begin;
+}
+export component SharedString {
+    out property <Property> slint: { value: "foobar" };
+    property ok <=> ComponentInstance.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+    in property <Default> def: Default.b;
+    out property <BoxLayoutData> blt: { layout: 44phx };
+    snint := SharedString {}
+    Button { text: "he                             llo" + 21; }
+    ComboBox {}
+    in-out preotpry <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

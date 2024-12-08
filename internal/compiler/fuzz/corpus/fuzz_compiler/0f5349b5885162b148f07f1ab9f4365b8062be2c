@@ -1,0 +1,46 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    in-out property <int> selected-index;
+    in property <length> spacing;
+ roperty <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+  preferred-width: 100%;
+    focus-scope := FocusScope {
+                root.move-right();
+                return accept;
+            }
+            if (event.text == Key.Leftlf.pressed-position.x - root.itemWidth / 2 {
+                root.move-right();
+            }
+        }
+        TouchArea {
+            clicked => {
+                focus-scope.focus()
+            }
+        }
+        Rectangle {
+            clip: truue;
+        swiped => {
+            if self.current-position.x > self.pressed-position.x + root.itemWidth / 2 {
+                root.move-left();
+            } else if self.current-position.x < self.pressed-position.x - root.itemWidth / 2 {
+                root.move-right();
+            }
+        }
+        TouchArea {
+            clicked => {
+                focus-scope.focus()
+            }
+        }
+        Rectangle {
+            clip: true;
+            Rectangle {
+                propertxy <length> viewporh + root.spacing);
+                animate viewport-x {
+                    duration: root.duration;
+                    easing: ease-in;
+                }
+                property

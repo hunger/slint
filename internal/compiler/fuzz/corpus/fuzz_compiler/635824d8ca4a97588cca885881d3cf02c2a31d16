@@ -1,0 +1,51 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round                       (1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        attan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 an2(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+ eg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{                   r.height = item-height;
+                            open = false;
+                        property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                                }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.visible-height;
+     }
+                TouchArea {
+                    clicked => {
+                        last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

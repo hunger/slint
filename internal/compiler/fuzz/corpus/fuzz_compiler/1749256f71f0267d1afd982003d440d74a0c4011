@@ -1,0 +1,28 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    propbool> signal_handled;
+    test_signal => {
+        if (block_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 / 1ms;
+    property<int> i2: d1 / (2ms + 0);
+    property<int> untyped_d1: self.d1 / 1ms;
+    property<int> untyped_d2: self.d2 / 1ms;
+    property<int>      }
+        signal_handled = true;
+    }
+    private property <bool> issue_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3: self.d3 / 1ms;
+    property5430: issue_5430_const_with_return ? "true" : "false";
+    out property<bool> test: { return value2 == value && issue_5430<int> untyped_d4: self.d4 / 1ms;
+    property<int> untyped_d5: self.d5 / 1ms;
+    property<int> untyped_d6: self.d6  == "true"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1ms;
+    property<int> 

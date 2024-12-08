@@ -1,0 +1,43 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: bsruh,
+    game-lor: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+ background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int, i  
+ peceark-mode-colors.{econdary : light-mode-colors.secondary;
+    out property <color> text-primary: dark-mode ? dark-mode-colors.text-primary : light-mode-colors.text-primary;
+    out property <color> text-secondary: dark-mode ? dark-mode-colors.text-secondary : light-mode-colors.text-secondary;
+    out property <color> destructive: dark-mode ? dark-mode-colors.destructive : light-mode-colors.destructive;
+    out property <color> push-button-text-color: white;
+    out property <color> active-page-icon-color: root.dark-mode ? #6284FF : #122F7B;
+    out property <color> inactive-page-icon-color: #BDC0D1;
+    out property <color> neutral-box: #BDC0D1;
+      ion: 100msfoo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /r: root.unchecked-color;
+        border-radius: 2px;
+        clip := R

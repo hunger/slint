@@ -1,0 +1,25 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-presse " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

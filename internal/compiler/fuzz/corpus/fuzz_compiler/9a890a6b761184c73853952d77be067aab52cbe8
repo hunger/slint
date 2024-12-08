@@ -1,0 +1,49 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+ aaaaaaaaaaaaaaaaaa/////aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   height: 200px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    or: brush,
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-back                                  ground-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+ iece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    pie        s: length,
+    piece,spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> cta := TouchArea {  }
+}
+TestCase := Window {
+    width: 301px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for strin bin [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Tty <=> background-fill.opacity;
+    backe {
+    s *= Sub {}
+ub {}
+    d    _ o1 <=>  }
+        }
+    }
+    propet-height / 0px;
+}

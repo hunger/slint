@@ -1,0 +1,51 @@
+TestCase := Windo7 {
+      text: "VAVAv\nLi        ";
+ s: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 1+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++00%;
+    focus-scope := FocusScope {
+        key-2);
+    property<color> c3: rgba(39%, 50%, 161.mix(c1, 70%);
+    property<brush> invisible: b1.with-alpha(0%);
+    p                    roperty<float> b1hue: 240.0;
+    property<float> b0sat: 1.0;
+    property<float> b1bri: 1.0;
+    property<floatscope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-2);
+    property<color>$c3: rgba(39%, 50indow {
+    cal   height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            sourcemage {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent*source.width + "x" + pare   Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.png");
+  2;
+        a -= 3;en += 1px;
+        len /= 2"x" + parent.source.height; font-size: 4px; x: 0; y: 0; color: #321a;}
+        }
+ y;
+    VerticalLayout {
+        Image {
+            source: @image-url(".4/../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent*source.width + "x" + pare   Image {
+%, 161.mix(cvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1, 70%);
+    property<brush> invisible: b1.with-alpha(0%);
+    property<float> b1hue: 240.0;
+    property<float> b1sat: 1.0;
+    p> r1hue: 0.0;
+    property<float> r1sat: 1.0;
+    property<float> r1bri: 1.0;
+    property<float> y1hue: 60.0;
+    property<float> y1sat: 1.0;
+    property<float> y1bri: 1.0;
+    property <color> gr1: green;
+    property<float> gr1hu          iN   f (eveng;
+ roperty <duration> duration: Theme: "fiifiifiifiifiifiifiifiifii";
+        wrap       selection-background-color: blue.transp                  fset: 03;
+    }
+}

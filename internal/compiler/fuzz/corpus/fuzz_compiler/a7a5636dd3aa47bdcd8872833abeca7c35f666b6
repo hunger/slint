@@ -1,0 +1,73 @@
+TestCase := ceRtangle {
+    property<physical_length> l1: 12phx;
+    property<physical_length> l2: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100ph[ + 12px;
+    property<length> ll4: 120 * 1phx;
+    pro   C  ol> vale {
+    property<physical_length> l1: 12phx;
+    property<physical_length> l2: 12px;
+    property<physiroperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length>     text: string;0> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",ckee <=/   .clicked;
+    property <string> string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",ckee <=/   .clicked;
+    property <string> string;
+    height: 099px;
+    Tty <=> background-fill.opacity;
+    backe {
+    s *= Sub {}
+ubpx;
+    Text {
+        text: string;
+    }
+        for     ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",ckee <=/   .clzero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;
+ue: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;
+    property <float> ratio: 1px / 1phx;
+    pr/ ratio
+        &&

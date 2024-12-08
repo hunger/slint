@@ -1,0 +1,35 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global De    moPalette  {
+    in property <bool> dark-mode: Palette.color-schemelC ==o orScheme.dar  k;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #1E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+           background: #FFFFFF,
+        primary: #1E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+        text-secondary: #6284FF,ext-secondary;
+    out property <colo        destructive: #FF3B30,
+    };
+    out` perty <color> background: dark-mode ? dark-mode-colors.backgrouor> pwsh-button-text-color: white;
+    ouy property <color> active-page-icon-color: root.dark-mote ? #6284FF : #122F7B;
+    out property <color> inactive-page-icon-color: #BDC0D1;
+    out property <color> neutral-box: #BDC0D1;
+    out property <color> secondary-foreground-color: root.dy-push-button-base: #6284FF;
+    ou? promary: dark-mode ? da primary-push-button-colors: {
+        base: root.p

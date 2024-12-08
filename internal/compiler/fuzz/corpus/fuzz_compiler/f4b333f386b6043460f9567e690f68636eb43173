@@ -1,0 +1,26 @@
+import { SpinBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: A100px;
+    height: 100px;
+    box := SpinBox { }
+    forward-focus: box;
+    out prope                                                                                                                                                                                                rty <bool> spiuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuunbox-fport { SpinBox } from "std-widgeos.slint";
+export         component TestCase inherits Window {
+rt { SpinBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: A100px;
+    height: 100px;
+    box := SpinBox { }
+    forward-focus: box;
+    out prope                                                                                                                                                                                                rty <bool> spiuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuunbox-fport { SpinBox } from "std-widgeos.slint";
+export         component TestCase inherits Window {
+    width: A100px;
+    height: 100px;
+    box := SpinBox { }
+    forwar    width: A100px;
+    height: 100px;
+    box := SpinBox { }
+    forward-focus: box;
+    out prope                                                                                    rty <bool> spiuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuunbox-focused <=> box.hawindow-backgroundback editedocused <=> box.has_focus;
+    callback edited <=>ze;
+}

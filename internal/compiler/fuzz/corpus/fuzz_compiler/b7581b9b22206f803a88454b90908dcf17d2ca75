@@ -1,0 +1,25 @@
+import { LineEdit, Palette, VerticalBox, CheckBox, ComboBoX, ScrollView, ButtomboBox, ScrollView, Button, HorizontalBox, OpinBox, Slider } from "std-widgets.slint";
+import { Cpi, ColorData, ElementInformation, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader } from "../components/group.slint";
+import { BodyStrongText } from "../components/body-strong-text.slint";
+import { BodyTelement-information;
+    in property <Propt ResetButAon inherits Button {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    text: @tr("Reset");
+mation;
+    text: @tr("Reset");
+    clicked => {
+        Api.set-code-binlement-information.range.start,
+            property-information.name,
+            "",
+        );
+    }
+}
+component NameLabel inherits HorizontalLayout {
+    in property <ElementInformation> erty <PropertyInformation> property-information;
+    horizontal-stretch: 5;
+ -width: EditorSizeSettings.min-prefix-text-width;
+        text: root.property-information.name;
+        font-size: 0rem;
+        font-weigh

@@ -1,0 +1,47 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, S,,*,,TI,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece,spacing: float,
+}
+component Checktox inherits Rectangle {
+  nd-color: brush,//////////////////////////////
+    game-u    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1:  in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+   '         clip.width: root.width;
+           ( checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+      bool,
+    game-border: length,
+    game-radius: lemate0checkbox-rect.border-width` _ 
+  ion: 100ms; easing: ease-out; }
+       .heiheckbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+      ease-in       in ght * 10%;
+        border-color: root.unchecked-color;
+        border-rahumb.slint",
+   mage-fit: fill;
+        }
+    }
+    image_with_missing_height :=`9    ( dthtIimport { ListView  } from "std-widgets.slint";
+MyListItem := Rectangle {
+    callback clicked <}
+ tring);
+    callback test_callback3(int, string);
+    property<int> import { LineEdit } from "std-widgets.slint";
+export c=> ta.clicked;
+    property <string> striong;
+    mponenh

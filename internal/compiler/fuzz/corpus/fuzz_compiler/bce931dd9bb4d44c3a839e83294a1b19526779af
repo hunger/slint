@@ -1,0 +1,25 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-struct KeySlot%{ width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+        a: "extra", b: "ok"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" && layers[0].rows[0].key-slots[1].spacer;
+}
+"../../../demos/printerdemo/ui/images/cat.{jpg")(;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$t: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}r(nterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg")(;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling Example";
+    pr      }
+    }
+}

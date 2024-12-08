@@ -1,0 +1,59 @@
+Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    chan1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-b => { chain-a += 1; }=> { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        ba
+    property <int> chain-c;
+    changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        background: green;
+    }    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    cha
+}
+TestCase := Rectangle {
+  nged   property cond <=> s.con

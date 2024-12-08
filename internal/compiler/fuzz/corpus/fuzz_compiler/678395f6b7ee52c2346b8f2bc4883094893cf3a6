@@ -1,0 +1,65 @@
+import { ListView  } from "std-widgets.slint";
+MyListItemItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    T;
+    preferred-width: 800px;
+    preferred-hei ght: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg"[;
+ image-rendering         
+    forwa]]]]]]]]fff : smooth;
+        }
+        Image {
+            source: @image-url("Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+     HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+          
+    forwa]]]]]]]]fff d-wi* 2 + 2 - 50 - 2;
+rdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("Image Scaling Example";
+    preferred-width: 800px;
+    P$referred-height: 600px;
+     HorizontalLayout {
+  !      Image {
+            source: @i*mage]]]]]]]fff d-wi* 2 + 2 - 50 - 2;
+rdem//ui/images/cat.jpg");
+            ime
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green", "Yellow", "Black", "White", "Magenta", "Cyan"] : my := MyListItem {
+                string: string;
+                clicked => { value = string; }
+            }
+        }
+    }
+    property <int> viewport-heighTest := Rectangle {
+    property<color> b1: blue;
+    prope t: lv.viewty<color> b2: #00f;
+    property<color>loat> gr1sa[t: 1.0;
+    property<float> gr1bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 1.0, 0.50196081399917port-hei6)ght /;
+   1p

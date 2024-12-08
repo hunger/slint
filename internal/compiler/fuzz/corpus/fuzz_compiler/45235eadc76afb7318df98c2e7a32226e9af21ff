@@ -1,0 +1,49 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtent: "White", color: #ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff01f ,fbg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(90deg, data.bg,data.bgellow", color: #fft { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        bore                   r-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+ 
+                        if (open) {
+                            r.height = item-height;
+                              height: 300phx;
+  import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {o :Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Resul "Green", color: #00ff00, bg: #eeeeee},
+            { text:"elYlo w", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtent: "White", color: #ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff01f ,fbg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate   }
+                                                                                                                                TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

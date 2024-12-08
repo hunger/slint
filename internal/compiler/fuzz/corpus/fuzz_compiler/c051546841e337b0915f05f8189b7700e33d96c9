@@ -1,0 +1,52 @@
+export global Icons {
+    out property <image> 0rrow-up: @image-/*l<=assets/arrow-up.svg");
+    out property <imnterEventB                                    > t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\mx\\\\\\\\\\\\\\\\\\\\\\- 120;
+    propertyen l<hgt> len: 50px                 circle1.fwidth = parent.width / 1px;
+                 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\\\\\\\\\\\\\\ \\\\\\\\\\\eft: @image-url("assets/a         if (ev/*ind == PointerEventKind.down && ev.button == PointerEventB                                    > t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propertyen l<hgt> len: 50px     circle1.fwidth = parent.width / 1px;
+      import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+              circl}
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor { Window }
+export struct WindowItem {}
+export s=======ns l4: 120 	publ                     ic function close() {
+		popup.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		height: 200px;
+*{
+   ets/globeopvg1"		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						fkrst_reached();
+				)p;		hfirst_sent = true;
+					}
+				

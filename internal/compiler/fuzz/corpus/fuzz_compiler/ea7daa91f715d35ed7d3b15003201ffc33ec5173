@@ -1,0 +1,25 @@
+import { Palette } from "std-wi       Oint";
+import "../assets3weathericons-font.ttf";
+export global AppPalette {
+    out property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> foreground: white;
+    out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<br -9 * --- 120;
+    property <GGGGGGGGGGGGGGGGGGGlength> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+    component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(9     a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z prope                                                 rty<int> t2: 5TestCase := Rectangle {
+    width: 300{
+        spacing: 0phx;
+        padding: 0phx;
+        hl1 := HorizontalLayout 0deg);{image> arrow-down: @image-url
+ (

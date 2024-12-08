@@ -1,0 +1,36 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 100        0 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(180deg)) == 0 && rWindow {
+    in-out property <float> pitch: 0.15;
+    in-out property <floatound(1000*cos(180deg)) == -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == ) &&
+   #    cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(a &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, -------------------------------------------------------------------------------------------------------------------------------10) == 0deg &&
+        atan2(10, 10) ==yyyyyyyyyyyyyyyyyyyyyyy &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        ro nd(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asinyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+         verify;
+}

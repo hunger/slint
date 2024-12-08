@@ -1,0 +1,49 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+   _error+=1 }
+             z: 400;
+            TouchArea {
+                clicked => 
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+                 {rea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+ operty <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> image_with_missing_width_clipped_ok <=> image_with_missing_width.expected_width_ok;
+    propelor: #0f0, value: 8, },
+            e;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=79 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+           z: -1;
+                clicked => { touch_error+=12 }
+            }
+        }
+    }
+}

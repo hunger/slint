@@ -1,0 +1,46 @@
+TestCaSwitchse := Rectangle {
+    tCaSwitchse := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duraoperty<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / poperty <string> value;
+    listvie dele0ms;
+    property<duration> d2: 3s;
+    proption> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duraoperty<duration> d4: 30 * 1ms;
+    property<duration> d4: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / poperty <string> valueed_d7: self.d7 / 1ms;
+    property<int> untyped_d8: sproperty<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duraoperty<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / poperty <string> value;
+    listvie dele0ms;
+    property<duration> d2: 3s;
+    proption> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duraoperty<duration> d4: 30 * 1ms;
+    property<duration> d4: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / poperty <string> valueed_d7: self.d7 / 1ms;
+    property<int> untyped_d8: self.d8 / 1ms;
+}

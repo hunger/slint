@@ -1,0 +1,1 @@
+import { MainWindow } from "main_window.slint";

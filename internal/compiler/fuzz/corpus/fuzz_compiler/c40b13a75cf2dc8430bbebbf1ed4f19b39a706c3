@@ -1,0 +1,67 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    
+iece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-posr: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: lengrt struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor { Window }
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+exporext {
+    property <int> index;
+    t  a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2t struct AccessibleRole { value: Coord }
+export enum Default { duration: 200ms; easing: ease-in-out; }
+                 animate checkbox-rect.border-color { duration: 200ms; easing: cubic-bezier(1,1,1,0); }
+             }
+         }
+     ]
+    hover-rect := Rectangle {
+        background: #f5f 
+f55;       x: - parent.width / 4;
+        y: - parent.height / 4;
+   rder-width: self.height * 10%;
+         order-color: r)ot.unchecked-color;
+        border-radius: 2px;
+        clip := R

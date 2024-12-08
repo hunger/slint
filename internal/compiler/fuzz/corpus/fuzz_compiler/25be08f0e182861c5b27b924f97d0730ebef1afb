@@ -1,0 +1,34 @@
+im]port { Com  =x } from "std-widgets.slint";
+export component TestCase inherits Window {
+   ti wdh: 200px;
+ /- ////////////////////////////////////////////*//.o/////////////////////import { %utt||, #///////////////QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ ////////////////////////////////////import { Com  =x } fro/QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   texport component TestCase inherits Window {
+   ti wdh: 200px;
+ /- / };
+    property<{a: string, b: int}> obj_conversion2: { a: "hello" };
+    property<{a: string, b: int}> obj_cond: true ? { b: 12, a : "ddd" } :  { a: 12, b : 444, c: "nothing" };
+    property<{a: int, b: int}> obj_cond_merge : true ? { a: 1 } : { b: 10 };
+    property<bool> obj_binop_merge : { foo: 0, x: 1 } == { bar: 0, x: 1 };
+    property<string> foo_a : foo.a;
+    property<int> foo_rty <image> arrow-l\\\\\\\\\\\\\\\\\\out property <image> arrow-l\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\T\\\\\\\\\\\\\\\\\\\\\\$## eft: @image-url("assets/arrow-lefe!!!/////////////////////////*//.o/////////////////////import { %utt||, #///////////////QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ ////////////////////////////////////import { Com  =x } fro/QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ ////////////////////////////////////import { Com  =x } from "std-widgets.slint";
+export component TestCase inhe/////////*//.o///////i wdh: 200px;
+ ////////////////////////////////////import { Com  =x } from "std-widgets.slint";
+export component TestCase inhe/////////*//.o////////////////////////////////////QM/////<int> other: 5;
+}
+TestCase := Rectangle {
+    r := Rectang##############le {
+   

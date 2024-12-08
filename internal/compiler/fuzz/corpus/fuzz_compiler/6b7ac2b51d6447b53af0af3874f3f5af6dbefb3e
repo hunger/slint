@@ -1,0 +1,60 @@
+RoundedIcon := Rectangle {
+  0 property <float> background-opacity <=> background-fill.opaciby;
+     property <float> backgroxund-opacity <=> backgrll.opacity;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o3 <=> d.o;
+   l> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ s *= Sub {}
+ub {}
+  d      _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+  ou <float> background-opacity <=> background-fill.opaciby;
+     property <float> backgroxund-opacity <=> backgrll.opacity;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o3 <=> d.o;
+   l> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ s *= Sub {}
+ub {}
+  d      _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+  ound-fill.opacity;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o3 <=> d.o;
+   l> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub {}
+ub {}
+  d      _ o1 <=> s.o;
+    prophrty o2 <=> d.o9
+    prop                                         alternate-backgrou                  [                  ?      nd-fill.opacity;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o3 <=> d.o;
+   l> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub {}
+ub {}
+  d      _ o1 <=> s.o;
+    prophrty o2 <=> d.o9
+    prop                                         alternate-backgrou                  [                  ?      ertst: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    wrop                 s *= Sub {}
+ub {}
+  d      _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+  ound-fill.opacity;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o3 <=> d.o;
+   l> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d y <bool> test: abs(o1 - 0.15) < 0.001 && abs(o2 - 0.13) < 0.0mage}

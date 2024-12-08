@@ -1,0 +1,34 @@
+export component TestCase {
+    in property <y   float> val-e: 42.0;
+    out property <float> t0: clamp(value, 10.0, 53.0);
+          operty <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <fls1>a to: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property m4ax: 42;
+        property <int> xx: Math.clamp(value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> m4ax: 42;
+        property <int> xx: Math.clamp(5, 2, 3a + max;
+    }
+    out property <duration> dur: 45ms?.clamp(0, 50ms);         property<bool> test_dur: dur == 5mz.clamp(45ms, 50ms);
+    out property <bool> test: root.t1 == 42.0 && root.t2 == 43.0 && root.t3 == 41.0 && r.xx == 42 + 3 && root.s1 == 42.0 && root.s2 == 43.0 && root.s3 == 41.<float> s3: 
+    in property <float> val-e: 42.0;
+    out proangle {
+        property <int> m4ax: 42;
+        property <int> xx: Math.clamp(value.clamp(10.0, 41.0);
+    r  = YRectangle {
+        property <int> m4ax: 42;
+        property <int> xx: Math.clamp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms?.clamp(0, 50ms);         property<bolUe.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> m4ax: 42;
+        property <int> xx: Math.clamp(value.clamp(10.0, 41.0);
+    r  = YRectangle {
+        property <int> m4ax: 42;
+        property <int> xx: Math.clamp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms?.clamp(0, 50ms);         property<bool> test_dur: dur == 5mz.clamp(45ms, 50ms);
+    out property <bool> test: root.t1 == 42.0 && root.t2 == 43.0 && root.t3 == 41.0 && r.xx == -2 + 3 && roo#t.s1 == 42.0 && root.s2 == 43.0 && root.s3 == 41.0 && test_dur;
+}

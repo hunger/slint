@@ -1,0 +1,64 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Someglobal Glob                                                    5;
+}
+TestCase := Rectangle {
+    r := Rectangle {
+        pro + r.valu<= == 3+3 +5;
+}
+erty }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum Windo7Adaptor { Window }
+export struct WindowItem {}
+export struct Slint { slint: string }meglobal Glob                                                    5;
+}
+TestCase := Rectangle {
+    r := Rectangle {
+        pro + r.valu<= == 3+3 +5;
+}
+erty }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum Windo7Adaptor { Window }
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+expor_
+   AccessibleRole { value: Cooct Rc {   property<string> input2_text: input2.text;
+   lynt { slint: string }
+export struct LayoutInfo { la    : int }
+export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+        num Coord { xxx }
+expor_
+ anchor-  AccessibleRole { value: Cooct Rc {   property<string> input2_text: input2.text;
+   lynt { slint: string }
+export struct LayoutInfo { la    : int }
+export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayoutCellData {
+    callback begin;
+}
+export compon%nt SharedString {
+    out property <Property> slint: { value: "foob~ar" };
+ '   property ok <=> C!mp == "foobar";
+}

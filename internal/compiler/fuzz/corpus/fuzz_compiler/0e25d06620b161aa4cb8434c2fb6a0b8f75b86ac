@@ -1,0 +1,19 @@
+TestCase := Rectangle {
+    property<physhx;
+    property<bool> test: (4phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+        && l1ical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    prt { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySl t], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [fow] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhx * 5px * 3ms / 2phx)  == (8px(* (3ms / 2phx) * 5px) / ratio
+        && l1ical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sica  padding: 0phx;||           rect1 := Ruectangle {
+                backgrolue;
+}

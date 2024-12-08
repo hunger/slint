@@ -1,0 +1,34 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-rotation-pressed(event) => {
+            r1 += event.text;
+            return event.text == "a" ? acTestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height  width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+                background: c;
+                TouchArea {
+                    width: parent.width;
+                    height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> valF_NOO  ;
+        GridLayout {
+            Rectangle {
+                backgcept : reject; 
+        }
+        FocusScope {
+            key-pressed(event) => {
+    round: c;
+                r2 += event.text;
+              #            To 

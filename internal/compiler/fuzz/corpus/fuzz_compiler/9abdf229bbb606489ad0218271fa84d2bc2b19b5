@@ -1,0 +1,42 @@
+RoundedIcon := Rectangle {
+    property <float> backgrounobd-opa                                              Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+               tangle {
+                background: c      height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width              background: c;
+                TouchArea {
+                    width: parent.widterty <color> unchecked-color;
+    in-out property <bool> cheSked;
+    callback toggled(bool);
+    states [
+ `       checked when root.checked : {
+             clip.width: root.width;
+  l> cheSked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 a        lip.width  eduration: 20ngth> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_len th> l5: 120 * 1phx;
+    property<leng h> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh0phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value:                                                                        erty <bool> test: abs(m0 - 0.15) < 0.((((((((((((item-height((((((((((((((((((NWWW((((((((((001`[& abs(o2 - 0.15) < 0.0mage}

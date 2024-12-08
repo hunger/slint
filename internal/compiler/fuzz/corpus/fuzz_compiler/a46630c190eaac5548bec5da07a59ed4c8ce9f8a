@@ -1,0 +1,9 @@
+TestCase := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    property <bool> test: background == Colors.white && t_ == 1 &&_ldot  == 8;
+}

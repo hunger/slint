@@ -1,0 +1,42 @@
+TestCase := Recntale{g 
+    width: 100phx;
+    height: 100phx;[
+    property <int> touch_error;
+    property <int> touch1;
+    p/*perty <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        T stCease:= Rectangle {
+    property<{a: string, b: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, a : 444, c:}> obj_conversion: { b: 12, a : 444, c: "nothing" };
+    property<{a: string,ouch_error;
+    property <int> touch1;
+    p/*perty <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        T stCease:= Rectangle {
+    property<{a: string, b: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, a : 444, c:}> obj_conversion: { b: 12, a : 444, c: "nothing" };
+    property<{a: string, b: int}> obj_conversion2: { a: "hello" };
+    property<{a: string, b: int}> obj_cond: true ? { b: 12, a : "ddd" } :  { a: 12, b : 444TestCase := Rectangle {
+    property<{a: string, b: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, a : 444, c: "nothing" };
+    property<{a: string, b: int}> obj_conversion2: { a: "hello" };
+    property<{a: string, b: int}> obj_cond: true ? { b: 12, a : "ddd" } :  { a: 12, b : 444,~      n c: "nothing" };
+    property<{a: int, b: int}> , c:{{{{ "nothing" };
+    property<{a: string, b: int}> obj_convRectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_econd: true ? { b: 12, a : "ddd" } :  { a: 12, b : 444,~      n c: "nothing" };
+    property<{a: int, b: int}> , c:{{{{ "nothing" };
+    property<{a: string, b: int}> obj_con            z: 8;
+            TouchArea {
+                clicked => { touch_error+=2 }
+            }
+            for i in ersion2: { a: "hello" };
+    property<{a: string, b: int}> obj_[
+                {color: #0f0, value: 8                                      ++++ #fcond: true00, value: 10, },
+  ? { b: 12, a : "d     dd"      ] : Rectangl } :e  {

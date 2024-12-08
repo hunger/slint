@@ -1,0 +1,13 @@
+import      { Com  =x } frt mos"d-widgets.slint";
+export component TestCase inherits Windo w{
+    width: 200px;
+ /////////"std-widgets.slint";
+export com/////////////////////////////////////////////////////////////   height: 200px;
+    tpt TestCase inherits Window {
+    width: 200px;
+    height: 200px;
+    in-out property <string> output;
+    T      com "std-widgets.slint";
+export component TestCase inherits ///////////////////////////////////////////////////   height: 200px;
+    in-out propechTestCase := Rectanlicked => { g: 0phx;
+output += "  

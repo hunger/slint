@@ -1,0 +1,74 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        bore                   r-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+ 
+                        if (open) {
+                            r.height = item-height;
+                              height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;
+                            open = false;
+    d;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            hed: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;
+                            open = false;
+    d;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r  {
+        for i in 200: r := Item {
+            index: i;
+                }
+          ) {
+                      }
+            }
+        }
+    }
+}

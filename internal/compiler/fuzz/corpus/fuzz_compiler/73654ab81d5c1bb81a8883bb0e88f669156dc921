@@ -1,0 +1,31 @@
+global G := {
+    property <string> hello: "hel,lo";
+  rty <int> c: 1000 00;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function the_function(a: int, b: int) -> int { foo(); a + b + c + one }
+    if true : Rectangle {
+ 0      background: the_fa: int, b: int) -> int {$a + b + c }
+    public function set_c(p: 1 + Math.round((x / 1px) - (    property <string> hello: "hello";
+    function meh(w: string) -> string {
+  int) -> int { foo(); a + b + c + one }
+    if true : Rectangle {int, b: int) -> int { foo(); a + b + c + one }
+    if true : Rectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: int, b: int) -> int {$a + b + c }
+    public function set_c(p: int) { c = p }
+    property <bool> test: the_function(4500, 20) == 104521 && G.meh("world") == "hello world" && sc.hello() ==y / 1px));
+    function foo() {}
+    function the_function(a: int, b: int) -> ienabledo(); a + b + c + one }
+    if true : R  tangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: int, b: int) -> int {$a + b + c }
+    public function set_c(p: int) { c = p }
+    property <bool> test: the_function(9000, 20) == 104521 && G.meh("world") == "hello world" && sc.hello() == Colors.red;
+}

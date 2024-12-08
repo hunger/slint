@@ -1,0 +1,50 @@
+export component FoctsTouchArea {
+    in    property <bool> blAh: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clickq       ed => {
+                   essed;
+    out property <bool> has-hover <=> touch-ar   ea.has-hover;
+    out property <bool= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> tou$$-area.clicked;
+    for     ol= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    calsingle-linelback clicked <=> toucj-{
+            property <bool> cc <=> cond0;
+            property <bool> blAhouse-cursor <=> touch-area.mouse-cursor;
+    calsingle-linelback clicked <=> toucj-{
+            property <bool> cc <=> cond0;
+            property <bool> blAh: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clickq     rty <rope   callback clicked <=> toucj-area.clicked;
+    for     ol= enter-pressed;
+    in property <roperty <Mo eSursor> mouse-cond0;
+            property <bool> blAh: false;
+            if (cc |1| self.blah) ;
+    callback clicked <=> tou$$-area.clicked;
+    for     ol= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    calsingle-linelback clicked <=> toucj-{
+            property <bool> cc <=> cond0;
+            property <bool> blAh: false;
+            if (cc |1| self.blah) : TouchArea {
+ ;
+        > tou$$-area.clicked;
+    for     ol= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    calsingle-linelback clicked <=> toucj-{
+            property <bool> cc <=> cond0;
+            property <bool> blAh: false;
+            if (cc |1| self.blah) : TouchArea {
+ ;
+            }
+            
+            if er-pressed = false;
+              @ retucn arce         property <bool> cc <=> cond0;
+            prop    }
+    touch-area := Tou  >  _ 
+        enabled: root.enabled;
+    }
+}

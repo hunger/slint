@@ -1,0 +1,36 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out pr7operty<float> t2: cos(180deg);
+    out property out property<bool> test: struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-    s: [KeySlot], }
+struct Layer { default-key-width-u: float, total-wKeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey-width-u: 1.0,
+   { width-w,,,,,,,,,,,,,,,,,,,,,,,,,,,wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwu: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [   o }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+          row s: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, .0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true,import { Palette } from "std-widgets.slint";
+import "../assets3weathericons-font.ttf";
+export global AppPaletxe {
+    oWt property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> $   out property<brush> snow-white: Colors.cornsilkperty <[(0deg.cos()    .0).a> t4: cos([{a: string, b: string, c: string}]]> array : [
+        [{`: "hello"}],
+        [],
+        [{a: "world"}, {a: "extra", b: "ok"} ]80deg);
+    out property<bool> test: (0deg.cos()    .0).ab)))))))))))px;&& 90deg.cos().a,
+    ];
+    out property <bool> test: array[2][1].b bs() < 0.000001;
+}
+== "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

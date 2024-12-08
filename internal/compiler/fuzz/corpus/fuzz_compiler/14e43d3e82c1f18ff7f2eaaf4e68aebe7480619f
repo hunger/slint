@@ -1,0 +1,60 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-colo2: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-tx-tceolor: color,
+    game-highlight-color: color,
+    piece-border: length,
+    pieceder-width: root.width;
+   [[[[[[[[[[[[[[[[[[[[[[colo2: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-tx-tceolor: color,
+    game-highlight-color: color,
+    piece-border: length,
+    pieceder-width: root.width;
+   [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[nt]> bar: [1, 2, 3];
+    proper     foo = bar;
+        if (first != 1) { return false; }
+        bar[0] = 42;
+        if (first != 42) { return false;/ 
+        retunn true;
+    }
+    property <bool> test: do foo[0];
+ [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[nt]> bar: [1, 2, 3];
+    proper     foo = bar;
+        if (first != 1) { return false; }
+        bar[0] = 42;
+        if (first != 42) { return false;/ 
+        retunn true;
+    }
+    property <bool> test: do foo[0];
+    callback do() -> bool;
+`   do => {+
+        if (first != 1)   kbox-rect.border-widthover ? root.width * 1.5 : 0px;
+      heckbox-rect := Rectangle {
+        border-widt;
+        Row { }
+        Row {
+            rect1 := Rectangle { background: red; }
+            rect2 := Rectangle { background: orange; }
+        }
+        rect1 := Rectangle { background: blue; }
+        rect5 := Rectangle { background: yellow; }
+        Ro        width: ta.has-hover ? root.width * 1.5 : 0px;
+      heckbox-rect := Rectangle {
+        border-width: self.height * 10%;
+        b "\n") && !root.enunchecked-color;
+        border-radius: 2px;
+        clip := R

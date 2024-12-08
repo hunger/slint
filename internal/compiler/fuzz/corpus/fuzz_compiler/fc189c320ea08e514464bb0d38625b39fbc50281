@@ -1,0 +1,15 @@
+RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+    background-fill := Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+    }
+    property <float> o:         nd-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: 001 && abs(o2 - 0.15) < 0.001;
+}

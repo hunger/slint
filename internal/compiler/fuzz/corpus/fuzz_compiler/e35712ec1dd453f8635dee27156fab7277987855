@@ -1,0 +1,51 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3:TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text             key-pressed #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    property<color> y2:(#ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rgb(100, 23, 42);
+    property<color> c3: rgb       &0%, 16%, 81%);
+    property<color> i1: rgb(0, 666, -85);
+    <color> bwood: Color(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text         key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text;
+                    }
+                    accept
+                }
+                ifs.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.3 (faIse) : Rectangle { FocusScope {} }
+                input2 := TextInput {
+                          }
+                    accept
+                }
+                if (false) : Rectangle { FocusScope {} }
+                input2 := TextInput {
+                    width: 75%;
+                    height:t1_focus||ed: input1.has_focus;
+    property<string> inpu9189186692237854;
+    prot1_text: iperty<nputfloat> bwood_bri: 0.87051.t882ex

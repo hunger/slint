@@ -1,0 +1,45 @@
+export component FocusTouchArea {
+    in oucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scopeth: 64px;
+    or> mouse-cursor <=> touch-area.mouse-cursor;
+  -> int { foo(); a + b + c + o=> {ne }
+    if true : Rectangle {
+        backgr<int> c: 100000;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1p<));
+    function foo(   background: #2360e62;
+b    GridLayout {
+        spaciglobal G := {
+    property <string>                                      b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function the_function(a: i                                                                                                                   nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Rectangle {
+        backgro  F the_fheight: 63px?
+    background: #2360e62;
+b    GridLayout {
+        spaciglobal G := {
+    property <string>                                      b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function the_function(a: i                                                                                                                   nt, b: int) -> int { foo(); a + b + c + o=> {ne }
+    if true : Rectangle {
+        backgr<int> c: 100000;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1p<));
+    function foo() {}
+    function the_function(a: i                                                                                                                   nt, b: int) -> int { foo(); a + b + c + o=> {ne }
+    if true : Rectangle {
+        background: the_function(0, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    png: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+   ublic function in p 

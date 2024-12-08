@@ -1,0 +1,56 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+  out property<float> t3: cos(60deg);
+                       out property<float> t4: cos(90deg);
+    out pro
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                          ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> te in-out property <length> mx: 0;
+    in-out property <length> my: 5;
+    in-out property <float> fwidth: 0;
+    in-out properperty<bool> te in-out property                                                t property<float> t2: cos(180deg);
+    out property<float> t<length> mx: 0;
+    in-out property <length> my: 5;
+    in-out property <float> fwidth: 0;
+    inight-color: color,
+    piece-border: length,
+    piece-back                open = true;
+ground-3: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+ 2  piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-foniewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizojtalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;
+                            open = false;
+       G                 } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+        ,            }
+                }
+                   last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

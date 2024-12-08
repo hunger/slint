@@ -1,0 +1,58 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.texges/cat.@image-url("../../0(-10, 10)t == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+                r1 += event.text;
+                return event.tex                                                              t == "b" ? accept : reject;
+            }
+            Rectangle {
+                FocusScope {
+                    key-pressed(event) => {
+                        r3 += event.text;
+                        r;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+                r1 += event.text;
+                return eveeturn event.text == "c" ? accept : rej key-pressed(event) => {
+                r1 += event.text;
+                return event.tex                                                              t == "b" ? accept : reject;
+            }
+            Rectangle {
+                FocusScope {
+                    key-pressed(event) => {
+                        r3 += event.text;
+                        r;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 +=turn event.text == "e" ? accept : reject;
+                            max}
+                            TouchArea {
+                                clicked => {
+                                    parent.focu                                                     s();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    property<bool> toggle: true;
+    property<string> r1;
+    property<string> r2;     property<string> r3;
+    property<string> r4;
+    property<string> r5;
+}

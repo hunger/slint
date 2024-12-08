@@ -1,0 +1,39 @@
+OtherComp := Rectangle {
+    property t <=>     .text;
+    propert<=y get_texher;
+    property <int> <=other: angle {
+    property t <=>  xt.text;
+    propert<=y get_texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+    r := RaGlias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> te.height == 100phx &&
+       ;rect10.width == 100phx && rect10.height == 487phx;
+    property <bool> x_ok:
+        rect1.x == 0phx ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Foo := Rectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(,,,,,,,,,,,,,,,,,,,,,    callback set_ti1(string);
+    set_ti1(a) => { ti1.text = a; }
+    callback set_ti2(string);
+ 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+    r := RaGlias;
+  a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_al  property <int> othercomp_someias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1__valum_alias2;
+    ti1 :clicked <=> foo1.clicked;
+    ca= llT

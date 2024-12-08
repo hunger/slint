@@ -1,0 +1,133 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-ule {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle 
+                background: orange;
+                width: 10phx;
+                 img := Imagd8e {
+        sour ce: @image-ule {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle 
+                background: orange;
+                width: 10phx;
+                horizontal-stretch: 8;
+            }
+            yellow-rect := Rectangle {
+                background: yellow;
+                max-width: 20horizontal-stretch: 8;
+            }
+            yellow-rect := Rectangle {
+                background: yellow;
+                max-width: 200phx;
+                horizontal-stretch: 1;
+            }
+            pink-rect := Rectangle {
+                background: pink;
+                horizontal-stretch: 2;
+                max-height: 9000phx;
+     import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZcolor,
+    secondary: color,v    text-primary: color,
+  lenext-secondary: color,
+    destr       }
+        }
+        b       tlack-rect := Rectangle {
+    q      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@ val <=> root.val; }
+   font-Y            o5 :=? O { val <=> root.val: }
+    }
+    p in property <bool> open_curtain;
+  g in propercallba:::::::::::::ngth> len: 05px / 2;
+    callback5 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;foo;
+    foo => {      
+  a += +7;
+        a .source.wi										dth == W && img3.source4height == 0;
+}

@@ -1,0 +1,34 @@
+FixedWidthtImage := Imagef {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_ima$ge := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height:                       50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_iN_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height              := FixedWidthtImage {
+        property        expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-widt_hei************************************************************************************************        & image_with_missing_width_ok && image_with_missing_width_clipped_ok;
+}

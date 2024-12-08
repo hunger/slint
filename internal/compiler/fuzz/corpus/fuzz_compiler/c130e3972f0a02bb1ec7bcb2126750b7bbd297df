@@ -1,0 +1,22 @@
+global G := {
+    property <string>                                      b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function the_function(a: i                                                                          Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function the_function(a: i                                                                                                                   nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Ve                                         nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Vectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: ingle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int.                                            lo world" && sc.hello() == Colors.red;
+}

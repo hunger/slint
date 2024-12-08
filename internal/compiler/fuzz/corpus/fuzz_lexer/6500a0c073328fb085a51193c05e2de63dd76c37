@@ -1,0 +1,20 @@
+struct Foo1  { memb#r: ijt, }
+struct Foo2  { a: Foo1 }
+struct Foos  { b: int }vstruct DeleteMe  { c: colo           <[DeleteMe]> data;
+        for d[i] in self.data: Rectangle { }
+    }
+    out property<Palette> palette : xx.a.member > 32 ? {
+       menuBar : #6D7BFB,
+       mainContent :  #fbfbfb,
+       box :   #ffffff,
+    } : {
+       menuBar : #29 7A7,
+       mainContent : #040404,
+       :box : #00. 00,
+    };       box :   #ffffff,
+    } : {
+       menuBar : #29 																																																																																													7A7,
+          $mainContent : #040404,
+       box : #000000,
+    };
+}

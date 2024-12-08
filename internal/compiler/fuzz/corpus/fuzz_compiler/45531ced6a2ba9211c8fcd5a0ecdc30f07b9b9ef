@@ -1,0 +1,56 @@
+TestCase := Rectangle {
+    property<duration> d1forward-bool> issue_5430_const_with_ase := Rectangle {
+    property<duration> d1forward-f    sToNative### {
+    out property has-focus <=> ti.has_focus;
+    out property text <       return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 / 1ms;
+			background: red;
+		}
+		TouchArea {
+			clicked => {     signal_handled = true;
+    }
+    private property <bool> issue_5430_const_with_ase := Rectangle {
+    property<duration> d1forward-f    sToNative### {
+    out property has-focus <=> ti.has_focus;
+    out property text <       return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 <int> untyped_d5: self.d5 / 1ms;
+    prmperty<int> untyped_d7: s: issue_5430_const_with_return ? "true" :;
+    property<int> untyped_d5: self.d5 / 1msd1 / 1ms;
+    properttangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {     signal_handled = true;
+    }
+    private property <bool> issue_5430_const_with_ase := Rectangle {
+    property<duration> d1forward-f    sToNative### {
+    out property has-focus <=> ti.has_focus;
+    out property text <       return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 / 1ms;
+			background: red;
+		}
+		TouchArea {
+			clicked => {     signal_handled = true;
+    }
+    private property <bool> issue_5430_const_with_ase := Rectangle {
+    property<duration> d1forward-f    sToNative### {
+    out property has-focus <=> ti.has_focus;
+    out property text <       return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 <int> untyped_d5: self.d5 / 1ms;
+    prmperty<int> untyped_d7: self.d6  == "true"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1ms;
+    propndow ]nt> 

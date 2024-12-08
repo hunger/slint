@@ -1,0 +1,56 @@
+FixedWidthtImage := Imagef {
+    source: @TestCase := Rectangle {
+    property <[int]> foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+    property <int> first: foo[0];
+    callback do() -> bool;
+  * do => {
+        if (first != 1) { return false;           foo = bar;
+        if (first != 1) { return false; }
+        ba
+            image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image    _contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    ht: 50phx;
+  _ }
+    fixed_image_conta(in := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    Vert    clicked => { touch_error+=78 }
+  icalLayO := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ***********************************************************y <int> first: foo[0];
+    callback do() -> bool;
+  * do => {
+        if (first != 1) *******************************************************? 2 : 4;
+    property <bool> condition : fa	   
+    HoripgntalLayout {
+        o1 :age {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    ht: 50phx;
+  _ }
+    fixed_image_contain := Image {
+        width: 50phx;
+= O { val <=> roow {
+    property <int> val: condition ? 2          }
+        }
+        Rectangle  

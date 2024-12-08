@@ -1,0 +1,48 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-widthit == ImageFit.fill;
+    proparty <bool> image_with_missing_height_ok <=> image_with_missinproperty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 animate c+ip.width { duration: 200ms; easing: ease-in; }
+    g_height.expected_height_ok;
+    property <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    propertatan2ol> image_with_missing_width_clipp180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) horizontal-str    round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45de       }
+        Image {
+            source: @image-url("..slider-base.slintterdemo/ui/images/cat.{jpg");
+d-widgets.slint";
+Item := Text {
+    property <int> index;
+    t  a /= ty<int> t2: 4 + 3 * 2 + 2 -ty <bool> verify:
+     height: 600px;
+    HorizontalLayout {
+  !      Image {
+                     atan2(10, 0) == 90deg &&
+       (atan2(10, -10cos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0
+        atan2(-10, 0)$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Skaling indow {
+    title: "Slin == -90deg &&
+        atan t Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        I      true;
+    propertyselect-allst: verify;../demos/printer
+}
+demo

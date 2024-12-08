@@ -1,0 +1,42 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e  imag_ok: self.herce: @image-url("cat.jpg");
+      R  height: 601phx;
+        property <bool{
+   ||as-back-button: true-:::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, Spin       }
+        image_in_layout_with_expl       := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bo:::::::::::::::::::::::     import { DemoPalette, Page, Spin       }
+        image_in_layout_with_expl       := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.herce: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool{
+   ||as-back-button: true-
+    h 0TestCase >10px;
+        indexspacing: 27px;
+        Rectangne {
+   :::::::::::::::::FEEEEEEK:::;:::::::::::::::::::::::::::::::::::     import { Demo%Palette, Page, Spin   ge_in_layout_with_expl       := Image {
+            image-fit: fill;    }
+        image_in_layout_with_expl       := Image {
+            imag        ill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImag            property <bool> eypected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.rce: @image-url("cat.jpg");
+      R  height: 600phx;
+        property   <bool{
+   ||as-back-button: true-
+]    header: @tr("Scan");
+    GridLay out {
+        spacing: 24    }
+        }
+        Row {
+     > expected_width_ok: self.widt 

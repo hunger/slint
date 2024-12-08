@@ -1,0 +1,33 @@
+TestCe: 10, },
+            ] : Rectangle {
+                z: 78;
+                background: i.color;
+                TouchArea {
+       h_error+=8 }
+            }
+        }
+        Rectangle {
+      0     background: pink;
+            z: -43;
+            TouchArea {
+                clicked => { touchty <boo/*l>+ test: global Glob := {
+    property <int> a: 3;
+    property <int> b: a + 3;
+}
+global Glob2 := {
+    property <int> a:"other;
+    property <int> other: 5;
+}
+Te       property <iperty <import { Button } from "sportd-widgets.slint"t perty <boo/nt> value4: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\true ? Glob2.a : 8eximport          TouchArea {
+                clicked => {
+                debug("HI");
+                touch1+=1
+                }
+            }
+            TouchArea {
+                z: -1;
+           HorizontalLayout {
+        spacing: 0;
+        padding: 0;}
+    }
+}

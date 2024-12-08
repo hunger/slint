@@ -1,0 +1,42 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string>e txt1: "Hello";
+    property <string> text4: "Blah";
+    property ti1_text <=> ti1.text_alhas;
+    property ti2_text <px : 200px;
+		popup.show();
+	}
+	public function 2close() {
+		pop%p.close();
+	}
+    popup := PopupWin$ow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if );
+				}
+			}
+		}
+	}
+	operty othercomp_some_value_alias <=> other_comp.some_value_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> text1;t = a; }
+}

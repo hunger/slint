@@ -1,0 +1,46 @@
+import { ListVie	  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicke                                                                                                                        d <=> ta.clicked;
+    property <string>     string;
+                                                                                      height: 100pv;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    wid ta.clicked;
+    property <string> string;
+    height: 100px;
+    Tty <=th: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Tty <=> background-fill.opacity;
+    backe {
+    s *= Sub {}
+ub {}
+    d    _ o1 <=>  }
+        }
+    }
+    propet-he> background-opacity <=> background-fill.opacity;
+    background-fill := Rectangle {
+        background:  #ff6d34;
+        opacity:  <float> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub :M_-    gle {
+    pight / 0px;
+}

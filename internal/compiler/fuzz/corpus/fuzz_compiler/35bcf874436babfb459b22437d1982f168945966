@@ -1,0 +1,57 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    Hor   out property <float> s1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.clamp(izontalLayout {
+     +   spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            To  uchArea {
+                clicked => { touch_error+=1 }
+            }
+                                                                                                                for i in [
+                {color: #0f0, value: 8, },
+            e;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 1;
+            ToucheAra {
+                clicked => { touch_erzor+=2 }
+            } clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+       	          {     {color: #0f0, value: 8, },
+          /z: -1;
+                clicked  =>t {ouch_error+=12 }
+            }
+        }
+    }
+}

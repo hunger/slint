@@ -1,0 +1,37 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import  { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint        t component Info {
+ppppppppppppppppppppppppppppppppppppppppppp    in property <string> name;
+    in propErty <string>         in property <t.ty <sslint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint                t component Info {
+ppppppppppppppppppppppppppppppppppppppppppp    in property <string> name;
+    in propErty <string>         in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from ".   in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint        t component Info {
+    in property <string> name;
+    in property <string>    ShadowRectangle {
+        inner-color: Paltete.info-alternate-backgroueightse;
+    tile := Innent";
+import { AppState } from ".."general/haText.ty <sslint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint                t component Info {
+ppppppppppppppppppppppppppppppppppppppppppp    in property <string> name;
+    in propErty <string>         in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from ".   in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint        t component Info {
+    in property <string> name;
+    in property <string>    ShadowRectangle {
+        inner-color: Paltete.info-alternate-backgroueightse;
+    tile := Innent";
+import { AppState } from "../appState.slint";
+import { HaText } from "generns: Measurements.tile-radiu      @children
+    }
+}

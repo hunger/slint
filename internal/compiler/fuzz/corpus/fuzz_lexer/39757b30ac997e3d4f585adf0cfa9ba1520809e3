@@ -1,0 +1,4 @@
+ TestCase := Rectangle {
+    property<float> t1: pow(4.0, 2);
+    property<float> t2: pow(9, 3.0);
+}

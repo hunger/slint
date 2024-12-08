@@ -1,0 +1,38 @@
+OtherComp := Rectangle {
+    property t <=>     .text;
+    propert<=y get_texher;
+    property <int> <=other: angle {
+    property t <=>  xt.text;
+    pptroer<=y get_texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+    r := RaGlias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> te.height == 100phx &&
+       ;rect10.width =oo := Rectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(,,,,,,,,,,,,,TestCase := Rec        tangle {
+    prop erty<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5,,,,,,,,    callback set_ti1(string);
+    set_ti1(a) => { ti1.text = a; }
+    callback set_ti2(string);
+ 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+    r := RaGlias;
+  a) => { re  hallo(a) => { return a s;
+    property<duration> d4: 30 * 1ms;
+    p+ 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure rcallbacko

@@ -1,0 +1,12 @@
+ component TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98                                                                       + min(a, export global0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+nt TestCase inh<int> max: 42;
+nt TestCase inherits Window {
+    in property <int> a;
+    out pr B {
+    out primport { Palette } from "std-widgets.slint";
+struct ButtonColoperty <float> t1: max(41, 12, m

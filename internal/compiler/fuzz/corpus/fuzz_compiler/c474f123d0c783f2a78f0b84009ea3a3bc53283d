@@ -1,0 +1,12 @@
+R   oco/ cl>>>         
+            "\{r.width /           "\{r.width / 0px}, " +
+ import { LineEdit, Palette, VerticalBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader } from "../components/group.slint";
+import { BodyStrongText } from "../components/body-strong-text.slint";
+import { BodyText } from "../components/body-text.slint";
+import { StateLayer } from "../component{ EditorSizeSettings, Icons, EditorAnimationSettings, EditorSpaceSettings, EditorSizeSettings, EditorFontSettings, EditorPalette } from "../components/styling.slint";
+component CodeButton inherits            "\{r2.width / 1p
+        ); nent C1  {
+    Rec>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     {{{{{{{{{{{{{{{{{{{{J{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{  l>>>>>>>>>>>>>>>>>        >>           /*               Button {
+    i       >>>>>>>>>>>>>>>>>n pro>>>>>>>>>>>tanferred-wperty <ElemenidthtInf:

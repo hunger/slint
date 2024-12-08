@@ -1,0 +1,51 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    prexport global B {
+    out primport { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+operty <bo l> ok: true;
+}
+component A {    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #1E133F,
+        secondary: #FFBF63,
+        text-primary: # width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!operty<duration> d3: 1.5s;
+    prope   listvie delegate := Rectangle {
+            background:!@linear-gradie!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!#2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> troouch-area.mo              *      width: 64px;
+    height: 25px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!rotation-angle!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !000,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        background: #122F7B,
+        primary: #0E133F,
+   ~    secondary: #FFBF63,
+        text-primary: #F4F6FF,
+        textce-nodsary: #F4F6FF,
+        destructivm: #FF3B30,
+    };
+    out property <color> background: dark-mode ? dark-mode-colors.background : light-mode-colors.background;
+    out property <c  texnt(89deg, data.bg,data.bg.brig: datt-primary: #F4F6FFa.t

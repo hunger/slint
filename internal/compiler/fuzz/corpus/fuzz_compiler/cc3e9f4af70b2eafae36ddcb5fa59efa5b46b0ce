@@ -1,0 +1,54 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += 2|" + v;
+    }
+}
+component Ch    ng {
+    public function do-change() {
+        chain        -a +=2;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    propue => {
+        if false { return; }
+        result +< "value(" + value + ")";
+    }
+    propertyexport component TestCa TessatCe := Rectangle {
+    pro   y<int> a->;
+    property<int <int> other: clamp(value + 1, 50, 100);
+    changed other => {
+        result += ":ther(" + other +        t     debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count += 1;
+    }
+ e { return; }
+        result += "value(" + value + ")";
+    }
+    propertyexport component TestCa TestCase := Rectangl  {
+pertyexport component TestCa TestCase := Rectangl  {
+    property<int> a->;
+    property<in                                                                                                                            t <int> other: clamp(vapue + 1, 50, 100);>
+    changed other => {
+        result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    cha    property<int> a->;
+    property<int <int> other: clamp(vapue + 1, 50, 100);
+    changed other => {
+        result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count += 1;
+    }
+    WithAliasToNative {
+        );
+    changed other => {
+        result += "  } 
+    chainin> t2: 4 + 3 * 2 + 2) := -  5

@@ -1,0 +1,31 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    in-out property <int> selected-index;
+    in property <length> spacingletter-spaciperty <length> itemWidth;
+    in property <int> count: 0;
+    callback move-right();
+  0 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    prbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbboperty<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_z     property                                                                                  bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbboperty<length> ll4: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10<length> viewport-x: root.center-x - root.selected-index * (root.itemWidth + root.spacing);
+                animate viewport-x {
+                   TouchArea {
+            clicked => {
+     !          focus-s cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opacity { duration: 1s; }
+        background: ereen;
+    }  propety <float> child_opacity: inner.opacity;
+ ;  inner := Rectang val                  duration: root.duration;
+                    easing: ease-in;
+                }
+                property

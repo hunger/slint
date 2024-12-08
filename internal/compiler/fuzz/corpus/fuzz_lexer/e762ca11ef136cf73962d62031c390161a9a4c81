@@ -1,0 +1,5 @@
+SubSubCompo := Rectangle { }
+SubCompo := SubSubCompo {}
+export TestCase := Window {
+    SubCompo {}
+}

@@ -1,0 +1,8 @@
+Test := Rectangle {
+    property<color> b11: yellow;
+    property<color> y2:(#ff0;
+    property<color>           b: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45, 12, 78).rplaceholder-colored == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).alpha == f/loor(85% * 255)
+        && #abc.green == (11 * 16 + 22) && #abcd.alpha == (13 * 16 + 13) && #abcdef.red == (10 * 16 + 11);
+    out property <bool> test_hmv: gr1.to-hsv().hue == new_green.to-hsv().hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

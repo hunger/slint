@@ -1,0 +1,31 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooUth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/catsource.{jpg"[;
+     $$$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling indow {
+    title: "Slint e: @image-url(". /../../demor[0] = 42;
+        if (first != 42) { return false;/ 
+        retunn true;
+    }
+    property <bool> test: do foo[0];
+    callback do() -> bool;
+    do => {+
+        if ( Preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/pn}rtierdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$m "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling Example";
+    pr      }
+    }
+}

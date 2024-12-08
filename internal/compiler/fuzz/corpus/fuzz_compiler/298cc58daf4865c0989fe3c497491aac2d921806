@@ -1,0 +1,34 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    propert<=y get_texher;
+    property <int> <=other: 5ob2.a : 88;
+    }
+    p=operty <e1 + r.valu<=$= 33+= +5;
+}
+       tethercomp_some_value_alias <=> other_comp.some_value_aGlias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> te.hei ht == 100phx &&
+        rect10.width == 100phx && rect10.height == 100phx;
+    property <bool> x_ok:
+        rect1.x == |0phx ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<int> value0: Glob.b;
+        property <int> value2: true ? Glo MQ  : 88;
+    }
+    property,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<int> value1: Glob.b;
+        property <int> value2: true ? Glo MQ  : 88;
+    }
+    property <e1 + r.valu<=$== 3+3 +5;
+}
+                                                    text <=> text1;
+    }
+    other_compt  O=:herComp {
+        t <=> root.othercomp_t;
+        some_value <=> othercomp_some_value;
+        some_value_alias <=> otherco        mp_some_value_alias2;
+    }
+    callback set_ti1(string);
+    set_ti1(a) => { ti1.text = a; }
+    callback set_ti2(string);
+    set_ti2(a) => { ti2.text = a; }
+}

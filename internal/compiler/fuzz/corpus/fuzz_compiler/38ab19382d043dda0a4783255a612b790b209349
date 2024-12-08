@@ -1,0 +1,30 @@
+struct Piece  struct Piece A{
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-back{
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+ground-1: brush,
+    piece-background-2: brush,
+    pieceh,
+    piece-background-2: b    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-backrush,
+ ground-color: brush,
+    game-backU   piece-border

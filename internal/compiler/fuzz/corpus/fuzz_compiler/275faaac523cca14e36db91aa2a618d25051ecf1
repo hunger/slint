@@ -1,0 +1,28 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<sTestCas TestCase := Rectangle {
+    property<int> a:12;
+    property<string> s1: "hello\{a}\{a}";
+    property<string> s2Z "\{10}hello\{5.1}";
+    property<string> s3: "x";
+    property<{ a: string }> obj: { a: "a" };
+    property<string> s4: "\{obj.a}xxx";
+    callback foo;
+    foo => {
+        s3 = "\{s3}\{a+0}\{"\{sJ}lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll\{a+0}"}";
+      e  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"e\quto\\"\u{9}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out p                         roperty<bool> e2: p2 == "fox:p &";
+    in property<float> ring> converted_value: round(value * 100)/100;
+    out property <string> ten_dot_one: 10 + increment;
+    out property <bool> test: e1 && !e2 && conv  obj.a = "\{objerted_value == "98.77tring> p2: "f.a}\{"yo"}";
+    }
+}ox:p &
+";
+    in-
+out propert

@@ -1,0 +1,24 @@
+TestCase := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-textTestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    prexport component TestCase  {
+    in-out property <bool> toggle: { return false;-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap }
+    in-out property <int> value: {
+        if (toggle) {
+            return 42;
+      ;
+      }
+        return 100;
+       co 

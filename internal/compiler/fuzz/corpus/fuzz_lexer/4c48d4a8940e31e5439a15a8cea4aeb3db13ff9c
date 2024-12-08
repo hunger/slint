@@ -1,0 +1,48 @@
+export component TestCase inherits Rec  property<string> input1_text: input1. }
+        }
+        re := Rectangle { h0eight: 5px; }
+    }
+    if screen-state : ta2 := TouchAtext;
+    property<bool> input2_focused: input2.has_frea {ocus;
+    property<string> input2_text: input2.text;
+
+        cl}
+icked => { activated = true; }
+    }
+}
+TestCase := Rectangle {
+    width: 400phxTestC
+            ta0 := TouchArea {
+                clicked => {
+                     .height;
+    property <bool> test: img2.source-clip-height * 1px == img2.height && img2.source-clip-width * 1px == img2.width &&
+         img2.width/1px == img2.source.width - 20 && img3.source.width == 0l       .source.height ==put1.has_focus;
+    property<string> input1_text: input1. }
+        }
+        re := Rectangle { h0eight: 5px; }
+    }
+    if screen-state : ta2 := TouchAtext;
+    property<bool> input2_focused: input2.has_frea {ocus;
+    property<string> input2_text: input2.text;
+
+        cl}
+icked => { activated = true; }
+    }
+}
+TestCase := Rectangle {
+    width: 400phxTestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VeKKKKKKKKKKKKKKKKKKKKKrticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        hl1 := HorizontalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+          import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200?x;
+    height: 200px;
+    in-out property <string> output;
+     rect1 := Ruectangle {
+    

@@ -1,0 +1,76 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacingperty <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    chan1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-b => { chain-a += 1; }
+    property <int> chain-c;
+    changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        background: green;
+    }    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int>ed => { touch_error+=1 }
+            }
+            TouchArea {
+                clicked => { touch_error+=180 }
+            }
+            TouchArea {
+                clicked => 
+                clicked => { touch_error+=180 }
+            }
+            TouchArea {
+                clicked => {
+                debug("HI");
+                touch1+=1
+                }
+            }
+            TouchArea {
+                z: -1;
+                clicked => { touch_error+=12 }
+            }
+        }
+    }
+}

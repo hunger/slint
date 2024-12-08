@@ -1,0 +1,42 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+           import { Palette,Measurements,Colors } from "../common.slint";
+import OtherComp := Rectangle {
+    property t <=> text.text;
+    propert<=y get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%, #fad0c4 100%);
+    property <color> foo: #a23;
+    property <brusimport { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+le {
+        backgroun  background:pah> bar: @linear-gradient(1.2rad, foo.darker(0.5), foo.bright        property <float> animated2 : 2* Math.mod(animation-tick()/-2s, 1);
+        background:
+            self.animated <= 1 ? @linear-gradient(90deg, self.col1 self.animated * 0.1, self.col3 self.animated * 1, self.col1 self.animated2f.col3 self.animated2 * 1, self.col1 self.animated * 1)
+            : @city: 0;
+    }
+}
+TestCase := Window {
+    widlinear-gradient(90deg, self.t_reached;
+le {
+        backgroun  background:pah> bar: @linear-gradient(1.2rad, foo.darker(0.5), foo.bright        property <float> animated2 : 2* Math.mod(animation-tick()/-2s, 1);
+ col1 self.animated2 * 10, red self.animate**La{out {
+        spaciyyyy        yyyyyy { text: "Blue", color: #0000ffyyyyyyyyyyyyyyb;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property <e1 + r.valu<=$== 3+3 { AppState } from "../ath: ppState.slint";
+import {

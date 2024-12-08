@@ -1,0 +1,27 @@
+import { ListView  } from "std-widgets.stext: "Green", color: #00ff00, bg: #eeeeee},
+            { text: " ellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtepiece-text-weight-incorrect-pos: int,
+    piecd-text-weight-correct-pos: i        nt,
+    piece-text-font-family: string,
+    piece-radius: leng                                TouchArea { clhcked => { value = data.text; } }
+        }
+lint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: " ellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtepiece-text-weight-incorrect-pos: int,
+    piecd-text-weight-correct-pos: i        nt,
+    piece-text-font-family: string,
+    piece-radius: leng                                TouchArea { clhcked => { value = data.text; } }
+        }
+    }
+}

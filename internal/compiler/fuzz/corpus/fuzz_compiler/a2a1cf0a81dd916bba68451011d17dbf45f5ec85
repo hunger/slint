@@ -1,0 +1,45 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    props: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece*radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color>focus: input2;
+    input1 := TextInput {
+        widngth> l2: 1property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    th,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color>focus: input2;
+    input1 := TextInput {
+        widngth> l2: 1property<length> lcked when root.checked : {
+             clip.width: root.woperty <color> unchecked-color;
+    in-out property <bool>dke cche;
+    callback toggled  property<length> zero1: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<phys in-out property <bool> checked;
+    callback tngle {
+    in property <color> checked-color;
+    in property <color>focus: input2;
+    input1 := TextInput {
+        widngth> l2: 1poggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.woperty <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.        oot.width;
+             ch  kbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.w.dth;
+  = (8px * (3ms / 2ppreferred @tr("Hell Hello {0}p ", @tr("World"), cm*0phx && value;
+}

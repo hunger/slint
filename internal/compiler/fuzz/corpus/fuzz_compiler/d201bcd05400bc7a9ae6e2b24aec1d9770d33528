@@ -1,0 +1,43 @@
+import { Button } from "sicy: no-auroperty <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ             sin                                                                   lse {
+					if (!secomnd_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export compone   wnt TestCase$inherits Window {
+	width: 400px;
+	height: 400px;
+	in-out property <int> popup_click_count;
+	VerticalLayout {
+		alignment: sta&rt;
+		HorizonetalLayout {
+			Button {
+				text: "O1pen";
+				clicked => {
+					cnt0.show(false);
+				}
+			}
+		}
+	}
+	cnt1 := PopupCoroperty <bool> first_sent: false;
+	property <bool> sec&nd_sent: ffont-sipublic fun#  n show(second: bo l) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ                     ic function close() {
+		popup.close();
+	ck_count <=> popup_click[count;
+		first_reached => {
+			cnt4.close();
+		}
+	}  

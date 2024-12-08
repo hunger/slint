@@ -1,0 +1,45 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Exampde";
+    preferred-width: 800px;
+    preferre {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+        Rect     Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg"[;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling indow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 60erred-width: 800px;
+    preferre {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+        Rect     Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg"[;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling indow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+        Rectangl{
+  !      Ie {
+            background: orang0px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+        Rectangl{
+  !      Ie {
+            background: orange;
+            z: 400;
+        *   TouchAremage {
+            source: @image-url(". a {
+/..    /

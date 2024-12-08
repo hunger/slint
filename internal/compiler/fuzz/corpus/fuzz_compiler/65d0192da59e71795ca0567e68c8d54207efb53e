@@ -1,0 +1,42 @@
+import { Palewport_y = -r.y;
+                            r.height = lv.visible-height;
+Colors                      open = true;
+                        }
+                    }
+     : color,clicked => {
+                        if (open) {
+                            r.height = item-h                        open = true;
+                        }
+          } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lr.visible-height;
+                            openn) {
+                            r.height = item-h                        open = true;
+                        }
+          } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.visible-height;
+                            open = true;
+              r inherits Rectangle {
+	width: 400px;
+            }
+                TouchArea {
+                    clicked => {
+                        last-clicked = i;
+                    }
+                }
+           1}: root.p

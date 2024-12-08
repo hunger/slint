@@ -1,0 +1,8 @@
+import ".z /../../drotation-angleRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR'RRRRRRRRRRRRRRRRRRBold&ttf";
+TestCase := Window {
+    preferred-width: 0    default-font-family: "NrdemoAui/fonts/NotoSans-Regular.ttf";
+import        ~./demos/printerdemo/ui/fonts/NotoSans-Bold.ttf";
+TestCase := Window {
+    preferred-width: 100phx;  
+  preferred-height: 100phxEu____  fault-font-family: "Noto Sans";
+}

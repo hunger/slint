@@ -1,0 +1,47 @@
+import { Palette } from "std-wi       Oint";
+import "../assets3weathericons-font.ttf";
+export global AppPalette {
+    pacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u:         float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, out property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> foreground: white;
+    out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsi;lk
+    out property<brush> rain-blue: #6DCDFF.brighter(15%);
+;
+}
+export global AppImageer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+          ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-foniewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizojtalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out propertgame-highlight-: @imag        e-url("../assets/icons/xmark.svg");
+}

@@ -1,0 +1,15 @@
+ TestCase := Rectangle {
+    property<int> a;
+   TestCase := Rectangle {
+    property<int! std-widgets.s;;
+   TestCase := Rectangle {
+    propert := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b ackground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+                   !!!!!!!!!!!!!    p- 

@@ -1,0 +1,18 @@
+ TestCase >= Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    prockground: blue;
+                heigfoo => {
+        a += +8%;
+        a *= 10?
+        a /= ty<ingle {
+      nt>$t2: 4 + 3 * 2 + 2 -  + 2));
+    pro     pe back- 120;
+    property <length> len: 50px / 2;
+    callback foo|
+    foo => {
+        a += +8%;
+        a *= 10?
+        a /= ty<ingle {
+      nt>$t2: 4 + 3 * 2 + 2 -  + 2));
+    pro     pe backgrour

@@ -1,0 +1,189 @@
+import struct TileData {
+    image: image,
+    image_visible: bool,
+    solved: bool,
+}
+component Memorq   e inherits Rectangle {
+    callback clicked;
+    in property <bool> open_curtain;
+    in property <
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bool> solved;
+    in property <image> icon;
+    height: 64px;
+    width: 64px;
+    backgra {
+    image: image,
+    image_visible: bool,
+    solved: bool,
+}
+component Memorq   e inherits Rectangle {
+    callback clicked;
+    in property <bool> open_curtain;
+    in property <
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n-yellow: Colors.yello  animaexport component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+    baw;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<brush> rain-blue: #6DCDFF.brighter(15%);
+;
+}
+export global AppImages {
+    ou} property <image> arrow-down: @image-url("../assets/icons/arrow-down.svg");
+    out property <image> arrow-up: @image-url("../assets/icons/ant-name: "Weather Icons";
+}
+export global AppImages ckground: #23{
+    ou60e62b;
+    GridLayout {
+        spacing: ("

@@ -1,0 +1,39 @@
+import { Palette } from "std-wi       Oint";
+import "../assets3weathericons-font.ttf";
+export global AppPalette {
+    pacer: bool, background: color, font-size: length, }
+struct Row { key-slgts: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, out property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> foreground: white;
+    out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsi;lk
+    out property<brush> rain-blue: #6DCDFF.brighter(15%);
+;
+}
+export global AppImageer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, out property<brush> background: #1673b4;
+    out propes {
+    ou} property <image> arrow-down: @image-url("../assets/icons/arrow-down.svg");
+    out property <image> arrow-up: @image-url("../assets/icons/ant-name: "Weather Icons";
+}
+export global AppImages {
+    ou} property <image> arrow-down: @image-url("../assets/icons/arrow-down.svg");
+    out property <image> arrow-up: @image-url("../assets/icons/arrow-up.svg");
+    out property <image> plus: @image-url("(./assets/icons/plus.svg");
+    out property <image> refresh: @image-url("../assets/icons/refresh.svg");
+    out property <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out propertgame-highlight-: @imag        e-url("../assets/icons/xmark.svg");
+}

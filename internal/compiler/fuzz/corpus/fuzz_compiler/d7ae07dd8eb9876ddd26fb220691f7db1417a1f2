@@ -1,0 +1,51 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   cho       erty <int> cha    ;struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           defaultVTable {}
+export component ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ;ZZZZZZZZZZZZZZZZTestCase  {
+    in property       chain-c;
+    changed chain-c C>{
+    in-out pTestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangl Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           defaultVTable {}
+export componezt ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZTestCase ct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           defaultVTable {}
+export componentarent.width;
+        heimport { ComboBox } gforward-focus: input2;
+    input1 := TextInpue   {
+      wmdth: parent.widt{
+roperty<string> p1: "hello";
+    in        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*e {
+    img := Image TestCase := Rectangle {
+    width: 200phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        heimport { ComboBox } gforward-focus: input2;
+    input1 := TextInput   {
+      wmdth: parent.widt{
+roperty<string> p1: "hello";
+    in        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-u-out rs3l("proi

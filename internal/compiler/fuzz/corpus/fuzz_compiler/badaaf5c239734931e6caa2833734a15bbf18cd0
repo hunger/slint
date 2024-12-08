@@ -1,0 +1,80 @@
+TestCase := Window {
+    widtse := Window {
+    width: 65px;
+    height: 64px;
+    forward-focns: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;   
+     text: "VAVAv\nLi e\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus; i-text  nput;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+ selection-foreground-color: yellow;
+      wrap: word-wrap;
+        color: green;
+        select  x: ion-bgckground-color: blue.transparentize(10%);
+        select  n-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-= TextInputt-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;   
+     text: "VAVAv\nLi e\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus; i  ext-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+ selection- foreground-color: yellow;
+      wrap: word-wrap;
+        color: green;
+        select  x: ion-bgckground-color: blue.transparentize(10%);
+        select  n-foreground-color: yellow;
+      
+        selection-= TextInputt-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;   
+     text: "VAVAv\nLi e\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus; i  ext-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+ selection- foreground-color: yellow;
+      wrap: word-wrap;
+        color: green;
+        select  x: ion-bgckground-color: blue.tt: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: p       anchor-position-byte-offset: 13;
+   {
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: p       anchor-position-byte-offset: 13;
+    }
+}

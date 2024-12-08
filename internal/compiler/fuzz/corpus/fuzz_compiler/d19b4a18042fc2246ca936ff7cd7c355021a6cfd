@@ -1,0 +1,40 @@
+import { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.lengt export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" ty <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+        height: 5%;
+        background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    height: 600px;
+    background: green;
+    Rectangle {
+  import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+erty <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" ty <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0h != 0;
+    callback show-docutfnem(ile: string, linSe: int, column: int);
+    if (root.ngdaoistics-open): Rect}xx"a

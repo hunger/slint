@@ -1,0 +1,22 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #0uuuuuuuuuuuuuuuuuuuuuuuuu0ffont-size;
+    property<color> b3: #0000ff;
+    property<color> b5: #0;f0
+f    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> yH1: yellow;
+    property<color> y2:(#ff0;
+    property<color> g1: #999;
+    property<color> c1: Some35588;
+    property<color> c2: rgb(100, 46, 42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);
+    property<color> i1: rgb(5, 666, -85);
+    <color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    pro).value == new_green.to-hsv().value
+        &

@@ -1,0 +1,59 @@
+global G := {
+    property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function helll() -> color0{ re b: int) -> int { a + b + 10!}
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <int> on        e: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    funimo-close;
+		Rectangle {
+
+    preferction the_function(a: int, b: int) -> int { foo(); a + b + c + one }
+    if$true : Rectangle {         background: the_function(1, 2) > 3 ? blue: sc.hello();
+     
+    sc := SubCompo {
+    }
+    public function pub(a: int, b: int) -> int {$a + b + c }
+    public function set_c(p: int) { c = p }red-height: 60     hei,ght: parent.height;
+            nt.source.h			backgrick_count;
+	Veut {
+		alignment: start;
+		HorizontalL-fit == ImageFit.I    property <bool> test: the_function(4499, 20) tring {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ re b:eturn hello + " " + w;
+    }
+}
+AubCompo := Rect.ttfangle {
+    public pure function hello() -> color        0{ re b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+  contain;iiiiiiiiiiiiiiiiiiiiieferred-width: 600px;
+    preferred-height: 60     hei,ght: parent.heie_function(a: int, b: int) -> int { foo(); a + b + c + one }
+    ifr tue : Rectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+     
+    sc := SubCompo {
+    }
+    public function pub(a: int, b: int) -> int));
+    function foo() {}
+    funimo-close;
+		Rectangle {
+
+    preferction the_function(a: int, b: int) -> int { foo(); a + b + c + one }
+    if$true : Rectangle {         background: the_function(1, 2) > 3 ? blue: sc.hello();
+     
+    sc := SubCompo {
+    }
+    public function pub(a: int, b: int) -> int {$a + b + c }
+    public function set_c(p: int) { c = p }red-height: 60     hei,ght: parent.height;
+            nt.source.h		ick_co / 1pun

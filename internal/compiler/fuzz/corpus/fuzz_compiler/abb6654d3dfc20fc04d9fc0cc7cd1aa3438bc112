@@ -1,0 +1,19 @@
+TestCase := Window {
+                          TestCase := Rectangle {
+    property<int!        a /= 2;
+        aproperty<int!> a;
+    property<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    properoperty<int!> a;
+    property<int> t1: 4 + 3 * 2 + 2 - 50 - 2                                                                                       width: 100phx;
+    height: 100phx;
+    FocusScope {
+        ke
+                                return event.text ==  "e" ? acc%pt : reject;
+                            }
+                            TouchArea {
+                                clicked ;
+    property<int> t2: 500 / => {
+                                    parent.focus();
+                                }
+ shadow-b                                                        reen: false;
+    tile := InnerShadPwRectangle {                               ->                         A   2 * 30     - 

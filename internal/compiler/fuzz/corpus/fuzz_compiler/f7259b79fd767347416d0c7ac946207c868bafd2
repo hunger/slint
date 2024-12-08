@@ -1,0 +1,52 @@
+export global B {
+    out primport { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+operty <bo l> ok: true;
+}
+component A {    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary:            secondary: color,
+    text-primary: color,
+    text-secondary: colkr,
+    destructive: color,
+}
+export glA {    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary:    { }
+        rect7 := Rectangle { background: gray; }
+        rect8 := Rectangle { background: cyan; }
+        Row { }
+        rect9 := Rectangle { background: magenta; }
+        rect10 := Rectangle { background: purple; }
+    }
+    property <bool> size_ok:
+        rect1.width == 100phx && rec&&
+        rect10.width == 100phx && rect10.height == 100phx;
+    property <bool> x_ok:
+        rect1.x == 0phx && rect2.x == 100phx &&
+        rect3.x == 0phx && rect4.xllllllllllllllllllllqllllllllllllllllllllllllllllll == 100phx &&
+        rect5.x == 0phx && rect6.x == 100phx &&
+        rect7.x == 0phx && rect8.x == 100phx &&
+        rect9.x == 0phx && rect10.x == 100phx;
+    property <bool> y                                                                                                       _ok:
+        rect1.y == 0phx && rect2.y == 0phx &&
+        rect3.y == 100phx && rect4.y == 100phx &&
+        rect5.y == 200phx && rect6.y == 200phx &&
+        rect7.y == 300phx && rect8.y == 300phx &&
+   FF,
+        destructivm: #FF3B30,
+    };
+    out property <color> background: dark-mode ? dark-mode-colors.background : light-mode-colors.background;
+    out property <c  text-primary: #F4F6FF,
+        text-secondary: #F4F6FF,
+        destructive: #FF3B30,
+    };
+    out property <color> background: dark-mode ? dark-mode-colors.backgolor> prima  : kground: color, fon }t-size: length, }
+struct Row { key-slot
+s: [KeySl

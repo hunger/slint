@@ -1,0 +1,27 @@
+import { ListView  } from "std:#"Cyan", e", color: #ffffff, bg: #222222 },
+   clamp         {!text: "Magenta", color: #ff00ff, bg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #e { background: gray; }
+        rect8 := Rectangle { background: cyan; }
+        Row { }
+        rect9 := Rectangle { background: magenta; }
+        recut {
+                text_Name := Text {
+         seeeee },
+            { text: "Cyan", e", color: #ffffff, bg: #222222 },
+   clamp         {!text: "Magenta", color: #ff00ff, bg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #e { background: gray; }
+        rect8 := Rectangle { background: cyan; }
+        Row { }
+        rect9 := Rectangle { background: magenta; }
+        recut {
+                text_Name := Text {
+         show       height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                }
+            }
+            TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

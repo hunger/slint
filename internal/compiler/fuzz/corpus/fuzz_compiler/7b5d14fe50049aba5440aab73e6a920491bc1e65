@@ -1,0 +1,12 @@
+export{    component RipplCircfont-metricsRectangle {
+    in-out property <length> radius: 0;
+    in-out property cosmich> mx; 0;
+    in-ou                                                                                         t property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: round: #2360e62b;
+   &Grid**&&***********font-metrics*****ase inhe  yyyyyyyyyyyyyy**

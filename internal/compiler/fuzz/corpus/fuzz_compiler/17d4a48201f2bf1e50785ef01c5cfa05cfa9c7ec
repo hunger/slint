@@ -1,0 +1,39 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition *******************************************************************kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk***********************************************? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ", @tr("World"), int_va O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chy <int> val: condition *******************************************************************kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk******* changed chain-c => { chlue + 1);
+    out property <string> t5: @tr("Untranslated strain-b += 1; }
+    priog");
+    property <stringoper>

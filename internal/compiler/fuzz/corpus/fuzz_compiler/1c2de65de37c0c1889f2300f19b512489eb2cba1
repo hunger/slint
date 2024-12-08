@@ -1,0 +1,49 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SOption { n: None }
+export structTestCase := Window {
+    widtse         w {
+    width: 64px;
+    height: 64px;
+    forwaq       : i-text-input;
+    i-text-input := TextInput { 
+     w {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh:_____________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+OOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O________________________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {r 
+ -}
+OOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O________________________________UOOOOOOOOO}________________________________@__________OOOOOOORectangle {
+b    a Component {o: nimate background {
+ 
+ -}
+O___________________________________________      y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+TestCase         color: green;
+        selection-background-color: blue.transparentize(10Option }
+export struct Model { c: Component }
+export%);
+    s  truc  

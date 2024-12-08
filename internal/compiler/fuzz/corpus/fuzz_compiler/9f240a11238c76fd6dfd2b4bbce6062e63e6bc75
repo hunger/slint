@@ -1,0 +1,14 @@
+Test := Rectangle {
+    property<color> b11: yellow;
+    property<color> y2:(#ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rg    property<color> b5: #0b(100, 23, 42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);     property<color> i1: rgb(0, 666, -85);
+    <color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79300555135514;
+    property<float> bwood_sat: 0.39189186692237854;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors.blue.blue ==f.red == (10 * 16 + 11);
+    out property <bool> test_hsv: gr1.to-hsv().hue == new_green.to-hsv().hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

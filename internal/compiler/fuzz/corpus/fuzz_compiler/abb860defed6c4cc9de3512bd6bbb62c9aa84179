@@ -1,0 +1,35 @@
+export component TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    cha: condition ? 2 :  }
+        o3 := O { %val <=> root.val; }
+        o4 := O { val <=> rootchanged chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<bbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    cha: condition ? 2 :  }
+        o3 := O { %val <=> root.val; }
+        o4 := O { val <=> rootchanged chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { chain-f +ent Test    N   o4 := O { val <=> rootchanged chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<bbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    cha: condition ? 2 :  }
+        o3 := O { %val <=> root.val; }
+    .......................    o4 := O { val <=> rootchanged chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro    width-u: 0.5}, { spacer: true, width-u1 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, background: #bbbbbb }, ] }
+           ],
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : [
+        [{a: "hello"}],
+        [],
+       nverted_value == "98.77" && ten_dot_one == "11.1";
+}

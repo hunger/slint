@@ -1,0 +1,34 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sOtherComour ce: @image-url("caT.jpg");
+    }
+    im2g := Image {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_event.text;
+        ??  property <boop := Rectangle {
+    property t <=> text.text;
+    propert<=y get_texhimport { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: .00px;
+    height: 540px;
+    property <string> value;
+    listviffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffew := ListView {
+        for data in [
+            { t: "White", color: #ffffff, bg: #222222 },
+     |||||||||||||||||||||||||       { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(920deg, data.bg,data.bg.brighter   w||||||||||||||||||t||||    |||||||(0.5));
+            HorizontastCase := Window {
+    width: .00px;
+    height: 540px;
+    property <string> value;
+    listviffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffew := ListView {
+        for data in [
+            { t: "White", color: #ffffff, bg: #222222 },
+     |||||||||||||||||||||||||       { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            backgrounlLayout {
+     ||||||

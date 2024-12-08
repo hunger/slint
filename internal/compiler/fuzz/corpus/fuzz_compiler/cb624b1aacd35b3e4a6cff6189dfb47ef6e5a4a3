@@ -1,0 +1,49 @@
+O := Text {
+    pro   for c[index] in [#f0/, #00f, #0a0]: Rectanglecommon     y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+           c aRtengle {
+            ex] in [#f00, #00f, #0a0]: Rectangle {
+z       y: minmaxindex * height  ;
+        width: p;
+    height: 300phx;
+    property<inght: 301LLLLLLLLLLLLLLLphx;
+    pro erty<int> value: 1;
+    for c[indexperty <int> val;
+    text: val;
+    propert _C  A_a!:estCase := Rectangle {
+    proper default-key-width-u: float, total-width-u: float, rows: [Row] }
+export [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, widt*****B**************************************************? {
+    propendition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+    O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!:estCase := Rectangle title{
+    proper default-key-width-u: float, total-width-u: float, rows: [Row] }
+export [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, widt*****B**************************************************? {
+    propendition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o0 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> roal-width-u: float, rows: [Row] }
+export [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, widt*****B**************************************************? {
+    propendition ? 2 :  }
+        o3 ot.val; }
+        o4 := O { val <=? r oot.val; }
+       																			test: checksum ==    o0 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> roal-width-u: float, rows: [Row] }
+export [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, widt*****B**************************************************? {
+    propendition ? 2 :  }
+        o3 ot.val; }
+        o4 := O { val <=> r oot.val; }
+       																			test: checksum == 55555;
+}

@@ -1,0 +1,21 @@
+Foo := Rectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___    o_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pureexport comp callback foo9_alias <=> foo1.hallo_alias;
+    pu   pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) onent RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length>=> { valurn foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___ my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight:  
+;
+     

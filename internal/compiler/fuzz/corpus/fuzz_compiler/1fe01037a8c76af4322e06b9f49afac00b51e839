@@ -1,0 +1,46 @@
+TestCase := Rectangle {
+cos TestCase := Rectan]le {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos TestCase := Rectangle {
+    property <bto                  ol> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000*                                                                                                                         sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(9 &&
+        atan1(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+         atan2)-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+ sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000*                                                                                                                         sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(9 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg (180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0sin(90deg)) == 1000 &&         00*cos(90deg)) == 0 &&
+        round(atan&&
+        atan2(-10, -10) == -135deg &&
+         !tan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: ve           true;
+    property <bool> test: (tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/0.1deg) == 450 &&
+        round(ac(so&
+        atan2(0, -10) == 18ve                 0d rify;
+}
+eg &&
+        atan2

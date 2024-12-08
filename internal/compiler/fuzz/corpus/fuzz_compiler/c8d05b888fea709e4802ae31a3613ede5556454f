@@ -1,0 +1,27 @@
+TestCase := Rectangle {
+b    animate background {
+ 
+ -}
+O___uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu_____________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO{
+b    animate background {
+ 
+ -}
+O___uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu_____________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    prk: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_nayout_with_explicit_fit.image-fit == ImageFit.fiOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_nayout_with_explicit_fit.image-fit == ImageFit.filout_custom_fit_ok: image_in_nayout_with_explicit_fit.image-fit == ImageFit.fiOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_nayout_with_explicit_fit.imagnd {
+ 
+ -}
+O_____________ animate background {
+ 
+ -}
+O________________________________UOOOOOOOOO}

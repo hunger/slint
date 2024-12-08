@@ -1,0 +1,44 @@
+import "popup-clickm:s 
+    property <int> int_value: 42;
+    ou<     property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+   _error+=1 }
+             z: 400;
+            TouchArea {
+                clicked => 
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+                 {rea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+ operty <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    propround: orange;
+   _error+=1 }
+             z: 400;
+            TouchArea {
+                  background: orange;
+   _error+=1 }
+             z: 400;
+            TouchArea {
+                clicked => 
+            }
+        }
+        Rx;
+    property <int> touch_error;
+    prmake-plural1 touch1;
+    p/*r <int> valu Duc   Horizontalexpo1t component TestCase inherits Window {angle {
+    in-out property <length> radiurredS     ght: 1NZ   Du_   default-'opopup-clicknt-family:yyyy{yy	u Duc   Hniozortalexpo2t component TestCase inherits Window {angle {
+    in-out property <length> radiurredS   ght: 1NZ   Du_   default-'opopup-clicknt-family:yyyy{yyyyns";
+}

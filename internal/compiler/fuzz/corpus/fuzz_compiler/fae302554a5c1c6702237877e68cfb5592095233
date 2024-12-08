@@ -1,0 +1,45 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 1;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%,le {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    backgd: @linear-gradient(45deg, #ff9a9e 0%,le {
+    in-out property <lEngth> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+ompon***********************yyn*****************************************La{out {
+        spaciyyyy        yy yyy#fa/*d0c4 99%,ow round: @linear-gradient(45deg, #ff9ayyp       yyyyyn************************yyn*****************************************La{out {
+        spac        iyyyy        yy yyy#fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_a0liTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyiyyn************************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

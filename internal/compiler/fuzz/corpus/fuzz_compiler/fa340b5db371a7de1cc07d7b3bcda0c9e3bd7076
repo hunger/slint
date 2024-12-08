@@ -1,0 +1,40 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau       ;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint   out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SOption { n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+expo   in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.valuault> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <boofloat> gr1bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 1.0, 0.501960813999176);
+    property<color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186384475708;
+  w_green: hsv(120.0, 1.0, 0.501960813999176);
+    property<color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186384475708;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> 475708;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors                            && Colors.rgset-selection-offsets45 && Col> test: slint.slint.value == "foobar";
+}

@@ -1,0 +1,10 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<physical_length> l2: 12px;
+    property<physical_length> l3: 500phx + 12px;
+    property<physical_length> l4: 120 * 1phx;
+    property<length> &&&&&&&&&&&&&&&&&&&&&&5px) / ratio
+        && l1    property<physical_length> l4: 120 * 1phx;
+    property<length> ll1st: (8phx * 5px * 3ms / 2phx)  == (8/ 2phx) * &&&&&&&& &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& &&&&&&&&&&&&&&&&&&&&&&&&&&&&&5px) / ratio
+        && l1*l3 - ll1*ll2 == 0cm*0phx && value;
+}

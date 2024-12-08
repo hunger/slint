@@ -1,0 +1,32 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text_alias_indirection;
+        property t    ext_alias_indirection ;
+    }
+    out property <bool> ok: r.2width == 100px && r2.width == 100px;
+}
+export component W inherits                                                                 W    nidow {
+{
+                min-height            :a;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.widt# > { ti1.text = a; }
+    callback set_ti2(string);
+    set_ti2(a) => { ti2.text = a; }
+}

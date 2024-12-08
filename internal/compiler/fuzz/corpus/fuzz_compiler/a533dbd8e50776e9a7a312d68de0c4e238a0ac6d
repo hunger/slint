@@ -1,0 +1,32 @@
+ TestCase := Rectangle {
+    property <bo                  ol> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000*                                                                                                                         sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(9 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+         atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+ sin(0) == 0 &&
+        cos(0) == 1 &&
+                                        round81000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000*                                                                                                                         sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(9 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+         atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: ve           true;
+    property <bool> test: ve                  rify;
+}

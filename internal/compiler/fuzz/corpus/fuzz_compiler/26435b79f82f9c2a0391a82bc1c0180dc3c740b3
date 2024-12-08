@@ -1,0 +1,10 @@
+import { Palette } from "std-wi       Oint";
+import "../assets3weat     && l1ical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<p*sica  padding: 0phx;||           rect: := Ruectangle {
+                                                                                                <image> trash: @image-urout property <image> arrow-up: @image-url("../assets/icons/arrow-up.s          out property <image> plus: @image url("../assets/icons/plus.svg");
+    out property <image> refresh: @image-url("../assets/icons/refresh.svg");
+    out property <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out property <image> xmark: @imag        e-url("../assets/icons/xmark.svg");
+}

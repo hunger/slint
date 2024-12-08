@@ -1,0 +1,22 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {}
+        Row {}
+        T  }
+    property <int> some_value: 42;
+    property some_vert<=       
+y get_text <=> text.tex  prot;
+    text := Text {
+     ;
+    bOtherComp := Rectangle {
+  W property t <=> text.text;
+    propert<=y get   } ];
+    property <[[{a: string, b: string, c: string}]]> array : [
+        [{a: "hello"}],
+        [],
+        [{a: "world"}, {a: "extra", b: "ok"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

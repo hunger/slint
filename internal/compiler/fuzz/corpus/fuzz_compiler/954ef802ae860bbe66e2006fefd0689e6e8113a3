@@ -1,0 +1,43 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    out property <int> popup-created;
+    popup := PopupWindow {
+        init => {
+            root.popup-created += 1;
+        }
+    }
+    TouchArea {
+RoundedIcon := Rectangle {
+    property ity;
+    background-fill := Rectangle {
+        background:  #ff7d34:
+        opacity: 1.0;
+    }
+    property <float> o: background-fill.opacity;
+}
+Device := VerticalLayou        clicked => {
+            popup.show();
+    t {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Dev property ity;
+    background-fill := Rectangle {
+         }
+    }   background:  #f
+}
+f7d34:
+        opacity: 1.0;
+    }
+    property <float> o: ba2 - 0.15) < 0.001;
+}

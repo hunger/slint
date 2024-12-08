@@ -1,0 +1,28 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12p- 1phx;
+    prolength> ll2: 12px;
+    property<length> ll3: 100phx +       : 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqop export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr "Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yyi: gntsr) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" | "yy{n}yy" % xx);ze
+    out property <string> result1: make_plural1(1, @tr("Plop")) + "\n" + make_plural1(2, @tr("Flopp   ")) + "\n" + make_plural1(10, t1);
+    out property <string> result2: make_plural2(1) + "\n" + maerty<bool> value: l1 == 10phx + 2phx;
+    property<length> ze: 500 / 2 * 30 -!1;
+    property<inerty<bool> test: (8phx * 5px *x;
+    property<length> ll3: 120 *:::ke_plural2(-999) + "\n" + make_plural2(0) + "\n" + make_plural2(42);
+    out property <bool> test: t1 == :::::::::: 1phx;
+    pqop"He

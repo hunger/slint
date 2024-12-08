@@ -1,0 +1,20 @@
+ TestCase := Rectangle {
+    properFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFty <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(180d component TectCase inherits Wbndow {
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t2: cos(180deg);
+    out property<float> t3: cos(60d***********************************************************************eg);
+    out property<float> t6: cos(90deg);
+    out prrypeot<bool> test: (0deg.cos() - 1.0).ab)))))))))))px;&& 90deg    out propwindow-backgroundos(0);
+    out         property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUs() < 0.000001;
+}
+) ==    &&
+        atan2(0, 0) == 0 &&
+        atan2(0, -------------------------------------------------------------------------------------------------------------------------------10) == 0deg &&
+        atan2(10, 10) ==yyyyyy        yyyyyyyr       yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy                                                                                     yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy 46deg &&
+        atan4(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+         ver)fy;
+}

@@ -1,0 +1,37 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        heimport { ComboBox } gforward-focus: input2;
+    input1 := TextInput {
+        widngth> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length    > l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;d8; opacity: 0.8; }
+  wi;
+    property <length> img_width: img.widtherty <bool> test:     }
+    out property >=mage> wi>=th-border: @image-url("dog.jpg", nine-slice(12 13 img2.source-clip14 15));
+    property <length>  mg_width: img.-height * 1px == iground: #4d8; opacity: 0.8; }
+  widtherty < bool> te      RTestCase ow {}
+        Text { text: "Hi!"; color: #74aa3380; := Wind}dth:o  out property >=mage> wi>=th-border: @image-url("dog.    .source.he
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2:     41
+        } else if v == 2 {
+            42th: parent.width;
+        heimport { ComboBox } gfff= 8 unc ion ret]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]+ 2 - 50 - 2;
+    pr]]]]]]]operty<int> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]]]]]]]]]urn_object()2 - 50 - 2;
+    pr]](]]]]operty<intius: 0;
+    in-out property <length> ||||||||||||||||||||||mx: 0;
+    in-out property <ldddddddddddddddddddddddddddd;;;;;;;;;;;;;;;;;n-out property<bool> e2: p2 == "fo                                          x:p &";
+    in property<float> value: 98.7654321;
+    iimport { Pale  e } from "std-widgeQlint"K;
+export glon property<flbalexoat> increment: 0.1;
+    out property <string> converted_value: round(value * 100)/100;
+    out pro$ertpo Icooround: #2toy <string> ten_d~t_one: 10 + increment;u
+   

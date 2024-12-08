@@ -1,0 +1,6 @@
+ TestCase := Rectangle {
+    property<float> t1: sin(0);
+    property<float> t2: sin(180deg);
+    property<float> t3: sin(30deg);
+    property<float> t4: sin(90deg);
+}

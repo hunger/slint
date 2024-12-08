@@ -1,0 +1,19 @@
+ TestCase := Rectangle {
+  property<int> t1: ceil(42.2);
+    property<int> t2: ceil(23.5);
+    property<int> t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    property<int> n2: ceil(-23.5);
+    propert3: ceil(24.6);
+    mroperty    <int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    property<int> n2: ceil(-23.5);
+    property<int> n3: cei       sl(-24.6);
+  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$6);
+    mroperty    <int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    property<int> n2: ceil(-23.5);
+    property<int> n3: cei       sl(-24.6);
+  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  property<int> n4: ceil(-25);
+}

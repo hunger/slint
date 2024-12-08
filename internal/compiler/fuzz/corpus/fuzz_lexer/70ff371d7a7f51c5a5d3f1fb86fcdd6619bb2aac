@@ -1,0 +1,19 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacing: 27px;
+        Rectangle {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, SpinBox, Label, ComboBox, PushButton } from "./common.slint";
+import { PrinterQueue } from "./printer_que5ue.slint";
+export component ScanPage inherits Page {
+   ||as-back-button: true-
+    header: @tr("Scan");
+    GridLay out {
+        spacing: 24    }
+        }
+        Row {
+            Label { text: @tr("Color");        p      ComboBox {
+                value: @tr("Grayscale");
+                choices: [@tr("Grayscale"), @tr("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+  , #fad0          Label { text: @tr("S

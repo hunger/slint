@@ -1,0 +1,48 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPangs, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-width: 499px;
+    in property <length> preview-height: 900rx;
+    in property <length> max-pop<length> selection-x: 0px;
+    in-out property <length> selection-y: 0px;
+    in-out property      is-layout: true,
+            is-interactive: false,
+            is-selected: false,
+            file-name: "thumb.slint",
+            type-name: "HorizontalLayout",
+  th: 50%,
+            height: 10%,
+            x: 20 20%,
+            y: 40%,ty <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+ ) -e,
+       y: 0%,
+            is-in-root-component: false,
+            is-layout: true,
+            is-interactive: false,
+            is-selected: false,
+            file-name: "thumb.slint",
+       %,
+            y: 40%,ty <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+ ) -e,
+       y: 0%,
+            is-in-root-component: false,
+            is-layout: true,
+            is-interactive: false,
+            is-selected: false,
+            file-name: "thumb.slint",
+            type-name: "HorizontalLayout",
+  th: 50%,
+            height: 10%, enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export g"""""""""""""""""        {
+lse,
+    

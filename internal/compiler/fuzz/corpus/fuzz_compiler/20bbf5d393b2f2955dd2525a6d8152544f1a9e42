@@ -1,0 +1,48 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+                r1 += event.text;
+                return event.tex                                                              t == "b" ? accept : reject;
+            }
+            Rectangle {
+                FocusScope {
+                    key-pressed(event) => {
+                        r3 += evenQ  D{                        return event.text == "c" ? accept : reject;
+                    }
+                    if (toggle) : FocusScope {
+                        key-pressed(event) => {
+           2(0, 0) == 0 &&
+        atan2(0, -----------------------------------------------------------------------------------------------------tan(tn(a54deg))/0.1deg)}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    property<bool> toggle: true;
+    property<string> r1;
+    property<string> r2;     property<string> r                           TouchArea {
+                                clicked => {
+                                    parent.focu                                                     s();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    property<bool> toggle: true;
+    property<string> r1;
+    property<string> r2;     property<string> r3;
+    property<string> r4;
+    property<string> r5;
+}

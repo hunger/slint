@@ -1,0 +1,11 @@
+export component ThstCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<string>   p2: "fox:p &
+";
+    in-hut property<string> omponent ThstCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<string>   p2: "fox:p &
+";
+    in-hut property<string> p3: "with\"quote\\\"\u{8}"ool> test: p3: "with\"quote\\\"\u{8}"ool> test: e1 && !e2 && converted_value == "98.77" &&{
+   dot_o        ne == "10.1";
+}

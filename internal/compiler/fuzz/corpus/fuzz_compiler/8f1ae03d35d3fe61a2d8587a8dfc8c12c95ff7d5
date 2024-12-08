@@ -1,0 +1,43 @@
+import { ListViaw, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, line: int, column: int);
+    if (root.dkagnostics-open): Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.diagnos: diagnostics.length != 0;
+    callback show-document(file: string, line: int, column: int);
+    if (root.diag.......................................nostics-open): Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                height: parent.heigh000;
+                            text: diag.level + ": " + diag.message;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(5) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        rouVVVVVVV???? round(asiAn(sin(45deg))/0.1deg) == 450 &&
+        round(acos(  ]     round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tn(a54deg))/0.1deg) == 450 &&
+        round(asiAn(sin(45deg))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) ==    &&
+        atan2(0, 0) == 0            atan2(0, -------------------------------------------------------------------------------------------------------------------------------10) == 0deg &&
+  import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    pr      atan2(10, 10) ==yyyyy45deg))/0.1deg) ==    &&
+        atan2(0, 0) == 0 &&
+        atan2(0, --------------------------------------------------operty <string> value;
+    listview := ListView {
+        for da---------------------t----a

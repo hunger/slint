@@ -1,0 +1,11 @@
+Foo := Rectangle {
+    pzre callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := im]port { RectangleCom  =x } from "std-widgets.slint";
+export component TestCase inherits Window  {
+        pure callback hallo({
+   ti wdh: 200px;
+ /- ////////////////////////////////////////////*//.int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    o//ar/e :=

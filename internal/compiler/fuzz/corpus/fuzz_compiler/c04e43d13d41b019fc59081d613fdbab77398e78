@@ -1,0 +1,47 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          m Coord { xxx }
+export struct AccessibleRole { value: Coord }
+expopt enum Default { a, b, c }
+export globalt3 ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayoutCellData !{
+    callback begin;
+}
+export component SharedString {
+    out property <Property> slint: { value: "foobar" };
+    property ok <=> ComponentInstance.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out propert        y <BoxLayoutData> blt: { layout: 45phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Er udr{r ation: 44s; }
+    out property <bool> test: export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayoutCellData !{
+    callb  k begin;
+}
+export component SharedString {
+    out property <Property> slint: { val                           ue: "foobar" };
+    property ok <=> ComponentInstance.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

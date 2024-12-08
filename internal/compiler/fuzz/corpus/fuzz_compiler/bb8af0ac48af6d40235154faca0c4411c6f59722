@@ -1,0 +1,58 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: in2ut2;
+    inpukkkkkkkrty <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a 
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk**************                                                          opacity: cond ? 0 : 1;
+        aexport global G                               lob {
+    in-out property <  t> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*********************************************          property <int>tring> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        n-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk***k******************************************          property <int> val: condition ? 2 opcount;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*********************************************          property <int> val: condition ? 2 operty <int>}
+    callback set_ti2(st,ring);
+    sA chain-et_ti: ts Window ]]]]]]]]]]]]]]]]]]]urn_object() -d

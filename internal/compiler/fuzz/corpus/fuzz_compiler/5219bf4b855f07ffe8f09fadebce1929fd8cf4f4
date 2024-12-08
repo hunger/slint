@@ -1,0 +1,41 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+    out pr{       operty <bool> has-focus <=> fo    for i in 200: r := Item {
+            index: i;
+            hperty <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px;TestCase := Window {
+    widtse := Window {
+    width: 73: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-backgrpx;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+      text-input :lection-foreground-color: orange;
+        font-isze: 13px;
+        cursor-position-byte-offset: 16;
+  import { L      anchor-position-byte-offseistView  } from "std-widgets.slint";
+MyListItem := Rectangle {
+    callback clickt: 13;
+   ed }
+} <=> 

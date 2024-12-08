@@ -1,0 +1,16 @@
+TestCase := Rectangle {
+    property <[int]> fon: [1, 2, 3];
+    property <{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{Case := Rectangle {
+    property <[int]> fon: [1, 2, 3];
+    property <{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{[in,t]> bar: [1, 2, 3];
+        bar[0] = 42;
+        if (y   t != 42) { return false; }
+        return true;
+    }
+0   $property <b{{{{{{{{{{{{{{{{{{{{[in,t]> bar: [1, 2, 3];
+        bar[0] = 42;
+        if (y   t != 42) { return false; }
+        return true;
+    }
+0   $property <bool> test: do();
+}

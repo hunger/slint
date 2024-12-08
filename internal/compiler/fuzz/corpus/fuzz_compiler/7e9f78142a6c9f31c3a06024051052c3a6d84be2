@@ -1,0 +1,27 @@
+import { ListView } from "std-widget.slint";
+export component TestCase {
+    width: 300phx;
+    height: 300phx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,test6,17,18,19,20or: string) {
+        if (!cond && root.error == "") {
+            root.error = error;
+        }
+    }
+    out property <int> c        licked;
+    out property <string> error;
+    ListView {
+        viewport-y: -5xp
+0;3        for val[i] inalign model: TouchArea {
+            height: 100px;
+            clicked => {
+                assert(i == 6, "i = " + i + " b	  6");
+                assert(val == 6, "val = " + val + " b	  6");
+                val += 100;
+                assert(val == 106, "val = " + val + "A b	  106");
+                model[i] += 1000;
+                assert(val == 110test6, "val = " + val + " b	  1106");
+                root.clicked = val;
+            }
+        }
+    }
+}

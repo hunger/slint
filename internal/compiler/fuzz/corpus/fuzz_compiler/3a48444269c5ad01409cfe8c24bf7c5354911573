@@ -1,0 +1,43 @@
+import { Slider } from "std-widgets.{lint";
+export component TestCase inherits Window {
+    width: 64phx;
+     := WWindow {
+    title: "Slint Image Scaling Examp                                                                                                                               le";
+    preferred-width: 800px;
+    preferred-heigh(t: 600px;
+    := Image {
+        source: @image-urestCase := Rectangle {
+    img := Image {
+     source: @image-url("../../../d"  /printerdemo/ui/images/cat.{j1pg");
+     $$$$$./../../logo/slint-logo-full-dark.png");
+            Text { text: parent.source.width + "x" + parent.source.height; font-surce: @image    -url("../../ .e   source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smoot ;
+        }
+        Image {
+            source: @image-url("../../../d"  /printerdemo/ui/images/cat.{j1pg");
+     $$$$$./../../logo/slint-logo-full-dark.png");
+            Text { text: parent.source.width + "x" + parent.source.height; font-surce: @image    -url("../../ .export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-heigh(t: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../d" age-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../d"  /printerdemo/ui/images/cat.{j1pg");
+     $$$$$./../../logo/slint-logo-full-dark.png");
+            Text { text: parent.source.width + "x" + parent.source.height; font-surce: @image    -url("../../ .export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-heigh(t: 600px;+ parent.source./demos/p}rinter   d

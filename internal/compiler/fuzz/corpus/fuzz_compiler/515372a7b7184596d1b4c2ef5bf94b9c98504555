@@ -1,0 +1,56 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_: color,
+    gamm-highli!ht-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checkeco-dlor;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    s ates [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             id-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        heimport { ComboBox } gforward-focus: input2;
+    input1 := TextInput {
+        widngth> l2: 1property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<phys in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.woperty <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             id-focus: input2;
+    input1 := TextInheckbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.w.dth;
+  = (8px * (3ms / 2ppreferred-wi`thtio
+        && l1*l2 - ll1*ll2 == 0cm*0phx && value;
+}

@@ -1,0 +1,30 @@
+export global Icons {
+    out property <imrush,
+    game-background-color: brush,
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-bage> 0rrow-up: @image- property <image> 0rrow-up: @image-/*l2=assets/arrow-up.svg                                                          "\\\\\\\\\\\\\struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+str\\\\\\\\\\\\\\\\\\\\\import { Palette,Meresizments,Colors } from "../commonCase := Rectangle {
+    animate background {
+ 
+.slint";
+import { AppState } from "../appState: "hel          lo";
+    in-out proame-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-bage> 0rrow-up: @image- property <image> 0rrow-up: @image-/*l2=assets/arrow-up.svg                                                          uct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-backgrouns; easing: ease-in; }
+                 animate checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+           "\\\\\\\\\\\\\\\\\\  }
+             \o

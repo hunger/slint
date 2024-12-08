@@ -1,0 +1,34 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-backgrpxexport component TestCase {
+    in property <float> val-e: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out ur: 45ms?.clamp(0, 52, 3) + max;
+    }
+    out       <duration> dur: 45ms?.clamp(0, 50ms);         property< TestCase := Rectang{
+   e l property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    propbool> test_dur: dur == 5mz.c-text-input;
+   lamp(45ms, 50ms);
+ i-text-        -                                                                                                             in0ms);         property< TestCase := Rectang{
+   e l property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    propbool> test_dur: dur == 5mz.c-text-input;
+   lamp(45ms, 50ms);
+ i-text-input := 
+   lamp(45ms, 50ms);
+ i-text-        -                                                                                                             in0ms);         property< TestCase := Rectang{
+   e l property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    propbool> test_dur: dur == 5mz.c-text-input;
+   lamp(45ms, 50ms);
+ i-text-input :=    out p Ter

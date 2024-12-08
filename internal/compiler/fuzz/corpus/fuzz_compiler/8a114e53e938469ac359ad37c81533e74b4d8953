@@ -1,0 +1,43 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 :e {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: imstd-widgets.slintg2.source-clip-height * 1px == img2.height && img2.source-clip-width * 1px == img2.width &&
+         int> t2: 500 / 2 * 30 -!1;
+  f property<int> export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ft3              : a - (3 + ++2 * (a + 2/);
+     source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: imstd-widgets.slintg2.source-clip-height * 1px == img2.height && img2.source-clip-width * 1px == img2.width &&
+         int> t2: 500 / 2 * 30 -!1;
+  f property<int> t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <le::::::::::::::::::::ngth> len: 50px / 2;
+    callback ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;foo;
+    foo => {
+        a += +8;
+        a .source.wi										dth == 0 &    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <le::::::::::::::::::::ngth> len: 50px / 2;
+    callback ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;foo;
+    foo => {
+        a += +8;
+        a .source.wi								f9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////10		dth == 0%/////////)//;tangle {
+    r := Rectangle 0 &&{
+      

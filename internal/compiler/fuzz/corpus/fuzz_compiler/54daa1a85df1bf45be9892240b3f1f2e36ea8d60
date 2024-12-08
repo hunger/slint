@@ -1,0 +1,12 @@
+Test := Rectangle {
+    bainBox, Label, ComboBmport { PrinterQueue } from "./printer_queEue    .slint";
+export component ScanPa!       ge inherits Page {
+   |                                         (   Box {
+                value: @tr("Grayscale");
+                choices: [@tr("Gray  "      @t!r("RGB"), @tr(        "YCMB")];
+   *        }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscaent ScanPa!       ge inherits Page {
+   |                                         (   Box {
+                value: @tr("Grayscale"       Label ~ text: @tr("S

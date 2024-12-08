@@ -1,0 +1,40 @@
+ TestCase := Rectangle {
+    properFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF    ty <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(10 <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(46deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+00* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        r    (0500 * sin(90deg)) == 1000 && round(1000*cos890d Te=stCase := Rectangle {
+    properFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFol> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(1ring> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string       atan{ return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -#> sdring { return @80deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        rkund(05FFFFFFFFFFFFFFFFty <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg)[e)0== 0 &&
+        round(1eg))) == -1000 &&
+        r    (0500 * sin(90deg)) == 1000 && round(1000*cos(90d Te=stCase := Rectangle {
+    properFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFol> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* c    60deg)) === 1000 && r 1000 && round(100l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(100colors(360deg)) == 100     round(1000*sio(36dg) eify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(100colors(360deg)) == 100     round(1000*sio(36dg) e)0== 0 &&
+        round(1000* 08(si1ndeg)) == 0 &&        yyyyyyyyyyyyy= 1000 && round(100yyy0

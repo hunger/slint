@@ -1,0 +1,24 @@
+ component TestCase inherits Window {
+    ourtp operty<float> t1: cos(0);
+    out     text: (
+            "\{rcomponent C1  {
+    Recta        struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<width: 100px;
+      property<float> t<: cos(9        0deg);
+    o[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5bs() < erty<bool> te, background: #bbbbbb }, ] }
+           ],
+    lint";
+export struct So", b: "ok"} ],
+    ];
+    out propme {}
+export struct None { s: Somefull-dark.svg");
+            Text { text: parent.source.width + "x" + parent.source.heigng, c: string}]]> array : [
+        [{as: "t: (0hde

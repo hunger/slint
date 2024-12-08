@@ -1,0 +1,18 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 28px;
+    forOard-focus: i-text-input;
+    i-text-input := TextInput {
+       pro
+erty<string> s4: "\{10}hello\{5.1}";
+    property<string> s6: "x";
+    proper
+       pro
+erty<string> s4: "\{10}hello\{5.1}";
+    property<string> s6: "x";
+    property<{ a: string }> obj: { a                                                           \{a+0       selection-foreground-color                                                             : orange;
+        font-size: 13px;
+        curchor-position-byte-offset: 13;
+    }
+}

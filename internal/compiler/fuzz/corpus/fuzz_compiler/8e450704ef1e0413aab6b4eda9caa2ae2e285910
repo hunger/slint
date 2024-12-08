@@ -1,0 +1,7 @@
+component DeltasList {
+    in property <string> delta;
+}
+component Changelog inherits Rectangle {
+    in-out property <int> count-files-changed;
+    in-out property <[string]> changes_log: [];
+    in-out property <int> selected: -2;

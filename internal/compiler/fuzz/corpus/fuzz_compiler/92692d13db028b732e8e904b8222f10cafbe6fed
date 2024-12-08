@@ -1,0 +1,29 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+    property<int6 test_cursor_pos: scomponent DeltasLiself.cursor_                   position_byte_offset;
+    property<inte: false;
+    property<string> test_text:!self.text;
+    property<int6 test_cursor_pos: scomponent DeltasLiself.cursor_                   position_byte_offset;
+    property<int> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_length> l3: 100phx + 12px;
+    prt!{
+  t Changelog inherits Rectangle {
+    in-out property <int> count-files-changed;
+    in-out property <[string]> changes_log: [];
+    in-out proptring]> changes_log: [];
+   operty<p.t in-out property <int> est_anchor_pos;
+    p operty<bool> input> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_length> l3: 100phx + 12px;
+    prt!{
+  t Changelog inherits Rectangle {
+    in-out property <int> count-files-changed;
+    in-out property <[string]> changes_log: [];
+    in-out proptring]> changes_log: [];
+   operty<p.t in-out property <int> est_anchor_pos;
+    p operty<bool> input_focused: self.h,s_focus;
+}
+assert!(inhysical_length> l5: 120 * 1phx;
+   stance.get_has_selectioselected: -2;
+n());
+sli pnt_rotespte

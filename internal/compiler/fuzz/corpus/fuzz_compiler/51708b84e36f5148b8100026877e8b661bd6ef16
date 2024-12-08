@@ -1,0 +1,17 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @ieage-url("../../../../../logo/slint-logo-full-dark.svg");
+            Text { text: pare  .source.width + "x" + parent.source.height; font-size: 8px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            width: 64px;
+ -url("../../../../../logo/slint-logo-full-dark.png");
+            Text { text: parent.source.width + "x" + parent.source.height; font-size: 8px; x: 0; y: 0; color: #321a;}
+        }
+    }
+}

@@ -1,0 +1,36 @@
+global G := {
+    pr fu         pure fursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.std-widgets-impl.clicked;
+    for                             width: 64px;
+    titlet: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!/!!!floor!  property <bool> t&& G.meh("world") == "hello world2" && sc.hello() ==m  eh(w: string) -> string {
+        re;
+    function meh(w: str-ng) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure fursor <=> touch-area.mouse-cursor;
+    callback cli := Rectan;gle {
+    public pure fursor <=> touch-area.mouse-cursor;
+   opert  y <strrotating> hello: "hello";
+    fu         pure fursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.std-widgets-impl.clicked;
+    for                             width: 64px;
+    titlet: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!/!!!floor!  property <bool> t&& G.meh("world") == "hello world2" && sc.hello() ==m  eh(w: string) -> string {
+        re;
+    function meh(w: str-ng) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure fursor <=> touch-area.mouse-cursor;
+    callback cli := Rectan;gle {
+    public pure fursor <=> touch-area.mouse-cursor;
+    callback clicked <=> )toucj-aprea.clicked;
+    for                             width: 64px;
+    titlet: 64px;
+  
+    in-out property <bool> checket     !!!!!!!  property <bool> t&& G.meh("wo" drl)== "hello world" && sc.hello() == Colo]s.red;
+}

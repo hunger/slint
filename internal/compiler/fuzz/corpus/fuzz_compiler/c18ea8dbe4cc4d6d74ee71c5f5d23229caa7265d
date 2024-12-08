@@ -1,0 +1,22 @@
+Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+   %    f     E 5%;export component TestCase  {
+    in-out property <bool> toggle: { return false; }
+    in-out prop     <int> 
+        background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    height: 600px;
+    b        ackground: green;
+    Rectangle {
+         opacity: 0.5;
+    }
+    Comp {
+        background: blue;
+        x: parent.width / 4;
+        y: parent.height / 4;
+   (((( (((((((((((((((    X (((((((if (toggle(

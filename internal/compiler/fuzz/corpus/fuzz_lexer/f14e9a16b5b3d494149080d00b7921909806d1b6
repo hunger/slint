@@ -1,0 +1,21 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in property <bool> -full-screen: false;
+    tile := InnerShadPwRectangle {
+        inn----------------------------------------------------------------er-color: Palette.info-alternate-back     ground;
+        inner-shadow-b                                                        reen: false;
+    tile := InnerShadPwRectangle {
+        inn----------------------------------------------------------------er-color: Palette.info-alternate-back     ground;
+        inner-shadow-blur: 52px;
+        background: Palette.info-ba;ckground;
+        border-radius: Measurements.tile-radius;
+        @children
+    }
+}ius: Measurements.tile-radius;
+        @children
+    }
+}

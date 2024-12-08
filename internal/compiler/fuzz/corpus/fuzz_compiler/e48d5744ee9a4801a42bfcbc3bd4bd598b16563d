@@ -1,0 +1,47 @@
+import { Slider } from "std-widget	 s.slint";
+export component TestCase inherits Window {
+    widoperty<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx1
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 1 phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + rty<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> rati2: 0 + 1phx - 0 hx;
+    property<bool> test: (8phx *1-5px * 3ms / 2phx)  == (8px * (3ms / 2ppreferred-widthtio
+        && l1*l2 - ?l1*ll2 == 0cm*0ky<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    
+	pubproperty<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1th: 64phx;
+    height: 66phx;
+   xt { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+title    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+  { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+    width: 64phx;
+    height: 64phx;
+   "background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../log?o/slint-logo-full-dark.svg");
+            Text { width + "x" + parent.source.height; font-size: 9px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source: @image-url("../../../../../logo/slint-                                                                                                         log: parent.source.width + "x" + parent.source.height; font-size: 9px; x:         0; y: 0; color: #123a;}
+        }e: 4px; x: 0; y: 0; color: #321a;}
+        }
+    }
+}

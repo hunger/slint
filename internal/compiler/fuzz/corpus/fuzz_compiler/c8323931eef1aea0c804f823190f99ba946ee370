@@ -1,0 +1,37 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    in-out property <int> sele                             cted-index;
+    in property <length> spacing;
+    in property <length> itemWidth;
+    in property <int> count: 0;
+    callback move-right();
+    callback move-left();
+    callback move-focus-up();
+    move-right => {
+        root.selected-index = min(root.selected-index + 1, root.count - 1);
+    }
+    move-left => {
+        root.selected-index = max(root.selected-index - 1, 0);
+    }
+    private property <length> center-x: (root.width - Theme.size-big) / 2;
+    private property <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusS	export component Ripp {}
+export erits Rectangle {
+    in-out !=property <yAnimation {                   d-wext {
+        text: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{rexport component Ripp {}
+e        xport erits Rectangle {
+    mn-out !=property <%yAnimation {           pre erred-wext {
+                                                                          text: (
+            "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /       "\{r.width / 1 " p,x+}
+        text||||||||||||||||||||||||||||||||||||||||||||: (
+     Uu_g 1px}, urn acce  (
+        pt;
+    "\

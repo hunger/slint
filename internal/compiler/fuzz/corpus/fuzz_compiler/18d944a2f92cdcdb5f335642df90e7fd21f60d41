@@ -1,0 +1,60 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+            e;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+    y<{a: int, b: int}> obj_cond_merge : true ? { a: 1 } : { b: 10 };
+    property<bool> obj_binop_merge : { foo: 0, x: 1 } == { bar: 0, x: 1 };
+    property<string> foo_a : foo.a;
+    property<int> foo_b : foo.b;
+    property<int> obj_cond_merge_b : obj_cond_merge.b;
+    callback change_foo;
+    change_foo => {
+        foo.a = obj_conversion2.a;
+        foo.b += 8 + obj_conversion2.b;
+obj_cond_merge : true ? { a: 2 } : { b: 10 };
+    property<bool> obj_binop_merge : { foo: 0, x: 1 } == { bar: 0, x: 1 };
+    property<string> foo_a : foo.a;
+    property<int> foo_b : foo.b;
+    property<int> obj_cond_merge_b : obj_cond_merge.b;
+    callback change_foo;
+    change_foo => {
+        foo.a = obj_conversion2.a;
+        foo.b += 8 + obj_conversion2.b;
+    }
+    function return]object() -> { aa: { bb: int } }
+    { return { aa: { bb: { cc: 42 }.cc } }; }
+    property <bool> test: return_object  for i in [
+                {color: #0f0, value: 8, },
+           z: -1;
+                clicked => { touch_error+=12 }
+            }
+        }
+    }
+}

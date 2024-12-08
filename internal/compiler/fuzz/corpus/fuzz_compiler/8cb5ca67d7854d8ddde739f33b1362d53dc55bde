@@ -1,0 +1,55 @@
+Foo := Rectangle {
+    pzre callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callbacre.clicked;
+    xxx := Rectangle {
+        pure callback hallo(int)ck clicked <=> are.clicked;
+    xxx := Rectangle {  }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=B_   NQ d <=> are.clicked;
+    xxx := Rectangle {  }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> intiiiiiiiiiiiiiiiiiiiiiii;
+    call_]oo2(a) => { return foo2.hal {_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a)         => { return a + 22; }
+    }
+    foo2 := Foo {
+        clicked => { deTouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callbacre.clicked;
+    xxx := Rectangle {
+        pure callback hallo(int)ck clickere callback hallo(int)ck clicked <=> are.clicked;
+    xxx := Rectangle {  }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    foo2(int) -> ied => { debug(42) }
+    }
+    property <bool> test: foo1_alias(100) == 122 && foo2_alias(100) == 188;
+}

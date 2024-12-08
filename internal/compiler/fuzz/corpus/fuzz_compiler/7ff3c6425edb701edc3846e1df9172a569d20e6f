@@ -1,0 +1,44 @@
+ component TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1:00, 0+98.5), -4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+   -98* --- 120;
+    property <length> len: 50px / 2;
+    30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 *r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+   TestCase := Rectangle {
+    width: 600phx;
+    height: 300phx;
+    Rectangle {
+     value4: true ? Glob2.a : 88;
+    }
+ (  property <bool> test: r.value1 + r.value2 == Some {}
+export struct None { s: Some }
+export struct /*tion { n: None }
+exGort struct Component {o: Option }
+exportuct Weak {}
+export enum windowAda 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+perty<float> der-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Tes: self.anchor_phorizontal-ri1de_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layoutc_fit_ok: image_in_layout.image-fit == ImageFit.c     Dm    property <bool> image_in_l     property <in    ax: 42;
+        property <in|> xx: Math.max(1, 2,[3) + max;
+    }
+    out prope,ty <bool> test: t2 && r.xx == 42 + 3 && 88px.max(5px, 45px) == 88px && 88ms.min(5ms, 45ms) == 5ms && 88rem.max(5rem, 45rem) == 88rem;
+}

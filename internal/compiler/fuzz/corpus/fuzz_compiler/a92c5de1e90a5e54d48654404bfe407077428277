@@ -1,0 +1,54 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    inFoo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callbajk hallo(intffffffffffffffffffffffffffffff5ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+      hallo(a) => { return a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+Foo := Rectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___    o_alias(a) => { r-out property <int> selected-index;
+    => {
+            if (event.text == Key.UpArrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-right();
+          return accept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-right();
+                return accept;
+            }
+        e  hallo(a) => { return a + 88; }
+    }
+    are        pure callbac    if (event.text == Key.LeftArrow) {
+                root.move-left();
+                return => {
+            if (event.t         return accept;
+            }
+        e  hallo(a) => { return a + 88; }
+    }
+    are        pure callbac    if (event.text == Key.LeftArrow) {
+                root.move-left();
+                return => {
+            if (event.text == Key.UpArrow)               root.move-right();
+                return ack hallcept;
+            }
+            if (event.text == Key.LeftArro(intffffffffffffff := TouchArea { }
+}
+TestCase ow) {
+                root.move-left();
+                return => {
+            if (event.text :=fff=

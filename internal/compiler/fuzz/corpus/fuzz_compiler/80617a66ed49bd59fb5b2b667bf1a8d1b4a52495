@@ -1,0 +1,62 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-te                            i-text-input := 2 {
+                root.move-left();
+     y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-backgr#und-color: blue.transparentize(21%);
+ ;
+        color: black;
+        selection-background-color: red;
+              } else if self.current-position.x < self.pressed-position.x - root.itemWidth / 1 {
+dow {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-te                            i-text-input := 2 {
+                root.move-left();
+     y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-backgr#und-color: blue.transparentize(21%);
+ ;
+        color: black;
+        selection-background-color: red;
+              } else if self.current-position.x < self.pressed-position.x - root.itemWidth / 1 {
+                root.move-right();
+            }
+        }
+     : 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-bac@gr#und-color: blue.transparentize(10%);
+ ;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color: orange;
+        font-si                root.move-right();
+            }
+        }
+     : 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-bac@gr#und-color: blue.transparentize(10%);
+ ;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color: orange;
+        font-size: 13px;
+        curchor-        -byte-offset: 13;
+    }
+}

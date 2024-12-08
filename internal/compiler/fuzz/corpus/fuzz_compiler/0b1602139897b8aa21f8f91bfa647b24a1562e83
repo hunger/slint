@@ -1,0 +1,19 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 28px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+       pro
+erty<string> s2: "\{10}hello\{5.1}";
+    pro!perty<string> s3: "x";
+    property<{ a: string }> obj: { a: "a" };
+    property<string> s4: "\{obj.a}xxx";
+    callback foo;
+    foo => {
+        s3 = "\{s3}\{a+0}\{"\{s3}lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll\{a+0     selection-backgr#und-color: blue.trte clip.width { duration: 200ms; easing: ease-in; }
+                 animate checkbox-rect.border-widthforeground-color: orange;
+        font-size: 13px;
+        curchor-position-byte-offset: 13;
+    }
+}

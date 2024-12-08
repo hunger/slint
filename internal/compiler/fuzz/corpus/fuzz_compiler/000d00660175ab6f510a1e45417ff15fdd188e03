@@ -1,0 +1,46 @@
+component IndirectChange {
+    in property <[int]> mod;
+    property <[int]> privat777777777777777777777777777777777777777777777777777777777777777777777777777777777e: mod;
+    init => {
+  !!!!!!!!!!!!   {}
+export struct Slint { ssint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayoutCellData {
+    c1allback begin;
+}
+eVTable {}
+export component TestCase  {
+    in property <Default> def: Default.b;
+        out property <BoxLayoutData> blt: { layout: 60phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 45s; }
+                    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""                                                                 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      private[1] += 0;
+    }
+} export component TestCase {
+    property <[int]> m1: [5];
+    propert _<[int]> m2: [8];
+    mxproperty <[int]> indirect: m2;
+    pub     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ed", import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None !!                                       v       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      priv                                                                               ate[1] += 0;
+    }
+} export component TestCase {
+perty <[int]> m1: [5];
+    ];
+    property <[int]> m2: [8];
+    mxproperty <[int]> indire]t: m2;
+    public function up() {
+        indirect[0] += 10;irmpo== 8;
+}

@@ -1,0 +1,62 @@
+TestCase := Rectangle {
+    width: 300 min-width: 100phx;
+             horizontal-stretch: 2;
+            }
+            orange-rect := Rectangle {
+                background: orange;
+                width: 10phx;
+                horizontal-stretch: 8;
+            }TestCase := Rectangle {
+    properh> ll1: 12phx;
+    prop
+            yellow-rect := erty<length> ll2:Rectangle {
+                background: yellow;
+     12px;
+           pr            max-widthope: rt0px;
+             horizontal-stretch: 0;
+            }
+            red-rect := Rectangle {
+                width: 5stCase := Rectangle {
+    width: 300 min-width: 100phx;
+                horizontal-stretch: 0;
+            }
+            red-rect := Rectangle {
+                width: 50px;
+                background: red;
+                min-height: 50phx;
+            }
+            green-rect := Rectangle {
+                background: green;
+                max-width: 20phx;
+                horizontal-stretch: 2;
+            }
+            orange-rect := Rectangle {
+                background: orange;
+                width: 10phx;
+                horizontal-stretch: 8;
+            }TestCase := Rectangle {
+    properh> ll1: 12phx;
+    prop
+            yellow-rect := erty<length> ll2:Rectangle {
+                background: yellow;
+     12px;
+           pr            max-widthope: rt0px;
+                background: red;
+                min-height: 50phx;
+            }
+            green-rect := Rectangle {
+                background: green;
+                max-width: 20phx;
+                horizontal-stretch: 2;
+            }
+            orange-rect := Rectangle {
+                background: orange;
+                width: 10phx;
+                horizontal-stretch: 8;
+            }TestCase := Rectangle {
+    properh> ll1: 12phx;
+    prop
+            yellow-rect := erty<length> ll2:Rectangle {
+                background: yellow;
+     12px;
+           pr            max-widthope: rt20

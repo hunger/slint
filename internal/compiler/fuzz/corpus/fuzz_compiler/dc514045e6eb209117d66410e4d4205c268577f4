@@ -1,0 +1,35 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLaort { Slider } from "std-widgets.slint";
+export component TestCasSub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    perty <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        background: green;
+    }    property <int> chain-f;
+    changed chain-f => { chain-e +e inherits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+  =

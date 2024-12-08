@@ -1,0 +1,64 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked                                                              ;
+    property <string> stringadient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn****> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 1;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #f  f9a9e 0%,le {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius         * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    backgd: @linear-gradient(45deg, #ff9a9e 0%,le {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    backgro)udn: @linear-gradient  (45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    background: @linear-g;
+    height: 100;px
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 150px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+                                          ?                                                              "    for string in [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Tty <=> background-fill.opacity;
+A   backe {
+    s *= Sub {}
+ub {}
+    d    _ o1 <=>  }
+        }K
+    }
+    propet-height / 0px;
+}

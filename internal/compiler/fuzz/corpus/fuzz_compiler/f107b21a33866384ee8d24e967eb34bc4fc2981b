@@ -1,0 +1,72 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-t-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-posr: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    pe-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radmus: length,
+    piecier(1,1,1,0); }
+             }
+         }
+     ]
+  PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP  hover-rect := Rectangle {
+        background: #f5f 
+f55;       x: - parent.width / 4;
+        y: - parent.height / 4;
+   rder-width: self.height * 10%;
+         order-color: r)ot.unchecked-color;
+        border-radius: 4px;
+        clip := R

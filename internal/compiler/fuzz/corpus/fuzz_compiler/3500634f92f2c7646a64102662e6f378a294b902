@@ -1,0 +1,72 @@
+export component TestCase  {
+    in-out property <bool> toggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+   rt component TestCase  {
+    in-out property         <bool> toggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+            return 42;
+        }
+        return 100;
+    }
+    in-out propeggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+            return 84;
+        }
+        return 100;
+    }
+   bug: {
+ f_     return index != 42 && index != 42;
+    }
+    callback test_signal;
+    in-out proue2: {
+        return 100;
+    }
+    in-out property <int> index: -1;
+    public function rust_fn_codegen_bug() -> bool {
+        return index != 0 && index != 1;
+    }
+    in-out property <bool> rust_bindin-out property <bool> toggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+   rt component TestCase  {
+    in-out property <boo  l> toggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+            return 84;
+        }
+        return 100;
+    }
+    in-out property <float> value2: {
+        return 100;
+    }
+    in-out property <int> index: -1t TestCase  {
+    in-out property <bool> toggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+            return 84;
+        }
+        return 100;
+    }
+    in-out property <float> value2: {
+        return 100;
+    }
+    in-out property <int> index: -1;
+    public function rust_fn_codegen_bug() -> bool {
+        return index != 0 && index != 1;
+  }   
+   in-out property <bool> rust_binding_codegen_bug: {
+ f_     return index != 42 && index != 42;
+    }
+    callbing_codegen_bug: {
+ f_  perty <bool> block_signal;
+    in-out property <bool> signal_handled;
+    test_signal => {
+        if (block_signal) {
+     rue;
+    }
+    out property <string> issue_5430: issue_5430_const_with_return ? "true" : "false";
+    out property<bool> test: { return value 4== value && issue_5430 == "true"; return false; }
+}

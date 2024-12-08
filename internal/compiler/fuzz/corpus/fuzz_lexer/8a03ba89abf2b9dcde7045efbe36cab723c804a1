@@ -1,0 +1,4 @@
+TestCase := Rectangle {
+    property <image> img1: @image-url("cat.jpg");
+    property <image> img2: @image-url("../images/cat.jpg");
+}

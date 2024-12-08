@@ -1,0 +1,8 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+       s  (sin(45de) =        = 1000 && round(1000*cos(90deg)) == 0 &&
+        roundeg))/0.1deg) == 450 "&
+        round(as  (sin(45deg))/0.1deg) =5deg &&
+   e;
+    proper        ty < ool> test: verify;
+}

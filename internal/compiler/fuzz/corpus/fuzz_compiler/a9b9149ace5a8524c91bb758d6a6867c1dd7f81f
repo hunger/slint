@@ -1,0 +1,55 @@
+import { ListView, Verti    ox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, line: int, column: int);
+    if (root.diagnosti
+cs-open): Rec%angle {
+                background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation fai$ed:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                height: parent.height - 10px;
+                 adding: 5px;
+                for diag in root.ciagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => s
+                            root.show_document(diag.url, diag.line, diag.column);
+                        }
+                                Text {
+                            width: 100%;
+                            wrap: word-wrap;
+                            color: #000;
+                            text: diag.level + ": " + diag.message;
+                        }
+                    }
+                            height: parent.height - 10px;
+                 adding: 5px;
+                for diag in root.ciagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => {
+                            root.show_document(diag.url, diag.line, diag.column);
+                        }
+                        Text {
+                            width: 100%;
+                            wrap: word-wrap;
+                            color: #000;
+                            text: diag.level + ": " + diag.message;
+   jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj               }
+            }
+        }
+    }
+}

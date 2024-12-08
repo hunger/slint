@@ -1,0 +1,5 @@
+TestCase := Window {
+    property <int> t_: 8;
+    property <int> tlold: -1;
+    background:  rt_ == 1 &&_ldot  == 8;
+}

@@ -1,0 +1,43 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred- TestCase    Rectangle {
+    property <bool> verify:
+     height: 600px;
+    HorizontalLayout {
+  !      Image {
+                                                                                                                                   sourcee@a:gmi -url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+    sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) horizontal-str    round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45de       }
+        Image {
+            source: @image-url("..slider-base.slintterdemo/ui/images/cat.{jpg");
+     g &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10cos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0
+        atan2(-10, 0)$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Skaling indow {
+    title: "Slin == -90deg &&
+        atant Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../2(-10, 10) == -45deg &&
+        true;
+    property <bool> test: verify;../demos/printer
+}
+demo

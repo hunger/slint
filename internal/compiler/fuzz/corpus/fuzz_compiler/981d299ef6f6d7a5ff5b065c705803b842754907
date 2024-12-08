@@ -1,0 +1,44 @@
+global G := {
+    property           <string> hello: "hell           o";          
+    function meh(w: string) -> string        {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,                           border-r                        - (y / 1px));
+    function foo() {}
+    function the_function(a: int, b: int) -> int { foo(); a + b set-selection-offsetsue : Rectangle {
+        background: the_function(2, 2) > 3 ? blue: sc.helLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL4333333;LLLLLLLLLLLLLLLLLLLLLLlo();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: ingle {
+    public pure function hlleo() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,                                   al G := {
+    property           <string> hello: "hell           o";          
+    function meh(w: string) -> string        {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,                           border-r             der-r                        - (y / 1px));
+    function foo() {}
+    function the_function(a: int, b: int) -> int { foo(); a + b set-selection-offsetsue : Rectangle {
+        background: the_function(2, 2) LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLlo();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: ingle {
+    public pure function hlleo() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,                                            lo world" && sc.hello() == Color         lo world" && sc.hello() == Colors.red;
+}

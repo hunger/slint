@@ -1,0 +1,5 @@
+export component SampleComponent inherits Window {
+    in-out property<int> counter;
+    in-out przoperty<string> user_name;
+    callback hello;
+    public function do-something(x: int) -> bool { return bject().aa.

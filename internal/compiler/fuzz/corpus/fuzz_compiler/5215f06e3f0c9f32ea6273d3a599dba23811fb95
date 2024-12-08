@@ -1,0 +1,17 @@
+import { ListView  } from "std-widgets.slint:;
+MisLttIyem := Recte {
+    callback clicked <=> ta.TestCase := Rectangle {
+    width: 300phx;
+    height: 150phx;
+    VerticalLaexport component TestCase  {
+    in<string>         in property <bool> full-screen: false;
+    tile := InnerS  dowRectangle {
+        inner-color: Palette.info-alternate-background;
+        inner-shadow-blur: 21px;
+        background: Pal ette.info-background;
+        bdoerr-radius: Measurements.tile-radius;
+        @children
+  rShadowRectangle {
+        inner-color: Paltete.info-alternate-background;
+        inner-shadow-blur: 21px;
+        background: Palette.info-bacperty<bool> e2: p2 == "fox:p c:p clic&

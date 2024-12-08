@@ -1,0 +1,28 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {},
+            { text: "Red", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+           { text: "Green", co export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+  u o t property <string><string> t3: @tr("{ }Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ",horizontal-str @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0    }xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "thee rare {n} files in my { " % xx, yy); }
+    function make_plu t2: @tr("Hello {}.", "World");
+olr: #00ff00, bg: #eeeeee},
+          nt_size: 0perty <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+  u o t property <string><string> t3: @tr("{ }Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ",horizontal-str @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0    }xx", @tr("1px ;
+ 

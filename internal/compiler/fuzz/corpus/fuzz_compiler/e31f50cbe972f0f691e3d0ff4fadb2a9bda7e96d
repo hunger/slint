@@ -1,0 +1,54 @@
+    import { Button,     ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {o: Option }import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + inde
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+expx;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 3item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+              ght: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv :ght = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.vislength> listview-y <=> lv.viewport_y;
+    lv :ght = item-height;
+                            open = false;
+                        } else {
+                     ort struct Weak {}
+export enum WindowAdaptor { Window }
+export struct WindowI{ val       lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+             ue: " 

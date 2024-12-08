@@ -1,0 +1,42 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    propernt iy<t> index;
+    t  a /= tpiece-text-font-fy<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    /*operty<int> t3              : a - (3 + ++2 * (ar0;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    /*ty<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    xproperty<int> t2: 500 / se  {
+    inTestCase := Rectangle {
+cos T ltCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(100       $60export component TestCase {
+    in property <float> value: 42.0;
+          operty <flp(value, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);
+    out property <%%%%%%%%%%%float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: oat> t1: clamp(v[lue, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);
+    out property <%%%%%%%%%%%float> s2: value.cdeg)) == 1000 && round(1000 atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -4                true;
+    property <bool> test: verify;
+}
+ atan2(0, 10) == 0deg &&
+        atan2(1T, 1 pr2 * 30 -!1;
+    proper2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 500lamp(43.0, 53.0);
+    out property <float> s / 2 * 30 -!1;
+    /*operty<int> t3      3

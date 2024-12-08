@@ -1,0 +1,45 @@
+global G := {
+ Rectangle {
+    pu    blic pure function hello() -> co    { red }
+=
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int0{ a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <inimport { Slider } from "std-widgets.slint";
+export compoNent TestCase inherits Window {
+    widthr2: 64phx;
+    het> one: 1 + Math.round((x / 1px)   property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    pu    blic pure function hello() -> co    { red }
+=
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int0{ a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <iipmtnro { Slider } from "std-widgets.slint";
+export compoNent TestCase inherits Window {
+    width: 64phx;
+    het> one: 1 + Math.round((x / 1px) - (y / 1px));
+chain-i  ight: 64phx;
+    bac hello() -> co    { red }
+=
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int0{ a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <iipmtnro { Slider } from "std-widgets.slint";
+export compoNent TestCase inherits Window {
+    width: 64phx;
+    het> one: 1 + Math.round((x / 1px) - (y / 1px));
+chain-i  ight: 64phx;
+    background: darkgray;
+    Ver  kground: darkgray;
+    Ver  functicalLation ofoo() {r

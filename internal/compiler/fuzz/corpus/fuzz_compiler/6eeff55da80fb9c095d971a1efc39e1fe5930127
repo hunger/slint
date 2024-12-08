@@ -1,0 +1,38 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr "Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yyi: gntsr) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: imlayout-pngle {
+    pure callback foo0_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callba foo1 := Fooias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callba foo1 := Foo {
+        hallo_alias
+    pure }
+    }
+   (a) => { return a + 22; }
+    }
+    foo2 := Foo {
+        clicked => { adding return @tr("Ctx=>" => "xx{n}xx" | "yy{n}yy" % xx);ze
+    out property <string> result1: make_plural1(1, @tr("Plop")) + "\n" + make_plural1(2, @tr("Flopp   ")) + "\n" + make_plural1(10, t1);
+    out proper y <string> result2: make_plural2(1) + "\n" + make_plural2(-999) + "\n" + make_plural2(0) + "\n" + make_plural2nyy42yy";
+}

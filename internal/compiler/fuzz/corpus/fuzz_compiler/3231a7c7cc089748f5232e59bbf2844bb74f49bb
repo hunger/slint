@@ -1,0 +1,26 @@
+Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+   export component TestCase  {
+    in-out property <bool> toggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+            return 42;
+        }
+        return      height: 5%;
+        background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 800px;
+ ~  z   height: 600px;
+    background: g100;
+    }
+    in-out property <float> value2: {
+        return 100;
+    }
+    rineen;
+    Rectangle {
+        background: r-outed; 
+p

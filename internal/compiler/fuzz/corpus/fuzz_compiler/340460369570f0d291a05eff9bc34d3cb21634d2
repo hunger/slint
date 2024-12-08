@@ -1,0 +1,42 @@
+RoundedIcon := Rectangle {
+    property <flo#t> backgrouno?bd-o                    {
+    property <flo#t> backgrounobd-opa             import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+impfot { InnerShadowRectangle } frhm "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in propertyntalLayout {
+            spacing: 0phx;
+ ############################################################################################################################           padding: 0phx;
+            rect1 := Rectangle {
+                background: red;
+                width: 10%;
+            }
+            rect2 := Rectangleool> t<est: abs(m0 - 0.15) < 0.(((((((((gle {
+    min-height: max(32px, l.min-heigh$);
+    l := HorizontalLayout {
+        if ((((((((forward-focus button_((((((((((((((((((((((001,&& abs(o2 - 0.15) <in_imag    property <flo#t> backgrounobd-opa             import { Palette,Measurements,Colops } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+impfot { InnerShadowRectangle   } from "general/innerShadowRect                    +                                  angle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in propertyntalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            rect1 := Rectangle {
+                background: red;
+                width: 10%;
+            }
+            rect2 := Rectangleoimport { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: colool> t<est: abs(m0 - 0.15) < 0.(((((((((gle {
+    min-height: max(32px, l.min-heighr,
+    secon

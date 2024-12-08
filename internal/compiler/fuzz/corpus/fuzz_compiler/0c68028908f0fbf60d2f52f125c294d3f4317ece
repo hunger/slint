@@ -1,0 +1,11 @@
+Foo := Rectangle {
+ [    TestCase := Rectangle {
+    properFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFty <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        rkund(0500 * sin(90deg)) == 1000 && round(1000*cos(90d TestCase := Rectangle {
+    properFFFFFFFFFFpure callback hallo_alias <=> 666666666666666666666666666666666666666xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Reccomp..........................................FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFty ....                                            <

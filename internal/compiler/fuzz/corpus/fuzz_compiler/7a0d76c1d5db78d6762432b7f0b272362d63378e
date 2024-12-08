@@ -1,0 +1,23 @@
+TestCase := Rectangle {
+    property <[slider-base.slintint]> foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+ y       se := Rectangle {
+    property<{a: string, b: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, a : 444, c: "nothing" };
+    p(roperty<{a: string, b: int}> obj_conversion2: { a: "hello" };
+    property<{a: string, b: int}> obj_e/ rpotyr <int> first: foo[0RoundedIcon := Re];
+ t           callback do() ctangle {
+    property ity;cond:TestCase := Rectangle {
+    img := Imagslider-base.slintd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 :e {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> true ? { b: 1,
+    game-use-background-image: bool,
+    game-b test: imstd-contros.sliorder: length,
+    game-radius: length,
+  ntg2.source-clip-height * 1px =  game-text-color: color,
+    game-highligh2, a : "ddd" } :  { a: 12, b : 444= im

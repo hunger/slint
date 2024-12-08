@@ -1,0 +1,4 @@
+export global B {
+    out property <bo l> ok: true;
+}
+component A { }

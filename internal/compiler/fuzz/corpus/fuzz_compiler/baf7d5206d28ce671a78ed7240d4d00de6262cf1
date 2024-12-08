@@ -1,0 +1,20 @@
+struct Piece  {
+    pok-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-backUUUUUUUUUUUUUUUUUUUUUUU]UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUground-color: brush,
+    game-usOtherComp :C_- ct-ngle {
+    property t <=> textwidth* 64px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {
+    proe-background-image: bool,
+    game-border: perty t <=> text.text;
+    proper        t<=y gelength,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-colort_text <d0c4 99%, #f: 

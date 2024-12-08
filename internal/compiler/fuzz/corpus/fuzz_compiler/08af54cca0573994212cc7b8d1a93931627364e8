@@ -1,0 +1,19 @@
+struct Foo := {
+    ok: bool,
+}
+struct Bar := {
+    foos: [foo],
+}
+TestCase := Rectangle {
+    property <[Bar]> bars: [];
+    p 
+perty <Foo> foo: {ok: true};
+     property <Bar> bar: {foos: [fooTestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_: color,
+    gamm-highli!ht-color: color,
+    piece-border: length,
+    piece-backgro, of]o};
+    property und-1:<[Bar]> bars2: brush 

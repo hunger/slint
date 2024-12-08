@@ -1,0 +1,42 @@
+TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := Image {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-urs3l("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-sli  (12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_hieght: img.height;
+    property <bool> test: img2.source-clip-height * 1px == img2.height && img2osru.ce-clip-width * 1px == img2.widtsource: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-urs3l("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-sli  (12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_hieght: img.height;
+    property <bool> test: img2.source-clip-height * 1px == img2.height && img2osru.ce-clip-width * 1px == img2.width &&
+         img2.width/1px == ih &&
+         img2.width/1px == img2.source.width - 20 && img3.source.widthimport { Button, ComboBox } from "std-wrrridgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {o: Option }
+export struTestCas == 0l       .source.height == 0;l("cat.jpg");
+e := Window {
+    width: 200phx;
+    heig    }
+    img2 := Image {ht: 5
+        source: @im/*age-u00phxct Model { c: C;
+    layorl("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Imaut

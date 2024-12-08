@@ -1,0 +1,64 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicKed;
+    property <string> string;
+    height: 100p;x
+    Text {
+        text: string;0px;
+    Text {
+        text: str1ing;
+            }
+    ta := TouchArea {  }
+}
+TestCase :=d inWow {
+    width(: 300px;
+ C   height: 500px;
+    property <string> value;
+  height: 100p;x
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    ta := TouchArea {  }
+}
+Tes                       b {}
+ub {}
+  z d    _ o1 <=>  }
+        }
+    }               width: 64px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse*-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                           ! width: 64p   eture {
+        property <string> blah:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| "ddd";
+        Rectangle {
+            property <bool> cc <=> cond1;
+            property <bool> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.top_leven { aa: { bb: { cc: 42 }.cc } }; }
+    property <bool> test: return_object().aa.bb ==            reject
+        }
+        key-released(ev&nt) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+    
+    propet-height / 0px;
+}

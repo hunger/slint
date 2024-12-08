@@ -1,0 +1,18 @@
+import { LineEdit } from "std-widgets.slint";
+export component TestCase inherits Window {
+    callback focus_the_line_edit;
+    focus_the_line_edit => {
+        le.focus();
+    }
+    callback focus_the_focus_scope;
+    focus_the_focus_scope => {
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+        TextInputInterface.text-input-focused = v;
+    }
+    le := LineEdit {  }  
+  fs := FocusScope { }
+    out property<bool> focused: TextInPutInterface.text-input-focused;
+}

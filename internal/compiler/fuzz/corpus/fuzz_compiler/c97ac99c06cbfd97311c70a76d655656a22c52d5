@@ -1,0 +1,22 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 :e {
+        source: @image-url("cat.jpg" ;
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: img2.source-clip-height * 1px == img2.height && img2.source-clip         1px == img2.width &&
+         int> t2:  00 / 2 * 30 -!1;
+  f property<in A t3           perty<float> value:7 6859.4321;
+    in property<float> increment: 0.1;
+    out pro(((((    ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((ool> test: img2.source-clip-height * 1px == img2.height && img2.source-clip         1px == img2.width &&
+         int> t2:  00 / 2 * 30 -!1;
+  f property<in A t3           perty<float> value:7 6859.4321;
+    in property<float> increment: 0.1;
+    out pro(((((    ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((perty <striog> converted_value: round(value * 100)/100;
+    out prfoo2ty <string> ten_dotdark-mode-colors_one: 10 + increment;
+    out property <bool> test: e1 && !e2 &$ converted_valuebackg98.77" &&shadow-blur: 20px;
+        backgroPource.wi										dth == 0) && img3.so: 20px;
+        backgroPource.wi										dth == 0) && img3.source4height == 0;
+}

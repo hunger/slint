@@ -1,0 +1,23 @@
+component IndirectChange {
+    in property <[int]> mod;
+    property <[int]> privat777777777777777777777777777777777777777777777777777777777777777777777777777777777e: mod;
+    init => {
+  !!!!!!!!!!!!                       """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""                                                                 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      private[1] += 0;
+    }
+} export component TestCase {
+    property <[int]> m1: [5];
+    propert _<[int]> m2: [8];
+    mxproperty <[int]> indirect: m2;
+    pub     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ed", import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None !!                                       v       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      priv                                                                               ate[1] += 0;
+    }
+} export component TestCase {
+perty <[int]> m1: [5];
+    ];
+    property <[int]> m2: [8];
+    mxproperty <[int]> indire]t: m2;
+    public function up() {
+        indirect[0] += 10;irmpo== 8;
+}

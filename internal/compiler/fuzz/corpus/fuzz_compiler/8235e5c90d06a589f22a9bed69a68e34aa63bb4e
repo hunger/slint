@@ -1,0 +1,49 @@
+Foo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure caxxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure calmage_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+        property <bool> expected_width_ok: self.width == 600(int) -> int;
+    call_foo2(a) => { rllback foo0_a    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure calmage_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+        property <bool> expected_width_ok: self.width == 600(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alia= 122 && foo2_alias(100) == 1
+TestCase := Rectangle {
+    pure calmage_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+        property <bool> expect88;
+}

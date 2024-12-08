@@ -1,0 +1,42 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    prmperty<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #fn0; forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width   B                                    y: 0;
+        textolor> c2: rgb(100, 23, 42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);
+    property<color> i1: rgb(0, 666, -85);
+    property<color> p1: true ? b1.mix(r1, 30%) : y1.m:x(c1, 706%);
+    property<brush> invisyble: b1.with-a&& Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).alpha == floor(85% * 255)
+        && #a  Q reen == (33 * 16 + 11) && #abcd.alpha == (13 * 16 + 13) angle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    prgperty<color> b4: #00ff;
+    prmperty<color> b5: #0000ffff;
+ controp  C   or> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #fn0; forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width   B                                    y: 0;
+        textolor> c2: rgb(rty<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    prmperty<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #fn0; forwardalue
+        &

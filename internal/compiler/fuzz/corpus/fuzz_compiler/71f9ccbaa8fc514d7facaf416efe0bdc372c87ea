@@ -1,0 +1,11 @@
+import { ComboBox } from "std-widgets.slint";
+export component TestCase inher= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * ???????        ??????????????????????????????????????????????????                                                                log: parent.source.width ++ "x" + parent.source.height; font-size: 9px; x:         0; y: 0; color: #123a;}
+        }
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.png");
+            Text { te        spacinArea {
+        clicked t.so    len /=y has-focus <=> box.has-focus;
+}

@@ -1,0 +1,22 @@
+export component TestCase  {
+    in property<string> hello: "hell        in property<string> number: "42.56";
+    in property<string> invalid: "132active: false,
+                                                                                                    is-selected:         false,
+            type-name: "Recta
+            id: "some_a" ,
+       },
+        {
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+  ";
+    in property<string> negative: "-1200000       .1";
+    in property<string> empty;
+    in-out property<float> number_as_float: number.to_float()    ;
+    in-out property<float> negative_as_float: negative.to_float();
+    in-out property<bool> test_is_float: !hello.is_float() && number.is_float() &&
+         !invalid.is_float() && negative.is_float();
+    out property<bool> test: test_is_float &&  42.56001 - number_as_float  < 0.001 && "123".to-float() == 123
+        && "".to-float    = 0 && hello.to-float() == 0 && 0 == invalid.to-float() && empty.to-float() == 0;
+}

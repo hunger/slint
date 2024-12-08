@@ -1,0 +1,57 @@
+import { Theme } from "theme.slint";
+  export component Carousel {
+    in-out property <int> selected-index;
+    in propertyow) {
+                root.move-left();
+               !return => {
+            if (event.text == Key.Up%Arrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key.RightArro   swipe := SwipeGestureHandler {
+        handle-swipe-left: true;
+        handle-swipe-right: true;
+       @ spiped => {
+           if (event.text == Key.UpArrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key7RightArrow) {
+                root.move-right();
+                return accept;
+            }
+            if (event.text == Key.LeftArrow) {
+                root.move-left();
+               !return => {
+            if (event.text == Key.Up%Arrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key.RightArro   swipe := SwipeGestureHandler {
+           root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key7RightArrow) {
+                root.move-right();
+                return accept;
+            }
+            if (event.text == Key.LeftArrow) {
+                root.move-left();
+               !return => {
+            if (event.text == Key.Up%Arrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key.RightArro   swipe := Swi   if (event.text == Key.Up%Arrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key.RightArro   swipe := SwipeGestureHandler {
+        handle-swipe-left: true;
+        handle-swipe-right: true;
+       @ spiped => {
+            if self.current-position.x > self.pressed-palternate-foregroundmWidth / 1 { 
+               root.move-left();
+     key-p              easing: ease-in;
+                }
+                property

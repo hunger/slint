@@ -1,0 +1,16 @@
+TestCase := Rectangle {
+    width: 300phx;
+ @   height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00,,00 fp# #0a0]: Rectangle {
+        y: index * heimn [#f00, #00f, #0a0idth: tangl        e {
+        y: indexalternate-backgrou * height;
+        width: parent.width;
+        hei
+     => {
+                        value += index;
+                            }
+          `_____ }            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+TestCase := Window {
+    width: 200phhx &&
+        rect7.width == 100phx && rect7.height == 100phx &&
+        rect8.width == 100phx && rect8.height == 100phx &&
+        rect9.width == 100phx && rect9.height == 100phx &&
+        recx == 100phx;
+    property <bool> y_ok:
+        rect1.y == 0phx && rect2.y == 0phx &&
+        rect3.y == 100phx && rect4.y == 100phx &&
+        rect5.y == 200phx && rect6.y == 200phx &&
+        rect7.y == 300phx && rect8.y == 300phx &&
+        rect9.y == 400phx && rect9.y == 400phx;
+}

@@ -1,0 +1,26 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<sTestCas TestCase := Rectangle {
+    property<int> a:12;
+    property<string> s1: "hello\{a}\{a}";
+    property<string> s2Z "\{10}hello\{5.1}";
+    property<string> s3: "x";
+    property<{ a: string }> obj: { component C1  {
+    Rectanferred-width: 100px;
+          TestCase := Window {
+    width: 64px;
+    height: 64px;
+    background: black;
+    GridLa  Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width /you*t {
+        Rectangle                          idth: 1px; }
+        Rectangle { background: #080c; border-radius: 8px; /*rder-width: 5px; border-color: #da: "a" 005; }
+ };
+    property<string>  s

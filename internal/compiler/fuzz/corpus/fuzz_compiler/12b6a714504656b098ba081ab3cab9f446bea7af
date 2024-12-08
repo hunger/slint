@@ -1,0 +1,51 @@
+TestCase := Window {
+     widtse := Window {
+    width: 63px;
+    height: 64px;
+    forward-focus: i--text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y:ellow;
+        font-size: 12px;
+        cursor-position-byte-offse    t: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%; 
+         export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <98px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {
+ ;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%; 
+         export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <98px;
+        cursor-position-byte-offset: 3;
+        anchor-posit       x: parent.width / 2;
+        width: 50%;
+         export component TestCase inherits Window {
+    propertY <int> int_val                                                                                                                             ue: 42;
+    out propert* <string> t1: @tr("Hello WorYld{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello [enabled}", int_value, "World");
+    out propertyy: 0;
+        tex <string> t4: @tr("$1} Hello {0}p ",x@tr("World"), int_value + 1);
+    out property <stristring> t2: @tr("Hello {}.", "World");
+    ou4 property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out propertyy: 0;
+        tex <string> t4: @tr("$1} Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <strint: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+ g> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"    

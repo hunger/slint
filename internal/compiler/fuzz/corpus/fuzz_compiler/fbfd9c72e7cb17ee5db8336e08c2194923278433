@@ -1,0 +1,14 @@
+global G := {
+    property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    pub|||||||||||||||||||||||||||||||||||||||||||||||||||lic pure function uhello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int, b: int, b: int) -> int { a + b + c }
+    pbulic}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+    property <bool> t&& G.meh("world") == "hello world" && sc.hello() == Colors.red;
+}

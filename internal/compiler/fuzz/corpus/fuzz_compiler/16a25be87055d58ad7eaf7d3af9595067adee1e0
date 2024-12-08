@@ -1,0 +1,28 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/0.1deg) == 450 &&
+       contro(acos(coTestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegat.bg.brig: data.text;
+                    color: data.color;
+                  1px;
+    propert   property<int> untyped_d4: self   property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegat.bg.brig: data.text;
+                    color: data.color;
+                  1px;
+    propert   property<int> untyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mpx;
+    propert   property<int> untyped_d4: self.d4 / 1ms;
+y<intR s(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) i1: d1 ==/

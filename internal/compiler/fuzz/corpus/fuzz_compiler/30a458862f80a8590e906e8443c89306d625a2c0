@@ -1,0 +1,50 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview :Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00,        width: e                  TouchArea {
+             n event.texnt.focus();
+                                }
+ shadow-b  0phx;
+        GridLa    property<int> value: 1;
+    for c[index] in [#f00,        width: pareyout {
+            Rectangle {
+             parent.width;
+        height: 100phx;
+        GridLa    property<int> value: 1;
+    for c[index] in [#f00,        width: pareyout {
+  inde          Rectangle {
+       #00ff;
+    property<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    property<color> y2: #ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rgb(100, 23,         background: c;
+                TouchArea {
+                    width: parent.width;
+                    height: parent.height;
+                    clicked => {
+               42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);          valu      e += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectan     clicked => {
+                                                     
+    propertyTimePicke1: rgb(0, 666, -85);
+    property<color> p1: true ? b1.mix(r1, 30%) : y1.m:x(c1, 70%);
+                                          pare        

@@ -1,0 +1,56 @@
+RoundedIcon := Rectangle {
+    property ity;
+    b?ck wound-fill := Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+    }
+    property <float> o: backgrouperty<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        widexpor      }
+   Test   "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+   TestCase := Rectangle {
+    width: 600phx;
+    height: 300phx;
+    Rectangle {
+     value4: true ? Glob2.a : 88;
+    }
+ (  property <bool> test: r.value1{ layou#: len    gth }
+export enum     ,t> other: 5;
+}
+Te       prope                                                          ut property<float> t TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4   propeyrntit<> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<intt<> t4: 3 + - +5> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propernt> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> te in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 0;
+    in-out property <bool> running: false;
+    width: root.radiSlice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export     global GridLayo tCellData {
+      a *= 1**********************************************************        *Ltesa{out {
+        spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyyy      }
+    }
+}
+
+}

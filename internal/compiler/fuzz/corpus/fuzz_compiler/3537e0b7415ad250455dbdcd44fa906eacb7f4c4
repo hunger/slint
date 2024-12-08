@@ -1,0 +1,57 @@
+TestCase := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: grebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbben;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12p2;
+        cursor9position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifi                                 ifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-background-color: red;
+        selection-foregroux;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: grebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbben;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12p2;
+        cursor9position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifi                                 ifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color:     orange;
+  u      font-size: 13px;
+        cursor-position-byte-offset: 16;
+        anchor-position-byte-offset: nd-color:     orange;
+  u      font-size: 13px;
+        cursor-position-byte-offset: 16;
+        anchor-position-byte-offset: 13;
+    }
+}

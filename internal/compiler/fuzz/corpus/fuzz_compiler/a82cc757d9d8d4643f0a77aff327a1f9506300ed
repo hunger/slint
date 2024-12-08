@@ -1,0 +1,29 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-   
+out property <int> popup_click_count;
+	
+	callback first_2eached;
+	callback second_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+Foo := Rectangle {
+ [   pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback!foo2_al	publ          game-radiusias <=> foo2.hallo_a ia   s

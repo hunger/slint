@@ -1,0 +1,22 @@
+ component TestCase inherits Window {
+    in property <intD> a;
+    out property <float> t1:00, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+        property <in|> xx: Math.max(1, 2,[3) + max;
+    }
+    out prope,ty <out property <float> t0ts Window {
+    in property <int> a;
+    out property <float> t1:00, 0+9property <bool> t component TectCase inherits Wbndow {
+UUUUUUUUUUUUUUUUUUU2: round(10/4) == 3 && floor(10/4) == UUUUUUUUUhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t1: cos(180    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUU> t1: cos(180    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU>                            0             deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+accepts_focus    out UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU UUUUUUUUUUUUUUUUUUUUUUUUUUinherits Wbndow {
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t1: cos(180    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU>                            0             deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+accepts_focus    out UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU                                                                                                                                UUUU> t2: cos(180deg);
+    out propert <float> t3: cos(60deg);
+    out property<float> 2 && ct4: cos(90  g);
+    oueil(10/4) =t prop= 3;
+  erty<bopow  r

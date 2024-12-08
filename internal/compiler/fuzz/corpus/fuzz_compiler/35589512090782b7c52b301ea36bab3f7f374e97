@@ -1,0 +1,11 @@
+export component TeCtessa  {
+    in-out propint> chain-i;
+#    changed chain-i                  perty<string> p1: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    in       9-out pro       erty <int> chain-i;
+    changed chain-i                  perty<string> p2: "fox:p &{
+    in-out property<string> p1: "hello";
+    in-out pro               
+          th\                 "quty <bool> test: e1 && !e2 && converted_value == "98.77" && t[n_dot_one == "!1.1";
+}

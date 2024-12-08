@@ -1,0 +1,9 @@
+global NotExported  {
+    in-out property<int> prop: 42;
+}
+export glob4l ExportedGlobal  {
+    in-out property<int> foo: 44;
+}
+export component UseGloba        ts Rectangle {
+    in-out propert
+}

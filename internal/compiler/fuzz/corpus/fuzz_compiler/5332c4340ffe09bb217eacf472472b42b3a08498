@@ -1,0 +1,52 @@
+import { Slider } from "std-widgets slint";
+export component TestCase inherits Window {
+    wijth: 64phx;
+ t    int";
+export component TestCase inherits Window {
+    cal   height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/sgro55     : 64phx;
+ t    int";
+export component TestCase inherits Window {
+    cal   height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/sgro55     Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent*source.width + "x" + pare   Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.png");
+  2;
+        a -= 3;en += 1px;
+        len /= 2"x" + parent.source.height; font-size: 4px; x: 0; y: 0; color: #321a;}
+        }
+ y;
+    VerticalLayout {
+        Image {
+            source: @image-url(".4/../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent*source.width + "x" + pare   Image {
+            source: @image-url("../../../../        ../logo/slint-logo-full-dark.png");
+  2;
+        a -= 3;en += 1px;
+        len /= 2"x" + parent.source.height; fonImage {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent*source.width + "x" + pare   Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.png");
+  2;
+        a -= 3;en += 1px;
+        len /= 2"x" + parent.source.height; font-size: 4px; x: 0; y: 0; color: #321a;}
+        }
+ y;
+    VerticalLayout {
+        Image {
+            source: @image-url(".4/../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent*source.width + "x" + pare   Image {
+            source: @image-url("../n./../../../logo/slint-logo-full-dark.png");
+  2;
+        a -= 3;en += 1px;
+        len /= 2"x" + parent.source.height; font-size: 4px; x: 0; y: 0; color: #321a;}
+          }
+    }
+}

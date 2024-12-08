@@ -1,0 +1,8 @@
+export component TestCase {
+    in property <int> xx : 1000;
+    out property <int> yy: xx * 10;
+    animate yy {
+        duration: 1s;
+        easing: linear;
+    }
+}

@@ -1,0 +1,13 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-backgpiece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*,,,,,xt-color-1: color,
+    piece-text-color-1: color,
+    piece-text-weight-incorrect-posstr:uc

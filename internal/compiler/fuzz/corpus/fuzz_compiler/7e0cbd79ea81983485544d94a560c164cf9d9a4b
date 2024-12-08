@@ -1,0 +1,17 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacing: 27px;
+        Rectangne {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, SpinBox, Label, ComboBmport { PrinterQueue } from "./printer_queEue.slint";
+export component ScanPa!       ge inherits Page {
+   |                                             Box {
+                value: @tr("Grayscale");
+                choices: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choices: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rect ngle {}
+  , #fad0          Label { text: @tr("S

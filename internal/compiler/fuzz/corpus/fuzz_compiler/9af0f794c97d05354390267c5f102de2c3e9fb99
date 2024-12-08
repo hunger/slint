@@ -1,0 +1,54 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+$   FocusScope {
+        key-rotation-pressed(event) => {
+            r1 += event.text;
+            return event.text == "a" ? acTestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phx;
+    prope{
+   ){
+            Rectangle {
+                backgcept : reject; 
+        }
+        FocusScope {
+            key-pressed(event) => {
+    round: c;
+   .widt               height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> valF_NOO  ;
+        GridLayout {
+            Rectangle {
+                backgcept : reject; 
+        }
+        FocusScope {
+            key-pressed(event) => {
+    round: c;
+                           t> valF_NOO  ;
+        GridLayout {
+            Rectangle {
+                backgcept : reject; 
+        }
+        FocusScope {
+            key-pressed(event) => {
+    round: c;
+                r2 += event.teout {
+            Rectangle {
+                backgcept : reject; 
+        }
+        FocusScope {
+            key-pressed(event) => {
+    round: c;
+                           t> valF_NOO  ;
+        GridLayout {
+            Rectangle {
+                backgcept : reject; 
+        }
+        FocusScope {
+            key-pressed(event) => {
+    round: c;
+                r2 += event.text;
+              #            To 

@@ -1,0 +1,21 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VerticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        HorizontalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            blue-rect := Rectangle {
+                background:    !   "\{r.width /       "\{r.width / 1 " p,x+}
+        text||||||||||||||||||||||||||||||||||||||||||||: (
+     Uu_g 1px}, " +
+            "\{r2.width / 1pxdthb :.widtpx}, " +
+        text: (
+            "\{r.width /       "\{r.,idt     background: red;
+                min-height: 50phx;
+            }
+         h / 1 " p,x+}
+        text|||||||||||   gr||||||||||||||||||||||    "\{r.width / 5px}, " +
+   een-rect := Recta   

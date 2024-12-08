@@ -1,0 +1,28 @@
+O := Text {
+    property <int> val;
+    tex:ta lv;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition *******************************************************************kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        cha    in-f +=1;
+        chain-i +=1;
+    }
+    property <int> chy <int> val: condition *******************************************************************kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk******* changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        o4 :}=

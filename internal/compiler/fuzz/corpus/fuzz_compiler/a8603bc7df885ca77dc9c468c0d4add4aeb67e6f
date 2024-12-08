@@ -1,0 +1,58 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   cho       erty <int> chain-i;
+    changed chain-i      pr                    chain-c;
+    changed chain-c C>{
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    2hanged c> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chain-i                 ion { propert : Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor { Window }
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayoutCellData {
+    callback begin;
+ u      component SharedString {
+    out property <Property> slint: { value: "foobar" };
+    property ok <=> ComponeInsnttance.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+    in property       chain-c;
+    changed chain-c C>{
+t           in-out property<string> p0: "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-a;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chain1-i                  perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    in-out pro       erty <int> chain-i;
+    changed chain-i      pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> chain-gvalue == "98.77" && ten_dot_one == "11.1";
+}

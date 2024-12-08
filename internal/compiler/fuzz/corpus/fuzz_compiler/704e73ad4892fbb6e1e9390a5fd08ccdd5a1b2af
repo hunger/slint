@@ -1,0 +1,8 @@
+TestCase := Rectangle {
+cos TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+ import {      Bu 

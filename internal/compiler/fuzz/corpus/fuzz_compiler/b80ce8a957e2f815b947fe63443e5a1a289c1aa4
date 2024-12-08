@@ -1,0 +1,58 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-coler: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 3close-on-cli5phx;
+    property <length> listview-y <=> lv.vgth,
+}
+struct Theme  {
+    nn  piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,l,,,,,xt-color-0: color,
+    ame: string,
+    window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radiuse-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-3: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,       m,,,,,,,,,,,,,,,&&
+        round(1000* sin(180rem)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90d ,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-foniewport_y;
+  roun$-1: brush,
+         R rder-color-1: brush,
+    piece-border-color-2
+    in property <color> checked-color;
+    im property <co l>rounchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         c      last-clicked = i;
+          ,            }
+                }
+     "             last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

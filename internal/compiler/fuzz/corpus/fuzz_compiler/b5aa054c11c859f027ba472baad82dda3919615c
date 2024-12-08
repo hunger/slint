@@ -1,0 +1,8 @@
+TestCase := Rectangle {
+    property <[int]>																																																																																					X		 foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+    prop)))))))))))))))))))))))))))))))))))ertydCint> first: foo[0];
+    callback do() -> bool;
+  * do => {
+        if (first != 1) { return false;           foo = bar;
+        if 

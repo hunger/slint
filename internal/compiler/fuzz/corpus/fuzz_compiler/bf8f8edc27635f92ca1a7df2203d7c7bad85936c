@@ -1,0 +1,37 @@
+TestCase := Rectangle {
+b    animate background {
+ ____________________________@__________OOOOOOORectangle {
+b    animate background {
+ 
+ -}
+O______________________________background {
+ ______________________ 
+ -}
+O______________________________background {
+ ____________________________@  __________OOOOOOORectangle {
+b    animate bac______  _________OOOOOOORectangle {
+b    animate b________________________@__________OOOOOOORectangle {
+b    animate background {
+ 
+ -}
+O______________________________background {
+ ______________________ 
+ -}
+O______________________________background {
+ ____________________________@  __________OOOOOOORectangle {
+b    animate bac______  _________OOOOOOORectangle {
+b    animate bac____________________________@_______2__OO-OOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+@ -O}OORectangle {
+b    animate bac______  _________OOOOOOORectangle {
+b    animate bac____________________________@_______2__OO-OOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    aac____________________________@_______2__OO-OOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+@ -O}OORectangle {
+b    animate bac______  _________OOOOOOORectangle {
+b    animate bac____________________________@_______2__OO-OOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+@ -O}

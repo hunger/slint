@@ -1,0 +1,19 @@
+Inner := Rectangle {
+    property <percent> val;
+!       ground: val < 50% ? red : blue;
+}
+Outer := VerticalLayout {
+    property                                                              <percent> val;
+    Rectangle { background: val < 50% ? green : yellow; }
+}
+export         w := Window {
+    width: 240px;
+% ? red : blue;
+}
+Outer := VerticalLayout {
+    property                                                              <percent> val;
+    Rectangle { background: val < 50% ? green : yellow; }
+}
+export         w :=     height: 240px;
+    Outer { val: 50%; }
+}

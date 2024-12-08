@@ -1,0 +1,42 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPangs, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-width: 500px;
+    in property <length> preview-hxe ight: 900px;
+    i=n property <length> max-popup-height: 800px;
+ h: root.radius * 2;
+    height: root.radiusfU_MDu__  x: root.mx - root.width / 2;
+    y: root.my - root.height height/ 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}            rt 2;
+    y: root.my - root.height height/ 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> coun.er: 0;
+    animate counte      ,t> other: 5;
+}            rty <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        property <int>
+Te       prope                                          rty <int> value1: true ? Glob2.a : ,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> coun.er: 0;
+    animate counte      ,t> other: 5;
+}            rty <int> value2: true ? Glob2.a : 88;stCa  := Rectang88;stCa  := Rectangle {
+        proper TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 5ty <int> valuy <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        property <int>
+Te   -out property <float> coun.er: 0;
+    animate counte      ,t> other: 5;
+}            rty <int> value2: true ? Glob2.a : 88;s                                         := Rectangle {
+        property <int>
+Te       prope                                          rty <int> value2: true ? Glob   foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * -2 + 2 - 50 - 2;
+    property<int> t2: 500 /        is-in-root-component2 * 30 -!1;
+: fals e,
+        

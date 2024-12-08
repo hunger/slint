@@ -1,0 +1,45 @@
+TestCase :component C1  {
+    Recta       _ width: 100px;
+            Rectangle {
+               preferred-width: 41px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{rcomponent Cecta        width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text
+    }
+ xport component W inherits Window {
+    Rectangle {
+  = Rec%lngle {s
+      VerticalLayout {
+            FillParent {
+                min-hei   ght    :aelf.preferred-heigt;
+            }
+        }
+    }
+    c1:= C1 .   {}
+x && r2.in-width == 200px
+        && t c2.min-height == 600px &&{ c2.min-width == 200px
+             indow {
+    width: 200px;
+    height: 200px;       ntrk "\{r2.width / 1px}, " +
+            ""
+        );
+    }
+    out property <bo       yol> ok: r.width == 100px && r2.width == 100px;
+}
+export component W inherits Window {
+    Rectangle {
+        VerticalLayout {
+            FillParent {
+                min-height    :aelf.                                                                                           preferred-                        = 300p  && c2.min    && bug-63-width == 15.ok;
+200px
+ }r       && bug-6315.owk                                                     ;
+}

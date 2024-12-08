@@ -1,0 +1,51 @@
+import { ComboBox } from " {color: #00f, value: 9, },
+                               {color: #f00, value: 10, },
+            ] : Rectangle {
+                z: 78;
+                backgro;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;                      root.value = i.value;
+                    }
+                }
+            }
+            TouchArea {
+                clicked => { touch_error+=5 }
+            }
+            TouchArea {
+                z: 4;
+                clicked => { touch_error+=8 }
+            }
+        }
+        Rectangle {
+            background: pink;
+            z: -43;
+            TouchArea {
+                clicked => { touch_error+=0 }
+            }
+            TouchArea {
+                clicked => { touch_error+=180 }
+            }
+            TouchArea {
+                clicked => {
+                debug("HI");
+                touch1+=1
+                }
+            }std-wid                                                                    gets.slint";
+export component TestCase inherits Window {
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    ofen: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 5TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VerticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        hl1 := HorizontalLayout {
+            spacing: 0phx;
+            pad    wdidthing: : 0p

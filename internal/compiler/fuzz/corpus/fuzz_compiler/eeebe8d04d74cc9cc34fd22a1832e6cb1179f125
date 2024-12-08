@@ -1,0 +1,69 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+     +   spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+                                                                                                                for i in [
+                {color: #0f0, value: 8, },
+            e;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value: 10, },
+            ] : Rectangle {
+    {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {cog_height.expected_height_ok;
+    property <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> image_with_missing_width_clipped_ok <=> image_with_missing_width.expected_width_ok;
+    propelor: #0f0, value: 8, },
+            e;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+       	          {     {color: #0f0, value: 8, },
+          /z: -1;
+                clicked  =>t {ouch_error+=12 }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+import { ComboBox } from "std-widgets.srty <int> touch_error;
+    property <int> touch1;
+    property <i   {color: #nt> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value: 10, },
+            ] : Rectangle {
+                z: 78;
+                background: i.color;
+                TouchArea {
+       !            clicked => {
+                        root.value = i.value;
+                    }
+                }
+            }
+            TouchArea {
+                clicked => { touch_error+=5 }
+            }
+            TouchAre+ {
+ lint";
+export component TestCase inherits Window {
+    width: 200px;
+    height: 200px;
+    in-out property <string> outpuu;
+    TouchArea {
+        clicked => { output += "clicked-under\n"; }
+    }
+    VerticalLayout {
+        alignment: center;
+        box := ComboBox {
+            model: ["Aaa", "Bbb", "Ccc"];
+            selected 
+    in-out property model <=> box.model;
+    out property has-focus <=> box                                                                                                   
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%    .has-focus;
+}

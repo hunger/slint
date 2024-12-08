@@ -1,0 +1,68 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 0px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+       alu<=$== 3+3 +5;
+}
+                                         b2.a : 88;
+    }
+    property[<e1 property text_alias <=> text;
+1: value.clamp(10.0,      (    text   r := Rectangle {
+        property <int> value1:0Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property[<e1 property text_alias <=> text;
+1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.cv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                        last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+struct Piece  {
+    pobgs-x: int,
+    pos-y, 
+    offset-,
+}
+struct Theme  {
+    name: string,
+    window-backgpiece-border-color-2: brush,
+    piece-border-color-2: brus,,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-border-color-2: brush,
+    piece-border-color-2: brush,
+    ow-backgpiece-border-color-2: brush,
+    piece-borde offset-,
+}
+struct Theme  {
+    name: string,
+    window-backgpiece-border-color-2: brush,
+    piece-border-color-2: brus,,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-border-color-2: brush,
+    piece-border-color-2: brush,
+    ow-backgpiece-border-color-2: brush,
+       piece-border-color-2: brus,,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-border-color-2: brush,
+          border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,{{{{{{{{{{{r-color-2: brus,,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-border-color-2: brush,
+    piece-bpiece-border-color-2: brus,,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-border-color-2: brush,
+          border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,{{{{{{{{{{{r-color-2: brus,,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-border-color-2: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,   lor: root.unchpiece-te,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,   lor: root.unchecked-colo1r;
+        border        -radius: 2px;
+        clip := R

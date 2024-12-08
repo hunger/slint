@@ -1,0 +1,15 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: round: #2360e62b;
+    Grid**&&******************************************kground: #2360e62b;
+    Grid*************************************************       9******************************************!!!*****La{out {
+        spaciyyyy  ***********yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

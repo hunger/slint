@@ -1,0 +1,15 @@
+import { Theme } from "t("cat.jpg");
+      R  height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_Clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+        property <bool> expected_width_ok: self.width == 600phx;
+    }
+    property <bool> fixed_image_default_image_fit_ok: fixed   inner := Rectang val                  duration: root.duration;
+                     asing: ease-in;
+                }
+                property

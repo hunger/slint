@@ -1,0 +1,40 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-backgpiece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,TI,,,,,,,,    ,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-c,
+    window-backgpiece-border-color-1: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piesh,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,{   ,,,,,,,,,,,,,,,,,,,,TI,,,,,,,,    ,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-c,
+    window-backgpiece-border-color-1: brush,
+    piece-border-color-1: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$,,,,,,,,TI,,,,,,,,   font-familylor-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: inect-pos: int,
+a   piece-text-font-fami      checkbox-rect.border-width: root.width;
+             in {
+      bool,
+    game-border: length,ce-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,TI,,,,,,,,    ,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correorrect-pos: int,
+a   pi root.width;
+      ease-in       in ght * 10%;
+        border-color: root.unchecked-colo1r;
+        border-radius: 2px;
+        clip := R

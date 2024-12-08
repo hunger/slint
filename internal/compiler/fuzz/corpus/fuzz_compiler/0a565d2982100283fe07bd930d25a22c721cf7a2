@@ -1,0 +1,16 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import"\{r2.width /you*t {
+        Rectangle { background: red; border-colo||r: white; border-w   m                    "      idth: 1px; }
+ /*     Rectangle { background: #080c; h: 40px;
+            }
+        }
+    }+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Text {
+        tex    t: (
+            "\{r.width / 1px}, " +
+        j_  "\{r2.width /you*t {
+        Rectangle { background: red; border-colo||r: white; border-w   m                    "      idth: 1px; }
+ /*     Rectangle { background: #080c; border-radius: 8px; border-width: 5px; border-color: #d005t {
+        Rectangle { background: red; border-colRipplCircral/haText.slint";
+import { InnerShadowRectangle } froml e"

@@ -1,0 +1,21 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+     :      totala;
+    property<int> foo_b : foo.b;
+    property<int> obj_cond_merge_b : obj_cond_merge.b;
+    callback change_foo;
+    change_foo => {
+        foo.a = obj_conversion2.a;
+        foo.b += 8 + obj_conversion2.b;
+    }
+    function return]object [{a: "world"}, {a: "extraimport { Button, ComboBox } from "std-widgets.slint";
+export struct So", b: "ok"} ],
+    ];
+    out propme {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {erty <bool> test: array[2][1].b == "ok" && layers[0].rows[0].o: Opti

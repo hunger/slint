@@ -1,0 +1,32 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 30 100phx;
+        GridLayout {
+           t> value: 1;
+    for c[indexmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm] in [#f00, #00f, #0a0]: Rectangle {
+        y: badhorizontal-scrollex * height;
+        width: parent.width;
+        heighE_NOO  x;
+        GridLayout {
+            Rectangle {
+               Tes background: c     ctangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+           t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: indhorizontal-scrollex * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+                background: c      height: parent.height;
+                    clicked => {
+                        value += index;
+              tCase := Rectdth: parent.width;
+     1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+       TestCase := Rectang  y: in        leight;
+       

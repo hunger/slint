@@ -1,0 +1,81 @@
+ TestCase := Rectangle {
+    property<int!        a /= 2;
+        aproperty<int!> a;
+    property<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    properoperty<int!> a;
+    property<int> t0: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int>angle {
+        property <int> max: 42;
+        property <int> xx: Math.clamp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms.clamp(0, 5? Glo MQ  : 88;
+    }
+    property <e1 + r.valu<=$== 3+3 +5;
+}
+                                               (    text   r := Rectangle {
+        property <int> value1:0Glob.b;
+        property <int> value2: true ?erred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2im.> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len  = 2;
+          len  -= 3;
+        len += 1px;
+        len /= 2;
+        len -= 3px;
+        len *= 3;
+   ty<int> t2: 500(/ 2 * 30 - 1;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+          len  -= 3;
+        lenroperty<int> t2: 500 / 2 * 30 - 1;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+          len  -= 3;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len  = 2;
+          len  -= 3;
+        len += 1px;
+        len /= 2;
+        len -= 3px;
+        len *= 3;
+   ty<int> t2: 500 / 2 * 30 - 1;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+          len  -= 3;
+        len += 1px;
+        len /= 2;
+        2 * 30 - 1;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+          len  -= 3;
+        lenroperty<int> t2: 500 / 2 * 30 - 1;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len -= 3px;
+        len *= 3;
+    }
+}

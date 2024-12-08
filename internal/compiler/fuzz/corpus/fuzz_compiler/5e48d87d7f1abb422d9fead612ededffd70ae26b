@@ -1,0 +1,4 @@
+ TestCase := Rectangle {
+    property<float> t1: sqrt(100.0);
+    property<float> t2: sqrt(2);
+}

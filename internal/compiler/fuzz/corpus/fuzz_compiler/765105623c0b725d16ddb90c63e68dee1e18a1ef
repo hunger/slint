@@ -1,0 +1,51 @@
+ TestCase := Rectangle {
+    property<int> a:12;
+    property<string>def* s1: "hello\sa}\{a}";
+    property<string> s2: "\{10}hello\{5.1}";
+    property<string> s3: "x";
+    property<{ a8 string }> obj: { a: "a" };
+    property<string> s8: "\{obj6a}xxx";
+    callback foo;
+    maxfoo => {
+        s3 = "                     se := Rectangle {
+    property<int> value;
+    property<int> result : 3;
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            resul      \{s3}\{a+0}\{"\ } s{ 3            A action;
+    action => {
+        if value == 5 {
+            resulta+0}\{"\ } s{ 3              action;
+    action => {
+        if value == 5 {
+            result += 1;
+            resul      \{s3}\{a+0}\{"\ } s{ 3     lllllllllllllllllllllllllllllllllllllllllllllll                                                                         llnd-)ck test_callback4(int, string );
+    property<int> import { LineEdit } from "std-widgets.slint";
+export co
+ub {}
+    d    _ o0 <=> s.o;
+    prophrtl> test_zero: zero2 == 0;
+    property <float> ratio: 1px / 1phx;
+    property <fl        io: 1px / 1phx;
+    prs
+        fs.focus()color: brusllllll\{a+5}"}";
+        obj.a = "\{obj.a}\{"yo"}";
+    }h,
+    game-usOtherComp :C_- ct-ngle {
+    pbackground-image: bool,
+    game-border: perty t <=> text.text;
+    proper        t<=y gelength,
+    game-ra += 1;
+            resul      \{s3}\{a+0}\{"\ } s{ 3     llllllllllllllllllllllllllresul      \{s3}\{a+0}\{"\ } s{ 3            A action;
+    action => {
+        if value == 5 {
+            resulta+0}\{"\ } s{ 3              action;
+    action => {
+        if value == 5 {
+            result += 1;
+            resul      \{s3}\{a+0}\{"\ } s{ 3     lllllllllllllllllllllllllllllllllllllllllllllll                                                                         llnd-)ck test_callbacklllllllllllllllllllllllnd-color: brusllllll\{a+5}"}";
+        obj.a = "\{obj.+= 33;
+        }
+ 

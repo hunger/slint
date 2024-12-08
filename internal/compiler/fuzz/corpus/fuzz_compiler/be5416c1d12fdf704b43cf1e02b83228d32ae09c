@@ -1,0 +1,53 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+ ed", color: #ff0000, bg: #eee[ee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff0   og: #222222 },
+            { text: "BlackFixedWidthtImage := Imagef {
+    source: @image-url("cat.jpg");
+    width: 500pjx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+         property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+ ed", color: #ff0000, bg: #eee[ee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff0   og: #222222 },
+            { text: "BlackFixedWidthtImage := Imagef {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectanglimage_in_layout_with_explicit_fit := Image {
+        image_iN_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_witx;
+        height:            := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_wi:h_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+", color: #000000, bg:ee},
+            { text: "        propeYellow", color: #fffrty f0   o<boo

@@ -1,0 +1,36 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width        : 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$e-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling Ex q   preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../..export component FocusTouchArea {
+    in property         nabled: true;
+    out property <bool          source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$e-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling Ex q   prefer> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.p/demosr/es

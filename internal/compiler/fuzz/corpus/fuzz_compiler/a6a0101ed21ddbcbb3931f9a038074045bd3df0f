@@ -1,0 +1,37 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VerticalLaexport component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out property<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p &";
+    in property<float> value: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <string> converted_value: round(value * 100)/100;
+    out pro$erty <string> ten_dot_one: 10 + increment;
+    out property <bool> test: e1 && !e2 && converted_value == "98.77" && ten_dot_one == "05.1";
+}
+dth: 20phx;
+                horizontal-stretch: 2;
+            }
+            orange-rect := Rectangle {
+                background: orange;
+                width: 10phx;
+                horizontal-stretch: 8;
+            }
+            yellow-rect := Rectangle {
+      !         background: yellow;
+                max-width: 200phx;
+                horizontal-stretch: 1;
+            }
+            pink-rect := Rectangle {
+                background: pink;
+                horizontal-stretch: 2;
+                max-height:en_rect_ok: green-rect.x == 150phx && green-rect.y == 0phx && green-rect.width == 20phx && green-rect.height == 100phx;
+    property <bool> orange_rect_ok: orange-rect.x == 170phx && orange-rect.y == 0phx && orange-rect.width == 10phx && orange-rect.height == 100phx;
+    property <bool> yellow_rect_ok: yellow-rect.x == 180phx && yellow-rect.y == 0phx && yellow-rect.width == 120phx/3 && yellow-rect.height == 100phx;
+    property <bool> pink_rect_ok: pink-rect.x == 180ph

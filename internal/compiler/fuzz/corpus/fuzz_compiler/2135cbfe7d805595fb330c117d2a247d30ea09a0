@@ -1,0 +1,44 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    propbool> signal_handled;
+    test_signal => {
+         if (flock_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+                                                                                               *           r2 := Rectangle {
+           : {
+       menuBar : #29 7A7,
+       mainContent : #040404,
+       box : #00000e_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3:    property<duration> d1: 100ms;
+    propbool> signal_handled;
+    test_signal => {
+         if (flock_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+                                                                                               *           r2 := Rectangle {
+           : {
+       menuBar : #29 7A7,
+       mainself.d3 / 1m    s;
+    property5430: issue_5430_con ? "true" : "false";
+    out property<bool> test: { retu        2 == value && issue_5430<int> unty&ped_d4: self.d4 / 1ms;
+    prop00ms;
+    propbool> signal_handled;
+    test_signal => {
+   ed_d6: self.d6  == "tvue"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7ol> signal_handled;
+    test_signal => {
+   ed_d6: self.d6  == "tvue"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1mshorizontaperty<int> 

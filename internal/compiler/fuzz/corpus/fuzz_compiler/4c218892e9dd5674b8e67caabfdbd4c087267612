@@ -1,0 +1,29 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacing: 27px;
+        Rectangne {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, SpinBoxselection-foreground, Label, ComboBmport { PrinterQue1e } from "./printer_que5ue.slint";
+export compack-button: true-
+   backger: @tr("Scan");
+    GridLay out {
+        spacing: 24    }
+        }
+        Row {
+            Label { text: @tr("Color");        p      ComboBox {
+                value: @tr("Grayscale");
+                choices: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choices: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+          																 																																																																							  }
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choices: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+          																 																																																																							  }
+      %       Rectangle {}
+  , #fad0          Label { t;
+   @tr("S

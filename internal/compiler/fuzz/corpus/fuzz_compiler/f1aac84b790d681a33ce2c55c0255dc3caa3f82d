@@ -1,0 +1,40 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+    property<int6 test_cursor_pos: scomponent DeltasLiself.cursor                      sition_byte_offset;
+    property<inte: false;
+    property<string> test_text:!self.text;
+ optring]> changes_log: [];
+   operty<p.t in-out property <int> est_anchor_pos;
+    p operty<bool> input> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_length> l3: 100phx + 12px;
+    prt!{
+  t Changelog inherits Rectangle {
+    ing: [];
+    in-out proptring]> changes_log: [];
+   operty<p.t in-out property <int> est_anchor_pos!self.text;
+ optring]> changes_log: [];
+   operty<p.t in-out property <int> est_anchor_pos;
+    p operty<bool> input> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_length> l3: 100phx + 12px;
+    prt!{
+  t Changelog inherits Rectangle {
+    ing: [];
+    in-out proptring]> changes_log: [];
+   operty<p.t in-out property <int> est_anchor_pos;
+    p operty<bool> input> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_lengthanchor_pos;
+    p operty<bool> input> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_length> l3: 100phx + 12px;
+    prt!{
+  t Changelog inherits Rectangle {
+    ing: [];
+    in-out proptring]> changes_log: [];
+   operty<p.t in-out property <int> est_anchor_pos;
+    p operty<bool> input> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_length> l3: 100phx + 12px;
+    prv!{
+  t Changelog inherits Rectangle {
+ changes_log: [];
+    in-out proptring]> changes_log: [];
+   operty<p.t in-out property <int> est_a20 * 1phx;
+   stance.get_has_selectioselected: -2;
+n())?
+sli pnt_rotespte

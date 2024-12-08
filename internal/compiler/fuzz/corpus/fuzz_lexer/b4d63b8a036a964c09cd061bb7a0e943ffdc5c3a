@@ -1,0 +1,36 @@
+component C1  {
+    Rectanferred-width: 100px;
+          TestCase := Window {
+    width: 64px;
+    height: 64px;
+    background: black;
+    GridLa  Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{    dth / 1px}, " +
+     export component TestCase  {
+    in property<str%ing> hello: "he       pllo";
+    in property<string> number: "84.56";
+    in property<string> invalid: "132a";
+    in property<string> negative: dR1200000.1";
+    in property<string> empty;
+    in-out property<float> number_as_float: number.to_float();
+    in-out property<floa#99aaglobal G<=>2 := 3380; }
+        Text { text: "Hi->ent TestCase inhe its Window {
+    width: 64px;
+    height: 64px;
+    background: #2360e62 4px; borde																																																																																			r-width: 4px;t> negativ     e_as_float: negative.to_floa     y: i  ex * height;
+      ty<sty.to-float() == 0;
+}
+dth == 100px && r2.width == 100px;
+}
+export                                       Text { text: /*"Hi   height: 64px;
+    bAckground: black;
+    GridLayou*t {
+        Rectangle { back!"; color: #99aa3380; }
+        Text { text: "Hi!"; c: 6.33px;
+       ground: red; border-color: white; border-w                         us: 4px; border-width:,              4  

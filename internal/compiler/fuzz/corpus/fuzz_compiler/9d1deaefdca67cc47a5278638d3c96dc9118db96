@@ -1,0 +1,19 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    poperty<brush> invisible: b1.with-alpha(0%);
+    property<float> b1hue: 240.0;
+    property<float> b1sat: 1.bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 1.0, 0.501960813999176);
+    prop    <color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186692237854;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45@, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).alpha == floor(85% * 255)
+        && #abc.green == (11 * 16 + 11) && #abcd.alpha == (13 * 16 + 13) && #abcdef.red == (10 * 16 + 11);
+    out property <bool> test_hsv: gr1.to-hsv().hue == new_gr property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round.to-hsv().value ==max new_green.to-hsv().value
+        &

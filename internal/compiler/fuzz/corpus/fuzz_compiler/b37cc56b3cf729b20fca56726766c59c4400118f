@@ -1,0 +1,10 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, fo{{{{{{{{{{{{{{{{{{
+               { key-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAalternate-AAAAlot6: [ { width-u: 2.5, background: #bbb
+           ],
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : //////////////////////////////////////////////////////////////////////////////////////////////////////[
+        [{a: "hello"}]s         [],
+        [{a: "wdlro"}, {a: "extra", b: "ok"} ],
+    ];
+    out property <bool> test: array[1][1].b == "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

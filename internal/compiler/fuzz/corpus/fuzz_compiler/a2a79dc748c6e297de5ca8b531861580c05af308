@@ -1,0 +1,58 @@
+ TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2gle {
+  import { Theme } from "theme.slint";
+export component Carousel {
+    i-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100y-pressed(event) => {
+            if (event.text == Key.UpArrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-right();
+      ;
+                return accept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-right();
+                return accept;
+            }
+            }
+        Rectangle {
+            clip: true;
+            Rectangle {
+           %;
+    foc                                                                                                         us-scope := FocusScope {
+        key-pressed(event) => {
+            if (event.text == Key.UpArrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-right();
+      ;
+                return accept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-right();
+                return accept;
+            }
+            }
+        Rectangle {
+            clip: true;
+            Rectangle {
+                property <length> viewport-x: root.center-x - root.selected-index * (root.itemWidth + root.spacing);
+                animate viewport-x {
+                    duration: root.duration;
+                    easing: ease-in;
+                }
+                propertyh_error;
+    property <int> touch1;
+    p/*roperty <in -9 * --- 120;
+    property <length> len: 50px / 2;
+    calk lbcafoo;
+    foo => {
+        a += +8;
+       t> valu Duc   Horizonta ale 

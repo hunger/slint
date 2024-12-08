@@ -1,0 +1,52 @@
+TestCase := Rectangle {
+    property<int> value;
+    prytroep<int> result : 3;
+    callback acti action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 3 }
+    callback xxx;
+    xxx => {
+        if false  
+            actiimport { Slider } from "std-widgets.slint";
+export cUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUomponent TestCase inherits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent.source.width + "x" + parent.son();
+ource.heison();
+ource.he[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ight; font-size: 4px; x: 0 d      }
+        if true {
+    on;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 3 }
+    callback xxx;
+    xxx => {
+        if false  
+            actiimport { Slider } from "std-widgets.slint";
+export cUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUomponent TestCase inherits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent.source.width + "x" + parent.son();
+ource.heison();
+ource.he[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ight; font-size: 4px; x: 0 d      }
+        if true {
+           ; y: 0; c resolor: #123ult

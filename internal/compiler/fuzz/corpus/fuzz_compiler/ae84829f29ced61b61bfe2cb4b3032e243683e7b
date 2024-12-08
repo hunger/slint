@@ -1,0 +1,21 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor { Window } TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        ro
+export struct WindowItem {}
+expor

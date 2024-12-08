@@ -1,0 +1,18 @@
+TestCase := Window {
+    width:  300px;
+    height: 300px;
+    if (true) : Rectangle {
+        background: black;
+        VerticalLayout {
+            Rectangle {
+                background: blue;
+                TouchArea { clicked => { last_clicked = 1; } }
+            }
+            Rectangle {
+                background: red;
+                TouchArea { clicked => { last_clicked = 2; } }
+            }
+        }
+    }
+    property<int> last_clicked;
+}

@@ -1,0 +1,57 @@
+TestCase := Rectangle {
+    property<bool> tr@@@@@@@@@@@@@@@@@@@@@@@@@@@@uevar: true;
+    property<bool> false_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+TestCase := Rectangle {
+    property<int> value;
+    propeTestCase := Rectangle {
+    property<int> value;
+    property<int> result : 3;
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }
+    }
+    callback xxx;
+    xxx => {
+        if false {
+            action();
+        }
+        if true {
+          } else {
+        text <=> text1;
+    }
+    t            action();
+        }
+    }
+    callback elseif(int) -> int;
+    elseif(v) => {
+                if v == 1 {
+            41
+        } else if v == 2 {
+            4rty<int> result : 3;
+   2
+        } else {
+            43
+        }
+            action;
+    i2 action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }
+    }
+    ca }
+   4:= TextIn3
+     p

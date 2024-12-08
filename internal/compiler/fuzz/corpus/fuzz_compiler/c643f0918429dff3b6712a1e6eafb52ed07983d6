@@ -1,0 +1,80 @@
+export global Glob {
+    in-out property <int> v: 55    -c;
+    changed chain-c => { chain-b += 2; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chain-i => { chain-h += 1; }
+}
+component SubCompo {
+    in-out property <int> v: 456;
+    in-out property <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort component TestCase inherits Window {
+    in-out property <string> result;
+    in property <int> value: 56;
+    changed rty <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort comped rty <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out p <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAli property text <=> ti. + * * 2 + 2g := -  5

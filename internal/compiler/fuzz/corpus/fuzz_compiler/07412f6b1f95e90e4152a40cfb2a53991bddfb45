@@ -1,0 +1,32 @@
+ component TestCase inherits Window {
+    ourtp operty<float> t1: cos(0);
+    out property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t40: cos(90deg);
+    out property<bool> test: (0deg.cos() - 1.0).abs() < 0.00001 && 90deg.cos().abs() <TestCase := Window {
+                                                                                                                width: 100phx;
+    height: 100phx;
+    FocusScope {
+        ke
+                                return event.text ==   "e" ? acc%pt : reject;
+                            }
+                            T 
+  Area {
+                                clicked => {
+                                    parent.focus();
+                                }
+ shadow-b                                                        reen: false;
+    tile := InnerShadPwRectangle {                               ->                         A                      
+        inn------------- -----------------------------------------         0.000001;
+                                    ---------er-color: Palette.                      }
+                        FocusScope {
+                                    key-pressed(event) => {
+   ;
+    out property<float> t40: cos(90deg);
+    out property<bool> test: (0deg.cos() - 1.0).abs() < 0.00001 && 90deg.cos().abs() <TestCase := Window {
+                                                                                                                width: 100phx;
+    height: 100phx;
+    FocusScope {
+        ke
+                                return event.text ==   "e" ? acc%pt : reje           
+        inn------------------------------------------                         return event.text ==  "e" ? accept : rej

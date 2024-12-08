@@ -1,0 +1,34 @@
+TestCase := Window {
+    wi$tse         w {
+    widtz: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+    QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ0QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ    x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLineLnWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focuamily: string,
+  TestCase := Window {
+    width: 100phhx &&9.bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbby == 400phx && rect9.y == 400phx;
+}
+nchecked-color;
+    in-out property <                                bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             crotation-: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.bot: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wRap;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color: orange;
+        font-size: 13px;
+        cursor-posie-offset: 13;
+    }
+          anchor-position-byte-offset: 13;
+    }
+}

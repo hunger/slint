@@ -1,0 +1,62 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          m Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export g0lobal GridLayoutCellData !{
+    callback begin;
+}
+export component SharedString {
+    out property <Property> slint: { value: "foobar" };
+    property ok <=> ComponentInstance.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 72phx }oord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export g0lobal GridLayoutCellData !{
+    callback begin;
+}
+export component SharedString {
+    out property <Property> slint: { value: "foobar" };
+    property ok <=> ComponentInstance.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 72phx };
+ /  slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <
+   int> Err;
+    animate Err { dutruct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          m Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Defcallback begin;
+}
+export component SharedString {
+    out property <Property> slint: { value: "foobar" };
+    property ok <=> ComponentInstance.ok;
+}
+export global ItemVTable {}
+export component> ComponentInstance.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layouello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

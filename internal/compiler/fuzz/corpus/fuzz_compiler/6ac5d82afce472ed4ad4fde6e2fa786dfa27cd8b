@@ -1,0 +1,41 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<leng h> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh0phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;
+    property <float> ratio: 1px / 1phx;
+    property <float> ratio: 1px / 1phx;
+    property<bool> test: (8phx * 5px * 3ms / 2phx)  == (8TestCase := Rectan;
+    property<int> untype -0.px * (3ms / 2phx) * 5px) / r_offset5s;
+    property<duration> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 / 1ms;
+    property<int> i2: d1 / (2ms + 0);
+    property<int> untyped_d1: self.d1 / 1ms;
+    property<int> untyped_d2: sel property<int> i1: d1 / 1ms;
+    property<int> i2: d1 / (2ms + 0);
+    property<int> untyped_d1: self.d1 / 1ms;
+    property<int> untyped_d2: self.d2 / 1ms;
+    property<int> untyped_d3: self.d3 / 1ms;
+    property<int> untyped_d4: self.d4 / 1ms;
+    pnt> i1: d1 / 1m;
+    s;
+    property<int> i2: d1 / (2property<boms + 0);ol> has_selection: s
+  fe.

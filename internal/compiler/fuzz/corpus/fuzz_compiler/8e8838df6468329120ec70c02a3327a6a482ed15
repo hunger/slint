@@ -1,0 +1,58 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<float> t2: cos(180deg);
+    out property<fgle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blarap;
+        color: green;
+  wrap: word-wrap;
+        color: black;
+        selection-background-color: red;
+     h";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> other)px;&& 90deg.cos().abs() < 0.00000c omp_t: "real value";
+    property othercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    loat> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> test: (0deg.cos()    .0).ab))))))))))OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;TestCase := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-w
+    tex     text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blarap;
+        color: green;
+  wrap: word-wrap;
+        color: black;
+        selection-background-color: red;
+     h";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> other)px;&& 90deg.cos().abs() < 0.00000c omp_t: "real value";
+    property othercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_some_value_alias <=> other_comp.s1;
+}ome_value_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        proper
+ty text_alias <=> text;
+        text <=> text   s1;
+   electi on-

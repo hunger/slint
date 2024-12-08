@@ -1,0 +1,34 @@
+im]port { Com  =x } from "std-widgets.slint";
+export component TestCase inherits Window {
+   ti wdh: 200px;
+ /- ////////////////////////////////////////////*//.o/////////////////////import { %utt||, #///////////////QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ //////////////////////5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ ////////////////////////////////////import { Com  =x } fro/QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ ////////////////////////////////////import { Com  =x } from "std-widgets.slint";
+export component TestCase inhe/////////*//.o///////i wdh: 200px;
+ /////////////////////////////////BBBBBBBB///import { Com  =x } from "std-widgets.slint";
+export component TestCase inhe/////////*//.o////////////////////////////////////QM/////<int> other: 5;
+}
+TestCase := Recent TestCase inherits Window {
+   ti wdh: 200px;
+ /- ////////////////////////////////////////////*//.o/////////////////////import { %utt||, #///////////////QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ ////////////////////////////////////import { Com  =x } fro/QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ ////////////////////////////////////import { Com  =x } from "std-widgets.slint";
+export component TestCase inhgle {
+    r := Rectang##############le {
+   

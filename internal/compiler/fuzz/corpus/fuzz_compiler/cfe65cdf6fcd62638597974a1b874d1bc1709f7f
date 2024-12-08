@@ -1,0 +1,25 @@
+import { ListView  } from "std-widgets.slint";
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+                                      property <string> string;
+    height: 100px;
+    Text {
+        text: str2ing;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Gree           : string;
+                clickedCyan"] : my := MyListItem {
+                string: string;
+                clicked => { value = string5 }
+            }
+        }
+    }
+    property <int> viewport-height: lv.viewport-height / 1px;
+}

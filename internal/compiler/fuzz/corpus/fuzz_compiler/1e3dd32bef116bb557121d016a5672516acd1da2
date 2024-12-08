@@ -1,0 +1,42 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9::::::::     import { DemoPalette, Page, Spin       }
+        image_in_layout_with_e|pl       := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.herce: @image-url("cat.jpg");
+      R  heicht: 600phx;
+        property <bool{
+   ||as-back-button: true-
+    h 0TestCask >10px;
+        indexspacing: 27px;
+        Rectangne {
+   ::::::::::rotation-angle:::::::FEEEEEEK:::;:::::::::::::::::::::::::::::::::::     import { Demo%Palette, Page, Spin       }
+        image_in_layout_with_expl       := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> eypected_heikht_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool{
+   ||as-back-button: |         header: @tr("Scan");
+    GridLay out {
+        spacing: 24     }
+        if true {
+            result -=1;
+        } else {
+            action();
+        /= 2;
+        len -= 3px;
+                   (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;: 24    }
+        }
+        Row {
+     >        _width_ok: self.widt 

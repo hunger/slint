@@ -1,0 +1,36 @@
+Foo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callbajk hallo{
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callbajk hallo(intffffffffffffffffffffffffffffff2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+      hallo(a) => { re=turn a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+Foo := Rectangle                                                                                                {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___    o_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are        pure callback hallo(intffffffffffffff := TouchAre(intffffffffffffffffffffffffffffff5ffffffffffffffffffffffffffffffffffffffffffffffffffff are        pure callback hallo(intffffffffffffff := TouchAre(intffffffffffffffffffffffffffffff5ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+      hallo(a) => { re=turn a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alias <=    call    _foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___    o_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are        pure callback hallo(intffffffffffffff := TouchArea { }
+}
+TestCase :=fffff 

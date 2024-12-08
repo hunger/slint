@@ -1,0 +1,55 @@
+import { }                  r.height = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                         }
+                    }
+                }
+                TouchAreatview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: itel-height;
+            property <Bbool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;
+            r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                         }
+                    }
+                }
+                TouchAreatview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: itel-height;
+            property <Bbool> open;
+            Hori                open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                         }
+                    }
+                }
+                TouchArea {
+                Z    clicked => {
+                        last-clicked = i;
+            
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;
+                            open = fa        }
+                }
+            }
+        }
+    }
+}

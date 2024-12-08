@@ -1,0 +1,49 @@
+export component FocusTouchArea {
+    in prcus-scope := FocusScope {
+        x:1111111111111111111111111111111111111111111111111111111111 0;
+ property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    property<color> y2: #ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rgb(100, 23, 42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);
+    property<color> i1: rg
+    propertyusTouchArea {
+    in prcus-scope := FocusScope {
+        x:11111111111111111111111111<float> y1hue: 60.0;
+    property<float> y1sat: 1.0;
+    property<float> y1bri: 1.0;
+    property <color> gr1: green;
+    property<float> gr1hue: 120.0;
+    property<float> gr1sat: 1.0;
+        width: 0px;
+        enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || :event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed = true;
+            
+       r     eject
+        }
+                                                                           s-scope := FocusScope {
+        x:1111111111111111111111111111111111111111111111111111111111 0;
+        width: 0px;
+        enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || :event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed = true;
+            
+       r     eject
+        }
+                                                                                                                           key-                                                key-released(event)    }
+}  

@@ -1,0 +1,42 @@
+export componnent TestCase inhe its Wi Row {}
+        Text { text: "Hi!"; color: #9 number_as_float: number.to_float();
+    in-out property<floa#99aa3380; }
+        Text { text: "Hi!"ent TestCase inhe its Window {
+    width: 64px;
+    height: 64px;
+    background: #2360e62;
+b    GridLayout {
+        spa/*cing: 0.5px ; 
+      padding: 6.33px;
+        Recta	 le { bacding: 6.33: 5px; border-color: #d005; }
+        Rectangle { backgrou  width: 200phx;
+    height: 500phx;
+    layout := GridLayout {
+     "  spa TestCase := Rectangle {
+    property<int> a;
+    property<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9** --- 120;     property <length> leound: #2360e62;
+b    GridLayout {
+        spa/*  ng: 0.5px ; 
+      padding: 6.33px;
+        Recta	 le { bacding: 6.33: 5px; border-color: #d005; }
+        Rectangle { background: blue; border-top-right-: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9** --- 120;     property <length> len: 50px / 2;
+    callback foo;
+     height: 100phx;
+        GridLayout {
+            Rec: Rectangle {
+        y: index * height;
+        width: parent.width;
+        heigo-float() && empty.to-fl9aa3380; }
+        Text { text: "Hi!"ent TestCase inhe its Window {
+    width: 64px;
+    height: 6        4px;
+    backgr);
+    out property<bool> test_dur: dur == 5ms.clamp(45ms, 50ms);
+    out property <bool> test: root.t1 == 42.0 && root.t2 == 43.0 && root.t3 == 41.0 && r.xx == 42 + 3 && root.s1 == 42.0 && root.s2 == 43.0 && root.s3ext: "Hi!"; color: #0a3; opacity: 0.5; }
+    }
+}

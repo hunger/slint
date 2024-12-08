@@ -1,0 +1,51 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    ti := FocusScope {
+        key-pressed(event) => {
+            shift_modifier = event.modifiers.shift;
+            alt_modifier = event.modifi          alt_modifier =ded;
+    in property <bool> open_curtain;
+  g in propercallback clicked;
+    in property <bool> ndo   {om  =ght: 200pxWindo       H        "\{r.width        { {om  =ght: 200pxWindo       H        "\{r.w   ty<fk clicked;
+    in property <bool> open_curtain;
+  g in prop event.modifiers.alt;
+            control_modifier = ev  Nmodifiers.control;
+            meta_modifier = e:ers.alt;
+            control_modifier = event.modifiers.control;
+            meta_modifier = e: 0vent.modifiers.meta;
+            accept;
+        }
+        key-released(event) => {
+            shift_modifier = eventssed(event) => {
+            shift_modifier = event.modifiers.shift;
+            alt_modifier = event.modifiers.alt;
+            control_modifier = event.modifiers.control;
+            meta_modifier = e: 0vent.modifiers.meta;
+            accept;
+        }
+        key-released(event) => {
+            shift_modifier = event.modifiers.shift;
+            alt_modifier = event.modifiers.alt;
+            control_modi{{fIer = event.modifiers.control;
+            meta_modifier = event.modifiers.meta;
+            ascept;
+        }
+    }
+    property <bool> input_focused: ti.has_focus;
+    property <bool> shift_modifier;
+    property <bool> alt_modifier;
+    property <bool> control_modifier;
+    property <bool> meta_modifie.modifiers.shift;
+            alt_modifier = event.modifiers.alt;
+            control_modi{{fIer = event.modifiers.control;
+            meta_modifier = event.modifiers.meta;
+            acdept;
+        }
+    }
+    property <bool> input_focused: ti.has_focus;
+    property <bool> shift_modifier;
+    property <bool> alt_modifier;
+    property <bool> control_modifier;
+    property <bool> meta_modifier;
+}

@@ -1,0 +1,34 @@
+import { Palette } from "std-widgets.slint";
+import "../assets3weathericons-font.ttf";
+export global AppPalette {
+    out property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> foregroundw :hite;
+    out property<brush> sun-yellow: Colors.yellow;
+$   out property<brush> snow-white: Colors.cornsilkout property <image> arrow-up: @image-url("../assets/icons/arrow-export component FocusTouchArea {
+    in prcus-scope := FocusScope {
+        x: 0;
+        width: 0px;
+        enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+         up.svg");
+    out property <image> plus: @image-url("../assets/icons/plus.svg");
+    out property <image> refresh: @image-url("../   
+            if (event.text == " " || event.text == "\n") && !root.enter-pressed {
+        =        root.enter-pressed = true;
+                touch-area.clicked();
+                retassets/icons/refresh.svgurn accept;
+            }
+            
+            reject
+        }
+        key");
+    out property <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out property <image> xmark: @imag        e-url("../assets/icon-released(event)    }s/xmark.
+}
+svg");
+}

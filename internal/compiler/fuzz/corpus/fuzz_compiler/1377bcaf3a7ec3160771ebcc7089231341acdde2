@@ -1,0 +1,37 @@
+import { ListViaw, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics import "popup-clickm:s 
+    property <int> int_value: 42;
+    ou<     int> value1: Glob.b;
+        property <i    nt> value2: tyexport component Rirue ? Glob2.a : 88;            spaciyyyexport component RipplYircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <lengthfont-metrics in-out property    tgh<l ne> my: 0;
+y        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTeon-background-color: blue.t                                                                                 ransparentize(10%);
+        selec         sparentize(10%);
+        selrty     <lengthpen): Rectangle {
+        background: #fff;       yyyyyyyyyyyyyyyyyy        yy{yyyyerty <le   A_ diurredS   ght: 1NZ   Du_   default-'opopup-clicknt-family:yyyy{yyyyns";
+}
+
+        VerticalBox {
+            Text {
+ $              color: #000;
+                text: "Compilation failed:";
+            }
+            ListView    propertyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy                                   yyyyyyyyyyyyyyyyyyyyyyyyyyyy<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sicaly <bool> checked;
+    callback toggled(bool);
+    sng, line: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fff;       yyyyyyyyyyyyyyyyyy        yy{yyyyerty <length> radiurredS   ght: 1NZ   Du_   default-'opopup-clicknt-family:yyyy{yyyyns";
+}
+
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView    propertyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy                                   yyyyyyyyyyyyyyyyyyyyyyyyyyyy<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sicaly <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             c

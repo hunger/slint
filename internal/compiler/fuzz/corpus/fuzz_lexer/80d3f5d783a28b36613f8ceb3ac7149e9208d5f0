@@ -1,0 +1,9 @@
+import { ComboBox } from "std-widget .slint";
+export compon
+    width: 200px;
+    height: 200px;
+    in-out pr6666666666666666666666666666666666666666666666666666666666666666666666666666666Z66666666666666operty <string> outpu6666666666666666666666666666666666666666666666666666666666666666operty <string> output;
+   gnme       selected 
+    in-out proper#y model <=> box.model;
+    out property has-focus <=> box.has-focus;
+}

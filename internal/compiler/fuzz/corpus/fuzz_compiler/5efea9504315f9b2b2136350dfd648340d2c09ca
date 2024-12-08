@@ -1,0 +1,27 @@
+ TestCase := Rectangle {
+    prope rbt<yool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        AAAAAAAAAAAAAAAAAAA font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default,key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, backgroun{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        rouVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVnd(1000* sin(180deg))  &&
+        round(acos(cos(     round(------------------------0deg))  &&
+        round(acos(cos(     round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg-------------------------<<<<<<<<<<<<<---10) == 0deg &&
+        atan2(10, 10) ==yyyyy45deg))/0)1deg) ==    &&
+  os(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        rouVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVnd(1000* sin(180deg))  &&
+        round(acos(cos(     round(------------------------0deg))  &&
+        round(acos(cos(     round(0500 * sin(90den2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+   rop perty <bool> test: verify;
+}

@@ -1,0 +1,2 @@
+import { ListView, Palette, ScrollView } from "sfrom "std-widgets.slint";
+impTesEdti

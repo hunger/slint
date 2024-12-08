@@ -1,0 +1,42 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out propgrty <length> my: 0;
+    in-out property <float> fpress: 0;
+    in-out pro!erty <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.rty <length> my: 0;
+    in-out property <float> fpress: 0;
+    in-out pro!erty <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root. x - rv@alue_aliTest := Rectangle {
+    background:         @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow  
+     #fad0c4 width: 200px;
+ /////1radius * 2;
+    height: root.radius * 2;
+    x: root. x - rv@alue_aliTest := Rectangle {
+    background:         @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow  
+     #fad0c4 width: 200px;
+ /////100%/fpress: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <b]ool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rv@alue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 widoh: 2000x;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <     int> value1: Glob.b;
+        property <i    nt> value2: true ? Globshow: 88;
+           spaciyyyexpdoh: 2000x;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <     int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyexport  backert

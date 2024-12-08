@@ -1,0 +1,27 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+                            key-pressed(evhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhen
+                                       r5 += event.text;
+                                return event.text == "e" ? accept : reject;
+No                          max}
+                            TouchArea {
+                                clicked => {
+                 
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+                            key-pressed(evhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy2bool> toggle: true;
+    property<string> r1;
+    property<string> r2;     property<string> r3;
+    property<string> r4;
+    property<string> r5;
+}

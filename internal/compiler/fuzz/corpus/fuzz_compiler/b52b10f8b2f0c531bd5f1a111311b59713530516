@@ -1,0 +1,25 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    propertstd-widgets.slint;od_hue: 33.79300555135514;
+    property<float> bwood_sat: 0.39189186692237854;
+    property<float> bwood_bri: 0.8705882430076599Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Col ors.rgba(145, 1img-178, 85%).alpha == floor(85% * 255)
+        && #abc.green == (11 * 16 + 22) && #abcd.alpha == (13 * 16 + 13) && #abcdef.red == (10 * 16 + 11);
+    out property <bool> test_hsv: gr1.to-hsv().hue == newn-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? G_ob2.a :     height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := RectaCgle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn*****%**_green.to-hsv().hue && gr1.to-hsv().saturation == nrge_newe.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

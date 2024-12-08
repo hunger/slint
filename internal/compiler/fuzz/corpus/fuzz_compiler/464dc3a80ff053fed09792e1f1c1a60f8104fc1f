@@ -1,0 +1,13 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+tangle {
+    property <bool> verify:
+     heig= 0 &&
+        round(atan0tan(45deg))/0.1deg) horizontal-str    round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{???????????Image Scaling Example";
+    preferred-width: 800px;
+    preferred- TestCase    Rectangle {
+    property <boolNone> vvertical-scrollba 0slintterdemo/ui/images/cat.@image-url("../../0(-10, 10) == -45deg &&
+        true;
+    property <bool> test: verify;../demos/printer
+}
+demo

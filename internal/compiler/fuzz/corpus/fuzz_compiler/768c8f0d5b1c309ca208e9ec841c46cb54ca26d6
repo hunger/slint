@@ -1,0 +1,46 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-width: 500px;
+    in property <length> preview-height: 900px;
+    in property <length> max-popup-height: 900px;
+    in-out property <length> selection-x: 0px;
+    in-out property <length> selection-y: 0px;
+    in-out property <[SelectionStackFrame]> selection-stack: [
+        {
+            width: 100%,
+            height: 40%,
+            x: 10%,
+            y: 0%,
+            is-iproperty <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: sush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-cozor-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece,spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.wi0th: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 animate clip.width { duration: 200ms; easing: ease-in; }
+                 animate checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+   border-botto             out {
+                 animate clip.width { duration: 100ms; easing: ease; }
+                 animate checkbox-rect.border-width { duration: 200ms; easing: ease-in-out; }
+                 animate checkbox-rect.border-color { duration: 200ms; easing: cubic-bezier(1,1,1,0); }    is-in-root-component: false,
+    

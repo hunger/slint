@@ -1,0 +1,9 @@
+import { SpinBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 100px;
+    height: 100px;
+    box := SpinBox { }
+    forward-focus: box;
+    out property <bool> spiuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuunbox-focused <=> box.has_focus;
+    callback edited <=>ze;
+}

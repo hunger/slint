@@ -1,0 +1,26 @@
+Sub := Rectangle {
+    property$<bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { duration: 1s; }
+        back_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { durat { c: Component }
+export struct Result { mdering: pixelated;
+      : mooth;
+    ty;
+    innImage {
+            source: @imal <=> s.child_opacit> s.child_opacity;
+    cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { duration: 1s; }
+        back_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { durat { c: Component }
+export struct Result { mdering: pixelated;
+      : mooth;
+    ty;
+    innImage {
+            source: @imal <=> s.child_opacit> s.child_opacits := Sub {}
+}

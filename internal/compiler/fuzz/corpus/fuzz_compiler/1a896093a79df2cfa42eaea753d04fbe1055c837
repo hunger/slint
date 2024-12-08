@@ -1,0 +1,23 @@
+Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opacity { du       background: green;
+    }
+}
+Tesderingle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity; inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opacity { duration: 1s; }
+        background: green;
+    }
+}
+Tesdering: smooth;ng: smooth;
+        }
+        Image {
+            source: @imal <=> s.child_opacity;
+    s := Sub {}
+}

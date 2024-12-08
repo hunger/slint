@@ -1,0 +1,56 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overpidden";
+    }
+    property <int> some_value: 42;
+    property some_valus <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text4: "Blah";
+    property ti1_text <=> ti1.text_alhas;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    propeAty <string> othercomp_t: "real value";
+    property othpressedercomp_get_text t {
+ .text;
+    text := Text {
+        text: "to be overpidden";
+    }
+    property <int> some_value: 42;
+    property some_valus <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text4: "Blah";
+    property ti1_text <=> ti1.text_alhas;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    propeAty <string> othercomp_t: "real value";
+    property othpressedercomp_get_text t {
+        text: text2;
+    }
+       text: text2;
+    }
+    Teoperty othpressedercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_some_value_alias <=> other_comp.some_value_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirection;
+        property text_alias_indirection <=> text;
+        txt {
+        text <=> text1;
+    }
+    ))))))))y<it3              : a - (3 + ++2 * (a + 2)preferred-width<int> t4: 3 + - +5 - 8 - -9 * y othercomp_some_value_alias <=> other_comp.some_value_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> text1;t = a; }
+}

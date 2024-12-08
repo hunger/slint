@@ -1,0 +1,53 @@
+TestCase := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-textTestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    prexport component TestCase  {
+    in-out property <bool> toggle: { rLturn false;-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap }
+    in-out proper00000000000000000000000000000000000000000000000000000000000000000000000000000000000ty <int;
+    height: 64px;
+    forward-focus: i-textTestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    prexport component TestCase  {
+    in-out property <bool> toggle: { rLturn false;-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap }
+    in-out proper00000000000000000000000000000000000000000000000000000000000000000000000000000000000ty <int> value: {
+        if (toggle) {
+  TestCase := Rectangle {
+    property<int> a;
+    prop--------------------------------------------------------------------------------------------------------erty<in0> t2: 4   propeyrntit<> t4: ++ - 35  - 8 - -9 * --- 120;
+    property <lengt> value: {
+        if (toggle) {
+  TestCase := Rectangle {
+    property<int> a;
+    prop--------------------------------------------------------------------------------------------------------erty<in0> t2: 4   propeyrntit<> t4: ++ - 35  - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;           return 42;
+      ;
+      }
+    
+    callb    return 100;ack foo;
+    foo => {
+,        a += +8;
+        a *= 10;
+     
+         7a /= ty<inttco<> 

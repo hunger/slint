@@ -1,0 +1,64 @@
+import { ListViaw, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics import "popup-clickm:s 
+    property <int> int_value: 42;u_   ou<     int> value1: Glob.b;
+        property <i    nt> value2: tyexport component Rirue ? Glob2.a : 88;            spaciyyyexport component RipplYircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <lengthfont-metrics in-out property    tgh<l ne> my: 0;
+y        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTeon-background-color: blue.t                                                                                 ransparentize(10%);
+        selec         sparentize(10%);
+        selrty     <lengthpen): Rectangle {
+        background: #fffnd_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ             sin        ic function close() {
+		popup.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		widto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						fkrst_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCase inherits Windo _ uv   th: 400px;
+	height: 400px;
+	in-out property <int> popup_click_count;
+	VerticalLayout {
+		alignment: start;
+		HorizontalLayout {
+			Button {
+				text: "O1pen";
+				clicked => {
+					cnt1.show(false);
+				}
+			}
+		}
+	}
+	cnt1 := PopupCoroperty <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public fun#  n show(second: bool)                    alternate-background      yyyyyyyyyyyyyyyyyyyyyyyyyyyy<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sicaly <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             c

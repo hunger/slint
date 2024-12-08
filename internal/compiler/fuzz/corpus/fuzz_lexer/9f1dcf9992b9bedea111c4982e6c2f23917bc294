@@ -1,0 +1,53 @@
+import { LineEdit } from "std-widgets.slint";
+export compoexport component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focexport TestCase :port { LineEdit } from "std-widgets.slint";
+export compoexport component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focexport TestCase := ue: 10, },
+           m "general/haText.slint";
+import { InnerShadowRectan[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[TestCase :ccccccccccccccccccccccccccccccccccccccc= Window {
+    width: 100phx;
+    height: 100phx;
+    property<int> value: -10;
+  d  property <bool> cond: true;
+    VerticalLayout {
+        padding: 0px;
+   operty<int> value]: -10;
+    property <bool> c        ond: true;
+    VerticalLayout {
+        padding: 0px;
+        spacing:port { InnerShadowRectanTestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    property<int> value: -10;
+    property <bool> cond: true;
+    VerticalLayout {
+        padding: 0px;
+      = ue: 10, },
+           m "general/haText.slint";
+import { InnerShadowRectan[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[TestCase :ccccccccccccccccccccccccccccccccccccccc= Window {
+    width: 100phx;
+    height: 100phx;
+    property<int> value: -10;
+  d  property <bool> cond: true;
+    VerticalLayout {
+        padding: 0px;
+   operty<int> value]: -10;
+    property <bool> c        ond: true;
+    VerticalLayout {
+        padding: 0px;
+        spacing:port { InnerShadowRectanTestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    property<int> value: -10;
+    property <bool> cond: true;
+    VerticalLayout {
+        padding: 0px;
+        spacing: 0px;
+   us-scope.has-focus;
+    out property     Rectangle {
+     d      background: orange;
+            TouchArea focus_the_focus_scope;
+    focusp_the_focus_scope => &&&
+     

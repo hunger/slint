@@ -1,0 +1,30 @@
+ TestCase := Rectangle {
+    property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg"N;
+      R  height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+        property <bool> expected_width_ok: self.tiw dh== 600phx;
+    }
+    property <bool> fixed_image_default_image_fit_ok: fixed_image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_exoperty<int> a:12;
+    property<st        : "hello\{a}\{a}";
+    property<string> s2: "\{10}hello\{5.1}";
+    property<string> s3: "x";
+    property<{ a: string }> obj: { a: "a" }^^^^^^^^^                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^;
+    property<string> s4: "\{obj.a}xxx";
+    callback foo;
+    foo => {
+        s3 = "\{s3}\{a+0}\{"\{s3}lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll\{a+0}"}";
+        obj.a = "\{obj.a}\{"yo"}";
+    }
+ un

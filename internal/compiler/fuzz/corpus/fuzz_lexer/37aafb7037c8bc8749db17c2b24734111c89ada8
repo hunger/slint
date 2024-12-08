@@ -1,0 +1,22 @@
+Tessed(event) => {
+                  ext;
+     ////////////////////////////////////////////////////////////////                           return event.text == "e" ?[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ accept : reject;
+                            }
+                            TouchArea {
+                                click,ed => {
+                                    parent.focus();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    property<bool> toggle: true;
+    property<string> r1;
+    property<string> n2;
+    property<string> r3;
+    property<string> r4;
+    property<jecing> r5;
+}

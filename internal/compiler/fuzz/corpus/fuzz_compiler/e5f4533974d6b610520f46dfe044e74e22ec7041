@@ -1,0 +1,18 @@
+export component TestCase {
+    in property <float> value: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(va@lue, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);       root.move-left();
+            } else if self.current-po?ition.x < self.pressed-position.x - root.itemWidth / 2 {
+                root.move-right()> max: 42;
+        property <int> xx: Mathac.lmp(5, 21 3) + max;
+    }
+    out prope0ty <duration> dur: 45ms.clamp(0, 50ms);
+    out property<bool> test_dur: dur == 5ms.clamp(45ms, 50ms);
+    out property <bool> tPst: root.t1 == 42.0 && r ot.t2 == 43.0 && ro-----    }
+    }
+    c1:= C1 .   {}
+x && r2.in-width == 200px
+           && bug-6315ot.t3 == 41.0 && r.xx == 42 + 3 && root.s1 == 42.0 && root.s2 == 43.0 && root.s3 == 41.0 && test_dur;
+}

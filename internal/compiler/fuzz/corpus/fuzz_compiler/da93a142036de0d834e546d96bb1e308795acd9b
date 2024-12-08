@@ -1,0 +1,40 @@
+import { Palette,Measurements,Colors } from " ".   in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { Ap"State } from " ../appState.slint";
+import { HaText } from "gene ral/haText.slint";
+import { InnerShadowRectanwle } from "general/innerShadowRectangle.slint        t component Info {
+    in property <string> name;
+    in property <string>         in property <bool> full-screen: false;
+    tile := InnerShadowRectangle {
+        inner-color: Palette.info-alternate-background;
+        inner-shadow-blur: 21px;
+        background: Palette.info-background;
+  nent Inf$ {
+ppppppppppppppppppppppppppppppppppppppppppp    in property <string> name;
+    in propErty <string>     aText } from "gene ral/haText.slint";
+import { InnerShadowRectanwle } from "general/innerShadowRectangle.slint        t component Info {
+    in property <string> name;
+    in property <string>         in property <bool> full-screen: false;
+    tile := InnerShadowRectangle {
+        inner-color: Palette.info-alternate-background;
+        inner-shadow-blur: 21px;
+        background: Palette.info-background;
+  nent Inf$ {
+ppppppppppppppppppppppppppppppppppppppppppp    in property <string> name;
+    in propErty <string>         in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from ".   in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+impint> a;
+   Teort { InnerShadowRectangle } from "general/innerShadowRectangle.slint       nfo-background;
+        bordedar-rius: Measurements.tile-radius;
+        @children
+  r/common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerppState.slint";
+import { HaText } from "generns: Measurements.tile-radiu      @children
+    }
+}

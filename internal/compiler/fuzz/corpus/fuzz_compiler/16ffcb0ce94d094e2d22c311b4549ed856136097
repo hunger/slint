@@ -1,0 +1,12 @@
+TestCase := Rectangle {
+    oprperty<bool> condition;
+    property<color> extra_color;
+    background: condition ? roo.tre {
+        property <string> blah:|||||||||||||||||||||||||||||||||||texra_color : red;
+    property<string> s0 : condition ? "abc" : 123;
+    prope  C ng> s2 : condition ? 123o.tre {
+        property <string> blah:|||||||||||||||||||||||||||||||||||texra_color : red;
+    property<string> s0 : condition ? "abc" : 123;
+    prope  C ng> s2 : co : "abc";
+    property <bool> test: s1 == "123" && s2 == "abc";
+}

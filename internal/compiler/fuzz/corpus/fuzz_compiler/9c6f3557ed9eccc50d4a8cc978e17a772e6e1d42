@@ -1,0 +1,14 @@
+TestCase := Recta2 := Im 
+{ag e       source: @image-url("cft.jpg");
+        source-clip-x: /*20;
+    }
+  e {
+        source: @imag-(urel"image.      Grid****-url("dog.jpg", nine-s<=>lice(12 13 14 15));
+    property <length> img]width: img.width;
+    property <length> img_height: img.he                                                                                                                                              ight;
+    property <bo    property <length> img_width: img.width;
+    property <length> img_height: img.height;
+    proprce: @image-u        source: @image-url("image.slint");
+    }
+    out property <image> wrth-border: @image-url("dog.jpg", nine-slht == 0;
+}

@@ -1,0 +1,31 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-outeeeeeeeeeeeeeeeeeeeeeeeee property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: trr.ooadius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-grad /////100%/////////)//;tangle {
+    r := Rectangle {
+        propertyle {
+    property t <3
+        property <i    nt> value1: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCamponent TestCaOther______________________________________ ___________________________________________________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O____________________________________________ ___________________________________________________@__________OOOOOOOOOOOOOOOOO <int> value1: Glob.b;
+        property <i    nta2e lu>v: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCamponent TestCaOtherComp :C_- ctangle {
+    property t <3
+        property <i    nt> value1: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCamponent TestCaOther______________________________________ ___________________________________________________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O____________________________________________ ___________________________________________________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO***********La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

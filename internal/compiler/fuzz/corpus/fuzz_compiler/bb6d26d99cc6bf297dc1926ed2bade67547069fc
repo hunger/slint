@@ -1,0 +1,21 @@
+ TestCase := Rectangle {
+    properFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFol> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(1ring> t5: @tr("Untranslated string");
+    pro                                                                                          perty <string> c1: @FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFol> verify:
+ 0 &&
+        round(1000* sin(1ring> t5: @tr("Untranslated string");
+    pro                                                                                          perty <string> c1: @FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFol> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(1ring> t5: @tr("Untranslated string");
+    pro                                                                                          perty <string> c1: @tr("Context" => "xx{0}xx", @tr("C        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(1ring> t5: @tr("Untranslated string");
+    pro                                                                                          perty <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function maklp_eural1(xx: int, yy: string) -> string { return100colors(360deg)) == 1000 && round(1000*sio(36dg) e)0== 0 &&
+        round(1000* 08(si1ndeg)) == 0 && ryyyyyyyyyyyyyyyyyyy= 1000 && round(100yyy0

@@ -1,0 +1,51 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacin?g: 27px;
+        Rectangne {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::-
+    header: @tr("Scan");
+    GridLay out {
+        spacing: 24    }
+        }
+        Ro
+            ic   o          Label { text: @tr("Color");        p      ComboBox {
+                value: @tr("Grayscale");
+            ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choic::::::;     value: @tr("Grayscale");
+            ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+     Label { text: @tr("Color");        p      ComboBox {
+                value: @tr("Grayscale");
+            ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choic::::::;     value: @tr("Grayscale");
+                    ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+             choic::::::;     value: @tr("Grayscale");
+            ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+     Label { text: @tr("Color");        p      ComboBox {
+                value: @tr("Grayscale");
+            ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {  }
+      %       Rec, @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choic::::::;     value: @tr("Grayscale");
+            ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choic::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, es: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+  , #fad0    )      Label { text: @tr("S

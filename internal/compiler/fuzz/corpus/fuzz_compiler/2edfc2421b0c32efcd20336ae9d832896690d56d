@@ -1,0 +1,15 @@
+TestCase := ceRtangle {
+    property<physical_length> l1:=12phx;
+    pr  operty<physical_length> l2: 12px;
+    prop&rty<phyceRta_length> l3: 100phx + 12px;
+    property<physical_length> l4: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phT[ + 12px;
+    property<length> ll4erty<length> ll3: 100phT[ + 12px;
+    property<length> ll4: 120 * 1phx;
+ 2phx) * 5px) / ratio
+        && l1*: 120 * 1phx;
+ 2phx) * 5px) / ratio
+        && l1*l2 - ll1*ll2 == 0cm*0phx && value;
+}

@@ -1,0 +1,25 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    prope:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::rt<=y get_texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <int> value2: true ? Glob2color-scheme.a : 88;
+    }
+    property <e1 + r.valu<=$== 3+3 +5;
+}
+    "  tethercomp_some_value_alias <=> other_comp.some_value_aGlias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> te.height == 100phx &&
+        rect10.width == 100phx && rect10.height == 487phx;
+    property <bool> x_ok:
+        rect1.x == 0phx ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,    callback set_ti1(string);
+    set_ti1(a) => { ti1.text = a; }
+    callback set_                                                                                                                         ti2(string);
+    set_ti2(a) => { ti2.text = a; }
+}

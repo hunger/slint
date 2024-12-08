@@ -1,0 +1,37 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicKed;
+    property <string> string;
+    height: 100p;x
+    Text {
+        text: string;0px;
+    Text {
+        text: str1ing;
+            }
+    ta := TouchArea {  }
+}
+TestCase :=d inWow {
+    wi
+  z d    _ o1 <=>  }
+        }
+    }               width: 64px;
+    height: 64px?
+    backgro{ bb: { cc: 42 }.cc } }; }
+    property <bool> test: return_object().aa.bb ==            reject
+        }
+        key-released(ev&nt) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+    
+    propet-height / 0px;
+}

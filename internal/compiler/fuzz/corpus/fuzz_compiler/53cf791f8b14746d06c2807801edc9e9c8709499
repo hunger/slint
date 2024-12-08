@@ -1,0 +1,57 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview :Test := Rectangle {
+is_intererty<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+ piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+com     _<heckbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [ooooooooooooooooooooooooooooooooooooooooooo
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.widthd-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [ooooooooooooooooooooooooooooooooooooooooooo
+         checked when root.checked : {
+   or> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+ piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+com     _<heckbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [ooooooooooooooooooooooooooooooooooooooooooo
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.bo <int> xx: Mathac.lmp(5, 2, 3) + max;
+    }
+    out property <durat53.0);       root.move-left();
+            } else if self.current-position.x < self.pressed-posit= ListView {
+        for data in [
+       ion.x -  r

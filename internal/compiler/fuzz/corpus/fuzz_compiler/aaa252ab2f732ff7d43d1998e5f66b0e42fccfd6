@@ -1,0 +1,37 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition *******************************************************************kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk***********************************************? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chy <int> val: condition *******************************************************************kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk******* changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        o4 :}=

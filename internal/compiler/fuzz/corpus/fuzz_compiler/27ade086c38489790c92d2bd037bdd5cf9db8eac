@@ -1,0 +1,30 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    progperty<color> y1: yellow;
+    property<color> y2: #ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rgb(100, 23, 42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);
+    property<color> i1: rgb(0,ppppppppppppppppp 666,82430076599;
+    out property <bool> teJJJJJJJst_rgb: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45 -85);
+    property<color> p1: true ? b1.mix        ext-foFixedWidthtImage := Image {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+       ithdw:  50phx;
+        height: 50phx;
+  nt-fy<  }
+ in 

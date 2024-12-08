@@ -1,0 +1,40 @@
+TestCase := ceRtangle {
+    propertylength> l3: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l4: 120 * 1p        property<length> ll2: 12p  Du___Xproperty<length> ll2rotation-o  property<length> ll3: 10h0[,p + 12px;
+    property<length> ll4: 120 * 1phx;
+ FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out oerrppty <bool> pressed <=> touch-area.pressed;
+    out property <bo1l> has-hover <=> touch-area has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> t 
+  -area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> troouch-area.mouse-cursor;
+    callback clicked <=> toucjok-area.clicked;
+    for                             width: 64p   eture {
+       ` 	perty <string> blah:|||||||||||||||||||||||||||||||||||||        |||||||||||||||||||||||| "ddd";
+        Rectangle {
+             2phx[ + 12px;
+    property<length> ll4: 120 * 1phx;
+ 2phx) * 5px) / ratio
+       D && l1*l2 - ll1*ll2 == 0ctCase := ceRtangle {
+    propertylength> l3: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l4: 120 * 1p        property<length> ll2: 12p  Du___Xproperty<length> ll2: 12px;
+    property<length> ll3: 10h0[,p + 12px;
+    property<length> ll4: 120 * 1phx;
+ 2phx[ + 12px;
+    property<length> ll4: 120 * 1phx;
+ 2phx) * 5px) / ratio
+         && l1*l2 - ll1*ll2 == 0cm*0ph                                 9999999999999999m(0ph                                 99999999999999999/99                         x && value;
+}

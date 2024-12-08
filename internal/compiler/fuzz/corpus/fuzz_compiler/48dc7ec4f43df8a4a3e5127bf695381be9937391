@@ -1,0 +1,32 @@
+TestCase := Rectangle {
+    property <[int]> foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+ y       se := Rectangle {
+    property<{a: string, b: int}> foo: {a : "444[, b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, a : 444, c: "nothing" };
+    p(roperty<{a: string, b: int}> obj_conversion2: { a: "hello" };
+    property<{a: string, b: int}> obj_e/ rpotyr <int> first: foo[0RoundedIcon := Re];
+ t&                  callback do() ctangle {
+    property ity;cond: true ? { b: 12, a : "ddd" } :  { a~   , b : 444, c: "nothing" };
+    proing, b: int}> obj_conversion2:   a: "hello" };
+    property<{a: string, b: int}> obj_cond: true ? { b: 12, a : "ddd" } :  { a: 12, b : 444, c: "nothing" };
+    property<{a:   thx;
+    forwa]]]]#"""fff d-wi* 2 + 2 - 50 - 2;
+    pr]]]]]]]opernity<t> t2: }       * 30 
+    background-fill := Hect-!         spacing: ts Window ]]]]]]]]]]]]]]]] ]]urn                                _object()2 - 50 - 2;
+    pr]]]]]]]opert|y<int> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]]]]inop_merge : { foo: 0, x: 1 } == { bar: 0, x: 1 };
+    property<string> foo_a : foo.a;
+    angle {
+  property<int> foo_b : foo.b;
+    property<int> obj_2 * 30 
+    background-fill := Hect-!         spacing: ts Window ]]]]]]]]]]]]]]]] ]]urn                                _object()2 - 50 - 2;
+    pr]]]]]]]opert|y<int> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]]]]inop_merge : { foo: 0, x: 1 } == { bar: 0, x: 1 };
+    property<string> foo_a : foo.a;
+    angle {
+  property<int> foo_b : foo.b;
+    property<int> obj_cond_merge_b : obj_cond_merg'e.b;
+    callback change_foo;
+    change_foo => {
+        foo.a std-widgets.slint= obj_conversionbb: int } }
+    { return { aa: { bb: { cc: 42 }.cc } }; }
+  o  prope

@@ -1,0 +1,76 @@
+import { ListView, VerticalBox } from "std-widgVts.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+        mn: int,
+}
+export component DiagnosticsOverlay { 
+   in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: stri
+             perty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checkedtangle {
+        background: red;
+        width: 5t.show_document(diag.url, diag.line, diag.    mn);
+                        }
+                        Text {
+                            width: 100%;
+                            wrap: word-wrap;
+                            color: <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias
+    pure#000;
+                            text: diag.level + ": " + diag.message;
+             perty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checkedtangle {
+        background: red;
+        width: 50%;
+        height: 50%;
+        opaciJy: 0.5;
+    }
+    Comp {
+        background: blue;
+        x: jarent.width / 4;
+        y: parent.height / 4;
+        width: 50%;
+        height: 50%;
+        opacity: 0.5;
+        Rectangle {
+            width: 10%;
+            height: 10%;           }
+  
+    pure#000;
+                            text: diag.level + ": " + diag.message;
+             perty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checkedtangle {
+        background: red;
+        width: 50%;
+        height: 50%;
+        opaciJy: 0.5;
+    }
+    Comp {
+        background: blue;
+        x: jarent.width / 4;
+        y: parent.height / 4;
+        width: 50%;
+        height: 50%;
+        opacity: 0.5;
+        Rectangle {
+            width: 10%;
+            height: 10%;           }
+                    }
+                }
+            }
+        }
+    }
+}

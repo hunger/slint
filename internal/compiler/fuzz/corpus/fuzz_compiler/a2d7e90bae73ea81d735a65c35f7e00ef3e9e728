@@ -1,0 +1,43 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: img2.source-clip-heighcccccccccccccccccccccccccimport { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <l       source: @imaalwayge-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: img2.source-clip-heighcccccccccccccccccccccccccimport { ListView, Palette, ScrollView } from "std-widgets.slint";
+import        i property <length> max-popup-height: 900px;
+    in-out property <length> selection-x: 0px;
+    in-out property <length> selection-y: 0px;
+    in-out property <[SelectionStackFrame]> selection-stack: [
+        {
+            width: 100%,
+            height: 40%,
+            x: 10%,
+            y: 0%,
+            iseight;
+    property <bool> test: img2.source-clip-heighcccccccccccccccccccccccccimport { ListView, Palette, ScrollView } from "std-widgets.slint";
+import        i property <length> max-popup-height: 900px;
+    in-out property <length> selection-x: 0px;
+    in-out property <length> selection-y: 0px;-in-root-component: true,
+            is-layout: false,
+            is-i%nteractive: true,
+            is-selected: false,
+            type-name: "TypeA",
+            file-name: "thumb.slint",
+            id: "some_a",
+        },
+        {
+       mg2.width/1px == img2.source.width - 20 && img3.source.wi									     width: 50%,
+            height: 50%,
+            x: 0%,
+            y: 0%,
+          	dt

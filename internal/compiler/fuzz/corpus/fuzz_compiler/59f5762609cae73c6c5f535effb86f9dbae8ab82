@@ -1,0 +1,58 @@
+FixedWidthtImage := Imagef {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    ht: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayO := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************? 2 : 4;
+    property <bool> condition : fa	   
+    HoripontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+        o5 := O { va  <=> root.val; }
+    }
+    property <int> checksum: 10000 * o1.a + 1000 * o2.a + 10out {
+        image_in_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missivvvvvvvvvvvvvvvvvvvvvvvvvvvng_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+ -fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.i0 mage-fit* o3.a  + 1=

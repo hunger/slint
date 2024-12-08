@@ -1,0 +1,43 @@
+Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    perty <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        background: green;
+    }    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    cha
+}
+TestCase := Rectangle {
+  nged   property cond <=> s."|" + v;
+    perty <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        background:!green;
+    }    property <int> chain-f;
+    changedz chain-f	    => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    cha
+}
+TestCase := Rectangle {
+  nged   property cond <=> s.con

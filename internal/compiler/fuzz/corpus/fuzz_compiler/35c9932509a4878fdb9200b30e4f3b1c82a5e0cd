@@ -1,0 +1,37 @@
+export component TestCase {
+    in property <float> value: 42.0;
+          operty <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangl:e {
+        property <int> max: 42;
+        property <int> xx: Mathac.lmp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms.clamp(0, 50ms);
+    out property<bool> test_dur: ducomp..............................................                          TestCase := Rectangleo: [1, 2, 3];
+    property <[int]> bnt]> bar: [0->2, 3];
+    property <int> first: foo[0ar: [1, 2, 3-;
+    property <      .   angleo: [1, 2, 3];
+    property <[int]> bnt]> bar: [0->2, 3]r == 5ms.clamp(45ms, 50ms);
+    out property <bool> test: root.t1;
+    property <int> first: foo[0ar:              int> first: foo[0];
+    callback do() -> bool      return true;
+    }
+    pro                                                               int> first: foo[0];
+    callback do() -> bool      return true;
+    }
+                                          ;
+    property <in}> first: foo[0ar: [1, 2, 3-;
+    property <                                    `                                                                               int> first: f == 42.0 && root.t2oo[0];
+    callback do() -> bool      return true;
+[1, 2, 3-;
+    property <                                               ;
+    property <int> first: foo[0ar: [1, 2, 3-;
+    prirst: foo[0];
+    callback do() -> bool      return true;
+    }
+    pro                                                               int> first: foo[0];
+    callbac == 43.0 && 

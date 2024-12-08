@@ -1,0 +1,65 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=0;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed vhain-b => { chain-a += 1; }
+    property <int> chain-c;
+    changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+   int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chai changed chain-e => { chain-d += 1; }
+    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed changle {
+    property<int> a->;
+    property<int <int> other: clamp(value + 1, 50, 100);
+    changed other => {
+        result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out propertyproperty <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chan<int> count;
+    changed result => {
+        count += 1;
+    }
+    Wit  property ok <=>hAliasToNative {
+        changed has_focus => { debug(self.text); }
+    }
+    chainin> t1: 4 + 3 * 2 + 2g := -  5

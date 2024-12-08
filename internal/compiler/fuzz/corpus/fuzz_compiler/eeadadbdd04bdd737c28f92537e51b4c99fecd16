@@ -1,0 +1,25 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 0;
+T}
+estCase := Window {
+    property <int> v l: condition ********** **************************************************title*****************************************************? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <= O { val <=> roow {index * height;
+ e.ok;
+}
+export global ItemVTable {}
+export component$TestCase  {
+    in property <Default> def: Default.b;
+    out property <BoxLayoutData> blt: { layout: 22phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int           animate Err { duration: 44s; }
+    out property <boerty <image> 0rrow-up: @imageol> test: slint.slin       width: p;
+    height: 300phx;ndition ? 2 :  }
+        o3 := O s val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       																			test: checksum == 55555;
+}

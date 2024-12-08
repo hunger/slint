@@ -1,0 +1,22 @@
+ component TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+nt TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98.ruct KeySloW {"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choic::::::;     value: @tj("Grayscale");
+            ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+                choic::::::;:::::::::::::::::::::::::::::::::::     impor           { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ s && 88rem.max(5rem, 45rem) == 88rem;
+}

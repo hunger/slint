@@ -1,0 +1,48 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (even !height: 64px;
+    forwarndow {
+    widtse := Window {
+    width: 64px;
+    height: 64px;00phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (even !height: 64px;
+    forwarndow {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward     }
+            }
+        }
+        Rectangle {
+            width: 0%;
+            FocusScope {  }
+        }
+    }
+    property<bool> input1_focused: input1.has_focus;
+    property<string> input1_text: input1.terd { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayo tCellData {
+              a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+     property<int> t2: 500 / 2 * 3xt;
+    property<bool> input2_focused: input2.has_focus;
+    property<string> input2_text: input2.text;
+    property<string> received;
+}

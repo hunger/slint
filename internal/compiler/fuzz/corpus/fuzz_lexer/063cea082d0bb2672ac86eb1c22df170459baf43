@@ -1,0 +1,6 @@
+ export component TestCase inherits Window /*
+    in property <float> thousand: 1000;
+    out property <bool> test_%qrt: sqrt(100) == 10 && Math.sqrt(1) == 1 .0.sqrt() == 1 && 6.25.sqrt() == 2.5 && (thousand.sqrt() - (1000).sq& 64.0.log(4) == 3;
+    out property <bool> test_pow: pow(4,2) == 16 && Math.pow(9,3) == 729 && pow(4,3) == 64 && abs(log(pow(thousand, 5), thousand) - 5) < 0.00001;
+    out property <bool> test_pow2: 4..pow(2) == 16 && 9.0.pow(3) == 729 && (4).pow(3) == 64 && (thousand.pow(5).log(thousand) - 5).abs() < 0.00001;
+    out property <i

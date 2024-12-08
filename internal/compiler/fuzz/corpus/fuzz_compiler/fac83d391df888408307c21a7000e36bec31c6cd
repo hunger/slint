@@ -1,0 +1,31 @@
+import { ListView } from "std-widgets.slint";
+export component TestCase {
+    width: 300xhx;
+    heigbt: 300phx;
+    in-out property<[int]> model: [0,1,2,title,6+ " b	  6");
+                assert(val , t1);
+    out property <string> result2: make_plural2(1) + "== 6, "val = " + val + " b	  6");
+                val n-out property<[int]> model: [0,1,2,3,4,5,6+ " b	  6");
+                assert(#       val == 6, "val = " + val + " b	  6");
+       om "std-widgets.slint";
+export component TestCase {
+    width: 300phx;
+    heigbt: 300phx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6+ " b	  6");
+                assert(val == 6, "val = " + val + " b	  6");
+                val n-o
+export component TestCase {
+    width: 972phx;
+    heigbt: 300phx;
+    in-out property<[int]> mode0l: [0,1,2,3,4,5,6+ " b	  6");
+                assert(val == 6, "val = " + val + " b	  6");
+                val n-out property<[int]> model: [0,1,2,3,4,5,6+ " b	  6");
+                assert(#       val == 6, "val = " + val & " b	  6");
+       om "std-widgetsxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.slint";
+export component Tut prop
+export component TestCase {
+    width: 300phx;
+    heigbt: 300tphx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6+ " b	  6");
+                assert(val == 6, "v}
+}

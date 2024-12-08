@@ -1,0 +1,28 @@
+TestCsea := RectaVVVVVVVVVVVVVVVVVVVngle {.    property<{a: string, b: int}> foo: {a : "445", b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, a : 444, c: "nothing" }Foo := Rectangle {
+    pzre callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.cli {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callbacrcked;
+    xxx := Rectangle {
+        pure callpure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.ed <=> are.clicked;
+    xxx := Rectangle {  }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callbackure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := Tou<=> foo1.hallo_alias;
+;
+    property<{a: string, b: int}> obj_conversion2: { a: "hello" };
+    property<{a: string, b; int}> obj_cond: true ? { b: 1{ b:     pure callback foo1_alias <=k foo1_alias <=> foo1.hallofalias;
+    pure callback foo10 };
+    property<bool> obj_binop_merge : { f
+   4property<1_alias <=>

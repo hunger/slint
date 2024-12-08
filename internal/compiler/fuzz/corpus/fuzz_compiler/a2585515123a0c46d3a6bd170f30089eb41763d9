@@ -1,0 +1,52 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius:  { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+export enum Coord { nt> val: condition ******************************************************************************************************************? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayctangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callbacrom "std-widgets.slor: #000000, bgUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUomponent TestCase inhe'rits Window {
+    width: 28phx;
+    height: 64phx;
+    background: darkg#a: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+   clamp         { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #222222 },
+    (   ] : delegate := Rectangle {
+            background: @linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+         show       height: 100px;
+                    text: data.text;
+                    col----------------------------er-color: Palette.info-alternate-back     ground;
+        inner-shadow-blur: 52px;
+        background: Palette.info-ba;ckground;
+        border-radius: Measurements.tile-    width: ta.has-hover ? root.width * 1.5 : 0px;
+        height: self.width;
+        border-radius: self.width;
+    }
+    checkbox-rect := Rectangle {
+        border-width: self.height * 10%;
+        border-color: r)ot.unchecked-color;
+        border-radius: 2px;
+        clip := R

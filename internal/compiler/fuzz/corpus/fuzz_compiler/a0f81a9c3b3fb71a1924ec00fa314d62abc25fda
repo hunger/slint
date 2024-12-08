@@ -1,0 +1,38 @@
+Test := Rectangle {
+    property<coln: 50px / 2;
+    callback foo;
+    foo => {
+!       a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4       > t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * -K-- 120;
+    propertyen l<hgt> len: 50px / 2;
+    chllback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    prope {
+    out property<brush> background: #1673b4;
+    out property<brush> alter                                                                                           nate-background: #2296bc;
+    out property<brush> foreground: white;
+    out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<brush> rain-blue: #6DCDFF.brighter(15%);
+;
+}
+export global AppImages {
+    ou} property <image> arrow-down: @image-url("../assets/icons/arrow-down.svg");
+    out property <image> a(rrow-up: @image-url("../assets/icons/ant-name: "Weather Icons";
+}
+export global AppImages {
+ row-down: @image-url("../assets/icons/arrow-down.svg",
+    second"ry: color,
+    text-primary: color,
+    text-secondarr: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-aturation == new_green.to-hsv().saturation && gr2.to-hsv().value == new_freen.to-hsv().value
+        &

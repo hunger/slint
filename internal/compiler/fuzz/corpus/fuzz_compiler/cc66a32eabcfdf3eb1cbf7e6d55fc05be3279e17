@@ -1,0 +1,36 @@
+TestCaseN := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    pt: 600px;  H  
+orizontalLayout {
+  !      Image {
+            source: @image-url(". /../..            source: @image-url(". /../../demos/p}rinterdem//ui/images/catpj.g");
+            iQQQQQQQQQQQQQQQQ               width: parent.width;
+                    hei,ght: parent.heighroperty<int> value: 1;
+    for c[index]iiiiiiiiiiiiiiiiiiiiiiiieferred-width: 600px;
+    prefer ed-height: 600px;  H  
+orizontalLayout {
+  !      Image {
+                                                                                            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.j                                                  pg");
+            iQQQQQQQQQQQQQQQQ               width: parent.width;
+                    hei,ght: parent.height;
+                    clicked => {
+ %                       value += index;
+                 /demos/p}rinterdem//ui/images/catpj.g");
+            iQQQQQQQQQQQQQQQQ               width: parent.width;
+                    hei,ght: parent.heighroperty<int> value: 1;
+    for c[index]iiiiiiiiiiiiiiiiiiiiiiiieferred-width: 600px;
+    prefer ed-height: 600px;  H  
+orizontalLayout {
+  !      Image {
+                                                                                            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.j                                                  pg");
+            iQQQQQQQQQQQQQQQQ               width: parent.width;
+                    hei,ght: parent.height;
+                    clicked => {
+ %                       value += index;
+                    }
+                }
+            }
+        }
+    }
+}

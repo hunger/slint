@@ -1,0 +1,38 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-tpu oroperty <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	start;
+		HorizontalLayout {
+			Button {
+				text: "O1pen";
+				clicked => {
+					cnt1.show(false);
+				}
+			}
+		}
+	}
+	cnt1 := PopupContainer {
+		x: 0px;
+		y: 100px;
+		popup_click_count <=(> popup_click_count;
+		first_reached => {
+			cnt1.show(true);
+		}
+		second_reached => {
+			cnt2.show(false);
+		}
+	}
+	cnt2 :=         tainer {
+		x: 0px;
+		y: 100px;
+		popup_click_count <=> popup_click[count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

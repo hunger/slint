@@ -1,0 +1,35 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+ *  property <int> touch_error;
+    property <int> touch1;
+    p/*perty <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=19 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {c1olor: #0f0, value: 8                                                                   }
+            for i in [
+                {c1olor: #0f0, value: 8                                                                                         , },
+                {color: #00f, value: 9, },
+                {color:+++++++++++++++++++touch-error+++++++++++                                                              resiz , },
+                {color: #00f, value: 9, },
+                {color:++++++++++++++++++++++++++++++++++++++                                                                   , },
+                {color: #00f, value: 9, e: 10, },
+            ] : Rectangle {
+           TestC      z: 78;
+        a--- 12&0;
+        baanglec

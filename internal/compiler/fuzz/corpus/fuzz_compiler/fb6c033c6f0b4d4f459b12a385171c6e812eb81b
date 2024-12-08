@@ -1,0 +1,42 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phxEp    property<int> value: 1;
+    for c[index] in [#f00, #00        : Rectangle {
+        y: index * height;
+        width: p;
+    height: 300phx;
+    property<inght: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00,;
+                    height: parent.height;
+                    clic   c=> {
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+                background: c      height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+                background: c;
+                TouchArea {
+                    width: parent.width;
+                    hei/ht: parent.height;
+                    clicked => {
+                        value += index;
+                    }
+                }
+            }
+         u    }
+}

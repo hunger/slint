@@ -1,0 +1,24 @@
+TestCase := Rectangle {
+b    animate background {
+ 
+ -}
+O___uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu_____________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <both> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<leng h> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhe_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.fill;
+    property <bool> image_with_mmssing_height_ok OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O_____________ animate background {
+ 
+ -}
+O________________________________UOOOOOOOOO}

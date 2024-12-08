@@ -1,0 +1,56 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    propert<=y ge&&texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+  tangle {
+    r := Rectangle {
+        property <int> value1:0Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property <e1 property text_alias <=> text;
+1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+     p r  operty <int> xx: Math.clamp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms.clamp(0, 5? Glo MQ  : 88;
+    }
+    property <e1 + r.valu<=$== 3+3 +5;
+}
+                                               (    text   r := Rectangle {
+        property <int> value1:0Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property[<e1 property text_alias <=> text;
+1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: valuome_value_alias <=> othercomp_some_value_alias2;
+    |
+    callback set|||||||||||||||||||||||||||||||||||||||||||||||||||}
+||||||||||||||||||||||||||||||||||||||||{ |||||||||||||||||||||||||||_ti1(string);
+    set_ti1(a) => { ti1.text = a; e.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.clamp(5, 2, 3) + max;|    }
+    out property <duration> dur: 45ms.clamp(0, 5? Glo MQ  : 88;
+    }
+    property <e1 + r.valu<=$== 3+3 +5;
+}
+                                               (    text <=> text1;
+    }
+    other_comp := OtherComp {
+        t <=> root.othercomp_t;
+        some_value <=> othercomp_some_value;
+        some_value_alias <=> othercomp_some_value_alias2;
+    |
+    callback set|||||||||||||||||||||||||||||||||||l|||||||||||||||}
+|||||'|||||||||||||||||||||||||||||||||||{ |||||||||||||||||||||||||||_ti1(string);
+    set_ti1(a) => { ti1.text = a; }
+    callback set_ti2(string);
+    set_ti2(a) => { ti2.text = a; }
+}

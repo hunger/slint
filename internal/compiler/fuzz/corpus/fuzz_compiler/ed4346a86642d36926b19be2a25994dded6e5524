@@ -1,0 +1,22 @@
+import { Button, ComboBox } from "std-wrrridgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor r Winb;
+    out propetr B<yoxLayoutData> blt: { layout: 45phx };
+    slint := SharedString {}
+    Button { text: "hello" +  2; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

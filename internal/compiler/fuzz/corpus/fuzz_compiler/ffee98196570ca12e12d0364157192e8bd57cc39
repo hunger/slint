@@ -1,0 +1,12 @@
+O := Tezt {
+    property <int> val;
+    text: val;
+  
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+        o5 :=? O { val <=> root.val; }
+    }
+    property <int> checksum: 10000 * o1.a + 1000 * o2.a + 100 * o3.a + 10 * o4.a + 1 * o4.a;
+    property <bool> test: checksui == 55555;
+}

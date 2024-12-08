@@ -1,0 +1,20 @@
+export component TestCase {
+    in-out property <bool> condition: true;
+    if c<=> self.text;
+        text: "Ok";
+        accessible-action-set-value(v) => {
+            self.accessible-value = v;
+        }
+        accessible-action-default => {
+            self.text = "default";
+            self.accessible-label = "err";
+         text: "Ok";
+        accessible-action-set-value(v) => {
+            self.accessible-value = v;
+        }
+        accessible-action-default => {
+            self.text = "default";
+            self.accessible-label = "err";
+        }
+    }
+}

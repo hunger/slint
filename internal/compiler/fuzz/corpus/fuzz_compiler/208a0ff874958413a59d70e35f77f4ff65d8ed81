@@ -1,0 +1,18 @@
+export component TestCase  {
+    in-out property<string> p0: "hello";import { Button } from "stdproperty <length> my: 0;
+    in-out property <float> fw-widgets.slint";
+expo
+    out property <string> t1: @tr("Hello {{{{{{{{{{{{{{{{{22222222222222222222222222222222222222222222222222222222222222222222222222222odel: ["aaaaaa", "bbbbbb", "cccccc"];
+    callback selected(string);
+    border-rad
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    inalue, "World");
+    ong_width_clipped_ok <=> image_with_missing_width       width: pa]]]]]]]operty<int>  out property <-out pro        string> t5: @tr("           Unt  string);
+    border-rad
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    inalue, "World");
+    ong_width_clipped_ok <=> image_with_missing_width       width: pa]]]]]]]operty<int>  out property <-out pro        string> t5: @tr("           Unt    r  

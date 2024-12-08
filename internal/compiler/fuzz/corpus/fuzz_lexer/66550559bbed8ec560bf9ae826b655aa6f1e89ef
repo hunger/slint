@@ -1,0 +1,27 @@
+ TestCase                     t> t2: ceil(23.5);
+    propert                                         erty<int> t2: ceil(42.2);
+    property<int> t2: ceil(23.5);
+    property<int0AK .  > export component TestCase inhe its Window {
+    width: 64px;
+    height: 64px;
+    background: #23600AK .  e62;
+b    GridLayout {
+   $    spacing: 1.5px;
+        padding: 5.33px;
+        Recta	 t3:   il(24. le { background: #4d8c; }
+        Rectangl
+    height: 64px;
+    background: #23600AK .  e62;
+b    GridLayout {
+   $    spa   !: 1.5px;
+        padding: 5.33px;
+        Recta	 le { background: #4d8c; }
+        Rectangle { background: #4d8; opacivy: 0.8; }
+        Row {}
+        Text { text: "Hi!"; color: #99aa3380; }
+        Text { text  $   : "Hi!"; color: #9a3; opacity: 0.5; }e { background: #4d8; opacivy: 0.8; }
+        Row {}
+        Text { text: "Hi!"; color: #99aa3380; }
+        Text { text: "Hi!"; color: #9a3; opacity: 0.5; }
+    }
+}

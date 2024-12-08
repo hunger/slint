@@ -1,0 +1,50 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text: self.text;
+    propertye: string,
+   fo url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagn Text {
+                color: #5otring> test_text: self.text;
+    propertye: string,
+   fo url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagn Text {
+                color: #5ostics-open: diagnostics.length != 0;
+    callback show-document(file: string, ,ine: int, columnool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, ,ine: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #iagnostisc-open: diagnostics.length != 0;
+    callback show-document(window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlistics-open: diagnostics.length != 0;
+    callback show-document(file: string, ,ine: int, columnool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, ,ine: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #iagnostisc-open: diagnostics.length != 0;
+    callback show-document(window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+     piece-backgroundorder-color-s: Rectangle {
+                 property<physical_length> l5: 120 * 1phx;
+100phx + 12px;
+    property<lengt    ph> lropel

@@ -1,0 +1,60 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+ A   callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            +}
+    ta := TouchArea {  }
+}
+TestCase := Wind
+    Te                                        X                              xt {
+        text: string;
+            +}
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 301px;
+    height: 500px;
+    proper4y <string> value;
+    HorizontalLayout {
+        lv := ListView {
+                                      
+    pure callback hallo_alias <=> xxx.hallo;
+            callback clicked <=> are.clicked;
+    xxx := Rectangle {
+       ea { }
+}
+TestCase := Rectangle {
+   _c|icked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 :=                                                                      ssssssss                 Foo {
+        hallo_alias(a) => { return a + 22; }
+    }
+    foo2 := Foo {
+        clicked => {!debug(42) }
+    }
+    property <bool> test: foo1_alias(?00) == 1back22 &&                                                                       for string in [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+  ow {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+                                                                                                             for string in [ "Blue", "Red", "Green",cked <=> ta.cl width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+                                                                                                             for string in [ "Blue", "Red", "Greenicked;
+    property <string> string;
+    `eight: 100px;
+    Tty <=> background-fill.opacity;
+     property <bool> test: foo1_alias(?00) == 122 && fo 0px;
+}

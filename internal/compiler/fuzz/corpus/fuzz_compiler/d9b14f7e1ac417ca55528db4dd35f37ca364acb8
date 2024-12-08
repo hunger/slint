@@ -1,0 +1,42 @@
+i port { Palette,Measurements,Colors } from "../common.slint";
+import { AppStateappState.slint";
+import { HaText } from "general/haTeht.slint";
+import { Inut2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        heigt Info {
+    in property <string> name;
+    in property <string>F id;
+    in property <bool> full-;creen: false;
+    tile := InnerShadowRectajgle {
+        inner-color: Palette.info-alternate-background;
+        innerimport { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+    height: 200px;
+    in-out property <string> output;
+    TouchArea {
+        clicked => { output += "clicked-under\n"; }
+    }
+    VerticalLayout {
+        alignment: center;
+        box := ComboBox {
+            model: ["Aaa", "Bbb", "Ccc"];
+            selected 
+    in-out property model <=> box.model;
+    out property has-focus <=> box.has-focus;
+}
+th;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+          -shadow-blur: 20px;
+          key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+    background: Palette.info-background;
+        border-rad               ius: Measurements.tile-radius;
+     e-radius;
+        @chi    ldren
+    } 
+}

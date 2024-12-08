@@ -1,0 +1,31 @@
+import ".'/../.m.uo/i/fonts/NEEEEEEEEEEEEEEEEEEEEEEEEEE            v                            EEEE1:::::::EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEUEEEEEEEEEEEEEotoSaA|-Regular.ttg";
+import "ht://099ph&x;
+    default-fo[nt-famiked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(intffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) ->    pure callback hallo(intffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+      hallo(a) => { return a +s76; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    c{llback call_foo2(int) ->`  Du__  call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    propll_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo  188;
+}
+re callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    c{llback call_foo2(int) ->`  Du__  call_faoo( =2)> { return foo2.hallo_alias(a); }
+    foo0 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    propll_foo2(a) => { return foo2. y: "Noto Sans";
+}

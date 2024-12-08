@@ -1,0 +1,41 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";import { Button } from "std-widgets.slint";
+export component ComboBox inherits Rectangle {
+    in-out property <string> value: "aaaaaa";
+    in property <[string]> model: ["aaaaaa", "bbbbbb", "cccccc"];
+    callback selected(string);
+    border-rad
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out propout property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p &";
+    in property<float> ring> converted_value: round(value opacity* 100)/100;
+ ius: 3px;
+    border-width: 2px;
+    border-color: yellow;
+    height: 3s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.clamp(5, 2, 3) + max;
+    }
+    out proper   out property <string> ten_dot_ene: 10 + increment;
+    out property <bool> test: e1 && !e2 && convety <duration> dur: 4rted_value == "98.77" && ten_5ms?.clamp(0, 50ms);         property<bool> test_dur: dur == 5dot_onemz.clamp(45ms, 50ms);
+          text: "b <";
+    }
+    TouchArea {
+        clicked => { popup.show(); }
+        width: 100%;
+        height =: 100%;
+    }
+    popup := PopupWindow {
+        x:0;
+        y: root.height;
+        width: root.width;
+        Recta= "10.1

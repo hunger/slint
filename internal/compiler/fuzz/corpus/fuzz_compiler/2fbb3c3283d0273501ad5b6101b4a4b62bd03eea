@@ -1,0 +1,52 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    prexport component TestCase  {
+    in-out property <bool> toggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+            return 42;
+        }
+        return 100;
+    }
+    in-out property <float> value2: {
+        return 100;
+    }
+    in-out property <int> index: -1;
+    public function rust_fn_codegen_bug() -> bool {
+        return index != 0 && index != 1;
+    }
+    in-out property <bool> rust_binding_codegen_bug: {
+        return index != 42 && index != 42;
+    }
+    callback test_signal;
+    in-out property <bool> block_signal;
+    in-out property <bool> signal_handled;
+    test_signal => {
+        if (block_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 / 1ms;
+    property<int> i2: d1 / (2ms + 0);
+    property<int> untyped_d1: self.d1 / 1ms;
+    property<int> untyped_d2: self.d2 / 1ms;
+    property<int>      }
+        signal_handled = true;
+    }
+    private property <bool> issue_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3: self.d3 / 1ms;
+    property5430: issue_5430_const_with_return ? "true" : "false";
+    out property<bool> test: { return value2 == value && issue_5430<int> untyped_d4: self.d4 / 1ms;
+    property<int> untyped_d5: self.d5 / 1ms;
+    property<int> untyped_d6: self.d6  == "true"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1ms;
+    property<int> 

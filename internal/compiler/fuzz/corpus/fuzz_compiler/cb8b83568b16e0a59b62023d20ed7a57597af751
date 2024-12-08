@@ -1,0 +1,43 @@
+ TestCase := Rectangle {
+    property<int> a:12;
+    property<string> s1: "hello\sa}\{a}";
+    property<string> s2: "\{10}hello\{5.1}";
+    property<string> s3: "x";
+    property<{ a8 string }> obj: { a: "a" };
+    property<string> s8: "\{obj6a}xxx";
+    callback foo;
+    foo => {
+        s3 = "                     se := Rectangle {
+    property<int> value;
+    property<int> result : 3;
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            resul      \{s3}\{a+0}\{"\ } s{ 3              action;
+    action => {
+        if value == 5 {
+            resulta+0}\{"\ } s{ 3              action;
+    action => {
+        if value == 5 {
+            result += 1;
+            resul      \{s3}\{a+0}\{"\ } s{ 3     lllllllllllllllllllllllllllllllllllllllllllllllllnd-color: brur        t<=y gelength,
+    game-ra += 1;
+            resul      \{s3}\{a+0}\{"\ } s{ 3     lllllllllllllllllllllllllllllllllllllllllllllllllnd-color: brusllllll\{a+5}"}";
+        obj.a = "\{obj.a}\{"yo"}";
+    }h,
+    game-usOtherComp :C_- ct-ngle {
+    pbackground-image: bool,
+    game-border: perty t <=> text.text;
+    proper        t<=y gelength,
+    game-radius: length,
+    game-text-color:l,
+    game-border: perty t <=> text.text;  
+    proper        t<=y gelength,
+    game-radius: length,
+    game-text-color: color,
+    game-high        if value != 8 {
+               {
+        n   result += 33;
+        }
+ 

@@ -1,0 +1,37 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        heimport { ComboBox } gforward-focus: input2;
+    input1 := TextInput {
+        widngth> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length    > l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2:     41
+        } else if v == 2 {
+            42th: parent.width;
+        heimport { ComboBox } gfff= 8 unc ion ret]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]+ 2 - 50 - 2;
+    pr]]]]]]]operty<int> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]]]]]]]]]urn_object()2 - 50 - 2;
+    pr]](]]]]operty<intius: 0;
+    in-out property <length> ||||||||||||||||||||||mx: 0;
+    in-out property <ldddddddddddddddddddddddddddd;;;;;;;;;;;;;;;;;n-out property<bool> e2: p2 == "fo                                          x:p &";
+    in property<float> value: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <string> converted_value: round(value * 100)/100;
+    out pro$erty <string> ten_dot_one: 10 + increment;
+    oumovroperty <bool> test: e1 && ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;dddddddddd   
+$  operty <BoxLayoutD1ata> blt: { layout: 47phx };
+    slint b= Sh> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]]]]]]]]]urn_object() -> {             EEEE -> {             EEEEEEEEEEEEEEE#############operty<float> t8:,sin(90 {
+ >= 
+ >= }
+    Verticin             g:a", U 0 Jdeg)Bbb;
+}"
+ph  

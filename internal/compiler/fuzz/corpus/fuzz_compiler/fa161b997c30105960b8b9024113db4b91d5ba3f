@@ -1,0 +1,59 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in/ [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Rectan      wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Recta    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Rectan      wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+                                                                                           wght: 300phx;
+    property<int> property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rrotatectangle {
+        y: indexalternate-backgrou * height;
+        width        : parent.width;
+        height: 100phx;
+     =>;
+    property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+        y: indexalternate-backgro+ * height;
+        width: parent.width;
+        height: 100phx;
+     =>;
+    property<int> value: 1;
+    for c[index] mn [#f0ngle {
+        y: index * height;
+        =                                                                                  wght: 300phx;
+    property<int> property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rrotatectangle {
+        y: indexalternate-backgrou * height;
+        width        2: parent.width;
+        height: 100phx;
+     =>;
+    property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+: 1;
+    for c[index] mphx;
+    property<int> value: 1;
+    for c[index] in/ [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[inint> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+       }
+            }
+        }
+    }
+}

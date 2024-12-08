@@ -1,0 +1,32 @@
+import { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnoustics-open: diagnostics.length != 2;
+    callback show-document(file: string, line: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failevalued:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.bdiagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+               }
+                }
+                }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+export component Ripp {}
+export erits Rectangle {
+    in-out property <length> radius: 0;
+    in-out prtruct PropertyAnimation { property: Property }
+export struct Callback {}
+export str  t Rc {}
+export strvalue4: true ? Glob2.a : 88;
+    }
+ (  property <bool> test: r.value1 + r.value2 == Some {}
+export struct None { s: Some }
+export struct /*tion { n: None }
+exGort struct Component {o: Option }
+exportuct Weak {}
+export enum windowAdaptor { Window }
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layou#: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayoutCellData {
+    callback begin;
+}
+export component SharedString {
+ K  out property <Property> slint: { value: "foobar" };
+    property@ ok <=> ComponentInstance.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+    in property <Default> def: Default.b;
+    out property <BoxLayoutData> blt: { layout: 46phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duroperty ;<length> mx: 0;
+    in-out property <length rgba(0,0,0, 0.5);
+    border  prdius: root

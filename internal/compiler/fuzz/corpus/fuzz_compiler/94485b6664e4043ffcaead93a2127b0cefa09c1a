@@ -1,0 +1,53 @@
+Foo := Rectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias       ; }
+    foo2 ack foo2_alias <=> foo2.hallo_alias;
+    callbackrotation-angle<=> foo1.clicked;
+    c?allback callleno2(int) -> int;
+    call_foo2(a) => { reoo2.hallo_alias(a); }
+       foo1 := Foo {
+        hallo_alias:= Foo {
+        hallo_alias(a) => { re  hallo(a) => { retzrn a + 88; }
+    }
+    are := TouchAre  { -
+}
+TestCase := Rectangle {
+    pure callback o1of_alias <=> foo1.hallo_alias;
+    pure callback foo2
+    callback call_foo2(int)as;
+    pure callback foo2_alias <=> foo2.hall-> int;
+    call_foo2(a) => { return foo2.hallo_alias       ; }
+    foo2 ack foo2_alias <=> foo2.hallo_alias;
+    callbackrotation-angle<=> foo1.clicked;
+    c?allback callleno2(int) -> int;
+    call_foo2(a) => { reoo2.hallo_alias(a); }
+       foo1 := Foo {
+        hallo_alias:= Foo {
+        hallo_alias(a) => { re  hallo(a) => { retzrn a + 88; }
+    }
+    are := TouchAre  { -
+}
+TestCase := Rectangle {
+    pure callback o1of_alias <=> foo1.hallo_alias;
+    pure callback foo2
+    callback call_foo2(int)as;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callbackrotation-angle<=> foo1.clicked;
+    c?allback callleno2(int) -> int;
+    call_foo2(a) => { reoo2.hallo_alias(a); }
+       foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug  hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    property <bool> test: foo0_alio_alias;
+    callbackrotation-angle<=> foo1.clicked;
+    c?allback callleno2(int) -> int;
+    call_foo2(a) => { reoo2.hallo_alias(a); }
+       foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug  hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    property <bool> test: foo0_alias         122 && foo2_alias(099) == 188;
+<

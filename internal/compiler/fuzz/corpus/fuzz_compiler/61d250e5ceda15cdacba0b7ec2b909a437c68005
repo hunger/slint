@@ -1,0 +1,15 @@
+exn := Rectangle {
+    min-height: max(32px, l.min-height);
+    l := HorizontalLayout {
+        if (false): button_in_image := Image {
+            width: 24px;
+    {
+    x := HorizontalLayout {
+        btn := Btn {port Btn := Rectangle {
+    min-height: m   property <int> a:"other;
+    property <int> other: 5;
+}
+Te       property <iperty <import { Button } from "sportd-widgets.slint"t perty <boo/nt> value2: \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ := HorizontalLayout {
+        btn := Btn {}
+    }
+}

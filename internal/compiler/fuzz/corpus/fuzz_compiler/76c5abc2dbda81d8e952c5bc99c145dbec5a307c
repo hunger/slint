@@ -1,0 +1,11 @@
+component C1  {
+    Rectanferred-width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2im.

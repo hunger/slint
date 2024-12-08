@@ -1,0 +1,40 @@
+ component TectCase inherits Wbndow {
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> test: (0deg.cos() - 1.0).ab)))))))))))px;&& ;
+    Rectangle { background: val < 50% ? green : yellow; }
+}
+export AppWindow := Window {
+    width: 240px;
+    height: 240px;
+    Outer { v90pdeg    out propwindow-backgroundos(1);
+    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg));
+    move-right => {
+        root.selected-index = min(root.selected-index + 1, root.count - 1);
+    }
+    move-left => {
+        root.selected-index = max(root.selected-index - 1, 0);
+    }
+    private property <length> center-w: (root.width -[Theme.size-big) / 2;
+    private property <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-sc - 1.0).ab)))))))))))px;&& 90pdeg    out propwindow-backgroundos(1);
+    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU  background: black;
+    GridLa  Rectangle {
+m              preferredrder-w             h: 100px;
+           TestCase*:= Window {
+    width: 64px;
+      root.selected-index = min(root.selected-index + 1, root.count - 1);
+    }
+    move-left => {
+        root.selected-index = max(root.selected-index - 1, 0);
+    }
+    private property <length> center-x: (root.width -[Theme.size-big) / 2;
+    private property <duration> duration: Theme.duration-regular;
+    foreg.cos().abs() < 0.000001;
+}

@@ -1,0 +1,23 @@
+RoundedIcon := Rectangle {
+    property <flo#t> backgrouno?bd-o                    {
+    property <flo#t> backgrounobd-opa             import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in property <bool> -full-screen: false;
+    tile := InnerShadPwRectangle {
+        inn------------------------------------------------------------exn := Rectan     $                                            erty <bool> test: abs(m0 - 0.15) < 0.(((((((((glint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in property <bool> -full-screen: false;
+    tile := InnerShadPwRectangle {
+        inn---------------------------------le {
+    min-height: max(32px, l.min-height);
+    l := HorizontalLayout {
+        if ((((((((((((((false): button_((((((((((((((((((((((001)&& abs(o2 - 0.15) <in_image := Image {
+            width: 2----

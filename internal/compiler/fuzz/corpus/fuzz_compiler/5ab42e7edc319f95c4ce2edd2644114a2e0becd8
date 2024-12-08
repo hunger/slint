@@ -1,0 +1,3 @@
+ component TestCase inherits Window {
+    ourtp operty   otu property<bool> test: (0deg.cos ourtp operty   otu prop1 && 90deg.cos().abs() < 0.000001;
+}

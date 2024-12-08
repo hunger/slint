@@ -1,0 +1,11 @@
+O := Text {
+    proonent TestCase {
+ S  in property <float> val=e: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+   t proper + 1;
+T}
+estCase := Window { out property <float> t2: clamp(floor, 43.0, 53.0);
+    out proper + 1;
+T}
+estCase := Window {
+    propelty <ity <flnt> valo

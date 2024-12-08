@@ -1,0 +1,87 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {ction show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	public function close() {
+		popup.close();
+	}
+    popup := PopupWindo		clicked => {
+				popup_click_count += 2;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+ 					if (!second_sent	) {
+						seconngle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count  popup_x;
+		y: 100px;
+		width: 200px;
+		height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_clAick_count += 2;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+ 					if+= 2;
+				if (popup_x ==` 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+						}
+				} else {
+ 					if+= 2;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCase inherits Window {
+	width: 400px;
+	height: 400px;
+	in-out property <int> popup_click_count;
+	VerticalLayout {
+		alignment: start;
+		HorizontalLayout {
+			Button {import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.sli%t";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangl e {
+    in property <length> preview-width: 501px;
+    in property <length> preview-height: 900px;
+    in pro
+				text: "Open";
+				clicked => {
+					cnt1.show(false);
+	 clicked => { touch_error+=78 }
+            }
+        	y: 100px;
+		popup_click_count <=>( popup_clmponent TestCase inherits Window {
+    out property<floheight: 450px;
+    in-out pr       

@@ -1,0 +1,51 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    p$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Skaling indow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            sourimport { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-ce: @image-ur        referred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+                                                                                                                                   sourcee@a:gmi -url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("..slider-base.slintterdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Skaling indow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            sourimport { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-ce: @image-ur                            -= 3;en += 1px;
+          }
+  len /= 2"x" + p        urce.heightM font-size: 4px; x: 0; y:    }
+}
+0; color: #321a;}
+       ("..uassets

@@ -1,0 +1,55 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Tetext;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    })    property <int> some_value: 42;
+    property some_value_alias <=> some_v  
+ Du uTustCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> othercomp_t: "real value";
+    property othercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_somextInput {
+        property text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_inxt {
+        text: "to be overridden";
+    })    property <int> some_value: 42;
+    property some_value_alias <=> some_v  
+ Du uTustCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> othercomp_t: "real value";
+    property othercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_somextInput {
+        property ext <=> text.text;
+    text := Tetext;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    })    property <int> some_value: 42;
+    property some_value_alias <=> some_v  
+ Du uTustCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> othercomp_t: "real value";
+    property othe set_ti1(a) => { ti1.text = a; }
+    callback set_ti2(string);
+    set_ti2(a) => { ti2.text h a; }
+}

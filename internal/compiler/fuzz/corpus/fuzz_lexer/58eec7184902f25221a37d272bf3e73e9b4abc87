@@ -1,0 +1,35 @@
+import { Com  =x } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+ ///TestCase := Rectangle &&    property<physical_length> l1: 12phx;
+    property<physical_length> l2: 12px;
+    property<phy/*sica/*length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: //////////////////////////////////////////////////////////////////////////////////////////1phx;
+    pqoperty<bool> value: l1 == 10phx \_M hx;
+    property<length> zero1:////////   height: 200px;
+    in-out property <string> output;
+ == TouchArea {
+        clicked => { outpt TestCase o~y .  s Win 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;
+    property <float> ratio: 1px / 1phx;
+    property <float> ratio: 1px / 1phx;
+    property<bool> test: (8phx * 5px * 3ms / 2phx) dow {
+    width: 200px;
+     == (8px * (3ms / 2phx) * 5px) / ratio
+        && l1*l2 - ll1*ll2 == 0cm            height: 200px;
+ *0  

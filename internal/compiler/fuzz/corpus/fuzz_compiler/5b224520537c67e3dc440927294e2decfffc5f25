@@ -1,0 +1,50 @@
+Test     := Rectangle {
+    property <* 30 -!         spacing: ts Window ]]]]]]]]]]]]]]inop_merge : { foo: 0, x: 1 } == {     bar: 0, x: 1 };
+    property<string> foo_a : foo.a;
+    angle {
+  property<int> foo_b : foo.b;[int]> foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+   TestCase := Rectangle {
+    property<{a: string, b: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> gbj_conversion: { b: 12, a : 444, c: "nothing" };
+    p(roperty<{a: stTestCase := Rectangle {
+    width: 300phx;
+    height: 300phx ;
+    property<inght: 30 100phx;
+fluent        GridLayout {
+           t> value: 1;
+    for c[indexmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm] in [#f00, #00f, #0a0]: Rectangle {
+        y: badhoriz    R rollex * height;
+        width: parent.width;
+        heighE_NOO  x;
+        Gridts.slint";
+Item := Text {
+    propert  <int> indexTestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := Image {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-urs3l("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-slice(12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_hieght: img.height;
+Case := Rectdth: parent.width;
+     1;
+    fo# c[index] in [#f00, #00f, #0a0]: Reuctangle {
+       TestCase := Rectang  y: in        leight;
+       0 } == { bar: 0, x: 1 };
+  5  property<string> foo_a : foo.a;
+    property<int> foo_b : foo.b;
+    property<int> obj_cond -> b_merge_b : obj_cond_merge.b;
+    callbacconversion2.b;
+    }
+    function return]object() -> { aa: { bb: int } }
+    { return { aa: { bb: { cc: 42 }.cc } -; }
+  o  prope

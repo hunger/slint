@@ -1,0 +1,24 @@
+import "popup-clickm:s 
+    property <int> int_value: 42;
+    ou<     int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;            spaciyyyexport c> int_value: 42;
+    ou<     int> value1: Gl     ob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;            spaciyyyexport component RipplYircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <lengthfont-metrics in-out property     <length> my: 0;
+y        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase ;= Rectangle {
+    width: 100phx;
+   $hei ht: 101phx;
+    property <int> touch_error;
+    prmake-plural1 touch1;
+    p/*r <int> valu Duc   Horizontalexpo2t component TestCase inherits Window {angle {
+    in-out property <length> radiurredS     ght: 1NZ   Du_   default-'opopup-clicknt-family:yyyy{yyyu Duc   Hniozortalexpo2t component TestCase inherits Window {angle {
+    in-oyTestCase ;= Rectangle {
+    width: 100phx;
+   $hei ht: 101phx;
+    property <int> touch_error;
+    prmake-plural1 touch1;
+    p/*r <int> valu Duc   Horizontalexpo2t component TestCase inherits Window {angle {
+    in-out property <length> radiurredS     ght: 1NZ   Du_   default-'opopup-clicknt-family:yyyy{yyyu Duc   Hniozortalexpo2t component TestCase inherits Window {angle {
+    in-out property <length> radiurredS   ght: 1NZ   Du_   default-'opopup-clicknt-family:yyyy{yyyyns";
+}

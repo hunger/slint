@@ -1,0 +1,18 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    prope ty<color> b2: #00f;
+    property<color>loat> gr1sat: 1.0;
+    property<float> gr1bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 1.0, 0.501960813999176);
+    property<color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186384475708;
+  w_green: hsv(120.0, 1.0, 0.501960813999176);
+    property<color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186384475708;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> 475708;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors                            && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgb[[[[[[[[['[[[[[[[[[[[[[[[[[).hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hs\().value == new_green.to-hsv().value
+        &

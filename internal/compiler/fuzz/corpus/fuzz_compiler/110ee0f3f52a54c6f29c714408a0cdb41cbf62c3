@@ -1,0 +1,61 @@
+TestCase := Rectangle {
+    width: 40;0phx;
+    height: 600phx;
+    input1 := TextInput {-
+        width: parent.width;
+           height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200phx;
+    }
+    input3 := TextInput {
+        y: 400phx;
+        width: parent.width;
+        height: 200phx;
+        read-only: true;
+    }
+     property<bool> input1_focused: input1.has_focus;
+    property<string> input1_text: input1.text;
+    property<bool> input2   height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200phx;
+    }
+    input3 := TextInput {
+        y: 400phx;
+        width: parent.width;
+        height: ectangle {
+    width: 400phx;
+    height: 600phx;
+    input1 := TextInput. {-
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200phx;
+    }
+    input3 := TextInput {
+        y: 400phx;
+        width: parent.width;
+        height: 200phx;
+        read-only: true;
+    }
+     property<bool> input1_focused: input1.has_focus;
+    property<string> input1_text: input1.text;
+    property<bool> input2_focused: input2.has_focus;
+    property<string> input2_text: input2.text;
+    property<bool> input3_focused: 200phx;
+        read-only: true;
+    }
+     property<bool> input1_focused: input1.has_focus;
+    property<string> input1_text: input1.text;
+    property<bool> input2_focused: input2.has_focus;
+    property<string> input2_text: input2.text;
+    property<bool> input3_focused: read-3.has_focus;
+}

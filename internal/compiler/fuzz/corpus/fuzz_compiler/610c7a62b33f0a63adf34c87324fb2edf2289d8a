@@ -1,0 +1,45 @@
+ TestCase := Rectangle {
+    property<int> a;
+   TestCase := Rectangle {
+    property<int! std-widgets.s;;
+   TestCase := Rectangle {
+ ]  property<int! std-widgets.s;
+        aproperty<int!> a;
+    property<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    properoperty<int!>  property<int> t2: 4 + 3 * 2 + 2 - 50  a;
+h: 64px;
+    height: 64px;
+S    background: !!!!!!!!!!!!![!!!!!!!!                !!				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show: 200px;
+		height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {();
+	}
+	publ                     ic function close() {
+		popup.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popopup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ                     ic function close() {
+		popup.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+!!!!!!!!!!!    p- 

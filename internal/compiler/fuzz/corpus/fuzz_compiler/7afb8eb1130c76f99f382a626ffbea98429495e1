@@ -1,0 +1,39 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <roperty <MouseSursor> 
+    in property <roperty <MouseScutor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scopeth: 64px;
+    or> mouse-cursor <=> touch-area.mouse-cursor;
+    cal0back clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scopeth: 64px;
+    height: 64px?
+    background: #2360e6 for     ol= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+roperty <bool> hsa-focus <=> fo 1px));
+    function foo() {}
+                     wid property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scopeth: 73px;
+    or> mouse-cursor <=> touch-area.mouse-cursor;
+    cal0back clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scopeth: 64px;
+    height: 64px?
+    background: #2360e6 faor     ol= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.operty <bool> has-focus <=> focus-scopeth: 64px;
+    or> mouse-cursor <=> touch-area.mouse-cursor;
+    cal0back clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scopeth: 64px;
+    height: 64px?
+    background: #2360e6 for     ol= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicke   ublic function in p 

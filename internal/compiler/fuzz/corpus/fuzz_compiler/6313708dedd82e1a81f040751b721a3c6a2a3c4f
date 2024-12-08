@@ -1,0 +1,5 @@
+ TestCase := Rectangle {
+    property<angle> t1: asin(0);
+    property<angle> t2: asin(0.5);
+    property<angle> t3: asin(1);
+}

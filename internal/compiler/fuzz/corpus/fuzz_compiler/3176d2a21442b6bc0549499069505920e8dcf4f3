@@ -1,0 +1,29 @@
+export MainWindow := Window {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+         Image {
+            source: @image-url(". /../../demos/printerdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.jpg");
+            image-rejderin y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-backgr#und-color: blue.transparentize(10%);
+ ;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color: orange;
+        font-size: 13px;
+        cursor-position-byte-offset: 16;
+        anchor-position-byte       text: "VAVAv\nLine\nWAWA";
+  `     wrap: word-wrap;
+        color: green;
+        selection-backgr#und-color: blue.transpag: pixelated;
+        }
+    }
+}

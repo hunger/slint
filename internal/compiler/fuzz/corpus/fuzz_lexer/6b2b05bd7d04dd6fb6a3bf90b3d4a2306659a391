@@ -1,0 +1,34 @@
+TestCase :component C1  {
+    Recta        width: 434px;
+            Rectangle {
+               preferred-width: 41px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{rcomponent C1  {
+    Recta        width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.widtpx;
+}
+export component W inherits Window {
+    Rectangle {
+        VerticalLayout {
+            FillParent {
+   & c2.min    && bug-63-width == 15.ok;
+200px
+ }r       && bug-6315.                            " +
+  .width / 1px}, " +
+            "\{r2.width / 1px}, " +
+            ""
+        );
+    }
+    out property <bool> ok: r.width == 100px && owk;
+}

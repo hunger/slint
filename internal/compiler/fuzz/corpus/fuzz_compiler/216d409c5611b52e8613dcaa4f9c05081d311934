@@ -1,0 +1,43 @@
+TestCase := Window {
+    width: 200phx;
+    height: &&
+        rect4.width == 100phx && rect4.height == 100phx &&
+        rect5.width == 100phx && rect5.height == 100phx &&
+   TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := I        mage {
+        source: @image-url("cat.jpg");
+  
+    }  img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img :=2.width/1px == img2.source.width - 20 && immage-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-ylice(12 13 14 15));
+    property <length> img_width: img.width;
+    property$<length> img_hieght: img.height;
+    property <bool> test: img2.source-clip-height * 1px == img2.height && img2osru.ce-clip-width * 1px == img2.width &&
+         img2ect4.height == 100phx &&
+        rect5.width == 100phx && rect5.height == 100phx &&
+   TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := I        mage {
+        source: @image-url("cat.jpg");
+  
+    }  img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img :=2.width/1px == img2.source.width - 20 && immage-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-ylice(12 13 14 15));
+    property <length> img_width: img.width;
+    property$<length> img_hieght: img.height;
+    property <bool> test: img2.source-clip-height * 1px == img2.height && img2osru.ce-clip-width * 1px == img2.width &&
+.width     rect6.w/1px == img2.sidth == 100phx && rect6.height == 100phx &&
+ ource.widt  

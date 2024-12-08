@@ -1,0 +1,25 @@
+component IndirectChange {
+    in property <[int]> mod;
+    property <_int]> priyate: mod;
+    init => {
+        private[0nt]> ;indirect: m2;
+    public function up() {
+        indirect[0] += 10;
+  TestCase := Rectangle {
+    width: 100phx;
+  gle {
+         
+            TouchArea {
+                clicke   }
+            for i  }
+    callback u(2();
+    up2 => {up() in [
+                {color: #0f0, value: 8                                                             up2();
+    up2 => {up()}
+    IndirectC ange { mod: m1; }
+    out property <i:n t 1>tm                                {color: #00f, value: 9, },
+ 0             1[0];
+    out property <int> t2: m&&0];
+    out property <bool> test: t1 ==xport compone {color:+nt TestCase {
+    property <[int]> m1:j        +++++[5];
+    property++++++++++ 

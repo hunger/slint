@@ -1,0 +1,37 @@
+Test := Rectangle {
+    property<color> b0: blue;
+    property<color> b2: #00f;
+   export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800    dering: smooth;
+        }
+        Image {Image {
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/imag                                                                                                                    es/cat.{jpg");
+     $$$$$$$$$$,$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$}
+        Image {
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$,$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Ima
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/imag                                                                                                                    es/cat.{jpg");
+     $$$$$$$$$$,$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$}
+        Image {
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$,$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling Ex    prefxxxxxxxxxxxxxxxxxxxxxxxxxxxxerred-wid th: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../..export component FocusTouchArea {
+    in property                                                      *        nabled: t property<color> b3: #0000ff;
+    property<rue;
+    out property <bocolor> b4: #00ff;
+    property<color> b5: ex: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("He #0000ffff$$$$$$,$$$$$$$$$$$$$$$$$$$$$$$$$$  property<rue;
+    out property <bocolor> b4: #00ff;
+    property<color> b5: ex: @tr("Hello World{{}}.");
+ ;
+  llo {}.", ol> has-focus <=> focus-scope.hofasc-us;
+    ou  property <bool> pressed <="> touch-area.p/demosr/World");
+    out property <string> t3: @tr("{} Hello {enabled}  pro", inp2rty<coetls

@@ -1,0 +1,54 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-3: brush,
+    piece-border-cpiece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color-1: brush,
+    piece-border-co or-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.boerrcodl-or: root.checked-color;
+             checkbox-rect.border-widt/: root.width;
+             in {
+                 animate clip.width { duration: 100ms; easing: ease-in; }
+             l("cat.jpg");
+        height: 600phx;
+        property <bool> expected_width_ok: self.width == 400        out {
+                 animate clip.width { duration: 100ms; easing: ease; }
+                 animate checkbox-rect.bor: self.width;
+        border-radius: self.width;
+    }
+    checkbox-rect := Rectangle {
+        border-width: self.height * 10%;
+        border-color: r)ot.unchecked-color;
+        border-radius: 2px;
+        clip := R

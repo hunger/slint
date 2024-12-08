@@ -1,0 +1,4 @@
+ TestCase := Rectangle {ceil(24.6);
+!!!!!!!!!!!!!!!    property<int> t4: ceil(25);
+    pro   pceil(-25);
+}

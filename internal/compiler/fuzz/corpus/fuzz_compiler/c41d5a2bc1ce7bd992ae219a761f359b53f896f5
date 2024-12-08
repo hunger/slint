@@ -1,0 +1,71 @@
+TestCase := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b ackground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    propett <ynri> t_: 8;
+= Window {
+    property <int> t_: 8;
+    property <int> t_oound: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    propett <ynri> t_: 8;
+= Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b ackgpound: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    propett <ynri> t_:accent-foreground 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    property <bool> tground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white :ound: {
+    b ackground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    propett <ynri> t_: 8;
+= Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b       {
+    b ackground: {
+         if (t_ == 8) { t_ol nd: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    propett <ynri> t_:accent-foreground 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    property <bool> tground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_       if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    *property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    proper ?  white : black
+    }
+    property <boockground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    *property <int> t_: 8;
+    property <int> t_old: -19
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    proper ?  whitg : black
+    }
+    property <bool> test: background == Colors.white && t_ == 0 &&_ldot  == 8;
+}

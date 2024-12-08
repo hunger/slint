@@ -1,0 +1,43 @@
+RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+    bacTestCaskground-fill := Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+    }
+    property <float> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+         background-opacity: 0.15;
+    }
+= Rectangle {
+  loat> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+         background-opacity: 0.15;
+    }
+= Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]]]]]operty<int> t2: 500 /     property<float> oe := Rectangle {
+    width: 400phx;
+    height: 400phx;
+      width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]]]]]operty<int> t2: 500 /     property<float> oe := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]]]]]operty<int> t2: 500 / 2 * 30 -!         spa  cing: ts Window ]]]]]]]]]]]]]]]]]]]urn_object()2 - 50 - 2;
+    pr]]]]]]]operty<int> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]]]]]]]]]urn_object() -> {                            : ri.o;
+}
+Sub := Rectangle                                                                   EEEE -> {             EEEEEEE {
+    property o <EEEEEEEE#############operty<flo

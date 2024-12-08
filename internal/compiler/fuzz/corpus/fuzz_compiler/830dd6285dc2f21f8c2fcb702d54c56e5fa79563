@@ -1,0 +1,24 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VerticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        HorizontalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            blue-rect := Rectangle {
+                background:    !   "\{r.width /       "port { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px= Recta   

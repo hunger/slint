@@ -1,0 +1,43 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    prexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <iny> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-b => { chain-a += 1; }
+    property <int> chain-c;
+    changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    operty<color> y2: #ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rgb(100, 23, 42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);
+    property<color> i1: rgb(0, 666, -85);
+    property<color> p1: true ? b1.mix(r1, 30%) : y1.mix(c

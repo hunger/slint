@@ -1,0 +1,47 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hng: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=79 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea }
+            foralue: 8, },
+                {color: #00f, value: 9, },
+         ello";
+    property <string> text4: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text color<=> ti2.text_alias;
+    property text_item_text <=> text_item.textcolor property <string> othercomp_t: "real value";
+    property othpressedercomp_get_text <=> other_comp.get_text;
+    property <int> othercomtring> text4: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text color<=> ti2.text_alias;
+    property text_item_text <=> text_item.textcolor property <string> othercomp_t: "real value";
+    property othpressedercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_some_value_alias <=> other_comp.some_value_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        Rounproperty text_aliasp_some_value;
+    property othercomp_some_value_aoperty ti1_text <=> ti1.text_alias;
+    property ti2_text color<=> ti2.text_a_alias2;
+    ti1 := TextInput {
+        Rounproperty text_alias <=> text;
+        textdedIcon := Rectangle {
+    property <float> background-opacity <=> background- <=fi> tll.opaciext

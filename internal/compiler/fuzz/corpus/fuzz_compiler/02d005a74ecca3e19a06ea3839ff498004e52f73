@@ -1,0 +1,64 @@
+TestCase := Rectangle {
+    property<int> value;
+    property<int> result : 3;
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }
+    }
+    callback xxx;
+    xxx => {
+        if false {
+            action();
+        }
+        if true {
+            result -=1;
+        } else {
+            action();
+        }
+    }
+    callback elseif(int) ->   D
+    elseif(v) => {
+        if v == 1 {
+            41        
+        } else if v == 2 {
+            42
+        } else {
+            43
+      - 50 - 2gle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 * 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+         a /= 2;
+        a -= 3;
+        len += 1px;
+  0     len /= 2;
+        len -= 3px;
+ 2;
+        a -= 3;
+        [len += 1px;
+        len /= 2;
+        len -= 3px;
+                                                    nt> t2: 4 + 3 * 1 + 2 t   - 50 - 2gle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 * 2 -    a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 1;
+    property<int> t1: 500 / 2 * 30 -!1;
+    property<in    }
+    }
+}

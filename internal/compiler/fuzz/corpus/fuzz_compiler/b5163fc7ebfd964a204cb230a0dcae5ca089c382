@@ -1,0 +1,31 @@
+export component FocuseorTAhcua {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-ar?ea.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pressed;
+    in property <MouseCursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> touch-area.clicked;
+    forward-focus: focus-scope;
+    focus-scope := FocusScope {
+        x: 0;
+        width: 0px;
+        enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.t&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&ext == "\n") && !root.enter-pressed {
+                root.enter-pressed  touch-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pressed;
+    in property <MouseCursor> mouse-currea.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pressed;
+                         }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

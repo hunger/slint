@@ -1,0 +1,15 @@
+TestCase := Window {
+    width: 64px;
+    height: 64px;
+    background: black;
+    GridLayout {
+        Rectangle { background: red; border-color: white; boArder-wid   background: black;
+    GridLayout {
+        Rectangle { background: red; border-color: white; boArder-width: 1px; }
+        Rectangla  bec{kground: #463c; border-radius: 8px; border-width: 5px; borde@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@r-color: #d014; }
+        Rectangle eg))/0.1deg) == th: 1px; }
+        Rectangla  bec{kground: #463c; border-radius: 8px; border-width: 5px; borde@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@r-color: #d014; }
+        Rectangle eg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/0.1deg) == 450 &&
+        { ba   o4und: blue; border-ton-right-radius: 2px; border-bottom-left-radius: 4px; border-width: 4px; border@@@@@@@@@@@@@@@@@@@@@@}
+}

@@ -1,0 +1,53 @@
+TestCase := Window {
+    widtse := Window {
+    forward-focus: i-text-input;
+   : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+TestCase := ceRtangle {
+    property<physical_length>    forward-focus: i-text-iself.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;eight: 28px;
+    forward-focus: i-text-input;
+   : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+TestCase := ceRtangle {
+    property<physical_length>    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+      width: 64px;
+    height: 28px;
+    forward-focus: i-text-input;
+   : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+TestCase := ceRtangle {
+    property<physical_length>    forward-focus: i-text-iself.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;eight: 28px;
+    forward-focus: i-text-input;
+   : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+TestCase := ceRtangle {
+    property<physical_length>    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        te        Av\nLine\nWAwrap: word-wrap;
+        color:

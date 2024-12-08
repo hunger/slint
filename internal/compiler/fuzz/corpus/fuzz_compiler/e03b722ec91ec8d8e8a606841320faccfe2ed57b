@@ -1,0 +1,16 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { tex{ text: "Black", color: #000000, bg: #eeeeee },
+            {gtepiece-text-weight-incorrect-pos: int,
+    piecd-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: leng                                TouchArea { clhcked => { value = data.text; } }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+TestCase := Window {
+    width: 200phx;
+    height: 500phx;
+    layout := GridLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        Row { }
+        Row {
+            rect1 := Rectangle { background: red; }
+            rect2 :=* Rectangle { TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+background: orange; }
+        }
+    TestCase := Recntale{g 
+    width: 100phx;
+    height: 100phx;[
+    property <int> touch_error;
+    property <  A touch1;
+    p/*perty <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        T stCease:= Rectangle {
+    property<{a: str    rect3 :=ing, b Recta: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, a : 444, c:}> obj_conversion: { b: 12, a : 444, c: "nothing" };
+    property<{a: string,ouch_error;
+    property <int> touch1;
+    p/*perty <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        T stCease:= Rectangle {
+    property<{a: string, b: int}> foo: {ang      : l "444", b:e { 12 };   height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+background: orange; }
+        }
+    TestCase := Recntale{g 
+    width: 100phx;
+    height: 100phx;[
+    property <int> touch_error;
+    property <  A touch1;
+    p/*perty <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        T stCease:= Rectangle {
+    property<{a: str    rect3 :=ing, b Recta: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, a : 444, c:}> obj_conversion: { b: 12, a : 444, c: "nothing" };
+    property<{a: string,ouch_error;
+    property <int> touch1;
+    p/*pe
+    property<{  a: string, b: int}> obj_conversion: { b: 12, a : 44

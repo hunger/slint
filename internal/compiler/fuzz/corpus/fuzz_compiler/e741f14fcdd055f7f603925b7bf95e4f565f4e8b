@@ -1,0 +1,23 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {},
+            { text: "Red", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bcolor: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+        import ~"popup-clickm://:s      mp@rc { 																																																																																																																				LieEidt } fr                                                                             z                      "std-widgets.sli         ";
+e#x    { text: "Mat";
+TestC     int";
+Item := Text {ponent: fald", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+    e       { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff

@@ -1,0 +1,16 @@
+export global B {
+    out primtroouch-area.mo                     <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #1E133F,
+        secondary: #FFBF63,
+        text-primary: # width: 64px;
+    hTestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+       
+    property<int>eight: 64px;
+    background: !!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![!!! value: 1;
+    f!!!!!!!!!!!!! !!!!!!!!!!#2or c[index3

@@ -1,0 +1,52 @@
+TestCase := Rectangle {
+    property<export component SampleComponent inherits Window {
+    in-out property<int> counter;
+    in-out przoperty<string> user_name;
+    callback hello;
+    public function do-something(x: int) -> bool { return bject().aa.-0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+                                                                                               *                                         *           r2 := Rectangle {
+           : {
+       menuBar : #29 7A7,
+       mainContent : #040404,
+       box : #00000e_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3: self.d3 / 1m    s;
+    property,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-                                             pr]](]]]]operty<intius: 0;
+    in-out property cing: float,
+}
+component Checkbox inherits Rectangle {
+      r2 := Rectangle {
+           : {
+       menuBar : #29 7A7,
+       mainContent : #040404,
+       box : #00000e_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3: self.d3 / 1m    s;
+    property,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-                                             pr]](]]]]operty<intius: 0;
+    in-out property cing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in proper5430: issue_5430_con ? "true" : "false";
+    out property<bool> test: { retu        2 == value && issue_5430<int> unty&ped_d4: self.d4 / 1ms;
+    prop00ms;
+    propbool> signal_handled;
+    e"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1mshorizontaperty<int> 

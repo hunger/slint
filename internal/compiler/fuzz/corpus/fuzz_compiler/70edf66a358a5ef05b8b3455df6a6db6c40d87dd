@@ -1,0 +1,55 @@
+TestCase := Rectangle {
+    property<bool> tr@@@@@@@@@@@@@@@@@@@@@@@@@@@@uevar: true;
+    prope: Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+               text: "Comp_some_value_alias2;
+    ti1 := TextInput {
+        propertssage: string,
+    url: string,
+   ilation failed:";
+            }
+            ListView {
+                width:                                                                                                                        age: string,
+    url: string,
+    lin]: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, ,ine: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+               text: "Comp_some_value_alias2;
+    ti1 := TextInput {
+        propertssage: string,
+    url: string,
+   ilation failed:";
+            }
+            ListView {
+                width:                                                                                                                            parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.diagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => {
+                            root.show_document(diag.url, diag.line, diag.    mn);
+                        }
+                        Text {
+                            width: 100%;
+                            length != 0;
+    callback show-document(file: string, ,ine: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fwrap: word-wrap;
+      y text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInpuvar: false;
+}

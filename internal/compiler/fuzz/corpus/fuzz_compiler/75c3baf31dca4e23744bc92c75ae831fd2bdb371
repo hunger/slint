@@ -1,0 +1,27 @@
+Test := Rectangle {
+    property<color> b11: yellow;
+    property<color> y2:(#ff0;
+    property<color>           b: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors*blue.alpha == 255
+            == 0 && Colors*blue.alpha == 255
+            olors.rgb(45, 12, 78).rplaceholder-colored == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).alpha == f/loor(85% * 255)
+        && #abc.green == (11 * 16 + 22) && #abcd.alpha == (13nherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? G_ob2.a :     height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn*****%**ty <int> valu Duc   Ho spaciyyyy        yyyyyyyyyyyyyyyyyyy        yyyyyyyyyyyybcdef.red == (10 * 16 + 11);
+    out property <bool> test_hmv: gr1.to-hsv().hue == new_green.to-hsv().hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

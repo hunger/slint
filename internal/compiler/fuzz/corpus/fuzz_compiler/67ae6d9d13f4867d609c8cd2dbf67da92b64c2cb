@@ -1,0 +1,56 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    propbool> signal_handled;
+    test_signal => {
+         if (flock_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    propeturn: {
+        return true;
+    }
+    out propertyrty<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+        r2 := Rectangle {
+           : {
+       menuBar : #20deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    propbool> signal_handled;
+    test_signal => {
+         if (flock_signal) {
+            return;
+  operty<dk_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: ignal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    propeturn: {
+        return true;
+    }
+    out propertyrty<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+        r2 := Rectangle {
+           : {
+       menuBar -0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+        r2 := Rectangle {
+           : {
+       menuBar : #29 7A7,
+       mainContent : #040404,
+       box : #00000e_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3: self.d3 / 1m    s;
+    property5430 &&
+        r000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg)self.d6  == "tan2(10, 10) == 45detvue

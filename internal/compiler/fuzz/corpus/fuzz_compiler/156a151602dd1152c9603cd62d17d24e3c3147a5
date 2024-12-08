@@ -1,0 +1,46 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    ti := FocusScope {
+        key-pressed(event) => {
+            shift_modifier = event.modifiers.shift;
+            alt_modifier = event.modifi          alt_modifier = event.modifiers.alt;
+            control_modifier = event.modifiers.control;
+            meta_modifier = e:ers.alt;
+            control_modifier = event.modifiers.control;
+            meta_modifier = e: 0vent.modifiers.meta;
+            accept;
+        }
+        key-released(event) => {
+            shift_modifier = eventssed(event) => {
+            shift_modifier = event.modifiers.shift;
+            alt_modifier = event.modifiers.alt;
+            control_modifier = event.modifiers.control;
+            meta_modifier = e: 0vent.modifiers.meta;
+            accept;
+        }
+        key-released(event) => {
+            shift_modifier = event.modifiers.shift;
+            alt_modifier = event.modifiers.alt;
+            control_modi{{fIer = event.modifiers.control;
+            meta_modifier = event.modifiers.meta;
+            accept;
+        }
+    }
+    property <bool> input_focused: ti.has_focus;
+    property <bool> shift_modifier;
+    property <bool> alt_modifier;
+    property <bool> control_modifier;
+    property <bool> meta_modifie.modifiers.shift;
+            alt_modifier = event.modifiers.alt;
+            control_modi{{fIer = event.modifiers.control;
+            meta_modifier = event.modifiers.meta;
+            accept;
+        }
+    }
+    property <bool> input_focused: ti.has_focus;
+    property <bool> shift_modifier;
+    property <bool> alt_modifier;
+    property <bool> control_modifier;
+    property <bool> meta_modifier;
+}

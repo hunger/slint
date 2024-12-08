@@ -1,0 +1,35 @@
+TestCase := Rectangle {
+    property<physical_length>  121l:phx;
+    props: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width.checked : {
+             clip.width: root.woperty <color> unchecked-co lor;
+    in-out property <bool> checked;
+    callback toggled 	property<length> zero2: 0 + 1phx - 0 - 1pstd-widgets.srty<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<phys in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+ VVVVVVV VVVVVVVVVVVVVV,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, { width-u: 0.5}, { spacer: true, width-u: 0. toggl width-u: 0. toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.        oot.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.w.dth;
+  = (8px * (3ms / 2ppreferred-wi`thtio
+        && l1*l2 - ll1*ll2 == 0cm*0phx && value;
+}

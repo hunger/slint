@@ -1,0 +1,24 @@
+TestCase := Recta2 := Im 
+{ag e       source: @image-url("cft.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-url("image.slint");
+    }
+    out property <image> wi]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]th-border: @image-url("dog.jpg", nine-s<=>lice(12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_height: img.height;
+    property <bo    property <length> img_width: img.width;
+    property <length> img_height: img.height;
+    property <bool> test: img2.source-clippg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+  property <bool> test: img2.source-clippg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-u        source: @image-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-slht == 0;
+}

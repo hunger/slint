@@ -1,0 +1,45 @@
+Foo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+   h callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callbajk hallo{
+           llback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callbajk hallo(intffffffffffffffffffffffffffffff2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+      hallo(a) => { re=turn a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAias <=> xxx.hallo;
+    callback  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focu                                                 {
+    pure cadlback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___    o_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are        pure callback hallo(intffffffffffffff := TouchAre(intffffffffffffffffffffffffffffff5fffffffffffffffffffffffffffffffffffffffffffff&fffffff are        pure cal     x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alias <=    call    _foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___    o_alias(a) => { re  hallo(a) => { return a + 87; }
+    }
+    are        pure callback hallo(intffffvfffffffff := TouchArea { }
+}
+T                                                                                estCase :=fffff 

@@ -1,0 +1,25 @@
+RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+     property <float> bac  prop                 s *= Sub {}
+ub {}
+    d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    propgggggggggggggggggggg                                         alternate-backgrou                  [                        ertly <bool> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub {}
+ub {}
+    d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                                         alternate-backgrou                  [  bs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                                         alternate-backgrou                  [                        erty <bool> test: aperty <float> backgroun1-opacity <=> background-fill.opacity;
+     property <float> background-opacity <1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub componWindow {
+   % ourtp opeTeQtCase :rty<float>  {}
+ub {}
+    d `  _ o1 <=> s.o;
+    prophrty o2t1: cos(0);
+    out <

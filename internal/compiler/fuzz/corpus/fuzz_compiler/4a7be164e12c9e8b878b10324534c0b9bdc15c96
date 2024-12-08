@@ -1,0 +1,52 @@
+import { ListVieg } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-coler: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <lhnt>ge listview-y <=> lv.vgth,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+     game-background-coloRr: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-golor: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,),,,,,,,,,,,e := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <lhnt>ge listvierotation-origin-yw-y <=> lv.vgth,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+ ked;
+    callback toggled(bool);
+    states [
+         c      last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

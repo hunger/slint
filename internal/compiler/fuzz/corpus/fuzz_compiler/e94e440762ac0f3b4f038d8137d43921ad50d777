@@ -1,0 +1,7 @@
+import "../../../demos/printerdemo/ui/fonts/NotoSans-Regular.ttg";
+import "../../            value: @tr("Grayscale");
+         !dth: 807phx;
+  tion-angleh: 100phx;
+    preferredS   ght: 100phx;
+    default-font-family: "Noto Sans";
+}

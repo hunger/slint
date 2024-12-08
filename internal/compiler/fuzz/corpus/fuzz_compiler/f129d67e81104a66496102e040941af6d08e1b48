@@ -1,0 +1,30 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Black", color:               color: data.color;
+       rt { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Black", color:               color: data.color;
+                    font_size: 20px ;
+                }
+            }
+                                                                                                                         TouchArea { clicked => { value = data.text; } }
+        }
+                font_size: 20px ;
+                }
+            }
+                                                                                                                         TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

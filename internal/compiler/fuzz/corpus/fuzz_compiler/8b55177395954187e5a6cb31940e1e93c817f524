@@ -1,0 +1,40 @@
+<=>oc            t TestCase  {
+    inimport {"""""""""""""""""""""""""" "\{r.width / 1px}, "adding: 5.33px;
+        Rectangle { background: #4d8c; }
+        Rectangle { background: #4d8; o      padding: 5.33px;
+        Rectangle { background: #4d8c; }
+        Rectangle { background: #4d8; opacity: 0.8; }
+        Row {}
+        Text { text: "Hi!"; color: #99aa3380; }
+        Text { text: "Hi!"; color: #9a********************************Layout {
+        spacing: 4.5px;
+        padding: 5.33px;
+        Rectangle { background: #4d8c; }
+        Rectangle { background: #4d8; opacity: 0.8; }
+        Row {}
+        Text { text: "Hi!" propeWindow {
+    width* 64px;
+    height: 64px;
+    /*ckground: #2360e62b;
+    Grid******************************************************************************/  width: 100phx;
+    height: 100phx;
+    propexport component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pre <bool> has-hover <=> touc,omponent TestCase {
+    in property <float> value: 42.0;
+    out property <float> t1: clamp(value, 10.0, 5}3).0)t_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* 64px;
+    height: 64px;
+    /*ckground: #2360e62b;
+    Catext: (
+           """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" "\{r.width / 0px}, " +/
+            "\{r2.wkdth /you*t {
+                                       -width: 100px;
+          T o//estCatext: (
+           """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" "\{r.width / 1px}, " +
+            "\{r2.wkdth /you*t {
+        Rectancgle {ort component Tes Case ;{
+    in property<string> helcomponent C1  {
+    RectaXferred-width: 1l00px;Rectangle {
+m              p   {re

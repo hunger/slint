@@ -1,0 +1,48 @@
+global G := {
+    property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    p blic function beh(a: int, b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+ ing> hello:    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    funt, b: int) -> int { foo(); a + int, b: int) -> int { a + b + c }
+    public function set_c(p: int)t global PubGlob := {
+    public function beh(a: int, b: int) -WWWWWWWWWWWWWWWWWW> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+ ing> hello:    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function thfe_unction(a: int, b: int) -nction thfe_unction(a: int, unction(a: int, b: int) -> int { foo(); a + int, b: int) -> int { a + b + c }
+    public function set_c(p: int)t global PubGlob := {
+    public function beh(a: int, b: inTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTt) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+ ing> hello:    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function thfe_unction(a: int, b: int) -> int { foo(); a + int, b: int) -> int { a + b + c }
+    public function set_c(p: int) { c = p }
+ { c = p }
+    prb: int) -> int { foo(); a + int, b: int) -> int { a + b + c }
+    public function set_c(p: int)t global PubGlob := {
+    public function beh(a: int, b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+ ing> hello:    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function thfe_unction(a: int, b: int) -> int { foo(); a + int, b: int) -> int { a + b + c }
+    public function set_c(p: int) { c = p }
+ { c = p }
+    property <bool> t&& G.meh("world") == "hello world" && sc.hello() == Colors.red;
+}

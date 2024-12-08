@@ -1,0 +1,63 @@
+TestCase := Windo7 {
+    widtse         w {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-coloblr: blue.t                                                                                 ransparentize(10%);
+        selec          tion-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+    iiiiiiiiiiiiiiiiion-byte-offset: 13;
+    }
+    TextInpuAAAAAAAAAAAAAAAAAAAAAAAAAlot3: [ { width-u: 2.5, background: #bbbbbb }, ] }
+           ],
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : [
+        [{a: "hello"}],,
+        [],
+        [{a: "world"}, {a: "extra", b: "ok"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" & curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+      ifiifiifiifiifiifiifii";
+        wrap       selection-background-color: blue.transp                                 ransparentize(10%);
+        selec          tion-foregroundd-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+    iiiiiiiiiiiiiiiiion-byte-offset: 13;
+    }
+    TextInpnLi        ";
+        wrh: 24px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+     wrap       selection-background-color: blue.transp                  fset: 13;
+    }
+}

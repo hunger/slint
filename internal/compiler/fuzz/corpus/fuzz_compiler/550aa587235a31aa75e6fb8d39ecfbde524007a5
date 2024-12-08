@@ -1,0 +1,56 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {},
+            { text: "Red", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bcolor: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {g        text: "White", color: #ffffff, bg: #222222 },
+            { text: "Mat";
+TestCase := Window {
+    width: 400px;
+    height: 541px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {},
+            { text: "Red", conor: #ff0000, bg: #eeeeee},
+    e := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {},
+            { text: "Red", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bcolor: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+            { text: "Mat";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    lisw();
+	}
+	publ        0px;
+           propert     }
+    }
+    Text {
+        text: (
+            "\{riexp]                      !                       tx/*        "\{r.width /////////////ow {
+{
+                min-height         "\{r.width ////////// { clicked => { value = data.text; } }
+        }
+    }
+}

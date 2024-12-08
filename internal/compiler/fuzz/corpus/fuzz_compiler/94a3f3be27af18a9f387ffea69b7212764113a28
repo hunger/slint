@@ -1,0 +1,49 @@
+TestCase := Rectangle {
+    property<bool> tr@@@@@@@@@@@@@@@@@@@@@@@@@@@@uevar: true;
+    property<bool> false_some_value_alias2;
+  new-1 := TextInput {
+        propertssage: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagn Text {
+                color: #0ostics-open: diagnostics.length != 0;
+    callback show-document(file: string, ,ine: int, columnool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, ,ine: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #iagnostisc-open: diagnostics.length != 0;
+    callback show-document(window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-backgroundorder-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece,spaci0px;
+                padding: 5px;
+                for diag in root.diagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => {
+                            root.show_document(diag.url, diag.line, diag.    mn);
+                        }
+                        Text {
+                            width: 100%;
+                            wrap: word-wrap;
+      y text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInpuvar: false;
+}

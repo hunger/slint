@@ -1,0 +1,31 @@
+export component FocusTouchArea {
+    in prcus-scope := FocusScope {
+        x:1111111111111111111111111111111111111111111111111111111111 0;
+        width: 0px;
+        enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || :event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed = true;
+            
+       r     eject
+        }
+                                                                           s-scope := FocusScope {
+        x:1111111111111111111111111111111111111111111111111111111111 0;
+        width: 0px;
+        enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || :event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed = true;
+            
+       r     eject
+        }
+                                                                                                                           key-                                                key-released(event)    }
+}  

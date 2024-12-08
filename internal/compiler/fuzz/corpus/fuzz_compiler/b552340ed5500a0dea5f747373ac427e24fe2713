@@ -1,0 +1,35 @@
+ component TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98                                                 component TestCase inherits Window {
+    out   property<float> t1: cos(0);
+    o: root.mx - root.width / 2;
+    y: root.my - root.height / 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                          ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out pro
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                          ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> te in-out property <length> WWWWWWWWWWWWWWWWWWWWWWWW                       + min(a, export globaWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWmx: 0;
+    in-out property <length> my: 5;
+    in-out property <float> fwidth: 0;
+    in-out properperty<bool> te in-out property <length> mx: 0;
+    in-out property <length> m;
+    in-out property <float> counter:                                                        ;
+    height: 100phx;
+    prop erty <int> touch_4: cos(90deg);
+    out pro
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                          l0.5e inh<intut property<ferror;
+    property <int> touch1;
+out property <float> counter:                        > max: 42;
+nt Test  

@@ -1,0 +1,57 @@
+O := Text {
+    property <;nt> val;
+    text: val;
+ 1;
+T estCasexport global B {
+    out primport { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+operty <bo l> ok:olor-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #1E133F,
+        secon          dary: #FFBF63,
+        text-primary: # width: 64px;
+    height:    x;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "I'm item #" + index;
+    Rectangle }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+        im # width: 64px;
+    height:    x;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "I'm item #" + index;
+    Rectangle }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+        image_with_m   fixed_image :=   age {
+        width: 00phxng_width :=? Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool> expected_width_ok: self.width =="400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        source: @image-url("-color: red;
+    }
+}
+export TestCa{
+        border-width: 0px;
+        borderut := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+        image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: s
+    fixed_image :=   age {
+        width: 50phxng_
+        text-secondary: #F4F6FF,
+        destructive: #FF3B30,
+    };
+    out property <color> background: dark-mode ? dark-mode-colors.backgolor> pe := Window {
+    property <irimary: kgrnt> val: co*********************ound: color, fon }t-siz***e: lengt

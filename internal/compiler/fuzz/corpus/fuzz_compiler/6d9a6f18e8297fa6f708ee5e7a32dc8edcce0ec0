@@ -1,0 +1,15 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from ".~  |ling/slint";
+import { Api, SelectionStackFrame } from *../api.slint";
+component Pogth> selection-y: 0px;
+    in-out property <[SelectionStackFrame]> selection-stack: [
+        {
+            width: 100%,
+            height: 40%,
+            x: 10%,
+            y: 0%,
+            is-in-root-component: true,
+            is-layout: false,
+            iirnt-seactive: true,
+            is-selected: false,
+           i mport { ListView  } ftrom "styd

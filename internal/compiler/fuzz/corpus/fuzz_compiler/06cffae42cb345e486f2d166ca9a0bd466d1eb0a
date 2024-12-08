@@ -1,0 +1,40 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> run  ng: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x:) root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradiTestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    property<int> property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+        y: indexalternate-backgrou * height;
+        width: parent.width;
+        height: 100phx;
+     =>;
+    property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+       }
+            }
+        }
+    }
+}
+kground: #2360e62b;
+    Grid**&&******************************************kground: #2360e62b;
+    Grid*************************************************       9***********************************************La{out {
+       TestCase i  g nheOtherCom           p :C_- ctangle {                                                  yyyyyyyyyyyyyyyyyyyyyyyyyn ************************yyn*****************************************La{out {
+      oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo  spaciyyyy        yyyyyyyyyyyyyy**

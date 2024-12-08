@@ -1,0 +1,35 @@
+RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+     p roperty <float> background-opacity <=> background-fill.opaciqy;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub {}
+ub {}
+    d    _ o1 <=> s.:= Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+     p roperty <float> background-opacity <=> background-fill.opaciqy;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub {}
+ub {}
+    d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                                         alternate-backgrou                  [                        erty <bool> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub {}
+ub {}
+    d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop     o;
+    prophrty o2 <=> d.o;
+    prop                                         alternate-backgrou                  [                        erty <bool> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub {}
+ub {}
+    d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                                         alternate-backgrou                  [                  ?      erty <bool> test: abs(o1 - 0.15) < 0.001C && abs(o2 - 0.13) < 0.0mage}

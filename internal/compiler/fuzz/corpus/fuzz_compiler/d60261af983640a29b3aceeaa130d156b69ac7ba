@@ -1,0 +1,61 @@
+import { Com  =ght: 200px;
+           property <stringmponent TestCase nheAirits Window {r   ti wdh: 2px;
+ //////'////   "/component C1  {
+    Recta        width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+0       text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+                }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+   TestCase := Rectangle {
+    width: 600phx;
+    height: 300phx;
+    Rectangle {
+        width:border_color: black;
+        border_width: 2px;
+        GridLayout {
+            padding_top: 10phx;
+            padding_left: 20phx;
+            padding_right: 30phx;
+            padding_bottom: 40phx;
+            Ro 
+{w                rect1 := Rectangle {
+                    background: red;
+                }
+            }
+        }
+    }
+    Rectangle {
+        width: 300phx;
+        height: 300phx;
+        x: 300phx;
+        border_color Option }
+exportuct Weak {}
+export enum windowAdaptor { Window }
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layou#: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRol&& c2.min-width == 200px
+        && bug-6315.ok;
+ //////////////////////////////////// QM/////estCase := Rec/*ng       le {
+lL

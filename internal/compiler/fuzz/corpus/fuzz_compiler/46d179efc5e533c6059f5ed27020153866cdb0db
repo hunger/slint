@@ -1,0 +1,50 @@
+TestCase := Rectangle {
+b    animate background {
+ 
+ -}
+O________________[_____________________________________________@__________OOOOOOORectangle {
+b    animate background {
+ 
+ -}
+O______________________@__________OOOOOOORectangle {
+b    animate background {
+ 
+ -}
+O______________________________________________________________________________________________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectanglimport { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+ee {
+    animate background {
+ 
+ -}
+O________xport component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, line: int, col                      umn: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #015;
+                text: "Compilation failed:";
+            }
+            ListView {
+    ________________________UOO            width:                                                                                                               OOOOOOO}             paren
+t.width - 10px;
+                height: parent.set-selection-height - 10px;
+                padding: 5px;
+                for diag in root.diagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointeAr;
+                        clicked => {
+                            root.show_document(diag.url, diag.line, diag.    mn);
+                        }
+                        Text {
+                            width: 100%;
+                            wrap: word-wrap;
+   

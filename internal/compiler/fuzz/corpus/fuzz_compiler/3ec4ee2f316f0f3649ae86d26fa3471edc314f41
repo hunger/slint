@@ -1,0 +1,49 @@
+export component FoctsTouchArea {
+    in    property <bool> blAh: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clickq       ed => {
+                   essed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> tou$$-area.clicked;
+    for     ol= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-{
+            property <bool> cc <=> cond0;
+            property <bool> blAh: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clickq       ed => {
+                   essed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for     ol= enter-pressed;
+    in property <roperty <Mo eSursor> mouse-cond0;
+            property <bool> blAh: false;
+            if (cc |1| self.blah) : TouchArea {
+ cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: or> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+rrepoty <bool> has-focus <=> focus-scopeth: 28px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayo roQ____ if !root.enabled {
+                return reject;
+            }
+            
+            if er-pressed = false;
+                retucn arcept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

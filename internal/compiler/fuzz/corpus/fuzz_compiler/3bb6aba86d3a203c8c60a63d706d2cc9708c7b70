@@ -1,0 +1,63 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-posr: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    : int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+urn a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(intfffffffffffffffffffffffffffffff                                                                                              fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+      hallo(a) => { return a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clickseleed;
+    c{llback call_foo2(int) ->`  Du__  call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    propll_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo  188;
+}
+re callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alilf.height * 10%;
+         order-color: r)ot.unchecked-color;
+        border-radius: 2px;
+        clip := R

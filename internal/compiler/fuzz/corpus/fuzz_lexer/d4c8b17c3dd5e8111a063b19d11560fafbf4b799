@@ -1,0 +1,68 @@
+component C1  {
+    Recta        width: 100px5
+            Rectangle {
+               prefgrred-width: 40))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+  0     text: (
+            "\{r.widt# / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+        );
+    }
+    out property <bool> ok: r.2width == 100px && r2.width == 10+
+            "\{r2.width / 1px}, " Uu_g          ""
+      elf.preferred!-height;
+           ext: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.widt# / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g        0px;
+}
+export component W inherits                                                                     Window {
+{
+                min-height            :a;
+            }
+        }
+    }
+    Text {
+        t))))))))))))))))))))px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+  0     text: (
+            "\{r.widt# / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+        );
+    }
+    out property <bool> ok: r.2width == 100px && r2.width == 100px;
+}
+export component W inherits                                                                     Window {
+{
+                min-height            :a;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.widt# / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+      elf.preferred!-height;
+           ext: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.widt# / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+      elf.preferred!-height;
+            }
+    ------in-width == 200px
+        && c2.min-height == 380px && c1.min-width == 200px
+       " Uu_g          ""

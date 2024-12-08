@@ -1,0 +1,19 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    ti := FocusScope {
+        key-pressed(event) => {
+            pressed = true;
+            repeat = event.repeat;
+            accept;
+        }
+        key-released(event) => {
+            pressed = false;
+            repeat = event.repeat;
+            accept;
+        }
+    }
+    property <bool> input_focused: ti.has_focus;
+    property <bool> pressed;
+    property <bool> repeat;
+}

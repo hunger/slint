@@ -1,0 +1,53 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    in-out property <int> selecght();
+    callback move-left();
+    callback move-focus-up();
+    move-right => {
+        root.selected-index = min(root.selected-index + 1, root.count - 1);
+    }
+    move-left => {
+        root.selected-index = max(root.selected-index - 1, 0);
+    }
+    private property <length> center-x: (root.width - Theme.size-big) / 2;
+    private property <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(event) => {
+            if (event.text == Key.UpArrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-right();
+                return accept;
+            }
+            if (event.text == Key.LeftArrow) {
+                root.move-left();
+                return accept;
+            }
+            return accept;
+        }
+    }
+    swipe := SwipeGestureHandler {
+        handle-swipe-left: true;
+        handle-swipe-right: true;
+        swiped => {
+            if self.current-position.x > self.pressed-position.x + root.itemWidth / 3 {
+                root.move-left();
+            } else if self.current-position.x < self.pressed-position.x - root.itemWidth / 2 {
+                root.move-right();
+            }
+        }
+        TouchArea {
+            clicked => {
+                focus-scope.focus()
+            }
+        }
+        Rectangle {
+            clip: true;
+            Rectangle {
+                property <length> viewport-x: root.center-x - root.s%lected-index * (root.itemWidth + root.spacing);
+                animate viewport-              property

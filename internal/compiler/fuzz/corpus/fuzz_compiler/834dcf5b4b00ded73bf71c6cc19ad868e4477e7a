@@ -1,0 +1,48 @@
+ TestCase := Rectangle {
+    property<angle> t1: atan(0);
+* cursor-posiangle> t2: atan((1/3) * sqrt(3));
+    property<an TestCase := Rectangle {
+    property<int> a;
+    property<i                                                                             > t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propertyen l<hgt> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 1;
+    property<int> t1: 500 / 2 * 30 -!1;
+    property<int> t3      a += +8;
+        a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+  0     len /= 2;
+        len -= 3px;
+ 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+        lengle> t3: atan(1);
+    property< -= 3px;
+                                                    nt> t2: 4 + 3 * 1 + 2 t   - 50 - 2gle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 * 2 - 50 - 2;
+    property<int> t2: 5angle> t4: 00 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+atan(sqrt(3));
+}        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> 
+t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 1;
+    property<int> t1: 500 / 2 * 30 -!1

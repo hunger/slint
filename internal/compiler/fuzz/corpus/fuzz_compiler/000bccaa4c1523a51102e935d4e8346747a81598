@@ -1,0 +1,40 @@
+import { Button, ComboBox } from "st:::::::::::::::::::::::::::::::::::d-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SOption { n: None }
+export struct Component {o: Option }
+e  cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && roe := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(t &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{:= Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{fy: && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &$
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0     0 &&
+        atan2(0, 1ound(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

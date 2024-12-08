@@ -1,0 +1,41 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+position_byte_offset;
+    property<int> testOanchor_pos: self.anchor_position_byte_off == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{fy:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == {{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+     set;
+    property<bool> has_selection: self.test_cursor_pos != selfTestCase := Rectangle {
+    pro        ysicaloperty<phy/*sical_length> l3: 1                                  00phx + 12px;
+    property<p.test_anchor_pos;
+    p operty<bool> input_focused: sel property<p.test_anchor_pos;
+    p operty<bool> input_focused: sel property<p.test_anchor_pos;
+    p operty<bool> input_focused: self.has_focus;
+tan2(10, -inhysical_length> l5: 120 * 1phx;
+   stance.get_has_selection());
+sli pnt_rotespte

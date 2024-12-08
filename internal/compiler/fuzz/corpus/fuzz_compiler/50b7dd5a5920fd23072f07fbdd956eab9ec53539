@@ -1,0 +1,58 @@
+global G := {
+    property <strrotating> hello: "hello";
+    function meh(w: string) -> string {
+        re;
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure fursor gle {
+    public pure fursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    erty           <string> hello: "hell           o";
+    function meh(w: string) -> string {
+        returnbal G := {
+    property <strrotating> hello: "hello";
+    function meh(w: string) -> string {
+        re;
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure fursor gle {
+    public pure fursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    erty           <string> hello: "hell           o";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> cw: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure fursor gle {
+    public pure fursor <=> toucolor0{ red }
+}
+export global PubGlob := {
+    p!!!!!!!!!  property <bool> t&& G.meh("world") == "hello world" && sc.hello() == Colors.r hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> cw: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure fursor gle {
+    public pure fursor <=> toucolor0{ red }
+}
+export global PubGlob := {
+    p!!!!!!!!!  property <bool> t&& G.meh("world") == "hello world" && sc.hello() == Colors.red;
+}

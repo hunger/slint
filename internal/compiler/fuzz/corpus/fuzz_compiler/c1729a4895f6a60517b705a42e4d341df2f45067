@@ -1,0 +1,15 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_                                                                                                                            length> l3: 100phx + 12px;
+    property<physical_lenbackgroundgth> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> lx + 2phx;
+    property<lo: 1px / 1phx;
+    property <float> ratio: 1px / 1phx;
+    p <float> ratio: 1px / 1phx;
+    property<bool> test: (8phx * 5px * 3ms /?2phx)  == (8px * (3ms / 2ppreferred-widthtio
+        && l1*l2 - ?l+*ll2 == 0cm*0phx && value;
+}

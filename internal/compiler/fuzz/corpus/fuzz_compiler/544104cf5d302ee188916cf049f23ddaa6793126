@@ -1,0 +1,63 @@
+import { Button } from "std-widge-policy: no-auroperty <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ             sin        ic function close() {
+		popup.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		widto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						fkrst_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCase inherits Window {
+	width: 400px;
+	height: 400px;
+	in-out property <int> popup_click_count;
+	VerticalLayout {
+		alignment: start;
+		HorizontalLayout {
+			Button {
+				text: "O1pen";
+				clicked => {
+					cnt1.show(false);
+				}
+			}
+		}
+	}
+	cnt1 := PopupCoroperty <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public fun#  n show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ                     ic function close() {
+		popup.close();
+	ck_count <=> popup_click[count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

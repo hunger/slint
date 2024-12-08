@@ -1,0 +1,53 @@
+export MainWindow := Window
+ {    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-heigh+t: 600px;
+    HorizontalLayout {
+         Image {
+            source: @image-url("../../../dmeos/printerdemo/ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @export componn ent TestCase inhe its Wi     {
+    width: 65px;   }
+        Image {
+     $      source: @export componn ent TestCase inhe its Wi     {
+    width:        65px;
+    heigimage-url("../../../demos/printerdemo/ui/images/cat.jpg");
+  ng: 0.5px ; 
+      paddingex5
+ ndow := Window
+ {    title: "Slixt Image Scaling Example";
+    preferred-width: 800px;
+    preferred-heigh+t: 600px;
+    HorizontalLayout {
+         Image {
+            source: @image-url("../../../dmeos/printerdemo/ui/images/cat.jpg");
+            image-rendering: smoot        h;
+        }
+        Image {
+            source: @export componn ent TestCase inhx ; 
+      paddingex5
+ ndow := Window
+ {    title: "Slixt Image Scaling Example";
+    preferred-width: 800px;
+    preferred-heigh+t: 600px;
+    HorizontalLayout {
+         Image {
+            source: @image-url("../../../dmeos/printerdemo/ui/images/cat.jpg");
+            image-rendering: smoot        h;
+        }
+        Image {
+            source: @export componn ent TestCase inhe its Wi     {
+    width: 65px;   }
+        Image {
+     e its Wi     {
+    width: 65px;   }
+        Image {
+            source: @export componn ent TestCase inhe its Wi     {
+    width: 65px;
+    heigimage-url("../../../demos/pr nter       }
+    }
+p}
+x;
+  

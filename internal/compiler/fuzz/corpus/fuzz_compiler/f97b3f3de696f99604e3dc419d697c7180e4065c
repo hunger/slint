@@ -1,0 +1,25 @@
+struct KeySloW { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slotsbool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           t-toalwidth-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { s [],
+        [{a: "world"}, {a: "extra TestCase := Rectangle {
+    property <bool> verify:
+    ", b: "ok"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" : [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u[ {
+           default-key-width-u: 1.0,
+      sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin         t-toalwidth-u: 10.0,
+(180d e 

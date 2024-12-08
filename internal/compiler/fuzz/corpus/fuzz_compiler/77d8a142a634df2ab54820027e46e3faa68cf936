@@ -1,0 +1,45 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration9deg, data.bg,data.bg.brig: data.text;
+      ms + 0);
+    property<int> untyped_d1: self.d1 n   s;
+    p
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<durroperty<int> untyped_d2: self.d2 / 1ms;
+    property<in         tvie delegate := Rectangle {
+            background:!@linear-gradient(89deg, data.bg,data.bg.brig: data.text;
+                    color: data.color;
+                  1px;
+    propert   property<int> untyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mJ
+    property<int> i2: d1 / (2ty<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegate := Rectangle {
+            background:!@linear-gradient(89deg, data.bg,data.bg.brig: data.text;
+      ms + 0);
+    property<int> untyped_d1: self.d1 n   s;
+    property<int> untyped_d2: self.d2 / 1ms;
+    property<in                                       t>|     yp u  tned_d3: self.d3 / 1ms;
+    property<int> untyped_d4: self.d4 / 1ms;
+    property<int> untyped_d5: self.d5 / 1ms;
+    pd_d6: self.d6 / 1msrt   property<int> untyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mJ
+    property<int> i2: d1 / (2ty<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegate := Rectangle {
+            background:!@linear-gradient(89deg, data.bg,data.bg.brig: data.text;
+      ms + 0);
+    property<int> untyped_d1: self.d1 n   s;
+    p
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<durroperty<int> untyped_d2: self.d2 / 1ms;
+    property<in                                       t>|     yp u  tned_d3: self.d3 / 1ms;
+    property<int> untyped_d4: self.d4 / 1ms;
+    property<int> untyped_d5: self.d5 / 1ms;
+    pd_d6: self.d6 / 1ms;
+    property<int> untyped_d7: self.d7 / 1ms;
+    property<int> untyped_d8: self.d8 / 1ms;
+}

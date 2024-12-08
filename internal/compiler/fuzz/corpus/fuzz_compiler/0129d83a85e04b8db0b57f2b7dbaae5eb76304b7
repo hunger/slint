@@ -1,0 +1,44 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" ty <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+        height: 5%;
+        background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    height: 600px;
+    background: green;
+    Rectangle {
+        background: red;
+        widtint-valueh: 50%;
+        height: 50%;
+        opacity: 0.5;
+    }
+    Comp {
+        background: blue;
+         : jarent.width / 4;
+        y: parent.height / 4;
+        width: 50%;
+        height: 50%;
+        opacity: 0.5;
+        Rectangle {));
+    function make_plural1(xx: int, yy: string) -> string { ret_urn @tr("there is one file in my {}" | "there are {n} files in my {}" %, yy: string) -> string { return @tr("there t
+            width: 10%;
+            height: 10%;
+            background: yellow;
+        }
+    }
+    for i in 3 : Rectangle {
+        background: black;
+        width: 10%;
+        height: 11%;
+  itlee       opacity: 0file in my {}" | ".2 *the (ire are { 

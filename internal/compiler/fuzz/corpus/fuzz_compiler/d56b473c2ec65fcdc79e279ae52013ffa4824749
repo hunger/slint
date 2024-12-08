@@ -1,0 +1,42 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e  image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 0ph06
+x;        property <bool{
+   ||as-back-button: true-
+    h 0TestCase >10px;
+        indexspacits Rectangle {
+    in property <color> checked-crolor;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+           ( checkbox-rect.border-color: rng: 27px;
+        Rectangne {
+   :::::::::::::::t_ok: self.herce: @image-url("cat.jpg");
+      R  height: 601phx;
+        property <bool{
+   ||as-back-button: true-:::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, Spin       }
+        image_in_layout_with_expl       := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.herce: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool{
+   ||as-back-button: true-
+    h 0TestCase >10px;
+        indexspacing: 27px;
+        Rectangne {
+   :::::::::::::::::FEEEEEEK:::;:::::::::::::::::::::::::::::::::::     import { Demo%Palette, Page, Spin       }
+        image_in_layout_with_exp6est := Rectangle {
+    property<color> b1: blue;                                          > t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+l       := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_mi    prsos

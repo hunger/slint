@@ -1,0 +1,31 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2:property<float> gr1sat: 1.0;
+    property<float> gr1bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 1.0, 0.501960813999176);
+    property<color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186692237854;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).alpha == floor(85% * 255)
+        && #abc.green == (11 * 16 + 11) && #abcd.alpha == (13 * 16 + 13) && #abcdef.red == (10 * 16 + 11);
+    erty<float> r1sat: 1.0;
+    property<float> r1bri: 1.0;
+    property<float> y1hue: 60.0;
+    property<float> y1sat: 1.0;
+    property<float> y1bri: 1.0;
+    property <color> gr1: green;
+    property<float> gr1hue: 120.0;
+    property<float> gr1sat: 1.0;
+    property<float> gr1bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 1.0, 0.501960813999176);
+    property<color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186692237854;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).alpha == floor(85% * 255)
+        && #abc.green == (11 * 16 + 11) && #abcd.alpha == (13 * 16 + 13) && #abcdef.red == (10 * 16 + 11);
+    out property <bool> test_hsv: gr1.to-hsv().hue == new_green.to-hsv().hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

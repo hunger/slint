@@ -1,0 +1,22 @@
+export component RipplCircle inherits Rectangle {
+    in-out propertyimport struct TileDphx;
+        height: 300phx;
+        x: 300phx;
+        border_color: black;
+        border_width: 2px;J        GridLayout {
+            spacing: 1000phx;
+            pad ding: 25phx;
+            padding_left: 20phx;
+/**import { Button } from "std-widgets.slint";
+export component Comb****e:       background: blue;
+                }
+           isible: bool,
+    solved7777777777777777777777777777777777777777777777***oBox inherits Rectangle {
+    in-out property *******  spacing: 1OtherComp :C_- ct-ng<string> value:lee "/ 1px;
+                    circle1.fheight = parent.height / 1px;
+                    circle1.counter = circle0.counter == 0 ? 0.1 : 0;
+                }
+            }
+        }
+    }
+}

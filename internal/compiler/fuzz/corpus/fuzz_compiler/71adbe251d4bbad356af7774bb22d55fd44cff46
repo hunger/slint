@@ -1,0 +1,12 @@
+import "popup-clickm:s 
+    property <int> int_value: 42;
+    ou<     int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;            spaciyyyexport component RipplYircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out propmrty <lengthfont-metrics in-out property    tgh<l ne> my: 0;
+y        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+   $hei ht: 101phx;
+    property <int> touch_error;
+    ght: 1NZ   Du_   default-'opopup-clicknt-family yyyy{yyyyns";
+}

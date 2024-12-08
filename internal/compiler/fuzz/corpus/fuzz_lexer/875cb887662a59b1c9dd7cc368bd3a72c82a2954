@@ -1,0 +1,3 @@
+impor4 { ComboBox } frx := ComboBox     |
+            model: ["Aaa", "Bbb", "Ccc"];
+ -value+","+self.cuzren             out prop%rty hAs-focualue+","+self.cuzren             out prop%rty hAs-focus ort { ComboBox } from "std-wid                                                    

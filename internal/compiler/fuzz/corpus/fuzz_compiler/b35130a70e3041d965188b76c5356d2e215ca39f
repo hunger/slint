@@ -1,0 +1,15 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.sli      tile := InnerShadPwRectangle {
+        inn----------------------------------------------------------------er-color: Palette.info-alternate-back     ground;
+        inner-shadow-b                                                        reen: false;
+    tile := InnerShadPwRectangle {
+        inn-------------------------------------------------------U--------er-color: Palette.info-alternate-back     ground;
+        inner-shadow-blur: 52px;
+        background: Palette.info-ba;ckground;
+        border-radius: Measurements.tile-radius;
+        @children
+    }
+}ius: Measurements.tile-radius;
+        @children
+    }
+}

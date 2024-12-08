@@ -1,0 +1,36 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle  Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { layout: lenEEEEEEEEEEEEEEEEEEEEEEEEyAnimation { property: Property }
+export struct Callback {}
+export strut: 2close-on-cli5phx;
+    property <length> listview-y <=> lv.vgth,
+}
+struct Theme  {
+    n  piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    ame: string,
+    window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radiuse-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-3: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-c            }
+                   last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+Sub := Rectangle {
+    propeexport component RipplCircl.mx - rvalue_aliTest := Rectangle {
+  l background: @linear-gradient(45deg, #ff9a9rty <bool> cond;
+    property <float> child_opacity: inner.op2acity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob e 0%, #fa/*d0c4 99rty <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+  l background: @linear-gradient(45deg, #ff9a9rty <bool> cond;
+    property <float> child_opacity: inner.op2acity;
+    inner := Rectot.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+  l background: @linear-gradient(45deg, #ff9a9rty <bool> cond;
+    property  l background: @linear-gradient(45deg, #ff9a9rty <bool> cond;
+    property <float> child_opacity: inner.op2acity;
+    inner := Rectot.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+  l background: @linear-gradient(45deg, #ff9a9rty <bool> cond;
+    property <float> child_opacity: inner.op2acity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob e 0%, #fa/*d0c4 99%,angle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property {
+    in-<iow, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnostZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZicsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-do   for diag in root.diagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointeut 

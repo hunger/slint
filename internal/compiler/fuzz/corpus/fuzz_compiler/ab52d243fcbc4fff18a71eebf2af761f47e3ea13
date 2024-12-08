@@ -1,0 +1,36 @@
+struct KeySlkoW { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slotsbool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default,key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+          kkkkkkkkkkkkkkkkkkk                                                                                   default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, backgroun{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{ 0.5}, ] },
+               { key-slots: [ { width-u: 2.5,  && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 : length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default,key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+   ce-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-c,
+    window-backgpiece-border-color-0: brush,
+    piece-border-color-2: brush,
+    piesh,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,@,,,,,,,,,,,,,,,,,,,,,,TI,,,,,,,,    ,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-c,
+    window-backgpiece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,ing: ease-out; }
+       .heiheckbox-rect.border-color: root.checked-color;
+             cy-slots[1].spacer;
+}

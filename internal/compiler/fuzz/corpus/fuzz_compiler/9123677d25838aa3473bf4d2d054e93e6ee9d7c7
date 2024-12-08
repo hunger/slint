@@ -1,0 +1,71 @@
+ TestCase := Rectangle {
+    property<int!        a /= 2;
+        apr pertyexport global Glob {
+    in-out property <int> v: 55;
+    in-Tesout property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    pr<int!> a;
+    property<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    properoperty<int!> a;
+    property<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 - 1;
+    property<int>len += 1px;
+        len /= 2;
+          len  -= 3;
+        lenroperty<int> t2: 500 / 2 * 30 - 1;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+         erty  property<int>len += 1px;
+        len /= 2;
+          len  -= 3;
+ operty <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-       lenroperty<int> t2: 500 / 2 * 30 - 1;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+         erty<string> helcomponent C1  {
+    RectaXferred-width: 100px;
+   
+    Grida-count += 1; }
+    property <int> chain-b;
+    changed vhain-b => { chain-a += 1; }
+    property <int> chain-c;
+    changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    property <int> chain-ftCase := Rectangle {
+    property<bool> truevar: true;
+  ;
+"   changed chain-f => { chain-e += 1; }
+    property <int> c  property<bool> fhain-g;
+    changed chain-g => { chain-La  Rectangle 
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width /you*t {
+        Rectangle { background: red; border-color: white; border-w             h: 100px;
+           TestCase*:= Window {
+    width: 64px;
+    heigh len  -= 3;
+    property<int> t3: a - (3 +    a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1f px;+= 1; }
+    prope
+     

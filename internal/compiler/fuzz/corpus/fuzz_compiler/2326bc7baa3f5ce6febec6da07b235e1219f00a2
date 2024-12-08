@@ -1,0 +1,6 @@
+import "../../../demos/printerdemo/ui/fonts/NotoSans-Regular.ttc";
+import "../../            value: @tr("Grayscale");
+         !dth:: i-text-input;
+    i-text-input := TextInput {
+       "Noto Sans";
+}

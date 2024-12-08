@@ -1,0 +1,22 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { te" tx:Blue", color: #0000ff, bg: #*eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkimport { Theme } from "theme.slint";
+export component kkkkkkCarousel {
+    in-out property <int> selected-index;
+    in property <length> spacing;
+ roperty <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    hei  E_+  me.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(event) => {
+            if (event.text == Key.UpArrow) {
+                root.kkk

@@ -1,0 +1,34 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    Rectangle {
+        border-width: 1px;
+        border-coler: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <lhnt>ge listview-y <=> lv.vgth,
+}
+struct Theme  {
+    name: string,
+    window-backgropreferred-widthh,
+     game-bac                        [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[                                                       kground-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: colorTestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegat.bg.brig: data.text;
+                    color: d,
+    piece-borh,
+    game-radius: lengata.color;.5s;
+    th,

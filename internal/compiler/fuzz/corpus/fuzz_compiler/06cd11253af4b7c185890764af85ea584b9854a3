@@ -1,0 +1,41 @@
+TestCase := Rectangle {
+    width: 300phx;
+    se := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[in             width: parent.width;
+         th: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[in             width: paren            0                                                                                                                           hei,ght: parent.height;
+                    clicked > {=
+                0       value += index;
+                  height: 300phx;
+    property<int> value: 1;
+    for c[in             width: parn             width: paren            0                                                                                              bor                          hei,ght: parent.height;
+                    clicked > {=
+                        value += index;
+                  height: 300phx;
+    property<int> value: 1;
+    for c[in             width: parent.width;
+         th: 300phx;
+    height: 300phx;
+    property<int>  {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {c1olor: #0f0, value: 8                                                                                         , },
+                {color: #00f, value: 9, },
+                {color:++++++++++++++++++++++++++++++++++value: 1            ent.width;
+         th: 300phx;
+    height: 300phx;
+    property<int> value: 1              hei,ght: parent.height;
+                    clicked > {=
+                        value += index;
+                    }
+                }
+            }
+        }
+    }
+}

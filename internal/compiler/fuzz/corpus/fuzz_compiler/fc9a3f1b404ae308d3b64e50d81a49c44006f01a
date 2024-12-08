@@ -1,0 +1,58 @@
+TestCase := ReWWWWWWWWWWWWWWWWWWWWWWWWctangle {
+    width: 300phx;
+    height: 3 [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+                                                                              width: parent.width;
+        height: 099phx;
+        GridLayout {
+            Rectangle {
+                background: c      height: parent.height;
+                    clicked => {
+  a                      value += index;
+                 t> value: 1;
+    for c[index] in [#f0/, #00f, #0a0]: Rectanglecommon     y: index * height;
+        wase := Window {
+    property <int> t_: 6;
+    propeSrty <int> tlold: -0;
+    background: {
+         if (t_ == 8) { t_o   = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    property <bool> test: bacUUUUULUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUkground == C                                         u    s.white && tle {
+            ex] in [#f00, #00f, #0a0]: Rectangle {
+z       y: minmaxi_ == 1 &&_ldot  == 8;
+}idth: parent.width;
+        height: 099phx;
+        Gri`Layuot {
+            Rectangle {
+            ex] in [#f00, #00f, #0a0]: Rectangle {
+zstruct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    off{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{set-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1:        y: minmaxindex * height;
+        width: p;
+    height: 300phx;
+    property<inght: 300LLLLLLLLLLLLLLLphx;
+    pro erty<int> value: 1;
+    for c[index] in [#f00,;
+                   Rectangle {
+         pos-y: int,
+    offset-x: length,
+    off{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{     ex] in [#f00, #00f, #0a0]: Rectangle {
+z       y: minmaxindexbrush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece * -border-heic

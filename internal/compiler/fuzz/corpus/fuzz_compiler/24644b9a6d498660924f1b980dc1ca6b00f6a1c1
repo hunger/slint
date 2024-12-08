@@ -1,0 +1,34 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 541px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeue },
+            { text: "White", color: "ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #td-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 541px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red"222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(90deg, data.bg,data.bg.brigh{{{{{{{{{{{{{{{{{{{{{{{{{{{{  l>>>>>>>>>>>>>>>>>        >>           /*                      >>>>>>>>>>>>>>>>>>>>>>>>>>>>tanferred-width: 200px9
+t    "\{r.width / 0px}, " +
+            "\{r2.@idth / 1p
+        ); nent C1  { 
+    Rec>>>>>>>>>>>}
+            }
+            TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

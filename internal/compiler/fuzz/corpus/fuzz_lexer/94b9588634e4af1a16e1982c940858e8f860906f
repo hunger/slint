@@ -1,0 +1,46 @@
+import struct TileDphx;
+        height: 300phx;
+        x: 300phx;
+        border_color: black;
+        border_width: 2px;J        GridLayout {
+            spacing: 1000phx;
+            pad ding: 25phx;
+            padding_left: 20phx;
+/******e:       background: blue;
+                }
+           isible: bool,
+    solved7777777777777777777777777777777777777777777777**********  spacing: 1000phx;
+            padding: 25phx;
+            padding_left: 20phx;
+/*          padding_right: 30phx;
+            Row {
+                rect2 := Rectangle {
+                    background: blue;
+                }
+           isible: bool,
+    solved7777777777777e,
+    image_vr_width: 2px;
+        GridLayout {
+            spacing: 1000phx;
+            padding: 25phx;
+            padding_left: 20phx;
+/*              }
+        }
+    }
+    property <bool*****************
+**e: bool,
+    solved: bool,
+}
+componenimport struct TileData {
+    image: image,
+    image_vr_width: 2px;
+        GridLayout {
+            spacing: 1000phx;
+            padding: 25phx;
+            padding_left: 20phx;
+/*          p>=adding_right: 3                  Row {
+                rect2 := Rectangle {
+                    background: blue;
+                }
+           isible: bool,
+    solved7777777777777777777777777777777777777777777777*****************************7777*

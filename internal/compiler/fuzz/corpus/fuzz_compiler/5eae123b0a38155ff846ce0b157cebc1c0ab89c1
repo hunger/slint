@@ -1,0 +1,19 @@
+TestCase := Rectangle {
+    width: 400phx;
+    heerty<duration> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 / 1ms;
+    property<int> i2: d1 / (2ms + 0);
+    property<int> untyped_d1: self.d1 / 1ms;
+    property<int> untyped_d2: self.d2 / 1ms;
+    property<int> untyped_d3: self.d3 / 1ms;
+    property<int> untyped_d4: self.d4 / 1ms;
+    property<int> untyped_ 5: self.d5 / 1ms;
+    property<interty<string> input1_tocus;
+    property<striext: inpNQ  ;
+    property<bool> inpu.has_focus;
+    property<string> ;
+        width: parent.width;
+        heighTestCase := Res;
+    property<striext: inpNQ  ;
+    property<bool> input2_focng> input1_text: inpNusQ  ;
+    p

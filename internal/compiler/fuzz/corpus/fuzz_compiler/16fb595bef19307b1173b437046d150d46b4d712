@@ -1,0 +1,55 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SOption { n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export stbuct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc o{pe}x
+rt struct Weak {}
+export enum WindowAdaptor { Window(}
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct Layou }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor { Window(}
+export struct WindowItem {}
+tInfo     { layout: int } export struct BoxLayoutData { layout: length }
+export enum Slice { xxx }
+rt struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callbackexport enum Coord {   x }
+export stru       ct AccessibleRole { value: Coord }
+float, spacer: bool, background: color, font-size: length, }
+struct Row {e {
+        pure callbacle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx m       ngle {
+        pure callback hallo(intfffffffffffffffff)ffffffffff callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callbacle {
+    pure callb    xxx m       ngle {
+        pure callback hallo(intfffffffffffffffff)fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+  ;    hallo(a) => { return a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase t := SharedString {}
+    Butto _ _   : "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

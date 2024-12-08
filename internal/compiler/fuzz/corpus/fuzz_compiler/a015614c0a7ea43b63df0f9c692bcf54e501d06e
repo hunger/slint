@@ -1,0 +1,68 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img3 :e {
+        soheight: 600px;
+    HorizontalLayout             Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.jp:g") {         source: @image-url("../../../demos/printerdemo/ui/images/cat.jp:g") {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+ ngle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+placeholder-color-    }
+    img)))))))))))))))))))))3 :e {
+        soheight: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+         
+        Image {
+            source: @image
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+ ngle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img3 :e {
+        soheight: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @imagh;
+        }
+        ImagLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+         
+        Image {
+            source: @image
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+ ngle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img3 :e {
+        soheight: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @imagh;
+        }
+        Image {
+            source: @image-url("../../../demos/printerde {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.jpg");
+            Image Scali;;;;;;;;;;;;;;foo;
+    foo => {
+        a += +5;
+        a .source.wi										dth == 0 && img3.s`ource4height == 0;
+}

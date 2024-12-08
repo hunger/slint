@@ -1,0 +1,51 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 1;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%,le {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow ,{
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    backgd: @linear-gradient(45deg, #ff9a9e 0%,le {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yynits Window {
+    ourtp operty<float> t1: cos(0);
+    out property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t40: cos(90deg);
+    out property<bool> test: (5deg.cos() - *****************************************La{out {
+        spaciyyyy        yy yyy#fa/*d0c4 99%,ow round: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn*****************************************La{out {
+        spaciyyyy        yy yyy#fa/*d0c4 99%,ow {
+  width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_a0liTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

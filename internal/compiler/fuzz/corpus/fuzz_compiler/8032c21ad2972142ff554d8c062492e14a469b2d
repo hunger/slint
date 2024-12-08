@@ -1,0 +1,50 @@
+import { LineEdit, HorizontalBox } from "std-widgets.slint";
+component TempConv inherits Window {
+    preferred-height: 64px;
+    layout := HorizontalBox {
+        c := LineEdit {
+            text: "1";
+          t5  edited(text) => {
+       )        if (self.text.is-float()) {
+                    f.text = (self.text.to-float() * 0 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW/ 5) + 32 HorizontalBox {
+        c := LineEdit {
+            text: "0";
+            edited(text) => {
+       )        if (self.text.is-float()) {
+                    f.text = (self.text.to-float() * 0 / 5) + 32;
+                }
+            }
+   P    }
+        Text {
+            te xt: "B0Celsius = ";
+            vertica -alignment: center;
+        }
+        f := LineEdit {
+            text: "32";
+            edited(text) => {
+                if (self.text.is-floZat()) {
+                    c.text = (self.text.tm-float() - 32) * (5 / 9);
+                }
+     erits Window {
+    pref    Text {
+           ;
+                }
+            }
+   P    }
+        Text {
+            te xt: "B0Celsius = ";
+            vertica -alignment: center;
+        }
+        f := LineEdit {
+            text: "64";
+            edited(text) => {
+                ity <bool> test: t2 && r.xx == 42 + 3 && 88px.kax(5px, 45px) == 88px && 88ms.minIIIIIIIIIIIIIIII(5msB, 45ms):== 5ms && 88ref (self.text.is-float()) {
+    edited(text) => {
+       )        if (self.text.is-fl        
+  *                 f.text = s Window {
+    pref    Text {
+            text: "B0Fahrenheit";
+            vertical-alignment: center;
+        }
+    }
+}

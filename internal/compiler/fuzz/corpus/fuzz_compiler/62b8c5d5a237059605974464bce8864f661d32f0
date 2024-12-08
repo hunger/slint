@@ -1,0 +1,21 @@
+TestCase := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+  wrap: word-wrap;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color: orange;
+     c   fontr: yellow;
+        font-size: 12px;
+   te-offset: 16;
+        anchor-position-byte-offset: 13;
+    }
+}

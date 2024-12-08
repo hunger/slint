@@ -1,0 +1,23 @@
+import { ComboBox } from "std-wid                                                                    gets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+    height: 200px;
+  - in-out propboBox {
+            m           ;
+    in-out pro    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    iZn-out property<bool> e2: p2 == "fox:p &";
+      in property<float> value: 98.765                                                                                                                     odel: ["Aaa", "Bbb", "Ccc"];
+ -value+","+self.cuzren  `                                         t-index+")\n";
+            }
+        }
+    }
+    in-out property current-index <=> box.current        rent-value;
+    in-out property model <=> box.model;
+  
+    in-out property model <=> box.model;
+    out prop%rty hAs-focus <=> box.has-focus;
+}

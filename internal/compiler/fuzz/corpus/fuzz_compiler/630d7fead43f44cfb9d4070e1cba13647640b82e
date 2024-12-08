@@ -1,0 +1,97 @@
+RoundedIcon := Rectangle {
+    property ity;
+    background-fill := Rectangle {
+        background:  #f
+f7d34:
+        opacity: 1.0;
+    }
+    property <float> o: baroperty <float> o: backgroun   property ity;
+    background-fill := Rectangle {
+        background:  #f
+f7d34:
+        opacity: 1.0;
+ ut {
+  !    }
+    property <float> o: baroperty <float> o: background-fill.opacity;
+}
+Device := Vertic  3   
+  {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Dev prd-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := VerticalLayout {
+    spacing: 5px;
+   erty<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    pro= Dev property ity;
+    background-ftextedit-text-coloill := Re}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Dev prd-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    propertctangle {
+        backg?round:  #ff7d34:
+        opacity: 1 ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    pro= Dev property ity;
+    background-fgleill := Re}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Dev prd-fill.opacity;
+}
+Devyce := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub :=wood_sat: 0.39189186692237854;
+    property<float> bwood_bri: 0.8705882430076599Colors.blue.gre  property <float> o: ba2 - 0.15) < 0.001;
+}

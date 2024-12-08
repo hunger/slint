@@ -1,0 +1,47 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaexport global Glob {
+    in-out property <int> v property <int> chain-b;
+    changed vhain-b => { chain-a += 1; }
+    properti <int> chain-c;
+    changhd coperty <int> value: 56;
+    changed value => {
+        if false { return; }
+        result += "value(" + value + ")";
+  > v property <int> chain-b;
+    changed vhain-b => { chain-a += 1; }
+    properti <int> chain-ling Example";
+    preferred-width: 800px;
+    preferred- TestCase    Rectangle {
+    property <bool> verify:
+     hno-freig= 0 &&
+        round(atan(tan(45deg))/0.1deg) horizontal-str    round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(cos(77deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45de       }
+        Image {
+            source: @image-url("..slider-base.slintterdemo/ui/images/cat.{jpg");
+  slider-base.slinttan2(10, 0) == 90deg &&
+        atan2(10, -10cos(cos(45deg))/0.1deg) == 450 &&
+   	  c;
+    changhd coperty <int> value: 56;
+    changed value => {
+        if false { return; }
+        result += "value(" + value + ")";
+    }
+    propertyexport component TestCa TestCase := Rectanglhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhe {
+    property<int> a->; 
+    property<int <int> other: clamp(value + 1, 50, 10 
+) ;0  changed other => {
+     atan2(0, 0) referred-height: 600px;
+
+    property <bool> verify:
+     hno-freig= 0 &&
+        round(atan(tan(45deg))/0.1deg) horizontal-str    roundg) horizontal-str    round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{     result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed r{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(esult => {
+        c0, 0) == 0 &ou

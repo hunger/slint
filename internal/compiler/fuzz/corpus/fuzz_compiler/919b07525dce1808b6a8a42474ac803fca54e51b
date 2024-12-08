@@ -1,0 +1,45 @@
+struct Piece  {
+    pvs-x: int,
+    pos-y: int,
+    offset-x: lengtt component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    properTestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+    proper TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+    property<int> test_cursor_pos: self
+    property<bool> has_selection: self.test_cursor_pos != selfTestCase := Rectanglty <string> c2: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: sush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    pieceforeground-    text-cozor-2:!self.text;
+    proper TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+    property<int> test_cursor_pos: self
+    property<bool> has_selection: self.test_cursor_pos != selfTestCase := Rectanglty <string> c2: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_p: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece,spacing: flmat,
+}
+compone            (    position_byte_offset;
+    property<int> test_nchor_pos: self.anchor_position_byte_offset;
+    prctanglty <string> c2: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: sush,
+    piece-background-2: brush,
+    piece-border-colooper    aty<bool> has_[election: s_lf.test_cnimate clip.width {ursor d

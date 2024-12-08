@@ -1,0 +1,24 @@
+OtherComp :C_- ct-ngle {
+    property t <=> textwidth* 64px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i ehn OtherComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* 64px;
+    height: 64px;
+    /*ckground: #2360eas;TestCase62b;
+    Grid**********************************:*******************************************/  width: 100pxh;
+    height: 100phx;
+   ocusTouchArea {
+  OtherComp := Rectangle {
+    property t <=> text.text;
+    propert<=y get_texher;
+    property ||||||||||||||||||||||||||||||||||||||||||||<int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectanglring);
+    set_ti1(a) => { ti1.text = a; }
+    callback set_ti2(st,ring);
+    set_ti2alias <=> othercomp_some_value_alias2;
+    }
+    callback set||||||||||||||||||||||||  in property <bool> en|||||||||a||bled: tru|||e

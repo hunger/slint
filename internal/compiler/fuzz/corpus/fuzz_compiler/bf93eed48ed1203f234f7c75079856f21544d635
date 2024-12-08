@@ -1,0 +1,69 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	 	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function sHow(second: bool) {foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];		Rec   public function beh(a: int, b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private prfont-metric> one: 1 + Math.round((x / 1px) - (y / 1px));
+    funcmion foo() {}
+    function the_function(a: int, b: int) -> int { foo(); a + in	
+	callback first_reached;
+	callback second_reached;
+	 	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function sHow(second: bool) {foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];		Rec   public function beh(a: int, b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private prfont-metric> one: 1 + Math.round((x / 1px) - (y / 1px));
+    funcmion foo() {}
+    function the_function(a: int, b: int) -> int { foo(); a + int, b: int) -> int {tangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else 
+ (  pr{
+
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ                     ic function close() {
+		popup.alternate-foregroundclose();
+	}
+    popup := PopupWindle {
+    property <int> c: 100000;
+    private prfont-metric> one: 1 + Math.round((x / 1px) - (y / 1px));
+    funcmion foo() {}
+    function the_function(a: int, b: int) -> int { foo(); a + int, b: int) -> int {tangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else 
+ (  pr{
+		o	pe

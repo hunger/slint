@@ -5,19 +5,24 @@
 use libfuzzer_sys::fuzz_target;
 
 use i_slint_compiler::diagnostics::{BuildDiagnostics, SourceFile};
-use i_slint_compiler::parser::{parse_tokens, Token};
+use i_slint_compiler::lexer;
+use i_slint_compiler::parser::parse_tokens;
 
-fuzz_target!(|tokens: Vec<Token>| {
-    let source_file = SourceFile::default();
-    let mut diags = BuildDiagnostics::default();
+fuzz_target!(|data: &[u8]| {
+    if let Ok(s) = std::str::from_utf8(data) {
+        let tokens = lexer::lex(s);
 
-    let doc_node = parse_tokens(tokens, source_file, &mut diags);
+        let source_file = SourceFile::default();
+        let mut diags = BuildDiagnostics::default();
 
-    let (_, _, _) = spin_on::spin_on(i_slint_compiler::compile_syntax_node(
-        doc_node,
-        diags,
-        i_slint_compiler::CompilerConfiguration::new(
-            i_slint_compiler::generator::OutputFormat::Llr,
-        ),
-    ));
+        let doc_node = parse_tokens(tokens, source_file, &mut diags);
+
+        let (_, _, _) = spin_on::spin_on(i_slint_compiler::compile_syntax_node(
+            doc_node,
+            diags,
+            i_slint_compiler::CompilerConfiguration::new(
+                i_slint_compiler::generator::OutputFormat::Llr,
+            ),
+        ));
+    }
 });

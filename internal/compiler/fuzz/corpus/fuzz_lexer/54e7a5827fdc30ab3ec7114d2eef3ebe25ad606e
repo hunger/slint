@@ -1,0 +1,3 @@
+TestCase := Rectangle {
+    property <int> xx: animation-tick() / 1ms;
+}

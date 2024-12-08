@@ -1,0 +1,13 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    prst_anchor_pos: self.anchor_position_bytefset;
+    property<bool> has_selection: self.test_cursor_pos != self.test_anchor_pos;
+    property<bool> input_focused: self.has_focus;
+}
+assert!(instance.get_has_selection());
+slint_testing::send_keyboard_string_sequence(&instance, &BACK_CODE.to_string());
+undo(&instance);
+```
+*/

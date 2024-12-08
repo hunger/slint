@@ -1,0 +1,45 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+                background: c;
+                TouchArea {
+                    width: parent.width;
+                    height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+                background: c;
+      expor      }
+   Test   "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+   TestCase := Rectangle {
+    width: 600phx;
+    height: 300phx;
+    Rectangle {
+     value4: true ? Glob2.a : 88;
+    }
+ (  property <bool> test: r.value1 + r.value2 == Some {}
+export struct None { s: Some }
+export struct /*tion { n: None }
+exG          TouchArea {
+                    width: parent.width;
+                ort struct Component {o: Option }
+exportuct We 

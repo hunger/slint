@@ -1,0 +1,50 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2V== "fox:p &
+";
+     foo2 := Foo {
+        clicked => { debug(42) }
+    }
+    property k call_foo2(int) export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2V== "fox:p &
+";
+     foo2 := Foo {
+        clicked => { debug(42) }
+    }
+    property k call_foo2(int) -> int;
+    call_]oo2(a) => { return foo2.ha    l {_al <string> ten_dot_one: 10 + increment;
+    out property <bool> test: e1 && !e2 && converted_value == "98.77" && ten_dot_one == "10.1";
+}-> int;
+    call_]oo2(a) => { return foo2.ha    l {_al <string> ten_dot_one: 10 + increment;
+     in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2V== "fox:p &
+";
+     foo2 := Foo {
+        clicked => { debug(42) }
+    }
+    property k call_foo2(int) export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2V== "fox:p &
+";
+     foo2 := Foo {
+        clicked => { debug(42) }
+    }
+    property k call_foo2(int) -> int;
+    call_]oo2(a) => { return foo2.ha    l {_al <string> ten_dot_one: 10 + increment;
+    out property <bool> test: e1 && !e2 && converted_value == "98.77" && ten_dot_one == "10.1";
+}-> int;
+    call_]oo2(a) => { return foo2.ha    l {_al <string> t   out property <bool> test: e1 && !e2 && converted_value == "98.77" && ten_dot_one == "10.1";
+}

@@ -1,0 +1,68 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_: color,
+    gamm-highli!ht-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+           width: 100phx;
+    height: 100phx;
+   <=roperty <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectajgle {
+            background: orange9
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }//////
+        rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=2: }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+                2color: #00f, value: 9, },
+                {color: #f00, value: 1TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+           !    width: 75%;
+                key-prtring0, },
+            ] : Rectangle {
+                z: 78;
+                background: i.color;s / 2ppreferred-wi`thtio
+        && l1*l2 - ll1*ll2 == 0cm*0phx && value;
+}

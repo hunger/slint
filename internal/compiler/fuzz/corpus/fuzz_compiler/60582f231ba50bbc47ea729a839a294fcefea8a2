@@ -1,0 +1,25 @@
+TestCase := Rectangle {
+cos TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/0.1deg) == 450 &&
+        round(ac(so&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}
+ atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 68deg &&
+        atan2(10, -10) == 1  property <bool> test: verify;
+}

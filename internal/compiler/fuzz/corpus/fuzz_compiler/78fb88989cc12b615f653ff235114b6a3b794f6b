@@ -1,0 +1,32 @@
+O := Text {
+    property <;nt> val;
+    text: val;
+ 1;
+T estCase := Window {
+    property <int> val: chx;
+    property<physical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l4: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 1***************************************************************************************************9 {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :   propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ************************y**********************= -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        zound(1000* cos(3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%60deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000*1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg));== 0 &&
+        round(atan(tan(45deg))/0.1deg) ==ake_plural1(        o1 := O { val <=> roow {
+    property <int> val: coO { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { 
+|  a<=> root.val; }
+       																			test: checksum == 55555;
+}

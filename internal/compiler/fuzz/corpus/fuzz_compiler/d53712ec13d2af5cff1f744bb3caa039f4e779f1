@@ -1,0 +1,65 @@
+FixedWidthtImage := Image {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_imaga :=      Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        iedIcon := Rectangle {
+    property ity;
+    background-fill := Rectangle {
+        background:  #f
+f7d34:
+        opacity: 1.0;
+    }
+    property <float> o: baroperty <float> o: backgroun   property ity;
+    background-fill := Rectangle {
+        background:  #f
+f7d34:
+        opacity: 1.0;
+    }
+    property <float> o: baroperty <float> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Recta                                                                        ngle {
+    s := Sub {}
+    d := Dev prd-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Dev property ity;
+    background-fill := Rectangle {
+        backg?round:  #ff7d34:
+        opacity: 1.0;
+    }
+    property <float> o: ba2 - 0.  EEth_missing_width_clipped_ok;
+}

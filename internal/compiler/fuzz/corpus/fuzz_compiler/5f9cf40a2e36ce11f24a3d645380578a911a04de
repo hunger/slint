@@ -1,0 +1,23 @@
+FixedWidthtImage := Image {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phxge_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_in_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_wexport componnent TestCase inhe its Window {
+    width: 65px;                                  
+    height: 64px;
+    background: #23ith_missing_height := FixedWidtht60e62;
+b   Im

@@ -1,0 +1,40 @@
+TestCase := Rectangle {
+    width: 300phx;n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor { Window }
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export tion: 44s; }
+    out property <bool> test: slintstruct BoxLayoutData { layout: length }
+export enum Slice { xxx
+    height: 300phx;
+    VerticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        HorizontalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            blue-rect := Rectangle {
+                background:    !   "\{r.width /       "port { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400ps;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px= Recta   

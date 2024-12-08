@@ -1,0 +1,12 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    in-out property <int> selecght();
+    callback move-left();
+    callback move-focus-up();
+    move-right => {
+        root.selected-index = min(root.selected-index + 1, rootTestCase := Rectangle {
+cos TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round.cou(1000* cos(3nt 60

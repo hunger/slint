@@ -1,0 +1,27 @@
+TestCase := Rectangle {
+b    animate background {
+ 
+ -}
+O___uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu_____________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO_OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_cLstom_fit_ok: image_in_nayout_with_explicit_fit.image-fit == ImageFit.fill;
+    property <bool> image_wiOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixjd_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+  image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layoectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_nayout_with_explicit_fit.image-fit == ImageFit.fill;
+    propeut_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.fill;
+    property <bool> image_with_mmssing_height_ok OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O_____________ animate background {
+ 
+ -}
+O________________________________UOOOOOOOOO}

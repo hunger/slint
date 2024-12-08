@@ -1,0 +1,67 @@
+export global B {
+    out property <ed v => 
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(export component TestCase  {
+(   in-out property<string> p1: "hello";
+    in-out pro    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 ==e: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <strinset-selecg> converted_value: round(value * 100)/100;
+    out pro$erty <string> ten_dot_one: 10 + increment;
+    out property <bool> test: e1 && !e2 && csecond: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	public function close() {
+		popup.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+	  eight: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCase inherits Window {
+	width: 400px;
+	height: 400px;
+	in-out property <int> popup_click_coonverted_value == "98unt;
+	VerticalLayout {
+		alignment: start;
+		Hori.77" && ten_dozont_one == "10talLayout {
+			Button {
+				text: "Open";
+				c.1";
+}
+licked =

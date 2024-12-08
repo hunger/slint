@@ -1,0 +1,72 @@
+FixedWidthtImage := Imagef {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+       struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offsevaluet-x: length,
+    offset-y: length,
+}
+struct     e  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+            piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+ ;   piece-text-font-family: string,
+    piece-radius: length,
+    piece,spacing: float,
+}
+component Ch1ckbox inherits Rect height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_in_layout := Image {
+        }
+        imagealternate-background_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+   angle {
+    in property <color> checked-color;
+    in property <color> unchecked-color; int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct     e  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+        prop game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: colerty <boolor,> 
+    piece-borexpected_widthder:_ok: 

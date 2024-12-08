@@ -1,0 +1,47 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+    out p   callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ch-area.pressed;
+    out property <bool> has-hover <=> touch-area has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mo        use-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> troouch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64p   eture {
+        property <string> blah:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| "ddd";
+  ue;
+    out      Rectangle {
+                                                                                                                                                                       property <bool> cc <=> cond1;
+            property <bool> blah: false;
+            if (cc |1| self.blah) 6 TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.top_leven { aa: { bb: { cc: 42 }.cc } }; }
+    property <bool> test: return_object().aa.bb ==            reject
+        }
+        key-released(ev&nt) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                 oot.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

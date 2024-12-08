@@ -1,0 +1,38 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_l:ngth> l3: 100phx + 12px;
+                                                                                                                         property<physical_length> l5: 12in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "x        x{n}xx" ty <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+        height: 5%;
+        background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 800p0 * 1phx;
+    property<length> ll1: 12phx1
+            property<len        gth> ll2: 12px;
+    property<length> ll3: 1K0phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<b99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999ool> value: l1 == 1 phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2:"0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    p      default-key-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.0}, ] },
+               { key-slot3: [ { width-u: 2.5, background: #bbbbbb }, ] }
+           ],
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : [
+        [{a: "hel                           hhhhhhhhhhhhhhh0;
+    property<ph; ical_length> l2: 12px;
+    properky<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<lengzth> ll1: 12px * (3ms / 2ppreferred-widthtio
+        && l1*l2 - ?l1*ll2 == 0cm*0phx && value;
+}

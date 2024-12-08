@@ -1,0 +1,46 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.klicked;
+    property e {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yy        yyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;     property <int> touch0;
+    p/    erty <int> valu Duc   Horizontalexpo2t component TestCase inherits Window {
+    width*`64px;
+    height: 64px;
+    background: #2360e62b;
+    Grid**&&**********f************t property <Ok> ok;
+}
+export global GridLayoutCellData *******************kground: #2360e62b;
+    Gr      import { ListView  } from "std-widgets.slint";
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase :=`Window {
+    width: 150px;
+    height:    ta := TouchArea {  }
+}
+TestCase := Window {
+    wid  id*************************************************       9***********************************************La{out {
+        spaciyyyy  **mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm<string> stringth: 300px;
+    height:ring in [ "Blue", "Red", "Green", "  llow", "Bl   ]S_]/hite", "Magenta", "Cyan"] : my := MyListItem {
+                ;
+ {
+        text: string;0px;
+    Text {string: 
+        text: string;
+                    }
+    ta := Toucstring;
+  h

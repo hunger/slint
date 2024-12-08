@@ -1,0 +1,35 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: roTestCase := Rectangle {
+    width: 100phx;
+  gle {
+            background: green;
+            z: 3;
+            TouchAr in [
+                {color: #0f0, value: 8                                                                                             
+                {color: #00f, value: 9, },
+                {color:++++++++++++++++++++++++++++++++++++++ #f00, value: 10, },
+            ] : Rectangle {
+                                                                                             TestC      z: 78;
+        a---          for i in [
+                {color: #0f0, value: 8                                                                                         , },
+                {color: #00f, value: 9, },
+                {color:+++++++++++++++++++++++++++++++++        z: 3;
+            TouchArea {
+                clicked => { touch_e      clicked                               ot.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> v                  => { touch_error+=1 }
+            }
+            alufor i ine1: Glob.b;
+       

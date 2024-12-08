@@ -1,0 +1,68 @@
+OtherComp := Restangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    prolerty some_valueimport { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> in;d 
+xe   text: "I'm item #" +_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+     roperty ti1_text <=> ti1.text_alias;
+    property ti2_text_alias_indirection;
+        property  TestCase := Rectangle {
+  TestCase := Rectangle {
+    pr * 2 + 2 - 50 - 2;
+    p index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height:  <string> text2: "Blah";
+     roperty ti1_text <=> ti1.text_alias;
+    property ti2_text_alias_indirection;
+        property  TestCase := Rectangle {
+  TestCase := Rectangle {
+    pr * 2 + 2 - 50 - 2;
+    p index;
+    Rectangle {
+          text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    prolerty some_valueimport { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> in;d 
+xe   text: "I'm item #" +_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+     roperty ti1_text <=> ti1.text_alias;
+    property ti2_text_alias_indirection;
+        property  TestCase := Rectangle {
+  TestCase := Rectangle {
+    pr * 2 + 2 - 50 - 2;
+    p index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height:  <string> text2: "Blah";
+     roperty ti1_text <=> ti1.text_alias;
+    property ti2_text_alias_indirection;
+        property  Tes  border-width: 1px;
+    w-y <=> lv.viewporden";
+    }
+    propertyt_y

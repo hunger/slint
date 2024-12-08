@@ -1,0 +1,49 @@
+component C1  {
+    Rectanferred-width: 100px;
+          TestCase := Window {
+    width: 64px;
+    height: 64px;
+    background: black;
+    GridLa  Rectangle {
+               preferred-width: 40px;
+            }
+      ase  {
+    in-out property<string> p1: "hello";
+    in-out pro    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    iZn-out property<bool> e2: p2 == "fox:p &";
+    in property<float> value: 98.7654321;
+    in property<float> increment: 0.1;
+    out prop  }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width /you*t {
+        Rectangle { background: red; border-color: whiet; border-w                               idth: 1px; }
+ /*     Rectangle { background: #080c; border-radius: 8px; border-width: 5px; border-color: #d005t {
+        Rectangle { background: red; border-color: white; border-w                               idth: 1px; }
+        Rectangle { background: #080c; border-radius: 8px; /*rder-width: 5px; border-color: #d005; }
+        Rectangle { background: blue; border-top-right-radius: 2px; border-bottom-left-radius: 4px; border-width: 4px; border    width: 64px;
+  1px}, " +
+            ""
+        );
+    }
+    out  property <bool> ok: r.width == 100px && r2.width == 100px;
+}
+export                       4px; border    width: 64px;
+  1px}, " +
+            ""
+        );
+    }
+    out  property <bool> ok: r.width == 100px && r2.width == 100px;
+}
+export                                       Text { text: /*"Hi   height: 64px;
+    background: black;
+    Gr                              idth: 1px;                Text { text: /*"Hi   height: 64px;
+    background: black;
+    Gr                              idth: 1px; }
+        Rectangle { background: #080c; border-radius: 8px; /*rder-width: 5px; border-col: white; border-w                         us: 4px; border-width:,              4  

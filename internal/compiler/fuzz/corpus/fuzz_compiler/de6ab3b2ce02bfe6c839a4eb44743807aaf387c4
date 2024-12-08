@@ -1,0 +1,27 @@
+import { Palette } from "std-wi       Oint";
+import "../assets3weathericons-font.ttf";
+export global AppPalette {
+    out property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> foreground: white;
+    out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<brus.yellow;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<brush> rain-bl
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        Gr"Weather Icons";
+}
+export global AppImages {
+  b_ou} property <image> arrow-down: @image-url("../assets/icons/arrow-down.svg");
+    out property <image> arrow-up: @image-url("../assets/icons/arrow-up.svg");
+    out property <image> plus: @image-url("../assets/icons/plus.svg");
+    out property <image> refresh: @image-url("../assets/icons/refresh.svg");
+    out property <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-l("../assets/icons/xmark.svg");
+}

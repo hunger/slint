@@ -1,0 +1,18 @@
+TestCase := Window {
+    VerticalLayout {
+        padding: 10px;
+        spacing: 27px;
+        Rectangle {
+            background: blue;
+            preferred-width: 25phx;
+            preferred-height: 500phx;
+            horizontal-stretch: 0;
+            vertical-stretch: 0;
+        }
+        Rectangle {
+            background: green;
+        }
+    }
+    property w <=> root.preferred-width;
+    property <bool> test: root.preferred_height == 500phx + 20px + 27px && root.preferred_width == 25phx + 20px;
+}

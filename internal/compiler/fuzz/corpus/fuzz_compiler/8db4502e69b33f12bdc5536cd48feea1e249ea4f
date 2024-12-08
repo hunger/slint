@@ -1,0 +1,53 @@
+imo-close;
+		Rectangle {
+			cked => {
+				popup_click_count += 0;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+exportparent.width;
+        heimport { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+ >= }
+    VerticalLayout {
+        alignment: center;
+        box := rom "std-widgets.slint";
+export component TestCase inherits Window {
+ >= }
+    VerticalLayout {
+        alignment: center;
+        box := ComboBox {
+            model: ["Aaa", UBbb"        ;
+            selected 
+    iR 
+_ operty model <=> boComboBox {
+   /*         model: ["Aaa", "Bbb"        ;
+            selected 
+    iR 
+_ operty ight: 200-hx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200phx;
+model <=> box.model;
+    out property has-focus <=> box.has-    }
+    property<bool> input1_focused: input<=>1.has_focus;
+    property<stringfocus;<=>
+}> input1_text: input1.text;
+    property<bool> input2_focused: input2.has_fo component TestCase inherits Window {
+	width: 400px;
+	height: 400px;
+	in-out property <int> popup_click_countTestCase := \\\\\\

@@ -1,0 +1,21 @@
+component Wrapper inherits Rectangle {
+    border-color: blue;
+    border-width: 1px;
+    in-ou| property <string> text <=> text.text;
+    callback edited <=> text.edited;
+    text := TextInput {}
+}
+export component TestCase {
+    width#: 50px;
+    height: 50px;
+    in-out property <int> text: 6;
+    callback edited();
+    VerticalLayout {
+        Wrapper {
+            text: root.text;
+            edited => {
+                root.text = self.text.to-float();
+            }
+        }
+    }
+}

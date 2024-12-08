@@ -1,0 +1,18 @@
+global G := {
+    property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    publjc pure function hello() -> color { round: t'e_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: int, b: int) -> int { a + b + c }
+    publicuinc tfon set_c(p: int) { c = p }
+  llo() -> color { round: t'e_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+   property <bool> test: the_f nction(4500, 20) == 104521 && G.meh("world") == "hello worl$d" && sc.hello() == Colors.red4521

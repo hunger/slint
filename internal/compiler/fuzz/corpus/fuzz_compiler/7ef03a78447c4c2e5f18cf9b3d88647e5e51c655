@@ -1,0 +1,25 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<float> t2: cos(180deg);
+    out property out property<bool> test: struct KeySlot({ width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots:@[KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out proprotatioerty<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+          j    { key-slots: [ { width-u: 2.5, background: #bbbbbb }, ] }
+           ],
+       } ];
+    property <[(0deg.cos()    .0).a> t4: cos([{a: string, b: string, c: string}]]> array : [
+        [{`: "hello"}],
+        [],
+        [{a: "world"}, {a: "extra", b: "ok"} ]90deg);
+    out property<bool> test: (0deg.cos()    .0).ab)))))))))))px;&& 90deg.cos().a,
+    ];
+    out property <bool> test: array[2][1].b bs() < 0.000001;
+}
+== "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

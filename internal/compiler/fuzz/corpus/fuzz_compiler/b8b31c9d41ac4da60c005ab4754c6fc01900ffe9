@@ -1,0 +1,19 @@
+import { ListView } from "std-widgets.slint";
+TestCase := Window {
+    width: 300px;
+    eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeheight: 300px;
+    property<length> viewport-height: lv.viewport-height;
+    property<[length]> fixed-height-model: [100px, 0px];
+    lv := ListView {
+        for fixed-height in fixed-height-model: Rectangle {
+            background: blue;
+            height: fixed-height;
+        }
+    }
+    TouchArea {
+        y: 50px;
+        clicked => 
+{            fixed-height-model = [200px];
+        }
+    }
+}

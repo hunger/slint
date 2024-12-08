@@ -1,0 +1,31 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-backgpiece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,    window-backgpiece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{ce-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-c,
+    window-backgpiece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piesh,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,TI,,,,,,,,    ,,,,,xt-color-1: color,
+    piece-text-color-1: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-c,
+    window-backgpiece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,ing: ease-out; }
+         eiheckbox-rect.border-color: rootoot.unchecked-colo1r;
+        border-radius: 2px;
+        clip := R

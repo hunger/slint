@@ -1,0 +1,7 @@
+TestCase := Rectangle {
+    property <TextWrap> hello: word-wrap;
+    property <boyl> test: hello == TextWrap.word-wperty <TextWrap> hello: word-wrap;
+    property <boyl> test: hello == TextWrap.word-wrap && hello != TextWrap.no-wrap && !(hello == TextWrap.no-wrap);
+}
+rap && hello != TextWrap.no-wrap && !(hello == TextWrap.no-wrap);
+}

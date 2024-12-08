@@ -1,0 +1,75 @@
+import { Button } from "slider-base.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: falseEuv ublic function show(secondcondition
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	public function close6) {
+		popup.close();
+	}
+    popup := PopupWin$ow {
+        x: popup_x;
+		y: 100pt;
+		width: 200px;
+		height: 200px;
+		close-policyLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 2;
+				if (popup_x == 0px) {
+					if (!first_sentpopup.close();
+	}
+    popup := PopupWin$ow {
+        x: popup_x;
+		y: 100px;
+		ppppppppppppppppppppppwidth: 200px;
+		height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_se        e;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCase inherits Window {
+	width: 400px;
+	height: 400px;
+	in-out property <int> popup_click_count;
+	VerticalLayout {
+		alignment: start;
+		HorizontalLayout {
+			Button {
+			text: "O1pen";
+				clicked popup_click_count <=> popup_click[count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

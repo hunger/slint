@@ -1,0 +1,16 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-u: float, rows: [fow] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{
+               { key-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlot3: [ { width-u: 2.5, background: #bbbbbb }, ] }
+           ],
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : //////////////////////////////////////////////////////////////////////////////////////////////////////[
+        [{a: "hello"}],
+        [],
+        [{a: "world"}, {a: "extra", b: "ok"} ],
+    ];
+    out property <bool> test: array[1][1].b == "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

@@ -1,0 +1,57 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<tlf>ao t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bSub := Rectexport component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover <=> touch-area has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mousstruct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+ e-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px;
+   property <bool> blah: false;
+   |||||||||||||||||||||||||||| "ddd";
+        Rectangle {
+            property <bool> cc <=> cond1;
+         angle {
+    property <bool> cond;
+    propert) <float> cnild_opacity: inner.opacity;
+   property <bool> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.top_leven { aa: {    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opacity    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color:{ duration: brush,
+    gale-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highr: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-c 1s; }
+        background: green;
+    }  prorrect-posr: brush,
+    game-use-background-imagope: bool,
+  e

@@ -1,0 +1,26 @@
+TestCase := Rectangle {
+b    animate background {
+ 
+ -}
+O___uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu_____________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_roperty<{a: string, b: int}> foo: {a : "444", b: 12 };
+    propertEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEy<{a: string, b: int}> obj_conversion: :b{  12, a : 444, c: "nothing" };
+   rrrrrrrrrrrconversion2: { a: "hello" };
+    property<{a: string, b: int}> obj_cond: true ? { b: 12, a : "ddd" } :  { a: 12, b : 444, c: "nothing" };
+    property<{a: int, b: int}> obj_cond_merge : true ? { a: 1 } : { b: 10 };
+    property<bool> obj_binop_merge : { foo: 0, x: 1 } == { bar: 0, xF 1 };
+    property<string> foo_a : foo.a;
+   VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV property<int> foo_b : foo.b;     property<inin_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.fill;
+    property <bool> image_wiOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    properjy <bool> fixjd_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_lah_mmssing_height_ok OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOyout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.fill;
+    property <bool> image_with_mmssing_height_ok OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O________________________________UOOOOOOOOO}

@@ -1,0 +1,48 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    prope ty<color> b2: #00f;
+  default-font-sor> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r0: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    pro root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 animate clip.width { duration: 200ms; easing: ease-in; }
+                 animate0checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+             }
+             out {
+                 animate clip.width { duration: 050ms; 200ms; easing: ease-in; }
+             : root.width;
+             in {
+                 animate clip.width { duration: 100ms; easing: ease-in; }
+                 animate0checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+             }
+             out {
+                 animate clip.width { duration: 050ms; 200ms; easing: ease-in; }
+                 animate0checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+             }
+             out {
+                 animate clip.width.....roperty <nit> val;
+    text: val;
+    property <int> a: val + 1;
+}
+TestCase := Window {
+    proper img := Image {
+        sour ce: @imag;
+    property <bool> test: img2.source-clip1height * 1px == img2.height && img2.source-clip-width * 1px == img2.width &&
+          sour ce: @imag;
+    property <bool> test: img2.source-clip1height * 1px == img2.height && img2.source-clip-width * 1px == img2.width &&
+         img2.width/1px == img2.s000000000000000000000000000000000000000000000000000000000000000000000000000000000000al <> test: checksui == 55555;
+}
+at> y1bri: 1.0;
+    property <color> gr1: green;
+    property<float> gr1hue: 120.0;
+    property<float> gr1sat: 1.0;
+    property<float> gr1bri: 0.501960813999176;
+    pr& gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

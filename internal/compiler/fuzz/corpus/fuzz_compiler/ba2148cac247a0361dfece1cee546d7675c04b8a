@@ -1,0 +1,42 @@
+imo-close;
+		Zectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;					)	second_reached();
+						second_sent = true;
+					)	second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCw_________________________________________________________________________________________________________________se inherits Window {
+	width: 400px;
+	heig                                                                            red;
+		}
+		TouchArea {
+		on {
+				text: "Open";
+				clicked => {
+	;
+   Y_                                       		popup_click_c:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::                        ht: 400px;
+	in-out property <int> popup_click_count;
+	Veut {
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::ountt < =>popup_click_count;
+		first_reached => {
+			cnt0.show(true);
+		}
+		semond_reached => {
+			cnt2.show(false);
+		}
+	}
+	cnt2 :k_count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

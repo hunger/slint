@@ -1,0 +1,69 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+                +=1;
+    }
+    propue => {
+        if false { return; }
+        result +< "value(" + value + ")";
+    }
+    propertyexport component TestCa TestCase := Rectangle {
+    property<int> a->;
+    property<int <int>         lamp(value + 1, 50, 100);
+    changed forward-focus      result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count += 1;in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+                +=1;
+    }
+    propue => {
+        if false { return; }
+        result +< "value(" + value + ")";
+    }
+    propertyexport component TestCa TestCase := Rectangle {
+    property<int> a->;
+    property<int <int>         lamp(value + 1, 50, 100);
+    changed forward-focus      result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count += 1;  result +< "value(" + value + ")";
+    }
+    propertyexport component TestCa TestCase := Rectangle {
+    property<int> a->;
+    property<int <int>         lamp(value + 1, 50, 100);
+    changed forward-focus      result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count += 1;
+    }
+ e { return; }
+      
+    }
+ e { return; }
+        result += "value(" + Native {
+  )     changed has_focus => { debug(self.text); }
+    }
+    chainin> t1: 4 + 3 * 2 + 2g := -  5

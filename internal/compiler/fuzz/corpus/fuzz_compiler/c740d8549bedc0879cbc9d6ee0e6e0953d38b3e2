@@ -1,0 +1,31 @@
+import { ListView  } from "std-widg,ts.slint";
+TestCase := Window {
+    width: 4A00px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+      !     { textcontro: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { Text {
+                    height: 1asin(sin(45deg))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan1(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        00px;
+                    text: data.text;
+                    color: data.color;
+                    font
+                    color: data.color;
+                    font_size: 20px ;
+                                                          \                                      }
+         
+        }
+    }
+}

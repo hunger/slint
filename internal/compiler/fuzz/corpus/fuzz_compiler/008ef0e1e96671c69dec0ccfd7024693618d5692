@@ -1,0 +1,54 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview :Test := Rectangle {
+is_intererty<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    property<color> y2: #ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rgb(100, 23, 42);
+    property<color> c3: ce-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 animate c+ip.width { duration: 200ms; easing: ease-in; }
+             l("cat.jpg");
+        height: 600phx;
+        property <bool> expected_width_ok: self.width == 400        out {
+                 animate clfo-alternate-back     ground;
+        inner-shaHow-b           erty <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Mathac.lmp(5, 2, 3) + max;
+    }
+    out property <durat53.0);       root.move-left();
+            } else if self.current-position.x < self.pressed-posit= ListView {
+        for data in [
+       ion.x -  r

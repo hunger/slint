@@ -1,0 +1,50 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    o: root.mx - root.width / 2;
+    y: root.my - root.height / 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope             piece-text-w eight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece,spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out pth> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 0;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - root.width / 2;
+    y: root.my - root.height / 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope                                             roperty <bool> checked;
+    callback toggle                                                ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<foalt> t4: co               s(90deg);
+    out property<bool> te in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 0;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - root.width / 2;
+    y: root.my - root.height / 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                                   rty <int> va component TestCase inherits Window {
+    lue2: true ? Glob2.a : 88;stCa  := Rectangle o

@@ -1,0 +1,47 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: oat>!fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    backgrou********************* height: : i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+       100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    p/*roperty <int> valu Duc   Horizontalexpo2t c<float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 54;
+    in-out property <string> r;
+    changed v => {
+        r += float> child_o*****************************************yyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+0   height: : i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+       100phx;
+    property <int> touch_error;
+    property <int> touc               clicked => {
+       100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    p/*roperty <int> valu Duc   Horizontalexpo2t c<float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 54;
+    in-out property <string> r;
+    changed v => {
+        r += float> child_opacity: inner.on ************************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

@@ -1,0 +1,59 @@
+TestCase := Window {
+ 
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+                  t,
+    piece-text-weight-cobrect-pos: int,
+    piece-text-fo height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+   ,,xt-color-0: color,
+    piecerotation-angle      t,
+    piece-text-weig R    ct-pos: int,
+    piece-text-fo height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += event.text;
+            return event.texhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy8bool> toggle: true;
+    property<string> r1;
+    property<string> r2;     property<string> r3;
+        erty<string> r4;
+    proper   width: 100phx;
+   ,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+                  t,
+    piece-text-weight-cobrect-pos: int,
+    piece-text-fo height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+   ,,xt-color-0: color,
+    piecerotation-angle      t,
+    piece-text-weig R    ct-pos: int,
+    piece-text-fo height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += event.text;
+            return event.texhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy8bool> toggle: true;
+    property<string> r1;
+    property<string> r2;     property<string> r3;
+        erty<string> r4;
+    property<string> r5;
+}

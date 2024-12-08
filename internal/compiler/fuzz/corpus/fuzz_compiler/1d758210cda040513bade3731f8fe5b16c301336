@@ -1,0 +1,19 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, b }, ] }
+           ],
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : [
+        [{a: "hello"}],
+        [],
+        [{a= "ok" && layers[0].rows[0].kek"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" &&{a= "ok" && layers[0].rows[0].kek"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

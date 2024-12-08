@@ -1,0 +1,44 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out pr7operty<float> t2: cos(180deg);
+    out property out property<bool> test: struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-    s: [KeySlot], }
+struct Layer { default-key-width-u: float, total-wKe
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeySlot], }
+str  t Layer { default-key-width-u: float, tot2al-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeeeeeeeeeee font-size: length, }
+struct Row { key-    s: [KeySlot], }
+struct Layer { default-key-width-u: float, total-wKe
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeySlot], }
+str  t Layer { default-key-width-u: float, tot1al-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey-width-u: 1worl.0,
+ ponent TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeySlot], }
+str  t Layer { default-key-width-u: float, tot2al-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeeeeeeeeeee font-size: length, }
+struct Row { key-    s: [KeySlot], }
+struct Layer { default-key-width-u: float, total-wKe
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeySlot], }
+str  t Layer { default-key-width-u: float, tot1al-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+    "extra", b: "ok"} ]80deg);
+    out property<bool> test: (0deg.cos()    .0).ab)))))))))))px;&& 90deg.cos().a,
+    ];
+    out property <bool> test: array[2][1].b bs() < 0.000001;
+}
+== "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

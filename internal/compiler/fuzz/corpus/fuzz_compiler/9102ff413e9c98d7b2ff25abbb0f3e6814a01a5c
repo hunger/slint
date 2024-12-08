@@ -1,0 +1,44 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain   => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed vhain-b => { chain-a += 1; }
+    property <int> chain-c;
+    changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chTestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forwaain-i => { chain-h += 1; }
+}
+component SubCompo {
+  rd-focus: i-text-input;
+  WWWWWWWWWWWWWWWWWWWWWWW  i-text-input := Tex  in-out protInput {
+        x: 0perty <int> v: 456;
+        width                                                                                        : 50%;
+    ;
+    in-out property 

@@ -1,0 +1,52 @@
+O := Text {
+    property <int> val;
+    text: val;
+    prvalue _C  A_a!:estCase := Rectangle {
+    proper default-key-width-uFoo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback:= Rectangle {
+    proper default-key-width-uFoo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TesRectangle {
+        pure callback:= Rectangle {
+    proper default-key-width-uFoo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback f                                            oo1_clickeclose-policyd <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return: floatug(42) }
+tCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback:= Rectangle {
+    proper default-key-width-uFoo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+    foo2_alias <=> foo2.hallo_alias;
+    callback f                                            oo1_clickeclose-policyd <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return: floatug(42) }
+    }
+    property <bool> test: foo1_al, rows: [Row] }
+export ias(100) == comp122 && foo2_aonliaes

@@ -1,0 +1,61 @@
+export component FoctsTouchArea {
+    in    property <bool> bllh: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clickq       ed => {
+                   essed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= encked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.boYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYrder-width: root.width;
+             in {
+                 animate clip.width { duration: 980ms; easing: ease-in; }
+                 animate checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+            ll4: 120        out {
+                 a   animate checkbox-rect.bor_er-width { duration: 200ms; easing: ease-in-out; }
+                 aFixedWidthtImage := Image {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_in_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+thtImage := Image {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_in_layout := Image {
+        }
+        image_in_layout_with_explicit_      nimate  }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width :=idth: 20; ch

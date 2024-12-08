@@ -1,0 +1,19 @@
+TestCase := Window {
+                                                                                                                width: 100phx;
+    height: 100phx;
+    FocusScope {
+        ke
+                                return event.text ==  "e" ? acc%pt : reject;
+                            }
+                                                                                                                                              TouchArea {
+                                clicked => {
+                                    parent.focus();
+                                }
+ shadow-b                                                                                                                                                                                    TouchArea {
+                                clicked => {
+                                    parent.focus();
+                               }
+                            TouchArea {
+                                clicked => {
+          g                         parent.focus();
+                         

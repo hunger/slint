@@ -1,0 +1,66 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+   :     border-width: 1px;
+        border-coler: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;,,xt-color-0: c
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.vgth,
+}
+struct Theme  {
+    name: string,
+    window-backgroune-color: brush,
+     game-background-color: brush,/////////////o////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-0: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+                  ame-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: bsush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+          ush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-5: color,
+    piece{
+                  ame-highlight-rush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: bsush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+          ush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-5: color,
+    piece{
+                  ame-highlight-color: color,
+    piece-spacing: flocat,
+}
+component Checkbox inhetrsi Rectangle {
+    in property <color> checked-color;
+  );
+   Vstates [
+         c      last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

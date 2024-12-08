@@ -1,0 +1,47 @@
+export MainWindow := Window {
+    title: "Slint Image Scaling Example";
+    preferred-width: 600px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../Image Scaling Example";
+    preferred-width: 600px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/carred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../Image Scaling Example";
+    preferred-width: 600px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../dem                                                                                                      os/p}rinterdem//ui/images/cat.jpg");
+            iQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQmage-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.jpg");
+            Image Scaling Example";
+    pr      }
+    }
+demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendeQQQQQQQQQQQQQQQQQQQmage-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.jpg");
+            Image Scaling Example";
+    pr      }
+    }
+demos/p}rinterdem//uipx}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+        );
+    }
+    out property <bool> ok: r.width == 100px &d r2.width == 100px;
+}
+export com                                                               ponent W inherits Window {
+{
+                min-height  ample";
+    pr      }
+    }
+}

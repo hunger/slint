@@ -1,0 +1,44 @@
+TestCase := Rectangle {
+cos TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/0.1deg) == 450 &&
+        round(ac(socos(45deg))/0.1deg) == 450 &&
+        atan2(0,           yyyyyyyyyyyyyyyyyyyyyyyyyn ************************yyn*****************************************La{out = 0deg &o         atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 68deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}
+ atan2(0, 10) == 0deg &&
+        atan2(       text <=> property <bool> x_ok:
+        rect1.x == |0phx ,,,,,,,l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<int> value0: Glob.b;
+        property <int> value2: true ? Glo MQ  : 88;
+    }
+ atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}
+ atan2(0, 10) == 0deg &&
+        atan2(       text <=> property <bool> x_ok:
+        rect1.x == |0phx ,,,,,,,l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,&,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,   atan2(0,     atan2(10, 0) == 68deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) ==180x 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}

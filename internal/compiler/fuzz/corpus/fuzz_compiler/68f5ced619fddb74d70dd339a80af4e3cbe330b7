@@ -1,0 +1,28 @@
+export component TestCase {
+  > t1: export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <lemgth> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root._it%m.text;clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clampWvalue, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);
+    out property <float> s3: value.clamp(43.0, 53.0);operty <bool> test: root.t1 == 42.0 && root.t2 == 43.0 && roo
+    property <string> othercomp_t: "real value";
+    property othercomp_get_text <=> othe    r_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_some_value_alias <=> other_comp.some_value_alias;
+    zroperty <int> othercomp_some_value_alias2;
+    ti1    TextInput {
+        property text_alias <=> text;
+        d4t.t3 == 41.0 && r.xx == 42 + 3 && 4t <=> text1;
+    }
+    ti2 := TextInput {
+        proproot.s1 == 42.0 && root.s2 == 43.0 && root.s3 == 41.0 && test_dur;
+erty text_alias <=> text_alias_indirection;
+        property }
+tex      yyyyyyyyyyyyyy**

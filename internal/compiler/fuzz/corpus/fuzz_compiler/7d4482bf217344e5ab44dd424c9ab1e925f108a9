@@ -1,0 +1,34 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro    perty<string> p2: "fstruct Piece  {
+    pok-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-backUUUUUUUUU.*******UUUUUU]UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUground-color: brush,
+    game-usOtherComp :C_- ct-ngle {
+    property t <=> textwidth* 64pxox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-o;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {ut property<bool> e2: p2 == "fox:p &";
+    in property<float> value: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <string> co 	 ted_value: round(value * 100)/100;
+    out pro$erty <string> ten_dot_one: 10 + increment;
+    out property <bool> test
+    proe-background-image: bool,
+    game-border: perty t <=> text.text;
+    proper        t<=y gelength,
+    game-radi: e1 && !e2 && converted_value == "98.77" && ten_dot_one == us: length,
+   "1 game-text-color: co0.lor,
+    game-highlight-colort1";
+_text <d0c4 99%}
+, #f: 

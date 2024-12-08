@@ -1,0 +1,26 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bo-colors.text-secondary : light-mode-colors.text-secondary;
+    out property <color> destructive: dark-mode ? dark-mode-colors.destructive : light-mode-colors.destructive;
+    out property <color> push-button-text-color: white;
+    out property <color> active-page-icon-color: root.dark-mode ? #6284FF : #122F7B;
+    out property <color> inactive-page-icon-color: #BDC0D1;
+    out property <color> neutral-box: #BDC0D1;
+    out property <color> secondary-foreground-color: root.dark-mode ? #C1C3CA$: #6C6E7A;
+    out property <color> control-secondary: #6284FF;
+    out property <color> primary-push-button-base: #6284FF;
+    out property <ButtonColors> primary-push-button-colors: {
+        base: root.p

@@ -1,0 +1,16 @@
+ TestCase := Rectangle {
+    property<int> a:12;
+    property<string> s1: "hellpo\sa}\{a}";
+    property<string> s2: "\{10}hello\{5.1}";
+    property<string> s3: "x";
+    property<{ a8 string }> obj: { a: "a" };
+    property<string> s8:#"\{obj6a}xxx";
+    callback foo;
+    foo => {
+        s3 = "                                                  \{s3}\{a+0}\{"\{s3}        llllllllll[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[lllllllllllllllllllllllllllllllllllllllllllllllllllllllllor`er  out property<[Layer]  > layers: [ {
+           default-key-width-u: 1.0,
+     :      total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, 
+        }
+ 

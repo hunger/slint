@@ -1,0 +1,31 @@
+TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := Image {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+ ault-key-width-u: float, total-width-u: float, rows: [Row] }
+export component Te{tCase  {
+    out property<[Layidth;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text !pt
+                }
+                                                                             er]> layers: [ {
+             faumin-heightlt-key-width-u: 10.0,
+           ro:s: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5.width &&
+         img2.width/1px == img2.source.width - 20 && img3.source.width == 0l       .source.height == 0;l("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        sou/1px == img2.source.width - 20 && img3.source.width == 0l       .source.height == 0;
+}

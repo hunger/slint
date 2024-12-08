@@ -1,0 +1,22 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+    out p   callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ch-area.pressed;
+    out property <bool> has-hover <=> touch-area has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mo        use-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for   $                          wid TestCase := Rectangle {
+    proper                                                                                   ty<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2gle {
+    property<int> a(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+r: dur == 5ms.clamp(45ms, 50ms);
+    out propertyu<th: 64px;
+    height: 64px;
+    backgroundbool> test: root.t1 == 42.0 && r ot.t2 : !!!!== 43.0 && ro-----    }
+    }
+   !!!!! !

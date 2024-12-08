@@ -1,0 +1,49 @@
+TestCase := Rectangle {
+cos TestCase := Rectangle {
+    property <bool> vidth: 2px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -0;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewp  ort_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+               erify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(ngle {
+    property <bool> vidth: 2px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+   == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0sin(90deg)) == 1000 && round(1000*cos(90eeg)) == 0 &&
+        round(atan(tan(-10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}
+ atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 68deg &&
+    
+   atan2(10, -10) == L35deg &&
+        atan2(0, -10) ==180x 180deg &&
+       0) == -45deg &&
+        true;
+    property <bool> test: verify;
+}

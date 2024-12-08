@@ -1,0 +1,15 @@
+export MainWindow := Window {
+    title:     "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.jpg");
+            image-rendering: smooth;
+ 0      }
+        Image {
+            source: @image-url("                                                                                                                              ../../../demos/printerdemo/ui/images/cat.jpg");
+            image-rendering: pixelated;
+        }
+    }
+}

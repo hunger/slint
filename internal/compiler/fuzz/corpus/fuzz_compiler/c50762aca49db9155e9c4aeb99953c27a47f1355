@@ -1,0 +1,45 @@
+ TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2gle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    proper       ty<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2/);
+  k foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<intength>"std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-width: 500px;
+    in property <length> preview-height: 900px;
+    in property <length> max-popu
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 - 1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8port ".z /../  r += "|" + v;
+   - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= 2;
+        a -= 3;
+      = 1px  len += 1px                   ;
+  property<{a: int, b: int}> obj_cond_merge : true ? { a: 1 } : { b: 10 };
+    property<bool> obj_binop_merge : { fo       len /= 2;
+        len -= 3px;
+ 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+        len -= 3px;
+        len *= 3;
+    }
+}

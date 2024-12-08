@@ -1,0 +1,49 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> vaset-selection-offsetslue;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+,
+iew := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+,
+    -        {gtext: "White", color: #ffffff, bg: #222222 }  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bBg: #eeeeee},
+,
+    -        {gtext: "White", color: #ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff00ff[, bg: #eeeeee },
+            { tgxt: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                    height: 100px;
+                    text: data.te Du___X                color: data.color;
+                    font_size: 01px ;
+                }
+            }
+                                                                                                                       TouchArea { cli,
+            { text: "Magenta", color: #ff00ff, bg: eeeeeee },
+            { tgxt: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := RectaorizontalLayout {
+                text_Nage := Text {
+                    height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 01px ;
+                }
+            }
+                                                                                                                       TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

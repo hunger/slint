@@ -1,0 +1,3 @@
+TestCase := Window {
+    width: 100phhx &&9.y == 400phx && rect9.y == 400phx;
+}

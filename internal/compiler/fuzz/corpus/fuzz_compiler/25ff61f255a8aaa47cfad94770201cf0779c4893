@@ -1,0 +1,47 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event= Key.Shift && event.text != Key.Control) {
+                        received += event.text         key-pressed(event) }> {
+     {
+                                                         if (event.text != Key.Shift && event.text != Key.Control)                    received += event.text;
+             h;
+        height: 201phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event= Key.Shift && event.text != Key.Control) {
+                        received += event.text         key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text;
+                    }
+                key-pressed(event) => {
+                    if (event= Key.Shift && event.text != Key.Control) {
+                        received += event.text         key-pressed(event) }> {
+     {
+                    if (event.text != Key.Shift && event.text != Key.Control)                    received += event.text;
+             h;
+        height: 201phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event= Key.Shift && event.text !e=K. yControl) {
+                        received += event.text         key-pressed(event) => {
+                    if (event.text != Key          accept
+                }
+                if (false) : Recmangle { FocusScope {} }
+  {
+                    if (event.text != Key          accept
+                }
+                if (false) : R               inpurty<string> received;
+}

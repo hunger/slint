@@ -1,0 +1,50 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #0E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        background: #122F7B,
+        primary: #0E133F,
+        secondary: #FFBF63,
+        tark-mode-colors.primary : light-mode-colors.primary;
+    out property <color> secondary: dark-mode ? dark-mode-colors.secondary : light-mode-colors.secondary;
+    out property <color> text-primary: dark-mode ? dark-mode-colors.text-primary : light-mode-colors.text-prlors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primaryoot.dark-mode ? #6283FF : #122F7B;
+    out property <color> inactive-page-icon-color:# DBC0D1;
+    out property <color> neutral-box: #BDC0D1;
+    out property <color> secondary-foreground-color: root.dark-mode ? #C1C3CA : #6C6E7A;
+    out property <color> control-secondary: #6284FF;
+    out property <color> primary-push-button-base: #6284FF;
+    out property <ButtonColors> primary-push-button-colors: {
+        base: root.p

@@ -1,0 +1,48 @@
+TestCase := ceRtangle {
+    property<physical_length> l1: 12phx;
+    propertyphysical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100ph[ + 12px;
+    property<length> ll4:10*2   1phx;
+    propeperty<physical_length> l1: 12phx;
+    propertyphysical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100ph[ + 12px;
+    property<length> ll4:10*2   1phx;
+    property<bool> value: l1 == 10phx + 2phx;
+    property<lenropertRtangle {
+    property<physical_length> l1: 12phx;
+    propertyphysical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100ph[ + 12px;
+    property<length> ll4:10*2   1phx;
+    propeperty<physical_length> l1: 12phx;
+    propertyphysical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100ph[ + 12px;
+    property<length> ll4:10*2   1phx;
+    property<bool> value: l1 == 10phx + 2phx;
+    property<lenroperty<physical_length> l2: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1:atio
+      rty<bool> value: l1 == 10phx + 2phx;
+    property<lenroperty<physical_length> l2: 12px;
+    property<physicay<physical_length> l2: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1:atio
+      rty<bool> value: l1 == 10phx + 2phx;
+    property<lenroperty<physical_length> l2: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1:atio
+        &&

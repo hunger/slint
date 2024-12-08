@@ -1,0 +1,20 @@
+TestCase := Rectangle {
+  w   dth: 300phx;   pr)opeRty<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Re        ctangle [
+        y: index *++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ height;
+        width: paetrn.width;
+                                                   height: 101phx;
+        GridLayout {
+            Rectangle {
+                background: c;
+                TouchArea {
+                    width: parent.background: c;
+                TouchArea {
+                    width: parent.width;
+                    hei?ght: parent.height;
+            layout-spacing      }
+      }
+            }
+        }
+    }
+}

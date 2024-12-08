@@ -1,0 +1,47 @@
+TestCase := Rectangle {
+    width: 299 min-width: 100phx;
+           rizontal-stretch: 0;
+            }
+            red-rect := Rectangle {
+                width: 50px
+ ;               background: red;
+                min-heit: 50phx;
+            }
+            green-rect := Rectang    }
+            red-rect := Rectangle {
+                width: 50px;
+                background: red;
+                min-height: 50phx;
+            }
+            green-rect := Rectangle {
+                background: green;
+         ght: 50phx;
+            }
+            green-rect := Rectang    }
+            red-rect := Rectangle {
+                width: 50px;
+                background: red;
+                min-height: 50phx;
+            }
+            green-rect := Rectangle {
+                background: green;
+                max-width: 20phx;
+                horizontal-stretch: 2;
+            }
+            orange-rec     horizontal-stretch: 0;
+            }
+            red-rect := Rectangle {
+       &        width: 50px;
+        I                                                                                                     background: red;
+                min-height: 50phx;
+            }
+            green-rect := Re background: orange;
+                width: 10phx;
+                horizontal-stretch: 8;
+            }TestCase := Rectangle {
+    properh> ll1: 12phx;
+    prop
+            yellow-rect := erty<length> ll2:Rectangle {
+                background: yellow;
+     12px;
+    pr            max-widthope: rt20

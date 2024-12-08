@@ -1,0 +1,43 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    propbool> signal_handled;
+    test_signal => {
+         if (flock_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+                                                                                               *           r2 := Rectangle {
+           : {
+       menuBar : #29 7A7,
+       mainContent : #040404,
+       box : #00000e_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3: self.d3 / 1m    s;
+    property,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece,spa.width;
+        heimport { ComboBox } gfff= 8 unc ion ret]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]+ 2 - 50 - 2;
+    pr]]]]]]]operty<int> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]]]]]]]]]urn_object()2 - 50 - 2;
+    pr]](]]]]operty<intius: 0;
+    in-out property cing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in proper5430: issue_5430_con ? "true" : "false";
+    out property<bool> test: { retu        2 == value && issue_5430<int> unty&ped_d4: self.d4 / 1ms;
+    prop00ms;
+    propbool> signal_handled;
+    e"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1mshorizontaperty<int> 

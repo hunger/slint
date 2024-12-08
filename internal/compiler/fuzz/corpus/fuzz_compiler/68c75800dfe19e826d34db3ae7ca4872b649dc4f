@@ -1,0 +1,59 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColmax-popup-hmode-colors: {
+        background: #FFFFFF,
+        primary: #0E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+        text-OtherComp :C_- ct-ngle {
+    property twidth* 65px;
+    height: 64px;
+    /*ckground: #2360eas;TestCase62b;
+    Grid*************************************** in property <bool> enabled: true;
+                                                                            out property <bo65px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {
+    pr     wrap: word-wrap;
+        color: green;
+        select  x: ion-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: blacoperty t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width*       64p  propert<=y get_text <d0c4 9964px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {
+    property t <=> text.te i  nheOtherComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 9therComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #sefad]#####export component TestCase i  nherits Window {
+    width* 64pxcondary: #6284FF,
+        destructive: #FF3B30,
+                          };
+    property <ModeColors>;
+    height dark-mode-colors: {
+ : 64px;

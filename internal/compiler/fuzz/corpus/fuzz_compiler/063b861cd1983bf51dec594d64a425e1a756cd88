@@ -1,0 +1,20 @@
+TestCase := Rectangle {
+b    animate background {
+ 
+ -}
+O________________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O______________ background {
+ 
+ -}
+O______________________________________________________________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO__________________UOOOOOOOOO}________________________________@__________OOOOOOORectangle {
+b    animate background {
+ 
+ -}
+O______________________________________________________________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O________________________________UOOOOOOOOO}

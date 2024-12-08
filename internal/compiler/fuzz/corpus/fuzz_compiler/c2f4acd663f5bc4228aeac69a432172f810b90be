@@ -1,0 +1,52 @@
+export component TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-oletter-spacing           chain-c;
+    changed chain-c C> { chain-b += 0; }
+    property <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> Chain-g;
+ M  changed chain-g => { chain-f += 2; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    propertybbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-cXC> { chain-b += 2; }
+    property <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string                 > p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+     <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> Chain-g;
+ M  changed chain-g => { chain-f += 2; }
+    property <int> chain-h;
+    changed chain-h => { chain-g> chain-h;
+    changed chain-h => { chain-g += 1; }
+    propertybbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-outproperty <int> chain- 
+d;
+    changed c> chain-g;
+ M  changed chain-g => { chain-f += 2; }
+ nverted_ += 1; }
+    propertybbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-outproperty <int> chain- 
+d;
+    changed c> chain-g;
+ M  changed chain-g => { chain-f += 2; }
+ nverted_value == "98.77" && ten_dot_one == "11.1";
+}

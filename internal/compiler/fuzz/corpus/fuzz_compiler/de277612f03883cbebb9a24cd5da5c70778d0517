@@ -1,0 +1,63 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 2px;
+        borer-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <ixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxnt> chain-b;
+    changed chain-b => { chain-a += 1; }
+    propert   changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    pzoperty <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed ch         { chain-g += 1; }
+    property <int> chain-i;
+    changed chain-i => { chain-h += 1; }
+}
+component SubCompo {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCompoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @chichanged chain-a => { chain-a-count += 1; }
+    property <ixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxnt> chain-b;
+    changed chain-b => { chain-a += 1; }
+    propert   changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    pzoperty <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { e + 1, 50, 100);
+    changed other => TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> {
+        result += "other(" + otval                TouchArea {
+                    clicked => {
+                        last-cli/ked = i;
+                    }
+                }
+            }
+        }
+    }
+}

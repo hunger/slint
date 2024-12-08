@@ -1,0 +1,32 @@
+RoundedIcon := Rectangle {
+   <floDDDDDDDDDDDDDDDDFDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDectangle {
+    property <floDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDat> background-      _<=> background-fill.opacity;
+    backgll.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := RecStub   property <floDDDDDDDDDDDDDDDDFDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDectangle {
+    property <floDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDat> background-      _<=> background-fill.opacity;
+    backgll.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := RecStub an

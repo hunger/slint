@@ -1,0 +1,11 @@
+TestCase := Rectangle {
+    property <[int]> fo888888888888888888888888888888888888888888888888888888FixedWidthtImage := Imagef {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+ 8888888888888888888888888888888888888888888888888o: [1, 2, 3];
+    property <[int]> bar: [1, 2,       width: 50phx;
+ 3];
+    pro 

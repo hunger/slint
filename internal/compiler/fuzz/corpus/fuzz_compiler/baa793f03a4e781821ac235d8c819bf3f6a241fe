@@ -1,0 +1,18 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* ------------------------------------------------------------------------*------------------------------------------10) == 0deg &&
+        atan2(10, 10) ==yyyyy45deg))/0.1deg) ==    &&
+        atan2(0, 0) == 0 &&
+        atan2(0, -------------------------------------------------------------------------------------------------------------------------------10) == 0deg &&
+        atan2(10, 10) ==yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiyyyyyyyyyy                                             .                                       yyyyyyyyyyyyyyyyyyyyy      atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}

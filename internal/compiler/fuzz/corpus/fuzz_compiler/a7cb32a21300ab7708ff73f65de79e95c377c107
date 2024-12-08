@@ -1,0 +1,8 @@
+import "../d-height: 100phx;
+    default-font-family: "Nrdemo/ui/fonts/NotoSans-Regular.ttf";
+import "../../../demos/printerdemo/ui/fonts/NotoSans-B  d.ttf";
+TestCase := Window {
+    prefer-ewrdidth: 100phx;
+    preferred-height: 100phx;
+    default-font-family: "Noto Sans";
+}

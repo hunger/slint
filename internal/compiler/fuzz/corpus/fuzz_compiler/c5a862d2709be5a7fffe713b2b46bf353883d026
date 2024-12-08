@@ -1,0 +1,8 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general<bool> test: e1 && !e2 &$ converted_valuebackg98.77" &&shadow-blur: 20px;
+        background: Palette.info-background;
+        border-radius: Measurements.tile-radius;
+        @children
+    }
+}

@@ -1,0 +1,37 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward/focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+        y: 0;
+         <=> d.o;
+    prop                                         alternate-backgrou                  [                        erty <bool> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=>r-position-byte-offset: 16;{
+        anchor-position-byte-offset: 13;
+    }
+}

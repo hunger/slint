@@ -1,0 +1,31 @@
+Foo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(int) -> int;
+        hallo(a) => { return
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-ou4 property<bool> e2: p2 == "fox:p &";
+    in property<float> ring> converted_value: round(value * 100)/100;
+    out property <string> ten_dot_ene: 1 a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }
+    foo2 := Foo {
+        clicked => { debug(42) }
+    }
+    property <bool> test: foo1_alias(100) == 122 && foo2_alias(100) == 188;
+}

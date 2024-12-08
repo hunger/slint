@@ -1,0 +1,34 @@
+Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animatRoundedIcon := Rectangle {
+    property <floDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDectangle {
+    property <floDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD    DDDDDDDDDDDDDDDDDDDDDDDDat> background-opacity <=> background-fill.opacity;
+    background-fill := Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;e opacity { 
+    }
+    property <float> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := RecStub aduration: 1s; }
+        background: green;
+    }
+}
+TeAdering: smooth;ng: smooth;
+        }
+        Image {
+            source: @imal <=> s.child_opacity;
+    s := Sub {}n
+}

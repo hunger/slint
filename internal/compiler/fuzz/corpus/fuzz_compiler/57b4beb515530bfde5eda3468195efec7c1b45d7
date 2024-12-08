@@ -1,0 +1,59 @@
+import { ListView } from "{td-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-coler: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    he ght: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-heig5t: 2close-on-cli5phx;
+    property <length> listv   R _C9> lv.vgth,
+}
+struct Theme  {
+    n  piece-trot,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    ame: string,
+    window-background-color: brush,
+     game-background-color: brusH,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radiuse-background-image: booi,
+    galor-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    pieme-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,horizontal-a,,,,,,,,,,,,xt-color-0: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-foniewport_y;
+  round-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2
+    in property <color> checked-color;
+    im property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         c      last-clicked = i;
+          ,            }
+                }
+                   last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

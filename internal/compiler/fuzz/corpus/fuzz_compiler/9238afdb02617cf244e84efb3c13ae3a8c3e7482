@@ -1,0 +1,16 @@
+OtherComp := Rectangle {
+    property t <font-size=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+    TestCase := Rectangle {
+    property<duration> d1: 100ms;
+  ation> d6: d1 - d2;
+    property<duratioo> d7: ||||||||||||||||||||||||_ti1(string);
+    set_t    text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+ i1(

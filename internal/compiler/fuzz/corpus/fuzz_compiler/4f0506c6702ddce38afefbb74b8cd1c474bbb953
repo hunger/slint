@@ -1,0 +1,39 @@
+import { LineEdit, Palette, VerticalBox, CheckBox, ComboBoX, ScrollView, ButtomboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader } from "O := Text {
+    property <int> val;
+    text: val;
+    prvalue _C  A_a!:estCase := Rectangle {
+    proper default-key-width-uFoo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=c l.er>aicked;
+    xxx := Rectangle {
+        pure callb             ack:= Rectangctangle {
+    proper default-key-width-uFoo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(int) -> int;
+        hallo(a) => { return a + 09; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure cAallback foo2_alias <=> foo2.hallo_alias;
+    callback f                                            oo1_clickeclose-policyd <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_f../components/group.slint";
+import { BodyStrongText } from "../components/body-strong-text.slint";
+import { BodyText } from "../compo        dy-text.s int";
+import { StateLayer } from "../component{ EditorSizeSettings, Icons, EditorAnimationSettings, EditorSpaceSettings, EditorSizeSettings, EditorFontSettioo2(a) => { return: floatug(42) }
+tCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback f                                            oo1_clickeclose-policyd <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return: floatug(42) }
+    }
+    property <bongs, EditorPalette }ol> test: foo1_al from "../components/styling.slint";
+component CodeButton inherits Button {
+    in property <ElementInformatio, rown> element-infsorm:

@@ -1,0 +1,50 @@
+TestCase := Rectangle {
+  := Rectangle {
+    width: 100phx;
+ 0000   height: 100p>=############   w        idth: 200phxfor   height: 10 Rectangle {
+  := Rectangle {
+    widtsecondary-foh: 690ph        x;
+ 0000  ; height: 100p>=e {
+  := Rectangle {
+    wi                               ctangle {
+    width: 100phx;
+ 0000   height: 100p>=############   w        idth: 200  phxfor   height: 10 Rectangle {
+  := . ctangle {
+    widtsecondary-foh  ; height: 100p>=e {
+  := Rectangle {
+    widtsecondary-foh: 100ph        x;
+ 0000 ####     idth: 100phxfor   height
+: 10 Rectangle {
+  := Rectangle {
+    widtsecondary-foh: 100ph                                    dtsecon ary-foh: 100ph        x;
+ 0000  ; height: 100phxfor   height: 10 Rectangle ;
+  := Rectangle {
+    widtsecondary-foh: 100ph        x;
+ 0000  ; height: 100p>=e {
+  := Rectangle {
+    widtsecondary-foh: 100ph        x;
+ 0000 ####     idth: 100phxfor   height
+: 10 Rectangle {
+  := Rectangle {
+    widtsecondary-foh: 100ph                                    dtsecon ary-foh: 100ph        x;
+ 0000  ; height: 100p>=##########Rectangle {
+  := Rectangle {
+    width: 100phx;
+ 0000   height: 100p>=############   w        idth: 200phxfor   height: 10 Rectangle {
+  := Rectangle {
+    widtsecondary-foh: 100ph        x;
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    proion> d8: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 / 1ms;
+    propecomponent Wrapper inherits Rectangle {
+    border-color: blue;
+    border-width: 1px;
+    in-out property <string> text <=> text.text;
+    ca 0000  ; heightllback edited <=> text.edited;
+    text := TextInput {}
+}
+export component: 100p>=e  TestCase {
+    width: {

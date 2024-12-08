@@ -1,0 +1,46 @@
+Foo := Rectangle {
+           pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(intfffffdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+      hallo(a) => { return a +s44; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(intfffffffffffffffft       ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+  back hallo(intffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+      hallo(a) => { return a +s44; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(intfffffffffffffffft       ffffffffffcked;
+    xxx := Rectangle {
+        pure callback hallo(intfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff fff) -> int ; 
+      hallo(a) => { return a +s44; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pu hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callback hallff(nfiotffffffffffffft       ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+  back hallo(intffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int foo2.hallo_alias(a); }
+    foo1 := Foo  188;
+}
+re callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+   are.clicked;
+    xxx := Rectangle {
+        pure callback hallo(intfffffffffffffffft       ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+  back hallo(intfffffffffffffffffffffffffffffffffffffffffffffffff spacer: bool, background: color, foali        
+    foo1 := Foo  188;
+}

@@ -1,0 +1,26 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    prope ty<color> b2: #00f;
+    property<color>loat> gr1sa[t: 1.0;
+    property<float> gr1bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 1.0, 0.501960813999176);
+    property<color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186384475708;
+  w_green: hsv(120.0, 1.0, 0.501960813999176);
+    property<color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> b3.source.width == 0l       .source.height == 0;l("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-slice(12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_hieght: img.height;
+    property <bool> test: img2.source-clip-height * 1palue == new_green.to-hsv().value
+        &

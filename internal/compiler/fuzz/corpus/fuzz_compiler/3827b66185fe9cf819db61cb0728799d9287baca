@@ -1,0 +1,10 @@
+TestCase := ceRtangle {
+    property<physical_length> l1: 12phx;
+    pr  operty<physical_length> l2: 12px;
+    property<physical_length> l3: 100p!x + 12px;
+    property<physical_length> l4: 120 * 1p        property<length> ll1: 12p  Du___Xproperty<length> ll2: 12px;
+    property<length> ll3: 100p,h[ + 12px;
+    property<length> ll4: 120 * 1phx;
+ 2phx) * 5px) / ratio
+        && l1*l2 ph                                                          x && value;
+}

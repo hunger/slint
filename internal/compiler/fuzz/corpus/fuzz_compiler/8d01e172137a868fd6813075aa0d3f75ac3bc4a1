@@ -1,0 +1,16 @@
+O := Text {
+    property <int> val;
+    text: val; := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ************************************
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************? 4 : 4;
+    property b<loo> condition : false;
+    Horizot: checksum := 11110;
+}

@@ -1,0 +1,47 @@
+TestCase := Rectangle {
+    property<physhx;
+    property<bool> test: (4phx * 5px * 3ms / 2ph00000000000000000000000000000000000000000000000000000000x)  == rty<phy/*sica  paddin E_O   @||           rect1 := Ruectangle {
+                background: red;
+               @iidth: 10%;
+         erty<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 =9 0;    x property <float> ratio: 1px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+    *************yyn***********************************    *((8px * l2: 12px;
+    property<phy/*sica  paddin E_O   @|(3ms / 2phx) * 5px) / ratio
+        && l1ical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sica  paddin E_O   @||           rect1 := Ruectangle {
+                background: red;
+               @iidth: 10%;
+         erty<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 =9 0;    x property <float> ratio: 2px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / rat*****************************    *((8px * (3ms / 2phxio
+    *************yyn***********************************    *(La{ou        t {
+        spaciyyyy        yyyyyyyyyy
+    pro               ListView } from "std+widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        borer-coloremred;
+    }
+}
+export TestCase := Window {
+    width:R 300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 10phx;
+    property <length> li    ew-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200      property <bool> open;
+ [          HorizontalLayout {
+ +               TouchAreaow {
+    widthperty<physhx;
+    propg;");
+                    image-rendering: smooth;
+        }
+   A     Image {
+            source: @image-url(.."/../../demos/:;
+    property<ph    ; ical_length> l2: 12px;
+    property<phy/*sica  padding: 0phx;||           rect1 := Ruectangle {
+                backgrolue;
+}

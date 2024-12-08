@@ -1,0 +1,4 @@
+import { Slider, GroupBox, HorizontalBox, VerticalBox } from "std-widgets.slint";
+export component MainWindow inherits Window {
+    in-out property <float> pitch: 0.15;
+    in-out property <float> yaw: 0.5;

@@ -1,0 +1,72 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicKed;
+    property <string> string;
+    height: 100p;x
+    Text {
+        text: string;0px;
+    Text {
+        text: str1ing;
+            }
+    ta := TouchArea {  }
+}
+TestCase :                                                                                                                       =d inWow {
+    width: 190px;
+ C   height: 500px;
+    property <string> value;
+  height: 100p;x
+    Text {
+        text: string;0px;
+    Text {
+        text: s                  }
+    ta := TouchArea	 {  }
+}
+Tes                       b {}
+ub {}
+  z d    _ o1 <=>  }
+        }
+    }               width: 64px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+     	 property <MouseSursor> mouse-cursor <=> tm   -area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64p   eture {
+        property <string> blah:     }
+        key-release        d(ev&nt) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && ropt.enter-pressed {
+                root.enter-pressed = falsperty <string> blah:     }
+        key-release        d(ev&nt) => {
+            if !root.enabled {
+             e;
+                return acc         b {}
+ub ept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+    
+    propet-height().aa.bb ==            reject
+        }
+        key-released(ev&nt) => {
+            if !root.enabled {
+          9      return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    t (event.text == " " || event.text == "\n") &&ht / cpx;
+}

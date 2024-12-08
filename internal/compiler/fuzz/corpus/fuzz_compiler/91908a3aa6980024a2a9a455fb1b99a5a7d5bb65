@@ -1,0 +1,40 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+struct TileData {
+    image: image,
+    image_visible: bool,
+    solved: bool,
+}
+component MemoryTile inherits Rectangle {
+    cage,
+    image_visible: bool,
+    solved: bool,
+}
+component MemoryTile inherits Rectangle {
+    callback clicked;
+    in property <bool> open_curtain;
+    in propert 64px;
+    icons/video.png") },
+    ];e> icon;
+    height: 64px;
+    width: 64px;J    icons/video.png") },
+    ];
+    for tile[i] in memory_tiles : MemoryTile {
+        x: mod())))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))i, 2) * 74px;
+        y: floor(i / llback clicked;
+    in property <bool> open_curtain;
+    in propert 64px;
+    icons/video.png") },
+    ];e> icon;
+    height: 64px;
+    width: 64px;J    icons/video.png") },
+    ];
+    for tile[i] in memory_tiles : MemoryTile {
+        x: mod())))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))i, 2) * 74px;
+        y: floor(i /      74px;
+        width: 64px;
+        height: 64px;
+        icon: tile.image;
+        open_curtain: tile.image_visible || tile.solved;
+        solved: tile.solved;
+        w    clickied 

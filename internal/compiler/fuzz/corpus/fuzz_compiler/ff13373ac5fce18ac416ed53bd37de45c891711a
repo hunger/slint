@@ -1,0 +1,39 @@
+import { LineEdit } from "std-wi?gets.sli        nt";
+export component TestCase inherits Window {
+         le.focus();
+    }
+    callback focus_the_focus_scoputInterfacdow {
+    callback lback focus_the_focus_scope;
+ r          focus_the_focus_scope => { 
+        TextInputInterface.text-input-focuthe_line_edit;
+    focus_the_linehe_line_edit => {
+        le.focus();
+    }
+    callback focus_the_focus_scoputInt => { 
+        TextInputInterface.text-input-focuthe_line_edit;
+    focus_the_line_edit => {
+        le.focus();
+    }
+    callback focus_the_focus_scoputInterfacdow {
+    callback lback focus_the_focus_scope;
+ r          focus_the_focus_scope => { 
+        TextInputInterface.text-input-focuthe_line_edit;
+    focus_the_line_edit => {
+        le.focus();
+    }
+    callback focus_the_focus_scoputInt => { 
+        TextInputInterface.text-input-focuthe_line_edit;
+    focus_the_line_edit => {
+        le.focus();
+    }
+    callback focus_the_focus_scoputInterfacdow {
+    callback focus_the_line_edit;
+    focus_the_line_edi{
+        le.focus();
+    }
+    callback focusfocus_the_line_edit;
+    focus_the_line_edi{
+        le.focus();
+    }
+    callback focus_the_focus_scoputInterface.text-input-focused;
+}

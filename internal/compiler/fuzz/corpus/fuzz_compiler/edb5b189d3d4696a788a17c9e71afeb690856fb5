@@ -1,0 +1,60 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    t  a /= ty<int> t2: 4 + 3 *   /*operty<int> t3      10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - * 30 -!1;
+    /*operty<int> t3      10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 -  ;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    /*operty<int> t3              :erty<int> t2: 500 / se  {
+    in pr2 * 30 -!1;
+    proper2;
+    callback foo;
+    foo => {
+        a += +8;
+       tView {
+        for i in 200: r := Item rce: @imal <=> s.child_opacity;
+    s :{
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+     re callback hallo_alias k call_foo2(int) -> int;
+    c2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo2 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+       e callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug  hallo_alias
+    pure callback foo9_alias <=> foo1.hal        ;
+    pure callback foo2_alias <=> foo2.hallo                   if (open) {
+                            r.height = item-height;
+            5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10; 
+       a /:= ListView {
+        for i in 200: r := Item rce: @imal <=> s.child_opacity;
+    s :{
+            index: i;
+            height: item-height;
+            property <bool> open;
+KKKKKKKKKKKKKKKKKKKKK                }
+            }
+        }
+    }
+}

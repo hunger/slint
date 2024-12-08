@@ -1,0 +1,64 @@
+                                                                                                                                TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1layout-padding }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value: 10, },
+            ] : Rectangle {
+                z: 78;
+                background: i.color;
+                TouchArea {
+                    clicked => {
+                          root.value = i.value;
+                    }                 }
+            }
+            TouchArea {
+                clicked => { touch_error+=5 }
+            }
+            TouchArea {
+                z: 4;
+                clicked => { touch_error+=8 }
+            }
+        }
+        Rectangle {
+            background: pink;
+            z: -43;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            TouchArea {
+                clicked => { touch_error+=180 }
+            }
+            TouchArea {
+                clicked => {
+                debug("HI");
+                 touch1+=1
+                }
+            }
+            TouchArea {
+                z: -1;
+                clicked => { touch_error+=12 }
+            }
+        }
+    }
+}

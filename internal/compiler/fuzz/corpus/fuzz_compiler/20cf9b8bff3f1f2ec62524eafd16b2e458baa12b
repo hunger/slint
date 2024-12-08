@@ -1,0 +1,25 @@
+import { Palette } from "std-wi       Oint";
+import "../assets3weathericons-font.ttf";
+export global AppPalette {
+    pacer: bool, borderound: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ {VTable {}
+export component TestCase  {
+    in property <Default> def: Default.b;
+    out property <BoxLayoutData> blt: { layout: 11phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 45s; }
+    out property <bool> test: slint.ssh.svg");
+    out property <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svgeathericons-font.ttf";
+export global AppPalette {e-url("../assets/icons/xmark.svg");
+}

@@ -1,0 +1,53 @@
+TestCase := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px<
+        cursor-position-byte-offset: 3;
+        ancsoph-oirtion-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width /transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-bytengle {
+    min-height: max(32px, l.min-height);
+    l := HorizontalLayout {
+        if (false): button_in_image := Image {
+            width: 24px;
+    {
+    x := HorizontalLayout {
+        btn := Btn {port Btn := Rectangle {
+    min-height: m   property <int> a:"other;
+    property <int> other: 5;
+}
+Te       property <iperty <import { Button } from "sportd-widgets.slint"t perty <-offset: 3;
+        ancsoph-oirtion-byte-offset: 13;
+    }
+    TextInput {
+                                                                                                                                    x: parent.width / 2;
+        width: 50%;
+        y: 0;
+        text: "666666666666666666666666666666666666666666666666      x: parent.width /transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-bytengle {
+    min-height: max(32px, l.min-height);
+    l := HorizontalLayout {
+        if (false): button_in_image := Image {
+            width: 24px;
+    {
+666666666666666666666666666666666666666666666666666666666666666666666666666fiifiifiifiifiifiifiifiifiiTest := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacing":                                                           27px;
+   ;     R
+ 

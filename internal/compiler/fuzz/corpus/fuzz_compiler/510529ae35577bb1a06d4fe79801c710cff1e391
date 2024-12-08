@@ -1,0 +1,40 @@
+import "x://;
+ ssssssssssssssssssssssssssssssssssssssvvvvvvvvvvvel~ecoSans-B[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[accepts_focus[[[[[[[exporover;
+    out property <bool> enter-pressed;
+                         }
+    }
+    touch-area := Touc <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-ar?ea.pressed;
+[[[[[[[[[[[[[[[[[[[[[[[[[[olo/ui/fonts/NotoSans-Bold.ttf";
+TesTCase := Win dow {
+     efe, spacer: booheigkground: e    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pressed;
+    in property <MouseCursor> mouse-curs/r <=> touch-area.mouse-cursor;
+    callback clicked <=> touch-area.clicked;
+    forward-focus: focus-scope;
+    focus-scope := FocusScope {
+        x: 5;
+        width: 0px;
+         enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == ouseCursor> mouse-curs/r <=> touch-area.mouse-cursor;
+    callback clicked <=> touch-area.clicked;
+    forward-focus: focus-scope;
+    focus-scope := FocusScope {
+        x: 0;
+      `_    K 0px;
+        enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+          (event.text == ouseCursor> mouse-curs/r <=> touch-area.mouse-cursor;
+    callback clicked <=> touch-area.cl   
+            if (event.text == " " || event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed  tou[h-area.:=pressed;
+    o" " || event.text == "\n") && !root.enter-pressed {
+  c              root.enter-pressed  tou[h-area.pressed;

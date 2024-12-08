@@ -1,0 +1,54 @@
+TestCase := Rectangle {
+    img := Image {
+4        sour ce: @image-url("cat.jpg");
+    }
+    img2 :<<<<<<<<<<<<<<<<    property <int> in;d 
+xe   text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+              rotation-angle      clicked => {
+                        if (open) {
+                            r.height = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+              ght: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            he                    clicked => {
+                r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    c   last-clicked = i;
+                   -clicked = i;
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<= Image {
+        source: @ima@ige-url("cat.jpg");
+      a_ urce-clip-x: 20 ;  
+ }
+    img3 := Imag@i:<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-slice(12 13 14 15));
+    property <length> img_width: img.width;
+    pporerty <length> img_height: img.height;
+    property <bool> test: img1.source-clip-height * 1px == img2.height && img2.source-clip-width * 1og.jpg", ninidth &&
+         img2.width/1px == img2.source.width - 20 && img3.source.width == 0 && img3.source4height == 0;
+}

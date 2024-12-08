@@ -1,0 +1,38 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for cstCase := Rectangle {
+    width:    600phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+       
+    property<int> value: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN[[[[[[[[[[[[[[f0n_b0, #00f, #0a0]: Rectangle {
+        y:          property<int> value: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[    [[[[[[[[[[[[[[[[[[[[[2[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+        y: indef, #0a0]: Retangle    J   }
+       [index] in [#[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+       
+    property<int> value: 1;
+    for c[index] in [#@@@@@@@@@@@@@@@@[[[[[[[[[[[[[[[[[[[[[7[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+        y:          property<int> value: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[    [[[[[[[[[[[[[[[[[[[[[2[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+        y: indef, #0a0]: Retangle {
+    width2 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in     checked                                [[[[[[[[[[[[7[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+        y:          property<int> value: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[    [[[[[[[[[[[[[[[[[[[[[2[[[[[[[[[[[[[[[[[[[                          width: parent.wh 
+d ;ti      hihegtA 050             Gridth;
+                    height: parent.height;
+             K       clicked => {
+                        value  += 1; }
+    pro                     }  
+               }
+        J   }
+        }
+    }
+}

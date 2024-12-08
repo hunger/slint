@@ -1,0 +1,6 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u& !e2 && converted_value == "98.77" && ten_dot_one == "10.1";
+}

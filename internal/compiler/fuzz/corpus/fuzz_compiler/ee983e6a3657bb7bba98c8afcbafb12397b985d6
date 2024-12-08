@@ -1,0 +1,39 @@
+TestCase := Rectangle {
+    property<export component SampleComponent inherits Window {
+    in-out property<int> counter;
+    in-out przoperty<string> user_name;
+    callback hello;
+    public function do-something(x: int) -> bool { return bject().aa.-0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+                                                                                               *                                         *           r2 := Rectangle {
+           : {
+       menuBar : #29 7A component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out pr7operty<float> t2: cos(180deg);
+    out property out property<bool> test: struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-    s: [KeySlot], }
+struct Layer { default-key-width-u: float, total-wKeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer_name;
+    callback hello;
+    public function do-something(x: int) -> bool { return bject().aa.-0.5s / 2 *                          ectangle {
+        width: self.preferred-width;
+                                                                                               *                                         *           r2 := Rectangle {
+           : {
+       menuBar : #29 7A component TestCase inherits Windows()    .0).ab)))))))))))px;&& 90deg.cos().a,
+    ];
+    out property <bool> test: array[2][1].b bs() < 0.000001;
+}
+== "ok" && layers[0].rows[0].key-slots[1].spacer;
+}
+r> checked-color;
+    in proper5430: issue_5430_con ? "true" : "false";
+    out property<bool> test: { retu        2 == value && issue_5430<int> unty&ped_d4: self.d4 / 1ms;
+    prop00ms;
+    propbool> signal_handled;
+    e"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1mshorizontaperty<int> 

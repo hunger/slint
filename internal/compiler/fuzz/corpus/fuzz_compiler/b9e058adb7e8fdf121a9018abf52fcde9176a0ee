@@ -1,0 +1,38 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text_alias_indirection;
+        property  TestCase := Rectangle {
+    prope y<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2gle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2/);
+  k foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    properInner := Rectangle {
+    property <percent> val;
+    background: val < 50% ? red : blue;
+}
+Outer := VerticalLayout {
+    prot    ext_alias_indirection ;
+    }
+    out property <bool> ok: r.2sepertze: length, }
+struct Row { key-slots: [KeySlot]ool, background: color, font-sizet_t: length, }i2(a

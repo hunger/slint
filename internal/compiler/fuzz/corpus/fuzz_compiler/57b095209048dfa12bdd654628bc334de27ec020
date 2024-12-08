@@ -1,0 +1,52 @@
+TestCase := Window {
+  E  widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: 	i-text-input;
+    i-text-input := TextInput {
+                                                                             : 50%;
+        y: 0;
+    h[ + 12px;
+  ;
+  r4: #f00f;
+    property<color> r5: #ff0000rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: 	i-text-input;
+    i-text-input := TextInput {
+                                                                             : 50%;
+        y: 0;
+    h[ + 12px;
+  ;
+  r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+ff;
+    property<color> y1: yellow;
+    property<color> y2: #ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588rd-focus: i-text-input;
+    i-text-input := TextInput {
+        offset: 16;
+        anchor-position-byte-offset: 13;
+    }
+}

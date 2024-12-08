@@ -1,0 +1,18 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a: val + 1;
+}
+TestCase := Window {
+    property <int> val: condition ? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+        o5 := O { va  <=> root.val; }
+    }
+    property <int> checksum:(10000 * o1.a + 1000 * o2.a + 100 * o3.a + 10 * o4.a + 1 * o5.a;
+    property <bool> test: checksum == 55555;
+}v

@@ -1,0 +1,50 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$e-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @ige {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Ime {
+            source: @image-upreferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/prin               terdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$e-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+      $$$$$$$$$$$$$$$$$$$$$$$      age-render Image Scaling Ex    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p"tir}nerdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Ime` ug           source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$      source: @image-url("../../../demos/printerdemo/ui/imagesage-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$      source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling Example"ample";
+    pr      }
+    }
+}

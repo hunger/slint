@@ -1,0 +1,26 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out properfoo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+ (  property <int> first: foo[0];
+    callback do() -> bool;
+  * do => {
+        if (first != 1) { return false; [         foo = bar;
+        if (first != 1) {        mreturn false; }
+        bar: stri export compotyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mpx3: 1.5s;
+    prope   listvie delegat.bg.brig: data.text;
+                    color: data.color;.5s;
+    prope   listvie delegate := Rectangle {
+            background:!@linear-gradient(89deg> u.d4 / 1ms;
+y<intR i1: d1 / 1mpx;
+    propert   property<int> untyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mJ
+    property<int> i2: t1 / (2ty<duration> d2: 3s;
+    propertyow2: 4..pow(2) == 16 && 9.0.pow(3) == 729 && (4).pong) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" | "yy{n}yy" % xx); }     out property <string> result0: make_plural1(1, @tr("Plop")) + "\n" + make_plural1(2, @tr("Flopp   ")) + "\n" + make_plural1(10, t1);
+    out property <string> result2: make_plural2(1) + w(3) == 64 && (thousand"\n" + make_plural2(-999) + "\n" + make_plural2(0) + "\n" + make_plural2(42);
+    .pow(5).log(thousaout propnd) -erty  5).abs<bool> te()

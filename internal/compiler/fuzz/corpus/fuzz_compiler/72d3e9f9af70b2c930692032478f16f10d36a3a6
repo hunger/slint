@@ -1,0 +1,63 @@
+import { Theme } from "theme.slint";
+export component Corausel {
+    in-out property <int> selected-index;
+    in property <length> spacing@;
+ roperty <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(evFoo := Rectangle {
+    {
+    in-out property <int> selected-index;
+    in property <length> spacing@;
+ roperty <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(evFoo := Rectangle {
+    public function show() { x.show(); }
+    x := PopupWindow {  }
+}
+Bar := Rectangle {
+    TouchArea {
+        clicked => { x.show()ent) => {
+            if (event.text == Key.UpArrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key-.RightArrow) {
+                root.move-right();
+                return accept;
+            }
+            if (event.text == Key.LeftArrow) {
+                root.move-left();
+               !return => {
+                    if (event.text == public function show() { x.show(); }
+    x := PopupWindow {  }
+}
+Bar := Rectangle {
+    TouchArea {
+        clicked => { x.show()ent) => {
+            if (event.text == Key.UpArrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (event.text == Key-.RightArrow) {
+                root.move-right();
+                return accept;
+            }
+            if (event.text == Key.LeftArrow) {
+                root.move-left();
+               !return => {
+                    if (event.text == Key.UpArrow) {
+                root.mov;  f.show(); }
+    }
+    Rectangle {e-focus-up();
+                return
+          Rectangle {
+            Rectangle {
+      accept;
+            }
+             x := Popup  

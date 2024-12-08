@@ -1,0 +1,77 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback seco    callback call_foo1(int) -> int;
+    call_]oo2(a) => { return foo2.hal {_alias(a); }
+    foo1 := Foo {
+      
+    foo2 := Foo {
+        clicked => { debug(42) }
+    }
+    property k call_foo2(int) -> int;
+    call_]oo2(a) => { return foo0.hal {_nd_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_went: false;UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUEUU
+	public function show(second: bool) {
+count;
+	
+	callback first_reached;
+	callback seco    callback call_foo1(int) -> int;
+    call_]oo2(a) => { return foo2.hal {_alias(a); }
+    foo1 := Foo {
+      
+    foo2 := Foo {
+        clicked => { debug(42) }
+    }
+    property k call_foo2(int) -> int;
+    call_]oo2(a) => { return foo0.hal {_nd_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_went: false;UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUEUU
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	public function close() {
+		popup.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click	       _count += 2;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!seco  nd_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCase  popup_click_count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

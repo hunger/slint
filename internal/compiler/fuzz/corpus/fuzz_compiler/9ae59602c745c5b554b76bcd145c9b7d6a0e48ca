@@ -1,0 +1,104 @@
+import { Button } from "stdmwidgets.slint";
+component PopupContainer inherits Rectangle {
+	wid	popup.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		icy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 2height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+ground: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 2height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+		up.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		icy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 2height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						firs
+		icy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: "O1pen";
+				clicked => : start;
+		HorizontalLayout {
+			Button {
+		
+	}
+}

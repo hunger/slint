@@ -1,0 +1,41 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Exampde";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg"[;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling indow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+    height: 300px;
+    if (true) : Rectangle {
+        backgroujd: black;
+        VerticalLayout {
+            Rectangle {
+                background: blue;
+                TouchArea { clicked => { last_clicked = 1; } }
+            }
+            RectanglTestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+ *  property <int> touch_error;
+    prop1erty <int> touch1;
+    p/*perty <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangl{
+  !      Ie {
+            background: orange;
+            z: 400;
+            TouchAremage {
+            source: @image-url(". a {
+/..    /

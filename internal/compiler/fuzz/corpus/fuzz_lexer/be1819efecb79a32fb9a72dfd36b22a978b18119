@@ -1,0 +1,4 @@
+TestCase := Rectangle {
+    property <TextWrap> hello: word-wrap;
+    property <bool> test: hello == TextWrap.word-wrap && hello != TextWrap.no-wrap && !(hello == TextWrap.no-wrap);
+}

@@ -1,0 +1,59 @@
+import { Button } from "std-widgets.slint";
+export component ComboBox inherits Rectangle {
+    in-out property <string> value: "aaaaaa"                                                                                                       ty<int> (t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    properm "std-widgets.slint"mponent }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+expx;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 3item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+              ght: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv :ght = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.vislength> listview-y <=> lv.viewport_y;
+    lv :ghett =i m-height;
+                            open = = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.vislength> listview-y <=> lv.viewport_y;
+    lv :ghett =i m-height;
+                            open = false;
+                        } else {
+                     ort strucd Weak {}
+export enum WindowAdaptor { Window }
+export struct WindowI{ val       lv.viewport_y = -r.y;
+                           a {
+        clicked => { result += "Root"; }
+    }
+    VerticalLayout {
+        alignment: start;
+        HorizontalLayout {
+      

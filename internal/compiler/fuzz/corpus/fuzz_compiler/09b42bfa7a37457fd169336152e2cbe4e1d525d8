@@ -1,0 +1,7 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2 component TestCase inherits Window {
+    in propertyt property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5), -4) +: @tr("Hel min(a, 0.5);
+    out property <boollo {}.", "World");
+    out property <stri> t2: round(1n0/g>4

@@ -1,0 +1,43 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+   import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-width: 500px;
+    in property <length> preview-height: 900px;
+    in property <length> max-popup-height: 900px;
+    in-out property <length> selection]x: 0px;
+    in-out property <length> iew  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {},
+            { text: "Red", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+           { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff01, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+   .focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+        TextInputInterface.text-input-focused = v;
+    }
+    le := LineE     for data in [
+            { text: "Blue", color: #0000ff, bg: #*edit {  }
+    fs :eeeee},
+        = FocusScope {          is-interactive: true,
+    { teXt: "Red", col            is-selected: false,
+            type-name: "Tor: #ff0000, bg: #eeeeee},
+            { text:ypeA",
+            file-name: "thumb.sli "Green", coln

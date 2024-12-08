@@ -1,0 +1,4 @@
+TestCase := Rectangle {
+    property<bool> tr@@@@@@@@@@@@@@@@@@@@@@@@@@@@uevar: true;
+    property<bool> falsevar: false;
+}
