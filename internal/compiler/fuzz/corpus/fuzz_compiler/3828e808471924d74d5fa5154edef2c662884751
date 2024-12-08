@@ -1,0 +1,55 @@
+TestCase := Rectangle {
+    callback test_callback(int);
+    callback test_cacutllback2(string);
+    callback test_callback3(int, string);
+    property<ilback => { callbackc    ack focus_the_focus_scope;
+    focus_the_fo_emissicus_scope => {TestCise := Rectlback test_callback2(string);
+    callback test_callback3(int, string);
+    property<ilbanput-focused = v;
+    }
+    le :=     callback test_callback(int);
+    callback test_cacutllback2(string);
+    callback test_callback3(int, string);
+    property<ilback => { callbackc    ack focus_the_focus_scope;
+    focus_the_fo_emissicus_scope => {TestCise := Rectlback test_callback2(string);
+    callback test_callback3(int, string);
+    property<ilbanput-focused = v;
+    }
+    le := LineEdit {  }
+    fs := FocusScope { }
+ tring)ck test_callback3(int, string);
+  ty<ilback => { callbackcallback focus_the_focus_scope;
+    focus_the_fo_emissicus_scope => {TestCase := Rectangle {
+    callback test_callback(int);
+    callback test_callback2(s
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+        Textnual(boolplaceholder-color(v) => {
+        TextInputInterface.text-input-focused = v;
+    }
+    le := LineEdit {  }
+    fs := FocusScope { }
+ tring)ck test_callbackLineEdit {  }
+    fs := FocusScope { }
+ tring)ck test_callback3(int, string);
+  ty<ilback => { callbackcallback focus_the_focus_scope;
+    focus_the_fo_emissicus_scope => {TestCase := Rectangle {
+    callback test_callback(int);
+    callback test_callback2(s
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+        Textnual(boolplaceholder-color(v) => {
+        TextInputInterface.text-input-focused = v;
+    }
+    le := LineEdit {  }
+    fs := FocusScope { }
+ tring)ck test_callback3(int, string);
+    property<int> import { LineEdit } from "std-widgets.slint";
+export component TestCase inherits Window {
+ c   allback    out property<bool> focon_count += 1; }
+    test_callbackfo2(xcus_the_line_edit;
+    focus_thx)e_line_ =>

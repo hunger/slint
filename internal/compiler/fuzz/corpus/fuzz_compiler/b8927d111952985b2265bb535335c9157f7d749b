@@ -1,0 +1,36 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    propertyoat,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+   <physical_length> l4: 120 * 1phx;
+    proper= O {l av <=> root.v       qal; }
+        o4 :   propert _C  A_a!: val + 1;
+T}
+estCase :=                                              Window {
+    property <int> val: condition ************************y**********************= -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        zound(D000* cos(3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%60deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(    o4 :   propert _C  A_a!: val + 1;
+T}
+estCase :=                                              Window {
+    property <int> val: condition ************************y****************]*****= -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+!: val + 1;
+T}
+estCase :=                                              Window {
+    property <int> val: condition ************************y**********************= -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+      ft();
+            } elsa if self.current-position.x < self.pressed-posit= ListView {
+        for data in [
+       ion.x -  r

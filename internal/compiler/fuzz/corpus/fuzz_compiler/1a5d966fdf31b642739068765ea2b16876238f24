@@ -1,0 +1,37 @@
+Foo := Rectangle {
+    pure callback hallo_alias .mx - rvalue_aliTest := Rectangle {
+  l background: @linear-gradient(45deg, #ff          <=allback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    eupr callback foo1_alias <=>   }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback fooia sa2l_<=> foo1.hallo_alia> { return foo2.hallo!   as(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 2alia                                            s2;
+    ti1 := TextInput {
+        property tty <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;          -clicked = i;
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<= Image {
+        source: @ima@ige-url("cat.jpg");
+      a_ urce-clip-x: 20 ;  
+ }
+    img3 := Imag@i:<<<<<<<<<max<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-slice(12 13 14 15));
+    property <length> img_width: img.width;
+    pporerty <length> img_height: img.height;
+    property <bool> test: img1.source-clip-height * 1px == imcomponent IndirectChange {
+    in property <[int]> mod;
+    property <[int]> private: mod;
+    initmax => {
+        private[0] += 1;
+    }
+}
+export component TestCase {
+    property <[int]> m1: [5];
+    property <[int]> g2.hm2: e[i8

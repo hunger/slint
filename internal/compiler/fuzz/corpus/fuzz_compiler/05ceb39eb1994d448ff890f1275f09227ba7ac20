@@ -1,0 +1,12 @@
+Sub := Rectangle {
+    property <bnol> cond;
+    property <float> child_opacityC inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opa                                                                                                                                                                                            city { du       background: g   background: green;
+  " }
+}
+Tesdering: smooth=ng: smooth;
+     uct  #ff0; forward-focus: ectangle {
+        opacity: cond ? 0 : 1 
+;       animate op

@@ -1,0 +1,9 @@
+import { TabWidget } from "std-widgets.slint";
+export ComboBox := Rectangle {
+    min-height: max(64px, l.min-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkheight);
+    l := HorizontalLayout { Text {} }
+}
+export Broken := TabWidget  {
+    t1 := Tab {
+         }
+}

@@ -1,0 +1,58 @@
+export     component FocusTouchArea {
+    in property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out propertyTestCase := Rectangle {
+     test: (layout-padding0deg.cos()VR_N.0).ab%))))))TestCase := Rectangde {
+    width: )= Rectan400phx;
+    height:     hx;
+    input1 :=gde {
+    width: 400phx;
+    height: 600phx;
+    input1 hx;
+    }
+    input2 := TextInput {
+        y: 200)))px;&&pppppppppppppppppppppppppppppppppppp: cos(90deg);
+    out property<bool> test: (0deg.cos()VR_N.0).ab%)))))))) TextInput {
+        widt:= TextInput {
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200)))px;&&pppppppppppppppppppppppppppppppppppp: cos(90deg);
+    out property<bool> test: (0deg.cos()VR_N.0).ab%)))))))) TextInput {
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200       tphx;
+        width: parent.width;
+       ?height: 200phx;                 `                                                         for string in [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    
+    }
+    input3 := TextInput {
+        y: 400phx;
+   dth;
+        he))px;&&ppppppppppight: 200phx;
+    ppppppppppppp.pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppwidth: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[in             width: parent.width;
+         th: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[in             width  peren              `__[                                                        {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

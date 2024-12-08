@@ -1,0 +1,8 @@
+export D := Window {
+    VerticalLayout {
+        for ab in 1 : Rectangle {
+            width: 100%;
+            drop-shadow-offset-x: 1px;
+        }
+    }
+}

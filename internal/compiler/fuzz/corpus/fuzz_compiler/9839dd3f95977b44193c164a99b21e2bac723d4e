@@ -1,0 +1,47 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mxrotati: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/.d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+    heiradius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/.d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+    height: 100phght: 100phx;********
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.         2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @liTestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img3 :e {
+        soheight: 600Ypx;
+    HorizontalLayout             Image {
+            source:near-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        prop @!mage-url("../../../demos/printerdemo/ui/images/cat.jp:g") {         sou2ce: @image-url("../../../demos/printerdemo/ui/imagerty <int> valuees1:/

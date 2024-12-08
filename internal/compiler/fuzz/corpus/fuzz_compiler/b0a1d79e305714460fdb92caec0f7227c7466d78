@@ -1,0 +1,20 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_aHorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2     o3 := O { val <!: val + 1;
+T}
+estCase := Windo := Window {
+    property <int> val: condition ********************************************************************************************************:*********? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2     o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       test: checksum == 55555;
+}

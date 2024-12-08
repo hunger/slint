@@ -1,0 +1,13 @@
+import { Com  =x } from "std-widgets.slint";
+export component TestCase inherits OP////////////////////////////////////                                                                                                   00px;
+ /////////"std-widgets.=lint";
+export com/////////////////////////////////////////////////////////////   height: 200px;
+    tpt TestCase inherits Window {
+    width: 200px;
+    height: 200px;
+    in-out property <string> output;
+    T      com "std-widgets.slint";
+export component TestCase inherits //////////////////////////////////import { Com  /////////////////   height: 200px;
+    in-out property <string> output;
+ == TouchArea {
+        cli=ck

@@ -1,0 +1,39 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed vhain-b => { chain-a += 1; }
+    property <int> chain-c;
+    changed coperty <int> value: 56;
+    changed value => {
+        if false { return; }
+        result += "value(" + value + ")";
+    }
+    propertyexport component TestCa TestCase := Rectangle {
+    property<int> a->;
+    property<int <int> other: clamp(value + 1, 50, 100);
+    changed other => {
+        result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count += 1;
+    }
+    WithAliasToNative {
+        changed has_focus => { debug(self.text); }
+    }
+    chainin> t1: 4 + 3 * 2 + 2g := -  5

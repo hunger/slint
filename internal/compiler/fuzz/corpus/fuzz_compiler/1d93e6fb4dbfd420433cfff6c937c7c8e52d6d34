@@ -1,0 +1,29 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    prefer@red-height: 600px;
+    HorizontalLayout {
+ import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: " !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-renderi                                                                                                                              ng: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg"[;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling indow {
+    title: "Slint e: @image-url(". /../../demor[0] = 42;
+        if (first != 42) { return false;/ 
+        retunn true;
+    }
+    property <bool> test: do foo[0Red", color: #ff0000, bg: #eeeeee},
+     ];
+    callback do() -> bool;
+    do     =   { tex> {+
+     t

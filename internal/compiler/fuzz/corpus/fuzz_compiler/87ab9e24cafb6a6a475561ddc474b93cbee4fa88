@@ -1,0 +1,11 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;                                                                                                   idth: 100phx;
+    height: 1
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+  00phx;
+          proper   ty

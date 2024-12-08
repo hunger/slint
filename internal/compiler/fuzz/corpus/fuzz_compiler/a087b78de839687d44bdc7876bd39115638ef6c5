@@ -1,0 +1,39 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-backgrpxexport component TestCase {
+    in property <float> val-e: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        prop;
+    height: 64px;
+    forward-focus: ierty <int> m4ax: 42;
+        property <int> xx: Math.clamp(5, 2, 3) + max;
+    }
+    out operty <float> s1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        prop;
+    height: 64px;
+    forward-focus: ierty <int> m4ax: 42;
+        property <int> xx: Math.clamp(5, 2, 3) + max;
+    }
+    out       <duration> dur: 45ms?.clamp(0, 50ms);         property< TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2       <duration> dur: 45ms?.clamp(0, 50ms);         property< TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    propbool> test_dur: dur == 5mz.c-text-input;
+   lamp(45ms, 50ms);
+ i-text-input :=    out p Ter

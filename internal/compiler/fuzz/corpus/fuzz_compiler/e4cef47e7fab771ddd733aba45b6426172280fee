@@ -1,0 +1,53 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> test: (0deg.cos()    .0).ab))))))))))OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> t
+		y: 100px;
+		popup_click_count <=> popup_click_count;
+		first_reached => {
+			cnt1.show(true);
+ext.text;
+    tex     text: "to be overridden";
+    }
+    proomp_some_value_alias))))))OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> t
+		y: 100px;
+		popup_click_count <=> popup_click_count;
+		first_reached => {
+			cnt1.show(true);
+ext.text;
+    tex     text: "to be overridden";
+    }
+    proomp_some_value_alias2;
+    ti1 := TextInput {
+        proper
+ty text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirection;
+        property text_alias_indirection ;
+    })OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> t
+		y: 100px;
+		popup_click_count <=> popup_click_count;
+		first_reached => {
+			cnt1.show(true);
+ext.text;
+    tex     text: "to be overridden";
+    }
+    proomp_some_value_alias))))))OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> t
+		y: 100px;
+		popup_click_count <=> popup_click_count;
+		first_r
+    out property <bool> ok: r.2width == 100px && r2.wid  text: (
+            "\{r.widt# > { t set_ti2(a) => { ti2.text = a; }
+}

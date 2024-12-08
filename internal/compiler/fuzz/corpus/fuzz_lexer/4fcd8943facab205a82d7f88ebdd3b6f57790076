@@ -1,0 +1,4 @@
+ TestCase := Rectangle {
+    property<float> t1: log(4.0, 2);
+    property<float> t2: log(64, 4.0);
+}

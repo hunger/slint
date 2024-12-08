@@ -1,0 +1,8 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> value;
+    TouchArea {
+        clicked => { value += 1; }
+    }
+}

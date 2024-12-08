@@ -1,0 +1,8 @@
+import { LineEdit } from "std-widget    int";
+export component TestCase inherits Window {
+    callback focus_theVerticalLayo_line_edit;
+    focus_the_licus_the_focus_sc/pe => {
+        fs.focus();
+    }
+    callback set_manuatext-input-focused;
+}

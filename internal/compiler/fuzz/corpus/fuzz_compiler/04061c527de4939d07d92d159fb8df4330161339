@@ -1,0 +1,42 @@
+O := Text {
+    property <**********************************************************? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { va    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************? {
+    property <int> val: condition ?;nt> val;
+    text: val;
+ 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o2 :=    HorizontalLayout {
+        o1 := O { v0a    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************? {
+    property <int>perty <int> val: condition ******************************************************************************************************************? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.v   text: val;
+ 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { va    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.va    property <int> val: conditiod(bool)n ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       																			test: checksum == 89887;
+}

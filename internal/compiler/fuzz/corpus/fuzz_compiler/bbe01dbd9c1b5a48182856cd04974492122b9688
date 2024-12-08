@@ -1,0 +1,8 @@
+export component TestCase {
+    in property <float> value: 42.0;
+          operty <float> t1: clamp(value, 10.0, 53<float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s0: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, = 43.0 && root.s3 == 41.0 && test_dur;
+}

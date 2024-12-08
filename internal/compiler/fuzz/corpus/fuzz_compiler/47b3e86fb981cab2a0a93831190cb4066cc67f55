@@ -1,0 +1,21 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;     height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+              ] : delegate := Rectangle {
+           b ackground: @linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                    height: 050px;
+                    text: data.text;
+                    color: data.color;
+         e := Rectangle {
+ize: 20px ;
+                }
+            }
+                                                                 text; } }
+        }
+    }
+}

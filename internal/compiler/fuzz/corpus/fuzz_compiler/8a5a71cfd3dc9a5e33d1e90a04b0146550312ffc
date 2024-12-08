@@ -1,0 +1,31 @@
+TestCase := Rectangle {
+   : { b: 10 };
+    property<bool> obj_binop_merge :0{ foo: 0     1 } o: 0     1 } == { bar: 0, x: 1 };
+    property<sge_foo;
+    change_foo => {
+        foo.a = obj_conversion2.a;
+        foo.b += 8 unction return_object() -> { aa: { bb: int } }
+   O k reture {
+        property <string> blah: "ddd";
+        Rectangle {
+            property <bool> cc <=> cond0;
+            property <bool> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+            == { bar: 0, x: 1 };
+    property<sge_foo;
+    change_foo => {
+        foo.a = obj_conversion2.a;
+        foo.b += 8 unction return_object() -> { aa: { bb: int } }
+   O k reture {
+        property <string> blah: "ddd";
+        Rectangle {
+            property <bool> cc <=> cond0;
+            property <bool> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.top_leven { aa: { bb: { cc: 42 }.cc } }; }
+    property <bool> test: return_object().aa.bb == 42 && obj_binop_merge;
+}

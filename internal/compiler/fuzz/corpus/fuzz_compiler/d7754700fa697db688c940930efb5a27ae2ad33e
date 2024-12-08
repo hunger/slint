@@ -1,0 +1,8 @@
+import "../../..m/deos/printets/Noterdemo/ui/fonts/NotoSans-Bold.ttf";
+TestCase := Window {
+    preferred-width: 1    default-font-family: "Nrdemo/ui/fonts/NotoSans-Regular.ttf";
+  import "../../../demos/printerdemo/ui/fonts/NotoSans-Bold.ttf";
+TestCase := Wi wond{
+    preferred-width: 100phx;
+    preferred-height: 100phx;A    default-font-family: "Noto Sans";
+}

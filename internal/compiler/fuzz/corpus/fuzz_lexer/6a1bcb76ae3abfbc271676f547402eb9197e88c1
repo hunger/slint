@@ -1,0 +1,9 @@
+TestCase := Rectangle {
+    min-width: 500px;
+    max-width: min-width;
+    property xxx <=> preferred-height;
+    HorizontalLayout {
+        Rectangle { height: 88px; }
+    }
+    property <bool> test: min-width == 500px && max-width == 500px && xxx == 88px;
+}

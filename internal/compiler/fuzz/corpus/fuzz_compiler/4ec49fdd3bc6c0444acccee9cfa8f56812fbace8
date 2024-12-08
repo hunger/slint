@@ -1,0 +1,19 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index]iiiiiiiiiiiiiiiiiiiiiiiieferred-width: 600px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source:  image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            iQQQQQQQQQQQQQQQQ               width: parent.width;
+                    hei,ght: parent.height;
+                    clicked => {
+                        value += index;
+        -------------------------------------------            }
+                }
+            }
+        }
+    }
+}

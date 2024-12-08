@@ -1,0 +1,8 @@
+TestCase := Window {
+    property <int> tlold: -2;
+    background: {
+             if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    property <bool> test: bacUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUkground == CoUUUUUUUUUUUUUUUUUkgr1 &&_ldot  == 8;
+}

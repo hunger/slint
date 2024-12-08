@@ -1,0 +1,13 @@
+Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+   %    f     E 5%;export compon=nt TestCase  {
+    in-out property <bool> toggle: { return false; }
+    in-out prop     <int> 
+        background: white;
+        opacity: 0;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    height                                         (((((((((((    X (((((((if (toggle(

@@ -1,0 +1,54 @@
+Foo := Rectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo]1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callba2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo]1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int)as;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+ ectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo]1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int)as;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+    oo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    property <bool> test: foo1_alias         123 && foo2_alias(100) == 188;
+}

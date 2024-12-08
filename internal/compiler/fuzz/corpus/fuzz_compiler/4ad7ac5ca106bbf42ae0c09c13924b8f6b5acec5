@@ -1,0 +1,52 @@
+Foo := Rectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int)as;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo1.hallo_alias(a); }
+    foo1 := Foo {
+      7777777777777777777777777777**********  spacing: 1OtherComp :C_- ct-ngleerComp :C_- ct-ngle {
+    property t <=> textwidth* 64px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nh000phx;
+            padgi:dn 25phx;
+            padding_left: 20phx;
+/*          padding_right: 30phx;
+            Row {
+       eOtherComp :C_- ctangle {
+    pr         <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* 64px;
+    height: 64px;
+    /*ckground:**
+**e: bool,
+    solved: bool,
+}
+componenimport struct Ti eData {
+    image: image,
+    image_vr_width: 2px;
+        GridLayout {
+            spacing: 1000phx;
+            padding: 25phx;
+            padding_left: 20phx;
+/*          p>=adding_right: 3                  Row {
+                rect2 := Rectang  hallo_alias(a) => { return a + 22; }
+    }> { debug -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    property <bool> test: foo1_alias         122 && foo2_alias(100) == 188;
+}

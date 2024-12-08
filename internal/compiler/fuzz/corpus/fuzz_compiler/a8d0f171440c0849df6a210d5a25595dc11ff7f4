@@ -1,0 +1,18 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export sFoo := Rectangle {
+   ? pure callback hallo_alias <=> xxx.hallo;
+    callbackroperty <BoxLayoutData> blt: { layout: 45phx };
+    sl clicktruct      import { Button, ComboBox }   : Some }
+export struct temVTable {}
+export comp from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out pronent TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt:operty <BoxLayoutData> blt: { layout: 45phx };
+    simport { { layout: 45phx };
+    slint := SOption { n: None }
+export struct Component {o: Option }
+export struct Model {  Button, ComboBox } from "std-wc: Comidgets.slpoi

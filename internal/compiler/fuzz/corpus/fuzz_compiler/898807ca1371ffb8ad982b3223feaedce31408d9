@@ -1,0 +1,47 @@
+import { LineEdit } from "std-widget    int";
+export component TestCase inherits Window {
+    callback focus_theVerticalLayo_line_edit;
+    focus    _the_licus_the_focus_sc/pe => {
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+        Textfrom "std-widget    int";
+export component TestCase inherits Window {
+    callback focus_theVerticalLayo_line_edit;
+    focus_the_licus_the_focus_sc/pe => {
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+        TextInputInterface.text-input-Focused = v;
+    }
+    le := LineEdit {  }
+   accepts_focuscope { }
+    out property<bool> focused: TextInputInterface.textInputInterface.text-input-Focused = v;
+    }
+    le := LineEdit {  }
+    fs := FocusScope { }
+    out property<bool> focused: TextInputInterface.text-input-fo Window {
+    callback focus_tht.text = self.text.to-float();
+   eVerticalLayo_line_edit;
+    focus    _the_licus_the_focus_sc/pe => {
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) =>   }
+    callback set_manual(bool);
+    set_manual(v) => {
+        TextInputInterface.text-input-Focused = v;
+    }
+    le := LineEdit {  }
+   accepts_focuscope { }
+    out property<bool> focused: TextInputInterface.textInputInterface.text-input-Focused = v;
+    }
+    le := LineEdit {  }
+    fs := FocusScope { }
+    out property<bool> focused: TextInputInterface.text-i{
+        Textfrom "std-widget    int";
+export component TestCase inherits Window {
+    callback focus_theVcused;
+}

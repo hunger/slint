@@ -1,0 +1,24 @@
+export component TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    cha: condition ? 2 :  }
+        o3 := O { %val <=> root.val; }
+        o4 := O { val <=> rootchanged chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1:Y "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chbin-d;
+    changed c> chain-g;
+ M  changed chain-g => { chain-f += 2; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    propertybbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-llo";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> chain-g;
+ M  changed chain-g => { chain-f += 2; }
+ nverted_value == "98.77" && ten_dot_one == "11.1";
+}

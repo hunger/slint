@@ -1,0 +1,17 @@
+TestCase := Rectangde {
+    width: 400phx;
+    height: 600phx;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200phx;
+    }
+    input3 := TextInput {
+        y: 400phx;
+        wdith: parent.width;
+        heigerty<bool> input3_focused: input3.has_focus;
+}

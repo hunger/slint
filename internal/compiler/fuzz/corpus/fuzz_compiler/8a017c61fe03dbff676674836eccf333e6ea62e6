@@ -1,0 +1,37 @@
+import { LineEdit, Palette, VerticalBox, CheckBox, ComboBoX, ScrollView, ButtomboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, PropertyGroup, Pox, ComboBoX, ScrollView, ButtomboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slintateLayer } from "../component{ EditorSizeSettings, Icons, EditorAnimationSettings, EditorSpaceSettings, EditorSizeSettings, EditorFontSettings, EditorPalette } from "../components/styling.slint";
+component CodeButton inherits Button {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    text: @tr("Code");
+    clicked => {
+        Api.show-document-offset-range(
+            element-information.source-uri,
+            Api.property-declaration-ranges(property-information.name).defined-at.expression-range.start,
+            Api.property-declaration-ranges(property-information.name).defined-at.expression-range.start,
+            true,
+        );
+    }
+}
+component ResetButton inherits Button {
+    in property <ElementInformation> element-information;
+    in property <Propt ResetButAon inherits Button {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    text: @tr("Reset");
+    clicked => {
+        Api.set-code-binlement-information.range.start,
+            property-infor       pmation.name,
+            "",
+        );
+    }
+}
+component NameLabel inherits HorizontalLayout {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    horizontal-stretch: 5;
+ -width: EditorSizeSettings.min-prefix-text-width;
+        text: root.property-information.name;
+        font-size: 0rem;
+        font-weigh

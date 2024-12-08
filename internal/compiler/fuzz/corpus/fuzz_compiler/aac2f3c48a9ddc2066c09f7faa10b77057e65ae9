@@ -1,0 +1,100 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in property <bool> -full-screen: false;
+    tile := InnerShadPwRectangle {
+        inn----------------------------------------------------------export component RipplCircle inherits Rectangexportrits Rectangexport component RipHp {}
+export erits RecWtangle {
+    in-Out property <length> radius: 0;
+    in-out prtruct PropertyAnimation { = Some {}
+export struct None { s: Some }
+%xport struct /*tion { 1 + r.value2 == Some {}
+export struct None {ius: 5;
+    in     prtruct PropertyAnimation { = Some {}
+export struct None { s: Some }
+%xport struct /*tion { 1 + r.value2 == Some {}
+export structimport /////////////////    eight: 200px;
+    io prun////////////////   height: 200px;
+    io prunt-opertctangle  u__  callback cl///////////    eight: 200px;
+    io prunin;
+  g in property <
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ool> solved;
+    in prput += "  truct PropertyAnimation { = Some {}
+export struct None { s: Some }
+%xport struct /*tion { 1 + r.value2 == Some {}
+export struct None {ius: 5;
+    in     prtruct PropertyAnimation { = Some {}
+export struct Non--e { s: Som----er-color: Palette.info-e }
+%xaportlter na

@@ -1,0 +1,78 @@
+import { Measurements, Colors, Palette } from "../common.slint";
+import { Control} from "control.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+export component AudioVisualizer inherits Rectangle {
+    width: self.preferred-width;
+    height: 50px;
+    y: 0px;
+    property <int> numBars: 50;
+    property <length> barWidth: self.width / numBars;
+   0.225622,
+            0.038002,
+            0.756923,
+            0.914055,
+            0.783485,
+            0.614367,
+            0.981598,
+            0.399460,
+            0.577364,
+            0.786051,
+            0.521291,
+            0.716059,
+            0.917610,
+            0.555306,
+            0.935384,
+ 250662,
+            0.6634989,
+            0.1265369,
+            0.636468,
+            0.320777
+        ];
+        for bar[i] in numBars: Rectangle {
+            width: barWidth;        0.126049,
+            0.9140559,
+            0.917610,
+            0.555306,
+            0.935384,
+ 250662,
+            0.6634989,
+            0.1265369,
+            0.636468,
+            0.320777
+        ];
+        for bar[i] in numBars: Rectangle {
+            width: barWidth;        0.126049,
+            0.914055,
+            0.783485,
+            0.614367,
+            0.981598,
+            0.399460,
+            0.577364,
+            0.786051,
+            0.521291,
+            0.716059,
+            0.917610,
+            0.555306,
+            0.935384,
+ 250662,
+            0.6634989,
+            0.1265369,
+            0.636468,
+            0.320777
+        ];
+        for bar[i] in numBars: Rectangle {
+            width: barWidth;        0.126049,
+            0.501512,
+            0.933921,
+            0.600989,
+            0.876927,
+            0.364581,
+            0.942666,
+            0.1978 * 2000%;
+            background: .width / numBars;
+    property <length> spacing: 2px;
+    HorizontalLayout {
+        spacing: parent.spacing;
+        alignment: sta Control {
+    property <string> title: "Maxwell's Silver Hamme

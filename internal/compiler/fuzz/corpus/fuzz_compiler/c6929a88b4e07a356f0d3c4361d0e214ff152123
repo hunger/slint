@@ -1,0 +1,75 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+                r2 += event.text;
+                return event.text =roperty<bool> input2_focused: input2.has_focus;
+    property<string> input2_text: input2.text;
+    proper= "b" ? accept : reject;
+            }
+            Rectangle {
+         222222222222222222222222222222222222222222222222222222222222222222222222222       FocusScobor{
+                    key-pressed(event) => {
+     ndow {
+  * width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        textB "VAVAv\nLine\nWAWA";
+        wrh: 64  
+px ; height: 64px;
+  {
+						second_reached();
+						second_sent = true;
+					}
+				}
+		up.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		icy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !4px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x:       return event.text =roperty<bool> input2_focused: input2.has_focus;
+    property<string> inpu TouchArea {
+                                clicked => {
+                                    parent.focus();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    property<bool> toggle: true;
+    property<string> r1;
+    property<string> r2;
+    property<string> r3;
+    property<string> r5;
+    property<string> r5;
+}

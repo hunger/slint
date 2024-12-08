@@ -1,0 +1,16 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-backgrouborder-r: brush,
+    game-background-color: brush,//////////////////////////////
+    game-use-background-ie-background-image: bool,
+    gameb-order: length,
+    game-radius: length,
+    game-text-color: color,
+    game-r: color,
+    piece-bordev: lentangl,,,,,e 

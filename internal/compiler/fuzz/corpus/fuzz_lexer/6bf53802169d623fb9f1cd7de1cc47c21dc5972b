@@ -1,0 +1,31 @@
+import { Paexport component Tes Case  {
+    in property<string> helcomponent C1  {
+    Rctanferred-width: 100px;
+          Test-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+        j_  "\{r2.width /you*t {
+        Rectangle { background: red; border-colo||r: white; border-w                               idth: 1px; }
+ /*     Rectangle { background: #080c; border-radius: 8px; border-width: 5px; border-color: #d005t {
+        Rectangle { background: red; border-color:        "!{r2.width}, " +
+            ""
+        );
+    }
+    out property <bool> ok: r.width == 100px && r2.width == 100px;
+}
+export component W inherits Window {
+    Rectangle {
+        VerticalLayout {
+      **************************************************************************************************************      FillParent {
+                min-heigh E self.preferred-height;
+            }
+        }
+    }
+    white; border-w                 @             id       xth: 1px; }
+        Rectangle { background: #080c; border-radius: 8px; /*rder-width: 5px; border-color: #d005; }
+        Rectangle { background: blue;lo: "hello";~  {
+  borred-top-right-radius: 2px; border-bottom-left   in properlettety<-ras&dri

@@ -1,0 +1,38 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    propty <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-colors: {
+      ,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    dest                                                                                                        ructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-schele == ColorSchem out property <color> text-priy <float> ratio: 1px / 1phx;
+    property<b90deg))l> verify:
+        sin(0) == 0 &&
+         cos(0) == 1 &&
+        zound(1000* cos(3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%60deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -n(36dg) e)0== 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        zound(1000* cos(3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%60deg))ool> test: (8phx * 5px * 3ms property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<leng h> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh0phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2                                                                                      phx;
+    property<len / 2phx)  == (8px * (3ms / 2phx) * 5px) / r_offset;
+    property<bool> has_selection: self.teue;
+}

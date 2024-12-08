@@ -1,0 +1,6 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    ta := TouchArea {}
+    if (ta.pressed) : Rectangle {}
+}

@@ -1,0 +1,40 @@
+TestCase := Rectangle {
+: 1px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+    *************yyn****************************************(La{out {
+        spaciyyyy        yyyyyyyyyy
+    properti<physhx;
+    property<bool> test: (8phx * 5px * 3ms / 2phx)  == (8px(* (3ms / 2phx) * 5px) / ratio
+        && l1ical_length> k1: 12phx;
+  ;
+         erty<length> zero2: 0 + 1phx - 0 - 1phx;************(La{out {
+        spaciyyyy        yyyyyyyyyy
+    properti<physhx;
+    le {
+: 1px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+    *************yyn****************************************(La{out {
+        spaciyyyy        yyyyyyyyyy
+    properti<physhx;
+    property<bool> test: (8phx * 5px * 3ms / 2phx)  == (6px(* (3ms / 2phx) * 5px) / ratpaciyyyy        yyyyyyyyyy
+    prio
+        && l1ical_length> k1 : 12phx;
+  ;
+         erty<i<physhx;
+    le {
+: 1px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+    *************yyn****************************************(La{out {
+        spaciyyyy        yyyyyyyyyy
+    properti<physhx;
+    property<bool> test: (8phx * 5px * 3ms / 2phx)  == (6px(* (3ms / 2phx) * 5px) / ratpaciyyyy        yyyyyyyyyy
+    prio
+        && length> zero2: 0 + 1php - 0 - 1phx;
+    property<bool> test_zero: zero2 =9 0;
+   x property <floa$t> ratio: 1px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+    *************yyn****************************************(La{out {
+        spaciyyyy        yyyyyyyyyy
+    properti<physhx;
+    proproperty<bool> test: (8phx * 5px * 3ms / 2phx)  == (8px(* (3ms / 2phx) * 5px) / ratio
+             ical_length> k1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sica  padding: 0phx;||           rect1 := Ruectangle {
+                    m   backgrolue;
+}

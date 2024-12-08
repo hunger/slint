@@ -1,0 +1,50 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radiu x: ro    x - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> vas olor,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,   w piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked w* 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    pr/perty <int> touch1;
+    p/*roperty <int> valu Duc   Ho spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{                                                       yyyyyyyyyyloat> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 1;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    backgroff;
+    property<color> b4: #00ff;
+    property<color>und: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

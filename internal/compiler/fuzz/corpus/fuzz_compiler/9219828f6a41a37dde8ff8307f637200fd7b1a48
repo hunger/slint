@@ -1,0 +1,33 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 4A00px;
+    height: 387px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+                                               !           { text: "Blue", color: #0000ff, bg: #eeeeee},
+      !     { textcontro: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { Text {
+                    height: 100px;
+                    texow {
+    width: 4A00px;
+    height: 387px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+                                               !           { text: "Blue", color: #0000ff, bg: #eeeeee},
+      !     { textcontro: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { Text {
+                    height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                                    uchArea { t: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                                    uchArea { clickk       0000e = data.text; } }
+        }
+    }
+}

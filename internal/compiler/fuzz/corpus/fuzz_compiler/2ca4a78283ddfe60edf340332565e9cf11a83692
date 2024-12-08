@@ -1,0 +1,26 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint        t component Info {
+    in property <string> name;
+    in property <string>         in property <bool> full-screen: false;
+    tile := Innent";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint        t component Info {
+    in property <string> name;
+    in property <string>         in property <bool> full-screen: false;
+    tile := InnerShadowRectangle {
+        inner-color: Palette.info-alternate-background;
+        inner-shadow-blur: 21px;
+        background: Palette.info-background;
+        border-radius: Measurements.tile-radius;
+        @children
+  rShadowRectangle {
+        inner-color: Palette.info-alternate-background;
+        inner-shadow-blur: 21px;
+        background: Palette.info-background;
+        border-radius: Measurements.tile-radius;
+        @children
+    }
+}

@@ -1,0 +1,58 @@
+import { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length=!  0;
+    callback show-document(file: string, line: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        backg4round: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.diagnostics: Rectangle {
+                      property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+ => {
+                            root.show_document(diag.url, diag.line, diag.column);
+                        }
+                        Text {
+                            width: 100%;
+            struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-backgrouns; easing: ease-in; }
+                 animate checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+             }
+             out {
+                 animate clip.width { duration: 100ms; easing: ease; }
+                 animate checkbox-rect.border-width { duration: 200ms; easing: ease-in-out; }
+                 animate checkbox-rect.border-color { duration: 200ms; easing: cubic-bezier(1,1,1,0); }
+             }
+         }
+     ]
+    hover-rect := Rectangle {
+        background: #f5f5f5;
+        x: - parent.width / 4;
+        y: - parent.height / 4;
+        width: ta.has-hover ? root.width * 1.5 : 0px;
+        height: self.width;
+                        wrbord

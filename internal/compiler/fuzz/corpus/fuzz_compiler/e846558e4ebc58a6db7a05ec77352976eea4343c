@@ -1,0 +1,39 @@
+TestCase := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow  cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {
+        x: pa 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: bphx + 12px;
+    property<length> ll4: 120 *::length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    p    rty<leng h> ll1:[12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10hhhhhhhhhhhhhhhhhhhhhctangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+   ction-foreground-color: orange;
+        font-size: 26px;
+        forward-focuson-byte-offset: 16;
+        anchor-position-byte-offset: 13;
+    }
+}

@@ -1,0 +1,4 @@
+ component TestCase inherits Window {
+    ourtp operty<float> t1: cos(0);
+    out property<float>  :t2cos(180deg);
+  TestCase := ce  ouRtat property<fl    oat> tngle3

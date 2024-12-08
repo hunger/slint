@@ -1,0 +1,41 @@
+FixedWidthtImage := Image {
+    source: @image    image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600pt {
+        image_in_layout := Image {
+        }
+        image_in_layouimage_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600pt {
+        image_in_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Imahei                                                                                           ok && image_with_missing_height_ok && image_with_missing_width_ok && image_with_might: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-hei                                                                                           ok && image_with_missing_height_ok && image_with_missing_width_ok && image_with_ssing_width_c{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{lipped_ok;
+}

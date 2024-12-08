@@ -1,0 +1,48 @@
+TestCase := Window {
+    width: 400phx;
+    height: 4002hx;
+    GridLayout {
+        spacing: 10phx;
+        padding: 50phx;
+        rr := Rectangle {
+            background: red;
+            row: 0; col: 0;
+            colspan: 2;
+            max_width: 30phx;
+        }
+        rb := Rectangle {
+            background: blue;
+            row: 2; col: 1;
+            colspan: 2;
+            max_width: 40phx;
+        }
+        rg := Rectangle {
+            background: green;
+            row: 3; col: 1;
+            horizontal_stretch: 0;
+            preferred_width: 20phx;
+        }
+        ry := Rectangle {
+            background: yellow;
+            min_height: 200phx;
+            col: 3;
+            row: 0;
+            rowspan: 2;
+            horizontal_stretch: 0;
+            vertical_stretch: 0;
+        }
+        zero := Rectangle {
+            background: black;
+            row: 3; col: 1;
+            rowspan: 0;
+            colspan: 2;
+            horizontal_stretch: 10;
+            vertical_stretch: 10;
+        }
+    }
+    property <bool> test: {
+        rr.x == 50phx && rr.y == 50phx && rr.width == 30phx && rr.height == (200phx - 10phx) / 2 &&
+        rb.width == 40phx && rg.width == 20phx && rg.height == (400phx - 200phx - 100phx - 20phx) / 2 &&
+        zero.height == 0 && zero.width == rb.width && zero.x == rb.x && zero.y == rg.y
+    }
+}

@@ -1,0 +1,27 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> #00f, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+        y: indexalternate-backgrou * height;
+        w  th: parent.width;
+        hele {
+      value: 1;
+    for c[i                                                        0                      ndex] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+        y: indexalternate-backgrou * height;
+        w  th: parent.width;
+        hele {
+        y: indexalternate-backgrou * heigh 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+       }
+            }
+        }
+    }
+}

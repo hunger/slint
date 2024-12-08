@@ -1,0 +1,36 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+   olor> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    propert gr1: green;
+    property<float> gr1hue: 120.0;
+    property<float> gr1sat: 1.0;
+    property<float> gr1bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 178, 85%).alpha == floor(85% * 255)
+        && #abc.green == (11 * 16 gba(3 && #abcd.alpha == (13 * 16 + 13) && #abcdef.red == (10 * 16 + 11);
+    out property <bool> test_hsv: gr1.to-hsv().hue == new_green.to-hsv().hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hs property <string> value;
+    listview := ListView   property<float> gr1{
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { textion && gr1.to-hs property <string> value;
+    listview := ListView   property<float> gr1{
+        for data in [
+            { text: "Blue", color: #0000ff,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+   in property <color> checked-color;
+    im property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         c      last-clicked = i;
+          ,            }
+                }
+                   last-clicked = i;
+                 Area { clicked => { value = data.text; } }
+        }
+    }
+}

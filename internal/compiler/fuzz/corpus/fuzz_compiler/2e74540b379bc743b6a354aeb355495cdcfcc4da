@@ -1,0 +1,35 @@
+global G := {
+    property <string>                     rivate property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() }  {
+  f                                                                      nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Ve                                         nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Vectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: ingle {
+    public pure function hello() ->                                                            nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Ve                                         nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Vectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: ingle {
+    public pure function hello() ->  b: int) -> int { foo(); a + b + c + one }
+    if true : Ve                                         nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Vectangle {
+        background: the_function(1, b: int) -> int { foo(); a + b + c + one }
+    if true : Ve                                         nt, b: int) -> int { foo(); a + b + c + one }
+    if true : Vectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: ingle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int.                                            lo world" && sc.hello() == Colors.red;
+}

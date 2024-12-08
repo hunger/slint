@@ -1,0 +1,71 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 429;
+            TouchArea {
+                clicked => { touch_error+=78 }
+                                                                                                                          }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+            e;
+            z: 400;
+            TouchArea {
+                clicked =>    }
+        }
+        Rectangle {
+            backght: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 429;
+            TouchArea {
+                clicked => { touch_error+=78 }
+                                                                                                                          }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+            e;
+            z: 400;
+            TouchArea {
+                clicked =>    }
+        }
+        Rectangle {
+            background: greeround: green;
+            z: 3;
+            TouchArea {
+                       clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, vauue: 8, },
+           z: -1;
+                clicked => { tou        +=12 }
+            }
+        }
+    }
+}

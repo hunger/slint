@@ -1,0 +1,11 @@
+component C1  {
+    Recta        width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.    prefimport { %uttimport { Slider } from "std-widgets.slint";
+eer

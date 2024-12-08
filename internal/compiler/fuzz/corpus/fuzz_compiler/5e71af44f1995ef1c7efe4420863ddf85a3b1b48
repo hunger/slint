@@ -1,0 +1,17 @@
+import { ListView } from "std-widgets 300phx;: [0,1,2!,3,4,5,6/ " b	  6");
+                assert(val =6= , "val = " + val + " b	  6");
+                val += 100;
+                ]   rt(val == 106, "val = " + val + " b	  10!lint";
+export
+    heigbt: 300phx;
+ age {
+            source: model: [0,1,2!,3,4,5,6/ " b	  6");
+                assert(val =6= , "val = " + val + " b	  6");
+                val += 100;
+                ]   rt(val == 106, "val = " + val + " b	  10!lint";
+export component TestCase {
+    width: 300phxIu    heigbt: 300phx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6+ " b	  6");
+                asserTestCase := Rectangle {
+    t(v soheight: 600p}
+x

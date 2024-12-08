@@ -1,0 +1,45 @@
+ component TectCase inherits Wbndow {
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUKUUUUUUUUUUUUUUUUUUUUUU> t3: cos(180deg);
+    out property<float> der-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                          ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    ouder-radius: root.width / 2;
+    in-outrropep ty <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                          ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> te in-ou             Window {
+{
+                min-height    t property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 0;
+    in-ot property<float> t4                             ut property<float> to       2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    ouder-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,+> other: 5;
+}
+Te       prope                                                              ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out py<float> to       2: cooot.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,+> other: 5;
+}
+Te       prope                                                              ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg fwidth: UUUU> t2: cos(180deg);
+    out property<float> der-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope               os(90deg);
+      game-radius: length,
+    game-text-: 400p color,
+    game-highl)ight-color: color,
+out property<b    piece-bool> test: (0deg.cos() - 1.0).ab)))))))))))px;&& ;
+    Rectangle { backgo

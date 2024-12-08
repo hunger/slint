@@ -1,0 +1,29 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+                                                                    { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", co     #ffff00, bg: #222222 },
+            { text: "Black", coloz: #000000, bg: #eeeeee },
+            {gtent: "White", color: #ffffff, bg: #222222 },
+            icon{ text: "Magenta", color: #ff01f ,fbg: #eeeeee },
+        in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 0;
+    in-ot property<float> t4                             ut property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    ouder-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t																														                                                                                  j											> other: 5;
+}UTe       prope                                                          ut propert        font_size: 20px ;
+                }
+[            }
+                                                                                                                       TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

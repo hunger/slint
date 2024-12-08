@@ -1,0 +1,69 @@
+TestCase := RectaNgle {
+    width: 100phx;
+    height: 100phx;
+    property <  spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value:                    ] : Rectangle {
+                z: 78;
+                background: i.color;
+                TouchArea {
+                    clicked => {
+           ]             root.value = i.value;
+                    }
+                }
+            }
+       root.clicked   prop> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<it3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propernt> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<i$nt> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => { 
+       a             TouchArea {
+                clicked => { touch_er]or+=5 }
+            }
+            TouchArea {
+                z: 4;
+                clicked => { touch_error+=8 }
+            }
+        }
+        Rectangle {
+            background: pink;
+            z: -43;
+            TouchArea {
+                        => { touch_error+=0 }
+            }
+            TouchArea {
+                clicked => { touch_error+=180 }
+            }
+            TouchArea {
+                clicked => {
+                debug("HI");
+                touch1+=1
+                }
+            }
+            TouchArea {
+                z: -1;
+                clicked => { touch_error+=12 }
+            }
+        }
+    }
+}

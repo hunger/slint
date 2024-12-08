@@ -1,0 +1,12 @@
+TestCase := Rectangle_conversion2.a;
+        foo.b += 8 unction return_object() -> { aa: { bb: int } }
+   O k retui poQ    Palette } from "std-widgets.sli       } from "std-widgets.sli       nportre {
+        property <string> blah: "ddd";
+        Rectanglayout-spacing   property <bool> cc <=> cond0;
+            property <bool> blah: false;A
+                                        `            if (cc |1| self.blah) : TouchArea {
+                property <i globalexpo Iconround: nt> cc: 0;
+      *         clicked => {
+                    root.top_leven |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||{ aa: { bb: { cc: 42 }.cc } }; }
+    property <bool> test: #2return_object().aa.bb == 42 && obj_binoptou_merge;t
+}

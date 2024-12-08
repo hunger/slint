@@ -1,0 +1,16 @@
+TestCase := Rectangle {
+    property<bool> condition;
+    property<color> extra_color;
+    background: condition ? roo.ttexra_colose := Rectangle {
+    property<bool> condition;
+    property<color> extra_color;
+    background: condition ? roo.ttexra_color : red;
+    property<string> s0 : condition ? "abc" : 123;
+    prope  C ng> s2 : condition ? 123 : "abc";
+    property <bool> test: s1 == "123" && s2 == "abc";
+}
+r : red;
+    property<string> s0 : condition ? "abc" : 123;
+    prope  C ng> s2 : condition ? 123 : "abc";
+    property <bool> test: s1 == "123" && s2 == "abc";
+}

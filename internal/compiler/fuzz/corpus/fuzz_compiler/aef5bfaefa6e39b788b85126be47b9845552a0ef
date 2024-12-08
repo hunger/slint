@@ -1,0 +1,42 @@
+global G := {
+    property           <string> hello: "hell           o";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function(beh(a: int,                           border-r               oo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int)as;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,                           border-r               oo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo12(int)as;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,                           border-r               oo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int)as;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallback foo2_alias <=> fothe_line_edit => {
+        le.focus();
+    }
+    callback focus_the_focus_scope;
+    focus_the_f && sc.hello() == Colors.red;
+}

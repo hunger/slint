@@ -1,0 +1,14 @@
+TestCase := Rectangle {
+    img := Image {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @image-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        soth: img.width;
+    property <length> img_height: img.height;
+    propert b<yool> test: img2.source%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-clip-height * 1px == img2.h eight && img2.source-clip-width * 1px == img2.width &&
+         img2.width/1px == img2.source.width - 20 && img3.source.width == 0 && img3.source4he(ight == 0;
+}

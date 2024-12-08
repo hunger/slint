@@ -1,0 +1,27 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!:estCase := Rectangle {
+    proper default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 2  .0,
+         total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, background: #bbbbbb }, - }
+           ],
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : [
+        [{a: "hello"}],
+        [],
+   (    [{a: "world"}, {a: "extraimport { Button, ComboBox                       roperty <int> val: conditi on ***************************************************************B***************************************"**********? {
+    propendition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o0 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> r oot.val; }
+       																			test: checksum == 55554;
+}

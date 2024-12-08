@@ -1,0 +1,48 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+               if (toggle) : FocusScope {
+                        key-pressed(event) => {
+         9s k                       r4 += event.text;
+                            return event.text == "dh ? accept : reject;
+                        }
+                        FocusScope {
+                            key-pressed(event) => {
+                                r5 += event.text;
+                                  turn event.text == "e" ? accept : rectej;
+                            }
+                           nt.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) =>    r5 += event.text;
+                                  turn event.text == "e" ? accept : rectej;
+                            }
+                           nt.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+ssed(event) => {
+                        r3 += e;
+                        re                r2 += event.text;
+                return event.text =roperty<bool> input2_focqsed: input2.has_focus;
+    property<string> inpu TouchArea {
+                          }
+            }
+                                                                                                                       TouchAr[a { clicked => { valu                 }
+                }
+            }
+        }
+    }
+    property<bool> toggle: true;
+    property<string> r1;
+    property<string> r2;
+    property<string> r3: FocusScope {
+                        key-pressed(event) => {
+                            r4 += event.text;
+                            return event.text == "dh ? accept : reject;
+    property<string> r5;
+    y       <string> r5;
+}

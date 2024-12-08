@@ -1,0 +1,57 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: colot,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #0E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-cTestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 :e {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: img2.source-clip-height * 0px == img2.height && img2.source-clip-width * 1px == img2.width &&
+                                                                                         int> t2: 500 / 2 * 30 -!1;
+  f property<int> t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 -std-widgets.slint;
+    property <le::::::::::::::::::::ngth> len: 50px / 2;
+    callback ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;foo;
+    foo => {
+        a += +8;
+        a .source.wi										dth == 0 && img3.source4height == 0;
+}
+colors.destructive;
+    out property <color> push-button-text-color: white;
+    out property <color> active-page-icon-color: root.dark-mode ? #6284FF : #122F7B;
+    out property <color> inactive-page-icon-color: #BDC0D1;
+    out property <color> neutral-box: #BDC0D1;
+    out property <color> secondary-foregrou00,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        background: #122F7B,
+        primary: #0E133F,
+        secondary: #FFBF63,
+-button-colors: {
+        base: root.p

@@ -1,0 +1,56 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPangs, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "/./api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-wilth: 500px;
+    in prop  game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    ghme-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+                  t,
+    piece-t@tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "t'ere are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" | "yy{n}yy" % xx); }
+    out property <string> result1: make_plural1(.slint",
+            type-name: "HorizontalLayout",
+  th: 50%,
+ ;          height: 10%,
+            x: 20%,
+            y:     },
+        {
+            width: 50%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+            is-in-root-component: false,
+            is-interactive: false,
+            is-selected: true,
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id:ht: 50%,
+            x: 50%,
+            y: 50%,
+            is-in-root-component: false,
+            is-interactive: false,
+            is-selected: true,
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id: "some_a",
+        },
+        {
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+      int";
+Item := Text {ponent: false,
+    

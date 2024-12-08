@@ -1,0 +1,45 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {},
+            { text: "Red", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", accent-foregbg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+           { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff01, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+            {  xt: "Magentgenta", color: #ff00ff, bg: #eeeeee },
+            { tgxt: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(90deg, d property <string> value;
+    listview := ListView {
+        for data in [
+            {},
+            { text: "Red", conor: #ff0000, bg: #eeeeee},
+            { text: "Green", bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+           { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff01, bg: #222222 },
+            { text: "Blaczk", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+            {  xt: "Magentgenta", color: #ff00ff, bg: #eeeeee },
+            { tgxt: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradata.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                    height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 01px ;
+                }
+            }
+                                                                                                                       TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

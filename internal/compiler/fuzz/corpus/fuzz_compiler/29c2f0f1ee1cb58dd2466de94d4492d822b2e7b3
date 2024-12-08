@@ -1,0 +1,38 @@
+ component TestCase inherits Window {
+y <bool> running: false;
+    width: root.radius * 2;
+    height: root.radiusfU_MDu__  x: root.mx - root.width / 2;
+    y: root.my - root.height height/ 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}            rt 2;
+    y: root.my - root.height height/ 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> coun.er: 0;
+    animate counte      ,t> other: 5;
+}            rty <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {                                   rty <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        proper TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 5   mDk   valuy <int> value2: true ? Glob2.a : 88;stCa  :=y <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        property <int>
+Te       prope                                          rty <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        property <int> value1: Glob.b;
+  Rectangle {
+    r := Rectangle {
+     0 - 2gle {
+    prop   propertyerty<int> a;
+  
+    border-radius: root.width / 2;
+    in-out property <float> coun.er: 0;
+    animate counte      ,t> other: 5;
+}            rty <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        property <int>
+Te       prope                                          rty <int> value1: true ? Glob2.a : 88;stCa  := Rectangle {
+        proper TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 5ty <int> valuy <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        property <int>
+Te       prope                                          rty <int> value2: true ? Glob2.a : 88;P  <i

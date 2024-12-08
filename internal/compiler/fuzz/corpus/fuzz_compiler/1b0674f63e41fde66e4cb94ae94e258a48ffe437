@@ -1,0 +1,14 @@
+TestCase := Rectangle {
+    width: 1                                                                                                         Text { text: /*"Hi!"; color: #99aa3380? }
+        Text { text: "Hi!"; c: 6.33px;
+        Recta	 le { backgro     #4d8c; }
+        Rectangle { backgr                                                   ; opaciAAAAAAAAAAAAAAAAAAAA font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default,key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, backgroun{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{ 0.5}> touch_errorimport { %utt||0, ##############################>=####################

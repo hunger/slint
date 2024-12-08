@@ -1,0 +1,14 @@
+import "P. Window {
+    preferred-dwith: 1    default-font-fa/fonts/NotoSans-Regular.ttf";
+import "..toucj/../../demos/printerdemo/ui/fonts/NotoSans-Bold.ttf";
+TestCase := Win dow {
+    preferred-width: 855phx;
+./../.    mos/printets/Noterdemo/ui        ot                                                       %                                       oSans-Bold.ttf";
+TEstCase := Window {
+    preferred-dwith: 1    default-font-family: "Nrdemo/ui/fonts/NotoSans-Regular.ttf";
+import "../../../demos/printerdemo/ui/fonts/NotoSans-Bold.ttf";
+TestCase := Win dow {
+    preferred-width: 100phx;
+    preferred-height: eferred-height: 100phx;
+    default-font-family: "Notxo Sans";
+}

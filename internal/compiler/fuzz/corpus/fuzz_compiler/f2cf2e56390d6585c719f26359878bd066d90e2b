@@ -1,0 +1,39 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int,WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy);get_texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+    r := RaGlias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> te.height == 100phx &&
+        rect10.width == 100phx && rect10.height == 487phx;
+    property <bool> .x_ok:
+        rect1.x == 0phx ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,    callback set_ti1(string);
+    set_ti1(a) => { ti1.text = a; }
+    callback set_ti2(string);
+ 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+    r := RaGlias;
+    property <int> othercomp_some_valum_alias2;
+    ti1 := TextInput {
+        property text_alia=> "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int,WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW yy: string) -> string { return @tr("ther "\n" + make_plural2(0) + "\n" + make_plural2(42);
+    out property <bool> test: ent TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <stri        ng> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}plt2 == "xx1xx\nyy-999yy\nyy0yy\nyy42yy";
+}

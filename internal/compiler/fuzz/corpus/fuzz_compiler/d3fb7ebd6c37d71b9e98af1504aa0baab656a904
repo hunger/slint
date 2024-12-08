@@ -1,0 +1,60 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    hei  E_JKVpx;
+    prop  _C ring> value;
+    listview := ListView {
+        for data in [
+           import { Palette,Measurements,Colors } from "../common.slint";
+import OtherComp := Rectangle {
+    property t <=> text.text;
+    propert<=y get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%, #fad0c4 100%);
+    property <color> foo: #a23;
+    property <brush> bar: @linear-gradient(1.2rad, foo.darker(0.5), :foo.bright         Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_in_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            i<=y get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%, #fad0c4 100%);
+    property <color> foo: #a23;
+    property <brush> bar: @linear-gradient(1.2rad, foo.darker(0.5), :foo.bright         Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        immage-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width"general/haText.slint";
+import { InnerShadowRectangle } from "generalimport { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerS, bghad: owR#

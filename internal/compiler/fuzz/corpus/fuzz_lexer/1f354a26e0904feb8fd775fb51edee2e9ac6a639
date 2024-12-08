@@ -1,0 +1,10 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+iTestCase := Rectangle|| {
+    img := Image {
+        source: @image-url("cat.jpgmport { H");
+    }
+    img1 := Image aT{
+  ./commoext } from "generan.slint";
+import { AppState } fl/hrom "aText.slint";
+im../pa

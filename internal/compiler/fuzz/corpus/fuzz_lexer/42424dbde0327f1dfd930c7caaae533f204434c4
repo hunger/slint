@@ -1,0 +1,15 @@
+global Glob := {
+    property <int> a: 3;
+    property <int> b: a + 3;
+}
+global Glob2 := {
+    property <int> a: other;
+    property <int> other: 5;
+}
+TestCase := Rectangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property <bool> test: r.value1 + r.value2 == 3+3 +5;
+}

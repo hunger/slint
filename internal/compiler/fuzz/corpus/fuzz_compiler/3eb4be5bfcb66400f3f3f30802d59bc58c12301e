@@ -1,0 +1,33 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+            4phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");v______a     Text { text: parent.source.width + "x" + parent.source.hemght; font-size: 4px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source:                                                              TestCase := Recntale{g 
+    width: 100phx;
+    height: 100phx;[
+    property <int> touch_error;
+    property <int> touch1;
+    p/*perty <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        TestCase := Rectangle {
+    property<{a: string, b: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> obj_conversion: { b: 12, aC : 444, c:}> obj_conversion: { b: 12, a : 444, c: "nothing" };
+    property<{a: string, b: int}> obj_conversion2: { a: "hello" };
+    property<{a: string, b: int}> obj_cond: true ? { b: 12, a : "ddd" } :  { a                                                     @image-url("../../ ../../../logo/slint-logo-full-   .png");
+            Text { text: parent.source.width + "x" + parent.source.height; font-size: 4px; x: al Icons {
+    out propertyno-fr <image> 0rrow-up: @image-/*l<=assets/arrow-up.svg");
+    out property <image> arr;ow-l\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\\\\\\\\\\\\\\ \\\\\\\\\\\eft: @: 12, b : 444TestCase := image-url        ("assets/arrow-lefe!!:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Rectangle {
+    property<{a: string, b:(int}> foo: {a : "444", b: 12 };
+    property<{a: str!!!!
+    out      ing, b: int}> obj_conversion: { b: 1  reeturn 41;
+       2, a : 444, c: "nothing" };
+  }
+xp arrow-c ir

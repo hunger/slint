@@ -1,0 +1,46 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> t  text: str1ing;
+            }
+    ta := TouchArea {  }
+}
+TestCase :=d inWow {
+    width(: 300px;
+ C   height: 500px;
+    property <string> value;
+  height0p1 0:;x
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    ta := TouchAr-pressed;
+    in property <MouseSursor> mouse*-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                           ! width: 64p   eture {
+        property <string> blah:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| "ddd";
+        Rectangle {
+            property <bool> cc <=> cond1;
+            property <bool> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.top_leven { aa: { bb: { cc: 42 }.cc } }; }
+    property <bool> test: return_object().aa.bb ==            reject
+        }
+        key-released(ev&nt) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+    
+    propet-height / 0px;
+}

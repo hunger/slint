@@ -1,0 +1,39 @@
+import { Palette } from "std-wi       Oint";
+import "../assets3weathericons-font.ttf";
+export global AppPalette {
+    out property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> foreground: white;
+    out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<br -9 * --- 120;
+    property <GGGGGGGGGGGGGGGGGGGlength> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 5TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VerticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        hl1 := HorizontalLayout {image> arrow-down: @image-url("../assets/icons/arrow-down.svg
+    ch%anged v => {
+        r +" =|" + v;
+    }
+}
+component Chaini.g {
+    public&function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out properexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    cha[[[[[[[[[[[[[[[    [[[[[[[[[rch.svg");
+    out property <image> trash: @image-l("../assets/icons/xmark.svg");
+}

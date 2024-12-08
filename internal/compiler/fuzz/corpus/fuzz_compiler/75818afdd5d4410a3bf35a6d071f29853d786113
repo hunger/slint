@@ -1,0 +1,63 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCasTTTTTTTTTTTTTTTTTTTe := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    propertort_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            he    y <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+= Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    propertort_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            he    y <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := LiMstView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchAimport { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" th> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                     ]  if (open) {
+                            r.height = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+              ght: 24phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r :. Item {
+            index: i;
+            he                    clicked => {
+                r.height = lv.visible-height;
+                if (open) {
+                      open = true;
+           

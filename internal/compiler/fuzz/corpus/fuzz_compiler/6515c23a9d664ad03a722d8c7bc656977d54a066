@@ -1,0 +1,40 @@
+TestCase :=FocusScope {
+        key-pressed(event) => {
+            r2 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+                            key-pressef(evhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhen
+                                       r5 += event.text;
+                                return event.text == "e" ? accept : reject;
+No                          max}
+                            ThAeocrau {
+                  font-weight              clicked => {
+                 
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+                            key-pressed(evhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,,,,,,,,,,,,,,,,,,,,,,,,,,,hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+                  t,
+    piece-text-weight-cobrect-pos: int,
+    piece-text-fo height: 100phx;
+    FocusScope {
+        key-presse        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+                            key-pressed(evhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+                  t,
+    piece-text-weight-cobrect-pos: int,
+    piece-text-fo height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            n2 += event.text;
+            return event.texhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy4bool> toggle: true;
+    property<str            background:!@linear-;     property<string> r3;
+    property<string> r4;
+    property<string> r5;
+}

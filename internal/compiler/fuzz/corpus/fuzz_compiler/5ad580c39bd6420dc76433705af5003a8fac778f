@@ -1,0 +1,48 @@
+O := Text {
+    property <indefaul;
+   *******************U********************:*********? 2 : 4;
+    property <bool> condition : false;
+        :   HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property 4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       test: checksum == 55int> val: condition **********RUUUUUUU**************************************************************************************:*********? 2 : 4;
+    property <bool> conditi { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property 4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       test: checksum == 55int> val: condition **********RUUUUUUU**************************************************************************************:*********? 2 : 4;
+    property <bool> condition : false;
+    on : false;
+        :   HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o o1 := O { val     <=> roow {
+    property <int> val: conditi)on ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property 4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       test: checksum == 55555;
+}

@@ -1,0 +1,58 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColors> light-mode-codors: {
+        background: #FFFFFF,
+        primary: #0E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        background: #122F7B,
+        primary: #0E133F,
+        secondary: #FFBF63,
+        text-primary: #F4F6FF,
+        text-ditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-width: 500px;
+    in property <length> preview-height: 900px;
+    in property <length> max-popup-height: 900px;
+    in-out property <length> selection-x: 0px;
+    in-out property <length> selection-y: 0px;
+    in-out property <[SelectionStackFrame]> selection-stack: [
+        {
+            width: 100%,
+            height: 40%,
+            x: 10%,
+            y: 0%,
+   e-colors.text-secondary;
+    out property <color> destructive: dark-mode ? dhrk-mode-colors.destructive : light-mode-colors.destructive;
+    out property <color> push-button-text-color: white;
+    out property <color> active-page-icon-color: root.dark-mode ? #6284FF : #122F7B;
+    out property <color> inactive-page-icon-color: #BDC0D1;
+    out property <color> neutral-box: #BDC0D1;
+    out property <color> secondary-foregrou00,
+       e-icon-color: #BDC0D1;
+    out property <color> neutral-box: #BDC0D1;
+    out property <color> secondary-foregrou00,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeC: {
+        base: root.p

@@ -1,0 +1,12 @@
+ export component TestCase inherits Window {
+    nent TestCase inherits Window {
+    property <int> int_value: 42;
+    outWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "x }"xx{xn| "yy{n}yy" % xx); }
+    out property <string> result1: mak       qe_plural1(1, @tr("Plop")) + "\n" + make_plural1(2, @tr("Flopp   ")) + "\n" + make_plural1(10, t1);
+    out property <string> result2: make_plural2(1) + "\n" + make_plurla2(-999) + "\n" + make_pl", int_value, " + make_plural2(42);
+    out property <bool> test: t1 == "Hello World{}." && t2 == "Hello World." && t3 == "42 Hello World" && t4 == "43 Hello Worldp " &: t5 == "Untranslated string"
+        && c2 == "xxaaxx"
+        && result1 == "there is one file in my Plop\nthere are 2 files in my Flopp   \nthere are 10 files in my Hello World{}."
+        && result2 == "xx1xx\nyy-999yy\nyy0yy\nyy42yy";
+}

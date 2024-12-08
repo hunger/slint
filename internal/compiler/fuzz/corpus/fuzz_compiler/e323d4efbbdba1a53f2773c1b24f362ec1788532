@@ -1,0 +1,8 @@
+ TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2gle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<intstruct KeySlot { width-u: float, spacer: bool, background: color, font-size: len> t3         gth, }
+struct Row { key-slots: [Ke   ySl 

@@ -1,0 +1,31 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+ ,
+    piece-bor: brush,
+    piece-te,,,,,,,,,,,import { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> dia,,,,,,,,,,,,,der: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-borderece-te,,,,,,,,,,,,,,,,,,,,,,,,der: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    pgnostics-oiecep

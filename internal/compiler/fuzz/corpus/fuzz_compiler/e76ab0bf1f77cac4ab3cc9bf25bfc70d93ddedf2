@@ -1,0 +1,43 @@
+import { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    ur
+}
+export component DiagnosticsOverlaX {
+    in property <[Diagnight: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+                                                                             : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+   !height: 64px;
+    forwarndow {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+ rent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.diagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => {
+                            root.show_document(diag.url, diag.line, diag.column);
+                        }
+                        Text {
+                            width: 100%;
+                            wrap: word-wrap;
+                            color: #000;
+                            text: diag.level + "        ag.message;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

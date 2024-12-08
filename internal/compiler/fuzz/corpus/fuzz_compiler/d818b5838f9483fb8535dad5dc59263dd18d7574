@@ -1,0 +1,51 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weigimport { Measurements, Colors, Palette } from "../common.slint";
+import { Control} from "control.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+export component AudioVisualizer inherits Rectangle {
+    width: self.preferred-width;
+    height: 50px;
+    y: 0px;
+    property <int> numBars: 50;
+    property <length> barWidth: self.width / numBars;
+    property <length> spacing: 2px;
+    HorizontalLayout {
+        spacing: parent.spacing;
+        alignment: start;
+        y: 40px;
+        property <[float]> getBarHeight:
+            [
+            0.536607,
+            0.927906,
+            0.865396,
+            0.503682,
+            0.225622,
+            0.038002,
+            0.756923,
+ht-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius:            0.914055,
+        

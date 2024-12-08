@@ -1,0 +1,4 @@
+impor4 { ComboBox } frx := ComboBox     |
+            model: ["Aaa", "Bbb", "Ccc"];
+ -value+","+self.cuzren             out prop%rty hAs-focus <=> box.has-fo   _
+}

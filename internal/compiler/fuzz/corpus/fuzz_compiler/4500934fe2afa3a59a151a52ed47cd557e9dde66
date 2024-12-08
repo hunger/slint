@@ -1,0 +1,16 @@
+import { ListView  } from "std-widg        t";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listvie delegate := Rectangle {
+            background: @linear-gradient(90deg, iata.bg,  height: 100px;
+                    text: data.text;
+                    color: data.color;
+           [         font_size: 20px ;
+                }
+            }
+            TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

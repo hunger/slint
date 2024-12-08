@@ -1,0 +1,10 @@
+export component TestCase inherits Window {
+    width: 100phx;
+    height: 100phx;
+    simple-text := Text { }
+    complex-text := Text {
+        stroke-width: 2px;
+    }
+    text-input := TextInput { }
+    out property <bool> test: simple-text.font-metrics.ascent == complex-text.font-metrics.ascent && complex-text.font-metrics.ascent == text-input.font-metrics.ascent && text-input.font-metrics.ascent == 7px;
+}

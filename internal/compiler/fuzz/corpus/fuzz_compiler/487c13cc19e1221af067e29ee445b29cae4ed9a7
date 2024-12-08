@@ -1,0 +1,48 @@
+global G := {
+    property <string> hello: "hello";
+    f
+    property <int> val;
+    text: val;
+    propert _C  A_a!:estCase := Rectangle {
+    proper default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 2  .0,
+         total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots:er]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+          ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-1: c [ { width-u: 2.5, background: #bbbbbb }, - }
+           ],
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : [
+        [{a: "hello"}],
+        [],
+   (    [{a: " val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> r oot.val; }
+       																			test: checksum == 55554;
+unction meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function"hello() -> co    { red }
+}
+export global PubGlob := {
+    public function beh(a: int, b:d int) -> int0{ a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;operty<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+         
+    private property <inimport { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    het> one: 1 + Math.round((x / 1px) - (y / 1px));
+chain-i  ight: 64phx;
+    background: darkgray;
+    Ver  functicalLation ofoo() {r

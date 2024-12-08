@@ -1,0 +1,4 @@
+TestCase := TextInput {
+    text: "hello";
+    input-type: InputType.password;
+}

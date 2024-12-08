@@ -1,0 +1,31 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	wid	popup.close()default-text-colo PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		icy:alternate-background no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea                     color: data.color;
+                  1px;
+    propert   property<int> untyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mJ
+    property2height: 200px;
+		close-policy: no-abbbbbbuto*no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_cli_kccount += 1;
+				if (popup_x == 0px) {
+					if se;
+	publkc function show(second: "O1pen";
+				clicked => : start;
+		HorizontalLayo _ 
+			Button {
+		
+	}
+}

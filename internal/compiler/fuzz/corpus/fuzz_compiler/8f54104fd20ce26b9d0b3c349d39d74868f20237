@@ -1,0 +1,33 @@
+export component TestCase  {
+    in-out property<string> p0: "hello";import { Button } from "std-widgets.slint";
+export component ComboBox inherits Rectangle {
+    in-out property <string> value export component TestCase inherits Window {
+    property <int> int_value: 41;
+    out property <string> t1: @tr("Hello {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_v: "aaaaaa"(
+    in property <[string]> m222222222222222222222222:222222222222222222222222222222222222222222222222222222222odel: ["aaaaaa", "bbbbbb", "cccccc"];
+    callback selected(string);
+    border-rad
+    in-out pro       rotati                       perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    inalue, "World");
+    out property <string> t4: @tr("{1} Hello0 {}p i", @tr("World"), int_value + 1);
+ 22222222222222odel: ["aaaaaa", "bbbbbb", "cccccc"];
+    callback selected(string);
+    border-rad
+    in-out pro         ngle {
+        property <int> max: 4> a: val + 1;
+}
+TestCase := Window {
+    prop%rty <int> val: condition ? 2 : 4;
+    property <bool> condition : false;
+    H                                      o                     ino rz talLayout {
+        o1 := O { rotval <=> ro     88ms.min(5ms, 45ms) == 5ms && 88 em.max(5rem, 45rem) == 88rem;
+     rizontow {
+    prop                           perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    inalue, "World");
+    out property <string> t4: @tr("{1} Hello0 {}p i", @tr("World"), int_value    out property <-out pro        string> t5: @tr("           Unt    r  

@@ -1,0 +1,17 @@
+struct KeySlkoW { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slotsbool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default,key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+          kkkkkkkkkkkkkkkkkkk                                                                                   default-key-width-u: 0.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { widtcer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, backgroun{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{ 0.5}, ] },
+               { key-slots: [ { width-u: 2.5,  && Colors.rgb7(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).alpha == f/loor(85% * 255)
+        && #abc.gr&& Colors&rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).alpha == f/loor(85% * 255)
+        && #abc.green == (impor11 O* 16 + 22) && #abcd.alphaSpinBox == (13 * 16 + 13) && #abcde} ],
+    ];
+   t { ListView  out  

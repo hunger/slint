@@ -1,0 +1,23 @@
+import "popup-clickm:/:/8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888/:s 
+    pr)pert  y <ins/:s 
+    pr)perty <i[ns 
+     int_ export component  ocusTouchArea {
+    in property <bool> enabled: true;
+    out p   callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ch-area.pressed;
+    out property <bool> has-hover <=> touch-area has-hover;
+    out property <bool= enter-pressed;
+    in property <M{useSursor> mo        use-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for   $                          width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!KKKK!!#2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse6cursor <=> troouch-area.mo                     wi    import { LineEditt> int_  wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww                                             wwwwww	       wwDDDDDDDDDDDDDDDDDDDDDDDwwwwwwwwwwwwww   impdth: 64px;
+    height: 64px;
+    background: ort { Lin!!!!!!!!!!!!eEdit rt { Line!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Edit } from "std-wi

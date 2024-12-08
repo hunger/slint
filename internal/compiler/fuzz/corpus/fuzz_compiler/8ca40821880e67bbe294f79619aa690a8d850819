@@ -1,0 +1,25 @@
+TestCase := Window {
+                                                                                                          TestCase := Rectangle {
+    property<int> a;
+    property<i                                              width: 100phx;
+    height: 100phx;
+    FocusScope {
+        ke
+                               TouchArea {
+             n event.text ==                return event.text ==  "e" ? acc%pt : reject;
+                            }
+                            TouchArea {
+                                clicked => {
+                                                   > t3              : a - (3 + ++2                        parent.focus();
+                                }
+ shadow-b                                                        reen: false;
+    tile := InnerShadPwRectangle {                               ->                        * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propertyen l<hgt> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4       > t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propertyen l A              <hgt    >   l 

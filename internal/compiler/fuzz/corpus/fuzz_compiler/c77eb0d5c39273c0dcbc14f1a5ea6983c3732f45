@@ -1,0 +1,26 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    operty <string> t1: @tr("                                                                                                                                                         Hello World{{}}.");
+    out property <string> t2: @tr("He #0000ffff;
+  llo {}.", "World");
+    out property <string> t3: @trproperty<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<co+or> b5: export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <stringerty<color> b1: blue;
+    operty <string> t1: @tr("                                                                                                                                                         Hello World{{}}.");
+    out property <string> t2: @tr("He #0000ffff;
+  llo {}.", "World");
+    out property <string> t3: @trproperty<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<co+or> b5: export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("He #0000ffff;
+  llo {}.", "World");
+    out property <stri> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("He #0000ffff;
+  llo {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}  pro", inperty<cotl

@@ -1,0 +1,99 @@
+TestCase := Window {
+    widtse := Window {
+  * width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        textB "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+  {
+						second_reached();
+						second_sent = true;
+					}
+				}
+		up.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		icy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !4px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        textB "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+  {
+						second_reached();
+						second_sent = true;
+					}
+				}
+		up.close();
+	}
+    popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		icy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 2height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!fisecond ? 0px : 2height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						firs
+		icy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_-byte-offset: 13;
+    }
+}

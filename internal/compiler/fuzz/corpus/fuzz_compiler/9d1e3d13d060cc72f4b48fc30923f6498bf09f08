@@ -1,0 +1,55 @@
+import { Button } from "std-widgets.slint";
+export component ComboBox inherits Rectangle {
+    in-out property <string> value: "aaaaaa"                                                                                                       ty<int> (t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    propert-42.2);
+    property<int>2b;
+    GridLayout {(((((((((((((((((((((((((((((((((vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv(((((((((((((((((((( root.value;
+        height: 050%;
+        x: 12px;
+    }
+    i := Text {
+        width: self.preferred-width;
+        x: parent.width - self.width - 5px;
+        text: "b <";
+    }
+    TouchArea {
+        clicked => { popup.show(); }
+        width: 100%;
+        height: 100%;
+    }
+    popup := PopupWindow {
+        x:0;
+        y: root.height;
+        width: root.width;
+        Rectangle {
+            background: #eee;
+            border-radius: 3px;
+            border-width: 2px;
+            border-color: yellow;
+        }
+        VerticalLayout {
+            spacing: 6px;
+            padding: 3px;
+            for value in root.model: Rectangle {
+                border-radius: 3px;
+                background: item-area.has-hover ? #eef : #fff;
+                height: 25oot.selected(value);
+                    }
+          !     }
+            }
+   "    }
+    }
+}
+export component TestCase inherits Window {
+    width: 400px;
+    height: 400px;
+    in-out property <string> result;
+    TouchArea {
+        clicked => { result += "Root"; }
+    }
+    VerticalLayout {
+        alignment: start;
+        HorizontalLayout {
+      

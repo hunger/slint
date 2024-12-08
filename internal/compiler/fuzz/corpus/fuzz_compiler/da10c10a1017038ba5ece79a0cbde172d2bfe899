@@ -1,0 +1,67 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dapk.svg");
+            Text { text: parent.source.width + "x" + parent.source.height; font-size: 4px; x: 0; y: 0; color: #123a;}
+   import { Palette,Measurements,Colors } from "../common.slint";
+o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Device {}
+    property o1 <=> s.o;
+    <float> background-opacity <=> background-fill.opacity;
+    baccent-foreground Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+    }
+    property <float> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectaimport { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    widtngle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Device {}
+h: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dapk.svg");
+            Text { text: parent.source.width + "x" + parent.source.height; font-size: 4px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source: @image    property o1 <=> s.o;
+    proper-url("../../../../../l> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+ 2"x" + parent.source.height; ty o2 <=> d.o;
+    property <bool> test: abs(o1 - 0.15) < 0.001 && abs(o2 - 0.15) font-size: 4px; x: 0; im     }
+        port {Im Appag

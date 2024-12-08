@@ -1,0 +1,25 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 49Tes9px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ OtherComp :C_- ct-ngle {
+    property t <=> text.text;
+d0c4 99tCase := Rectangle {
+    property<bool> tr@@@@@@@@@@@@@@@@@@@@@@@@@@@@uevar: true;
+    property<bool> falsx } from "std-widgets.slint";
+export component TestCase inherits Window {
+   ti wdh: 20%, #fa0px

@@ -1,0 +1,24 @@
+TestCase0:= Rectangle {
+    property<physical_length> l1:!12phx;
+    property<physical_length> l2: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l4: 120 * 1phx;
+    property<lerty<physical_length> l4: 120 * 1phx;
+    property<length> ll0: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10
+    pangle {
+    property<physical_length> l1:!12phx;
+    property<physical_length> l2: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l4: 120 * 1phx;
+    property<lerty<physical_length> l4: 120 * 1phx;
+    property<length> ll0: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10
+    property <bool> image_with_missing_width_ok <=> image7_with_missing_width.expected_width_o>;
+    property <bool> image_with_missing_width_clipped_ok <=== (8px * (3ms / 2p=x) @ 5px) / ratio
+        && l1*l2 - ll1*ll1ll2 == 0cm*0phx && valueroperty <bool> image_with_missing_width_ok <=> image7_with_missing_width.expected_width_o>;
+    property <bool> image_with_missing_width_clipped_ok <=== (8px * (3ms / 2p=x) @ 5px) / ratio
+        && l1*l2 - ll1*ll1ll2 == 0cm*0phx && value;
+}

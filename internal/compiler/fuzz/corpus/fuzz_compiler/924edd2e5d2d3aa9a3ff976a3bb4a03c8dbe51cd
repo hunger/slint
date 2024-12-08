@@ -1,0 +1,48 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Examtde";
+    preferredS   th: 800px;
+    preferre {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Prefer2ed-height: 600px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+         Rect     Image {
+            source: @image-url("../../../demos/printerdemo/ui/out TestCase := Window {
+    width:  300px;
+ padding: 0;
+         Rect     Image {
+            source: @ifluentrl("../../../demos/printerdemo/ui/images/cat"[;j.g{p
+     $$$sin(90deg)) == 100$$$$        $$$ $$$$$$$$$$$$$$$";
+    preferred-width: 800px;
+    Preferred-height: 60erred-width: 800px;
+    preferre {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    P2: value.clamp(43.0, 53.0)      out property <float> s3<float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        propertfony <int> max: 42;
+     p r  opea : 88;
+    }
+    property <e1 property text_alias <=> text;
+1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3<float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+     p r  operty <sin(45deg))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) ==    &&
+        atan2(0, 0) == 0 &&
+        atan2(0, ---------------------------------------------------------------------------------------------------0deg))  &&
+        round(acos(cos(     round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg---------------- 1000 && round(1000*sin(360deg)) == 0 &&
+        rouVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVnd(1000* sin(180deg))  &&
+        round(acos(cos(     round(0500 * sin(90deg)) == 1000 && round(1000*cos(9                  Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout TestCase := Window {
+    wid4h:  300px;
+ padding: 0;
+        Rect     Image {
+            sinterdemo/ui/images/cat"[;j.g{p
+     $$$sin(90deg)) == 100$$$$           $$$$$$$$$$/..    /

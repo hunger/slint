@@ -1,0 +1,55 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ             sin        ic function close() {
+		popup.close();
+	}
+    popup := Popupp_cdow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		height: 200px;
+		c                        lose-policy: no-auroperty <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ        0px;
+           propert     }
+    }
+    Text {
+        text: (
+            "\{riexp]                      !                       tx/*        "\{r.width /////////////ow {
+{
+                min-height         "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+    ------inpx
+        && c2.min-height 3= 300px && c2.min-width == 200px
+        && bug6315.ok;
+/////g-//////////////>////////up_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ                     ic function close() {
+		popup.close();
+	ck_count <=> popup_click[count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

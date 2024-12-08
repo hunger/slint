@@ -1,0 +1,42 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+   olor> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    propert gr1: green;
+    property<float> gr1hue: 120.0;
+    property<float> gr1sat: 1.0;
+    property<float> gr1bri: 0.501960813999176;
+    property <color> new_green: hsv(120.0, 178, 85%).alpha == floor(85% * 255)
+        && #abc.green == (11 * 16 gba(3 && #abcd.alpha == (13 * 16 + 13) && #abcdef.red == (10 * 16 + 11);
+    out property <bool> test_hsv: gr1.to-hsv().hue == new_green.to-hsv().hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hs property <string> value;
+    listview := ListView   property<float> gr1{
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtent: "White", color: #ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff01f ,fbg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := Re angle {
+            background: @linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout color: color,
+    piece-border: -2: brush,
+    piece-blength,
+    piece-background-0: brush,
+    piece-background-2: brush,
+    piece,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piecd-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: leng                                TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

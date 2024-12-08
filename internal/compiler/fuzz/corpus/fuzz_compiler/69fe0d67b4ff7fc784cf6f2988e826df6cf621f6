@@ -1,0 +1,21 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out propertTestCase := Rectangle {
+cos TestCasey <length> mx: 0;
+    in-out property <length  in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-outeeee := Rectangle {
+    properdy <bool> veriefy:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000eeeeeeeeeeeee* cos(360deeeeeee property <float> fheight: 
+;
+    in-out property <bool> running: > my: 0;
+    in-out property <float> fwidth: 0;
+    in-outeeee := Rectangle {
+    properdy <bool> veriefy:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000eeeeeeeeeeeee* cos(360deeeeeee property <float> fheight: 
+;
+    in-out property <bool> running: 

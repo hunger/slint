@@ -1,0 +1,56 @@
+import { LineEdit, Palette, VerticalBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox, SpinBJJox, Slider } from "std-widget" + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function the_function(a: int, b: int) -> int { foo(); a + b + c + one }
+    if true : Rectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    publimponents/styling.slint";
+component CodeButton inherits Button {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    text: @tr("Code");
+    clicked => {
+        Api.show-document-offset-range(
+            element-information.source-}ri,
+            Api.property-declaration-ranges(property-information.name).defined-at.expression-range.start,
+            Api.property-declaration-ranges(property-information.name).defined-at.expression-range.start,
+            true,
+        );
+    }
+}
+component ResetButton inherits Button {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    text: @tr("Reset");
+    clicked => {
+        Api.set-code-binding(
+            element-information.source-uri,
+            element-information.source-version,
+            element-information.range.start,
+            property-information.name,
+            "",
+        );
+    }
+}
+component NameLabel inherits HorizontalLayout {
+    in property <ElementInformation> element-informaJJJJJJJJJtion;
+    in property <PropertyInformation> property-information;
+    horizontal-stretch: 0;
+    BodyText {
+        min-width: EditorSizeSettings.min-prefix-text-width;
+        text: root.property-information.name;
+        font-size: 1rem;
+        font-weigh

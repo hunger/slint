@@ -1,0 +1,12 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"e\quto\\"\u{9}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out p                         roperty<bool> e2: p2 == "fox:p &";
+    in property<float> ring> converted_value: round(value * 100)/100;
+    out property <string> ten_dot_one: 10 + increment;
+    out property <bool> test: e1 && !e2 && converted_value == "98.77" && ten_dot_one == "10.1";
+}

@@ -1,0 +1,13 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VerticalLaexport component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out property<string> p2: "fox:p &
+";
+    in-out property<string> p2: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p clic&

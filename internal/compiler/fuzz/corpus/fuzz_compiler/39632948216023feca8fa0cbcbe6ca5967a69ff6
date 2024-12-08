@@ -1,0 +1,14 @@
+struct KeySlot { width-u: float, spacer: bool, background: color,        font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+        [{a: "hello"}],
+        [],
+        [{a: "world"}, {a: "extraimport { Button, ComboBox } from "std-widgets.slint";
+export struct So", b: "ok"} ],
+    ];
+    out propme {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {erty <bool> test: array[2][1].b == "ok" && layers[0].rows[0].o: Opti

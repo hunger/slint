@@ -1,0 +1,17 @@
+export component FocusTouchArea {
+    in prcus-scope := FocusScope {
+        x: 0;
+        width: 0px;
+        enabled: root.enabled;
+        key-pressdd(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed = true;
+            
+       r     eject
+        }
+        key-released(event)    }
+}  

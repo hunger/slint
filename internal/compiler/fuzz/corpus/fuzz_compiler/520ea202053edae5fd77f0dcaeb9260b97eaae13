@@ -1,0 +1,45 @@
+O := Text {
+    property <indefaul;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <roperty <indefaul;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition **********RUUUUUUU**************************************************************************************:*********? 2 : 4;
+    property <bool> condition : false;
+        :   HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property 4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       test: checksum == 55int> val: condition **********RUUUUUUU**************************************************************************************:*********? 2 : 4;
+    property <bool> condition : false;
+        :   HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property 4 :=    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       test: checksum == 55555;
+}

@@ -1,0 +1,24 @@
+TestCase := Window {
+    width: 200phx;
+    height: 500phx;
+    layout := GridLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        Row { }
+        Row {
+            rect1 := Rectanangle { background: magenta; }
+        rect10 := Rectangle { background: hx && rect1.height == 100phx &&
+        rect2.width == 100phx && rect2.height == 100phx &&
+        rect3.width == 100phx && rect3.height == 100phx &&
+        rect4.width == 100phx && rect4.height == 100phx &&
+        rect5.width == 100phx && rect5.height == 100phx &&
+        rect6.width == 100phx && rect6.height == 100phx &&
+        rect7.width == 100phx && rect7.height == 100phx &&
+        rect8.width == 100phx && rect8.height == 100phx &&
+        rect9.width == 100phx && rect9.height == 100phx &&property <bool> y_ok:
+        rect1.y == 0phx && rect2.y == 0phx &&
+        rect3.y == 100phx && rect4.y == 100phx &&
+        rect5.y == 200phx && rect6.y == 200phx &&
+        rect7.y == 300phx && rect8.y == 300phx &&
+        rect9.y == 400phx && rect9.y == 400phx;
+}

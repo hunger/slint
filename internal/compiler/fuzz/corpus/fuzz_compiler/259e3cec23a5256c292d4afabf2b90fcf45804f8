@@ -1,0 +1,32 @@
+global G := {
+    property           <string> hello: "hell           o";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> )color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,        $                  border-r    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> )color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,        $                  border-r                                                    b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property+ <int> one: 1 + Math.round((rx / 1px) - (y                                                 b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property+ <int> one: 1 + Math.round((rx / 1px) - (y / 1px));
+    function foo() {}
+    function the_function(a: int, b: int) -> int { foo();                     b: int) -> int tangle {
+        background: the_function(0, 2) > 3 ? blue: sc.hello();
+                            lo world" && sc.hello() == Colors.red;
+}

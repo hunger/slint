@@ -1,0 +1,39 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(36in(90deg)) == 1000 && round_N000*cos(90deg)) == 0 &&
+   &&
+        cos(0) == 1 &&
+        round(1000* cos(36in(90deg)) == 1000 && round_N000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45de..........................................................g))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(1b0, 10) == 45deg  450 &&
+  background      round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(1b0, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        ata     round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45de..........................................................g))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(1b0, 10) == 45deg  450 &&
+  background      round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(1b0, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg!&&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(-10, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}

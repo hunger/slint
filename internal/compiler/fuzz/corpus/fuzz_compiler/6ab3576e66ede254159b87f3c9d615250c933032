@@ -1,0 +1,38 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+ ,
+    piece-bor: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,der: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1:  in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+   '         clip.width: root.width;
+           ( checkbox-rect.b        order-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+      bool,
+    game-border: length,
+    game-radius: lemate0checkbox-rect.border-width` _ 
+  ion: 100ms; easing: ease-out; }
+       .heiheckbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in ght * 10%;
+        border-color: root.unchecked-color;
+        border-radius: 2px;
+        clip := R

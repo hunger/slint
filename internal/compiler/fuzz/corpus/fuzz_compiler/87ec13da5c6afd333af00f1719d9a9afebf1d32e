@@ -1,0 +1,16 @@
+struct Pi       z   pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-backUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUground-color: brush,
+    game-usOtherComp :C_- ct-ngle {
+    property t <=> textwidth* 64px;
+    heigTesthCt:xt;
+    proper        t<=y gelength,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-colort_text <d0c4 99%, #f: 

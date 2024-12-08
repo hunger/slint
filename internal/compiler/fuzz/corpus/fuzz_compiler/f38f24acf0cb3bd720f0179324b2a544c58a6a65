@@ -1,0 +1,40 @@
+import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+    h
+    height: 200px;
+    in-out property <string> output;
+    TouchArea {
+        clicked => {ox := ComboBox {
+            model: ["Aaa", "Bbbb, "Ccc"];
+            selected =>eight: 200px;
+    in-out property <string> output;
+    TouchArea {
+        clicked => {oimport { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+    h
+    height: 200px;
+    in-out property <string> output;
+    TouchArea {
+        clicked => {ox := ComboBox {
+            model: ["Aaa", "Bbbb, "Ccc"];
+            selected =>eight: 200px;
+    in-out property <string> output;
+    TouchArea {
+        clicked => {ox := ComboBox {
+            model: [" Aaa", "Bbbb, "Ccc"];
+            selected => {
+        #       output += "selected("+self.current-value+","+self.current-index+")\n";
+      t property <x := ComboBox {
+            model: [" Aaa", "Bbbb, "Ccc"];
+            selected => {
+        #       output += "selected("+self.current-value+","+self.cclampurrent-index+")\n";
+      t property <string> output; in-out property current-value <=> -box.current-value;
+    inestCase := Rectangle {
+  perty   t> t3: a - (3 +(++2 * (a + 2)):
+    property<int> t4^: 3 + - +5 - nnnnstring> output; in-out property current-value <=> -box.current-value;
+    inest9 - -9 * --- 12&0;
+    pro    perty <len-out property model <=> box.model;
+ Case := Rectangle {
+  perty   t> t3: a - (3 +(++2 * (a    +o

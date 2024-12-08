@@ -1,0 +1,49 @@
+FixedWidthtImage := Imagef {
+    so=rce: @image-url("cat.jpg");
+    widtspacingh: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VErticalLayout {
+        imaimport { Page_in_layoimport { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 0px;
+        borderut := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := Filette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in property <bool> -full-screen: false;
+    tile := InnerShadPwRectangle {
+        inn----------------------------------------------------------------er-color: Palette.info-alternate-back     ground;
+        inner-shadow-b                                                        reen: false;
+    tile := Innegle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in property <bool> -full-screen: false;
+    tile := InnerShadPwRectangle {
+        inn----------------------------------------------------------------er-color: Palette.info-alternate-back  50phxng_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+               border-soradu

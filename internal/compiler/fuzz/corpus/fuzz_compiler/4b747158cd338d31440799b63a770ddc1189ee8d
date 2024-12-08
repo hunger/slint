@@ -1,0 +1,57 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 3 [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 099phx;
+        GridLayout {
+            Rectangle {
+                background: c      height: parent.height {
+            Rectangle {
+                background: c      height: parent.height;
+                    clicked => {
+  a                      value += index;
+                 t> value: 1;
+    for Rectangle {
+            ex] in [#f00, #00f, #0a0]: Rectangle {
+z       y: minmaxindex * height  ;
+        width: p;
+    height: 300phx;
+    property<ing c[index] in [#f0/, #00f, #0a0]: Rectanglecommon     y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+            ex] in [#f00, #00f, #0a0]: Rectangle {
+z       y: minmaxindex * height  ;
+        width: p;
+    height: 300phx;
+    property<inght: 300LLLLLLLLLLLLLLLphx;
+    pro erty<int> value: 1;
+    for c[index] in [#f00,;
+                ;
+                    clicked => {
+  a                      value += index;
+                 t> value: 1;
+    for c[index] in [#f0/, #00f, #0a0]: Rectanglecommon     y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+            ex] in [#f00, #00f, #0a0]: Rectangle {
+z       y: minmaxindex * height  ;
+        width: p;
+    height: 300phx;
+    property<inght: 300LLLLLLLLLLLLLLLphx;
+    pro erty<int> value: 1;
+    for c[index] in [#f00,;
+                   Rectangle {
+            ex] in [#f00, #00f, #0a0]: Rectangle {
+z       y: minmaxindex * height;
+        width: p;
+    height: 300phx;
+    property<inght: 300LLLLLLLLLLLLLLLphx;  }
+             `  }
+            }
+         u    }
+}

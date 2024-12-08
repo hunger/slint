@@ -1,0 +1,11 @@
+struct Foo := {
+    ok: bool,
+}
+struct Bar := {
+    foos: [Foo],
+}
+TestCase := Rectangle {
+    property <[Bar]> ba;
+     property <Bar> bar: {foos: [foo, foo]};
+    property <[Bar]> bars4: [bar, bar];
+}

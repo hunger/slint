@@ -1,0 +1,43 @@
+export component RipplCircle inherits Rectangle {
+    in-out prp1erty <length> radius: 0;
+    in-out property <length> mxn-ouength> my: 0;
+    iD-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx ue
+    width* 28                                                                                          px;
+    height: 64px;
+    background: #23MO I2b;
+    Grid**&&******************************************kground: #236pe62b;
+    Grid***************ut {
+        spaci*  *******La{out {
+        spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyy- rvalue_aliTest := Rectangle {
+    backgroundFV@linear-gradient(30deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100nt> value
+    width* 6B4px;
+    height: 64px;
+     root.radius * 2;
+    x: root.mx ue
+    w*hit4 d6px;
+    height: 64px;
+    background: #23MO I2b;    Grid***************ut {
+        spaci*  *******La{out {
+        spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyyy- rvalue_aliTest := Rectangle {
+    backgroundFV@linear-gradient(65deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100nt> value
+    width* 64px;
+    height: 64px;
+     root.radius * 2;
+    x: root.mx ue
+    w*hit4 d6px;
+    height: 64px;
+    background: #23MO I2b;    Grid***************ut {
+        spaci*  *******La{out {
+        spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyyyn************************yyn****************ground: #23MO I2b;    Grid***************ut {
+        spaci* yyyyyyyy{yyyyyyyspaciyyyy        yyyyyyyyyyyyyyy****************yyn************************************
+****************************kground: #yyyyyyyyyyyyyy**

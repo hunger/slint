@@ -1,0 +1,50 @@
+FixedWidthtImage := Imagef {
+    so=rce: @MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMimage-url("cat.jpg");
+    widtspacingh: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_in_layoimport { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 0px;
+        borderut := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: s
+    fixed_image := Image {
+        width: 50phxng_width :=? Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        source: @image-url("-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+ `  property <int> last_cliccat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+        propertked: -1;
+    property <lengty <bool> expected_width_ok: self.width == 600phx;
+    }
+    propertyh> item-he <

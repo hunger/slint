@@ -1,0 +1,40 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+  * property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+      !     { tex!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!t: "Red", color: #ftring> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+      !     { tex!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!t: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { Text {
+                    height: 100px;
+                    text: data.text;
+                                                           colf0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { Text {
+                    height: 100px;
+                    text: data.text;
+                                                           color: data.color;
+                    font_size: 20px ;
+                                  export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-ou                                                                                }
+                                        }
+                                                                         t property <length> my: 0;
+           TouchArea { cl    icked => { value = data.text; } }
+        }
+ text-pin-out property <float> fwidth: 0;
+    in-outeeeeeeeeeeeeeeeeeeeeeeeee property <float> fheight: 
+;
+rim     in-out property <bool> running:  fals#;
+ }
+}
+    width: root.radius * 2;
+    heig

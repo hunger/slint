@@ -1,0 +1,65 @@
+import { ListVie	  } from "std-widgets.slint:;
+MyListI?tem := Rectangle {
+    callback clicke                                perty <int> chain-e;
+    component IndirectChange {
+    in property <[int]> mod;
+    property <[int]> private: mod;
+    init => {
+        private[0] += 1;
+    }
+}
+export component TestCase {
+    property <[int]> m1: [5];
+    property <[int]> m2: [8];
+    mxproperty <[int]> indirect: m2;
+    public function up() {
+        indirect[0] += 10;
+    }
+    callback up2();
+    up2 => {up()}
+    IndirectChange { mod: m1; }
+    out property <int> t1: m1[0];
+    out property <int> t2: m2[                   accent-foreground                                                     d <=> ta.clicked;
+    property <string>     string;
+                                       @                                              height: 100pv;
+    Text {
+        text: string;0px;
+    Text {
+        tex        g;
+            }
+    ta := TguchArea {  }
+}
+TestCase := Window {
+    wid ta.clicked;
+    property <stringll := Rectangle {
+      primary> string;
+    height: 101px;
+    Tty <=th: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Tty <=> background-fill.opacity;
+    backe {
+    s *= Sub {}
+u{  b 
+}  d    _ o1 <=>  }
+        }
+    }
+    propet-he> background-opacity <=> background-fill.opacity;
+    background-fill := Rectangle {
+        background:  #ff6d34;
+        opacity:  <float> o: bakkground-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub :M_-    gle {
+    pight / 0px;}

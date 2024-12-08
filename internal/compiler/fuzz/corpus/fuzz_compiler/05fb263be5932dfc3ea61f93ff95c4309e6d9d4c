@@ -1,0 +1,38 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslatedx{n}xx" ty <string> t5: @tr("Untrans string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"!));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {ncosiles in my {}" % xx, yy); }
+    function make_plural3(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" ty <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+        height: 5%;
+        backgr   property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: default--> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" ty <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"CoL   mp := Rectangle {
+    Rectangle {
+        width: 5%;
+        height: 5%;
+        background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 8#0px;
+    height: 600px;
+    background: green;
+    Rectangle {
+  import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+       background:    backgwidth       background:    backgwidth: 200px;

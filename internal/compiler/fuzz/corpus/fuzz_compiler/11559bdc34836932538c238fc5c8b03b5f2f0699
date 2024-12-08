@@ -1,0 +1,19 @@
+export        4ow := Window {
+    title: "Slint Image Scaling Example";
+    preferred-width: 600px;
+    preferred-height: 599px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../Imarl("../../../demos/printerdemo/ui/images/cat.jpf");
+            Image Scaling Example";
+    pr      }
+    }
+demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            sourcce: @image-url("../../../demos/printerdemo/ui/images/cat.jpg");*
+            Image Scaling Example";
+    pr      }
+  / }
+}

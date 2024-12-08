@@ -1,0 +1,84 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out property <stri	 A_Du_   changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+chain-i;
+    changed chain-i => { chain-h += 1; }
+}
+component SubCompo {
+    in-out property <int> v: 456;
+    in-out property <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort component TestCase inherits Window {
+    in-out property <string> result;
+    in property <int> value: 56;
+    changed rty <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort component TestCase ifocus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort component TestCase inherits Window {
+    in-out property <string> result;
+    in property <int> value: 56;
+    changed rty <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort component TestCase inherits Window {
+ ut property has-focus <=> ti.has_focus;
+    out property text <=> ti. + * * 2 + 2g := -  5

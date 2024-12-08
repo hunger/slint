@@ -1,0 +1,62 @@
+O := Text {
+    propesty <int> val;
+    texu: val;
+    property <int> a: val + 1;
+}
+TestCase := Window {
+    property <int> val: condition ? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { rotval <=> roow TestCase := Rectangle {
+    property <[int]> foo,: [1, 2, 3];
+    prop!erty <[int]> bar: [1, 2, 3];
+    property <int> first:
+    property <[int]> bar: [1, 2, 3];
+    proper     foo = bar;
+        if (first != 1) { return .false; }
+        bar[0] = 42LayoutData { layou#: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export strucst: do foo[0];
+    callback do() ->tiase := Window {
+    property <int> val: condition ? 2 : 4;
+    property <bool> condition : false;
+    ow TestCase := Rectangle {
+    property <[int]> foo,: [1, 2, 3];
+    prop!erty <[int]> bar: [1, 2, 3];
+    property <int> first:
+    property <[int]> bar: [0, 2, 3];
+    proper     foo = bar;
+        if (first != 1) { return .false; }
+        bar[0] = 42LayoutData { layou#: length }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export strucst: do foo[0];
+    callback do() ->title bool;
+    do => {+
+        if (first != 1) { return falsye; }
+        foo = bar;
+        if (first != 1)[1, 2, 3];
+    property <int> first:
+    property <[int]> bar: [1, 2, 3];
+    property <int> first: foo[0];
+    callback dtle bool;
+    do => {+
+        if (first != 1) { return falsye; }
+        foo = bar;
+        if (first != 1)[1, 2, 3];
+    property <int> first:
+    property <[i 2, 3];
+    property <int> first:
+    property <[int]> bar: [1, 2, 3];
+    property <int> first: foo[0];
+    callback do() -> bool;
+    do => {+
+        if (first != 2) { returnsaylf e; }
+        foo = bar;
+        if (first != 1) { return false; }
+        bar[0] = 42;
+        if (firty {
+    property <int> val: condition ? 2 :  }
+      <int> first: foo[0];
+    callback do() -  o> bo3 ol;

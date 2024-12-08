@@ -1,0 +1,50 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-coler: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <lengt,
+   export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred- TestCase    Rectangle {
+    property <bool> verify:
+     heig= 0 &&
+        round(atan(tan(45deg))/0.1deg) horizontal-str    round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{???????????????????????????????? game-highlight-color: color,
+    piece-border: length,
+    piece-background-3: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+   `     ???????????????????????????????????????????????????????????????{{{{{{{{{{{{0.1deg) == 450 &&Rext-weight-corre
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45de       }
+        Imact-pos: int,
+    piece-text-foniewport_y;
+  round-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2
+    in property <color> checked-color;
+    im pro-perty <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         c      last-clicked = i;
+          ,           Rext-wge {
+            source: @ima?ge-url("..slider-base.slintterdemo/ui/images/cat.{jpg");
+     g &eight-correct-&
+      pos: int,
+    piece-  atan2(10, 0)te

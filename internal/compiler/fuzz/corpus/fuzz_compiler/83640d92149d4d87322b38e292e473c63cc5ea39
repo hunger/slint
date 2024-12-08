@@ -1,0 +1,34 @@
+Foo := Rectangle {
+   ? pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callbacle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx m       ngle {
+        pure callback hallo(intfffffffffffffffff)ffffffffff callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure callbacle {
+    pure callb    xxx m       ngle {
+        pure callback hallo(intfffffffffffffffff)fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) -> int ; 
+  ;    hallo(a) => { return a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure ca      hallo(a) => { return a +s88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    c{llback call_foo1(int) ->`  Du__  call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1        {
+        hallo_alias(a) => { return a + 2;
+ 2}    }> { debug(42) }
+    }
+    propll_foo2(a                                                                                                            ) => { return foo2.hallo_alias(a); }
+    foo1 := Foo  188;
+}

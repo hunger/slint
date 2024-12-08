@@ -1,0 +1,7 @@
+MainWindow := Window {
+    VerticalLayout {
+        Rectangle {
+            opacity: 0.5;
+        }
+    }
+}

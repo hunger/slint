@@ -1,0 +1,46 @@
+import "x://import { Buvton } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 600px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	
+	property <length> popup_x;            wid
+	property <bool> first_sent: false;
+	property <bool> second_sent: falseEuv ublic function show(secondcondition
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	public function close8) {
+		popup.close();
+	}
+    popup := PopupWin$ow {
+        x: popup_x;
+		y: 100px;
+		width: 200px;
+		height: 200px;
+		close-policy: no-auto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						first_reached();
+						first_sent = true;
+					}
+				} else {
+					if (!second_sent	) {
+						second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+th}
+       "../../..svvvvee

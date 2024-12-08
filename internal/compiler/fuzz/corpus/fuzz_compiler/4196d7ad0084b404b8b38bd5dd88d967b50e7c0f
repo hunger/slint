@@ -1,0 +1,50 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    propert t<syring> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", cnlo      { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gte
+TestCase := Window {
+    width:rt { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    propert t<syring> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", cnlo      { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gte
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", cnlo      { text: "w,"lYole color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeee)e },
+            {gtepiece-text-weight-incorrect-pos: int,
+    piecd-text-weight-correct-pos: int,
+text: "Black", cpiece-text-weight-incorrecxt-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int-pos: int,
+    piecd-text-weight-correct-pos: int,
+text: "Black", color: #000000, bg: #eeeeee 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", cnlo      { text: "w,"lYole color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeee)e },
+            {gtepiece-text-weight-incorrect-pos: int,
+    piecd-text-weight-correct-pos: int,
+text: "Black", cpiece-text-weight-incorrecxt-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int-pos: int,
+    piecd-text-weight-correct-pos: int,
+text: "Black", color: #000000, bg: #eeeeee },
+            ://epiece-text-weigh            TouchArea { clhcked => { }

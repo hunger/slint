@@ -1,0 +1,15 @@
+TestCase := ceRtangle {
+    property<physical_length> l1: 12phx;
+    property<physical_length> l2: 12px;
+    property<physical_lengfont-metrth> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 1000h[ + 12px;
+    property<length> ll4:10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+  control-foreground  property<bool> test_zero: zero2 == 0;
+    property <float> ratio: 1px / 1phx;
+    property<bool> test: (8phx * 5px * 3ms / 2phx)  == (8px * (3ms )/ 2phx) * 5* 3ms /s / 2phx)  == (8px * (3ms )/ 2phx) * 5* 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+        &&

@@ -1,0 +1,53 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg"[;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling indow {
+    title: "Slint e: @image-url(". /../../demos/p}rinte$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling indow {
+    title: "Slint e: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering         
+    forwa]]]]]]]]fff : smooth;
+        }
+        Image {
+            source: @image-url("Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+     HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+          
+    forwa]]]]]]]]fff d-wi* 2 + 2 - 50 - 2;
+rdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+     HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+          
+    forwa]]]]]]]]fff d-wi* 2 + 2 - 50 - 2;
+    pr]]]]]]]operty<int> t2: 500 / 2 * 30 -!         spacing: ts Wijdow ]]]]]]]]]]]]]]EEEEEEEEEE###Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-wid  source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling Example";
+    pr      }
+    }
+}

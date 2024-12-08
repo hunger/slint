@@ -1,0 +1,30 @@
+export MainWindow := Window {
+    title: "Slint Image Scaling Example";
+    preferred-width:TestCase := Rectale {
+    property <[inphx;
+    heigbt: 300phx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6,7,8,9,10,11,12,13    -14,15,16,17,18,19,20,21,22,23,24,2preferred-width0];
+    function assert(cond: bool, error: string) {
+        if (!cond && root.error == "") {
+            t]> foo: [1, 2, 3];
+    property <[int component TestCase {
+    width: 300pex;
+    heigbt: 300phx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,12px;
+    property<phys in-out property <bool> checked;
+    callback toggled(bool);
+ouchArea {
+            height: 100px;
+      600px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+                  ular.ttg";
+import "..(/../                                                                  ular.ttg";
+import "../../                                           onts/NotoSans-Reg                                                      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!!!!!!                                0phx;
+    de........f.!!!! ault-fo7e: mod;
+    init => {
+  !!!!!!!!!!!!             source: @im       clicked => {
+                assert(i == 6, "i = " + i + " b	  6age-url(". /../../Image Scaling Examplacti    preferred-width: 600px;
+    pref");
+                assert(val ==erre

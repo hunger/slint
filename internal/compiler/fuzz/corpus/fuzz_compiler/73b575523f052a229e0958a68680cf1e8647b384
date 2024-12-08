@@ -1,0 +1,19 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 :e {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: imstd-widgets.slintg2.source-clip-height * 1px == img2.height && img2.source-clip-width * 1px == img2.width &&
+         int> t2: 500 / 2 * 30 -!1;
+[  f property<int> t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propert
+    out property<float> t1: cos(0);
+    out property<float> t;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;foo;
+    foo => {
+        a += +8;
+        a .source.wi										dth == 0 && img3.source4height == 0;
+}

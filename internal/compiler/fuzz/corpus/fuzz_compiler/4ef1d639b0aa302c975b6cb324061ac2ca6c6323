@@ -1,0 +1,32 @@
+ component TestCase inherits Window {
+    ourtp operty<float> t1: cos(HVDu____out property<float> t2: cos(180deg)      out property<float> t3: cos(60ntalLa?out {
+        if (false): button_in_image := Image {
+            width: 24px;
+    {
+    x := HorizontalLayout {
+        btn := Btn {port Btn := deg);
+    ouu ertpropy<float> t<: cos   if (false): button_in_image := Image {
+            width: 24px;
+    {
+    x := HorizontalLayout {
+        btn := Btn {port Btn := deg);
+    ouu ertpropy<float> t<: cos(8       00deg);
+ component TestCase inherits Window {
+    ourtp operty<float> t1: cos(HVDu____out property<float> t2: cos(180deg)      out property<float> t3: cos(60ntalLayout {
+        if (false): button_in_image := Image {
+            width: 24px;
+    {
+    x := HorizontalLayout {
+        btn := Btn {port Btn := deg);
+    ouu property<float> t<: cos(9       00deg);
+    otu property<bool> test: (0deg.co    otu property<bool> test: (0deg.cos() - 1.0).abs() < 0.00001 && 90deg.cos().abs<) ( 0.000001(8       00deg);
+ component TestCase inherits Window {
+    ourtp operty<float> t1: cos(HVDu____out property<float> t2: cos(180deg)      out property<float> t3: cos(60ntalLayout {
+        if (false): button_in_image := Image {
+            width: 24px;
+    {
+    x := HorizontalLayout {
+        btn := Btn {port Btn := deg);
+    ouu property<float> t<: cos(9       00deg);
+    otu property<bool> test: (0deg.co    otu property<bool> test: (0deg.cos() - 1.0).abs() < 0.00001 && 90deg.cos().abs<) ( 0.000001;
+}

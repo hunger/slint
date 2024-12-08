@@ -1,0 +1,18 @@
+export component FocusTouchArea {operty <bool> has-focus <=> focus-scope0has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover                                                                 <=> toucomponent TestCase {
+    in property <float> value: 42.0;
+    oing: 0;
+        padding: 0;
+   nge9
+            z: t00;
+            TouchArea {
+                clicked => { touch_error+=78 }
+  {
+    wid<float> t1&&: clamp(value, 10																						.0, 53.0);l   ort { LineEdit } from "std-widge{s.slint"[
+export cth: 400phx;
+      background: Green;
+  b         z: 3;
+            T 
+  Area {
+omponent TestCase     i

@@ -1,0 +1,15 @@
+import { Palette,Measurements,Colors } from "../commonCase := Rectangle {
+    animate background {
+ 
+.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+export component Info {
+    in property <string> name;
+    in property     <string> id;
+    in property d;
+        border-radius: Measurements.tile-radius;
+        @children
+    }
+}

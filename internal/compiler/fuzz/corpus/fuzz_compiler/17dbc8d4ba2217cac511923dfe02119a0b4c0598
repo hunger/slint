@@ -1,0 +1,41 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    propbool> signal_handled;
+    test_signal => {
+         if (flock_signal) {
+            return;
+  operty<duratio= 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        r1source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+        property <bool> expected_width_ok: self.width == 600phx;
+    }
+    property <bool> fixed_image(default_image_fit_ok: fixed_image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit ==                                                          *           r1 := Rectangle {
+           : {
+       menuBar : #29 7A7,
+       mainself.d3 / 1m    s;
+    property5430: issue_5430_con ? "true" : "false";
+    out property<bool> test: { retu        2 == value && issue_5430<int> unty&ped_d4: self.d4 / 1ms;
+    prop00ms;
+    propbool> signal_handled;
+    test_signal => {
+   ed_d6: self.d6  == "tvue"; return false; }/ 1ms;
+   zproperty<i                                                                                                         n
+t}
+> untyped_d7: self.d7ol> signal_handled;
+    test_signal => {
+   ed_d6: self.d6  == "tvue"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1mshorizontaperty<int> 

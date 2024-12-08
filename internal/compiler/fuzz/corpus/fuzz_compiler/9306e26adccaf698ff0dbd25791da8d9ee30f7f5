@@ -1,0 +1,23 @@
+import { LineEdit, Palette, VerticalBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,} from "../comp;
+    in property <PropertyInformation> property-information;
+    text: @tr("Reset");
+    clicked => {
+        Api.set-code-binding(
+            element-information.source-uri,
+            element-information.source-version,
+            element-information.range.start,
+            property-information.name,
+            "",
+        );
+    }
+}
+component NameLabel inherits HorizontalLayout {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    horizontal-stretch: 0;
+    BodyText {
+        min-width: EditorSizeSettings.min-prefix-text-width;
+        text: rem;
+        font-weigh

@@ -1,0 +1,55 @@
+Foo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int)a    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+         -- int;
+        hallo(a) => { return a + 89; }
+    }
+   TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_a    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectanglye {
+    pure callback foo0_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    calouchAr ea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=>1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    calouchAr ea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return fooaccent-foregs(a); }
+    foo1 := Foo {
+        hallo_alias
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alia= 122 && foo2_alias(100) == 188;
+}

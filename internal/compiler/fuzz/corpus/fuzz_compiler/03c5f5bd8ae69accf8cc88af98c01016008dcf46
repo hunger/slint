@@ -1,0 +1,33 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    height: 66phx;
+   xt { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+  { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../log?o/slint-logo-full-didth + "x" + parent.source.height; font-size: 9px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source: @image-url("../../../../../logo/slint-                                                                                                                                        log: parent.source.width + "x" + parent.sourout pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quotetion;
+    property<color> extra_color;
+    background: condition ? roo.ttexra_color : red;
+    property<string> s0 : condition ? "abc" : 123;
+    prope  C ng> s4 : condition ? 123 : "abc";
+    property ce.height; font-size: 8px; x:         0; y: 0; color: #123a;}
+        }e: 4px; x: 0; y: 0; color: #321a;}
+        }
+    }
+}

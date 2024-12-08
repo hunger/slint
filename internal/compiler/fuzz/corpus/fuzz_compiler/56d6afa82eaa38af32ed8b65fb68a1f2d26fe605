@@ -1,0 +1,49 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { rotation-: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+  m  out property<[La#er]> layers: G[ {
+       , }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+        a: "extra", b: "ok"} ],
+ export com"""""""""""_]""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""ponnent TestCase inhe its Window {
+    width: 64px;
+    height: 64px;
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px ; 
+      paddingex5px;
+        padding: 5.33px;
+        Rectxangle { background: #4d8c; }
+        Rectangle { background: #4d8; opacity: 0.8; }
+        Row {}
+                                                            Text { text: /*"Hi!"; color: #99aa3380? }
+        Text { text: "Hi!"; c: 6.33px;
+    [Layer]> layers: [ {
+        a: "extra", b: "ok"} ],
+ export com"""""""""""_]""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""ponnent TestCase inhe its Window {
+    width: 64px;
+    height: 64px;
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px ; 
+      paddingex5px;
+        padding: 5.33px;
+        Rectxangle { background: #4d8c; }
+        Rectangle { back    Recta	 le { backg   ];
+    out property <bool> test: array[2][1].b == "ok" && layers[0].rows[0].key-slots[1].spacer;
+}
+"../../../demos/printerdemo/ui/images/cat.{jpg")(;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$t: 600px;
+    HorizontalLayout {
+  !    
+    ];
+    out property <bool> test: arr        .b == "ok" && layers[0].rows[0].key-slots[r1].spacer;o     #4d8c; }
+        Rectangle { backgr                                               px;
+    /*ckground: #2360eas;TestCase62b;
+    Grid**********
+}
+**********

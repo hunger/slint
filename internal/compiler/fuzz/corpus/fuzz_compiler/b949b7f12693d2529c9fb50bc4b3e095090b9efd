@@ -1,0 +1,62 @@
+import { ListView  } from "s2td-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in :
+        eight: 500p;x
+    property <string> px;
+    property <string> val                                                                                       rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr                                        ue;
+    listview := ListView {se := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+        eight: 500p;x
+    property <string> px;
+    property <string> val                                                                                                                               ue;
+    listview := ListView {
+        for data in [
+        eight: 500p;x
+    property t";
+export struct Some {}
+export struct None { s: Some }
+export struct Option {
+        for daew {
+        for data in :
+        e
+        eight: 500p;x
+    property <string> px;
+    property <string> val                                  ue;
+    listview := ListView {
+        for data in [
+        eight: 500p;x
+    property t";
+export struct Some {}
+export struct None { s: Some }
+export struct Option {
+        for data in [
+        eight: 500p;x
+    property t";
+export struct Some {}
+export struct None { s: Someruct None { s: Some }
+export struct Option { n: None }
+export struct ight: 500p;x
+    property <string> px;
+    property <string> val                                  ue;
+    listview := ListView {
+        for data in [
+        eight: 500p;x
+    property t";
+export struct Some {}
+export struct None { s: Some }
+export struct Option {
+        for data in [
+        eight: 500p;x
+    property t";
+export struct Some {}
+export struct None { s: Someruct None { s: Some }
+export struct Option { n: None }
+export struct ComponResult }exp o

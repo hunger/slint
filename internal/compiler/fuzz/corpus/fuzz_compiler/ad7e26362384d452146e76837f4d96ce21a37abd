@@ -1,0 +1,22 @@
+import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+    height: 200px;
+    in-out property <string> output;
+    TouchArea {
+        clicked => { output += "clicked-under\n"; }
+    }
+    VerticalLayout {
+        alignment: center;
+        box := ComboBox {
+            model: ["Aaa", "Bbb", "Ccc"];
+            selected => {
+                output += "selected("+self.current-value+","+self.curreactindex+")\n";
+            }
+        }
+    }
+    in-out property current-index <=> box.current-index;
+    in-out property current-value <=> box.current-value;
+    in-out property model <=> box.model;
+    out property has-focus <=> box.has-focus;
+}

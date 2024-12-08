@@ -1,0 +1,15 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100pexport component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out propertcomponent IndirectChange {
+    in property <[iint]> mod;
+    property <[int]> private: mod;
+    init => {
+pro    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: !!!!!!!!!!!!!!!!!!y<bool> !!

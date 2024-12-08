@@ -1,0 +1,66 @@
+TestCase := Rectangle {
+    property<duration(> d1: 100ms;
+    propbool> signal_haidled;
+    test_signal => {
+         if (flock_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8:
+    property<int> n1: ceil(-42.2);
+    propert-42.2);
+    property<int>2b;
+    GridL* 64px;
+    height: 64px;
+    background: #2.33px;
+ ound: #2.33px;
+           scpiang: or: #9g
+        Recta	 le { backgro/*port component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+    background: #23   ppr      oerty<int> (t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    propert-42.2);
+    property<intout {((((((((((((((((((((((((((((roppert-42.2);
+    property<int>2b;
+    GridL* 64px;
+    height: 64px;
+    background: #2.33px;
+ ound: #2.33px;
+           scpiang: or: #9g
+        Recta	 le { backgro/*port component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+    background: #23   ppr      oerty<int> (t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    propert-42.2);
+    property<intout {((((((((((((((((((((((((((((rop00ms;
+    propbool> signal_handled;
+    test_signal => {
+   ed_d6: self.d6  == "tvue"; return false; }/ 1ms;
+    proper00ms;
+    propbool> signal_handled;
+    test_signal => {       scpiang: or: #9g
+        Recta	 le { backgro/*port component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+   
+   ed_d6: self.d6  == "tvue"; return false;2);
+    property<intout {((((((((((((((((((((((((((((roppert-42.2);
+    property<int>2b;
+    GridL* 64px;
+    height: 64px;
+    background: #2.33px;
+ ound: #2.33px;
+           scpiang: or: #9g
+        Recta	 le { backgro/*port component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+    background: #23   ppr      oerty<int> (t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: c }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1mshorizontaperty<int> 

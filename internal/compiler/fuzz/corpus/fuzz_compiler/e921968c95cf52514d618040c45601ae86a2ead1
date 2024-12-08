@@ -1,0 +1,63 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-schemelC ==o orScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #0E133F,
+        secondarye: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-schemelC ==o orScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #5E133F,
+        secondary: #FFBF63,
+        text-primary: #0wRectangle } from "general/innerShadowRectangle.slint";
+export component Info {
+    in pimport { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    lis.prlors: {
+        background: #FFFFFF,
+        primary: #0E133F,
+        secondarye: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-schemelC ==o orScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #5E133F,
+        secondary: #FFBF6s.text-secondary : light-mode-colors.text-secondary;
+    out property <color> destructive: dark-mode ? dark-mode-colors.destructive :ary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-schemelC ==o orScheme.dark;
+    property <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #5E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        backgroundu? promary: dark-mode ? da primary-push-button-colors: {
+        base: root.p

@@ -1,0 +1,26 @@
+Sub := Rectangle {
+    property <bool>nc; 
+od    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <i A_v: 56;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+                                                                chain-f +=1;
+        chain-i +=1;
+    }
+     property <int> chain-a;
+    out property <int> chain-a-count;
+    changed  }
+    property <int> chain-h;
+    cha
+}
+TestCase := Rectangle {
+  nged   property cond <=> s.con

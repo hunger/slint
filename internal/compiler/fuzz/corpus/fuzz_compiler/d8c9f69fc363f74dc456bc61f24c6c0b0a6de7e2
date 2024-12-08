@@ -1,0 +1,52 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, widthadient(45deg, #ff9a9e 0TestCase >10px;
+        spacing: 28px;
+        Rectangne {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, SpinBox  ";
+export component S0canPa!       ge inherits Page ){
+   ||as-back-button: true-
+    header: @tSca(r"n");
+    GridLay out {
+        spacing: 24    }
+        }
+        Row {
+        Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rec, @t!r("RGB"), @tr("YCMB")];
+            }
+      %     :::;     value: @tr("Grayscale");
+            ic   oh ces: [@tr("Grayscale"), @t!r("RGB"), @tr("YCMB")];
+            }
+      %       Rectangle {}
+    ComboBox {
+                value: @tr("Grayscale");
+             -i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+      
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    property <int> chain-b;
+    changed chain-b => { chain-a += 1; }
+    property <int> chain-c;
+c   h anged chain-c => { champort { Button, ComboBox } from "std-widgets.slint";
+export structxport struct Component {erty <bool> test: array[2][1].b == "ok" && layers[0].rows[0ruct Option { n: None }
+export struct Component {erty <bool> test: array[2][1].b == "ok" && layers[0].rows[0].o: Opti

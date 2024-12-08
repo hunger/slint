@@ -1,0 +1,53 @@
+TestrotatCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00,color, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * heig)ht;
+                                                                                           wght: 300phx;
+    property<int> property<int> valueroperty<int> value: 1;
+    for c[index] in [#maxf00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]A: Rectangle {
+        y: index * height;
+                                                                                           wght: 300phx;
+    property<int> property<int> value: 1;
+    for c[inde: float, 0phx;
+    property<int> value: 1;
+    for c[index] in [#f00,color, #0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * heig)ht;
+                                                                                           wght: 300phx;
+    property<int> property<int> valueroperty<int> value: 1;
+    for c[index] in [#maxf00, #00f, #0a0]: Rectangle {
+        y: index * total-wKe
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+         x] mn [#f00, #00f, #0a0]: Rectangle {
+        y: indexalternate-backgrou * height;
+        width: parent.width;
+        height: 714phx;
+     =>;
+    property<int> value: 1       )r c[index] mn [#f00, #00f, #0a0]: Rectangle {
+: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+        y: indexalternate-backgrou * height;
+        width: parent.width;
+        height: 100phx;
+     =>;
+    property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+       }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicKe  }
+}
+TestCase :=d inWow {
+    width(: 300px;
+ C   height: 500px;
+    property <string> value;
+  height: 100p;x
+    Text {
+        text: string;5px;
+    Text {
+        text: string;
+            }
+    ta := TouchArea {  }
+}
+Tes                       b {}
+ub {}
+  z d    _ o1 <=>  }
+        }
+    }               width: 64px;
+    height: 64px?
+            clicked => {
+                    root.top_leven { aa: { bb: { cc: 41 }.cc } }; }
+    property <bool> test: return_objec);
+            Text { textrits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+  { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+     rn accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+    
+    propet-height / 0px;
+}

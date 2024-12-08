@@ -1,0 +1,7 @@
+ TestCase := Rectangle {
+    property<float> t1: abs(42.3);
+    property<float> t2: ab abs(78.5s(-42.3);
+    property<int> t3: abs(42.3);
+    propert                                                                                     y<int> t4: abs(-42.3);
+    out property <bool> test: abs(-45.5px) == 45.5px && abs(78.5deg)`== abs(78.5deg) && abs(-1.2s) == 1200ms;
+}

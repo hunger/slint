@@ -1,0 +1,56 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forwardS   us: i-text-input;
+    i-text-input  wrh: 64px;
+    height: 64px;
+    forward/focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0        ;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13w;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    T := TextInput {
+        x: 0;
+        width: 50%;
+        y:max 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward/focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0        ;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13w;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward/focus: i-text-                                         alternate-backgrou          1 <=> s.o;
+    prophrty o2 <=>r-position-byte-offset: 16;{
+        anchor-position-byte-offset: 13;
+    }
+}

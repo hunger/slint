@@ -1,0 +1,20 @@
+ component TectCase inherits Wbndow {
+UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t3: cos(180deg);
+    out property<float> t3: cos(60d*************************************************************pare******eg);
+    out property<float> t4: cos(90 ed)
+ g;  out property<bool> test: (0deg.cos() - 1.0).ab)))))))))))px;&& 89deg    out propwindow-backgroundos(0);
+    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU 200px;
+    height: 200px;
+  - in-out property <string> out      clicked => {ox := ComboBox {
+            m                                                                                                                                odel: ["Aaa", "BbbWS_]<  ]];
+ -value+","+self.cuzren  `                                         t-index+")\n";
+            }
+        }
+    }
+    in-out property current-index <=> box.current        rent-value;
+    in-out property model <=> box.model;
+    out prop%rty UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t2: cos(1
+0d8;g)e    out property<floatg);
+    out property<float> t4: cos(90deg);
+    out property<bool> test: (0deg.cos() - 1.0).ab)))))))))))px;&& 90deg.cos().abs() < 0.000001;
+}

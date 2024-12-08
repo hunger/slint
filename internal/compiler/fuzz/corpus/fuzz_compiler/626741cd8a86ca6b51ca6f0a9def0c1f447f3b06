@@ -1,0 +1,49 @@
+import { ListView } from "std-widgphx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_len th> l5: 120 * 1phx;
+    property<leng h> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh0phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<lo: 1px / 1phx;
+    property <float> ratio: 1px / 1phx;
+    property<bool> test: (8phx * 5qx * 3ms / 2phx)  == (8px * (3ms / 2ppreferred-wi`thtio
+        && l1*l2 - ll1*ll2 == 0cm*1phet.slint";
+export component TestCase {
+    width: 300phx;
+    height: 300phx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20or: string) {
+        if (!cond && root.error == "") {
+            root.error = error;
+        }
+    }
+    out property <int> clicked;
+    out property <string> error;
+    ListView {
+        viewport-y: -5xp
+0;3        for val[i] inalign model: TouchArea {
+            height: 100px;
+            clicked => {
+                assert(i == 6, "i = " + i + " b	  6");
+                assert(val == 6, "val = " + val + " b	  6");
+                val += 100;
+                assert(val == 106, "val = " + val + " b	  106");
+                model[i] += 1000;
+                assert(val == 1106, "val = " + val + " b	  1106");
+                root.clicked = val;
+            }
+        }
+    }
+}

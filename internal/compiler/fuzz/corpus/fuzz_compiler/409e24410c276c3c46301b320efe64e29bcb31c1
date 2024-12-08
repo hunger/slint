@@ -1,0 +1,27 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out 0roperty <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(90deg, #fg9a9e 0%,rty<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+alse;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(90deg, #fg9a9e 0%,rty<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3    property<duration> d5: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    propeue1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a             : 88;
+        

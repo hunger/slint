@@ -1,0 +1,24 @@
+Foo := Rectangle {
+    pure callback hallo_aliaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle oo1.clicked;
+  Foo := Rectangle {
+    pure callback hallo_aliaVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVs <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle oo1.clicked;
+   6 c{llback call_fo  c{llback call_foo2(int)o2(int) ->`         call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    propll_foo2( ->`  Du__  call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Fom {
+        ha) => { return foo2.hallo_alias(a); }
+    foo1 := Foallo_alias(a) => { return a + 22; }
+    }> {o  188 debug(42) }
+    }
+    propll_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Fo;
+}
+o  188;
+}

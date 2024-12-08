@@ -1,0 +1,36 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 :e {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: imstd-widgets.slintg2.source-clip-height * 1px == img2.height && img2.source-clip-width * 1px == img2.width &&
+         int> t2: 500 / 2 * 30 -!1;
+  f property<int> t3              : a - (3 + ++2 * (a + 2/);
+     source: @image-url("cat.jpg");
+        souimg.tring> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out propout p                                                                             00phx;
+    height: 100phx;
+    property <int> to== "fox:p &";
+    in property<float> ring> converted_value: round(value * 100)/100;
+    out property <string> ten_dot_ene: 10 + increment;
+    out property <bool> test: e1 && !e2 && converted_value width;
+    property <length> img_height: img.height;
+    property <bool> test: imstd-widgets.slintg2.soUrce-clip-height * 1px == img2.height && img2.source-clip-width * 1px == img2.width &&
+         int> t2: 500 / 2 * 30 -!1;
+  f property<int> t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <le::::::::::::::::::::ngth> len: 50px / 2;
+    callback ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;en: 50px / 2;
+    callback ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;foo;
+    foo => {
+        a += +8;
+        a .source.wi										dth == 0 && img3.source4height == 0;
+}

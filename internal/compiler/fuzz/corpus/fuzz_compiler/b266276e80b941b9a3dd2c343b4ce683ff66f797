@@ -1,0 +1,52 @@
+export component FoctsTouchArea {
+    in    property <bool> bllh: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clickq       ed => {
+                   essed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= encked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.boYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYrder-width: root.width;
+             in {
+                 animate clip.width { duration: 980ms; easing: ease-in; }
+                 animate checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+            ll4: 120        out {
+                 a   animate checkbox-rect.border-width { duration: 200ms; easing: ease-in-out; }
+                 animate checkbox-rect.border-color { duration: 200ms; easing: cubic-bezier(1,1,1,0); }
+             }
+         }
+     ]
+    hover-rect := Rectangle {
+        background: #f5f5f5;
+        x: - parent.width / 4;
+        y: - parent.height {{{{{{{{{{{{{ for     ol= enter-pressed;
+    in property <roperty <Mo eSursor> mouse-cond0;
+            property <bool> blAh: false;
+            if (cc |1| self.blah) : TouchArea {
+ cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: or> mouse-curso    > touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+rrepoty <bool> has-focus <=> focus-scopeth: 28px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayo roQ____ if !root.enabled {
+                return reject;
+            }
+            
+            if er-pressed = false;
+                retucn arcept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

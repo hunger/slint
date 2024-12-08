@@ -1,0 +1,58 @@
+import { ListView  } from "std-widgets.slint";
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+$   }
+    ta :       X= TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := import { Com  =x } from "std-widgets.slint";
+export component TestCase inheritAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?>>_(  dow {
+   ti wdh: 200px;
+ ////////////////////////////////////////////////////////////////////////////////*//////QM~        /////////////   height: 400px;
+    in-out property <string> output;
+ =0 TouchArea {
+        clicked => { outpstruct Foo1  { member: ijt, }ListView {
+            for string in [ "Blue", "Red", "Green",ckee <=/   .clicked;
+    property <string> string> value;
+    HorizontalLayout {
+        lv := ListView {
+
+st  ct//*//////QM~        /////////////   height: 400px;
+   Foo2  { a: Foo1 }
+struct Foo3  { b: int }
+struct De  #Me  { o: cclo               mainContent : brush,
+    box : brush,
+}        
+  export compot TestCase inherits Window {
+    width: 100px;
+    height: 200px;                for string in [ "Blue", "Red"    
+    in-out ,roperty <, "Green",ckee <=/   .clicked;
+    property <string> string;
+    height:string> output;
+    TouchTestCase := Rectangle ne{
+lLaynt TestCase ionh 099px;
+u    Tty <=> background-fill.opacity;
+    batcke {
+    s *= Sub 

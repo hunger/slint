@@ -1,0 +1,54 @@
+Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    green := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += float> child_opacity: inner.opacit5;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "2: 4 + 3 * 2 + 2 - 5                                                                                       0 - 2;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    property<\\\\\eft: @image-url("assets/arrow-lefe!!:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    out        reeturn 41;
+        }
+xp arrow-circle-o-lefort global Icons {
+    out property <image> arrow-up: @image-url<=assets/arrow-up.svg");
+    out property <image> arrow-l\\\\\\\\\^\\\\\\\\out property <image> arrow-l\\\\: 3 + - +5 - 8 - /9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+        a|" + v;
+    perty <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+        background: green;
+    }    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    cha
+}
+TestCase := Rectangle {
+  nged   property cond <=> s."|" + v;
+    perty <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+nimate opacity { duration: 1s; }
+ z      background: green;
+    }    property <int> chain-f;
+    changedz chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    cha
+}
+TestCase := Rectanglm {
+  nged   property cond <=> s.con

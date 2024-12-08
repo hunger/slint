@@ -1,0 +1,6 @@
+ TestCase := Rectangle {
+    property<angle> t1: atan(0);
+    property<angle> t2: atan((1/3) * sqrt(3));
+    property<angle> t3: atan(1);
+    property<angle> t4: atan(sqrt(3));
+}

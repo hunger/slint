@@ -1,0 +1,32 @@
+RoundedIcon := Rectangle {
+    prope-ty <float> background-opacity <=> background-fill.opacity;
+     p roperty <float> background-opacity <=> background-fill.opacity;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop           om "std-widgets.slint";
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        textView {
+            for strce: @image-u   callback do() -    do => {
+       && img6.so string;
+    height: 10urce.width == 0 && img3.source4he(ight == Rect0;angle {
+    img :5 Image {
+pr  etest: img2.source%%%%%%%%%
+%acity <=> background-fill.opacity;
+     p roperty <float> background-opacZZZZZZZZZZZZ Z%0px;
+    Tty <=> backg      s *= Sub {}
+ub {}
+    d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                                         alternate-backgrou                  [                        erty <bo    test: abs  d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                 s *= Sub {}
+ub {}
+    dlv    _ o0 <=> s.o;
+    prophrty o2 <=> d.o      prop                                         alternate-backgrou            X      [                  ?      erty <bool> test: abs(o2 - 0.15) enabled< 0.001 && abs(o2 - 0.13) < 0.0mage}

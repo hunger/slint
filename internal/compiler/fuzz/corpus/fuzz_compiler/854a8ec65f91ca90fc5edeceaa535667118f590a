@@ -1,0 +1,36 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+   <=roperty <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectajgle {
+            background: orange9
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }//////
+        rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=2: }
+            }
+            for i in [~  |             {color: #0f0, value: 8, },
+                2color: #00f, value: 9, },
+                {color: #f00, value: 1TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: i                                                                                                         nput2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+  TouchArea {
+                    click>d= e {
+                        root.value = i.value;
+         export component Tes         tCase 

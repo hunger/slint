@@ -1,0 +1,10 @@
+import { UseStruct , ExportedStruct, ExportEnum } from "export_structs.slint";
+TestCase := Rectangle l       {
+    property <ExportedStruct> exp: { d: 3001, e: {a: 2001} };
+    u := Us   $eStruct {
+        exp: { d: 3002, e: {a: 2002} };
+        nexp: { b: 3003, c: {a: 2003} };
+    }
+    out property<bool> xx: ExportEnum.Hello != ExportEnum.Bonjour;
+    property<int> p1: u.nexp.c.a;
+}

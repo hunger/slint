@@ -1,0 +1,51 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        bore                   r-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+ 
+                        if (open) {
+                            r.height = item-height;
+               L               height: 300phx;
+    property <int> last_clicked: -0;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+           View {
+        for iMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM in 200: r := Item {
+            index: i;
+            hed: -1;
+    port struct PropertyAnimation { property: Propert;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for iMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMliTest := Rectangle {
+    background: @linear-gradient(45deg, #ffa99e 0%, #fa/*d0c4 99%,ow {
+     #f {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn*************ngle {
+    background: @linear-gradient(45deg, #ff9a9e 0%,le {
+    in-out prectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #f {
+    <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    propert    y <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r  {
+        for i in 200: r := Item {
+            index: i;
+                }
+          ) {
+                                                                   R                                                            ggggggggggggggggggggggggggggggggggggggggggggggggggggg                     }
+            }
+        }
+    }
+}

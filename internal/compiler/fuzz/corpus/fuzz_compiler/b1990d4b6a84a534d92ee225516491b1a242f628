@@ -1,0 +1,54 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   #fad0c4 wi> valu Duc   Horizdth: 200px;
+ /////100%/////////)//;tangle {
+    r := Reight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+: 64p                                        x;
+    height: 64px;
+    forwardS   us: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y:max 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward/focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0        ;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+      0 selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-offset: 13;
+    }
+    TextInput {text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward/focus: i-text-                                         alternate-backgrou                  [                        erty <bool> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=>r-position-byte-offset: 16;{
+        anchor-position-byte-offset: 13;
+    }hanged v => {
+        r += float> child_opacity: inner.on* ***********************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

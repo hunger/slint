@@ -1,0 +1,6 @@
+ component TestCase inherits Window {
+    out   prOtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> t.my.text;
+  operty<float> t1p  root.my - root.height / 2;
+    bac  tkground: rgba(

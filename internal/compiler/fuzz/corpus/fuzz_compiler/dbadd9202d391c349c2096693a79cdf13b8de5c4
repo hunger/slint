@@ -1,0 +1,61 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-t{
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 5;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input :=T extInput {
+                                                                             : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;  i-text-input := TextInput {
+        x: 0;
+     :  width: 5!!!!!!!!!!!0%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextIn          ow {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-t{
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 5;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input :=T extInput {
+                                                                             : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;  i-text-input := TextInput {
+        x: 0;
+     :  width: 5!!!!!!!!!!!0%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-inpu                     "VAV {
+        offset: 16;
+        anchor-position-byte-offset: 13;
+    }
+}

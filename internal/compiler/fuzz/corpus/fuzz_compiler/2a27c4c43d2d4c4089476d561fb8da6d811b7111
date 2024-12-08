@@ -1,0 +1,41 @@
+RoundedIcon := Rectangle {
+    property ity;
+    b?ck wound-fill := Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+    }
+    property <float> o: backgrouperty<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        widexpor      }
+   Test   "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+   TestCase := Rectangle {
+    width: 600phx;
+    height: 300phx;
+    Rectangle {
+     value4: true ? Glob2.a : 88;
+    }
+ (  property <bool> test: r.value1{ layou#: len    gth }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export     global GridLayo tCellData {
+      a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50phx;
+    height: 300phx;
+    Rectangle {
+     value4: true ?  color: #321a;}
+< 0.001;        }
+    }
+}
+
+}

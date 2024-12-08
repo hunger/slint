@@ -1,0 +1,45 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        rouVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVnd(1000* sin(180deg))  &&
+        round(acos(cos(     round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tn(a54deg))/  atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -100.1deg) == 450 &&
+        round(asiAn(sin(45deg))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) ==    &&
+        atan2(0, 0) == 0 &&
+        atan2(0, ---------------        -------)---------------------------------------------------------------                                                     -----------------------5ms?.clamp(0, 50ms);         property<
+    callback selected(str(ing);
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: yellow;
+    height: 3s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {  border-width: 2px;
+    border-color: yellow;
+    height: 3s2: value.clamp(43.0, 53.0);
+    out oerpprty <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        yroperty <int> max: 42;}
+        }
+        Text {
+            te xt: "B0Celsius = ";
+            vertical-a!lignmen        r;
+                   yyyyyyyyyyyyyyyyyyyyy      atan1(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+                          yyyyyyyyyyyyyyyyyyyyy      atan1(10, 10) == 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-,10) == accent-for-45deg &&
+        true;
+    property <bool> test: verify;
+}

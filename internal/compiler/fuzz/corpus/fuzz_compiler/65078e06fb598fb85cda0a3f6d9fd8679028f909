@@ -1,0 +1,58 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phxEp    property<int> value: 1;
+    for c[index] in [#ndex] in [#f00,;
+                    height: parent.height;
+                    clic   c=> {
+                        value +=     property<int> value: 1;
+    for c[index] in [#ndex] in [#f00,;
+                    height: parent.height;
+                    clic   c=> {
+                        value += index;
+                 t> value: 2;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+           t> vadLayout {
+            Rectangle {
+                background: c      height: parent.height;
+          ;
+                    clic   c=> {
+                        value +=     property<int> value: 1;
+    for c[index] in [#ndex] in [#f00,;
+                    height: parent.height;
+                    clic   c=> {
+                        value += index;
+                 t> value: 2;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+           t> vadLayout {
+            Rectangle {
+                background: c      height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+10phx;
+           ght: 50phx;
+    }
+e_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> image_with_missing_width_clipped_ok <=> imagngle {
+    width: 100phx;
+    heistruct KeySlot { width-u: fe_with_missing_width.expected_width_ok;
+    property <bool> test: fixed_image_default_image_fit_ok && fixed_imHHHHHHHlayf.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+           t> value: 1;
+    {
+   f 

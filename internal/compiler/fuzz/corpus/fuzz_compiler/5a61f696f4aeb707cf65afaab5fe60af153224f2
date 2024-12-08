@@ -1,0 +1,42 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<float> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bSub := Rectexport component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover <=> touch-area has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> troouch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64p   eture {
+        property <string> blah:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| "ddd";
+        Rectangle {
+            property <bool> cc <=> cond1;
+            property <bool> blah: false;
+   |||||||||||||||||||||||||||| "ddd";
+        Rectangle {
+            property <bool> cc <=> cond1;
+         angle {
+    property <bool> cond;
+    propert) <float> cnild_opacity: inner.opacity;
+   property <bool> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.top_leven { aa: {    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opacity { duration: 1s; }
+        background: green;
+    }  prope

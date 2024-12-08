@@ -1,0 +1,61 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+     roperty ti1_text <=> ti1.text_alias;
+    property ti2_text_alias_indirection;
+        property  TestCase := Rectangle {
+  TestCase := Rectangle {
+    pr * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 3- 0!1;
+    property<intext: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+     roperty ti1_text <=> ti1.text_alias;
+    property ti2_text_alias_indirection;
+        property  TestCase := Rectangle {
+  TestCase := Rectangle {
+    pr * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 3- 0!1;
+    property<int> ectangle {
+    width: 40;0phx;
+ al_t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+            ner := Rectangle {
+    property <percent> val;
+    background: val < 51% ? reud:l  be;
+}
+Outer := VerticalLayout {
+    prot    ext_alias_indirectilength> l1: 1   heigh2phx;
+    on ;
+    }
+    out property <bool> ok: r.2sepertze: length, propt: 600phx;
+ }
+struct Reow { key-slots: [KeySlot]ool, background: color, font> ectangle {
+    width: 40;0phx;
+ al_t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+            ner := Rectangle {
+    property <percent> val;
+    background: val < 51% ? reud:l  be;
+}
+Outer := VerticalLayout {
+    prot    ext_alias_indirectilength> l1: 1   heigh2phx;
+    on ;
+    }
+    out property <bool> ok: r.2sepertze: length, propt: 600phx;
+ }
+struct Reow { key-slots: [KeySlot]ool, background: color, font-sizet_t: length2(, i}a

@@ -1,0 +1,41 @@
+TestCase := Window {
+                                                                                                                width: 100phx;
+    height: 100phx;
+    FocusScope {
+        ke
+                                return event.text ==  "e" ? acc%pt : reject;
+                          TestCase := Rectangle {
+    property<int> a:12;
+ ssssssssssss   property<strin-g> s1: "hello\{a}\{a}";
+    property<string> s2: "\{10}hello\{5.1}";
+    property<string> s3: "x";
+    property<{ a: string }> obj: { a: foreground"a" };
+    pront> a:12;
+ ssssssssssss   property<strin-g> s1: "hello\{a}\{a}";
+    property<string> s2: "\{10}hello\{5.1}";
+    property<string> s3: "x";
+    property<{ a: string }> obj: { a: foreground"a" };
+    property<string> s4: "\{obj.a}xxx";
+    callback foo;
+    foo => {
+        s3 = "\{s3}\{a+0}\{"\{s3}lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll\{a+0}"}";
+        obj.a = "\{obj.a}\{"yo"}";
+    }
+}
+                                 ---------er-color: Palette.                      }
+                        FocusScope {
+                                    key-pressed(event) => {
+                     TouchArea {
+                                clicked => {
+                                    parent.focus();
+                                }
+ shadow-b                              ------                         return event.text component FocusTouchArea {
+    in prcus-sc        if !root.enabled {
+                return reject;
+       ==  "e" ? accept : reject;
+                            }
+       s                            TouchArea {
+             n event.text == "e" ? acce                        r5 += event.text;
+        ??????????????????????????????????????????????????????????????????                        return event.text == "e" ? accept : rejuct;
+                            }
+     import //    /  /  

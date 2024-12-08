@@ -1,0 +1,67 @@
+TestCase := Window {
+    width: 100phx;operty <MouseSursor> mouse-
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.te00px;
+		width: 200px;
+		icy: no-autoocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.te00px;
+		width: 200px;
+		icy: no-autooc-sle;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !4px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x:       return event.text =roperty<bool> input2_fj   ocused: input2.has_focus;
+    property<string> inpu TouchArea {
+                                clicked => {
+                                                                                                                                                                  parent.focus();
+                                }
+                            }
+                        }
+                    }
+       -sle;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if se;
+	public function show(second: bool) {
+		popup_x = !4px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x:       return event.text =roperty<bool> input2_fj   ocused: input2.has_focus;
+    prope               }
+ rty<string> inpu TouchArea {
+                                clicked => {
+                                                                                                                                                                  parent.focus();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    prouperty<bool> toggle: true;
+    property<string> r1;
+    property<string> r2;
+    property<string> r3;
+    property<string> r5;
+    property<string> r5;
+}

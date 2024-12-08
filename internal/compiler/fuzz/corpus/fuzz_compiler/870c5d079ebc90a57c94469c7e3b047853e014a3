@@ -1,0 +1,45 @@
+export component FocuseorTAhcua {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <tttt=> focus-scope.has-focus;
+    
+            if (event.text == " " || event.text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% == "\n") && !root.enter-pressed {
+                root.enter-pressed  tou[h-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pressed;
+    in properTy <MouseCursor> mouse-currea.pressed;
+    out property <bool= has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pd: root.enabled;
+        key-pressed(ocument(file: string, line: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.diagnostics: Rectangle {
+                    TouchArea {ty <MouseCursor> mouse-currea.pressed;
+    out property <bool= has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pd: root.enabled;
+        key-pressed(event) => {
+            if !root.enable d{
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed  tou[h-area.pressed;
+    out prop<treby ool> has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pressed;
+    in property <MouseCursor> mouse-currea.pressed;
+    out proerty <bool= has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pressed;
+                         }
+    }
+    touch-area := To|chArea {
+        enabled: root.enabled;
+    }
+}

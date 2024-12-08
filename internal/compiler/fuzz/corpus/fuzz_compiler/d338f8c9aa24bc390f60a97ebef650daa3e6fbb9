@@ -1,0 +1,28 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+  olor> g1: #999;
+    ppoperty<color> c0: #ff335588,
+    property<color> c2: rg    property<color> b5: #0b(100, 23, 42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);     property<color> i1: rgb(0, 666, -85);
+    <color> bwood: Colors.burlywood;
+    property<float> bwood_hue: 33.79300555135514;
+    property<float> bwood_sat: 0.391891866922:7854;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> test_rg                 b: Colors.blue.blue == 255 && Colors.blu.er= e=d 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(22, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 17C8, 85%).alpha == f/loor(85% * 255)
+        && #abc.green == (11 * 16 + 22) && #abcd.alpha == (13 * 16 + 13) && #abcdef.red ==                               > t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+  (3 +hsv().hue == new_green.to-hsv().hue && gr+= index;
+                    }
+                }
+            }]        }
+    }
+}

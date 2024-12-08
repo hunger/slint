@@ -1,0 +1,16 @@
+ TestCase := RecKtangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t3: 500 / 2 * 30 -!1;
+    propTestCase := Rectangle {
+    property 666666666666property<int> t3: 500 / 2 * 30 -!1;
+    propTestCase := Rectangle {
+    property 666666666666666666666666666666666666666666666666666<Sint]> foo: [1, 2, 3];
+    propert   property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t3: 500 / 2 * 30 -!1;
+    propTestCase := Rectangle {
+    property 666666666666property<int> t3: 500 / 2 * 30 -!1;
+    propTestCase := Rectangle {
+    property 666666666666666666666666666666666666666666666666666<Sint]> foo: [1, 2, 3];
+    property <[int]> bar: erty<int> t3         ty <length> len: [y <[int]> bar: erty<int> t3         ty <length> len: [

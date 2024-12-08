@@ -1,0 +1,10 @@
+TestCase := ceRtangle {
+    property<physical_length> l1: 12phx;
+    pr  operty<physical_length> l2: 12px;
+    property<physical_length> l3: 10        0phx + 12px;
+    property<physical_length> l4: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<20 * 1phx;
+ 2phx) * 5px) / ratio
+        && l1*l2 -window-background ll1*ll2 == 0cm*0ph& &v xalue;
+}

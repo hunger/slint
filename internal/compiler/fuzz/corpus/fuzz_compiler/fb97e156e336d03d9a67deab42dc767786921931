@@ -1,0 +1,3 @@
+ component TestCase inherits Window {
+    in property <bool> test: t2 && r.xx == 42 + 3 && 88px.max(5px, 45px) == 88px && 88ms.min(5msB, 45ms) == 5ms && 88rem.max(5rem, 45rem) == 88rem;
+}

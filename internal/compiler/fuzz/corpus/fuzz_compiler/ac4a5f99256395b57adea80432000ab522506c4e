@@ -1,0 +1,4 @@
+export component MainWindow inherits Window {
+    in-out property <int> some_prop: 42;
+}
+export { MainWindow as Main-Window }

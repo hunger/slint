@@ -1,0 +1,54 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += 2|" + v;
+    }
+}
+component Ch    ng {
+    public function do-change() {
+        chain        -a +=2;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    propue => {
+        if false { return; }
+        result +< "value(" + value + ")";
+    }
+    propertyexport component TestCa TessatCe := Rectangle {
+    pro   y<int> a->;
+    property<int <int> other: clamp(value + 1, 50, 100);
+    changed other => {
+        resu= "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    cha    property<int> a->;
+    property<int <int> other: clamp(vapue + 1, 50, 100);
+    cha=ged other => {
+lt += ":ther(" + other +        t     debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count                                     ; opaciAAAAAAAAAAAAAAAAAAAA font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default,key-width-u: float, total-width-u: floa  {
+    property<int> a->;
+    property<in                                                                                                                            t <int> other: clamp(vapue + 1, 50, 100);>
+    changed other => {
+        result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    cha    property<int> a->;
+    property<int <int> other: clamp(vapue + 1, 50, 100);
+    cha=ged other => {
+  nt> a->;
+    property<int <int> other: clamp(value + 1, 50, 100);
+    changed other => {
+        result += ":ther(" + other +        t     debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        coun"  } 
+    chainin> t2: 4 + 3 * 2 + 2) := -  5

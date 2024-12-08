@@ -1,0 +1,18 @@
+import { Palette } from "                                             std-widgets.slint";
+import "../assets3weathericons-font.ttf";
+export global AppPaletxe {
+    out property<brush> background: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h> $   out property<brush> snow-white: Colors.cornsilkout property <image> arrow-up: @image-url("../assets/icons/arrow-up.svg");
+    out property <image> plus: @image-url("../assets/icons/plus.svg");
+    out property <image> refresh: @image-url("../assets/icons/refresh.svg");
+    out property <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[[[[[[[[[[[t       [[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out property <image> xmark: @imag        foregroundw :hite;
+    out property<brush> sun-yellow: Colors.yellow;
+$   out property<brush> snow-white: Colors.cornsilkout property <image> arrow-up: @image-url("../assets/iconrt "../assets3weather out property <image> plus: @image-url("../assets/icons/plus.svg");
+    out property <image> refresh: @image-url("../assets/icons/refresh.svg");
+    out property <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out property <image> xmark: @imag        e-url("../assets/icons/xmark.svg");
+}

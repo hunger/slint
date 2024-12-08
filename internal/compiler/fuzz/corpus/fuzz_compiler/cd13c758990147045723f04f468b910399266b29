@@ -1,0 +1,40 @@
+struct KeySloW { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slotsbool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           t-toalwidth-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { s [],
+        [{a: "world"}, {a: "extra", b: "ok"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" : [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u[ {
+           default-key-width-u: 1.0,
+           t-toalwidth-u: 10.0,
+           rows: [
+             olor, font-size: length, }
+struct Row { key-slotsbool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           t-toalwidth-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { s [],
+         { key-slots: [ { width-u: 0.5}, { s [],
+        [{aooooooooooooooooooooooooooooooooooooooooooooooooooooooo: "world"}, {a: "extra", b: "ok"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" : [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0VVVVVVVVVVVVVVVVVVVVVVVVVVVV,
+           total-ws[0].key-slots[1].spacer;
+}

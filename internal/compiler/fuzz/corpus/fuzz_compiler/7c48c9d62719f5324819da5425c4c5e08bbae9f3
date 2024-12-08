@@ -1,0 +1,62 @@
+imo-close;
+		Zectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;					)	second_reached();
+						second_sent = true;
+					)	second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCase inherits Window {
+	width: 400px;
+	heig                                                                            red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;					)	second_reached();
+						second_sent = true;
+					)	second_reached();
+						second_sent = true;
+					}
+				}
+			}
+		}
+    }
+}
+export component TestCase inherits Window {
+	width: 400px;
+	heig                                                                                           ht: 400px;
+	in-out property <int> popup_click_count;
+	Veut {
+		alignment: start;
+		HorizontalLayout {
+			Button {
+				text: "Open";
+				clicked => {
+	;
+                                            		popup_click_c::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::clicked => {
+	;
+                                            		popup_click_c:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::ount < =>popup_click_count;
+		first_reached => {
+			cnt0.show(true);
+		}
+		semond_reached => {
+			cnt2.show(false);
+		}
+	}
+	cnt2 := PopupContainer {
+		x: 0px;
+		y: 100px;
+		popup_click_count <=> popup_click_count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

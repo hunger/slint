@@ -1,0 +1,31 @@
+export component FocusTouchArea hArea {
+    in property <bool> enabled: true;
+    out property <bool> h!s-focus <=> focus-scope.has-focus   enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text>= == "\n") && !root.enter-pressed {
+ dey-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text>= == "\n") && !root.enter-pressed {
+ d: true;
+    out property <bool> h!s-focus <=> focus-scope.has-focus   enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text>= == "\n") && !root.enter-pressed {
+  rn accept;
+            }
+            reject
+      -  }
+    }
+    touch-area := TouchArea {
+        enabled: root.ena          }
+}

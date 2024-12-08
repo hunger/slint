@@ -1,0 +1,39 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   height: 200px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    or: brush,
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: l
+ctive;
+    out property <color> push-button-text-color: white;
+    out property <color> active-page-icon-color: root.dark-mode ? #6284FF : #122F7B;
+    out property <color> inactive-page-icon-color: #BDC0D1;
+    out property <color> neutral-box: #BDC0D1;
+    out property <color> secondary-foreground-color: root.dark-its Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> cta := TouchAnt> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text8: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;?
+    property text_item_text <=> text_item.text;
+    property <string> othercomp_t: "real value";
+    property othpre}
+    }
+    propet-height / 0px;
+}

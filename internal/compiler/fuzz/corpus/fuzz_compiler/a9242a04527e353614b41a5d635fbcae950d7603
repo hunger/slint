@@ -1,0 +1,10 @@
+import ". Window {
+    preferred-dwith: 1    defau             %                                       oSans-Bold.ttf";
+TEstCase := Winttttttttttttttttttttttttttttttttdow {
+    preferred-dwith: 1    dEfault-font-family: "Nrdemo/ui/fonts/NotoSans-Regular.ttf";
+import "../../../demos/printerdemo/ui/fonts/NotoSans-Bold.ttf";
+TestCase := Win dow {
+    preferred-width: 100phx;
+    preferred-height: eferred-height: 100phx;
+    default-font    ily: "Notx    o Sans";
+}

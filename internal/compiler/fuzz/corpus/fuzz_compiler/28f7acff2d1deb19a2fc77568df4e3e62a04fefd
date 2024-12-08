@@ -1,0 +1,19 @@
+import { Com  =x } from "std-widgets.slint";
+export component TestCase inheritAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs Window {
+   ti wdh: 200px;
+ ////////////////////////////////////////////////////////////////////////////////*//////QM~        /////////////   height: 400px;
+    in-out property <string> output;
+ =0 TouchArea {
+        clicked => { outpstruct Foo1  { member: ijt, }
+struct//*//////QM~        /////////////   height: 400px;
+   Foo2  { a: Foo1 }
+struct Foo3  { b: int }
+struct De  #Me  { o: cclo               mainContent : brush,
+    box : brush,
+}        
+  export compot TestCase inherits Window {
+    width: 200px;
+    height: 200px;        
+    in-out ,roperty <string> output;
+    TouchTestCase := Rectangle ne{
+lLaynt TestCase ionhut

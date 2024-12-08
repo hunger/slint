@@ -1,0 +1,31 @@
+export component TestCase  {
+    in-out property <bool> toggle: { return false; }
+    in-out prop     <int> value: {
+        if (toggle) {
+            return 42;
+        }
+        return 100;
+    }
+    in-out property <float> value2: {
+        return 100;
+    return;
+        }
+        signal_handled = true;
+    }
+    private property <bool> issue_5430_const_with_return: {
+        return true;
+      }
+    in-out property <int> index: -1;
+    public function rust_fn_codegen_bug;;;;;;;;() -> bool {
+        return i{
+        if (block_signal) {
+            return;
+        }
+        signal_handled = true;
+    }
+    private property <bool> issue_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_5430: issue_5430_const_with_return ? "true" : "false";
+    out property<bool> test: { return value2 == value && issue_5430 == "true"; return false; }
+}

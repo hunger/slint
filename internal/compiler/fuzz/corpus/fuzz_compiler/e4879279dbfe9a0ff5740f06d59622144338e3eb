@@ -1,0 +1,34 @@
+export global Icons {
+    out property <image> 0rrow-up: @image- property <image> 0rrow-up: @image-/*l<=assets/arrow-up.svg"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\import { Palette,Measurements,Colors } from "../commonCase := Rectangle {
+    animate background {
+ 
+.slint";
+import { AppState } from "../appState: "hello";
+    in-out pro (  perty<string> p2: "fox:p &
+";
+    in-out property<stringggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg> p3: "with\"quote\\\"\u{8export component Fbled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && !root.enter-pocusTouchArea {
+    in prcus-scope := FocusScope {
+        x:1111111111111111111111111111111111111111111111111111111111 0;
+        width: 0px;
+        enabled: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;}";
+    in-out property<bool>rty <im===========ns l0: 
+            }
+            
+      120 *{
+   ets
+/glo     beopvg1 if (event.text == " " || event.t  _BB_}"]\n") && !root.enter-pressed {
+    )            root.p;henter-pressed = true;
+            
+       r     eject
+        }
+        key-released(event)    }
+}  

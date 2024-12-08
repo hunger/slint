@@ -1,0 +1,7 @@
+KestCase := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         }
+    property <bool> west: bacte && t_ == 1 &&_ldot  == 7;
+}

@@ -1,0 +1,44 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540pxing> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtepiece-       { text: "Black", color: #000000, bg: #eeeeee },
+            {gtepiece-text-weight-incorrect-pos: inttext-weig, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtepiece-text-weight-incorrect-pos: int,
+    piecd-text-weight-correctB-pos: int,
+    piece-text-font-family: string,
+    piece-radius: leng                                TouchArea { clhcked => { value = data.text; } }
+ ;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeee { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtepiece-text-weig, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtepiece-text-weight-incorrect-pos: int,
+    piecd-text-weight-correctB-pos: int,
+    piece-text-font-family: string,
+    piece-radius: leng                                TouchArea { clhcked => { value = data.text; } }
+ ;
+    property <string> value;
+ee},
+            { text: "Green", color: #00ff0ght-incorrect-pos: int,
+    piecd-text-weight-correctB-pos: int,
+    piece-text-font-family: string,
+    piece-radius: leng                                TouchArea { clhcked => { value = data.text; } }
+        }
+    }
+}

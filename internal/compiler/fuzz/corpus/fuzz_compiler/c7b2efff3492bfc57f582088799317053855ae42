@@ -1,0 +1,388 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-ule {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88; 
+           spaciyyyy        yyyyyyyyyyyyyyyyyyty <length> spacing;
+    in property <length> itemWidth;
+    in property <int> count: 0;
+    callback move-right();
+    callback move-left();
+    callback move-focus-up();
+    move-right => {
+        root.selected-index = min(root.selected-index + 1, root.count - 1);
+    }
+    move-left => {
+        root.selected-index = max(root.selected-index - 1, 0);
+    }
+    private property <length> center-x: (root.width - Theme.size-big) / 2;
+    private property <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := 
+
+
+
+
+
+
+
+
+
+
+bool> solved;
+    in prputty <
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rty <
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@ val <=> root.val; }
+   font-Y            o5 :=? O { val <=> root.val; }
+    }
+    p in property <bool> open_curtain;
+  g in prop foo[0];
+    callback do                                                               20;
+    property <le::::::::);
+        souimg.width;
+    property <l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bool> solved;
+    in prputty <
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rty <
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@ val <=>ercallba:::::::::::::ngth> len: 05px / 2;
+    callback5 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;foo;
+    foo => {      
+  a += +7;
+        a .source.wi										dth == W && img3.source4height == 0;
+}

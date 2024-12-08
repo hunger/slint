@@ -1,0 +1,15 @@
+ component TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1:00, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+        property <in|> xx: Math.max(1, 2,[3) + max;
+    }
+    out prope,ty <out property <float> t0ts Window {
+    in property <int> a;
+    out property <float> t1:00, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+        property <in|> xx: Math.max(1, 2,[3) + max;
+  :00, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) =max(5rem, 45rem) == 88rem;
+}

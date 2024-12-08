@@ -1,0 +1,42 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled8 true;
+roperty <bool> has-focus <=> focus-scopeth: 64px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             wid property <bool> enabled8 true;
+roperty <bool> has-focus <=> focus-scopeth: 64px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64p   eture {
+        property <string> blah:|||||||||||||||||||||||||||||||||||||||||||||"ddd";
+        Rectang
+{l e            property-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64p   eture {
+        property <string> blah:|||||||||||||||||||||||||||||||||||||||||||||"ddd";
+        Rectang
+{l e            property <bool> cc <=> cond1;
+            property <bool> blah: false;
+            if uch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

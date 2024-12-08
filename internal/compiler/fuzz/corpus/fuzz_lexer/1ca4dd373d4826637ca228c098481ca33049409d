@@ -1,0 +1,9 @@
+TestCase := Rectangle {
+    width: 100px;
+    height: 200px;
+    r := Rectangle {
+        width <=> root.width;
+        height <=> root.height;
+    }
+    property<bool> test: r.width == 100px && r.height == 200px;
+}

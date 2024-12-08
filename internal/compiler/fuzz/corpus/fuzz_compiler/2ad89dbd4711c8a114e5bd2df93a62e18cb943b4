@@ -1,0 +1,39 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    height: 66phx;
+   xt { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+    width: 32phx;
+    height: 64phx;
+    background: darkgray;
+  { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayokey-p        Image {
+            source: @image-url("../../../../..";
+export component TestCase inh/log?o/slint-logo-full-dark.svg");
+            Text { width + "x" + parent.source.height; font-size: 9px; x: 0; y: 0;l ocor: #1SL D u__      }
+        Image {
+            source: @image-url("../../../../../logo/slint- se inherits Window {
+    width: 64phx;
+    height: 66phx;
+   xt { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+  { te        spacinArea {
+        clicked t.sourc   VerticalLayout {                                                                                                                                                  log: parentont-size: 9px; x: 0; y: 0;l ocor: #123a;}
+        }
+        Image {
+            source #123a;}
+        }e: 4px; x: 0; y: 0; color: #321a;}
+        }
+    }
+}

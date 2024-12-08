@@ -1,0 +1,8 @@
+struct KeySloW { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Rzzzzzzzzzzzzzz    t-toalwidth-u: 10.0,
+      ddddd     rows: [
+               { key-slots: [ { width-u: 0.5}, { s [],
+        [{a: "world"}, {a: "extra", b: "ok"}         ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" : [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row]}

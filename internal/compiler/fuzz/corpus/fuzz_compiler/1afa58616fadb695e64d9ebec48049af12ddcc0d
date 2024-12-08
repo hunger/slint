@@ -1,0 +1,77 @@
+export global Glob {
+    in-out property <int> v: 55    -c;
+    changponent WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort component TestCase inherits Window {
+    in-out property <string> result;
+    in property <int> value: 56;
+    changed rty <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 912;
+    in-out property <string> result;
+    changeded chain-c => { chain-b += 2; }
+    prop   changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort component TestCase inherits Window {
+    in-out property <string> result;
+    in property <int> value: 56;
+    changed rty <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 912;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort comped rty <string>    result;
+    changed v => {
+        result += "sub("+v+")";
+    }
+}
+component SubCotitlempoInline {
+    in-out property <int> v: 456;
+    in-out property <string> result;
+    changed v => {
+        result += "sub2("+v+")";
+    }
+    @children
+ 
+component WithAliasToNative {
+    out property has-focus <=> ti.has_focus;
+    out property text <=> ti.text;
+    ti := TextInput {}
+}
+exPort component TestCase inherits Window {
+ ut property has-focus <=> ti.has_focus;
+    out property text <=> ti. + * * 2 + 2g := -  5

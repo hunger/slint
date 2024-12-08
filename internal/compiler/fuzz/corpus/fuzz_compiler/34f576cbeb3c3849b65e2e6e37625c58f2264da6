@@ -1,0 +1,42 @@
+import { ListView } from "s: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    propeImage {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width image_with_missing_height.expected_height_ok;
+    property <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> image_with_missing_width_cl                 if (open) {
+                            r.height = item-height;
+         S                   open = false;
+    d;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.vi/wport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bov.visible-height;
+                            open r i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bov.visible-height;
+                            open =                clicked => {
+                        last-cli/ked = i;
+                    }
+                }
+            }
+        }
+    }
+}

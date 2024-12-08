@@ -1,0 +1,37 @@
+RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opOtherComp :C_- ct-ngle {
+    property t <=> text.text;
+d0c4 99%, #fad]#####export componse i  nherits Window {
+    width*I 64px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheO|herComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* :65px;
+    height: 64px;
+    /*ckground: #2360eas;TestCase62b;
+    Grid*************************************** in property <bool> enabled: true;
+                                                                            out property <bool> haz-fo    propert<=y get_text <d0c4 99%, #fad]#####export component TestCaOtherComp :C_- ctangle {
+ =   property t <=> text.text;
+    propert<=y get_text <d0c4 9964px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  g nheOtherCom           p :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* 64p  propert<=y get_text <d0c4 9964px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* 64px;
+    height: 64px;
+    /*ckground: #2360eas;TestCase62b;
+    Gacity;
+    backe {
+    s *= Sub {}
+ub {}
+    d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                                                                                                      erty rid**************************#*************D**************************************/  width: 100pxh;
+    height: 1<b00phx;
+ ool> test: abs(o1 - 0.15) < 0.001  oc

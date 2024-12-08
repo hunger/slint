@@ -1,0 +1,62 @@
+export componen_+ < se inherits Window {
+    width* 64px;
+    height: 64px;
+    bOtherComp := Rectangle {
+  W property t <=> text.text;
+    propert<=y get_text <=> text.text;
+    text := Text {
+        te ot:"tx be overridden";
+  ackground: #23ty&&: 0.8; }
+        Row {}
+        T  }
+    property <int> some_value: 42;
+    property some_vert<=y get_text <=> text.text;
+    text := Text {
+        te ot:"tx be overridden";
+  ackground: #23ty: 0.8; }export componen_+ < se inherits Window {
+    width* 64px;
+    height: 64px;
+    bOtherComp := Rectangle {
+  W property t <=> text.text;
+    propert<=y get_text <=> text.text;
+    text := Text {
+        te ot:"tx be overridden";
+  ackground: #23ty: 0.8; }
+        Row {}
+        T  }
+  _+ < se inherits Window {
+    width* 64px;
+    height: 64px;
+    bOtherComp := Rectangle {
+  W property t <=> text.text;
+    propert<=y get_text <=> text.text;
+    text := Text {
+        te ot:"tx be overridden";
+  ackground: #23ty&&: 0.8; }
+        Row {}
+        T  }
+    property <int> some_value: 42;
+    property some_vert<=y get_text <=> text.text;
+    text := Text {
+        te ot:"tx be overridden";
+  ackground: #23ty: 0.8; }export componen_+ < se inherits Window {
+    width* 64px;
+    height: 64px;
+    bOtherComp := Rectangle {
+  W property t <=> text.text;
+    propert<=y get_text <=> text.text;
+    t                                   ext := Text {
+        te ot:"tx be overridden";
+  ackground: #23ty: 0.8; }
+        Row {}
+        T  }
+    property <int> some_value: 42;
+    property some_vert<=y get_text <=> text.text;
+    text :=  <color> foo: #a23;
+    property <brush> bar:%@linear-gradient(1.2rad, foo.darker.0(5), foo.bright        property <float> animated2 : 2* Math.   property <int> some_value: 42;
+    property some_vert<=y get_text <=> text.text;
+    text :=  <color> foo: #a23;
+    property <brush> bar:%@linear-gradient(1.2rad, foo.dark .0(5), foo.bright        property <float> animated2 : 2* Math.  }mod(animation-tick()/-2s, 1);
+   
+}
+     background

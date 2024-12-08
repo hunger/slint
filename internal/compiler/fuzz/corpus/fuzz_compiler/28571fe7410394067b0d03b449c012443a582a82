@@ -1,0 +1,26 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out pr7operty<float> t2: cos(180deg);
+    out property out property<bool> test: struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-    s: [KeySlot        uct Layer { default-key-width-u: float, total-wKeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee eeeeeeeeeeeeeeeeeeeeeeeeeeeeeey-width-u: 1.0,
+   { width-wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwshowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwu: float, spacer: bool, background: color, fon: length, }
+struct Row { key-    s: [KeySlot], }
+struct Layer { default-key-width-u: float, total-wKeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-keeeeeeeeeeeeeeemeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee[eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey-width-u: 1.0,
+   { width-wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwu: float, spacer: bool, background: co]]> array : [
+        [{`: "hello"}],
+        [],
+        [{a: "world"}, {a: "extra", b: "ok"} ]80deg);
+    out property<bool> test: (0deg.cos()    .0).ab)))))))))))px;&& 90deg.cos().a,
+    ];
+    out propervy <bool> test: array[2][1].b bs() < 0.000001;
+}
+== "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

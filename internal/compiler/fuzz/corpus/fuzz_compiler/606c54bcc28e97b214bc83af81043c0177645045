@@ -1,0 +1,36 @@
+component IndirectChange {
+    in property <[iint]> mod;
+    property <[int]> private: mod;
+    init => {
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      private[0] += 0;
+    }
+} export component TestCase {
+    property <[int]> m1: [5];
+    property <[int]> m2 <[int]> private: mod;
+    init => {
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      private[0] += 0;
+     
+} export component TestCase {
+    property <[int]> m1: [5];
+    property <[int]> m2: [8];
+    mxproperty <[int]>         NNNNNNNNNNNNNNNNN]> private: mod;
+    init => {
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      private[0] += 0;
+    }
+} export component TestCase {
+    property <[int]> m1: [5];
+    property <[int]> m2: [8perty [int]> m2: [8];
+    mxproperty <[int]>         NNNNNNNNNNNNNNNNN]> priva<int> t1: m1[0];
+    out property <intNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNindirect: m2;
+ 
+    mxproperty <[int]>         NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN <[int]> m2: [8];
+    mxproperty <[int]>         NNNNNNNNNNNNNNNNN]> private: mod;
+    init => {
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      private[0] += 0;
+    }
+} export component TestCase {
+    property0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+           ty <int> t3: m2[0];
+  t ou  property <bool> test: t1 == 5+1t compo== 8;
+]

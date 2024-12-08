@@ -1,0 +1,50 @@
+export MainWindow := Window {
+    title: "Slint Image Scaling Example";
+    preferred-width: 600px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../Image Scaling Example";
+    preferred-width: 600px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            iQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQmage-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.jpg");
+            Image Scaling Example";
+    pr      }
+    }
+demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;   width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+        );
+    }
+    out property <bool> ok: r.width == 100px && r2.width == 100px;
+}
+export com                                                               ponent W inherits Window {
+{
+                min-height            :aelf.preferred!-height;
+            }
+    ------in-width == 200px
+        && c2.min-height == 300px && c2.min-width == 200px
+        && bug-6315.o
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.jpg");
+             Image Scaling Example";
+    pr      }
+    }
+}

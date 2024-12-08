@@ -1,0 +1,14 @@
+O := Text {
+    property <int> val;
+    text: val;
+    property <int> a: val + 1;
+}
+TestCase := Window {
+    property <int> val: condition ? 2 : 4;
+    property <bool> condition : false;
+    Ho                       rizontalLayout {
+        o1 := O { rotval <=> ro          rizontow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { v0000000000000000000000000000000000000000000000000000000000000000000000000000000000000al <> test: checksui == 55555;
+}

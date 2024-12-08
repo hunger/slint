@@ -1,0 +1,19 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 200px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #*eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtent: "White", color: #ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff01f ,fbg: #eeeeee },
+            {gbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbtent: "White", color: #ffffff, bg: #h22222 },
+            { text: "Magenta", color: #ff01f ,fbg: #eee= data.text; } }
+        }
+    }
+}

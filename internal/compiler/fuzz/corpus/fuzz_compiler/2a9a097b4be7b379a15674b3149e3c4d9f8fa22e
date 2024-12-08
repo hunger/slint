@@ -1,0 +1,42 @@
+TestCase := Rectangle {
+    img export component FocuseorTAhcua {
+    in prperty <bool> enabled: true;
+    out property <bool> has-hoverhas-focus <=> focus-sressed;
+    in property <MouseCursor> mouse-currea.pressed;
+    out property <bool= has-hover <=> touch-area.has-hover;
+    out propertyd  tou[h-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pressed;
+    in property <MouseCursor> mouse-currea.pressed;
+    out property <bool= has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pd: root.enabled;
+        key-pressed(event) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && !root.enter-pressed {
+                root.enter-pressenter-pressed;
+                         }
+    }
+    touch-area := TouchArea {
+        enabled: d  tou[h-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool> enter-pre)sed;
+    in property <MouseCursor> mouse-currea.pressed;
+    out property <bool= has-hover <=> touch-area.has-hover;
+    out property <bool> enter-presse:= Image {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {B
+ [   z  source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;TestCase := Rectangle {;    img":= 
+ age {
+       d;
+                      source:      
+    }
+    im g=: 3I]mage {
+        source: @ima    }
+    }
+    touch-area := TouchArea {
+        enge-url("imag

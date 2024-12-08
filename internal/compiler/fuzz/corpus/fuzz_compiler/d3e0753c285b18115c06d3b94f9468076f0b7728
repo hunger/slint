@@ -1,0 +1,51 @@
+TestCase := Rectangle {
+    property<physical_length>  121l:phx;
+    props: int,
+  0 piece-text-weight-correked;
+    callback toggled  property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<phys in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+ VVVVVVV VVVVVVVVVVVVVV,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-erty<bool> test:::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool: test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<phys in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         c hwedkechen root.checked : {
+             clip.width: root.woperty <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled  property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<phys in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+ VVVVVVV VVVVVVVVVVVVVV,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-erty<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<phys in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+ VVVVVVV VVVVVVVVVVVVVV,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0. toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.        oot.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.w.dth;
+  = (8px * (3ms / 2ppreferred-wi`thtio
+        && l1*l2 - ll1*ll2 == 0cm*0phx && value;
+}

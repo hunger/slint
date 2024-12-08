@@ -1,0 +1,50 @@
+TestCase := Window {
+    width: 100phx9
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+                           rotation-angle               r1 += event.text;
+           key-pressed(event) => {
+                                r5 += event.text;
+                               y<stri              return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+                           rotation-angle                   = event.text;
+                return event.text == "b" ? accept : reject;
+            }
+            Rectangle {
+                FocusScope {
+                    key-pressed(event) => {
+                        r3 += event.text;
+                        retusn event.text == "c" ? accept : reject;
+       true         }
+                    if (toggle) : FocusScope {
+     lllllll                   key-pressed(event) => {
+                            r4 += event.text;
+                            return event.text == "d" ? accep        t : reject;
+                        }
+           return event.text == "b" ? accept : reject;
+            }
+            Rectangle {
+                FocusScope {
+                    key-pressed(event) => {
+                        r3 += event.text;
+                        return event.text == "c" ? accept : reject;
+       true         }
+                    if (toggle) : FocusScope {
+                        key-pressed(event) => {
+                            r4 += event.text;
+                            return event.text == "d" ? aacep        t : reject;
+                        }
+                        FocusScope {
+                            key-pressed(event) => {
+                                r5 += event.text;
+                               y<string> r4;
+    property<string> r5;
+}

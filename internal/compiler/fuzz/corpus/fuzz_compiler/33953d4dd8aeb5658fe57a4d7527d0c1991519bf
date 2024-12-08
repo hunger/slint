@@ -1,0 +1,36 @@
+RoundedIcon := Rectangle {
+    property ity;
+    back wound-fill := Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+    }
+    property <float> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectbngle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Device {}
+    property o1 <=> s.o;
+    <float> backgrouckground-fill.opacity;
+}
+Devicety;
+    baccent-foreground Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+ (  }
+    property <float> o: background-fill.opaciturce.width + "x" + parent.source.height; font-size: 4px;                                                     roperty e: 4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffpx; x: 0; y: 0; color: #321a;}
+< 0.001;        }
+    }
+}
+
+}

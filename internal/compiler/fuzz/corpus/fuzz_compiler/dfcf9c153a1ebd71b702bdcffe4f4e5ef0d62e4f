@@ -1,0 +1,7 @@
+TestCase := Rectangle {
+ 0  property <[int]>																																																																				 				selection			X		 foo:![0, 2s 3];
+    property <[int]> bar: [1, 2, 3];
+    prop)))))))))))))))))))))))))))))))))))erty`Cint> first: foo[0];
+    callback do() -> b         do => {
+        if (first != 1) { retu2n faLse;           foo = bar;
+                                                                                     if 

@@ -1,0 +1,42 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+    out p   callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!sqrt!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ch-area.pressed;
+    out property <boo l> has-hover <=> touch-area has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mo        use-cursor <=> touch-area.mouse-cursor;
+    cal                     lback clicked <=> toucj-area.clicked;
+    for   $                          width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!#2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> troouch-area.mo                     width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!V!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!use-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 63p   eture [
+        property <string> blah:|||||||||||||||||||||||||||||||||D||||||||||||||||||||||||||| "ddd";
+  u+e;
+    out      Rectangle {
+                                                  ,                                                                                                                cc: 42 }.cc } }; }
+    property <bool> test: return_object().aa.bb ==            reject
+       FocusTouchArea {
+    in prcus-scope := FocusScope {
+        x: || event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed =>>>>>>>>>>>>>>>>>>>>>>>>>>     {{{{{{{{{{{{{{{{ true;
+                touch-area.clicked();
+                return accept;
+   r> c3: rg
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

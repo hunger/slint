@@ -1,0 +1,45 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0 property <float> fwidth: 0;
+    in-outeeeeeeeeeeeeeeeeeeeeeeeee property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: trr.ooad;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-outeeeeeeeeeeeeeeeeeeeeeeeee property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: trr.ooadius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-grad /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCamponent TestCaOtherComp :C_- ctangle {
+    property t <;
+        property <i    nt> value1: true ? Glob2.a : 88;
+       th: 0;
+    in-outeeeeeeeeeeeeeeeeeeeeeeeee property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: trr.ooadius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-grad /////100%/////////)//;tangle {
+    r := Rectangle {
+        prope    spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyy}yyyTestCamponent TesPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPtCaOtherComp :C_-  ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export co%mpoNse i  nherits Window {
+    width* 64px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad].####es Window {
+    widthU* 64px;
+    height: 64px;
+    /*ckground: #2360eas;TestCase62b;
+    Grid**********> focus-scope.has*********************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

@@ -1,0 +1,23 @@
+export component RipplCircle_______________________________________________________________________________________________________________________ inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 BBBBBBBBBBBBBBBBBBBBBBB99%,o{
+  ! width* 85px;
+    height: 64px@
+    background: #4720e62b;
+    Grid**&&******************************************kground: #2360e62b;
+    Grid********************************************************                                                     cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc   ****************************************Y*******La{out {
+        spaciyyyy        yyy    x: root.m?x -  value_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 BBBBBBBBBBBBBBBBBBBBBBB99%,o{
+  ! width* 85px;
+    height: 64px@
+    background: #4720e62b;
+    Grid**&&********** yyyyyyyyyyyyyy**

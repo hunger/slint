@@ -1,0 +1,37 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chain-i                  perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    in-out pro       erty <int> chain-i;
+    changed chain-i      pro                   chain-c;
+    changed chain-c C>{
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chain-i                  perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    in-out pro       erty <int> chain-i;
+    changed chain-i      pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+    property <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { onverted_value ==    in-out property<string> p1: "hello";
+    in-ou   changed c> chain-g;
+    changed chain-g => { onverted_value == "98.77" && ten_dot_one == "11.1";
+}

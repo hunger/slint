@@ -1,0 +1,35 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image s
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg"[;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Ima,ge Scaling indow {
+    title: "Slint e: @image-url(". /../../demos/p}rinterdstruct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offsolor-1: brush,
+    piece-border-color-2: brush,
+    piece-text-em//ui/images/cat.jpg");
+         [[[[[[[[[[[[[[[[   image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout {
+  !      Image >{
+            source: @image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image\-url("../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorr,ct-pos: int,
+    piece-tex   $$$$$$$$$$$$$rt-weight-cor$$$$  rec 

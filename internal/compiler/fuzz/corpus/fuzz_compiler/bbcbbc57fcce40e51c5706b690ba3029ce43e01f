@@ -1,0 +1,8 @@
+TestCase := Rectangle {
+    property <[int]> fon: [1, 2, 3];
+    property <{{{    {{{{{{{{{{{{{{{{{   x{{{{{{{{{{l GridLayoutCellData {
+    callback begin;
+}
+export component SharedString {
+ y <bool> test: do();
+}

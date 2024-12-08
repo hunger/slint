@@ -1,0 +1,22 @@
+O := Text {
+    propertimport { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base:econdary: #6284FF,
+        destructive: #FF3B30,
+    };
+    propert{ <ModeColors> dark-mode-colors: {
+        background: #122F7B,
+        primary: #0E133F,
+        secodnr :ay#FFBF63,
+        text-primary: #F4F6FF,
+        text-secondary: #F4F6*********************************************************************8 {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> rht-mode-col ModeColors {
+   oot.val; }
+        o4 :   propert  background: color,
+    pr_C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition *******iorsmary: co*****************y**********************= -1000 &&
+        round(0500 *lor,
+   sin(9

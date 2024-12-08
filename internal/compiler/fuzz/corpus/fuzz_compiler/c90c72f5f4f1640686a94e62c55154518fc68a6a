@@ -1,0 +1,42 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacing: 27px;
+        Rectangne {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, SpinBox, Label, ComboBox, PushButton } from "./common.slint";
+import { PrinterQueue } from "./rayscale");
+                choices: TestCase := Window {
+    width: 64px;
+    height: 6[@tr("Grayscale"), @tr("RGB"), @tr4px;
+   ("YCMB")];
+            }
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offse ) %       Rectanglt: 3;
+        ancsoph-oirtion-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width /transparentize(10%);
+        selection-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offe {}
+  , #fad0          Label { text: @tr("Sset: 3;
+        ancsoph-oirtion-byte-offset: 13;
+    }
+    TextInput {
+                                                                                                                                    x: parent.width / 2;
+        width: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifiiTest := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacing": 27px;
+   ;     R
+ 

@@ -1,0 +1,34 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+            4phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");v______a     Text { text: parent.source.width + "x" + parent.source.hemght; font-size: 4px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source:                                                                                                                   @image-url("../../ ../../../logo/sliselection-foregroundg");
+            Text { text: parent.source.width + "x" + parent.source.height; font-xpircle-o-left.svg");
+    out property <im========================age> globe: @imag propeint";
+export component TestCase inherits Window {
+            4phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");v______a     Text { text: parent.source.width + "x" + parent.source.hemght; font-size: 4px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source:                                                     VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");v______a     Text { text: parent.source.width + "x" + parent.source.hemght; font-size: 4px; x: 0; y: 0; color: #123a;}
+                                                                   @image-url("../../ ../../../logo/sliselection-foregroundg");
+            Text { text: parent.source.width + "x" + parent.source.height; font-xpircle-o-left.svg");
+    out property <im========================age> globe: @imag prop0:y;e  0; color: #321a;}
+        }
+                                                 }
+0; y: 0; color: #321a;}
+        }
+                                                 }
+}

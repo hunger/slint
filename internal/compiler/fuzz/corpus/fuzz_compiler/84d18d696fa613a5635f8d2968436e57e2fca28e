@@ -1,0 +1,60 @@
+export component FocusTouchArea {
+    in pro{
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+       alu<=$== 3+3 +5;
+}
+                       perty <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := I                        (    texHt   r := Rectangle {
+        property <inv> value1:0Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property[<e1 property text_alias <=> text;
+1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.cv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            hperty <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    height: 64px?
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-presse " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

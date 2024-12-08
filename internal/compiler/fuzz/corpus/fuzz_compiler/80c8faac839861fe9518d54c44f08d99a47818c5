@@ -1,0 +1,17 @@
+import { Palette } from "std-wi       Oint";
+import "../assets3weathericons-font.ttf";
+export global AppPalette {
+    out property<brush> background: #16 export component T73b4;
+    out property<brush> alternate-background: #2296bc;
+    out property<brus-h>      has-hover: touch-area.has-hover;
+    }
+    content-layer := HorizontalLayout {       
+        Text {
+            text: root.text;
+            horizontal-aligestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string>nment: left;
+                                                                                                          t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <st                            ve foreground:ring> t3:  white;
+    out property<brush> s@un-yellt

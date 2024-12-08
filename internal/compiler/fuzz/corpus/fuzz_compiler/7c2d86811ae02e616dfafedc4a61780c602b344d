@@ -1,0 +1,44 @@
+export component  ocusTouchArea {
+    in property <bool> enabled: true;
+    out p   callback clicked <=> toucj-area.clicked;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!use-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64p   eture [
+        property <string> blah:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| "ddd";
+  ue;
+    out      Rectangle {
+                                                                                     icked <=> toucj-area.clicked;
+    for   $                          width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!KKKK!!#2360e62;
+b    GridLayout {
+        spacing: 0.5px;
+ h-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse6cursor <=> troouch-area.mo                     width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!use-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                    ..............................         width: 64p   eture [
+        property <string> blah:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| "ddd";
+  ue;
+    out      Rectangle {
+                                                    %                                                                                                              cc: 42 }.cc } }; }
+    property <bool> test: return_object().aa.bb ==            reject
+        }
+        key-released(ev&nt) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                 oot.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

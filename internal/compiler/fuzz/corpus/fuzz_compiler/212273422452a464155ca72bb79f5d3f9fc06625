@@ -1,0 +1,18 @@
+component IndirectChange {
+    in property <[int]> mod;
+    property <[int]> private: mod;
+    init => {
+  !!!        !                  {
+    property <[int]> m1: [5];
+    property <[int]> m2: [8];
+    mxproperty <[int]> indirect: m2;
+    public function up() {
+        indirect[0] += 10;
+    }
+    callback up2();
+    up2 => {up()}
+    IndirectChange { mod: m1; }
+    out property <int> t1: m1[0];
+    out property <int> t3: m2[0];
+  t ou  property <bool> test: t1 == 5+1t compo== 8;
+}

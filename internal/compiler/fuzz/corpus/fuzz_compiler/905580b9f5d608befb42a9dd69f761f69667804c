@@ -1,0 +1,49 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+ A   callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            +}
+    ta := Tou                                               @linear-gradient(45deg, #ff9a9e 0%, #fa/.d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100 * 4;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/.d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+    heiradius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/.d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+    height: 100phght: 100phx;********
+    in-out property         for string in [ "Blue", "Red", "Green",cked <=> ta.cl width: 300px;
+    height: 500px                                                       t Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string ;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+             !                                                                 .                             for string in [ "Blue", "Red", "Greenicked;
+    property <string> string;
+    `eight: 100px;
+    Tty <=> background-fill.opacity;
+     property <bool> test: foo1_alias(?00) == 122 && fo 0px;
+}

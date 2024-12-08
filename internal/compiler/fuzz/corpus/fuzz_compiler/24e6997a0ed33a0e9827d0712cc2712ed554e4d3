@@ -1,0 +1,32 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    off{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{set-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piTest := Rectangle {
+    baradient(45deg, #ff9a9e  imag_ok: self.herce: ece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-posr: brush,
+    game-use-background-image: bool,
+    gam@image-url("cat.jpg");
+      R  height: 601phx;
+        property <bool{
+   ||as-back-button: true-:::::::::::::;:::::::::::::::::::::::::::::::::::     import { De-border: length,
+    emoPalette, Paggame-radius: length,
+    game-texte, 

@@ -1,0 +1,45 @@
+TestCase := Rectangle {
+  w   dth: 300phx;   pr/peRty<int> value: 1;
+    [#f00, #00f, #0a0]: Rectangle [
+        y: index * height;
+        width: paetrn.width;
+        height: 033phx;
+    ue: 1;
+    [#f00, #00f, #0a0]: Rectangle [
+        y: index * height;
+        width: paetrn.width;
+        height: 033phx;
+        GridLayout {
+ 9          Rectangle {
+                background: c;
+              0 TouchArea {
+                    width: parent.background: c;
+                idth;
+        height: 200phx;
+        GridLkyout {
+ 9          Rectangle {
+                bac;
+                  }
+            }
+      }
+      }
+      }
+      GridLayout {
+ 9          Rectangle {
+                background: c;
+              0 TouchArea {
+                    width: parent.background: c;
+                idth;
+        height: 200phx;
+        GridLkyout {
+ 9          Rectangle {
+                bac;
+                  }
+            }
+      }
+      }
+      }
+            }
+        }
+    }
+}

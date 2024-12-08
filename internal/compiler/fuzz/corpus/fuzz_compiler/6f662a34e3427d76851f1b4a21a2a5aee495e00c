@@ -1,0 +1,62 @@
+import { Button } from "std-wTest := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: idgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_cou$t;
+	
+	callback first_reached;
+	callback second_reached;Test := Rectangle {
+    property<color>  {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_cou$t;
+	
+	callback first_reached;
+	callback second_reached;Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    
+	
+	propproperty<color> r3: #fferty <length> popup_x;
+	d;
+	callback second_reached;Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+   b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    
+	
+	propproperty<color> r3: #fferty <length> popup_x;
+	d;
+	callback second_reached;Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    
+	
+	propproperty<color> r3: #fferty <length> popup_x;
+	proper0000;
+    property <bool> first_ty<color> rsent: proper0000;
+    property <bool> first_ty<color> rsent: false;
+	p lengt4

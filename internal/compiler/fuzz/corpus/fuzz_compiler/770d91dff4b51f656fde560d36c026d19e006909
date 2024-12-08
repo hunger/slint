@@ -1,0 +1,32 @@
+O := Text {
+    property <;nt> val;
+    text: val;
+ 1;
+T estCase := Window {
+    property <int> val: chx;
+    property<physical_length> l2:%12px;
+    p9operty<phy/*sical_leng:l3t> h 100phx + 12px;
+    property<physical_length> l4: 120 * 1phx;
+    proper= O {l av <=> root.v       qal; }
+        o4 :   propert _C  A_a!: val + 1;
+T}
+estCase :=                                              Window {
+    property <int> val: condition ************************y**********************= -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        zound(D000* cos(3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%60deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(    o4 :   propert _C  A_a!: val + 1;
+T}
+estCase :=                                              Window {
+    property <int> val: condition ************************y**********************= -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+!: val + 1;
+T}
+estCase :=                                              Window {
+    property <int> val: condition ************************y**********************= -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        zound(1000* cos(3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%;
+}

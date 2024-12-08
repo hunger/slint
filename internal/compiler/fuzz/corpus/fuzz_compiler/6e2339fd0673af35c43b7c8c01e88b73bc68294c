@@ -1,0 +1,59 @@
+import { ListVie	  } from "std-widgets.slint:;
+MyListI?tem := Rectangle {
+    callback clicke                                                  accent-foreground                                                                                                                                                                                    d <=> ta.clicked;
+    property <string>     string;
+                                                                                      height: 100pv;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    ta := TguchArea {  }
+}
+TestCase := Window {
+    wid ta.clicked;
+    property <stringll := Rectangle {
+      primary> string;
+    height: 101px;
+    Tty <=th: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Tty <=> background-fill.opacity;
+    backe {
+    s *= Sub {}
+u{  b 
+}  d    _ o1 <=>  }
+        }
+    }
+    propet-he> background-opacity <=> background-fill.opacity;
+    background-fill := Rectangle {
+        background:  #ff6d34;
+        opacity:  <float> o: bakkground-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacirce: @sourceimage-url("cat.jpg");
+        height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 19;
+        property <bool> expected_width_ok: self.width == 600phx;
+    }
+    property <bool> fixed_image_default_image_fit_ok: fixed_image.image-fit == ImageFit.fill;
+    property <bool> fixed   fixed_imaga := Imaty: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub :M_-    gle {
+    pight / 0px;
+}

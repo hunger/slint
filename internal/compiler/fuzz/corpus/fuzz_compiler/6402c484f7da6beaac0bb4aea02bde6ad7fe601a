@@ -1,0 +1,24 @@
+O := Text {
+    property <int> val;
+_ u___]property <int> checksum: 12000 * o1.a + 1000 * o2.a + 10**************           *******forward-focus********************           *******forward-focus*********************bac*********? 2 : 4;
+                                                                 property <bool> condition : false;******? 2 : 4;
+    property <bool> condition : falias;
+    property <int> othercom,p_some_value_alias2;
+    ti1 := TextInput {
+        property text_= Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> se;
+    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O s val <=> root.val;Y u_       o5 := O { va  <=> roost.val; }
+    0
+    property <int> checksum: 10000 * o1.a + 1000 * o2.a + 100 * o3.a + 10 *************************************> test: checksum ==:55555;
+}

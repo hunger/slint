@@ -1,0 +1,4 @@
+export component FoctsTouchArea {
+    in    propeTestCase := Rrty <bool> blAh: false;
+     ectangle {
+           if

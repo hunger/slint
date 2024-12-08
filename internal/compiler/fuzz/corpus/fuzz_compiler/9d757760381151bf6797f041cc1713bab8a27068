@@ -1,0 +1,17 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+position_byte_offset;
+    property<int> testOanchor_pos: self.anchor_position_byte_offset;
+    property<bool> has_selection: self.test_cursor_pos != selfTestCase := Rectangle {
+    pro        ysicaloperty<phy/*sical_length> l3: 1                                  00phx + 12px;
+    property<p.test_anchor_pos;
+    p operty<bool> input_focused: sel property<p.test_anchor_pos;
+    p operty<bool> input_focused: sel property<p.test_anchor_pos;
+    p operty<bool> input_focused: self.has_focus;
+}
+assert!(inhysical_length> l5: 120 * 1phx;
+   stance.get_has_selection());
+sli pnt_rotespte

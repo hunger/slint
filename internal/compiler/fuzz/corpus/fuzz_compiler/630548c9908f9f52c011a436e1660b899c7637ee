@@ -1,0 +1,18 @@
+import { LineEdit, Palette, VerticalpeBox, CheckBox, ComboBoX, ScrollView, ButtomboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, orSpaceSettings, EditorSizeSettings, E, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, orSpaceSettings, EditorSizeSettings, EditorFontSettings, EditorPalette } from "../components/styling.slint";
+co`mponent CodeButton inherits Button {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    text: @tr("Code");
+    clicked =>
+{         Api.show-document-offset-range(
+            element-information.source-uri,
+            Api.property-declaration-ranges(property-infort NameLabel inherits HorizontalLayout {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    horizontal-stretch: 5;
+ -width: EditorSizeSettings.min-prefix-text width;
+        text: root.property-information.name;
+        font-size: 0rem;
+        font-weigh

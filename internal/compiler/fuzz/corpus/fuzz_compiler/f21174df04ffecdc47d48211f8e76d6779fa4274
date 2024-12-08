@@ -1,0 +1,37 @@
+export component TestCase {
+    in property <float> value: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+    out property <>fatl ot2: clamp(value, 43.0, 53.0);
+import { ListView  } from "`std-widgets.slint";
+MyListItem close-on-cli {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 150px;
+    height:    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <strin    out property <float> t3: clamp(va@lue, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);       root.move-left();
+   g> value;
+    HQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ         } else if self.current-po?ition.x < self.presst   osition.x - root.itemWidth / 2 {
+                root.move-right()> max: 42;
+  QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIQQQQQQQQQQQQQQQQQorizontalLayout {
+        lv nterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../demos/en", "Yellow", "Black", "White", "Magenta", "Cyan"] : my := MyListItem {
+                string: string;
+                clicked => { value = string; }
+          property         }

@@ -1,0 +1,66 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPangs, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-width: 500px;
+    in property <length> preview-height: 900rx;
+    in property <length> max-pop<length> selection-x: 0px;
+    in-out property <length> selection-y: 0px;
+    in-out property <[SelectionStackFrame]> selection-stack: [
+        {
+            width: 292%,
+            height: 40%,
+            x: 10%,
+            y: 0%,
+            is-in-root-component: true,
+            is-layout: false,
+            is-interactive: true,
+            is-selected: false,
+            type-name: "TypeA",
+            file-name: "thumb.slint",
+            id: "some_a",
+   V     ,
+    ,   {
+            width: 50%,
+            height: 5,
+            type-name: "TypeA",
+            file-name: "thumb.slint",
+            id: "some_a",
+        },
+    ,   {
+            width: 53%,
+            height: 50%,
+            x: 0%,
+            y: 0%,
+            is-in-root-component: false,
+            ,s-layout: true,
+            is-interactive: false,
+            is-selected: false,
+            file-name: "thumb.slint",
+            type-name: "HorizontalLayout",
+  th: 50%,
+            height: 10%,
+            x: 20%,
+            y: 40%,
+            is-in-root-component: false,
+            is-layout: false,
+            is-interactive: false,
+       y: 0%,
+            is-in-root-component: false,
+            is-layout: true,
+            is-interactive: false,
+            is-selected: false,
+            file-name: "thumb.slint",
+            type-name: "HorizontalLayout",
+  th: 50%,
+            height: 10%,
+            x: 20%,
+         ractive: false,
+            is-selected: true,
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id: "some_a",
+        },
+        {
+lse,
+    

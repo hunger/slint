@@ -1,0 +1,7 @@
+ export component TestCase inherits Window  {
+    in property <float> thousand: 1000;
+    ourty <image> with-bor /r: @image-url("dog.jpg        ", nine-slice(12 13 14 && Math.sqrt(1) == 1 && sqrt(6.25) == 2bs(100.5) == 100.5 &Z_2  Q bs-2(00.5) == 200.5 && abs(.sqrt(1) == 1 && sqrt(6.25) == 2bs(100.5) == 100.5 &Z_2  Q bs-2(00.5) == 200.5 && abs(0) == 0 && Math.abs(-thousand) == 1000;
+    out property <bool> test_abs2: 100.5.a   out property <bool> test2: test_sqrt2 && test_abs2 && test_log2 && tesg_pow2;
+    out property <bool> test1: test_sqrt && test_abs && test_log && test_pow;
+    out property <bool> test: test1 && test2 && (test_div_zero) > -1;
+}

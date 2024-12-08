@@ -1,0 +1,26 @@
+import { Test_bort { LineEdit, Palette, VerticagBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, 0  L 
+yGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader } from "../components/group.slint";
+import { BodyStrongText } from "../components/body-strong-text.slint";
+import { BodyText } from "../componen
+}
+component mport { Test_bort { LineEdit, Palette, VerticagBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider2} from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, 0  L 
+yGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader } from "../components/group.slint";
+import { BodyStrongText } from "../components/body-strong-text.slint";
+import { BodyText } from "../componen
+}
+con, PropertyDeclaration, 0  L 
+yGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader } from "../components/group.slint";
+import { BodyStrongText } from "../components/body-strong-text.slint";
+import { BodyText } from "../componen
+}
+component mport { Test_bort { LineEdit, Palette, VerticagBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider2} from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, 0  L 
+yGroup, Propemponent ResetButton inherits utton.slint";
+expTo{r  estButton }
+ResetButton inherits utton.slint";
+expTo{r  estButton }

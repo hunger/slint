@@ -1,0 +1,35 @@
+import { Com  =ght: 200px;
+           property <stringmponent TestCase nheAirits Window {r   ti wdh: 2px;
+ ///////////   "/component C1  {
+    Recta        width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+                }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+    ------in-width == 200px
+        && c2.min-height == 300px && c2.min-width == 200px
+        && bug-6315.ok;
+///////////////////////////////////// QM/////estCase := Rec/*ngle {
+lLa  
+  {
+        spa1inArea {
+        clicked => }{ g: 0phx;
+output += "  

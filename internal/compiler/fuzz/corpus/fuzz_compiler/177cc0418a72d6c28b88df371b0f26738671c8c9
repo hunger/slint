@@ -1,0 +1,25 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+import { InnerSha  wRectangle } from "general/innerShadowRectangle.slint";
+export component Info {
+    in pro    perty <string> name;
+    in property <string> id;
+    in property <boo := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%, #fad0c4 100%);
+    property <color> foo: #a23;
+    property <brush> bar: @linear-gradient(1.2rad, foo.darker(0.5), foo.bright        property <float> animated%2 : 2* Math.mod(animation-tick()/-2s, import { Com  =x } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+ /////////////////////////////////////////////////////////////////////////////////////////////////////   height: 199- px;
+    in-out prope//////////////////////////////////////////////////////////////////////////////////////////   height: 199- px;
+    in-out p;
+    height: 64px;
+    background: #2360e62b;
+    Grid*****
+ == TouchArea {
+        clicked => { outpt Test***************.anima**te

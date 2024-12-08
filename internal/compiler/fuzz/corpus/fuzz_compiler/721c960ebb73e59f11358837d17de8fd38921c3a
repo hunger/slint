@@ -1,0 +1,6 @@
+TestCase := Rectangle {
+    property<float> p    00%;
+    property<float> p2: 1%;
+    property<float> p3: 5.5%;
+    property<float> p4: 10 + 50%;
+}

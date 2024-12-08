@@ -1,0 +1,29 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chain-c += 1; }
+    property <int> chain-e;
+    changed chain-e => { chain-d += 1; }
+    property <int> chain-f;
+    changed chain-f => { chain-e += 1; }
+    property <int> chain-g;
+    changed chain-g => { chain-f += 1; }
+    property <int> chain-h;
+    changed chain-h => { chain-g += 1; }
+    property <int> chain-i;
+    changed chain-i                  perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out propout property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p &";
+    in property<float> ring> converted_value: round(value * 100)/100;
+    out property <string> ten_dot_ene: 10 + increment;
+    out property <bool> test: e1 && !e2 && converted_value == "98.77" && ten_dot_one == "11.1";
+}

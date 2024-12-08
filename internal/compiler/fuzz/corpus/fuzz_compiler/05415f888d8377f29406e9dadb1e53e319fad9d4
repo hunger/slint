@@ -1,0 +1,25 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    i-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(event) => {
+            if (event.text == Key.UpArrow) {
+                rokt.move-focus-up();
+                return ac                                                                                     cept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-rightAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA();
+      ;
+                return accept;
+            }
+            if (event.text == Key.RightArrow) {
+                root.move-right();
+                return accept;
+        opr    perty <length> viewport-x: root.center-x - root.selected-index * (root.itemWidth + root.spacing);
+                animate viewport-x {
+                    duration: root.duration;
+                    easi  E_ease-in;
+                }
+                property

@@ -1,0 +1,51 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro (  perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"queto\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p &";
+    in pro$erty<float> value: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <string> converted_value: round(value * 100)/100;
+    out pro$erty <string> ten_dot_one: 10 + incrp1: "hello";
+  TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro (  perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"queto\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p &";
+    in pro$erty<float> value: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <string> converted_value: round(value * 100)/100;
+    out pro$erty <string> ten_dot_one: 10 + incrp1: "hello";
+    in-oTestCase := Rectangle {
+    proput pro (  perty<string> p2: "fox:p &
+";
+    in-out property<string> p2: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p &";
+    in pro$erty<float> value: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <string> converterty<int> value;
+    property<int> result :    in-oTestCase := Rectangle {
+    proput pro (  perty<string> p2: "fox:p &
+";
+    in-out property<string> p2: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p &";
+    in pro$erty<float> value: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <string> converterty<int> value;
+    property<int> result : 3;
+            action;
+    ac%tion => {
+        ip       == 5 {
+         l eu  srt += 1;
+            result +=back elseif(int)ed_va ->   D
+    elue: rlseif(v) 

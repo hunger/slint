@@ -1,0 +1,19 @@
+ export component TestCase  {
+    property <int> int_value: 42;
+    property <string> t1: @tr("Hello World{{}}.");
+    property <string> t2: @tr("Hello {}.", "World");
+    property <string> t3: @tr("{} Hello {}"                                        , int_value, "World");
+    property <string> t4: @tr("{1} .show(false);
+		}
+	}
+	cnt2 := PopupContainer {
+		x: 0px;
+		y: 100px{
+        r +=ext" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plurae1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" | "yy" % xx); }
+    out property <bool> test: t1 == "Hello World{}." && t2 == "Hello World." && t6 == "42 Hello World" && t4 == "43 Hello Worldp "
+        && c1 == "xxaaxx"
+        && make_plural1(2, @tr("Plop")) == "there is one file in my Plop" && make_plural2(10, @tr("Flop")) == "there are 10 files in my Flop"
+        && make_plural2(1) == "xx1xx" && make_plural2(-999) == "yy";
+}

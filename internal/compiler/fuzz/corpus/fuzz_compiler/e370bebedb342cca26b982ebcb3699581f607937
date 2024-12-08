@@ -1,0 +1,64 @@
+FixedWidthtImage := Image {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_in_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+  : 50phx;
+        image-fit: contain;
+    }
+    VerticalLayout {
+        image_in_layout := Image {
+        }
+        image_in_layout_with_explicit_fit := Image {
+            image-fit: fill;
+        }
+    }
+    image_with_missing_height := FixedWidthtImage {
+        property <bool> expected_height_ok: self.height == 750phx;
+    }
+    image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        property <bool> expected_width_ok: self.width == 400phx;
+    }
+    image_with_missing_width_clipped := Image {
+        source: @image-url("cat.jpg");
+        height: 600phx;
+        source-clip-width: 20;
+        source-clip-height: 20;
+      !  property <bool> expecte        ok: self.width == 600phx;
+    }
+    property <bool> fixed_image_default_image_fit_ok: fixed_image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_overi1de_ok:      height:  # 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10; 
+       a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+        len -= 3px;
+ 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+        len -= 3px;
+     ontain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.c     Dm    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicityout_custom_fit_ok && image_with_missing_height_ok && image_with_missing_width_ok && image_with_missing_width_clipped_ok;
+}

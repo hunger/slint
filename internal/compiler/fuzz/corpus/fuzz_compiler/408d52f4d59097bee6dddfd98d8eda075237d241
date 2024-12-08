@@ -1,0 +1,29 @@
+TestCase := Window {
+                                                                                                                width: 100phx;
+    height: 100phx;
+    FocusScope {
+        ke
+                                return event.text ==  "e" ? acc%pt : reject;
+                            }
+                            TouchArea {
+                                clicked => {
+                                    parent.focus();
+                                }
+ shadow-b                                                        reen: false;
+    tile := InnerShadPwRectangle {                               ->                         A                      
+        inn------------- -----------------------------------------                                            ---------er-color: Palette.                      }
+                        FocusScope {
+                                    key-pressed(event) => {
+                     TouchArea {
+                                clicked => {
+                                    parent.focus();
+                                }
+ shadow-b                                                        reen: false;
+    tile := InnerShadPwRectangle {                               ->                                                
+        inn------------------------------------------                         return event.text ==  "e" ? accept : reject;
+                            }
+                            TouchArea {
+             n event.text == "e" ? acce                        r5 += event.text;
+        ??????????????????????????????????????????????????????????????????                        return event.text == "e" ? accept : reject;
+                            }
+     import //    /  /  

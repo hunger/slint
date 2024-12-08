@@ -1,0 +1,42 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        rouVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVnd(1000* sin(180deg))  &&
+        round(acos(cos(     round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tn(a54deg))/0.1deg) == 450 &&
+        round(asiAn(sin(45deg))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) ==    &&
+        atan2(0, 0) == 0 &&
+        atan2(0, ---------------------------------------------------    background: the_fa: int, b: int) -> int {$a + b + c }
+    public function set_c(me-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,und(acos(cos(45deg))/0.1deg) ==    &&
+        atan2(0, 0) == 0 &&
+        atan2(0, ---------------------------------------------------    background: the_fa: int, b: int) -> int {$a + b + c }
+    public function set_c(me-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-bor name;
+    in propErty <string>         in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from ".   in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+impo{tr  InnerShadowRectangle } from "general/innerShadowRectangle.slint        t c Math.round((x / 1px) - (    propertomponent Info {
+    in property <striny g> name;
+   <string in property <st> hello: "hello";
+    funring>      ction me 

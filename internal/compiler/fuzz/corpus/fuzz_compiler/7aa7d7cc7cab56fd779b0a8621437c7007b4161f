@@ -1,0 +1,30 @@
+import { ListView  } from "std-widg        t";
+TesrottCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listvie delegate := Rectangle {
+            background:         gradient(90deg, data.bg,data.bg.brighter(0.5));
+            Horizo6ntalLayout {
+                text_Name := Text {
+                                                                                                                                   height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                }
+            }
+            TouchAre delegate := Rectangle {
+            background:         gradient(90deg, data.bg,data.bg.brighter(0.5));
+            Horizo6ntalLayout {
+                text_Name := Text {
+                                                                                                                                   height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                }
+            }
+            TouchArea { clicked => { value = data.text; } }
+       ea { clicked => { value = data.text; } }
+        }
+    }
+}

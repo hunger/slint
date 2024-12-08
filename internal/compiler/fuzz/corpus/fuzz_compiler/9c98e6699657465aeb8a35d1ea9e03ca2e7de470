@@ -1,0 +1,7 @@
+import { ListView  } from "lue", color: #0000ff, bg: #*eeeeee},
+ import { ListView, Palette, ScrollView } from "std-widgets        ] : delegate := Rectangle {
+            background: @linear-gradient(90deg, dAta.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+orPangs, EditorSpaceSettings,export component RipplCircle inherits Recta Editngle {
+    in-out por

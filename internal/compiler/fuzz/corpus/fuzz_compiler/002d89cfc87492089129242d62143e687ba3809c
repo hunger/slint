@@ -1,0 +1,11 @@
+import { ListView, Palette, ScrollView } from "std-widgetss.lint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, S,,,,T        I,,,,,,,,,,////////////
+    game-u    pcolor-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1:  in property <color> checked-color;
+    in property ol<cro> unchecked-color;
+    in-out property <bool> che{
+           lback toggled(boo TestCase := Rectangl);
+  le {  stat
+es 

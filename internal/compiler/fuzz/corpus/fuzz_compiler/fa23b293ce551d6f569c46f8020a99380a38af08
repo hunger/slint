@@ -1,0 +1,39 @@
+export component TestCase  {     in-out property <bool> toggle: { return false; }
+    in-out prop     <int> val*e: {
+        if] (toggle) {
+            return 42;
+        }
+        return 100;
+    }
+    in-out property <float> value2: {
+        return 100;
+    }
+    in-out property <int> index: -1;
+    public function rust_fn_codegen_bugstro() -> bool {
+        return index != 0 && index != 1;
+    }
+    in-out property <bool> rust_binding_codegen_bug: {
+        return index != 42 && index != 4import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> sqrt-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-heig2;
+    }
+    callback test_signht;
+            property <bool> open;
+ al;
+    in-out property <b 

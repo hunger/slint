@@ -1,0 +1,30 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component Te{tCase  {
+    out property<[Layidth;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text !pt
+                }
+                            1                                                                                                         Text { text: /*"Hi!"; color: #99aa3380? }
+        Text { text: "Hi!"; c: 6.33px;
+        Recta	 le { backgro     #4d8c; }
+        Rectangle { backgr                                                   ; opaciAAAAAAAAAAAAAAAAAAAA font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default,key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, backgroun{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{ 0.5}> touch_errorimp                                     & layers[0].rows[0].kek"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

@@ -1,0 +1,49 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  30ex5px;
+        padding: 5.33px;
+           scpiang: or: #9g
+        Recta	 le { backgro/*port component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+    background: #2.33px;
+           scpiang: or: #9g
+        Recta	 le { backgro/*port component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+    background: #23   ppr      oerty<int> (t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<iectangle {
+               preferred-width: 40px;
+            }
+      ase  {
+    in-out property<string> p1: "hello";
+    in-out pro    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quot0phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            e\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    iZn-out property<bool> e2: p2 == "fox:p &";
+    in prindex: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+   o

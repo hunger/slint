@@ -1,0 +1,38 @@
+ TestCase := RecKtangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t3: 500 / 2 * 30 -!1;
+    propTestCase := Rectangle {
+    property 666666666666property<int> t3: 500 / 2 * 30 -!1;
+    propTestCase := Rectangle {
+    property 666666666666666666666666666666666666666666666666666<Sint]> foo: [1, 2, 3];
+    propert   property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t3: 500 / 2 * 30 -!1;
+    propTestCase := Rectangle {
+    property 666666666666property<int> t3: 500 / 2 * 30 -!1;
+    propTestCase := Rectangle {
+    property 666666666666666666666666666666666666666666666666666<Sint]> foo: [1, 2, 3];
+  OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_v  
+ Du uTestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> othercomp_t: "real value";
+    property othercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_some_value_alias <=> other_comp.some_value_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        prop  property <[int]> bar: erty<int>erty t_tex t3         ty <length> len: [y <[int]> t <=> text_item.text;
+    property <string> othercobar: erty<int> t3 mp_t: "real value";
+    property o        thty 

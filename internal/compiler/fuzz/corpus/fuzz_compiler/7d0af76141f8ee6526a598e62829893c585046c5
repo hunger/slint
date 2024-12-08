@@ -1,0 +1,34 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacing: 27px;
+        Rectangne {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, SpinBox, Label, ComboBox, PushButton } from "./common.slint";
+import { PrinterQueue } from "./printer_que5ue.slint";
+export component ScanPage inherits Page {
+   ||as-back-button: true-
+    header: @tr("Scan");
+  s(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asin(sin(45deg))/0.1deg) == 450 &&
+        round(ac(so&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}
+ atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 68deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) ==180x 180deg &&
+       0) == -45deg &&
+  GridLay out {
+      ), @tr("RG "), @tr("YCMB")];
+$            }
+      %       Rectangle {}
+  , #fad0          Label { text: @tr("S

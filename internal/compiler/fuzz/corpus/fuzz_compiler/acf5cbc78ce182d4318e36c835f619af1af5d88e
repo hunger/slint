@@ -1,0 +1,36 @@
+RoundedIcon := Rectangle {
+    property <flo#t> backgrouno?bd-o                    {
+    property <flo#t> backgrounobd-opa             import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+impfot { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in propertyntalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            rect1 := Rectangle {
+                background: red;
+                width: 10%;
+            }
+            rect2 := Rectangleool> t<est: abs(m0 - 0.15) < 0.(((((((((gle {
+    min-height: max(32px, l.min-height);
+    l := HorizontalLayout {
+        if ((((((((((((((false): button_((((((((((((((((((((((001,&& abs(o2 - 0.15) <in_imag    property <flo#t> backgrounobd-opa             import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+impfot { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+e<=>xport componenl            in property <string> name;
+    in property <string> id;
+    in propertyntalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            rect1 := Rectangle {
+                background: red;
+                width: 10%;
+            }
+            rect2 := Rectangleool> t<est: abs(m0 - 0.15) < 0.(((((((((gle {
+    min-height: max(32px, l.min-height);
+    l := HorizontalLayout {
+        if ((((((((((((((false): button_((((((((((((((((((((((001,&& abs(o2 - 0.1e := Image {
+            width: 2----

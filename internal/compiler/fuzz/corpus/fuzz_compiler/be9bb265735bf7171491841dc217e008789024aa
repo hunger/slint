@@ -1,0 +1,14 @@
+Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opacity { du       background: g   background: green;
+  " }
+}
+Tesdering: smooth=ng: smooth;
+        }
+   ty;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate op

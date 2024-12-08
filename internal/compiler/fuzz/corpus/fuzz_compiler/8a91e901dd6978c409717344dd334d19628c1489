@@ -1,0 +1,38 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preht: 50%,
+            x: 50%,
+            y: 50%,
+            is-in-root-component: false,
+            is-interactive: false,
+            is-selected: true,
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id: "some_a",
+        },
+        {
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%  },
+        {
+            width: 50%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+            is-in-root-component: false,
+            is-interactive: false,
+            is-selected: true,
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id: "some_a",
+        },
+        {
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+            is-in-root-component: false,
+    

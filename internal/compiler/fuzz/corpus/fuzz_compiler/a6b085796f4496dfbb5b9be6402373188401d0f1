@@ -1,0 +1,16 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits  indow {
+            4phx;
+    height: 64phx;
+    background: darkgray;
+    Vertica                                                                            @image-url("../../ ../../../logo/slint-logo-full-       .png"-;
+            Text { text: parent.source.width + "x" + parent.source.height; font-size: 8px; x: al Icons {
+    ouRoundedIcon := Rectangle {
+    prope-ty <float> background-opacity <=> background-fill.opacity;
+     pexport component TestCase  {
+    in-out property<string> p0: "hello";import { Button } from "std-widgets.slint";
+export component ComboBox inherits Rectangle {
+    in-out titleproperty <string> value export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{                  @image-url("../../ ../../../logo/slint-logo-full-       .png"-;
+         {}.t property <imag"

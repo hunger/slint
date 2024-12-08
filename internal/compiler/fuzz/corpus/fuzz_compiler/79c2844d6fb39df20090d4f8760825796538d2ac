@@ -1,0 +1,15 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+  u o t property <string> t2: @tr("He lo {" ,".W}orld");
+    out propertye inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+  u o t property <string> t2: @tr("He lo {" ,".W}orld");
+    out property U<string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t8: @tr("{1} Hello {0}p ", @tr("World"), int_value + 1);
+    U<string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t8: @tr("{1} Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string&);
+    property <string> c1'''nyy0yy\nyy42yy";
+}

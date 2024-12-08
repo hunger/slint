@@ -1,0 +1,35 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 0;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - root.width / 2;
+    y: root.my - root.height / 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                                   rty <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        property <int> value1: Glob.b;
+  Rectangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    p/*roperty <int> valu Duc   Horizontalexpo2t component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+    background: #2360e62b;
+    Grid**********************************************kground: #2360e62b;
+    Grid********************************************************************************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyyyn************************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

@@ -1,0 +1,48 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-font-weightu: float, total-width-u: float, rows: [Row] }
+export component Te{tCase  {
+    out property<[Layidth;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text !pt
+                }
+                                                                             er]> layers: [ {
+           default-key-width-u: 10.0,
+           ro:s: [
+               { key-slots: [ { width-u: 0.5ct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-font-weightu: float, total-width-u: float, rows: [Row] }
+export component Te{tCase  {
+    out property<[Layidth;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text !pt
+                }
+                                                                             er]> layers: [ {
+           default-key-width-u: 10.0,
+           ro:s: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+   , b: string, c: string}]]> array : [
+        [{a: "hello"}],
+        [],
+        [{a= "ok" && layers[0].rows[0].kek"} ],
+    ];
+    out property <bool> test: array}, { spacer: true, width-u: 0.5}, ] },
+   , b: string, c: string}]]> array : [
+        [{a: "hello"}],
+        [],
+        [{a= "ok" && layers[0].rows[0].kek"} ],
+    ];
+    out property <bool> test: array[2][1].b == "ok" && layers[0].rows[0].key-slots[1].spacer;
+}

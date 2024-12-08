@@ -1,0 +1,33 @@
+O := Text {
+    property <;nt> val;
+    text: val;
+ 1;
+T estCase := Window {
+    property <int> val: condition **************************************************************************************************   ****************8 {
+    property <int> val: condiext: val;
+ 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************9 {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :   propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <intw> val: condition ************************y**************ion ***********************************************************************************9 {
+    property <int> val: condie E_val;
+ 1;
+T}
+estCase := Window {
+    property <int> val: condition ******************************************************************************************************************9 {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :   propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ************************y**************ion *****************************************************************************************>************************9 {
+    property****************    o3 := O { val <=> root.val; }
+        o4 := O { 
+|  a<=> root.val; }
+       																			test: checksum == 55555;
+}

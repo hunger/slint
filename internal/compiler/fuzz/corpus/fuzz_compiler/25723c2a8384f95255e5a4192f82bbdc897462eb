@@ -1,0 +1,62 @@
+TestCase := Window {
+    widtse         w {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+     w {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    ht: "VAVAv\nLi        ";
+        wrh: 12px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextIun{ 
+pt        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+TestCase         color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-:= Rectangle {
+    property<int> color: yellow;eight: 64px;
+    forward-focus: i-text-in    x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    ht: "VAVAv\nLi        ";
+        wrh: 12px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextIun{ 
+pt        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+TestCase         color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-:= Rectangle {
+    property<int> color: yellow;eight: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextIun{ 
+pt        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+TestCase     o c   lor: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-:= Rectangle {
+    property<int> color: yellow;
+        font-sizevalue;
+    property<int>

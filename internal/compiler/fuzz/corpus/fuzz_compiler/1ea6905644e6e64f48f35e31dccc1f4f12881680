@@ -1,0 +1,41 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+  ?  property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 2px;
+        border-color:     
+    }
+}
+export TestCase := Window {
+    width:  059phx;
+    height: 300phx;
+    property <int> last_clicked: -1;       last-clicked = i;
+ TestCase := Rectangle {
+b    animate background {
+ 
+ -}
+O________________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O___________________e := Rectangle {
+b    animate b_________________________@__________OOOOOOORectangle {
+b    animate background {
+ 
+ -}
+O______________________________________________________OOOOOOOOOOOOOO                   }
+                rotation-angle}
+        }OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOtitlOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O___________________e := Rectangle {
+b    animate b_________________________@__________OOOOOOORectangle {
+b    animatOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O___________________e := Rectangle {
+b    animate b_________________________@_
+          _________OOOOOOORectangl  e}

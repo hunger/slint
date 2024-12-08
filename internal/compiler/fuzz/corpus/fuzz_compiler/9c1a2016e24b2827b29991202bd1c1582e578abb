@@ -1,0 +1,62 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    i    t property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 o,9%9{
+    width* 85px;
+     height: 64px;
+    background: #2360e62b;
+    Grid**&&******************************************kground: #2360e62b;
+OtherComp := Rectangle {
+    property t <=> t@ext.text;
+    propert<=y ge&&texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+  tangle {
+    r := Rectangle e {
+    background: @linear-gradient(45deg, #ff9a*&&******************************************kground: #2360e62b;
+OtherComp := Rectangle {
+    property t <=> t@ext.text;
+    propert<=y ge&&texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+  tangle {
+    r := Rectangle e {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 o,9%9{
+    width* 85px;
+     height: 64px;
+    background: #2360e62b;
+    Grid**&&******************************************kground: #2360e62b;
+OtherComp := Rectangle {
+    prop9e 0%, #fa/*d0c4 o,9%9{
+    width* 85px;
+     height: 64px;
+    background: #2360e62b;
+    Grid**&&******************************************kground: #2360e62b;
+OtherComp := Rectangle {
+    property t <=> t@ext.text;
+    propert<=y ge&&texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+  tangle {
+    r := Rectangle {
+        property <int> value1:0Glob.b;
+ : Math.clamp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms.clamp(0, 5? Glo MQ  : 88;
+    }
+    property <e1 + r.valu<=   rotation- Grid******************  ************************************************f**********************************ob.b;
+        property <int> value2: true ? **G

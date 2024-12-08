@@ -1,0 +1,16 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e  image_with_missing_width := Image {
+        source: @image-url("cat.jpg");
+      R  height: 0ph06
+x;        property <bool{
+   ||as-back-button: true-
+    h 0TestCase >10px;
+        indexspacits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+   TestCase := Rectangle {
+    callback toggled(bool);
+    states [
+         checked whe  property <bool> vern root.checked : {
+ if 

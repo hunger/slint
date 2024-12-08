@@ -1,0 +1,36 @@
+global G := {
+    property           <string> hello: "l hle          o";          
+    function meh(w: string) -> string        {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,                           border-r                        - (y / 1px));
+    function foo() {}
+    function the ort MainWindow := WWindow {
+    title: "Slint Image Scaling Exampde";
+    preferred-width: 800px;
+    preferre {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+         Rect     Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat"[;j.g{p
+  
+ ction(a: int, b: int) -> int { foo(); a + b set-selection-offsetsue : Rectangle {
+        background: the_function(2, 2) > 3 ? blue: sc.helLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLlo();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: ingle {
+    public pure function hlleo() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int,                                            lo world" && sc.hello() == Colors.red;
+}

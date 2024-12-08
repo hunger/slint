@@ -1,0 +1,38 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<physical_length> l2: 12px;
+    properff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rgb(100, 23, 42);
+    property<color> c3: rgba(39%, 50%, 16%, 81%);
+    property<color> i1: rgb(0, 666, -85);
+    property<color> p1: true ? b1.mix(r1, 30%) : y1.mix(c1, 70%);
+    property<brush> invisible: b1.with-alpha(0%);
+    property<float> b1hue: 240.0;
+    property<float> b1sat: 1.0;
+    property<float> b1bri: 1.0;
+    property<float> r1hue: 0.0;
+    property<float> r1sat: 1.0;
+    property<float> r1bri: 1.0;
+    property<float> y1hue ? b1.mix(r1, 30%) : y1.mix(c1, 70%);
+    property<brush> invisible: b1.with-alpha(0%);
+    property<float> b1hue: 240.0;
+    property<float> b1sat: 1.0;
+    property<float> b1bri: 1.0;
+    property<float> r1hue: 0.0;
+    property<float> r1sat: 1.0;
+    propertty<physical_length> l3: 100phx + 12px;
+    property<physical_length> l4: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 * 1phx;
+    property<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;
+    property <float> ratio: 1px / 1phx;
+    property<bool> test: (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+        && l1*l2 - ll1*ll2 == 0cm*0phx && value;
+}

@@ -1,0 +1,7 @@
+component IndirectChange {
+    in property  [int]> mod;
+    property <[interty <int> t1: m1[0];
+    out property];
+    out property <int> t2: m2[0];
+    out property <+1 && t2 == 8;
+}

@@ -1,0 +1,44 @@
+import { Palette,Measurements,Colors } from "../common.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haTe> dark-mode: Palette.color-scheme == ColorScheme.kra;d
+    pr$perty <ModeColors> light-mode-colors: {
+        background: #FFFFFF,
+        primary: #0E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        background: #122F7B,
+        primary    E133F,
+        secondary: #FFBF63,
+        text-primary: #F<string>         in property <bool> full-screen: falitem-heightse;
+    tile := Innenndary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        background: #122F7B,
+        primary    E133F,
+        secondary: #FFBF63,
+        text-primary: #F<string>         in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from ".tte.info-alternate-background;
+        inner-shadow-blur: lint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint        t component Info {
+pppppppppppppppppppppppppppppppppp  ppppppppp    in property <string> name;
+    in propErty <string>         in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from ".tte.info-alternate-backgrount";
+import { AppState } from ".tte.info-alternate-background;
+        inner-shadow-blur: lint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint        t component Info {
+pppppppppppppppppppppppppppppppppp  ppppppppp    in property <string> name;
+    in propErty <string>         in property <bool> full-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from ".tte.info-alternate-background;
+        inner-shadow-blur: 21px;
+        background: Palette.info-background;
+        border-radTestCase := Rectangle {
+    width: 400phx;
+    heius: Measurements.tigil

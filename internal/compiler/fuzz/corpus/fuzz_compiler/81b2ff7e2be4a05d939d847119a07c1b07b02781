@@ -1,0 +1,20 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out properfoo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+ (  property <int> first: foo[0];
+    callback do() -> bool;
+  * do => {
+        if (first != 1) { return false; [         foo = bar;
+        if (first != 1) {        mreturn false; }
+        bar: stri export component TestCase inherits Window /*
+    in property <float> thousand: 1000;
+    out property <bool> test_%qrt: sqrt(100) == 10 && Math.sqrt(1) == 1 .0.sqrt() == 1 && 6.25.sqrt() == 2.5 && (thousand.sqrt() - (1000).sq& 64.0.log(4) == 3;
+    out property <bool> test_pow: pow(4,2) == 16 && Math.pow(9,3) == 729 && pow(4,3) == 64 && abs(log(pow(thousand, 5), thousand) - 5) < 0.00001;
+    out property <bool> test_pow2: 4..pow(2) == 16 && 9.0.pow(3) == 729 && (4).pong) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" | "yy{n}yy" % xx); }     out property <string> result1: make_plural1(1, @tr("Plop")) + "\n" + make_plural1(2, @tr("Flopp   ")) + "\n" + make_plural1(10, t1);
+    out property <string> result2: make_plural2(1) + w(3) == 64 && (thousand"\n" + make_plural2(-999) + "\n" + make_plural2(0) + "\n" + make_plural2(42);
+    .pow(5).log(thousaout propnd) -erty  5).abs<bool> te()

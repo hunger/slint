@@ -1,0 +1,37 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SOption { n: None }
+export struct Covmponent {o: Option }
+export struct Model { c: one }
+export struct Covmponent {o: Option }
+export struct Modr { Window(}
+export struct WindowIteort enue {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SOption { n: None }
+export struct Covmponent {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property   value: string }
+export struct PropertyAnexport struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor { Windotruct WindowItem {}
+export struct Slint { Case  {
+    in property <Default> def: Defau          out property <BoxLayoutDita> blt: { lm WindowAdaptor { Window(}
+export struct WindowItem {}
+Xxport struct Slint { Case  {
+    in property <Default> def: Defau          out property <BoxLayoutDita> blt: { layout: 45phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

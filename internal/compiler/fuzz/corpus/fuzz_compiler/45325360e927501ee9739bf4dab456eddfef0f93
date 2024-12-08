@@ -1,0 +1,65 @@
+ TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2gle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2/);
+  k foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    properInner := Rectangle {
+    property <percent> val;
+    background: val < 50% ? red : blue;
+}
+Outer := VerticalLayout {
+    property <percent> val;
+    Rectangle { background: val < 50% ? green : yellow; }
+}
+export AppWindow := Window {
+    width: 240px;
+    height: 240px;
+  ]]]]]]]]]]]]]] ]]urn_object()2 - 50 - 2;
+    pr]]]]]]]operty<int> t20 / 2 * 30 -!1;
+  f property<int> t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <le::::::::::::::::::::ngth> len: 50px / 2;
+    callback ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;eight: 600phx;
+        property <bool{
+   ||as-back-button: true-
+    h 0TestCase >10px;
+        spacing: 27px;
+        Rectangne {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, Spin       }
+        image_in_layout_with_exp;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;foo;
+    foo => {
+        a += +4;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    pr perty<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    proper- (3 + ++2 * (a + 2/);
+ty <length> len: 50px / 2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+        len -= 3px;
+ 2;
+        a -= 3;
+        len"+= 1px;
+        len /= 2;
+        len -= 3px;
+        len *= 3;
+    }
+}

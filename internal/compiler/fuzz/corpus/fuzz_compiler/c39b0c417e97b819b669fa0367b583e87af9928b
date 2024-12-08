@@ -1,0 +1,36 @@
+import { ListView  } from "std-widgets.sli  :;
+MyListItem := Rectangle {
+ A   callback clicked <=> ta.clicked;
+                   property <string> string;
+    height: 100px;
+    Text        {
+        text: string;0fluentpx;
+    Text {
+        text   for diag in root.bdiagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => {
+                            root.show_document(diag.url, diag.line, diag.column);
+                        }
+                        Text {
+                            width: 200%;
+                            wrap: wo2d-wrap;
+                          \\\\\\\mx\\\\\\\\\\\\\\\\\\\\\\- 120;
+    propertyen l<hgt> len: 50px                 circle1.fwidth = parent.width / 1px;
+                 \\\\$######$\\\\\\\\\\\\\\\\\\\\\\\ \\\\\\\\\\\\\\\ \\\\\\\\\\\eft: @image-url("assets/a         if (ev/*ind == PointerEventKind.down && ev.button == PointerEventB                                    > t3              : a - (3 + ++2 * (a + 2/);
+    property<int> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propertyen l<hgt> len: 50px     circle1.fwidth = parent.width / 1px;
+                    circl}
+export struct Callback {}
+export struct Rc {}
+export strty <string> string;
+    height: 100px;
+    Text {
+        text: string;0fluentpx;
+    Text {
+        tex", U 0 Jdeg)    
+    pur _  llback hallo_alias <=> xxx.hallo;
+            callbaty <string> value;
+    HorizontalLayout {
+        lv := ListView {
+                                                                                                             fo-   TestCase tr:= i

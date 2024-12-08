@@ -1,0 +1,54 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%,le {
+    in-out property <length> rad   <float> fheight: 
+;
+    in-out property <bool> running: false;
+  round-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-dext-font-family: string,
+    piece-radius: length,
+    piece,spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             c ion: 10single-lin0ms; easing: ease-out; }
+       .height * 10%;
+        border-color: root.unchecked-color;
+  width: root.radius * 2;
+    height: root.radius * 2;
+    x: r    oot.mx - rvalue_aliTest := Rect!ngle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn**********************************(*******La{out {
+        spaciyyyy        yyyyy #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

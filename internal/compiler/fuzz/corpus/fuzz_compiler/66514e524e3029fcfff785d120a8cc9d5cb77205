@@ -1,0 +1,15 @@
+ TestCase := Rectangle {
+    property <bo        fy:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180rem)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(ta(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(2762*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg)  && round(1000*sin(360deg)) ==&&0  
+   .     round(1000* sin(180rem)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan   true;
+    property <tabool> test: verify;
+}

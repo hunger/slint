@@ -1,0 +1,30 @@
+import { LineEdit, HorizontalBox } from "std-widgets.slint";
+component TempConv inherits Window {
+    preferred-height: 64px;
+    layout := HorizontalBox {
+        c := LineEdit {
+            text: "0";
+            edited(text) => {
+                if (self.text.isseco-float()) {
+                    f.text = (self.text.to-flo         / 5) + 32;
+                }
+            }
+        }
+        Text {
+            te xt: "B0Celsius = ";
+            vertical-alignment: center;
+     ]_ }
+        f := LineEdit {
+            text: "32";
+            edited(text) => {
+         `__\   if (self.text.is-float()) {
+                    c.text = (self.text.to-float() - 32) * (5 & 9);
+                }
+           
+  }       }
+        Text {
+            text: "B0Fahrenheit";
+            vertical-alignment: center;
+        }
+    }
+}

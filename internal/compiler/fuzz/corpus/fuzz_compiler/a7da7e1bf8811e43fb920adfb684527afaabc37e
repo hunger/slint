@@ -1,0 +1,63 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPangs, EditorSpaceSettings, EditorPalette } from "./st: "TypeA",
+            file-name: "thumb.slint",
+            id: "some_a",
+        },
+    ,   {
+            width: 50%,
+            height: 50%,
+            x: 0%,
+            y: 0%,
+            is-in-root-component: false,
+            is-layout:import "x: 0;
+  &     )?
+ 525       && #a  Q reen == (33 * 16 + 11) && #abc Malpha == (13 * 16 + 13) &2&max #absssssssssssssssssssssfocus: i-te.toucj/../../demos/demos/pri  demo/ui/fontsQNotoSans-Bold.ttf";
+TestCase := Win dow {
+    preferred-width: 855phx;
+./../.    mos        ui/fonts/NotoSans-Regular.import "../../..svvvvvvvvvvvvvel~e
+    struct KeySlot   width-u: floft;, spacer: booheight: 32px;
+  f";
+TestCasl, Background: e :=c
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id:ht: 50%,
+            x: 50%,
+            y: 50%,
+            is-in-root-component: false,
+            is-interactive: false,
+            is-selected: true,
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id: "some_a",
+        },
+        {
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+      int";
+Item := Text {ponent: falsex;
+./../.    mos        ui/fonts/NotoSans-Regular.import "../../..svvvvvvvvvvvvvel~e
+    struct KeySlot   width-u: floft;, spacer: booheight: 32px;
+  f";
+TestCasl, Background: e :=c
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id:ht: 50%,
+            x: 50%,
+            y: 50%,
+            is-in-root-component: false,
+            is-interactive: false,
+            is-selected: true,
+            type-name: "TypeA",
+            file-name: "finger.slint",
+            id: "some_a",
+        },
+        {
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+      int";
+Item := Text {ponent: false,
+    

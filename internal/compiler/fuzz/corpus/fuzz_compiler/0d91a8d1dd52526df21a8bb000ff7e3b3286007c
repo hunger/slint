@@ -1,0 +1,45 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00,color, #
+        width                 rd-sssssssth                 rd-ssssssssssssssssssssssssssssssssss0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+                                                                              tangle {
+                background: red;
+               @iidth: 05%;
+         erty<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 =9 0;
+    property <float> ratio: 1px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5deg2: 12px;
+    property<phy/*sica  padding: 0phx;||           rect1 := Ruectangl                             height: 100phx;
+     =>;
+    property<int> value: 1       )r c[index] mn [#f00, #00f, #0a0]: Rectangle {
+: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+        y: indexalternate-backgrou * height;
+        width: parent.width;
+        height: 100phx;
+     =>;
+    property<int> value: 1;
+    for c[index] mn [#f00, #00f, #0a0]: Rectangle {
+  height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00,color, #
+        width                 rd-sssssssth                 rd-ssssssssssssssssssssssssssssssssss0a0]: Rectangle {
+        y: index * height;
+        wght: 300phx;
+    1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+                                                                              tangle {
+                background: red;
+               @iidth: 05%;
+               }
+            }
+        }
+    }
+}

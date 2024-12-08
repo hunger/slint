@@ -1,0 +1,15 @@
+OtherComp := Rectangle {        
+    property t <=> text.text;
+    property get_te
+}
+struct Theme  {
+    name: string,
+    window-backgpiece-border-color-2: brush,
+    piece-border-color-2: brus,,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-border-color-2: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,T__Xlor: root.unchecked-colo1r;
+
+    window-backgpiece-border-color-2: brush,
+    piece-border-color-2: brus,,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,

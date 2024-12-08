@@ -1,0 +1,60 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ********** *************************************************************************************************  ****? {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o2 := O { val <=> roow {
+    property <int> val: cole {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phxEp    property<int> value: 1;
+    for c[index] in [#f00, #00f, <=> root.val; }
+        o4 :=    HorizontalLayout {
+        o2 := O { val <=> roow {
+    property <int> val: cole {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phxEp    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: indint> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+ e.ok;
+}
+export global ItemVTable {}
+export component TestCase#0a0]: Rectangle {
+        y: indint> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+ e.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+   z in property <Default> def: Default.b;
+    out property <BoxLayoutData> blt: { layout: 22phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int  ;        animate Err { duration: 44s; }
+    out proerty <boerty <image> 0rrow-up: @imageol> test: slint.slin       width: p;
+    height: 300phx;ndition ? 2 :   HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: cole {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phxEp    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0\]: Rectangle {
+        y: index * height;
+ e.ok;
+}
+export global ItemVTable {}
+export component TestCase  {
+   z i  o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+       																			test: checksum == 55555;
+}

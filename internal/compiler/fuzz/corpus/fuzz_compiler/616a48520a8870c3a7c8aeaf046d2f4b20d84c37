@@ -1,0 +1,66 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+ rotation-anglen 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+              gh TestCase >= Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    prockground: blue;
+                heigfoo => {
+        a += +8%;
+      t: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+          @ he                    clicked => {
+                r.height = lv.visible-heigh  a *= 10?
+        a /= ty<ingle {
+     t;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                        last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+ nt>$t2: 4 + 3 * 2 + 2 -  + 2));
+    pro     pe back- 120;
+    property <length> len: 50px / 2;
+    callback foo|
+    foo => {
+        a += +8%;
+        a *= 10?
+        a /= ty<ingle {
+      nt>$t2: 4 + 3 * 2 + 2 -  + 2));
+   }
+ pro     pe backgrour

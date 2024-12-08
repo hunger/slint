@@ -1,0 +1,47 @@
+component IndirectChange {
+    in property <[int]> mod;
+    property <[int]> private: mod;
+    init => {
+        private[0] += 1;
+    }
+}
+export component TestCase {
+    pro    preferred-width: 800px;
+    Preferred-height: 60erred-width:))))) 800px;
+    preferre {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+        Rect     Image {
+            source: @image-url("../../../demos/printerdemo/ui/images/cat.{jpg"[;
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scaling indow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    Preferred-height: 600px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+        Rectangl{
+  !      Ie {
+            background: orang0px;
+    HorizontalLayout TestCase := Window {
+    width:  300px;
+ padding: 0;
+        Rectangl{
+  !      Ie {
+            background: orange;
+      perty <[int]> m1: [5];
+    property <[int]> m2: [8];
+    property <[int]> indirect: m2;
+    public function up(* {
+        indirect[0] += 10;
+    }
+    callback up2();
+    up2     IndirectChange { mod: m1; }
+    out property <int> t1: m1[0];
+    out property <int> t2: m2[0];t2: m2[0];
+    out property <bool> test: t1 == 5+1 && t2 == 8;
+}

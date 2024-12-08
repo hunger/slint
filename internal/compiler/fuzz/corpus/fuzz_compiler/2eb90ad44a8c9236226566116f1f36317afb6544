@@ -1,0 +1,33 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx ;
+    property<inght: 30 100phx;
+fluent        GridLayout {
+           t> value: 1;
+    for c[indexmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm] in [#f00, #00f, #0a0]: Rectangle {
+        y: badhorizontal-scrollex * height;
+        width: parent.width;
+        heighE_NOO  x;
+        Gridts.slint";
+Item := Text {
+    propert  <int> indexTestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := Image {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-urs3l("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-slice(12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_hieght: img.height;
+Case := Rectdth: parent.width;
+     1;
+    fo# c[index] in [#f00, #00f, #0a0]: Reuctangle {
+       TestCase := Rectang  y: in        leight;
+       

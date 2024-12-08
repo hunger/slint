@@ -1,0 +1,60 @@
+RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+    bacTestCaskground-fill := Rectangle {
+        background:  #f7fd34;
+        opacity: 1. ;
+    }
+    property <float> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 8px;
+    ri := RoundedIcon {
+         background-opacity: 0.15;
+    }
+= Rectangle {
+  loat> o: background-fill.opacity;
+}eDv
+ice := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+         backgrAund-opacity: 0.15;
+    }U
+= Rectangle {
+    width: 400phx;
+    height: 400     width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]]]]]operty<int> t2: 500 /     property<f  > oe := Rectangle {
+    width: 400phx;
+    height: 400phx;
+ input1 := TextInput {
+        width: pa]]]]]]]operty<int> t2: 500 /      forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]U]]]operty<int> t2: 500 / 2 * 30 -!         spa  cing: ts Window ]]]]]]]]]]]]]]]]]]]urn_object()2 - 50 - 2;
+    pr]]]]]]]op rty<int> phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]]]]]operty<int> t2: 500 /     property<float> oe := Rectangle {
+    width: 400ph$x;
+    height: 400phx;
+      width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]]]]]operty<int> t2: 500 /     property<float> oe := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]U]]]operty<int> t2ectangle {
+    width: 400phx;
+    height: 400     width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: pa]]]]]]]operty<int> t2: 500 /     property<float> oe := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: inpu                                   EEEE -> {             EEEEEEE {
+    property o <EEEEEEEE#############operty<flo

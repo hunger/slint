@@ -1,0 +1,49 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    o: root.mx - root.width / 2;
+    y: root.my - root.height / 2;;
+    foo => { 
+    
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope                                                          ut property<float> t TestCase := Rectang    a *= 10;
+        a /= ty<intt<> t4: 3 + - +5> t4: 3 + - +5 - 8 - -9 * --- 120;
+    propernt> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> te in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 0;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+  e  hight: root.radius * 2;
+    x: root.mx - root.width / 2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    prop> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<it3               : a - (3 + ++2 * (a + 2));
+    property<i$nt> t4: 3 + - +5 - 8 - 2;
+    y: root.my - root.height / 2;
+    background: rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counte      ,t> other: 5;
+}
+Te       prope                   -9 * --- 110;
+    property <length> len: 50px / 2;
+    callback foo;
+    foo => { 
+                                                 rty <int> value2: true ? Glob2.a : 88;stCa  := Rectan   x: root.mx - root.width / 2;
+    y: root.my       a += +8;
+    foo;
+    foo => { 
+                                                 rty <int> value2: true ? Glob2.a : 88;stCa  := Rectan   x: root.mx - root.width / 2;
+    y: root.my       a += +8;
+        a *= 10;
+     ;
+        len *= 3;
+    -}
+}

@@ -1,0 +1,43 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text2: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> othercomp_t: "real value";
+    property othercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_some_value_alias <=> other_comp.some_value_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirset-selection-offsetsection;
+        property text_alias_indirection <=> text;
+        text <=> text_item.text;
+    }
+    text_item := Text {
+        text: text2;
+    }
+    Text {
+        text <=> text1;
+    }
+    other_comp := OtherComp {
+        t <=> root.othercomp_t;
+        some_value <=> othercomp_some_value;   property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> te1.text = a; }
+    callback set_ti2(string);
+    set_ti2(a) => { ti2.text h a; }
+}

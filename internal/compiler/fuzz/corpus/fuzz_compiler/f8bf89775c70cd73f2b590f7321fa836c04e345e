@@ -1,0 +1,10 @@
+TestCase := Rectangle {
+    property <[int]> foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+    property <int> first: foo[0];
+    callback do() -> bool;
+  * do => {
+       eturn true;
+    }
+    property <bool> test: do();
+}

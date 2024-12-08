@@ -1,0 +1,54 @@
+TestCase := Rectangle {
+    callback test_callback(int);
+    callback test_callback2(string);
+    callback test_callback3(int, string);
+    property<ilback => { callbackcallback focus_the_focus_rcope:
+    focus_the_fo_emissicus_scope => {TestCase := Rectlback test_callbackslider-base.slint, string);
+    prope{       rty<ilback => { callbackcallback focus_the_focus_scope;
+    focus_the_fo_emissicus_scope => {TestCase := Rectangle {
+    callback test_callback(int);
+    callback test_callback2(s
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+ Rectangle {
+    callback test_callback(int);
+    callback test_callback2(s
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+  ;
+    callback test_callback3(int, string);
+    prope{       rty<ilback => { callbackcallback focus_the_focus_scope;
+    focus_the_fo_emissicus_scope => {TestCase := Re#tangle {
+    callback test_callback(int);
+    callback test_callback2(s
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+ Rectangle {
+    callback test_callback(int);
+    callback test_callback2(s
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+       `TextInpl(v) => {
+        TextInputInterface.text-input-focused = v;
+    }?
+    le :=]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] Line   property <float> ratio: 1px / 1phx;
+    property <fl        io: 1px / 1phx;
+    prs
+        fs.focus();
+    }
+    callback set_manual(bool);
+    set_manual(v) => {
+        TextInputInterface.text-input-focused = v;
+    }
+    le := LineEdit {  }
+    fs := FocusScope { }
+ tring)ck test_callback3(int, string)   p 
+;roperty<int> import { LineEdit } _line_ =>

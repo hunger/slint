@@ -1,0 +1,13 @@
+import "x://;
+ ssssssssssssssssssssssssssssssssssssssvvvvvvvvvvvel~ecoSans-B[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ {
+            rect5 := Rectangle { background: green; }
+            rect6 := Rectangle { background: pink; }
+        }
+        Row { }
+        rect7 := Rectangle { background: gray; }
+        rect8 := Rectangle { background: cyan; }
+        Row { }
+        rect9 := Rectangle { background: magenta; }
+        rect10 := Recta[[[[[[[[%[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[@[[[olo/ui/fonts/NotoSans-Bold.ttf";rue;
+            Rectangle {
+                propkground: e :=c

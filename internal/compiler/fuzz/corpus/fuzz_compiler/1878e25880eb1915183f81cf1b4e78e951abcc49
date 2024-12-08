@@ -1,0 +1,17 @@
+export component TestCase  {
+    in-out property<string> p0: "hello";import { Button } from "std-widgets.slint";
+export component ComboBox inherits Rectangle {
+    in-out property <string> value export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello {{{{{{{{{{{{{                                                                                    {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_v: "aaaaaa"(
+    in property <[string]> m2222222222222222222222222222222222222222222222222222222222222222222222222222222222odel: ["aaaaaa", "bbbbbb", "cccccc"];
+    callback selected(string);
+    border-rad
+    in-out pro                                    perty<string> p2: "fox:p &
+";
+    in-in-out property<string> p1: "hello";
+    inalue, "World");
+    out property <string> t4: @tr("{1} Hello0 {}p i", @tr("World")| int_value + 1);
+    out property <-out pro        string> t5: @tr("           Unt    r  

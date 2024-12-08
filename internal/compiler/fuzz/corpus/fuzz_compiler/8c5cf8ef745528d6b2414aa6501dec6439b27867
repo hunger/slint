@@ -1,0 +1,53 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_aHorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2     o3 := O { val <!: val + 1;
+T}
+estCase := Windo := Window {
+    property <int> val: condition ********************************************************************************************************:*********? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+ ********************************************************************************************************:*********? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+         o1 := O { val <=> roow {
+    prase := Windo := Window {
+    property <int> val: condition ********************************************************************************************************:*********? 2 : 4;
+    prstruct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    pieceh,
+    pieceoperty <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 :=    HorizontalLayout {
+ ********************************************************************************************************:*********? 2 : 4;-background-2: bru,
+
+    property <bool> condition : false;
+    HorizontalLayout {
+         o1 := O { val <=> roow {
+    property <int> val: condition ? 2     o3 := O     piece-background-2: brush,
+ { val <=> r oo t

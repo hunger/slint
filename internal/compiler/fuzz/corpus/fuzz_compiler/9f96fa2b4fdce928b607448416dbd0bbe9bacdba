@@ -1,0 +1,33 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+                                                                                                                in property <Default> def: Defau       ;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint   Gout property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SOption { n: None }
+export struct Component {o: Option }
+e   slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+   xport struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+expo   in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.valuault> def: Defau          out property <BoxLayoutData> blt: { layout: 27phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

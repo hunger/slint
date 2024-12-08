@@ -1,0 +1,63 @@
+import { ListView  } from "std-widgets.slint";
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green", "Yellow", "Black", "White", "Magenta", "Cyan"] : my :=&&&&&&&&&&&&&&&&&&&&&&&&&& MyListItem {
+                string: string;
+                clicked => { value = string; }
+           ck clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green", "Yellow", "Black", "White", "Magenta", "Cyan"] : my :=&&&&&&&&&&&&  HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Red", "Green", "Yellow", "Black", "White", "Magenta", "Cyan"] : my :=&&&&&&&&&&&&&&&&&&&&&&&&&& MyListItem {
+                string: string;
+                clicked => { value = string; }
+           ck clicked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Text {
+        text: string;
+    }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 300px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+            for string in [ "Blue", "Re&&&&&&&&&&&&&& MyListItem {
+                string: string;
+                clicked => { value = string; }
+            }
+        }
+    }
+    property <int> viewport-height: lv.vi000 *  1.a + 1000 * o2.a + 100 * ewport-height /  }
+        }
+    }
+    property <int> viewport-height: lv.vi000 *  1.a + 1000 * o2.a + 100 * ewport-height / 1px;
+}

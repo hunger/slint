@@ -1,0 +1,41 @@
+export component RipplCircle inherits Rectangle {
+    in-out prp2erty <length> radius: 0;
+    in-out property <length> mxn-ouength> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 1;
+    height: root.radius * 2;
+    x: root.mx  u____ in-out property <length> mxn-ouength> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 1;
+    height: root.radius * 2;
+    x: root.mx ue
+    width* 64px;
+    height: 64px;
+    background: #2360e62b;
+    Grid**&&******************************************kground: #236pe62b;
+    Grid*	export component Ripp {u
+exph / 1 " p,x+}
+        text||||||||||||||||||||||||||||||||||||||||||||: (
+     Uu_g 1px}, " +
+            "\{r2.width / 1pxdthb :.widtpx}, " +
+        text: (
+            "\{r.width /       "\{r.,idth ,x+}
+        text|||**************ut |||||||||||||||||||||||||||||||||||||||||: (
+     Uu_g 1px}, " +
+            "\{r2.width / 1pxdt                hb :.widtpx}, " +
+        text: (
+            "\{r.width /       "\{r.,idth / 1 " p,x+}
+        text||||||||||||||||||||||||||||||||||/ 1px}, " +
+        text: (
+            "        \{r.width /       "\{r.width /         "\{r2.width / 1pxdthb / 1 " p,x+}
+ px}, " +
+        text: (
+            "\{r.width /       "\{rchArea {
+   ______________________________{
+   __          

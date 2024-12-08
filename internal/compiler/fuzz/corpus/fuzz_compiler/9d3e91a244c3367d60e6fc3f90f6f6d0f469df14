@@ -1,0 +1,43 @@
+export global B {
+    out primpor              width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!22222222222222222222222222222%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%222222222222222222222222222222222222222222222!!!!!!!!!!!!!!!!! !000,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        background: #244F7B,
+               : #0E133F,
+   ~    searcnyod: #FFBF63,
+        text-primary: #F4F6FF,
+        text-secondary: #F4F6FF,
+        destructivm: #FF3B30,
+    };
+    out property <color> background: dark-mode ? dark-mode-colors.background : light-mode-colors.background;
+    out property <c  text-primary: #F4F6FF,
+        text-secondary: #F4F6FF,
+        destructive: #FF3B30,
+    };
+    out property <color> background: dark-mode ? dark-mode-colors.backgolor> primary: kground: color, fon }t-size: leng enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> troouch-area.mo                     width: 64px;
+    height: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!22222222222222222222222222222222222222222222222222222222222222222222222222!!!!!!!!!!!!!!!!! !000,
+        text-secondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors> dark-mode-colors: {
+        background: #244F7B,
+ foreground    : #0E133F,
+   ~    searcnyod: #FFBF63,
+        text-primary: #F4F6FF,
+        text-secondary: #F4F6FF,
+        destructivm: #FF3B30,
+    };
+    out property <color> background: dark-mode ? dark-mode-colors.background : light-mode-colors.background;
+    out property <c  text-primary: #F4F6FF,
+        text-secondary: #F4F6FF,
+        destructive: #FF3B30,
+    };
+    out property <color> background: dark-mode ? dark-mode-colors.backgolor> primary: kground: color, fon }t-size: length, }
+struct Row { key-slot
+s: [KeySl

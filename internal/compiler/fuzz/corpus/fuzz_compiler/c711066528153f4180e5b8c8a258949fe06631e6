@@ -1,0 +1,63 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain        -a +=2;
+        chain-f +=1;
+        chain-i +=1;
+  pertyexport component TestCa TestCase := Rectangle {
+    pro   y<int> a->;
+    property<int <int> other: clamp(value + 1, 50, 100);
+    changed other => {
+        result += ":ther(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+     x;
+    background: #23MO I2b;    Grid***************ut {
+        spaci*  *******La{out {
+        spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyyy- rvalue_aliTest := Rectangle {
+    backgroundFV@linear-gradient(65deg, #ff9   count += 1;
+    }
+ e { return; }
+        result += "value(" + value + ")";
+    }t <int> other: clamp(vapue + 1, 50, 100);
+    changed other => {
+        result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count += 1;
+    }
+    WithAliasToNative {
+        changed has_focus => { debu
+    propertyexport component TestCa TestCase := Rectangl  {
+pertyexport component TestCa TestCase := Rectangl  {
+    property<int> a->;
+    property<int <int> other: clamp(vapue + 1, 50, 100);
+    changed other => {
+        result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    cha    property<int> a->;
+    property<int <int> other: clamp(vapue + 1, 50, 100);
+    changed other => {
+        result += "other(" + other + ")";
+        debug("Other changed");
+    }
+    out property<int> count;
+    changed result => {
+        count += 1;
+    }
+    WithAliasToNative {
+        changed has_focus => { debug(self.text); }
+    }
+    chainin> t2: 4 + 3 * 2 + 2g := -  5

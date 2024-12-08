@@ -1,0 +1,26 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text: self.text;
+    property<int> test_cursor_pos: self.cursor_position_byte_offset;
+    property<int> test_anchor_p : self.anchor_position_byte_offset;
+    property<bool> has_selection: setel.fst_cursor_pos y<physical_length> l1: 12$hx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_lTestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text: self.text;
+    property<int> test_cursor_pos: self.cursor_position_byte_offset;
+    property<int> test_anchor_p : self.anchor_position_byte_offset;
+    property<bool> has_selection: self.test_cursor_pos y<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12h
+; px   property<length> ll2: 12px;
+    property<length> ll3: ength> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+100phx + 12px;
+    property<lengt    ph> lropel

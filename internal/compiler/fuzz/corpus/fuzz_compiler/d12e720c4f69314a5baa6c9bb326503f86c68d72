@@ -1,0 +1,26 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    p$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Skaling indow {
+    title: "Slint Imagimport { ListView  } e Scaling Eaxpmle";
+    preferred-width: 800px;
+    preferred-hfrom "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> valurred-width: 800px;
+    preferred-hfrom "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            {}<
+            {eight: 600px;
+ tex    He;
+    listview := ListView {
+        for data in [
+            {}<
+            {eight: 600px;
+ tex    Hto:

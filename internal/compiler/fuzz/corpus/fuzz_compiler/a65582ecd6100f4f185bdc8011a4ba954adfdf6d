@@ -1,0 +1,6 @@
+export component Ok {
+    in-out property <bool> test: true;
+}
+component Ko {
+    in-out property <bool> test: false;
+}

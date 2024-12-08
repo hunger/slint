@@ -1,0 +1,78 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 600phx;
+    input1 := TextInput {-
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200p////////////////////////////hx;
+    }
+    input3 := TextInput {
+        y: 400phx;
+        width: parent.width;
+        height: ectangle {
+    width: 400phx;
+    height: 600phx;
+    input1 := TextInput {-
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200phx;
+    }
+    input3 := TextInput {
+        y: 400phx;
+        width: parent.width;
+        height: 200phx;
+        read-only: true;
+    }
+     property<bool> input1_focused: input1.has_focus;
+    property<string> input1_text: input1.text;
+    property<bool> input2_focused: input2.has_focus;
+    property<string> input2_text: input2.text;
+    property<bool> input3_focused: 200phx;
+        read-only: true;
+    }
+     property<bool> input1_focused: input1.has_focus;
+    property<strin|       1_text: input1.text;
+    property<bool> input2_focused: input2.hroperty <int> othercomp_sring> input2_text: input2.text;
+    property<bool> input3_focused: read-4.has_focuectangle {
+    width: 400phx;
+    height: 600phx;
+    input1 := TextInput {-
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200p////////////////////////////hx;
+    }
+    input3 := TextInput {
+        y: 400phx;
+        width: parent.width;
+        height: ectangle {
+    width: 400phx;
+    height: 600phx;
+    input1 := TextInput {-
+        width: parent.width;
+        height: 200phx;
+    }
+    input2 := TextInput {
+        y: 200phx;
+        width: parent.width;
+        height: 200phx;
+    }
+    input3 := TextInput {
+        y: 400phx;
+        width: parent.width;
+        height: 200phx;
+        read-only: true;
+    }
+     property<bool> input1_fos;
+}

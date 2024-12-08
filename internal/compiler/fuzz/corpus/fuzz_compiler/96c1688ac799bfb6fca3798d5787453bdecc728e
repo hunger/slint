@@ -1,0 +1,76 @@
+TestCase := Rectangle {
+    property<int> value;
+    propeTestCase := Rectangle {
+    property<int> value;
+    property<int> result : 3;
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }
+    }
+    callback xxx;
+    xxx => {
+        if false {
+            action();
+        }
+        if true {
+          } else {
+            action();
+        }
+    }
+    callback elseif(int) -> int;
+    elseif(v) => {
+                if v == 1 {
+            41
+        } else if v == 2 {
+            4rty<int> result : 3;
+   2
+        } else {
+            43
+        }
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }
+    }
+    ca }
+   43
+        }
+  llback xxx;
+    xxx => {
+        if false {
+            action();
+        }
+        if true {
+          } else {
+            action();
+        }
+    }
+    callback elseif(int) -> int;
+    elseif(v) => {
+                if v == 1 {
+            41
+        } else i  }
+f v == 2 {
+            42
+       } } else {
+            43
+   
+     }
+    }
+   43
+        }
+    }
+}

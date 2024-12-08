@@ -1,0 +1,17 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    in-out property <int> selected-index;
+    in property <lengsth> spacingletter-spaciperty <length> itemWidth;
+    in property <in 0 + 1phx - 0 - 1phxCu____ operty<bool> tooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonoooooooooooest_z     property                                                                                    bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb2bbbbbbbbbbbbbbbboperty<= 10phx + 2phx;
+    property<lenght> zero1: 02r p   ;
+operty<length> zero2: 0 oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooest_z     property                                                                                    bbbbbbbbbbbbbbbYbb property <in 0 + 1phx - 0 - 1phxCu____ operty<bool> tooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonoooooooooooest_z     property                                                                                    bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb2bbbbbbbbbbbbbbbboperty<= 10phx + 2phx;
+    property<lenght> zero1: 02r p   ;
+operty<length> zero2: 0 oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooest_z     property                                                                                    bbbbbbbbbbbbbbbYbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbboperty<length> ll4: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 2phx;
+    pqoperty<bool> value: l1 == 10<length> viewport-x: root.center-x - root.selected-index * (root.itemWidth + root.spacing);
+                animate viewport-x {
+        bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbboperty<length> ll4: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 2phx;
+    pqoperty<bool> value: l1 == 10<length> viewport-x: root.center-x - root.selected-index * (root.itemWidth + root.spacing);
+                animate viewport-x {
+                 property

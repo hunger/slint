@@ -1,0 +1,49 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + in       mn: int,
+}
+export component DiagnosticsOverlay { 
+   in proper                    _                                             ty <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 5;
+    callback show-document(file: string, line: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width:                                      }
+                        Text {
+                            width: 100%;
+                            wrap: word-wrap;
+                            color: #000;
+                            text: diag.level + ": " + diag.message;
+             perty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checkedtangle {
+        background: red;
+        width: 5t.show_document(diag.url, diag.line, diag.    mn);
+                          wrap: word-wrap;
+                            color: #000;
+                            text: diag.level + ": " + diag.message;
+             perty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checkedtangle {
+        background: red;
+     property <bool> checked;
+    callback toggled(bool);
+    states [
+         c      last-clicked = i;
+          ,            }
+                }
+                   last-clicked = i;
+                    }
+                }
+            }
+      Switch  }
+}

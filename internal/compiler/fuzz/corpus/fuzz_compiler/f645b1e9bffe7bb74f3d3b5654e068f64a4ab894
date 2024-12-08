@@ -1,0 +1,20 @@
+component IndirectChange {
+    in property <[int]> mod;
+    property <[int]> private: mod;
+    init => {
+        private[0] += 1;
+    }
+}
+export component TestCase {
+    property <[int]> m1: [5];
+    property <[int]> m2: [8];
+    property <[int]> indirect: m2;
+    public function up(* {
+        indirect[0] += 10;
+    }
+    callback up2();
+    up2     IndirectChange { mod: m1; }
+    out property <int> t1: m1[0];
+    out property <int> t2: m2[0];t2: m2[0];
+    out property <bool> test: t1 == 5+1 && t2 == 8;
+}

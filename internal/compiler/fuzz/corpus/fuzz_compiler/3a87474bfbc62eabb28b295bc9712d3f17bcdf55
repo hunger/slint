@@ -1,0 +1,9 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ", @tr("World"),1, @tr("Plop")) + "\n" + make_plural1(2, @tr("Flopp   ")) + "\n" + make_plCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCural1(10, t1);
+    out property <string> result2: make_plural2(1) + "\n" + m   && result1 == "there is one file inyyyyy myyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy Plop\nthere are 2 files in my Flopp   \nthere are 10 files in my Hello World{}."
+        && result2 == "xx1xx\nyy-999yy\nyy0yy\nyy42yy";
+}

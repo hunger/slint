@@ -1,0 +1,6 @@
+TestCase := Rectangle {
+    property <[int]> fon: [1, 2, 3];
+    property <{{{    {{{{{{{{{{{{{{{{{   x{&{{{rty <[int]> fon: [1, 2, 3];
+    property <{{{    {{{{{{{{{{{{ponent SharedString {
+ y <bool> test: do();
+}

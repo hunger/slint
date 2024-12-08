@@ -1,0 +1,12 @@
+export component FocusTouchArea {
+    in prcus-sc        if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || :event.text == "\n") && !root.enter-pressed {
+                root.enter-pressed = true;
+            
+       r     eject
+        }
+        key-released(event)    }
+}  

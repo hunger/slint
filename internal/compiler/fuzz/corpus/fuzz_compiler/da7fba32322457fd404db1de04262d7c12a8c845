@@ -1,0 +1,47 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-coler: red;
+    }
+}
+export TEstCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 3close-on-cli5phx;
+    property <length> listview-y <=> lv.vgth,
+}
+struct Theme  {
+    n  piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,l,,,,,xt-color-0: color,
+    ame: string,
+    window-background-color: brush,
+     game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radiuse-background-image: booi,
+    game-border: lengt,,,,,xt-color-0: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-foniewport_y;
+  roun$-2: brush,
+         R rder-color-1: brush,
+    piece-border-color-2
+    in property <color> checked-color;
+    im property <color> unchecked-color;
+    in-out property <bool> hcecked;
+    callback toggled(bool);
+    states [
+         c      last-clicked = i;
+          ,            }
+                }
+                   last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

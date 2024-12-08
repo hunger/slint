@@ -1,0 +1,28 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-inTestCase := Rectangle {
+    width: 400phx;
+    height: 400phx)
+    forwald-focus: inpu@2;
+    input1 := Tw ]]]]]]]]]]]]]]]]]]]urn_object() -> *{             EEEE -> {        gfff= 8 unc ion ret]]]]]]]correct-pos: int,
+    piece-text-weight-correct-p]]]]]]]]]]]]]]]]]]]]]]]]]]-> {        gfff= 8 unc ion ret]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]        ]]]]]]]]]]]]]]]]]]]]]operty<int> t2: 500 / 2 * 30 -!    a p  s  cing: ts Windoos: iw ]]]]]]]]]]]]]]]]]]]urn_object() -> {n 

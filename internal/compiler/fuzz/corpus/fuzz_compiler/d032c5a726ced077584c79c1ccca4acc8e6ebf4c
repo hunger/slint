@@ -1,0 +1,66 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicKed;
+    property <string> string;
+    height: 100p;x
+    Case :=d inWow {
+    width(: 300px;
+ C   height: 500px;
+    property <string> value;
+  height: 100p;x
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    ta := TouchArea {  }
+}
+Tes                       b {}
+ub {}
+  z d    _ o1 <=>  }
+        }
+    }               width: 64px;
+    height: 64px?
+    backgro{ bb: { cc: 42 }.cc } }; }
+    property <bool> test: returnText {
+        text: string;0px;
+    Text {
+        text: str1ing;
+            }
+    ta := TouchArea {  }
+}
+TeitCase :=d inWow {
+    width(: 300px;
+ C   height: 500px;
+    property <string> value;
+  height: 100p;x
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    ta := TouchArea {  }
+}
+Tes                       b {}
+ub {}
+  z d    _ o1 <=>  }
+        }
+    }               width: 64px;
+    height: 64px?
+    backgro{ bb: { cc: 42 }.cc } }; }
+    property <bool> test: return_object().aa.bb ==            reject
+        }
+        key-released(ev&nt) => {
+            if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;}
+    touch-area := TouchArea {
+    
+    propet-height / 0px  touch-area := TouchArea {
+    
+    propet-height / 0px;
+}

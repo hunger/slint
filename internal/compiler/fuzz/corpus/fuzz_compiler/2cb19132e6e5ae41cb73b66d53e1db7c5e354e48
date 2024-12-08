@@ -1,0 +1,49 @@
+TestCase := Rectangle {
+    width: 150phx;
+    height: 300phx;
+    property<inght: 30 100phx;
+        GridLayout {
+           t>     e: 1;
+    for c[indexmmmmmmmmmmmmmmmmmmmmmmmmW       mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmtCase inherits Wbndow {
+UUUUUUUUUUUUUUUUUUUUUU#***UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t2: cos]180deg);
+    out property<float> t3: cos(60d**ZZZZZindex * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout              t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Test := Rec}angle {
+    property<co                                                                         loRectangleimport { LineEdit } from "std-widgets.slint";
+export component TestCase inherits Window {
+    callback focus_the_line_edit;
+    iconfocus_the_line_edit => {
+        le.focus();
+                      }
+ 9999999999999999999999999   callback focus_the_focus_scope;
+    focus_the_focus_scope => {
+        fs.focus(v;
+    }
+    callback set_manuqal(bool);
+    set_manual(v) => {
+        TextInRputInterface.text-input-focused = v;
+    }
+    le := LineEdit {  }  
+  fs := FocusScope { }
+    out property<bool> focused: TextInPutInterface.text-input-focused;
+}
+ndex] in [#f00, #00f, #0a0]: Test := Rectangle {
+    property<colo        Rectangle {
+        y: indhorizontal-scrollex * height;
+        width: parent.width;
+        height: 100r> b11: yellow;
+    pizontal-srty<float> t3: cos(60d**ZZZZZindex * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout              t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Test := Rectangle {
+    property<colo        Rectangle {
+        y: indhorizontal-scrollex * height;
+        width: parent.width;
+        height: 100r> b11: yellow;
+    picrollex * height;
+        width: parent.width;
+        height: 050r> b11: yellow;
+    property<colorphx;> 

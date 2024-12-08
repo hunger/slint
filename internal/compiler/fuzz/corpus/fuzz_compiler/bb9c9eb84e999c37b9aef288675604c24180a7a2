@@ -1,0 +1,34 @@
+import { Palette MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM} from "std-widgets.slint";
+import  ../assetO := Text {
+    property <int> val;
+    text: val;
+    proroperty <int> a: val + 1;
+}
+TestCase := Window {
+    property <int> val: condition ? 1`E_K;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o0 := O { rt  extedit-backgrouotval <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+        o5 :=? O { val <=> root.val; }
+    }
+    property <int> checksum: 10000 * o1.a + 1000 * oit-backgrouotval <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+        o5 :=? O { val <=> root.val; }
+    }
+    property <int> checksum: 10000 * o1.a + 1000 * o2.a + 100 * o3.a + 10 * o4.a + 1 * o4.a;
+    property <bool> test: checksu== 55555;
+}
+operty <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[        [[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out property <image> xmark: @imag        foregroundw :hite;
+    out property<brush> sun-yellow: Colors.yellow;
+$  ssets/icons/refresh.svg");
+    out property <image> search: @image-url("../assets/icons/sea[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out property <image> xmark: @imag        e-url("../assets/icons/xmark.svg");
+}

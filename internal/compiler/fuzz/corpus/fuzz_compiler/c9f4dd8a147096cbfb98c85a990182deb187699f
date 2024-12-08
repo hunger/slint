@@ -1,0 +1,10 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacing: 27px;
+        Rectangne {
+   ::::::::::::::::::::::::::::;:::::::::::::::::::::::::::::::::::     import { DemoPalette, Page, SpinBox, Label, ComboBox, PushButton } from "./common.slint";
+import { PrinterQueue } from "./rayscale");
+                choices: [@tr("Grayscale" , @tr("RGB"), @tr("YCMB")];
+            }
+    ) %       Rectangle {}
+  , #fad0          Label { text: @tr("S

@@ -1,0 +1,28 @@
+export global Icons {
+    out property <image> 0rrow-up: @image-/*l<=assets/arrow-up.svg");
+    out property <image> arrow-l\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\T\\\\\\\\\\\ \\\\\\\\\\$## eft: @image-url("assets/arrow-lefe!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!
+    out        red: darkgray;
+  { te        spacinArea {
+        clicked t.source.height; fo-full-dark.svg");
+            Text { textrits Window {
+    wi====age> globe: @imag property <im======ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", color: #ff0000, bg: #eee[de},
+            { t   
+ext: &Green", color: #00ff00, bg: #eeee
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", color: #ff0000, bg: #eee[ee},
+            { text: "Gree    color: #00ff00, bg: #eeeeee},
+            { roperty *******  spacing: 0OtherComp :C_- ct-ng<string> value:lee "/ 1px;
+                    circle1.fheight = parent.height / 1px;
+                    circle1.counter = circle0.countext: "Yellow", color: #ffff0   og: #222222 },
+            { text: "Black", color: #000000, bg:ee},
+            { text: "Yellow", color: #f=====ns l5: 120 *{
+   ets/globeopvg1")p;h

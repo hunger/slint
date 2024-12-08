@@ -1,0 +1,7 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegate := Rectangle {
+            background:!@linear-gradient(89deg, data.bg,eg, data.bg,data.bg.brig: data.teistvie delegate := Rectangle {
+            background:!@linear-gradient(89deg, data.bg,eg, daimport "P. Window {Testa.bg,datCasta.bg.brig: data.e := 

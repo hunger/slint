@@ -1,0 +1,33 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg property <string> r;
+    changed v => {
+        r += float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    property<\\\\\eft: @image-url("assets/arrow-lefe!!:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    oa|" + v;
+    perty <int> chain-e     text_Name := Text {
+                    height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                }
+            }
+            TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

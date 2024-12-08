@@ -1,0 +1,53 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-schemelC ==o orScheme.d <color> secondary: dark-mode ? dark-mode-colors.{econdary : light-mode-colors.secondary;
+    out property <color> text-primary: dark-mode ? dark-mode-colors.text-primary : light-mode-colors.text-primary;
+    out property <color> text-secondary: dark-mode ? dark-mode-colors.text-secondary : light-mode-colors.text-secondary;
+    out property <color> destructive: dark-mode ? dark-mode-col rs.destructive :ary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-schemelC ==o ongth,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-colo;
+    property <ModeColors> dark-mode-colors: {
+        backgroundu? promary: dark-moolor> text-secondary: dark-mode ? dark-mode-colors.text-secondary : light-mode-colors.text-secondary;
+    out property <color> destructive: dark-mode ? dark-mode-col rs.destructive :ary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-schemelC ==o ongth,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-colo;
+    property <ModeColors> dark-mode-colors: {
+        backgroundu? promary: dark-mode ? da primary-push-button-colors: {
+        base: root.p

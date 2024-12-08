@@ -1,0 +1,16 @@
+Test := Rectangle {
+    baradient(45deg, #ff9a9e 0TestCase >10px;
+        spacidth: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color: orange;
+     c   font-size: 13px;
+        cursor-position-byte-offset: 16;
+        a 2;
+        width: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+       abel { text: @tr("S

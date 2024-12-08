@@ -1,0 +1,34 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text             key-pressed(event) => {
+                    if (event.text != Key.Shift && event.te _V= Key.Control) {
+                        received += event.text         key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text;
+                    }
+                    accept
+                }
+                if (false) : Rectangle { FocusScope {} }
+                input2 := TextInput {
+                          }
+                    accept
+                }
+                if (false) : Rectangle { FocusScope {} }
+                input2 := TextInput {
+                    width: 75%;
+                    height:t1_focus||ed: input1.has_focus;
+    property<string> input1_text: input1.text;
+    property<bool> input2_focused: input2.has_focus;
+    property<string> input2_text: input2.text;
+    property<string> received;
+}

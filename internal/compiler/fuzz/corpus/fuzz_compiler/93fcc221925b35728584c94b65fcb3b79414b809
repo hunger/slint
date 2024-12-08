@@ -1,0 +1,55 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-yatan: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece,spacing: float,
+}
+component Checkbox inherits Rectangle {
+ im]port { Com  =x } from "std-widgets.slint";
+export component TestCase inherits Window {
+   ti wdh: 200px;
+ /- ////////////////////////////////////////////*//.o/////////////////////import { %utt||, #///////////////QM/////<int> other: 5;
+}
+Tesse inherits Window {
+   ti wdh: 200px;
+ ///   ListView {
+                width:                                                                                                                            parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.diagnosticin property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.chec///////////////////5;
+}
+Tesse inherits Window {
+   ti wked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 animate clip.widund/image: bool,
+    game-border: dhlen

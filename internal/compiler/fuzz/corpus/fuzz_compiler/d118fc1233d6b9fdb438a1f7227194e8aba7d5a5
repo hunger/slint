@@ -1,0 +1,31 @@
+struct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, totw-laidth-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-ke|-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.>5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, backgro     { key-slots: [ { width-u: 0.>5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, background: #bbbbb, b: "ok"} ],
+    ];
+    out proplaceySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, totw-laidth-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-ke|-width-u: 1.0,
+           total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.>5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, backgro     { key-slots: [ { width-u: 0.>5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots: [ { width-u: 2.5, background: #bbbbb, b: "ok"} ],
+    ];
+    out proplaceholder-colorpme {}
+export struct None { s: Some }
+export struct  ption { n: None }
+export struct Component {erty <bool> tesholder-colorpme {}
+export struct None { s: Some }
+export struct  ption { n: None }
+export struct Component {erty <bool> test: array[2][1].b == "ok" && layers[0].rows[0].o: Opti

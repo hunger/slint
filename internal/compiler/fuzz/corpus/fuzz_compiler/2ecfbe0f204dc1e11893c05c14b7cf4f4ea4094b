@@ -1,0 +1,61 @@
+ TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / 2 * 30 -!1;
+= Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phxEp    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        widexpor      }
+   Test   "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+   TestCase := Rectangle {
+    width: 600phx;
+    height: 300phx;
+    Rectangle {
+     value4: true ? Glob2.a : 88;
+    }
+ (  property <bool> test: r.value1{ layou#: len    gth }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+export enum Default { a, b, c }
+export global ComponentInstance {
+    out property <Ok> ok;
+}
+export     global GridLayo tCellData {
+      a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50phx;
+    height: 300phx;
+    Rectangle {
+     value4: true ? Glo              b2.a : 88;
+    }
+ (  property <bool> test: r.value1{ layou#: len    gth }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct Accessirty <Ok> ok;
+}
+export     global GridLayo tCellData {
+      a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50phx;
+    height: 300phx;
+    Rectangle {
+     value4: true ? Glo              b2.a : 88;
+    }
+ (  property <bool> test: r.value1{ layou#: len    gth }
+export enum Slice { xxx }
+export enum Coord { xxx }
+export struct AccessibleRole { value: Coord }
+exp ++2 * (a + 2));
+    property<int> t4: 1 + - +5 - 8 - -9 * --- 1;
+    property<int> Ot2: 500 / 2 * 30 -!1;
+  f property<int> t3             gla  b--- 120;
+    property <length> len: 50px / 2;
+    P  }
+        hl2 := Horizon

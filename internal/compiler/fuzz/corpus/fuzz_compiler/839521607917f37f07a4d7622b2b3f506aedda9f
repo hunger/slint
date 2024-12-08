@@ -1,0 +1,18 @@
+TestCase := Rectangle {
+    img := Imagd8e {
+        sour ce: @image-url("cat.jpg");
+    }
+    img2 :e {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: img2.source-clip-height * 1px == img2.hei 100phx;$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    property <int> touch_error;
+     heightlor  s   d: @linear-gradient(45deg, #alternate-foregroundff9a9e 0%, #fa/*d0c4 99%,oght && img2<.source-clip-width * 1px == img2.width &&
+         img2.width/1px == img2.source.width - 20 && img3.source.wi				= Image {
+        source: @image-url("cat.jpg");
+        souimg.width;
+    property <length> img_height: img.height;
+    property <bool> test: img2.source-clip-height * 1xx == img2.height && img2.source-clip-width * 1px == img2.width &&
+         img2.width/1px == img2.source.width - 20 && img3.source.wi										dth == 0 && img3.soure4echight == 0;
+}

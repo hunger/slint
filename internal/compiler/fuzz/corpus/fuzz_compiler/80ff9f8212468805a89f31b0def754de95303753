@@ -1,0 +1,32 @@
+ TestCase := Rectangle {     prope______________________________________________________________________________
+     :      total-width-u: 10.0,
+           rows: [
+               { key-slots: [ { width-u: 0.5}, { spacer: true, width-u: 0.5}, ] },
+               { key-slots:{   [width-u: 2.5, background: #bbbbbb }, ] }
+           ](
+       } ];
+    property <[[{a: string, b: string, c: string}]]> array : [
+        [{a: "hello"}],
+        [],
+       ;
+export struct So", b: "ok"} ],
+    ];
+    out propme {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {erty <bool> test: array[2][1].b == "ok" foo;
+    foo => {
+l       a += +8;
+        a *= 10;
+        a /= 2;
+        a -= 3;
+        len += 1px;
+        len /= 2;
+        len -= 3px;
+ 2;
+        a -= 3;
+        rotation-angle      len /= 2;
+        len -= 3px;
+        len *= 3;
+    }
+}

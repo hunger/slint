@@ -1,0 +1,39 @@
+TestCase := Window {
+    property <int> t_: TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := Tex  property ||||||||||||||||||||||||||||||||||||||||||||<int> <=other: 5;
+}
+TestCase := Rectangle {
+  8;
+    property <int> t_old: -1;
+    background: {
+         if X _BB_>) { t_old        _=1; }
+         t_ == 1 ?  white : black
+   > value: 98.7654321;
+    in property<float> increment: 0.1;
+    out property <string> converted_value: round(vaut {
+  ;
+    backgr);
+      Rectangle { background: red; border-color: white; border-w                             VerticalLayout {
+            FillParent {
+          {
+        V  r R@ctanglring);
+    set_ti1(a) => { ti1.text = abal Icons {
+    out property <image> 0rrow-up: @iFoo := Rectangle {
+    public function show-le  !!:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    out       ; }
+    callback set_ti2(st,ring);
+    set_ti: ts Window ]]]]]]]]]]]]]]]]]]]urn_object() -> {             EEEE -> {             EEEEEEEEEEEEEEE#############operty<float> t8:,sin(90 {
+ >=y <image> 0rrow-up: @iFoo := Rectangle {
+    public function show-le  !!:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    out       ; }
+    callback set_ti2(st,ring);
+    set_ti: ts Window ]]]]]]]]]]]]]]]]]]]urn_oerticalLayout {
+            FillPabject() -> {rent {             EEEE -> {         
+ >= }
+    or: #Verticin d         }  
+ g:a", U 0 Jdeg)Bbb;
+}"
+ph  

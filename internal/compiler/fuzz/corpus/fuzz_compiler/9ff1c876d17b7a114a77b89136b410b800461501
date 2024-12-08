@@ -1,0 +1,27 @@
+export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    p$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Skaling indow {
+   xport MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    p$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Skaling indow {
+    title: "Slint'Imagimport { ListView  } e Scaling Eaxpmle"
+        for data in [
+            {}<
+            {eight: 600px;
+ tex    He;
+    listview := ListView {
+        for data in [
+            {}<
+            {eight: 600px;
+ tex    title: "Slint'Imagimport { ListView  } e Scaling Eaxpmle"
+        for data in [
+            {}<
+            {eight: 600px;
+ tex    He;
+    listview := ListView {
+        for data in [
+            {}<
+            {eight: 600px;
+ tex    Hto:

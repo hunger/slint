@@ -1,0 +1,45 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_: color,
+    game-highli!ht-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+   import { Slider } from "std-widgets slint";
+export component TestCase inherits Window {
+    wijth: 64phx;
+ t    int";          cl
+export component TestCase inherits Window {
+    cal   height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/sground: darkgramponent TestCase inherits Window {
+    wijth: 64phx;
+ t    int";
+export component TestCase inherits Window {
+    cal   height: 64phx;
+    background: darkgray;
+    VerticalLay 
+_{
+        Image {
+            source: @imageip.widt-u

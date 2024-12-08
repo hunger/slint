@@ -1,0 +1,48 @@
+export component TestCase  {
+    inimport { Paexport component Tes Case ;{
+    in property<string> helcomponent C1  {
+    RectaXferred-width: 100px;
+   
+    GridLa  Rectangle {
+m           {
+    RectaXferred-width: 100px;
+          TestCase*:= Window {
+    width: 64px;
+    heiexport component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has        => focus-scope.has-focus;
+    out property <bool>export component FocusTouchA  width: 600phx;
+  text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+                }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+   TestCase := Rectangle {
+    width: 600phx;
+    heigit: 300phx;
+    Rectangle {
+        width: 300phx;
+        height: 300phx;
+        border_color: black;
+        border_width: 2px;
+        GridLayout {
+            padding_top: 91phx;
+            padding_left: 2"""""""""""""""""""""""""""""""A"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""0phx;
+            padding_right: 30phx;
+            padding_bottom: 40phx;
+            Row {
+                rect1 := Rectangle {
+                    background: red;
+       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ght: 64px;
+    @@r-cobackground: black;
+ lor: #d014; }  
+ 

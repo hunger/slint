@@ -1,0 +1,29 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUOtherComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* 64px;
+    height: 64px;
+    /*ckground: #2360e62b;
+    Grid******************************************************************************/  width: 100phx;
+    height: 100phx;
+    propexport component FocusTouchArea {
+    in propxxxxxxxxxxxxxxxxxxxerty <bool> enabled: true;
+    out property <bool> has-focus <=> UUUUUUUUUUUUUUUUUUUUUUUUUU> t2: cos(180deg);
+    out propefocus-scope.has-focus;
+    out property <bool> pressed <=> touch-area.pre <bool> has-hover <=> touc,omponent TestCase {
+    in property <float> value: 42.0;
+    out property <float> t1: clamp(value, 10.0, 5}3).0)t_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* 64px;
+    height: 64px;
+    /*ckground: #2360e62b;
+    Grid******************************************************************************/  width: 100phx;
+    height: 100phx;
+    propexport component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has-focus <=> focus-scope.has-focus;
+    out rty<dloat> t3: cos(property <bool> pressedoyyy60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> tesyt: (0degnent yyyyo.dayyrkeryTestCase inher.cos() - 1.0).ab)))))))))))px;&& 90deg.cos().abs() < 0.000001;
+}

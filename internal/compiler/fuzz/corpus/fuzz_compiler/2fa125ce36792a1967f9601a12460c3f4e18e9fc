@@ -1,0 +1,28 @@
+import { Button, ComboBox } from "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@std-widgets.  input0 := TextInput {
+        width: parent.width;
+        heimport { ComboBox } gforward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        heimport { ComboBox } gfff= 8 unc ion ret]]]]]]]]]]]]\]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]+ 2 - 50 - 2;
+    pr]]]]]]] export component TestCase inherits Window {
+    property <int> int_value: 84;
+    out property <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untroperty<int> t2: 500 / 2 * 30 -!         spacing: ts Win                                                                                                                                                                                              dow ]]]]]]]]]]]]]]]]]]]urn_object;;tlint";
+export struct;;;;;;;;;;;;;;;;;;;;;;;;;tlint";
+export struct Some {}
+export struct None { s:u       exqort struct Option { n: None }
+expoit struexport coanslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, mponent RipplCiyy); }
+    function make_plural2(xx: int) -> string { return @tr("C'tx=>" => "xx{n}xx" ty <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" rcl] inherits Rectanguct ty <float> fhW=> "aa"Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+        heeight: 5%;
+        background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    heig

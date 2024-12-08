@@ -1,0 +1,27 @@
+TestCase := Rectangle {
+    width: 300phx;
+    se := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[in             width: parent.width;
+         th: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[in             width: paren            0                                                                                                                           hei,ght: parent.height;
+                    clicked > {=
+                        value += index;
+                  height: 300phx;
+    property<int> value: 1;
+    for c[in             width: parent.width;
+         th: 300phx;
+    height: 300phx;
+    property<int> value: 1              hei,ght: parent.height;
+                    clicked > {=
+                        value += index;
+                    }
+                }
+            }
+        }
+    }
+}

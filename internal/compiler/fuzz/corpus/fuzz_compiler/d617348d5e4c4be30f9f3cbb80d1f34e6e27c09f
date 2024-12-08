@@ -1,0 +1,32 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,            clip.width: root.width;
+           ( checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 animate clip.widund-image: bool,
+    game-border: length,
+    game-radius: lemate0checkbox-rect.border-width` _ 
+  ion: 100ms; easing: ease-out; }
+       .height * 10%;
+        border-color: root.unchecked-c                                                                                                                                olor;
+        border-radius: 2px;
+        clip := R

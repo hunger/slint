@@ -1,0 +1,47 @@
+export component Tes2Case {
+    in property <float> value: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(va@lue, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);       root.move-left();
+            } else if self.current-po?ition.x < self.presst   osition.x - root.itemWidth / 2 {
+                root.move-right()> max: 42;
+        property <int> xx: Mathac.lmp(5, 21TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 28px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+       pro
+erty<st9border2: "\{10}he 3) + maxtest_dur: dur == 5ms.clamp(45ms, 50ms);
+    out property <bool> tPst: rroperty<bool> test_dur: dur == 5ms.clamp(45ms, 50ms);
+    out property <bool> tPst: rollo\{5.1}";
+    property<string> s3: "x";
+    property<{ a : stse := Window {
+    widtse := Window {
+    width: 64px;
+    height: 28px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+       pro
+erty<st9border2: "\{10}he 3) + maxtest_dur: dur == 5ms.clamp(45ms, 50ms);
+    out property <bool> tPst: rroperty<bool> test_dur: dur == 5ms.clamp(45ms, 50ms);
+    out property <bool> tPst: rollo\{5.1}";
+    property<string> s3: "x";
+    property<{ a : string }> obj: { a: "a" };
+    property<string> s4: "\{obj.a}xxx";
+    callback foo;
+    foo => {
+        s3 = "\{s3}\{a+0}\{"\{s3}lllllllllring }> obj: { a: "a" };
+    property<string> s4: "\{obj.a}xxx";
+    callback foo;
+    foo => {
+        s3 = "\{s3}\{a+0}\{"\{s3}lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll\{a+0     selecotin-bot.t1 == 42.0 && r ot.t2 == 43.0 && ro---ackgr#und-color: blue.transparentize(10%);
+ ;
+        color: black;
+        selection-background-color: red;
+        s--    }
+    }
+    c2:= C1 .   {}
+x && r2.in-width == 200px
+           && bug-6315ot.t3 == 41.election-foreground-col0or && r: o.xx

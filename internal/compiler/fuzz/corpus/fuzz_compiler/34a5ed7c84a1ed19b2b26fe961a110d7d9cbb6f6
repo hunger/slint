@@ -1,0 +1,35 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color:       round(asin(sin(45deg))/0.1deg) == 450 &&
+        round(ac(so&
+        atan2(0, -10) == 180deg &&
+        atan2(-10, -10) == -135deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(10-, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}
+ atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg &&
+        atan2(10, 0) == 68deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) ==180x 180deg &&
+       0) == -45deg &&
+  GridLay out {
+      ), @tr("RG "),ata.colr;
+o                    font_size: 20px ;
+                }
+            }
+            TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+struct Piece  {
+    pobgs-x: int,
+    pos-y, 
+    offset-,
+}
+struct Theme  {
+    name: string,
+    window-backgpiece-border-color-2: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-border-color-2: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,,,,,xt-color              in ght * 10%;
+        border-color: root.unchecked-colo1r;
+        border        -radius: 2px;
+        clip := R

@@ -1,0 +1,40 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out properfoo: [1, 2,_value, "World");
+    out properfoo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+ (  property <int> first: foo[0];
+    callback do() -> bool;
+  * do => {
+        if (first != 1) { return false; [         foo = bar;
+        if (first != 1) {        mreturn false; 
+   }     bar: string) -> string { return @tr("there is one  file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: iol;
+  * do => {
+        if (first != 1) { return false; [         foo = bar;
+        if (first != 1) {        mre                                                       est: t1 == "Hello Woryld{}." && t2 == "Hello World." && t3 == "42 Hello World" && t4 == "43 Hello Worldp " && t5 == "Untranslated string"
+        && c1 == "xxaaxx"
+    
+  * do => {
+    3];
+    property <[int]> bar: [1, 2, 3];
+ (  property <int> first: foo[0];
+    callback do() -> bool;
+  * do => {
+        if (first != 1) { return false; [         foo = bar;
+        if (first != 1) {        mreturn false; 
+   }     bar: string) -> string { return @tr("there is one  file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: iol;
+  * do => {
+        if (first != 1) { return false; [         foo = bar;
+        if (first != 1) {        mre                                                       est: t1 == "Hello Woryld{}." && t2 == "Hello World." && t3 == "42 Hello World" && t4 == "43 Hello Worldp " && t5 == "Untranslated string"
+        && c1 == "xxaaxx"
+    
+  * do => {
+        if (first != 1) { return false; [         foo = bar;
+        if (first != 1) {        mreturn false; }
+        && result2 == "xx1xx\nyy-999yy_nyy0yy\nyy42yy";
+}

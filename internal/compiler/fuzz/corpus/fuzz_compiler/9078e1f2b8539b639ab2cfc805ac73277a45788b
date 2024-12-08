@@ -1,0 +1,14 @@
+RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+    background-fill := Rectangle {
+        backgroun<=> background-fill.opacity;
+    background-fill := Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+    }
+    property <float> o: background-fill. Sub {}
+    d := Device {}
+    property o1 <=> s.o;
+    property o2 <=> d.o;
+    property <bool> test: abs(o1 - 0.15)[[[[[[[[[[[[[[
+}

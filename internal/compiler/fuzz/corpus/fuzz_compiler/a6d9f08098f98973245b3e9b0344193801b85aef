@@ -1,0 +1,40 @@
+TestCase := Rectangle {
+   (widthset-seroot    height: 600phx;
+    closerty<int> value: 1;
+    for c[indexwidthset-seroot    height: 600phx;
+    closerty<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+                background: c;
+    set-selec    TouchArea {
+                    width: parent.witdh;
+                    height: parent.he ight;
+                                                                              clic ed => {
+                       del: [0,1,2,3,4,5,6+ " b	  3");
+                assert(val == 6, "val = " + val + " b	  6");
+       va lue  height: 600phx;
+    closerty<int> value: 1;
+    for c[       }
+        }] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+            Rectangle {
+                background: c;
+    set-selec    TouchArea {
+                    width: parent.witdh;
+                    height: parent.he ight;
+                                                                              clic ed => {
+                       del: [0,1,2,3,4,5,6+ " b	  3");
+                assert(val == 6, "val = " + val + " b	  6");
+       va lue  height: 600phx;
+    closerty<int> value: 1;
+    for c[       }
+        }
+    }
+}

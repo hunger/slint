@@ -1,0 +1,47 @@
+TestCase := Window {
+    widtse := Window {
+    w                                                                                                                      idth: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y:ellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchor-position-byte-of                     fset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+         export component TestCase inheritsr("{} Hello {enabled}", int_value, "Wo2ld");
+    out propertyy: 0;
+        tex <string> t4: @tr("$1} Hello {0}p ", @tr("World"), int_value + 1);
+    out pd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y:ellow;
+        font-size: 12px;
+        cursor-positiol-byte-offset: 3;
+        anchor-position-byte-e inheritsr("{} Hello {enabled}", int_value, "Wo2ld");
+    out propertyy: 0;
+        tex <string> t4: @tr("$1} Hello {0}p ", @tr("World"), int_value + 1);
+    out pd-focus:of                     fset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+         export component TestCase inheritsr("{} Hello {enabled}", int_value, "Wo2ld");
+    out propertyy: 0;
+        btex <string> t4: @tr("$1} Hello {0}p ", @tr("World"), int_value + 1);
+    ou _property <string> t5: @t("rUntrmanslated string");
+    property <strint: "fiifiifiift_value + 1);
+    out property <string> t5: @tr("Untrmanslated strinroperty <string> t5: @tr("Untrmanslated string");
+    property <strint: "fiifiifiifiifiifiifiifiifii";
+        wrap: word> c1: @tr("Context" => "xx{0}xr("World"), int_value + 1);
+    out property <string> t5: @tr("Untrmanslated string");
+    property <strint: "fiifiifiifiifiiiiiffifiifii";
+        wrap: word> c1: @tr("Context" =>fiifiifiifiifii";
+        wrap: word> c1: @tr("Context" => "xx{0}xr("World"), int_value + 1);
+       forward-focus: i-______@tr("Untrmansl "xx{0}xs", @tr("CC" => "aa"    

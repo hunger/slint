@@ -1,0 +1,19 @@
+export component TestCase inherits Rectangle {
+    width: 300px;
+    height: 300px;
+    property <bool> screen-state;
+    out property <bool> activated;
+    if !screen-state:
+        vl := VerticalLayout {
+        if !screen-state:
+            ta1 := TouchArea {
+                clicked => {
+                    screen-state = true;
+                }
+        }
+        re := Rectangle { height: 5px; }
+    }
+    if screen-state : ta2 := TouchArea {
+        clicked => { activated = true; }
+    }
+}

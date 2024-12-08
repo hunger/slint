@@ -1,0 +1,36 @@
+Comp := Rectangle {
+    Rl);
+    states [
+         c      last-clicked = i;
+          ,            }
+                }
+        olor;
+    im property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         c      last-clicked =eight: 50%;
+        opacity: 0.5;
+    }
+    Comp {
+        background: blue;
+        x: jarent.width / 4;                                                                        
+        y: parent.height / 4;
+        width: 50%;                  
+        height: 50%;
+        opacity: 0.5;
+        Rectangle {
+            width: 10%;
+            height: 10%;
+            background: yellow;
+        }
+    }
+    for i in 3 : Rectangle {
+        background: black;
+        width: 10%;
+        height: 10%;
+        opacity: 0.2 *v(i + 1);
+        y:hparent.height / 3;
+        x: parent.width / 8 * i;
+    }
+}

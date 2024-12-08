@@ -1,0 +1,4 @@
+Test := Rectangle {
+    property<angle> angle: 0.25turn;
+    property<bool> test: abs((angle - 0.5rad * 3.1415926535)/1grad) < 0.00001;
+}

@@ -1,0 +1,30 @@
+ TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) =                                                                                                                        = -        1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/.01deg) == 450 &&
+        round(asin(sin(45deg))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+ !      atan2(0, 10) == 0deg &&
+        atan2(10, 10) == 45deg   &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &&
+        atan2(0, -10) == 180deg &&
+       !atan2(-10, -10) == -1355px) / ratio
+        && l1ical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sica  padding: 0phx;||           rect1 := Ruectangle {
+                background: red;
+               @iidth: 10%;
+         erty<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 =9 0;
+    property <float> ratio: 1px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5deg &&
+        atan2(-10, 0) == -90deg &&
+        atan2(-10, 10) == -45deg &&
+        true;
+    property <bool> test: verify;
+}

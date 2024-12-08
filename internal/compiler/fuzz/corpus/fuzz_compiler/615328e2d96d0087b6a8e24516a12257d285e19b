@@ -1,0 +1,60 @@
+import { Button } from "std-widgets.slint";
+export component ComboBox inherits Rectangle {
+    in-out property <string> value: "aaaaaa";
+    in property <[string]> model: ["aaaaaa", "bbbbbb", "cccccc"];
+    callback selected(string);
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: yellow;
+    height: 3s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {  border-width: 2px;
+    border-color: yellow;
+    height: 3s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.clamp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms?.clamp(0, 50ms);         property<bool> test_dur: dur == 5mz.clamp(45ms, 50ms);
+          text: "b <";
+    }
+    TouchArea {
+        clicked => { poectangle {
+            background: #eee;
+            border-radius: 3px;
+            border-width: 2px;
+            border-color: yellow;
+        }
+        VerticalLayout {
+            spacing: 6px;
+            padding: 3px;
+            for value in root.model: Rectangle {
+                border-radius: 3px;
+                background: item-area.has-hover ? #eef : #fff;
+                height: 25px;
+                HorizontalLayout {
+                    Text {
+                        horizontal-alignment: center;
+                        vertical-alignment: center;
+                        text: value;
+                        color: black;
+                    }
+          ll3: 100ph[ + 12px;
+    property<length> ll4: 120 * 1phx;
+    property<bool> value: l1 == 10phx + 2phx;
+    troperty<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;
+ue: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zer
+    height: 400px;
+    in-out property <string> result;
+    TouchArea {
+        clicked => { result += "Root"; }
+    }
+    VerticalLayout {
+        alignment: start;
+        HorizontalLayout {
+      

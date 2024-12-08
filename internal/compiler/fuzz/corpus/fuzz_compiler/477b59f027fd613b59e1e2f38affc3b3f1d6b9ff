@@ -1,0 +1,12 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input1;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+    }ocus;
+    property<string> input1_text: input1.text;
+    property<bool> input2_focused: in??????????????????????put2.has_focus;
+    prope0rty<string> input2_text: input2.text;
+}

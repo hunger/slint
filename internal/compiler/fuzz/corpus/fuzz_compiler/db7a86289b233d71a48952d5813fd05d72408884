@@ -1,0 +1,15 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+ A   callback clicked <=> ta.c {
+                                                                                                             for string in [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Tty <=> background-fill.opacity;
+    backe {
+    s *= Sub {}
+ub {}
+    d    _ o1 <=>  }
+        }
+    }
+    propet-heigh                                                                                                                t / 0px;
+}

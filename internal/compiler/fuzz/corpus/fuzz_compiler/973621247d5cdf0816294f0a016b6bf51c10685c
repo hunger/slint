@@ -1,0 +1,52 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text             key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text         key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text;
+                    }
+                    accept
+                }
+                if (false) : Rectangle { Focucomponent C1  {
+    Recta        width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+         textedit-backg   }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+        );
+    }
+    out pr/perty <bool> ok: r.width == 100px && r2.width == 100px;
+}
+export com                                                       public function up() {
+        indirect[0] += 10;
+  TestCase := Rectangle {
+    width: 100phx;
+  gle {
+         
+            TouchArea {
+                clicke   }
+            for i  }
+    callback u(2();
+    up2 => {up(5.ok;
+}property<bool> input2_focused: input2.has_focus;
+    property<string> input2_text: input2.text;
+    property<string> received;
+}

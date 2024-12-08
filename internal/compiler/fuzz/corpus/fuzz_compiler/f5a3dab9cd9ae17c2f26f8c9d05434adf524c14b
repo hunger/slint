@@ -1,0 +1,63 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    in-out property <int> selected-index;
+    in property <length> spacing;
+ roperty <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+  preferred-width: 100%;
+    focus-scope := FocusScope {
+   d-index;
+    in property <length> spacing;
+ roperty <duration> duration: Theme.duration-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+  preferred-width: 100%;
+    focus-scope := FocusScope {
+                root.move-r{
+        handle-swipe-left: true;
+        handle-swipe-right: true;
+        swiped => {
+            if self.current-position.x > self.pressed-position.x + root.itemWidth / 2 {
+                root.move-left();
+            } else if self.current-position.x < self.pressed-position.x - root.itemWidth / 2 {
+                root.move-right();
+            }
+        }
+        TouchArea {
+            clicked => {
+                focus-scope.focus()
+            }
+        }
+        Rectangle {
+            clip: true;
+            Rectangle {
+                propertxy <length> viewporh + root.spacing);
+ %;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: grben;
+        selection-backgr#und-color: blue.transparentize(10%);
+ ;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color: orange;
+        font-size: 13px;
+        curchor-position-byte-off               animate viewport-x {
+                    duration: rooQduration;
+                    easing: ease-in;
+                }
+                property

@@ -1,0 +1,41 @@
+expexport component FocusTouchArea {
+    in property <bool> enabled: true;
+    out prort component FocusTouchArea {
+    in property <bool>     enabled: true;
+  /*out property <bool> has        => focus-scope.has-focus;
+    out property <bool>export component FocusT    D                                          "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+                }
+        }
+    }
+    Text {
+         text: (
+            "\{r.width / 0poperty <boolim]port { Com   mzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzpx;
+ ////////%/> has    x}, " +
+        te//////////////////////////import { Co        mzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz      Text {
+        /*xt: (zzzzzzzzzz      Text {
+        /*xt: (
+            "\{rcomponent C1  {
+    /*xt: (
+      !     "\{rcomponent C1  {
+    Recta        widxport component TestCase inherits Window {
+   ti wdh: 200px;
+ /- *//*/***///////////////////      &  //////////////////////400phx;
+    height: 400phx;
+    f}
+export :struct  200px;
+ /- ///*****///////////////////    Recta        widxport component TestCase inherits Window {
+   ti wdh: 200px;
+ /- *//*/***///////////////////      &  //////////////////////400phx;
+    height: 400phx;
+    f}
+export :struct  200px;
+ /- ///*****///////////////////        //////////////////////    wfdxport component TestCase inherits Window {
+   ti         wdh: 200px;
+ /- *//*/***///////////////////      &  //////////////////////400phx;
+    height: 400phx;
+    f}
+export :struct  200px;
+ /- ///*****///////////////////        //////h: 600phx;
+  text: (
+          D                                      widxpordth   

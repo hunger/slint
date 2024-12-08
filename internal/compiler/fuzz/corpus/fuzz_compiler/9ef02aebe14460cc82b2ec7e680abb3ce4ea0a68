@@ -1,0 +1,11 @@
+Sub := Rectangle {
+    property  op`city: cond ? 0 : 1;
+        animate opacity { duration: 1s; }
+        background: green;
+    }
+}
+TestCase := Rectangle {
+    property cond <=> s.cond;
+    property va        l <=> s.child_opacity;
+    s := Sub {}
+}

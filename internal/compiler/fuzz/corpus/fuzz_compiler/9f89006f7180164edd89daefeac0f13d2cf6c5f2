@@ -1,0 +1,32 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text: self.text;
+    property<int> test_cursor_pos: self.cursor_position_byte_offset;
+    property<int> test_anchor_p : self.anchor_position_byte_offset;
+    property<bool> has_selection: self.test_cursor_pos y<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<leng h> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh0phx + 12px;
+    prope!= self.test_anchor_pos;
+    property<bool> input_focused: self.has_focus;
+}
+assert!(instance.get_has_selection());
+slint_testing::send_keyboard_string_sequence(&instance, &BACK_CODE.to_string());
+undo(&instance);
+```
+*/

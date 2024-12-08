@@ -1,0 +1,27 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    prolength> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> ze: 500 / 2 * 30 -!1;
+    property<inerty<bool> test: (8phx * 5px * 3ms / 2phx)  == (t> t3              : a - (3 + ++2       m * (a + 3));
+    property<int> t4: 3 + - +5 -$8 - -9 * --- 120;
+    property <length>8px * (3ms / 2ppreferred-wi`thtio
+        && l1*l2 - ll1*ll2 == 0 len: 50px / 2;
+    30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2));
+    propbackgrot> t4: 3 + - +5 - 8 - -9 * --- 120;
+    property <length> cm*0phx && value;
+}
+l

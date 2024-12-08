@@ -1,0 +1,11 @@
+TestCase := Window {
+       TestCase := Rectangle {
+cos TestCase := Rectangle {
+    property <bool> verify:
+        sin[0                                                                                                     ) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)  == 1000 && round(1000*sin(360deg)) == 0    width: 100phx;
+    height: 100phx;
+    FocusScope { &&
+        preeround(1000* sin(180deg)
+ )       

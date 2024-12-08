@@ -1,0 +1,56 @@
+Foo := Rectangle {
+    pure callback hallo_alias <=> xxx.hallo;
+    callback clicke,d <=> are.clicked;
+d;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 89;    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 89; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_a    pure callback hallo_aacti <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := Tllback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 89; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_a    pure callback hallo_alias <=> xxx.hallo;
+    callback cli89;    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 89; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_a    pure callback hallo_aacti <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := Tllback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 89; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_a    pure callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {v______Y pure callback hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    are := TouchAr ea { }
+}
+TestCase := Rectaea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_Hoo2(a) => { return foo2.hallo_alia= 122 && foo2_alias(100) == 188;
+}

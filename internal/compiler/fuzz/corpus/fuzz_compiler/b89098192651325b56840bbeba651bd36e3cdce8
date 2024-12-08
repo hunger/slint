@@ -1,0 +1,16 @@
+Foo := Rectangle {
+    pzre callback hallo_alias <=> x export component Txx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {estCase inherits Window              {
+    propert
+        pure callback hallo(int) -> int       p  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback	 oo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(iy <int> int_value: 42;
+    out property <string> t1: @tnt) -r("Hello World{{}}.");
+    out p> int

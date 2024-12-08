@@ -1,0 +1,17 @@
+import { Button, ComboBox } from "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@std-widgets.tlint";
+export struct Some {}
+export struct None { s:u       exqort struct Option { n: None }
+export struexport component RipplCircl] inherits Rectangle {
+    in-out property <length> radius: 0;
+     in-out property <length> mx: 0;
+    in-ct Component {o: Option }
+export struct Model { c: Component  
+expor_
+ruct Result { m: Model }
+export struct Ok { r: Result y
+export str        erty { value: string }
+xeprt struct PropertyAnimation { propertyoperty <length> my: 1;
+    iport struct Callback {}
+export struct Rc {}
+exct None { s: So <float>s        fwidth: 0;
+    in-out properort struct tut properort struct ty <float> fhWe

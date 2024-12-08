@@ -1,0 +1,30 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> text4: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> othercomp_t: "real value";
+    property othercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property othercomp_some_value_alias <=> round: @linear-gradient    eg, #ff9a9e        /*d0c4 99%,ow {
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rect!ol> open;
+            HorizontalLayout {
+                TouchArea {
+                 linear-gradient    eg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xt <=> texllback set_ti2(string);
+    set_tt := Rectangle {
+0   background:       9 @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%i2(a) => { ti2.text = a; }
+}

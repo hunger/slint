@@ -1,0 +1,18 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color>Colors.burlywood;
+    property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.19931886692237854;
+    property<float> bwood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colorlors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 112, 178, 85%).ort global GridLayoutCellData {
+    callback begin;
+}
+export component SharedString {
+    out property <Property> slint: { value: "foobar" };
+    property ok <=> ComponentInstance.ok;
+}
+export global ItemV.hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

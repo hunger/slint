@@ -1,0 +1,39 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        heimport { ComboBox } gforward-focus: input2;
+    input1 := TextInput   {
+      width: parent.width;
+        heimport { ComboBox } gfff= 8 unc ion ret]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]fff d-wi* 2 + 2 - 50 - 2;
+    pr]]]]]]]operty<int> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]]]]]]]]]urn_object()2 - 50 - 2;
+    pr]]]]]]]operty<int> t2: 500 / 2 * 30 -!         spacing: ts Window ]]]]]]]]]]]eight: 300phx;RoundedIcon := Rectangle {
+    property <float> backgrounobd-opa                                              Rectangle {
+        y: index * height;
+        width: parent.width;
+        height: 100phx;
+        GridLayout {
+               tangle {
+                background: c      height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * height;
+        width: parent.width              background: c;
+                TouchArea {
+                    width: parent.widterty <color> unchecked-color;
+    in-out property <bool> cheSked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.wi
+    property<int> vadlue: 1;
+    for c[in         th;
+             in {
+                 a        lip.width  eduration: 200ms; easing: ease-in;    width: parent. }
+ 

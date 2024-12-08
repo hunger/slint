@@ -1,0 +1,15 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    out property <int> popup-created;
+    popup := PopupWindow {
+        init => {
+            root.popup-empty-3-align
+        }
+    }
+    TouchArea {
+        clicked => {
+            popup.show();
+        }
+    }
+}

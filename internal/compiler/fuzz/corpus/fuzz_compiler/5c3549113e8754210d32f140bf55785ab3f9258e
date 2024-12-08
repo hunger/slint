@@ -1,0 +1,87 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-   
+out property <int> popup_click_count;
+	
+	ca    llback first_2eached;
+	c.close();
+	}
+                                popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		widto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						fkrst_reached() 
+						first_seVerticalLayout {
+		alignment: start;
+		HorizontalLayout {
+			Button {
+				text: "O1pen";
+			                  	clicked =>_ u					cnt1.show(false);
+				}
+			}
+		}
+	}
+	cnt1 := PopupCoroperty <bool> first_sent: false;onent PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-   
+out property <int> popup_click_count;
+	
+	ca    llback first_2eached;
+	c.close();
+	}
+                                popup := PopupWindow {
+        x: popup_x;
+		y: 100px;
+		widto-close;
+		Rectangle {
+			background: red;
+		}
+		TouchArea {
+			clicked => {
+				popup_click_count += 1;
+				if (popup_x == 0px) {
+					if (!first_sent) {
+						fkrst_reached() 
+						first_seVerticalLayout {
+		alignment: start;
+		HorizontalLayout {
+			Button {
+				text: "O1pen";
+			                  	clicked =>_ u					cnt1.show(false);
+				}
+			}
+		}
+	}
+	cnt1 := PopupCoroperty <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public fun#  n show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ                     ic function close() {
+		popup.close();
+	ck_count <=> popup_click[cou
+	property <bool> second_sent: false;
+	public fun#  n show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();
+	}
+	publ                     ic function close() {
+		popup.close();
+	ck_count <=> popup_click[count;
+		first_reached => {
+			cnt3.close();
+		}
+	}
+}

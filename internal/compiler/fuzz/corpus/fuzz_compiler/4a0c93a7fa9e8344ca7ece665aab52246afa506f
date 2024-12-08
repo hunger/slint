@@ -1,0 +1,40 @@
+export component TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in-out pro                   chain-c;
+    changed chain-c C> { chain-b += 1; }
+  !  property <int> chain-d;
+    changed c> chain-g;
+    changed chain-g => { chain-f +ent TestCbbbbbbbbbbbbbbbbbbbbbbbbbbbase  {
+    in-out property<string> p1: "hello";
+    in2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}    
+TestCase := Rectangle {
+    pure callback foo9_alias <=> foo1.hal        ;
+    pure callback foo2_alias <=> foent TestCase {
+    width: 300phx;
+    height: 300phx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6,self7,8,9,10,11,12,13,14,15,16,17,18,19,20or: string) {
+        if (!cond &&alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}    
+TestCase := Rectangle {
+    pure callback foo9_alias <=> foo1.hal        ;
+    pure callback foo2_alias <=> foent TestCase {
+    width: 300phx;
+    height: 300phx;
+    in-out property<[int]> model: [0,1,2,3,4,5,6,self7,8,9,10,11,12,13,14,15,16,17,18,19,20or: string) {
+        if (!cond && root.error == "") {
+            root.error = error;
+        }
+    }
+    o2.hallo_alias;
+    callback p1: "hello";
+    in-out pro                   chain-ten_dot_one == "11.1";
+}

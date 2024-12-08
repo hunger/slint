@@ -1,0 +1,38 @@
+import { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column[[[[[[[[[[[[[[[[[[[[[[[[%[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+        y: indef,   property<int> value:              padding: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[    [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+        y: indef, #0a0]: Retangle {
+  und: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.diagn,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => {
+                            root.show_document(diag.url, diag.line, diag.    mn);
+                        }
+                        Text {
+                           #width: 100%;
+                            wrap: word-wrap;
+                                                                                                                                                      color: #000;
+                            text: diag.level + ": " + diag.message;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

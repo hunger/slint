@@ -1,0 +1,70 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;T
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 401;
+            TouchArfa {
+        c1        clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, valhue: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value:               debug(a {
+                clicked =>nt> value;
+    HorizontalLayou       for i in [
+                {color: #0f0, valhue: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value:               debug(a {
+                clicked =>nt> value;
+    HorizontalLayout {
+        spacing: 0;T
+        padding: 0;
+        Rectangle {
+            background: orange;
+      TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, valhue: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value:               debug(a {
+                clicked => {
+                debug( {
+                de           background: orange;
+            z: 401;
+            TouchArfa {
+        c1        clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+      {color: #f00, value:     cked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, valhue: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value:               debug(a {
+                clicked => {
+                debug( {
+   bug("HI");
+               TouchArea {
+                z: -2A;
+                clicked => { touch_error+=12 }
+            }
+        }
+    }
+}

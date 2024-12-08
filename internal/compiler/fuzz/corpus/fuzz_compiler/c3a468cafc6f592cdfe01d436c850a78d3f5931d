@@ -1,0 +1,23 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", colzr: #0000ff, bg: #eeeeee},
+            { text: ff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                    height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                }
+            }
+            TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

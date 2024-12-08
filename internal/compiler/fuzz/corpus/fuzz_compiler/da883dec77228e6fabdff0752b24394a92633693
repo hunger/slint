@@ -1,0 +1,45 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-coler: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;]
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 2close-on-cli5phx;
+    property <length> listview-y <=> lv.vgth,
+}
+struct Theme  {
+    n  piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    ame: string,
+    window-background-color: brush,
+     ginput-Focused = v;
+    }
+    le := LineEdit {  }
+    fs := FocusScope { }
+    out property<bool> focused: TextInpu Interface.textInputInterface.te                                                                  ame-background-color: brush,//////////////////////////////
+    game-use-background-image: booi,
+    game-border: length,
+    game-radiuse-background-image: booi,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-3: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-c            }
+                   last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

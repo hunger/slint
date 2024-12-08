@@ -1,0 +1,22 @@
+import "x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  wudth: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAW
+    preferred-dwith: 1    default-font-fa/fonts/NotoSans-Regular.ttf";
+import "..toucj/../../demos/printerdemo/ui/fonts/NotoSans-Bold.ttf";
+TestCase := Win dow {
+    preferred-width: 855phx;
+./../.    mos/printets/Noterdemo/ui        ot          I                                                           oSans-Bold.ttf";
+TEstCase := Window {
+    preferred-dwith: 1    default-font-family: "Nrdemo/ui/fonts/NotoSans-Regular.ttf";
+import "../../../demos/printerdemo/ui/fonts/Notset-svvvvvvvvvvvvvelecoSans-Bold.ttA";
+        wrh: 64px;
+    height: 64px;
+  f";
+TestCase := Win dow {
+    preferred-width: 100ph  forward-focus: i-text-input;
+    i-tx;
+    preferrext-e

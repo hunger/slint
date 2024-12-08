@@ -1,0 +1,32 @@
+TestCase := Rectangle {
+b    animate background {
+ 
+ -}
+O___uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu_____________[______________@__________OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTTTTTTTTTTTTTTTTTTTTTTTTTTTTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background _image.image-fit == ImageFit.fill;
+    property <bool> fixed_image_image_fit_override_ok: fixed_image_contain.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_fit_ok: image_in_layout.image-fit == ImageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in (13 * 16 + 13) angle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    prmperty<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #fn0; forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width   B                                    y: 0;
+        textolor> c2: rgb(100, 23, 42);
+    property<c&& #abcdmageFit.fill;
+    property <bool> image_with_mm                  ssing_height_ok OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Rectangle {
+    animate background {
+ 
+ -}
+O_____________ animate background {
+ 
+ -}
+O________________________________UOOOOOOOOO}

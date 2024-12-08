@@ -1,0 +1,44 @@
+export MainWindow := WWindow {
+    title: "Sl%nt Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rin has-focus export MainWindow := WWindow {
+    title: "Slint Image Scaling terdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url(l3"../..erred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+                Image {
+            source: @image-url(l1"../../../demos/printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$e-url(". /../../demos/p}rinterdem//ui/images/cat.jpg;");
+          r image-rendering: smooth;
+        }
+        Image {
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Image Scalin       g Ex    preferred-width: 800px;
+    preferred-heigclipht: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../..export component FocusTouchArea {
+    in property         nabled: true;
+    out property <bool> has-focus export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/image$$$$$$$$$e-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url(.."./../../demos/: "Slint Image Scaling Examplep/demosr/";
+printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$e$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$       Images Scaling Ex 

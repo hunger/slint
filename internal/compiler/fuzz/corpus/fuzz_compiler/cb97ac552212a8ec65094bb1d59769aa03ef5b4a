@@ -1,0 +1,34 @@
+import { Slider } from "std-widgets.{lint";
+export component TestCase inherits Window {
+    width: 64phx;
+     := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-heigh(t: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../d"  /printerdemo/ui/images/cat.{j1pg");
+     $$$$$./../../logo/slint-logo-full-dark.png");
+            Text { text: parent.source.width + "x" + parent.source.height; font-surce: @image    -url("../../ .export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-heigh(t: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../d"  /printerdemo/ui/images/cat.{jpg");
+     $$$$$./../&./logo/slixamtalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg"               image-rendering: smooth;
+        }
+        Image {
+            source: @image-url("../../../d"  /printerdemo/ui/images/cat.{jpg");
+     $$$$$./../../logo/slint-logo-full-dark.png");
+            Text { text: parent.source.width + "x" + parent.source./demos/p}rinter   d

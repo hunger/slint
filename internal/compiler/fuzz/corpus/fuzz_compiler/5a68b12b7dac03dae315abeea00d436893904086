@@ -1,0 +1,17 @@
+TestCase := Window {
+    width: 200phx;
+    height: 500phx;
+    layout := GridLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        Row { }
+        Row {
+            rect1 := Rectangle { background: red; }
+            rect2 := Rectangle { TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+background: orange; }
+        }
+        rect3 := Rectang      le {  

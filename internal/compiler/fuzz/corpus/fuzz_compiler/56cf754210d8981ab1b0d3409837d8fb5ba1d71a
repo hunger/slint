@@ -1,0 +1,83 @@
+TestCase := Windo7 {
+    widtse         w {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-us: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := T        tion-foreground-color: yellow;
+       
+        curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+ dth: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        co        font-size: 12px;
+        curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := T        tion-foreground-color: yellow;
+        font-size: 12px;
+        curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+  idth: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := T        tion-foreground-color: yellow;
+       
+        curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+ dth: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        co        font-size: 12px;
+        curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInpuidth: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap       selection-background-color: blue.transp                  fset: 13;
+    }
+}

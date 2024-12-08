@@ -1,0 +1,43 @@
+global G := {
+    property <string> hello: "hello";
+    function meh(w: string) ->RoundedIcon := Rectangle {
+    property <float> background-opacity <=> background-fill.opacity;
+    background-fill := Rectangle {
+        background:  #ff7d34;
+        opacity: 1.0;
+    }
+    property <float> o:         nd-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: 001 && ab string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ re b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <int> one: 2 + Math.round*(x / 1px) - (y / 1px));
+ gle {
+    public pure function hello()                                   -> c               -> color0{ re b: int) -> int { a + b + 10 }
+}
+TestCase :=         Rectangle {
+    property <int> c: 100000;
+    private property <int> one: 2 + Math.round*(x / 1px) - (y / 1px));
+    function foo() {}
+    fn pub(a: int, b: int) -> intolor0{ re b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int>s c: 100000;
+    private property <int> one: 2 + Math.round*(x / 1px) - (y / 1px));
+    function foo() {}
+    fn pub(a:(o2 - 0.15) < 0.0 int, b: int) -> int {$a + b + c }
+    public fun01;
+}ction set_c(p: int) 
+{ c = p }
+    property <bool> test: the_function(4500, 20) == 104521 && G.meh

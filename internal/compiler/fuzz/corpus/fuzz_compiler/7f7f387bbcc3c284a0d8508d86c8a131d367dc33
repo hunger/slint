@@ -1,0 +1,35 @@
+TestCase := Rectangle {
+    property<duration> d1: 10> text <=> text.text;
+    callback edited <=> text.edited;
+    text := TextInput {}
+}
+export component TestCase {
+    width: 50px;
+    herty<int> i2: d        1 / (2ms + 0);
+    property<int> untyped_d1: se0ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    proion> d4: -0.5s / 2 * 1px / 1px;
+    property<int> i1: d1 / 1ms;
+    propecomponent Wrapper inherits Rectangle {
+    border-color: blue;
+    border-width: 1px;
+    in-out property <string> text <=> text.text;
+    callback edited <=> text.edited;
+    text := TextInput {}
+}
+export component TestCase {
+    width: 50px;
+    herty<int> i2: d        1 / (2ms + 0);
+    property<int> untyped_d1: self.d1 / 1ms;
+    property<int> untyped_d2: self.d1 / 1ms;
+    property<int>|        untyped_d3: self.d3 / 1ms;
+    property<int> untyped_d4: self.d4 / 1ms;
+    property<int> untyped_d6: self.d5 / 1ms;
+    pd_d6: self.d6 / 1ms;
+    property<int> untyped_d7: self.d7 / 1ms;
+    property<int> untyped_d8: self.d8 / 1ms;
+}
+ight: 50px;
+    in-out property <int> text: 6;
+    callback edited(

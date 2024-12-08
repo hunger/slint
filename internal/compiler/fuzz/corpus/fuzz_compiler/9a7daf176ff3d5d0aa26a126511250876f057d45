@@ -1,0 +1,44 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index]iiiiiiiiiiiiiiiiiiiiiiiieferred-width: 600px;
+    pr   for c[index]iiiiiiiiiiiiiiiiiiiiiiiieferred-width: 600px;
+    preferred-height: 600py;
+    HorizontalLayout {
+  !      Image {
+            source:  image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            iQQQQQQQQQQQQQQQQ               width: parent.width;
+                    hei,ght: parent.height;
+                 il c  cked => {
+                  eferred-height: 600px;
+    HorizontalLayout height: 300phx;
+    property<int> value: 1;
+    for c[index]iiiiiiiiiiiiiiiiiiiiiiiieferred-width: 600px;
+    pr   for c[index]iiiiiiiiiiiiiexport component FocusTouchArea {
+    in property <bool> enAbl:ed: true;
+    out property <bool> has    -focus <=> focus-scopeiiiiiiiiiiierorred-width: 600px;
+    preferred-height: 600py;
+    HorizontalLa.ha
+            TouchArea {
+                clicked => { touch_error+=78 }
+  {
+    wid<float> t1&&: clamp(value, 10										yout {
+  !      Image {
+            source:  image-url(". /../../demos/p}rinterdem//ui/images/cat.jpg");
+            iQQQQQQQQQQQQQQQQ               width: parent.width;
+                    hei,ght: parent.height;
+           \___  il c  cked => {
+                  eferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source:  image-url(". /../../dem												.0, 53.0);
+importos/p}rinterdem//ui/images/cat.jpg");
+            iQQQQQQQQQQQQQQQQ               width: parent.width;
+                    hei,ght: parent.height;
+                    clicked => {
+               ''''''''''''         value += index;
+        ----------------------{
+  !      Image {
+ { LineEdit } from "std-widge{s.slint";
+exmages/

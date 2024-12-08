@@ -1,0 +1,55 @@
+Sub := Rectangle {
+    property <bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {
+        opacity: cond ? 0 : export global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public funcTestCase := Rectang  _
+    width: 100phx component TestCase inherits Window {
+    ourtp operty<float> t1: cos(0);
+    out property<flotion do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    chan1;
+        aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+componen4 Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    p at> t2: cos(180deg);
+    out property<float> t3: cos(60deg);
+    out property<float> t<: cos(90deg);
+    otu property<bool> test;
+    height: 100phx;
+: (0deg.cos() - 1.0).abs() < 0.00001 && 90    properdeg.coty <i  aexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaint> ts().absning {
+    public function do-change() {
+        chai> s.co() <ou 0.00ch_#####0##001#n##;
+}#

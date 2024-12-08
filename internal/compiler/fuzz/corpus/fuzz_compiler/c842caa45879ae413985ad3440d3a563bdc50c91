@@ -1,0 +1,26 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := 2 {
+                root.move-left();
+            } else if self.current-position.x < self.pressed-position.x - root.itemWidth / 2 {
+                root.move-right();
+            }
+        }
+     : 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-backgr#und-color: blue.transparentize(10%);
+ ;
+        color: black;
+        selection-background-color: red;
+        selection-foreground-color: orange;
+        font-size: 13px;
+        curchor-position-byte-offset: 13;
+    }
+}

@@ -1,0 +1,12 @@
+ component TectCase inherits Wbndow {
+    out propwindow-backgroundos(0);
+    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU>                                             t2: cos(180deg);
+    out property<float> t3:(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> test: (0deg.cos() - 1.0).ab)))))))))))px;&& 90deg.corits Wbndow {
+    out propwindow-backgroundos(0);
+    out property<floatUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU>                                             t2: cos(180deg);
+    out property<float> t3:(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> test: (0deg.cos() - 1.0).ab)))))))))))px;&&s().abs() < 0.000001;
+}

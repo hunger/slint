@@ -1,0 +1,44 @@
+global Glob := {
+    property <int> a: 3;
+    property <int> b: a + 3;
+}
+global Glob2 := {
+    property <int> a: other;
+    prope {
+    pr:=operty <int> a: 3;
+    property <int> b: a + 3;
+}
+global Glob2 := {
+    property <int> a: other;
+    property <intB other: 5;
+}
+TestCa  := Rectangle {
+    r :=global Glob := {
+    property <int> a: 3;
+    property <int> b: a  {
+          ,t> other: 5;
+}
+Te       prope                                                                   rty <int> value2: true ? Glob2.a : 88;stCa  := Rectangle {
+        property <int> value1: Glob.b;
+  Rectangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property <boo/*l>+ test: r.      z: 4;
+                clicked => {
+    property <in e2: true ? Glob2.a : 88;stCa  := Rectangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property <boo/*l>+ test: r.value1       rty <intB other: 5;
+}
+TestCa  := Rectangle {
+    r := Rectangle {                     t> value1: Glob.b;
+        prop+ r.erty <int> value2: true ? Glob2.avalue2 == 3+3 + : 88;
+  5;
+: }
+    property <bool> test: r.value}1 + r.va
+lue2 == 3+3 +5;
+}

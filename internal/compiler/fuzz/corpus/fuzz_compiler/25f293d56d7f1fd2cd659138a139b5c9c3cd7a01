@@ -1,0 +1,41 @@
+TestCase := Rectangle {
+                                        export component FocusTouchArea {
+    in pro{
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100th> listview=y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := I                        (    texHt   r := Rectang}   
+        property <inv> value1:0Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property[<e1 property text_alias <=> text;
+1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.cv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            hperty <bool> enabled: true;
+                        prperoperty<bool> tr@@@@@@@@@@@@@@ false;
+}    out property <bool> has-focus <=> focus-scope.has-focus;
+    out property
+ <bool> pressed <=> touch-area.pressed;
+    out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback clicked

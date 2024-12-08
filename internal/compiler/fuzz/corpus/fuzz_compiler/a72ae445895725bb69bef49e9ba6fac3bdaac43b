@@ -1,0 +1,9 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;od_hue: 33.79300555135514;
+    property<float> bwood_sat: 0.39189186692237854;
+    property<float> bwood_bri: 0.8705882430076599Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colors.rgb(45, 12, 78).red == 45 && Colors.rgb(45, 12, 78).green == 12 && Colors.rgba(45, 12, 78, 12/255).alpha == 12 && Colors.rgba(145, 1img-178, 85%).alpha == floor(85% * 255)
+        && #abc.green == (11 * 16 + 22) && #abcd.alpha == (13 * 16 + 13) && #abcdef.red == (10 * 16 + 11);
+    out property <bool> test_hsv: gr1.to-hsv().hue == new_green.to-hsv().hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

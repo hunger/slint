@@ -1,0 +1,59 @@
+TestCase := Window {
+    width: 100phx;operty <MouseSursor> mouse-
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.te00px;
+		width: 200px;
+		icy: no-autoocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+   100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+                r2 += event.text;
+                return event.text == "b" ? accept : reject;
+            }
+            Rectangle {
+                FocusScopeQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ {
+                    key-pressed(event) => {
+                        r3 += event.text;
+                        return event.text == "c" ? accept : reject;
+                    }
+                    if (toggle) : FocusScope {
+                        key-pressed(event) => {
+                            r4 += event.text;
+                            return event.text == "d"$? accept : reject;
+                        }
+                        FocusScope {
+                            key-pressed(event) => {
+                                r5 += event.text;
+                                return event.text == "e" ? accept : reject;
+                            }
+                            TouchApe {
+        key-pressed(event) => {
+            r1 += event.text;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event) => {
+                r2 += event.text;
+                return event.text == "b" ? property<bool> toggle: true;
+    property<string> r1;
+    property<string> r2;
+    property<string> r3;
+    property<string> r4;
+    froperty<string> r5;bool> toggle: true;
+    property<string> r1;
+    property<string> r2;
+    property<string> r3;
+    property<string> r5;
+    property<string> r5;
+}

@@ -1,0 +1,12 @@
+ TestCase := Rectangle {
+    property <bo                  ol> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000*                                                                                                                         sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin <string> t1: @tr("Hello World{{}}.");
+    out property <string> t2: @t W]7     {}.", "World");
+    out property <string> t3: @tr("{} Hell+ {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ", @-10, 0) == -90deg &&
+      an2(10, 0)fy;
+}

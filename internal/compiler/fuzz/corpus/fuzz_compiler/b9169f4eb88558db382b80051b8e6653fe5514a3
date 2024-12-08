@@ -1,0 +1,49 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct temVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          m Coord { xxx }
+export struct AccessibleRole { value: Coord }
+expopt enum Default { a, b, c }
+export globalt3 ComponentInstance {
+    out property <Ok> ok;
+}
+export global GridLayoutCellData !{
+    callback begin;
+}
+export component SharedString {
+    out property <Property> slint: { value: "foobar" };
+    prtext-input := TextInput {
+                                                                             : 50%;
+        y: 0;
+    h[ + 12px;
+  ;
+    property<physical_l    text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+   !height: 64px;
+    forwarndow {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := Text
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    property<color> y2: #ff0;
+    property<color> g1: #999;
+    property<color> c1: #ff335588rd-focus: i-text-input;
+    i-text-input := TextInput {
+        offset: 16;
+        anchor-position-byte-global ItemVTable {}
+export component TestCase  {
+    in property <Default> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+}

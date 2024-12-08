@@ -1,0 +1,21 @@
+global G := {
+    property <strrotating> hello: "hello";
+    fu         pure fursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    titlet: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  property <bool> t&& G.meh("world") == "hello world" && sc.hello() ==meh(w: string) -> string {
+        re;
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure fursor <=> touch-area.mouse-cursor;
+    callback cli := Rectan;gle {
+    public pure fursor <=> touch-area.mouse-cursor;
+    callback clicked <=> toucj-area.clicked;
+    for                             width: 64px;
+    titlet: 64px;
+    background: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  property <bool> t&& G.meh("world") == "hello world" && sc.hello() == Colors.red;
+}

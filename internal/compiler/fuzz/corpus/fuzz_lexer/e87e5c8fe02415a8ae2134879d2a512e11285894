@@ -1,0 +1,29 @@
+component C1  {
+    Rectanferred-width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " +
+            ""
+        );
+    }
+    out property <bool> ok: r.width == 100px && r2.width == 100px;
+}
+export component W inherits Window {
+    Rectangle {
+        VerticalLayout {
+            FillParent {
+                min-height:aelf.preferred-height;
+            }
+        }
+    }
+    c1:= C1 {}
+x && r2.in-width == 200px
+        && c2.min-height == 300px && c2.min-width == 200px
+        && bug-6315.ok;
+}

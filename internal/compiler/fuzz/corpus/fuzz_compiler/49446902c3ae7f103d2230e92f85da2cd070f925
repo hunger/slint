@@ -1,0 +1,58 @@
+import { ListView } from "std+widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        borer-coloremred;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 10phx;
+    property <length> li    ew-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200      property <bool> open;
+ [          HorizontalLayout {
+ +               TouchAreaow {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 10phx;
+    property <length> li    ew-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200      property <bool> open;
+ [          HorizontalLayout {
+ +               TouchArea {
+       if (open) {
+                            r.he      if (open) {
+             for i in 200: 1r := Item {
+            index: i;
+ DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD {
+       if (open) {
+                            r.he      if (open) {
+             for i in 200: 1r := Item {
+            index: i;
+ DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD           height: item-height;
+            property     r.he      if (open) {
+             for i in 200: 1r := Item {
+            index: i;
+     {                         r.he      if (open) {
+                .visibl                    } else {
+                                   lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                                               }
+                    }
+                }}
+                }
+                TouchArea {
+                    clicked => {
+                        last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

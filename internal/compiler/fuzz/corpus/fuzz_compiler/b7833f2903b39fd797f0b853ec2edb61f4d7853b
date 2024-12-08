@@ -1,0 +1,34 @@
+TestCase := Rectangle {
+    width: 300phx;n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor {rt struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { lTable {}
+export component TestCase  {
+    in property <Default> def: Default.b;
+    out property <BoxLayoutData> blt: { layout: 45phx };
+    snint := SharedString {}
+    Button { text: "he                             llo" + 21; }
+    ComboBox {}
+    in-out property <int> Err;
+    animate Err {  Window }
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export tion: 44s; }
+    out property <bool> test: slintstruct BoxLayoutData { layout: length }
+elue-rect := Rectangle {
+                background:    !   "\{r.width / """"""""""""""""""""""""""""""""""      "port { Button } fro    m "std-widgets.slint";
+component Poimport  export compopupContainer inherits Recnent TestCase inherits Window {
+    property <int> int_value: 42;
+    out properttangle {
+	widy$<sth: 400ps;tr
+ in

@@ -1,0 +1,29 @@
+TestCase := Rectangle {
+    property<int> value;
+    property<int> result : 3;
+    callback action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }
+    }
+    callback xxx;
+    xxx => {
+        if false {
+            action();
+        }
+        if true {
+            result -=1;
+        } else {
+            action();
+        }
+    }
+        43
+        }
+    }
+}

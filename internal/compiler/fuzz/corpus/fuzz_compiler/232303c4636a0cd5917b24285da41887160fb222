@@ -1,0 +1,78 @@
+export component TestCase  {
+    inimport { Paexport component Tes Case ;{
+    in property<string> helcomponent C1  {
+    RectaXferred-width: 100px;
+   
+    GridLa  Rectangle {
+m           {
+    RectaXferred-width: 100px;
+          TestCase*:= Window {
+    width: 64px;
+    height: 64px;
+    background: black;
+    GridLa  Rectangle {
+m              preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width /you*t {
+        Rectangle { background: red; borde if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }nd-fill.opacity;
+    backe {
+    s *= Sub {}
+ub {}
+    d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    pr-color: white; border-w             h: 100px;
+           TestCase*:= Window {
+    width: 64px;
+    height: 64px;
+    background: black;
+    GVridLa  Rectangle {
+m              preferred-width: 40px;
+            }
+    idth: 64px;
+    height: 64px;
+    background: black;
+    GridLa  Rectangle {
+m              preferred-width: 40px;
+            }
+        }
+    }
+    Text {
+        text: (=>           "\{r     text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width /you*t {
+        Rectangle { background    }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width /you*t {
+        Rectangle { background: red; border-color: white; border-w             h: 100px;
+                    idth: 1px; }
+ /*     Rectangle { background: #080c; borderpx; border-color: #d005t {
+        Rectangle { b         TestCase*:= Window {
+    width: 64px;
+    height: 64px;
+    background: black;
+    GridLa  Rectangle {
+m              preferredrder-w             h: 100px;
+           TestCase*:= Window {
+    width: 64px;
+    height: 64px;
+    background: black;
+    GridLa  Rectangle {
+m              preferred-wioperty<ght: 64px;
+    background: black;
+    GridLa  Rectangle {
+oo

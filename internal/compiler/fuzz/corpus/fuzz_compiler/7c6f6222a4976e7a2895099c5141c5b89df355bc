@@ -1,0 +1,30 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+    callback clicked <=> ta.clicked                                                              ;
+    property <string> string;
+    height: 100;px
+    Text {
+        text: string;0px;
+    Text {
+        text: string;
+            }
+    ta := TouchArea {  }
+}
+TestCase := Window {
+    width: 150px;
+    height: 500px;
+    property <string> value;
+    HorizontalLayout {
+        lv := ListView {
+                                          ?                                                              "    for string in [ "Blue", "Red", "Green",cked <=> ta.clicked;
+    property <string> string;
+    height: 100px;
+    Tty <=> background-fill.opacity;
+    backe {
+    s *= Sub {}
+ub {}
+    d    _ o1 <=>  }
+        }K
+    }
+    propet-height / 0px;
+}

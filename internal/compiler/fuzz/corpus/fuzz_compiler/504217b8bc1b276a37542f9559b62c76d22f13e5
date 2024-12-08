@@ -1,0 +1,54 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+        eight: 000p;x
+    property <= ListView {
+        for data in [
+        eight: 000p;x
+    property <string> value;
+    Hori00px;
+		togglwy <string> value;
+    listview := ListView {
+        for data in [
+        eight: 000p;x
+    property <= ListView {
+        for data in [
+        eight: 000p;x
+    property <string> value;
+    Hori00px;
+		togglwidth: 200px;
+		height: 200px;
+		close-policy: no-auto-cidth: 200px;
+		height: 200px;
+		close-policy: no-auto-closzontalLayoutdefault-text-c:= ListView {
+          { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { m Seso :}
+export struct Option { n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export structA Result { m: Model }
+export struct Ok { r: Result }
+color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeeestring> value;
+    Hori00px;
+		togglwidth: 200px;
+		height: 200px;
+		close-policy: no-auto-closzontalLayoutdefault-text-c:= ListView {
+          { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { m Seso :}
+export struct Option { n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export structA Result { m: Model }
+export struct Ok { r: Result }
+color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color:exp o

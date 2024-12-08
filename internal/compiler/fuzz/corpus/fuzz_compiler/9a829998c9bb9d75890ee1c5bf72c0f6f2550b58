@@ -1,0 +1,59 @@
+global G := {
+ Rectangle {
+    pu    blic pure function hello() -> co    { red }
+=
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int0{ a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <ini  ort { Slider } fzxport component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    i    t property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+  rom "std-widgets.slint";
+export compoNent TestCase inherits Window {
+    width: 64phx;
+    het> one: 1 + Math.round((x / 1px)   property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    pu    blic pure function hello() -> co    { red }
+=
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int0{ a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <inwidth: root.radius * 2;
+    height: root.radius * 2;
+  rom "std-widgets.slint";
+export compoNent TestCase inherits Window {
+    width: 64phx;
+    het> one: 1 + Math.round((x / 1px)   property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    pu    blic pure function hello() -> co    { red }
+=
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int0{ a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <inimport { Slider } from "std-widgets.slint";
+exp  x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 o,9%9{
+    width* 85px;
+     heort ighcot:mpo 

@@ -1,0 +1,14 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFocntSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { A                                                                           pi, SelectionStackFrame } from "../api.slint";
+component Pomponent DeltasList {opupInner inherits Rectangle {
+    in property <length> preview-width: 500px;
+    in property <length> preview-height: 900px;
+    in property <length> max-popu
+    in property <string> delta;
+}
+component Changelog inherits Rectangle {
+    in-out property <int> count-files-changed;
+    in-out property <[strp-height: 900px;
+    in-out property <length> selection-x: 0px;
+ 

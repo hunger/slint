@@ -1,0 +1,9 @@
+struct Nested := {
+    ok: bool
+}
+struct Item := {
+    nested: Nested
+}
+export TestCase := Rectangle {
+    property <Item> fob;
+}

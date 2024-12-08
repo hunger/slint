@@ -1,0 +1,54 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 3item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+              ght: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv :ght = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.vislength> listview-y <=> lv.viewport_y;
+    lv :ght = item-height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                        last-clicked = i;
+                    }
+                }
+            }
+        }
+    }
+}

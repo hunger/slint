@@ -1,0 +1,11 @@
+export component TestCase  {
+    in-out property <bool> toggle: { retu&&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg))               == 0 &&
+ol> rust_binding_codegen_bug: {
+        retur(n index != 42 && index != 41;
+    }
+    callback         round(atan(ta(100test_signal;0*cos(180deg)) == -1000
+    in-out property <bool> block_sign &&
+        roaul;
+  n 

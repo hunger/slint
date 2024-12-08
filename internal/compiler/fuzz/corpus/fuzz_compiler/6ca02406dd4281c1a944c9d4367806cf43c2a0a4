@@ -1,0 +1,20 @@
+ TestCase := Rectangle {
+    properFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFty <bool>            choices: TestCase := Window {
+    width: 64px;
+    height: 6[@tr("Grayscale"), @tr("RGB"), @tr4px;
+   ("YCMB")];
+            }
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selverify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 &image_with_missing_width_clipped_ok <=> image_with_missing_width.expected_width_it_ok && image_in_layout_custom_fit_ok && imok;
+    property <bool> test: fixed_image_def -1000 &&
+        round(0500 * ault_image_fit_ok && fixed_image_image_fit_override_ok && image_in_layout_fit_ok && image_in_layout_custom_fsiit_ok && image_wn

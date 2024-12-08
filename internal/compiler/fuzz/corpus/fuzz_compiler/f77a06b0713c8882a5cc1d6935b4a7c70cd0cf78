@@ -1,0 +1,37 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff01ff, bs(45deg))/0.1deg) == 450 &&
+        atan2(0, 0) == 0 &&
+        atan2(0, -------------------------------------------------------------------------------------------------------------------------------10) == 0deg &&
+        atan2(10, 10) ==yyyyyyyyyyyyyyyyyyyyyyy &&
+        round(1000* sin(180deg() == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        ro nd(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(0500 * sin(90deg)) == 1000 && round(0999*cos(90deg)) == 0 &&
+        round(atan(tan(45deg))/0.1deg) == 450 &&
+        round(asinyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy 45deg &&
+        atan2(10, 0) == 90deg &&
+        atan2(10, -10) == 135deg &b: 10 };
+    property<bool> obj_binop_merge : { mxfoo: 0, x: 1 } == h{ bar: 5, x: 5 };
+    pg: #eeeeee },
+            { text: "Cyan", color: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(80deg, data.bg,data.bg.brighter(0.5));
+                                                                                                              TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

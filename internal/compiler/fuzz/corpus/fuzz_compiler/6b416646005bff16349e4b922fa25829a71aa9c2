@@ -1,0 +1,58 @@
+O :=                        Text {
+    property <int> val;
+    text: val;
+    property <int> a: val + 1;
+}
+TestCase := Window {
+    property <int> val: condition ? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    property <int> value;
+    HorizontalLayout {
+        spacing: 0;
+        padding: 0;
+        Rectangle {
+            background: orange;
+            z: 400;
+            TouchArea {
+                clicked => { touch_error+=78 }
+            }
+        }
+        Rectangle {
+            background: green;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+              ;
+            z: 3;
+            TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, v  {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value:                    ] : Rectangle {
+                z: 78;
+                background: i.color;
+                TouchArea {
+                    clicked => {
+                        root.value = i.value;
+                    }
+                }
+            }
+            TouchArea {
+                clic}
+        o3 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
+        o5 := O { val <0 * o1.a + 1000 * o2.a + 100 * o3.a + 10 * oked => { touch4.a + 1 * o5.a;1.a + 1000 * o2.a + 100 * o3.a + 10 * o_erro4r+=5 }
+        .a + 1 * 

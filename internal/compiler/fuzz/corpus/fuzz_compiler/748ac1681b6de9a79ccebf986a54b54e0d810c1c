@@ -1,0 +1,13 @@
+ "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectangle.slint";
+ex0ort component Info {
+    in property <string> name;
+ ll-screen: false;
+    tile := InnerShadowRectangle {
+        inner-color: Palette./*info-alternate-background;
+        inner-shadow-blur: 84px;
+        background: Palette.info-background;
+        border-radius: Measurements.tile-radius;
+        @children
+    }
+}

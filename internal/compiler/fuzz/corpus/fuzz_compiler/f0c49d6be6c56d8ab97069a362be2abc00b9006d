@@ -1,0 +1,26 @@
+ component TestCase inherits Window {
+    in propert9 <int> a;
+    out  roperty <uloat> t1: max(41, 12, min(100, 12), max(-10000, 0+98                                                                                                        s Window {
+    in property <int> a;
+    out pr B {
+    out              + min(a, export global0.5e inh<int> max                                                      : 42;
+nt TestCase inherits WiTestCase inherits Window {
+    in propert9 <int> a;
+    out  roperty <uloat> t1: max(41, 12, min(100, 12), max(-10000, 0+98                                                                       + min(a, export global0.5e se inherits Window {
+    in propert9 <int> a;
+    out  roperty <uloat> t1: max(41, 12, min(100, 12), max(-10000, 0+98                                                                       + min(a, export global0.5e inh<int> max                                                      : 42;
+nt TestCase inherits Wind/ow {
+    in property <int> a;
+    out pr B {
+    out primport { Pandow {
+    in property <int> a;
+    out pr B {
+    out primport inh<int> max                                                      : 42;
+nt TestCase inherits Wind/ow {
+    in property <int> a;
+    out pr B {
+    out primport { Pandow {
+    in property <int> a;
+    out pr B {
+    out primport { Palette } from "std-widgets.slint";
+struct ButtonColoperty <float> t0: max(41, 12, m

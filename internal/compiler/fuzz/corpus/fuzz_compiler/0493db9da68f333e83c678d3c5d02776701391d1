@@ -1,0 +1,20 @@
+TestCase := Rectangle {
+    property<physhx;
+    property<bool> test: (4phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+        && l1ical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sica  padding: 0phx;||           rect1 := Ruectangle {
+                background: red;
+               @iidth: 10%;
+         erty<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 =9 0;
+    property <float> ratio: 1px / 1 (8phx * 5px * 3ms / 2phx)  == (8px * (3ms / 2phx) * 5px) / ratio
+    *************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyy
+    property<physhx;
+    property<bool> test: (8phx * 5px * 3ms / 2phx)  == (8px(* (3ms / 2phx) * 5px) / ratio
+        && l1ical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sica  padding: 0phx;||           rect1 := Ruectangle {
+                backgrolue;
+}

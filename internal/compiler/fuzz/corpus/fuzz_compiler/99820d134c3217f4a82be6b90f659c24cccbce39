@@ -1,0 +1,67 @@
+import`
+ _TileDat444a {
+    image: image,
+    image_visiblTestCase := Recta[int]> foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+    property <int> first: foo[0];
+    callback do() -> bool;
+    do => {
+        if (first != 1) { return false; } properimport { Com  =ght: 200px;
+           propert     }
+    }
+    Text {
+        text: (
+            "\{riexp]                      !           \           tx/*        "\{r.width /////////////ow {
+{
+                min-height         "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+    ------inpx
+        && c2.min-height 3= 300px && c2.min-width == 200px
+        && bug6315.ok;
+/////g-//////////////>////////////////// QM/////estCase := Rec/*ngle {
+lLa n false; }
+        bar[0] = 42;
+        if (first != 42) { return false; }
+        return true;
+    }
+    property < {
+    /*            rect1 := Rectangle {
+                    background: red;
+                }
+            }
+        }
+gle {
+                                                                    width: 600phx;
+    height: 300ph|;
+    Rect    property <int   min-height            :aelf.preferred!-height;
+            }
+    ------inpx
+        && c2.min-height 3= 300px && c2.min-width == 200px
+        && bug6315.ok;
+/////g-//////////////>////////////////// QM/////estCase := Rec/*ngle {
+lLa n false; }
+        bar[0] = 42;
+        if (first != 42) { return false; }
+        return true;
+  > first: foo[0];
+    callback do() -> bool;
+    do => {
+        if (first != 1) { return false; }
+        foo = bar;
+        if (first != 1) { return false; }
+        bar[0] = 42;
+        if (first != 42) { return false; }
+        return true;
+    }
+    property < {
+    /*            rect1 := Rectangle {
+                    background: red;
+                }
+            }
+        }
+    }
+  ;  Rectangle {
+        width: 300phx;
+        he*******7777*

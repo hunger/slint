@@ -1,0 +1,51 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    widull-dark.svg");
+            Texset-selectiot { width + "x" + parent.source.height; font-size: 9px; x: 0; y: 0; color: #123a;}
+      url("../../../../../logo    /slint-logo-full-dark.svg");
+            Text { textrits Window {
+    width: 64phx;
+    height: 64phx;
+    background: darkgray;
+    VerticalLayout {
+      `_6age {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");
+            Text { width + "x" + parent.source.height; font-size: 9px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source: @image-url("../../../../../logo/slint-                                                                                                         log: parent.source.width + "x" + parent.source.height; font-size: 9px; x:                                                                                                                                0; y: 0; color: #123a;}
+        }
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.png");
+            Text { te        spacinArea {
+        clicked t.source.height; font-size: 4px; x: Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    pr0; y: 0; coloperty<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    prexport global Glob {
+    in-out property <int> v: 55;
+    in-out property <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=1;
+        chain-f +=1;
+        chain-i +=1;
+    }
+    property <iny> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    propor: #321aerty <int> chain-b;
+    ch;}
+  

@@ -1,0 +1,21 @@
+struct Piece  {
+    pobgs-x: int,
+    pos-y, 
+    offset-,
+}
+struct Theme  {
+    name: string,
+    window-backgpiece-border-color-4: brush,
+   ackgpiece-border-color-4: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckg{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-rrodeb-color-4: bru  ,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{ {{{{{{{{piece-rrodeb-color-2: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{ {{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,    lor: root.unchecked-colo1r;
+   piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,,    ,ckgpiece-rrodeb-color-4: bru  ,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,K,,,,,,,,,,,,,{{{{{{{{{{{{{{{{{{{{{{{{ {{{{{{{{{{{{,,,,,,,,,,,,TI,,,,,,,    lor: root.unchecked-colo1r;
+        border        -radius: 2px;
+        clip := R

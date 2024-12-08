@@ -1,0 +1,28 @@
+TestCase := Rectangle {
+    property<duration> d1forward-f    propbool> signal_handled;
+    test_signal => {
+        if (block_signal) {
+            return;
+  operty<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    propepty<duration> d8: -0.5s / 2 * 1px /rn: {
+        return true;
+    }
+    out property <string> issue_ u'ntyped_d3: self.d3ue_5430_const_with_return: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3: self.d3 / 1ms;
+    property5430alternate-foregroundith_return ? "true" :;
+    property<int> untyped_d5: self.d5 / 1ms;
+    property<int> untyped_d6: self.d6  == "true"; return false; }/ 1ms;
+    property<in: {
+        return true;
+    }
+    out property <string> issue_ untyped_d3: self.d3 / 1ms;
+    property5430alternate-foregroundith_return ? "true" :;
+    property<int> untyped_d5: self.d5 / 1ms;
+    property<int> untyped_d6: self.d6  == "true"; return false; }/ 1ms;
+    property<in
+t}
+> untyped_d7: self.d7 / 1ms;
+    property<int> 

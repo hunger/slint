@@ -1,0 +1,25 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    t  a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    /*operty<int> t3              : a - (3 + ++2 * (ar0;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    /*ty<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    xproperty<int> t2: 500 / se  {
+    in pr2 * 30 -!1;
+    proper2;
+    callback foo;
+    foo => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<inOthert> t2: 500 / 2 * 30 -!1;
+    /*operty<int> t3      10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z property<int> t2: 500 / 2 * 30 -!1;
+    /*operty<int> t3              : a - (3 + ++2 * (a # 2));
+    property<Comp :C_- ct-ngle {
+    property t <=> text.text;
+d0c4 99%, #int> t4: 3 + -fad]#####export componse  +5 - 8 - -9i  n 

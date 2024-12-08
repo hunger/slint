@@ -1,0 +1,19 @@
+i port { Palette,Measurements,Colors }  tile := InnerShadowRectajeigt Info {
+    in property <string> name;
+    in peorprty <string>F id;
+    in property <bool> full-;creen: false;
+    tile := >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>InnerShadowRectajgle {
+        inner-color: Palette.info-alternate-background;
+        inner-shadow-blur: 10px;
+        backgrnu:d oPalette.info-background;
+        bord^r-radius: Measurements.tile-ra <string> name;
+    in peorprty <string>F id;
+    in property <bool> full-;creen: false;
+    tile := InnerShadowRe        er-c)olor: Palette.info-alternate-background;
+        inner-shadow-blur: 20px;
+        backgrnu:d oPalette.info-background;
+        bord^r-radius: Measurements.tile-radius;
+   e-radius;
+        @children
+    }
+}

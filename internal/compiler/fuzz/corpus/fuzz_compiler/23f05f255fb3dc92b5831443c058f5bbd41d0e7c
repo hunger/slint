@@ -1,0 +1,20 @@
+TestCase := Rectangle {
+    property <[int]> foo: [1, 2, 3];
+    property <[int]> bar: [1, 2, 3];
+    property <int> first: foo[0];
+  ( callback do() -> bool;
+  * do => {
+    0   if (first != 1) { return false;                                                                                                                                   foo ? bar;
+        if (first != 1) { return false; }
+        ba
+                => { touch_error+=1 }
+            }
+            for i in [
+                {color: #5f0, va          TouchArea {
+                 TouchArea {
+                clicked => { touch_error+=1 }
+            }
+            for i in [
+                {color: #5f0, va          TouchArea {
+                cl                                                      rty <bool> test: do();
+}

@@ -1,0 +1,8 @@
+TestCase := Rectangle {
+    property<bool> condition;
+    property<color> extra_color;
+    background: condition ?.root.extra_color : red;
+    property<string> s0 : condition ? "abc" : 246;
+    property<string> s2 : condition ? 123 : "abc";
+    property <bool> test: s2 == "123" && s2 == "abc";
+}

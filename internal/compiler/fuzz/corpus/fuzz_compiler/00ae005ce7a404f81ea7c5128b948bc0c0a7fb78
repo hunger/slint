@@ -1,0 +1,16 @@
+Foo := Rectangle {
+    pzre callback hallo_alias <=> x export component Txo.hallo;
+$   callback clicked <=> are.click        ed;
+    xxx := Rectangle {estCase inherits Window              {
+    propert
+        pure callback hallo(int                                                                                                            ) -> int       p  hallo(a) => { return a + 77; }
+    }bac
+    are := Touc hArea { }
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callbac    o1_alias <=>tangle {
+    pzre callback hallo_alias <=> x export component Txo.hallo;
+$   callback clicked <=> are.click        ed;
+    xxx := Rectangle {estCase inherits Window  ");
+    out p> int

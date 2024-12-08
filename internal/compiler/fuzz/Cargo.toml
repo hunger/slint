@@ -23,6 +23,12 @@ arbitrary = { version = "1.4.1", optional = true }
 members = ["."]
 
 [[bin]]
+name = "fuzz_lexer"
+path = "fuzz_targets/fuzz_lexer.rs"
+test = false
+doc = false
+
+[[bin]]
 name = "fuzz_compiler"
 path = "fuzz_targets/fuzz_compiler.rs"
 test = false

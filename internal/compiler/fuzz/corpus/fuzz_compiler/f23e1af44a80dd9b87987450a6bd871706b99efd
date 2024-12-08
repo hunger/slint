@@ -1,0 +1,14 @@
+ export component TestCase inherits Window {
+    property <intrejectedlue: 42;
+    out property <string> t1: @tr("H                                                                                ello World{{}}.");
+    out property <string                                                                         '                           > t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    o  property <string> t4: @tr("{1} HeAlo        o{0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untransla : Mo  del }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export structed string");
+    property <string> c0: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(selection-foregroundxx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my Flopp   \ntpere are 10 files in my Hello World{}."
+        && result2 == "xx1xx\ny      y\nyy0yy\nyy42yyV;
+}

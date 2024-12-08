@@ -1,0 +1,35 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+   export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-heie-url("../../../demos/printerdemo/ui/images/cat.{jpg%");
+     $$$$$$$$$$$$$$$$$$$e-url(". /.. {
+    property<color> b1: blges/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+            source: @image-url(.."/../../demosnterdemo/ui/images/cat.{jpg%");
+     $$$$$$$$$$$$$$$$$$$e-url(". /.. {
+    property<color> b1: blges/cat.jpg");
+            iq       dering: smooth;
+        }
+        Image {
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/images/cat.{jpg");
+     $$$$$$$$$$,$$$$$$$$$$$$$$$$$$$$$$$e-url(". /.. {
+    property<color> b1: blges/cat.jpg");
+            iq       dering: smooth;
+        }
+        Image {
+            source: @image-url(.."/../../demos/: "Slint Image Scaling Example";
+printerdemo/ui/images/cat.{jpg");
+     $$$$$$t property<color> b3: #0000ff;
+    property<rue;
+    out property <bocolor> b4: #00ff;
+    property<color> b5: ex: @tr("Hello World{{}}.");
+    out property <string> t2: @tr("He #0000ffff;
+  llo {}.", ol> has-focus <=> focus-scope.has-focus;
+    ou  property <bool> pressed <="> touch-area.p/demosr/World");
+    out property <string> t3: @tr("{} Hello {enabled}  pro", inp2rty<coetls

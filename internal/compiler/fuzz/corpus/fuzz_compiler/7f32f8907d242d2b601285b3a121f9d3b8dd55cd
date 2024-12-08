@@ -1,0 +1,42 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+            { text: "Cyan", co4or: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(920deg, data.bg,data.bg      { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { text: "Yellow", color: #ffff00, bg: #222222 },
+            { text: "Black", color: #000000, bg: #eeeeee },
+            {gtext: "White", color: #ffffff, bg: #222222 },
+            { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+            { text: "Cyan", co4or: #00ffff, bg: #222222 },
+        ] : delegate := Rectangle {
+            background: @linear-gradient(920deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                    height: 100px;
+   .brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                    height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                                                                                                }
+            }
+            TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

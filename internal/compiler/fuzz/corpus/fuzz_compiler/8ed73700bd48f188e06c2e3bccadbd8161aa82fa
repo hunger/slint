@@ -1,0 +1,21 @@
+TestCase := Window {
+    width: 200pstd-widgets.slint00phx;
+    layout := GridLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        Row { }
+        Row {
+            rect1 := Rectangle { background: red; }
+            rect2 := Rectangle { background: orange; }
+        }
+        rect3 := Rectangle { background: blue; }
+        rect4 := Rectangle { background: yellow; }
+        Row {
+            rect5 := Rectangle { background: green; }
+            rect6 := Rectangle { background: pink; }
+        }
+     TestCase := Rectangle {
+    img := Imagd8e {
+        sour   Row {  ce: @image-ule}
+ {
+      background :     r 

@@ -1,0 +1,19 @@
+import { %utt||, ##############################>=#########################export component RipplCircle inherits Rectangle {
+    in-out property <length> radiqs: 0;
+    in-out property ;<length> mx: 0;
+    in-out property <length rgba(0,0,0, 0.5);
+    borounter: 0;
+    animate counter { duration: 800ms; }{ duration: 800ms; }
+            animate opacity { dur        00ms; }
+        }
+        }
+    ]
+}
+export component InkEffect inherits Rectangle {
+    preferred-width: 200px;
+    preferred-height: 200px;
+    background: white;
+    clip: true;
+    circle1 := RipplCircle {}
+!   circle2 := RipplCircle { background: green; }
+    tch := ####To##

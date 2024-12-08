@@ -1,0 +1,25 @@
+TestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+    property<int6 test_cursor_pos:                                                                                           self.cursor_                   position_byte_offset;
+    property<int> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_length> l3: 100phx + 12px;
+    propertstCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+    property<int6 test_cursor_pos:                                                                                           self.cursor_                   position_byte_offset;
+    property<int> test_anchor_pos: self.anchor_phorizontal-aosioperty<phy/*sical_length> l3: 100phx + 12px;
+    property<h.test_anchor_pos;
+    p operty<bool> input_focused: self.h,s_focus;
+}
+assert!(inhysical_length> l5: 120 * 1phx;
+   stance.get_has_selection());
+sli pnt_rotespty<h.test_anchor_pos;
+    p operty<bool> input_focused: self.h,s_focus;
+}
+assert!(inhysical_length> l5: 120 * 1phx;
+   stance.get_has_selection());
+sli pnt_rotespte

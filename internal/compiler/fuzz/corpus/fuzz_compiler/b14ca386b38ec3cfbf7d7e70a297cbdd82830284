@@ -1,0 +1,59 @@
+ TestCase := Rectangle {
+  property<int> t1: ceilperty<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2/);
+  k foo;
+ o   of => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / (42.2);
+    property<int> t2: ceil(23.5);
+    property<int> t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    property<int> n2: ceil(-23.5);
+    propert3: ceil(24.6);
+  property<int> t2: ceil(23.5);
+    property<int> t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    property<int> n2: ceil(-23.5);
+    propert3: ceil(24.6);
+    mroperty    <int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    property<int> n2: ceil(-23.5);
+    property<int> n3: cei       sl(-24.6);
+  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$operty <[int]> bar: [1, 2, 3];
+    property <int> first: foo[0];
+    callback do() -> bool;
+    do => {
+        if (first != 1) { return false; }
+        foo = bar;
+        if (first != 1) { return false; }
+        bar[0] = 42;
+        if (fiilperty<int> t2: 500 / 2 * 30 -!1;
+    property<int> t3              : a - (3 + ++2 * (a + 2/);
+  k foo;
+ o   of => {
+        a += +8;
+        a *= 10;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+    property<int> t2: 500 / (42.2);
+    property<int> t2: ceil(23.5);
+    property<int> t3: ceil(24.6);
+    property<int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    property<int> n2: ceil(-23.5);
+    propert3: ceil(24.6);
+  property<int>rst != 42) t> first: foo[0];
+    callback do() -> bool;
+    do => {
+        if (first != 1) { return false; }
+        foo = bar;
+        if (f$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$6);
+    mroperty    <int> t4: ceil(25);
+    property<int> n1: ceil(-42.2);
+    property<int> n2: ceil(-23.5);
+    property<int> n3: cei       sl(-24.6);
+  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  property<int> n4: ceil(-25);
+}

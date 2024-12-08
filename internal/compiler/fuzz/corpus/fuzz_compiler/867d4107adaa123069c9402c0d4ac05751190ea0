@@ -1,0 +1,38 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> rad   <floax> fheight: 
+;
+    in-out property <boerits Rectangle {
+    in-out property <length> rad   <floax> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn%**********************************(*******La{out {
+        spaciyyyy        yyyyy #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn***********************************ol> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn%**********************************(*******La{out {
+        spaciyyyy        yyyyy #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////or,
+  z: 3;
+            T 
+  Area {
+omponenlue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9ayyyyyyyyyyyyyyyn************************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

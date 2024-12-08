@@ -1,0 +1,64 @@
+TestCase := Rectangle {
+    img := Image {
+  g := Image {
+        source: @image-urestCase := Rectangle {
+    img := I        mage {
+        source: @image-url("cat.jpg");
+    }
+    img1 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-ylice(12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_hieght: img.height;
+   {       source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-ylice(12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_hieght: img.height;
+   {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        so        mage {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := I        mage {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-ylice(12 13 14 15));
+  -url("cat.jpg");
+    }
+    img1 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-ylice(12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_hie13 14 15));
+    property <length> img_width: img.width;
+    property <length> i           mg_hieght: img.height;
+    property <bool> test: img2.source-clip-height * 1px == imgsource.width - 20 && i   img2 mg3.source.width == 0

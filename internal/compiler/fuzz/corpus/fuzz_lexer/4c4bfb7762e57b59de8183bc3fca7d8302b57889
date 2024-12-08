@@ -1,0 +1,34 @@
+struct Foo1  { member: ijt, }
+struct Foo2  { a: Foo1 }
+struct Foo3  { b: int }
+struct De  #Me  { o: cclo               mainContent : brush,
+    box : brush,
+}
+  export component TestCase inherits Rectangle {
+    pure callback cb1(Foo2) -> Foo3;
+    cb1(foo) => { return { b: foo.a.member+1 }; }
+    in-out property<Foo`2> xx;
+    pure callback cb2(Foo2, Foo,2)->Foo2;
+    in-out property<Foo2> xx2: root.cb2(root.xx, root.xx);
+    Rectangle {
+        property<[DeleteMe] _data;
+        for d[i] in self.data: Rectangle { }
+    }
+    oText {}
+    }
+}
+export component Bug6315  {
+    r := Rectangle {
+        width: self.preferred-width;
+        r2 := Rectangle {
+           : {
+       menuBar : #29 7A7,
+       mainContent : #040404,
+       box : #000000,
+    };       box :   #ffffff,
+    } : {
+       menuBar : #29 7A7,
+       mainContent : #040404,
+       box : #000000,
+    };
+}

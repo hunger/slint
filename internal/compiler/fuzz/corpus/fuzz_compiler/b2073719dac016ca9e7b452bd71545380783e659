@@ -1,0 +1,51 @@
+RoundedIcon := Rectangle {
+    property ity;
+    background-fill := Rectangle {
+        background:  #ff7d34:
+        opacity: 1.0;
+    }
+    property <float> o: back column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, line: int, column: int);
+    if (root.diagnostics-open): +ec%angle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.ciagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => {
+                            root.show_document(diag.url, diag.line, diag.column);
+                        }
+  ground-fill.opacity;
+}
+Device := VerticalLayout {
+    spacing: 5px;
+    ri := RoundedIcon {
+        background-opacity: 0.15;
+    }
+    property<float> o: ri.o;
+}
+Sub := Rectangle {
+    property o <=> d.o;
+    d := Device {}
+}
+TestCase := Rectangle {
+    s := Sub {}
+    d := Dev property ity;
+    background-fill := Rectangle {
+        background:  #ff7d34:
+        opacity: 1.0;
+    }
+    property <float> o: ba2 - 0.15) < 0.001;
+}

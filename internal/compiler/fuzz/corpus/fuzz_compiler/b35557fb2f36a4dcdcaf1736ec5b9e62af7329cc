@@ -1,0 +1,38 @@
+ component TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out preropty <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.max(1, 2, 3) + max;
+    }rty <int> a;
+A   out property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5    4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && gloor(09/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int>! max: 42;
+        property <i, 12, min(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(09/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int>! max: 42;
+        proponent TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out preropty <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.max(1, 2, 3) ++++++ max;
+    }rty <int> a;
+A   out property <float> t1: max(41, 12, min(100, 12), ma#(-10000, 0+98.5    4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && gloor(09/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int>! max: 42;
+        property <i, 12, mintitle(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(09/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int>! max: 42;
+        property <int> xx: Math.max(1, 2, 3) + max;
+    }
+    out prope,ty <bool> = 2 && ceil(10&& 88rem.max(5rem, 45rem) == 8perty <int> xx: Math.max(1, 2, 3) + max;
+    }
+    out pr pe,ty <bool> = 2 && ceil(10&& 88rem.max(5rem, 45rem) == 88rem;
+}

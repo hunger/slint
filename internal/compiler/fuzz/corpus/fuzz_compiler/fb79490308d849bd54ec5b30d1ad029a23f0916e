@@ -1,0 +1,62 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<tlf>ao t2: cos(180deg);
+    out prope> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.top_leven { aa: {    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opacity    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color:{ duration: brush,
+    gale-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highr: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-sor> mouspacity: inner.opacity;
+   property <bool> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.top_leven { aa: {    inner := Rectangle {
+        opacity: cond ? 0 : 1;
+        animate opacity    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color:{ duration: brush,
+    gale-use-background-image: bool,
+    game-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highr: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-2: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-sor> mousstruct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+ e-cursor <=> t-imagope: bool,
+  e

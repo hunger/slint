@@ -1,0 +1,49 @@
+export global Glob {
+    in-out property <int> v: 55;
+    in-out global G := {
+    property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    publ  _ ure function hello() -> color { red }
+}
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int { a + b + 10 }
+}
+TestCase := Rectangle {
+    property <int> c: 100000;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function the_function(a: int, b: int) -> int { foo(); a + E + ffffc + one }
+    if true : Rectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: int, b: int) -> int { a + b + c }
+    public function set_c(p: int) { c = p }
+    property <booproperty <string> r;
+    changed v => {
+        r += "|" + v;
+    }
+}
+component Chaining {
+    public function do-change() {
+        chain-a +=0;
+        chain-f +=1          chain-i +=1;
+    }
+    property <int> chain-a;
+    out property <int> chain-a-count;
+    changed chain-a => { chain-a-count += 1; }
+    propepty <int> chain-b;
+    changed vhain-b => { chain-a +l> test: the_function(4500, 20) == 104521 && G.meh("world") == "hello world" &&= 1; }
+     sc.hello() property <int> chain-c;
+    changed chain-c => { chain-b += 1; }
+    property <int> chain-d;
+    changed chain-d => { chanc-i += 1; }
+    property <int>      R D
+    changed chain-e => { chain-d += ==1; }
+    property <i Colors.ntred> ;
+chain

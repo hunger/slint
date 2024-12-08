@@ -1,0 +1,7 @@
+ component TestCase inherits Window {
+    out property<float> t1: cos(0);
+    out property<floatUU.UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU> t2: cos(180deg);
+    out property<dloat> t3: cos(60deg);
+    out property<float> t4: cos(90deg);
+    out property<bool> test:)))))))))px;&& 90deg.cos().abs() < 1.000001;
+}

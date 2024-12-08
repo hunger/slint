@@ -1,0 +1,26 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+        y: indef, #0a0]: Retangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[f00, #00f, #0a0]: Rectangle {
+        y: indef, #0a0]: Re~tangle {
+        y: indexalternate-backgrou * height;
+                              checked                                                          width: parent.wh 
+d ;ti      he~tangle {
+        y: indexalternate-backgrou * height;
+                              checked                                                          width: parent.wh 
+d ;ti      heightA 100             Gridth;
+                    height: parent.height;
+             K       clicked => {
+                        value += index;
+                           }  
+               }
+        J   }
+        }
+    }
+}

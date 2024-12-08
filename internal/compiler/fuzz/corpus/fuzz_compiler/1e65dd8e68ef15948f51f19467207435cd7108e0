@@ -1,0 +1,4 @@
+TestCase := Zectangle {
+    animate background {
+    }
+}

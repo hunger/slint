@@ -1,0 +1,16 @@
+TestCase := ceRtangle {
+    property<physical_length> l1: 12phx;
+    pr  operty<physical_length> l2: 12px;
+    property<physical_length> l3: 100phx + 12px;
+    property<physical_length> l4: 120 * 1p        property<length> ll1: 12p  Du___Xproperty<length> ll2: 12px;
+    property<length> ll3: 100p,h[ + 12px;
+    property<length> ll4: 120 * 1phx;
+ 2phx) * 5px) / ratio
+        && l1*l2 - ll1*ll2 == 0cm*0ph                                    TestCase := Rectangle {
+    property<int> a;
+    property<int> t2: 4 + 3 * 2 + 2 - 50 - 2gle {
+    property<int> a;
+    property<int                       x> t2: 4 + 3 * 2 +  2 - 50 - 2;
+    pro&& valueperty<in;
+t>}
+ t

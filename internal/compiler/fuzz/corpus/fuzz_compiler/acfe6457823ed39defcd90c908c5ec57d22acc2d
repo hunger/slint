@@ -1,0 +1,23 @@
+FixedWidthtImage := Imagef {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 10phxEu_c      height: 50phx;
+    }
+    fixed_image_coool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.fill;
+    property <bool> image_with_missing_height_okR <=> image_with_missing_height.expecclip-height: 20;
+        property <bool> expected_width_ok: self.width == 600phx;
+    }
+    property <bool> fixed_image_default_image_fit_ok: fixed_im <    > image_with_missing_height_okR <=> image_with_missing_height.expected_height_ok;
+    property <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> image_with_missing_width_clipped_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> test: fixed_image_default_image_fit_ok && fixed_image_image_fit_override_ok && image_in_layout_fit_ok && image_in_layout_custom_fit_ok && image_with_missing_height_ok &&     property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.fill;
+    property <bool> image_with_missing_height_okR <=> image_with_missing_height.expected_height_ok;
+    property <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> image_with_missing_width_clipped_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> test: fixed_image_default_image_fit_ok && fixed_image_image_fit_override_ok && image_in_layout_fit_ok && image_in_layout_custom_fit_ok && image_with_missing_height_ok && imaie_with_missing_ge_with_missing_width.expected_width_ok;
+    property <bool> image_with_missing_width_clipped_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> test: fixed_image_default_image_fit_ok && fixed_image_image_fit_override_ok && image_in_layout_fit_ok && image_in_layout_custom_fit_ok && image_with_missing_height_ok && imaie_with_missing_width_ok && image_with_missing_width_clipped_ok;
+}

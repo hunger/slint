@@ -1,0 +1,7 @@
+export component ExportedA inherits Rectangle {}
+component NotExported inherits ExportedA {
+    ExportedA {}
+}
+component ExportedB inherits NotExported {
+}
+export { ExportedB }

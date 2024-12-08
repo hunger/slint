@@ -1,0 +1,46 @@
+TestCase := Rectangle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-peeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeressed(event) => {
+           alse;
+                        } else {
+                            lv.viewport_y = -r.y;
+              ght: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            he                    clicked => {
+                r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    c   last-clicked = i;
+                   -clicked = i;
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<= Image {
+        source: @ima@ige-url("cat.jpg");
+      a_ urce-clip-x: 20 ;  
+ }
+    img3 := Imag@i:<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-slice(12 13 14 15));
+    property <length> img_width: img.width;
+    pporerty <length> img_height: img.height;
+    property <bool> test: img1.source-clip-height * 1px == img2.height && img2.source-clip-width * 1o                                                                                                              ocus;
+    property<string> input2_text: input2.text;
+    properimport { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: colty<stringor,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primar :ycolor> rece

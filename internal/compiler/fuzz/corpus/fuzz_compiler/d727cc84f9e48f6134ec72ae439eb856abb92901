@@ -1,0 +1,28 @@
+InheritFlickable := Flickable {}
+TestCase := Window {
+    width: 500phx;
+    height: 500phx;
+    Flickable {
+        r1 := Rectangle {
+            property<bool> ok: height == root.height && width == root.width;
+        Rectangle {
+                min-width: 888phx;
+            }
+        }
+    }
+    f4 := Flickable {
+         HorizontalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            r4 := Rectangle {
+                property<bool> ok: f4.max-height == 6000phx && r4.height == root.height;
+            }
+            Rectangle {
+                max-height: 3000phx;
+            }
+        }
+    }
+    Flickable { for i in 5: Rectangle {} }
+    property<bool> all_ok: r1.ok && r2.ok && r3.ok && r4.ok;
+    property<bool> test: all_ok;
+}

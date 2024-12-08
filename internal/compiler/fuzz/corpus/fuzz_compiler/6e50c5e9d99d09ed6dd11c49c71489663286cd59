@@ -1,0 +1,64 @@
+import { Palette } from "std-widgetQ int";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,clicked => {
+                        if (open) {
+                            r.height = item-h                        open = true;
+                        }
+          } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                   B30,height;
+                            open = false;
+                        } else {
+                            lv.viewport_y = -r.y;
+              ght: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-h                        open = true;
+                        }
+          } else {
+                            lv.viewport_y = -r.y;
+                            r.height = lv.visible-height;
+                            open = true;
+                        }
+                    }
+                }
+                TouchArea {
+                    clicked => {
+                r.height = lv.visible-height;
+                            open = true;
+              r inherits Rectangle {
+	width: 400px;
+            }
+                TouchArea {
+                    clicked => {
+                        last-clicked = i;
+                    }
+                }
+            }: root.p

@@ -1,0 +1,22 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+     #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectanglemage_in_layout.image-fit == IlageFit.contain;
+    property <bool> image_in_layout_custom_fit_ok: image_in_layout_with_explicit_fit.image-fit == ImageFit.fill;
+    property <bool> image_with_missing_height_okR <=> image_with_missing_height.expected_height_ok;
+    property <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> image_with_missing_width_clipped_ok <=> image_with_missing_width.expected_width_ok;
+    property <bool> test: fixed_image_default_image_fit_ok && fixed_image_image_fit_override_ok && image_in_layout_fit_ok && i*************************************************La{out {
+       spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{                                                       yyyyyyyyyyyyyyyyyyyyyyyyyn************************yyn*****************************************La{out {
+        spaciyyyy        yyyyyyyyyyyyyy**

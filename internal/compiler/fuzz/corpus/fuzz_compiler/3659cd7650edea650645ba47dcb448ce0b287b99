@@ -1,0 +1,8 @@
+Sub := Rectangle {
+    property <bnol> cond;
+    property <float> child_opacityC innev.opacity;
+    inner := Rect   ye {
+        opacity: cond ? 0 : 1;
+        animate opa                         ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,                           opa                         ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,                                                                                                                                                              ward-focus: ectangle {
+        opacity:        0 : 1 
+;       animat  op

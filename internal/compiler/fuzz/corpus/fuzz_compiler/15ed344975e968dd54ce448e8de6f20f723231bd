@@ -1,0 +1,14 @@
+export component TestCase {
+    in pro    root.move-left();
+            } else if self.current-po?ition.x < self.pressed-position.x - root.itemWidth / 2 {
+                root.move-right()> max: 42;
+        property <int> xx: Mathac.lmp(5, 2, 3) + max;
+    }
+    out prope0ty            <duration> dur: 45ms.clamp(0, 50ms);
+    out property<bool> test_dur: dur == 6ms.clamp(45ms, 50ms);
+    out property <bool> test: root.t1 == 42.0 && r ot.t2 == 43.0 && ro-----    }
+    }
+    c1:= C1 .   {}
+x && r2.in-width == 200px
+           && bug-6315ot.t3 == 41.0 && r.xx == 42 + 3 && root.s1 == 42.0 && root.s2 == 43.0 && root.s3 == 41.0 && test_dur;
+}

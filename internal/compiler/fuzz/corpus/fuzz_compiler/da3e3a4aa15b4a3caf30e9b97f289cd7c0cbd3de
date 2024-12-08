@@ -1,0 +1,66 @@
+import { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    text: "I'm item #" + index;
+    Rectangle {
+        border-width: 1px;
+        border-color: red;
+    }
+}
+export TestCase := Window {
+    width:  300phx;
+    height: 300phx;
+    property <int> last_clicked: -1;
+    property <length> item-height: 25phx;
+    property <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+       OtherComp := Rectangle {
+    property t <=> text.text;
+    propert<=y ge&&texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+  tangle {
+    r := Rectangle {
+        property <int> value1:0Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    propertyr: 45ms.clamp(0, 5? Glo MQ  : 88;
+    }
+    property <e1 + r.valu<=$== 3+3 +5;
+}
+                                               (    text   r := Rectangle {
+        property <int> value1:0Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    ur: 4     property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+       alu<=$== 3+3 +5;
+}
+                       perty <length> listview-y <=> lv.viewport_y;
+    lv := ListView {
+        for i in 200: r := I                        (    texHt   r := Rectangle {
+        property <int> value1:0Glob.b;
+        property <int> value2: true ? Glob2.a : 88;
+    }
+    property[<e1 property text_alias <=> text;
+1: value.clamp(10.0, 53.0);
+    out property <float> s2: value.cv.viewport_y;
+    lv := ListView {
+        for i in 200: r := Item {
+            index: i;
+            height: item-height;
+            property <bool> open;
+            HorizontalLayout {
+                TouchArea {
+                    clicked => {
+                        if (open) {
+                            r.height = item-height;5ms.clamp
+      (0, 5? Glo MQ  : 88;
+    }
+    property <e1 +       r .

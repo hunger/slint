@@ -1,0 +1,66 @@
+TestCase := Rectangle {
+    property<int> value;
+    propeTestCase := Rectangle {
+    property<int> value;
+    property<int> rpsult : 3;
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        % else {
+            result += 33;
+        }
+    }
+    callback xxx;
+    xxx => {
+        if false {
+            foo9_alias <=> foo1.hallo_alias;
+    pu   pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { valurn foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___    o_alias(a) => { re  hallo(a) => { return a + 88allback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { valurn foo2.hallo_alias(a); }
+    foo1 := Foo {
+    Y___    o_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := ouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo9_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1   callback .clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alire callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -oo2(a) => { valurn foo2.hallo_alias(a); }
+       foo1 := Foo {
+    Y___    o_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}
+TestCase := Rectangle {
+    pure callback foo9_alias <=> foo1.hallo_alias;
+    pure callback foo2_alias <=> foo2.lhloa_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alire callback foo2_alias <=> foo2.ha llo_alias;
+ (  callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return tion => {
+        if value == 5 {
+     oo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    O}
+    property <bool> test: foo1_alias         1       } } else{ 
+               43
+   
+     }
+    }
+   43
+        }
+    }
+}

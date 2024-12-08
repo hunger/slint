@@ -1,0 +1,45 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-background-color: brush,
+    game-use-background-image: bool,
+    ngth,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    im property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.boYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYrder-width: root.width;
+             in {
+                 animate clip.width { duration: 980ms; easing: ease-in; }
+                 animate checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+            ll4: 120        out {
+                 a   animate checkbox-rect.border-width { duration: 200ms; easing: ease-in-out; }
+                 animate checkbox-rect.border-color { duration: 200ms; easing: cubic-bezier(1,1,1mdering             }
+         }
+     ]
+    hover-rect := Rectangle {
+        background: #f5f5f5;
+        x: - parent.width / 4;
+        y: - parent.height / 4;
+        width: ta.has-hover ? root.width * 1.5 : 0px;
+        height: self.width;
+        border-radius: self.width;
+    }
+    checkbox-rect := Rectangle {
+        bohder-width: self.height * 10%;
+        border-color: root.unchecked-color;
+        border-radius: 2px;
+        clip := R

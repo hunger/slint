@@ -1,0 +1,32 @@
+ component TestCase inherits Window {
+    in property <int> a;
+    out{{{{{{{{{{{{{{{{{{ property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: 3  .max(1, 2, 3) + max;
+    }rty <int> a;
+    out property <bloat> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+ omponent TestCase inherits Window {
+    in property <int> a;
+    out{{{{{{{{{{{{{{{{{{ property <float> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: 3  .max(1, 2, 3) + max;
+    }rty <int> a;
+    out property <bloat> t1: max(41, 12, min(100, 12), max(-10000, 0+98.5), -4) + min(a, 0.5);
+    out property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.max(1, 2, 3) + max;
+    }
+    out prope,ty <bool> test: t2 && r.xx == 42 + 3 && 88px.max(5px, 45px) == 88px && 88ms.min(5ms, 45ms) == 5cm && 88rem.max(5rem, 45rem) =
+    out prope,ty <bool> test: t2 && r.xx == 42 + 3    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.max(1, 2, 3) + max;
+    }
+    out prope,ty <bool> test: t2 && r.xx == 42 + 3 && 88px.max(5px, 45px) == 88px && 88ms.min(5ms, 45ms) == 5cm && 88rem.max(5rem, 45rem) =
+    out prope,ty <bool> test: t2 && r.xx == 42 + 3 && 88px.max(: ro.   und(10/4) ==   && floor(10/4) == 2 && ceil(10&& 88rem.max(5rem, 45rem) == 88rem;
+}

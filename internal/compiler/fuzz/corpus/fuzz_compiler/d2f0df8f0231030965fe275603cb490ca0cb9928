@@ -1,0 +1,46 @@
+Sub := Rectangle {
+    property$<bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {nd ? 1 : 1;
+        animate opacity { duratio
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { duration: 2s; }
+        back_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { durat { c: Component }
+export structRue lst { mdering: pixelated;
+      : mooth;
+    ty;
+    innImage {
+                    @imal <=> s.child_opacit> s.child_opacity;
+    cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { duration: 1s; }
+        back_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 3 1;
+        animate opaci _  durat { c: Component }
+export structn: 1s; }
+        back_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { durat { c: Component }
+export struct Result { mdering   back_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { durat { c: Component }
+export structRue lst { mdering: pixelated;
+      : mooth;
+    ty;
+    innImage {
+                    @imal <=> s.child_opacit> s.child_opacity;
+    cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { duration: 1s; }
+        back_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 3 1;
+        animate opacity { durat     d;
+      : mooth;
+    ty;
+    ionImage {
+            source: @imal <=> s.child_opacit> s.child_opacits := Sub {}
+}

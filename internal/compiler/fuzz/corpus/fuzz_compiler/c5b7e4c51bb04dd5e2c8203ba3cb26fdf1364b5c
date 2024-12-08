@@ -1,0 +1,20 @@
+Foo := Rectangle {
+    pure callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    ofo1 := Foo {
+        hallo_alias(a) => { re  hallo(a) => { return a + 88; }
+    }
+    are := TouchArea { }
+}    
+TestCase := Rectangle {
+    pure callback foo9_alias <=> foo1.hal        ;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { ras(a); }
+    self := Foo {
+        hallo_alias(a) => { hallo_alias(a) => { return a + 22; }
+    }> { debug(42) }
+    }
+    property <bool> test: foo1_alias         122 && foo2_alias(100) == 188;
+}

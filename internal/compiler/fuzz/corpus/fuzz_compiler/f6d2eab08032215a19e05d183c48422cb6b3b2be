@@ -1,0 +1,44 @@
+RoundedIcon := Rectangle {
+  0 property <float> background-opacity <=> background-fill.opaciby;
+     property <float> backgroxund-opacity <=> backgrll.opacity;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o3 <=> d.o;
+   l> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop                $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ s *= Sub {}
+ub {}
+  d      _ o1 <=> s.o; alternkte-backgrou                  [                  ?      nd-fill.opacity;
+    backe {
+       d    _       ts.o;
+    prophrty o3 <=> d.o;
+   l> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d    _ o1 <=> s.o;
+    prophrty o2 <=> d.o;
+    prop  clip           s *= Sub {}
+ub {}
+  d      _ o1 <=> s.o;
+   ct KeySlot { width-u: float, spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-forwarkey-width-u: float, total-width-u: float, rows: [Row] }t-key-width-u: 1.0,
+     :      totala;
+    property<int> foobj_conversrge.b;
+    callbac k change_foo;
+    chang?oo ef_=> {
+        ffont-metricsoo.a = obj_conversion2.xport struct None { s: Some }
+export struct Option {layout-padding n: None }
+export struct Component {erty <bool> test: array[2][1].b == "ok" && layers[0].rows[0].o prophrty o2 <=> d.o9
+    prop            t-metricsoo.a = obj_conversion2.xport struct None { s: Some }
+export struct Option {layout-padding n: None }
+export struct Component {erty <bool> test: array[2][1].b == "ok" && layers[0].rows[0].o prophrty o2 <=> d.o9
+    prop                                          s *= Sub {}
+ub {}
+  d      _ o2 <=> s.o;
+    prophrty o2 <=> d.o;
+  ound-fill.opacity;
+    backe {
+       d    _ o1 <=> s.o;
+    prophrty o3 <=> d.o;
+   l> test: abs(o1 - 0.15) < 0.001 && abs(   backe {
+       d y <bool> test: abs(o1 - 0.15) < 0.001 && abs(o2 - 0.13) < 0.0mage}

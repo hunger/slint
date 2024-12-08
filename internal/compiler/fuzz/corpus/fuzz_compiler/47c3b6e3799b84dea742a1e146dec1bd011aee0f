@@ -1,0 +1,26 @@
+import "x: 0;
+  &     width   _              rd-angle {
+    property$<bool> cond;
+    property <float> child_opacity: inner.opacity;
+    inner := Rectangle {nd ? 0 : 1;
+        animate opacity { duiAAAAAAAAAAAAAAAAAAAA font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default,key-width-u: float, total-width-u: float, rows: [Row] }
+export component TestCase  {
+    out property<[Layer]> layration: 1s; }
+        back_opac~ty: inner.opxport struct Result { mdering: pixelated;
+      : mootounmd(0500 * sin(90deg)) == 1001 && rounsssssssssssssssssssssssssssssssssssssss	sscssssssssssssssssssssssssssssssssssfct Row { key-slots: [KeySlot], }
+struct Layot { width-u: float,a spacer: bool, background: color, font-size: length, }
+struct Row { key-slots: [KeySlot], }
+struct Layer { default-key-width-u: float, total-width-u: float, rows: [Row] }
+export component Te{tCase  {
+    out property<[La out prope $ rty <bool> test: array[2][1].bocus: i-te.toucj/../../demosodemos/printerdemo/ui/  fonts/NotoSans-Bold.ttf";
+Tes tCase := Win dow {
+    preferred-width: 855phx;
+./../.    mos        ui/fonts/NotoSans-Regular.TestCase := Rectangle {
+    width: 3p00hx;
+    height: 3                                                        k !                         wght: 300phx;
+    property<int>operty<int> value:*1;
+   )for c[indexPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP] in [#f00, #00f, #0a,,,,,,,,,0]: Rectangle {
+        y: import "../../..svvvvvvvvvvvvvel~ec[index] mn
+ [    struc#t

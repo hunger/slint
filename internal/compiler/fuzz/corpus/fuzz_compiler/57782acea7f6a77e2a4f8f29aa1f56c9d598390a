@@ -1,0 +1,19 @@
+RoundedIcon := Rectangle {
+    property ity;
+    background-fill := Rectangle {
+        background:  #ff7d34:
+        opacity: 1.0;
+    }
+export componnent TestCase inhe its    property <float> o: background-fill.opacity;
+}
+Device :=Vrte icalLayout {
+    spacing: 5px;
+    r Window {
+    width: 64px;
+    height: 64px;
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px ; 
+    i := RoundedIcon {
+        background-opacit  paddingex5px;
+       y

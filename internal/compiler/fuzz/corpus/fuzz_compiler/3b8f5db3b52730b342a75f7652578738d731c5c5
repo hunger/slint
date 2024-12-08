@@ -1,0 +1,46 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+roperty <bool> has-focus <=> focus-scope.has-focus;
+    out property <bool> pressed <=>  touch-area.pressed;
+ l4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1  = 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<leng h> ll1: 12phx;
+    property<length> ll2: 12px;
+    property<length> ll3: 10hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.hhhhhhhhhhhhhhhhhhhhhhhhhhhh0phx + 12px;
+    prqperty<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<le 10phx + 2phx;
+    property<length> zero1: 0;
+   out property <bool> has-hover <=> touch-area.has-hover;
+    out property <bool= enter-pressed;
+    in property <roperty <MouseSursor> mouse-cursor <=> touch-area.mouse-cursor;
+    callback click   <=> toucj-area.clicked;
+    for                             wid property <bool> enabled: true;
+ropty <string> blah:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| "ddd";
+        Rectangle {
+            property <bool> cc <=> cond1;
+            property <bool> blah: false;
+            if (cc |1| self.blah) : TouchArea {
+                property <int> cc: 0;
+                clicked => {
+                    root.t     if !root.enabled {
+                return reject;
+            }
+            
+            if (event.text == " " || event.text == "\n") && roo   
+            if (event.text == " " || event.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+                  s reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

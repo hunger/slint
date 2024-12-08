@@ -1,0 +1,17 @@
+ export component TestCase inherits Window {
+    property <int> r("{} Hello {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello        o{0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <ginrst> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my Flopp   \ntpere are 10 files in my Hello World{}."
+        && result2 ==y <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there orld"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <ginrst> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my Flopp   \ntpere are 10 files in my Hello World{}."
+        && result2 ==y <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my Flopp   \ntpere are 10 files in my Hello World{}."
+        && result2 == "xx1xx\nyy-999yy\nyy0yy\nyy42yy";
+}

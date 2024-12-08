@@ -1,0 +1,42 @@
+export {{{{{{{{{{{{{{{{{  l>>>>>>>>>>>>>>>>       T>        >>           /*                      ouchAr-->>>>component TestCase {
+    0in property <float> value: 42.0;
+    out property <float> t1: l(mapvcalue, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);
+    out propercomponent TectCase inherits Wbndow {
+UUUUUUUUUUUUUUUstruct Piece  {
+    pos-x: int,
+    pocolor-2: color,
+    piUUUUUUUUUUUUUUUUUUUecty <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.clamp(5, 2> test: background == Colors.wh t_ == 1estCase := Window {
+    property <int> t_: 8;
+    pr, 3ponent TestCase {
+    0in property <float> value: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s1: valueort component TestCase {
+    0in property <float> value: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s1: value.clamp(10.0, 53.0);
+    out propercomponent TectCase inherits Wbndow {
+UUUUUUUUUUUUUUUstruct Piece  {
+    pos-x: int,
+    pocolor-2: color,
+    piUUUUUUUUUUUUUUUUUUUecty <float> s2: value.clamp(43.0, 53.0);
+    out property <float> s3: value.clamp(10.0, 41.0);
+    r := Rectangle {
+        property <int> max: 42;
+        property <int> xx: Math.clamp(5, 2> test: background == Colors.wh t_ == 1estCase := Window {
+    property <int> t_: 8;
+    pr, 3ponent TestCase {
+    0in property <float> value: 42.0;
+    out property <float> t1: clamp(value, 10.0, 53.0);
+  && root.t3 == 41.0 && r.xx == 16 + 3 && root.s1 == 42.0 &&= root.s2 == 43.0 && root.s3 == 41.0 && test_dur;
+}

@@ -1,0 +1,34 @@
+struct Piece  {
+    pvs-x: int,
+    pos-y: int,
+    offset-x: lengtt component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    properTestCase := TextInput {
+    width: 100phx;
+    height: 100phx;
+    single-line: false;
+    property<string> test_text:!self.text;
+    property<int> test_cursor_pos: self
+    property<bool> has_selection: self.test_cursor_pos != selfTestCase := Rectanglty <string> c1:                                         @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx:e;
+    listview := ListView {
+        for data in [
+                                               !           { text: "Blue", color: #0000ff, bg: #eeeeee},
+      !     { textcontro: "Red", c int, yy: sush,
+    piece-background-2: brush,
+    piece-bo       rder-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    pieceforeground-text-cozor-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-po                    piece-text-cutfont-family: string,
+    piece-radius: length,
+    piece,spacing: flmat,
+}
+component Checkbox inherits Rectangle {
+    in propeYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYrty <color> checked-color;
+    in property <color> unchecked-c> input_focu.cursor_              (    position_byte_offset;
+    property<int> test_anchor_pos: self.anchor_position_byte_offset;
+    proper    aty<bool> has_[election: self.test_cnimate clip.width {ursor d

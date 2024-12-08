@@ -1,0 +1,23 @@
+Foo := Rectangle {
+    pzre callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure ca    ck hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+   e {
+        pure ca    ck hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+   are hue && gr1.to-hsv().saturation == new_green.to-hsv().satur ti_alias;
+    callback foo1_clicked <=> foo1.click_alias(a);re callback hallo_alias <=> xxx.hallo;
+    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure ca    ck hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+   e {
+        pure ca    ck hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+    }
+   are hue && gr1.to-hsv().saturation == new_green.to-hsv().satur ti_alias;
+    callback foo1_clicked <=&& foo2_alias(100) == 188;
+}

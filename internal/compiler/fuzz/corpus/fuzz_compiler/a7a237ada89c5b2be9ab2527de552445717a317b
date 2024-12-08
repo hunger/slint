@@ -1,0 +1,44 @@
+TestCasPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPe := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap; TestCase := Rectangle {
+    property <bool> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(360deg)) == 0 &&
+        round(1000* sin(180deg)) == 0 && round(1000*cos(180deg)) == -1000 &&
+        round(1000 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        rounvvvvvvvvvvvvvd(atan(tan(45deg)0)/.1deg) == 450 &&
+        round(asin(sin(45deg))/{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{0.1deg) == 450 &&
+        round(acos(  \{s3}\{a+0}\{"\{s3}        llllllllllllllllllllllllllllllllllllllllllllllllllllllll=lllll}
+export struct Ok { r: Resgle {
+    property<int> value;
+    property<int> result : 3;
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            resul      \{s3}\{a+0}\{"\ } s{ 3     lllllllllllllllllllllllllllllllllllllllllllllllllnd-colo~r: brusllllll\{a+5}"}";
+        obj.a = "\{obj.a}\{"yo"}";
+    }h,
+    game-usOtherComp :C_- ct-ngle {
+    pbackground-image: bool,
+    gcos(45deg))/0.1deg) == 450 &&
+        atan2(
+        color: green;
+        selection-background-color: blue.transparentize(10%);
+        selection-foreground-color: yellow;
+  Option { n: None }
+export struct Compo       font-size: 12px;
+        cursor-position-byte-offset: 3;
+        ancsoph-oirtion-byte-offset: 13;
+    }
+    TextInput {
+    0, 0) == 0 &&
+        atan2(0, 1    0) =x=: paren 

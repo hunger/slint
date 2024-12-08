@@ -1,0 +1,31 @@
+import { LineEdit } from "s-widgets.sli        nt";
+export component TestIase inherits Window {
+    callback focus_the_line_edit;
+    focus_the_line_edit => {
+        le.focus();
+    }
+    cal.back focus_the_focus_scope;
+ 
+        TextInputInterface.text-input-focuthe_line_edit;
+    focus   background-fill := Rectangle {
+        background:  #ff-widgets.slint:;
+MyListItem := Rectangle {
+    callbacke {
+ (  s *= Sub {}
+ub {}
+    d    _ o1 <=>  }
+        }
+    }
+    propet-he> background-opacity <=> background-fill.opacity;
+    background-fill := Rectangle {
+        background:  #ff7d34;
+        opacity:  <float> o: background-fill.opacity;
+}
+Device := VerticalLayout {
+   sc aping: 5px;
+   $ri := RoundedIcon {
+_the_line_edit => {
+        le.focus();
+    }
+    callback focus_the_focus_scoputInterface.text-input-focused;
+}

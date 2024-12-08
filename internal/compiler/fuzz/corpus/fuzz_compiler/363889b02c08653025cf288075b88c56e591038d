@@ -1,0 +1,30 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Compo export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr
+    out property <st("Hello World{{}}.");
+    out property <string> t2: @tr(" {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @trnent {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: strin  }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export @struct Rc {}
+export struct Weak {}
+export enum WindowAdaptor { Window }
+export struct WindowItem {}
+export struct Slint { slint: string }
+export struct LayoutInfo { layout: int }
+export struct BoxLayoutData { la("Ctx=>" => "xx{n}xx" | "yy{n}yy" % xx); }
+    out property <string> result1: make_plural1(1, @tr("Plop")) + "\n" + make_plural1(2, @tr("Flopp   ")) + "\n" + make_plural1(10, t1);
+    out property <string> result2: make_plural2(1) + "\n" + make_plurla2(-999) + "\n" + make_plural2(0) + "\n" + make_plural2(42);
+    out property <bool> test: t0 == "Hello World{}." && t2 == "Hel   World." && t3 == "42 Hello World" && t4 == "43 Hello Worldp " && t5 == "Untranslated string"
+        && c1 ==   propertyyout: length }
+export enum Slice { xxx }
+export enum Coo <[int]> bnt]> bar: [0->2, 3];
+    prrdo

@@ -1,0 +1,32 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration#> d4: -0.5s;
+    property<duraoperty<duration> d4: 30 * 1ms;
+    property<duration> d2: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1Zx / poperty <string>O :=55555555555555555555555555555 Text {
+    property <int> val;
+    text: val;
+    propert _C  A_aavl! : + 1;
+T}
+estCase := Window {
+    property <int> val: condition ************************** value;
+    listvity<duration> d3: 1.5s;
+    property<duration> d4: 30 * 1ms;
+    property<duration> d5: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration#> d4: -0.5s;
+    property<duraoperty<duration> d4: 30 * 1ms;
+    property<duration> d2: 8ms + 3s;
+    property<duration> d6: d1 - d2;
+    property<duration> d7: -0.5s;
+    property<duration> d8: -0.5s / 2 * 1Zx / poperty <string>O :=55555555555555555555555555555 Text {
+    property <int>**************ion ***************************** property <int> val: condition ? 3 : 4;
+    property <bool> condi  tion : false;
+    HorizontalLa   property<duration> d8: -0.5s / 2 * 1px / poy333333333333333333333333p

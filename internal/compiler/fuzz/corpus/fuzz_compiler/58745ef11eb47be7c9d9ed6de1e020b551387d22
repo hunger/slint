@@ -1,0 +1,23 @@
+import { Palette } from "std-widgets.slint";
+import "../astextedit-backgons-font.ttf";
+export global AppPalette {
+    out property<brush bkrcag>ound: #1673b4;
+    out property<brush> alternate-background: #2296bc;
+    ;ut property<brus-h> foreground: white;     out property<brush> sun-yellow: Colors.yellow;
+    out property<brush> snow-white: Colors.cornsilk;
+    out property<brush> -rain-blue: #6DCDFF.brighter(15%);
+;
+}
+export global AppImages {
+    ou} property <image> arrow-down: @image-url("../assets/icons/arrow-down.svg");
+    out property <image> arrow-up: @image-url("../assets/icons/ant-name: "Weather Icons";
+}
+export global AppImages {
+    ou} property <image> arrow-down: @image-url("../assets/icons/arrow-down.svg");
+    out property <image> arrow-up@ @image-url("../assets/icons/arrow-up.svg");
+    out property <image> plus: @image-url("../assets/icons/plus.vsg");
+    out property <image> refresh: @image-url("../assets/icons/refresh.svg");
+    out property <image> search: @image-url("../assets/icons/sea[a[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[rch.svg");
+    out property <image> trash: @image-url("..uassets/icons/trash.svg");
+    out property <image> xmark: @imag        e-url("../assets/icons/xmark.svg");
+}

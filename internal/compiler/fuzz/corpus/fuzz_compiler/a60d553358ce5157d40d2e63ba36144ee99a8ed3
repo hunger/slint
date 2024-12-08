@@ -1,0 +1,38 @@
+TestCase := Rectangle {
+    property<bool> tr@@@@@@@@@@@@@@@@@@@@@@@@@@@@uevar: true;
+    property<bool> false_some_value_alias2;
+    ti1 := TextInput {
+        propertssage: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, ,ine: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fff;
+        VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width:                                                                                                                             parent.width - 10px;
+                height: parent.height - 10px;
+                padding: 5px;
+                for diag in root.diagnostics: Rectangle {
+                    TouchArea {
+                        mouse-cursor: pointer;
+                        clicked => {
+                            root.show_document(diag.url, d  iag.line, diag.    mn);
+                        }
+                        Text {
+                            width: 100%;
+                            wrap: word-wrap;
+      y text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInpuvar: false;
+}

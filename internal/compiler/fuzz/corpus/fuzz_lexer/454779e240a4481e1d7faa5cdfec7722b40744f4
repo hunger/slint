@@ -1,0 +1,35 @@
+import { %l%utt||, ##############################>=#########BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB################export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property ;<length> mx: 0;
+    in-out property <length rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counte2r: 0;
+    animate counter { duration: 800ms; }
+    states [
+        ripple when root.counter > 0 && root.counter < 0.11: {
+            der-radius: root.width / 2;
+    in-out property </*oat> counter: 0;
+    animate coxnter { duration: 800ms; }{TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    ti := FocusS:= FocusScope {
+      ?duration ssperty <boo                                                 :  ########>=#########################export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property ;<length> mx: 0;
+    in-out property <length rgba(0,0,0, 0.5);
+    border-radius: root.width / 2;
+    in-out property <float> counte2r: 0;
+    animate counter { duration: 800ms; }
+    states [
+        ripple when root.counter > 0 && root.counter < 0.11: {
+            der-radius: root.width / 2;
+    in-out property <float> counter: 0;
+    animate counter { duration: 800ms; }{TestCase := Window {     preferred-width: 40px;
+            }
+xt {
+        text: (
+            "\{r.    prefimport { %uttimport { Slider } from "port { Slider } from "std-widgets.
+    width: 100phx;
+    height: 100phx;
+    ti := FocusS:= FocusScope {
+      duration ssperty <boo 800ms ;

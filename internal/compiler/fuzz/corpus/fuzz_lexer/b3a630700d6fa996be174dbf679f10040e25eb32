@@ -1,0 +1,16 @@
+export componnent TestCase inhe its Wi Row {}
+        Tese := Window {
+    width: 200phx;
+    height: 500phx;
+    layout := GridLay    nts,Colors } from "../common.slout {
+  ;
+    backgr);
+      Rectangle { background: red; border-color: white; border-w                             VerticalLayout {
+            FillParent {
+          {
+        VerticalLayout {
+            FillParent {or: #d005; }
+  ; }
+    }
+}
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

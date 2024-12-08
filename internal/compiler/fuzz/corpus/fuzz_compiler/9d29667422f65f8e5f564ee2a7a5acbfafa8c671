@@ -1,0 +1,52 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00, #00f, y<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * heimn [#f00, #00f, #0a0]: Rectangl     e := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * heimn [#f00, #00f, #0a0]: Rectangl        e {
+        y: indexalternate-backgrou * height;
+        width: parent.width;
+        height: 100phx;
+     => {
+                        value += index;
+                            }
+                }
+            }
+           e {
+        y: indexalternate-backgrou *         height;
+        width: parent.width;
+        height: 100phx;
+     => {
+                        value += in#0a0]: Rectangle {
+        y: index * heimn [#f00, #00f, #0a0]: Rectangl     e := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectangle {
+        y: index * heimn [#f00, #00f, #0a0]: Rectangl        e {
+        y: indexalternate-backgrou * height;
+        width: parent.width;
+        height: 100phx;
+     => {
+                        value += index;
+                            }
+                }
+            }
+           e {
+        y: indexalternate-backgrou *         height;
+        width: parent.width;
+        height: 100phx;
+     => {
+                        value += index;
+                            }
+                }
+            }
+        }
+    }
+}

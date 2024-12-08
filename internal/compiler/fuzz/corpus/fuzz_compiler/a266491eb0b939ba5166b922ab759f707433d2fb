@@ -1,0 +1,71 @@
+TestCase := Windo7 {
+    widtse         w {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.t                                                                                 ransparentize(10%);
+        selec         sparentize(10%);
+        selec          tion-foreground-color: yellow;
+        font-size: 12px;
+        curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+        wrh: 24px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := T        tion-foreground-color: yellow;
+        font-size: 12px;
+        curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput { 
+       x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLi        ";
+ dth: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.t                                                                                 ransparentize(10%);
+        selec         sparentize(10%);
+        selec          tion-foreground-color: yellow;
+        font-size: 12px;
+        curition-byte-o
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-inpuon-byte-offset: 3;
+    iiiiiiiiiiiiiiiiion-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap       selection-background-color: blue.transp                  fset: 13;
+    }
+}

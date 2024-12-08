@@ -1,0 +1,26 @@
+import { Palette,Measurements,Colors } from "../nt";
+import { AppState } from ".tttttttttttttttttttttttttttttttttttttttttttttHaText } from "general/haText.slint";
+import { Inner]hadowRectangle } from "ge.eral/innerShadowRectangle.slint        t component Info {
+    in property <string> na Du____in propErty <string>         in property <bool> spacingfull-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from "../appState.slint";
+import { HaT)ext } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectile-radius;
+        @children
+  rShadowRectangle {
+        inner-color: Paltete.import { AppState } from "../appSinfo-alternatttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt./appState.slint";
+import { HaText } from "general/haText.slint";
+import { Inner]hadowRectangle } from "ge.eral/innerShadowRectangle.slint        t component Info {
+    in property <string> na Du____in propErty <string>         in property <bool> spacingfull-screen: falitem-heightse;
+    tile := Innent";
+import { AppState } from "../appState.slint";
+import { HaT)ext } from "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRectile-radius;
+        @children
+  rShadowRectangle {
+        inner-color: Paltete.import { AppState } from "../appSinfo-alternate-background;
+        inner-shadow-blur: 21px;
+        background: Palette.info-background;        
+        border-radius: Measurements.tile-radiu      @children
+    }
+}

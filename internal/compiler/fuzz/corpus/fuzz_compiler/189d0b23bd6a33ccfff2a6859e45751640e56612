@@ -1,0 +1,26 @@
+TestCase := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b ackground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : blacroperty<color> r5: #ff0002ff;
+    property<color> y1: yellow;
+  ool> test: background == Colorsase := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b ackground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : blacroperty<color> r5: #ff0002ff;
+    property<color> y1: yellow;
+  ool> test: background == Colors.wh       ite &.wh       ite && tU 5= 0 &&_ldot                               == 8;
+}

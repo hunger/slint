@@ -1,0 +1,26 @@
+import { Slider } from "std-widgets.slint";
+export component TestCase inherits  indow {
+            4phx;
+    height: 64phx;
+    background: darkgray;
+    Vertica                                                                            @image-url("../../ ../../../logo/slint-logo-full-   .png"-;
+            Text { text: parent.source.width + "x" + parent.source.height; font-size: 8px; x: al Icons {
+    out property <image> 0rrow-up: @image-/*l<=assets/arrow-up.svg");
+    out property <image> arr;ow-l\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\\\\\\\\\\\\\\ \\\\\\\\\\\eft: @image-url        ("assets/arrow-lefe!!:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    out        reeturn 41;
+        }
+xp arrow-circle-o-lefort global Icons {
+    out property <image> arrow-up: @image-url<=assets/arrow-up.svg");
+    out property <image> arrow-l\\\\\\\\\\\\\\\\\\out property <image> arrow-l\\\\\\\\r;ow-l\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ \\\\\\\\\\\\\\\ \\\\\\\\\\\eft: @image-url        ("assets/arrow-lefe!!:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    out        reeturn 41;
+        }
+xp arrow-circle-o-lefort global Icons {
+    out property <image> arrow-up: @image-url<=assets/arrow-up.svg");
+    out property <image> arrow-l\\\\\\\\\\\\\\\\\\out property <image> arrow-l\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\T\\\\\\\\\\\\\\\\\\\\\\$## eft: @image-url("assets/arrow-lefe!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    out        reetut: @image-url         "          rty <im==                         ===============42;
+        }
+xpircle-o-left.svg");
+    out property <im========================age> globe: @imag prope0; y: 0; color: #321a;}
+        }
+                                                 }
+}

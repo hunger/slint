@@ -1,0 +1,48 @@
+import { ListView  } from "std-widg        t";
+TestCase := Window {
+    width: 800px;
+    height: 540px;
+    pr       poperty <string> vound:!@linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                                  }
+            TouchArea { clicked => { value = data.text; }      8                               height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                }
+            }
+      800px;
+    height: 540px;
+    pr       poperty <string> value;
+    listvie delegate := Re tangle {
+            backgroundayout {
+                text_Name := Text {
+                                  }
+            TouchArea { clicked => { value = data.text; }      8                               height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                }
+            }
+      800px;
+    height: 540px;
+    pr       poperty <string> value;
+    listvie delegate := Re tangle {
+            background:!@linear-gradient(90deg, data.bg,data.bg.br      background:!@linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+:!@linear-gradient(90deg, data.bg,data.bg.br      background:!@linear-gradient(90deg, data.bg,data.bg.brighter(0.5));
+            HorizontalLayout {
+                text_Name := Text {
+                                  }
+            TouchArea { clicked => { value = data.text; }                                      height: 100px;
+                    text: data.text;
+                    color: data.color;
+                    font_size: 20px ;
+                }
+            }
+             TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

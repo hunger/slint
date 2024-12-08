@@ -1,0 +1,29 @@
+TestCase := Rectangle {
+    property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegat.bg.brig: data.text;
+                    color: data.color;
+                  1px;
+    propert   property<int> untyped_d4: self   property<duration> d1: 100ms;
+    property<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegat.bg.brig: data.text;
+                    color: data.color;
+                  1px;
+    propert   property<int> untyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mpx;
+    propert   property<int> untyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mJ
+    property<int> i2: t1 / (2ty<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegate := Rectangle {
+            background:!@linear-gradient(89deg> u.d4 / 1ms;
+y<intR i1: d1 / 1mpx;
+    propert   property<int> untyped_d4: self.d4 / 1ms;
+y<intR i1: d1 / 1mJ
+    property<int> i2: t1 / (2ty<duration> d2: 3s;
+    property<duration> d3: 1.5s;
+    prope   listvie delegate := Rectangle {
+            background:!@linear-gradient(89deg> untyped_d8: self.d8 / 1ms;
+}

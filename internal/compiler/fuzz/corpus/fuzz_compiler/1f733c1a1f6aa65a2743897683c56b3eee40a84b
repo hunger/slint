@@ -1,0 +1,57 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInwidtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        wh   B                                         put {
+        x: 0;
+        width                 rd-focus: i-texti-nput;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i--ettxinput := Teidth   B                                         put {
+        x: 0;
+        width                 rd-focus: i-texti-nput;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i--ettxinput := TextInput {
+                                                                             : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+   !height: 64px;
+  `Yforwarndow {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width   B                                                                                    : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+   !height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        offset: 16;
+        anchor-position-byte-offset  13;
+    }
+}

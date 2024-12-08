@@ -1,0 +1,42 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x:) root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+  %export component Texport component RipplCircle inherits Rectangle {
+    in-oliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+  %export component Texport component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <lengtestCase {
+    in property <float> value: 42.0;
+          operty <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s1: value.clamp(10. property <int> max: 42;
+        property <int> xx: Mathac.lh> my: 0;
+    in-out pmp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms.roperty <float> fwidth: 0;
+    inclut property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <lengtestCase {
+    in property <float> value: 42.0;
+          operty <float> t1: clamp(value, 10.0, 53.0);
+    out property <float> t2: clamp(value, 43.0, 53.0);
+    out property <float> t3: clamp(value, 10.0, 41.0);
+    out property <float> s1: value.clamp(10. property <int> max: 42;
+        property <int> xx: Mathac.lh> my: 0;
+    in-out pmp(5, 2, 3) + max;
+    }
+    out property <duration> dur: 45ms.roperty <float> fwidth: 0;
+    inclamp(0, -out pro50ms);
+    perty <float>

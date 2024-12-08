@@ -1,0 +1,69 @@
+TestCase := Window {
+    widtse := Window {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+                                       x: 0;
+        width   B                                                                  rejected                  : 50%;
+        y: 0;
+        text: = TextInput {
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+     dth                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+                                       x: 0;
+        width   B                                                                  rejected                  : 50%;
+        y: 0;
+        text: = TextInput {
+        x: 0;
+        width                 rd-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+     :  width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+ext-input;
+    i-text-input := TextInput {
+                                       x: 0;
+        width   B                                                                  rejected                  : 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh:"VAVAv\nLine\nWAWA";
+        wrh: 64px;
+WA";
+        wrh:"VAVAv\nLine\nWAWA";
+        wrh: 64px;
+   !height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        offset: 16;
+        anchor-position-byte-offset: 13;
+    }
+}

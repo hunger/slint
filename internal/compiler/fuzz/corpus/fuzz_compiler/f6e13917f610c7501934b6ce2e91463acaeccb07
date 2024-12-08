@@ -1,0 +1,39 @@
+TestCase := Rectangle {
+    property<{a: string, b: int}> foo: {a : "444", b: 12 };
+    property<{a: string, b: int}> obj_conversion: :b{  12, a : 444, c: "nothing" };
+   rrrrrrrrrrrconversion2: { a: "hello" };
+    property<{a: string, b: int}> obj_c {
+    in property <Default> def: Defau       ;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint   out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SOption { n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+export struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+expo   in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.valuault> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; } in property <length> spacing;
+    in propert PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+expo   in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.valuault> def: Defau          out property <BoxLayoutData> blt: { layout: 45phx };
+    slint := SharedString {}
+    Button { text: "hello" + 42; }
+    Combo  x {}
+    in-out property <int> Err;
+    animate Err { duration: 44s; }
+    out property <bool> test: slint.slint.value == "foobar";
+.pressed-position.x + root.itemWidth / 2 {
+  turn_object/).aa.bb == 42 && obj_binop_merge;
+}

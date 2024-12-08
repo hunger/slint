@@ -1,0 +1,44 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "x        x        y <string> t5: @tr("Untranslated         ;
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"Comp := Rectangle {
+    Rectangle {
+        width: 5%;
+        height: 5%;
+        background: white;
+        opacity: 1;
+    }
+}
+Te, int_value + 1);
+    out prstCase := Window {
+    width: 800px;
+    height: 600px;
+    background: green;
+    Rectangl{e 
+ oim prt { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+erty <string> t1: @tr("Hell Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("there is one file in my {}" | "there are {n} files in my {}" % xx, yy); }
+    function make_plural2(xx: int) -> string { return @tr("Ctx=>" => "xx{n}xx" ty <string> t5: @tr("Untranslated string");
+    property <string> c1: @tr("Context" => "xx{0}xx", @tr("Cdo-chC" => "aa"Comp :=                                                                                                       Rectangle {
+    Rectangle {
+        width: 5%;
+        height: 5%;
+        background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    hei       tpx;
+    background: green;
+    Rectangle {
+  import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+       background:    backgwidth       background:    backgwidth: 200px;

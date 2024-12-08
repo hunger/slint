@@ -1,0 +1,53 @@
+TestCase := rectangle {
+    property<int> value;
+    property<int> result : 3;
+            action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }
+    }
+    callback xxx;
+    xxx => {
+        if fal:se         action;
+    action => {
+        if value == 5 {
+            result += 1;
+            result += 1;
+        }
+        if value != 8 {
+        } else {
+            result += 33;
+        }
+    }
+    callback xxx;
+    xxx => {
+        if fal:se {
+            action();
+        }
+        if true {
+       {
+            action();
+        }
+        if true {
+                   -=1;
+        } else {
+            action();
+        }
+    }
+    callback elseif(int) -> int;
+    elsei?(v) => {
+        if v == 1 {
+            41
+        } else if v == 2 {
+            42
+        } else {
+            43
+        }
+    }
+}

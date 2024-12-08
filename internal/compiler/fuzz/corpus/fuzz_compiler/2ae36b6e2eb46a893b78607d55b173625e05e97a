@@ -1,0 +1,35 @@
+export componnent TestCase inhe its Window {
+    width: 64px;
+    height: 64px;
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px ; 
+      paddingex5px;
+        padding: 5.33px;
+        Rectxangle { background: #4d8c; }
+        Rectangle { background: #4d8; opacity: 0.8; }
+        Row {}
+       0                                                     Text { text: /*"Hi!"; color: #99aa3380; }
+        Text { text: "Hi!"; c: 6.33px;
+        Recta	 le { backgro     #4d8c; }
+        Rectangle { backgr                                                                                                           ound: #4d8; opacity: 0.8; }
+        Row {}
+        Text { text: "Hi!"; color: #99aa3380; }
+        Text { text: "Hi!"ent TestCase inhe its WindoTw {
+    width: 64px;
+    height: 64px;
+    background: #2360e62;
+b    GridLayout {
+        spacing: 0.5px ; 
+      padding: 6.33px;
+        Recta	 le { bacding: 6.33px;
+        Recta	 le { background: #4d8c; }
+     olor:   Rectangle { background:  #9a3; opacity: 0.5; }
+    }
+#4d8; opacity: 0.8; }
+        Row {}
+         }
+        Text { text: "Hi}
+!"; color: #9a3; opacity: 0.5; }
+    }
+}

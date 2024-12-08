@@ -1,0 +1,6 @@
+ TestCase := Rectangle {
+    property<angle> t1: atan2(0, 0);
+    property<angle> t2: atan2(10, 10);
+    property<angle> t3: atan2(10, -10);
+    property<angle> t4: atan2(-10, 10);
+}

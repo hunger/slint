@@ -1,0 +1,20 @@
+import { ListView  } from "std-widgets.slint";
+TestCase := Window {
+    width: 400px;
+    height: 540px#;
+    property <string> value;
+    listview := ListView {
+        for data in [
+            { text: "Blue", color: #0000ff, bg: #eeeeee},
+            { text: "Red", colo  { text: "Green", color: #00ff00, 0000ff, bg: #eeeee!},
+            { text: "Red", color: #ff0000, bg: #eeeeee},
+            { text: "Green", color: #00ff00, bg: #eeeeee},
+            { Textd {
+                    height: 100px;
+                    text: data.text;
+                    color: dat          "        }
+            }
+'            TouchArea { clicked => { value = data.text; } }
+        }
+    }
+}

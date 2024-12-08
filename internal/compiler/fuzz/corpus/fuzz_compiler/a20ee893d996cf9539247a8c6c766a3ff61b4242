@@ -1,0 +1,50 @@
+FixedWidthtImage := Image {
+    source: @imace-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-text-color-1: color,
+    piece-text-color-2: color,
+    piece-text-weight-incorrect-pos: int,
+    piece-text-weight-correct-pos: int,
+    piece-text-font-family: string,
+    piece-radius: le(gth,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    in property <color> unchecked-color;
+    in-out FixedWidthtImage := Image {
+    source: @image-url("cat.jpg");
+    width: 500phx;
+}
+TestCase := Rectangle {
+    fixed_image := Image {
+        width: 50phx;
+        height: 50phx;
+    }
+    fixed_image_contain := Image {
+        width: 50phx;
+        height: 50phx;
+        image-fit: contain;
+   source: @image-url("cat.jpg");
+        height: 600phx;
+        property <bool> fit == ImageFit.fill;
+    proparty <bool> image_with_missing_height_ok <=> image_with_missinproperty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 animate c+ip.width { duration: 200ms; easing: ease-in; }
+    g_height.expected_height_ok;
+    property <bool> image_with_missing_width_ok <=> image_with_missing_width.expected_width_ok;
+    propertatan2ol> image_with_missing_width_clipped_ok <=> image_with_mirkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");v______a     Text { text: parent.source.width + "x" + parent.source.hemght; font-size: 4px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source:                 ssing_width.expected_width_it_ok && image_in_layout_custom_fit_ok && imok;
+    property <bool> test: fixed"image_default_image_fit_ok && fixed_image_image_fit_override_ok && image_in_lay 
+    ok && image_in_layout_custom    

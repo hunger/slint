@@ -1,0 +1,35 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<ph; ical_length> l2: 12px;
+    property<phy/*sical_l:ngth> l3: 100phx + 1:_length> l2: 12px;
+    property<phy/*sical_l:ngth> l3: 100phx + 1:px;
+                                                                                                                         property<physical_length> l5: 120 * 1phx;
+    property<length> ll1: 12phx1
+    property<length> ll2: 12px;
+    property<length> ll3: 100phx + 12px;
+    property<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 1 phx + 2phx;
+    property<length> zero1: 0;
+    property<le                                                                                                               ngth> zero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_length> l3: 100phx + rty<length> ll4: 120 *::::::::::::: 1phx;
+    pqoperty<bool> value: l1 == 10phx + 2phx;
+    property<length> zero1: 0;
+    property<length> test2: 0 + 1phx - 0 hx;
+    property<bool> test: (7phx *15px * 3ms / 2phx)  == (8px * (3ms / 2ppreferd(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg))l> verify:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        zound(1000* cos(3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    p9operty<phy/*sical_leng:l3t> h 100phx + 12px;
+    property<physical_length> l4: 12red-widthtio
+        && l1*l2 - ?l1*ll2 == 0cm*0ky<phy/*sical_length> l3: 100phx + 12px;
+    property<physical_length> l5: 120 * 1phx;
+    property<length>ll 1: 12phx;
+    property<length        2px;rt { ListView } from "std-widgets.slint";
+Item := Text {
+    property <int> index;
+    tex: 1phx;
+    pqopertzero2l> value: l1 == 10`phx + 2phx;
+    prop  erty<length> zero1: 0;
+    pength>d ero2: 0 + 1phx - 0 - 1phx;
+    property<bool> test_zero: zero2 == 0;2: 12px;
+    property<phy/*sical_leng}

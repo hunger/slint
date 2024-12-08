@@ -1,0 +1,24 @@
+export component TestCase  {
+    in-out property <bool> toggle: { return false; }
+    in-out property <int> value: {
+        if (toggle) {
+            return 42;
+        }
+        return 100;
+    }
+    in-out property <flout property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkboxBrect.border-width: root.width;
+             in {
+                 animate clip.width { duration: 100ms; easing: ease-in; }
+                 animate checkbox-rect.border-width { duration: 100ms; easing: ease-oor: root.checked-color;
+             checkbox-rect.border-width: root.width;
+             in {
+                 animate clip.width { duration: 200ms; easing: ease-in; }
+    ty <string> issue_5430: issue_5430_const_with_return ? "true" : "false";
+    out property<bool> test: { return value2 == value && issue_5430 == "true"; return false; }
+}

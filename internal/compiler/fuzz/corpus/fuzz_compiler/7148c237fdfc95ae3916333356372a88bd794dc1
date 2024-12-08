@@ -1,0 +1,53 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    prmperty<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #fn0; forward-focus: i-text-input;
+    i-text-input := TextInput {ion-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(event__BA_ u_           if (event.text == Key.UpArro w) {
+                root.mo  property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;
+    property<color> b4: #00ff;
+    prmperty<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #fn0; forward-focus: i-text-input;
+    i-text-input := TextInput {ion-regular;
+    forward-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(event__BA_ u_           if (event.text == Key.UpArro w) {
+                root.move-focus-up();
+                return accept;
+          
+        0 
+x:;        width   B                         std-widgets.slint           y: 0;
+        textolor> c2: rgb(100, 23, 42);
+    property<colo 	export component Ripp {}
+export erits Rectangle {
+    in-out !=property <yAnimation {           pre erred-wext {
+        text: (
+            "\{r                   "\{rexport component Ripp {}
+e        xport erits Rectangle {
+    in-out !=property <%yAnimation {           pre erred-wext {
+        text: (
+font-metr   "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /       "\{r.width / 1 " p,x+}
+        text||||||||||||||||||||||||||||||||||||||||||||: (
+     Uu_g 1px}, "1.to-hsv().value == new_green.to-hsv().value
+        &

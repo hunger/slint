@@ -1,0 +1,4 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_errorimport { %utt||, ##############################>=####################

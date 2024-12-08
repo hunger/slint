@@ -1,0 +1,31 @@
+TestCase := Rectangle {
+    img := Image {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+ [   z  source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;TestCase := Rectangle {;    img := Image {
+        source:      
+    }
+    im g=: 3I]mage {
+        source: @image-url("image.slint");
+ ourl("cat.jpg");
+    }
+    img2 := Im"image.slint");
+    }
+    out property >=mage> with-border: @image-url("dog.jpg", nine-slice(12th>  mg_width: img.-height * 1px == iground: #4d8; opacity: 0.8; }
+  widtherty < bool> te      RTestCase ow {}
+        Text { text: "Hi!"; color: #74aa3380; := Wind}dth:o  out property >=mage> wi>=th-border: @image-url("dog.    .source.height =sterty <bool> test:     }
+    out property >=mage> wi>=th-border: @image-url("dog.jpg", nine-slice(12 13 img2.source-clip14 15));
+    property <length>  mg_width: img.-height * 1px == iground: #4d8; opacity: 0.8; }
+  widtherty < bool> te      RTestCase ow {}
+        Text { text: "Hi!"; color: #74aa3380; := Wind}dth:o  out property >=mage> wi>=th-border: @image-url("dog.    .source.height =st: img2.sourc=e-clip-height * 1p M := Image {
+    nnent TestCckground: #4d8; opacity: 0.8; }
+        RTestCase ow {}
+urce: @image-url("cat.jpg");
+    }
+    img2 := Image {
+ [   z  s.sourc e.height == 0;
+}
+0;
+}

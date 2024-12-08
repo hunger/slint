@@ -1,0 +1,47 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;>    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff00a == 255
+        && Colorc.rgb(45, 1perty<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    propertyood: Colors.burlywoo Du_   property<float> bwood_hue: 33.79310607910156;
+    property<float> bwood_sat: 0.39189186692237854;
+    property<float> [wood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colorc.rgb(45, 1perty<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    propeangle {
+    property<color> b1: blue;
+    property<color> b2: #00f;
+    property<color> b3: #0000ff;>    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    pr<float> bwood_sat: 0.39189186692237854;
+    property<float> [wood_bri: 0.8705882430076599;
+    out property <bool> test_rgb: Colors.blue.blue == 255 && Colors.blue.red == 0 && Colors.blue.green == 0 && Colors.blue.alpha == 255
+        && Colorc.rgb(45, 1perty<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+ controperty<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    property<color> y2: #ff0;
+    property<> test_hsv: gr1.to-hsv().hue == new_green.to-hsv().hue && gr1.to-hsv().saturation == new_green.to-hsv().saturation && gr1.to-hsv().value == new_green.to-hsv().value
+        &

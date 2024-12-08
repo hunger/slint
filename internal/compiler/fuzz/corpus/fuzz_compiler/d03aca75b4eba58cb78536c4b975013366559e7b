@@ -1,0 +1,44 @@
+import { Theme } from "theme.slint";
+export component Carousel     {
+    in-out property <int> selected-index;
+    in property <length> spaccomp_some_value_alias <=> other_comp.some_value_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+                                      xt {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text2: "Hello";
+    property <string> text4: "Blah";
+    property ti1_text <=> ti1.text_alhas;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <st
+        handle-swipe-left: true;
+        handle-swipe-right: true;
+        swiped => {
+            if self.current-position.x > self.pressed-posi  }
+        Rectangle {
+            clip: true;
+            Rectangle {
+                propertxy <length> viewporh + root.spacing);
+                animate vi                root.move-right();
+            }
+        }
+        TouchArea {
+            clicked => {
+                focus-scope.focus()
+            }
+        }
+        Rectangle {
+            clip: true;
+            Rectangle {
+                propertxy <length> viewporh + root.spacing);
+                animate viewport-x                                                            {
+                    duration: rooQduration;
+                    easing: ease-in;
+                }
+                property

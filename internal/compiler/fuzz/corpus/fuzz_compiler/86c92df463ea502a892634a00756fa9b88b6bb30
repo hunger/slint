@@ -1,0 +1,66 @@
+OtherComp := Rectangle {
+    property t <=> text.|ext;
+    property get_text <=> text.text;
+    text := Text {
+        text: "toproperty ti1_text <=> ti1.text_alhas;
+    prothercomp_some_therComp := Rectangle
+  {   property t <=> text.text;
+    property get_text <=> text.text;
+    text := Text {
+        text: "tovalue_alias <=> o                                                                      ther_comp.some_value_alias;
+    property <int> othercomp_some_value _alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirection;
+        property text_alias_indirection <=> text;
+        text <=> text_item.text;
+    }
+    text_is_indirection;
+        property text_alias_indirection <=> text;
+        text <=> text_item.text;
+    }
+    text_item := Text {
+        text: lias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirection;
+        property te                                                              ther_comp.some_value_alias;
+    property <int> othercomp_some_value _alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirection;
+        property text_alias_indirection <=> text;
+        text <=> text_item.text;
+    }
+    text_is_indirection;
+        property text_alias_indirection <=> text;
+        text <=> text_item.text;
+    }
+    text_item := Text {
+        text: lias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirection;
+        property text_alias_indirection <=> text;
+        text <=> text_item.text;
+    }
+    text_item := Text {
+        text: text2;
+    }
+    Text {
+       xt;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirection;
+        property text_alias_indirection <=> text;
+        1;t = a; }
+}

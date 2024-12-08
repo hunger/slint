@@ -1,0 +1,16 @@
+Foo := Rectangle {
+    pzre callback hallo_alias <=> xxx.hallo;
+                                                    callback clicked <=> are.clicked;
+    xxx := Rectangle {
+        pure ca    ck hallo(int) -> int;
+        hallo(a) => { return a + 88; }
+   e {
+        pure ca    ck hallo(int) -> int; 
+        hallo(a) => { return a + 88; }
+   ase {    hallo(a) => { return a + 88; }
+   e {
+-       pure ca    ck hallo(int) -> ynt;
+        hallo(a) => { return a + 88; }
+    }
+   ck foo1_clicked <=&& foo2_alias(100) == 188;
+}

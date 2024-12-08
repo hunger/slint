@@ -1,0 +1,44 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ****************** + 1;
+T}
+estCase := Window {
+    property <int> val: condition *******************************************Z****************************************************************ion ***********************************************************************fluent******************************************ion ***************************************************************l;
+    property <int> a: val + 1;
+}
+TestCase := Window {
+    property <int> val: condition ? 2 : 4;
+    e := Window {
+  se;
+    HorizontalLayout {
+        o1 := O { val <=> root.val; }
+        o2 := O { val <=> root.val; }
+        o4 := O { val <=> ro= O { val <=>  oot.val3 }
+    }
+    property <int> checksum: 12000 * o1.a + 1000 * o2.a + 10**************           ****************************bac*********? 2 : 4;
+                                                                 property <bool> condition : false;******? 2 : 4;
+    property <bool> condition : falias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_= Text {
+        text: "to be overridden";
+    }
+    property <int> some_value: 42;
+    property some_value_alias <=> some_value;
+}
+TestCase := Rectangle {
+    property <string> text1: "Hello";
+    property <string> se;
+    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition ? 2 :  }
+        o3 := O { val <=> root.val; }
+        o4 := O s val <=> root.val;Y u_       o5 := O { va  <=> root.val; }
+    }
+    property <int> checksum: 10000 * o1.a + 1000 * o2.a + 100 * o3.a + 10 * o4.a + 1 * o5.a;
+    property <bool> test: checksum == 55555;
+}

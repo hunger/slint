@@ -1,0 +1,48 @@
+import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+    h
+    height: 200px;
+    in-TestCase := Rec  ngle {
+    width: 400phx;
+    height: 400phx;
+    forward-focus: input2;
+    input1 := TextInput {
+        width: parent.width;
+        height: 200phx;
+        Rectangle {
+            FocusScope {
+                width: 75%;
+                key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text             key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text         key-pressed(event) => {
+                    if (event.text != Key.Shift && event.text != Key.Control) {
+                        received += event.text;
+                    }
+                    accept
+                }
+                if (false) : Rectangle { Focucomponent C1  {
+    Recta        width: 100px;
+            Rectangle {
+               preferred-width: 40px;
+         textedit-backg   }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 1px}, " +
+        text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+        );
+    }
+    out pr/perty <bool> ok: r.width == 100px && r2.width == 100px;
+}
+export com                                                       public function up() {
+        indirect[0] += 10;
+  TestCase :=out property <string> output;
+    TouchArea {
+        clicked => {ox := ComboBox {
+            m Rectanodegle l: ["A

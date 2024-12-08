@@ -1,0 +1,6 @@
+export TestCase := Window {
+    r := Rectangle {
+       background: blue;
+    }
+    property <bool> test: r.border-radius == 0;
+}

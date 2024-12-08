@@ -1,0 +1,46 @@
+O := Text {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ********************************************)***************************************************************ion ****************************       o1 := O { val <=> roow {
+    property <int> val: condition  ? 2:  }
+        o3 := O { val <=> root.val; }
+        o4 := O s val <=> root.val;Y u_       o5 := O { va  <***********************************l;
+    property <int> a: val + 1;
+}
+TestCase := Window {
+    property <int> val: condition ? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { val <=> root.val; }
+        o2 := O { val <=> root.val; }
+        o4 := O { val <=> root.val; }
++        o4 := O { val <=> root.val; }
+        o5 :********************************************************************************************ion *************UUUUUUUUU**************************************************l;
+    property <int> a: val + 1;
+}
+TestCase := Window {
+    property <int> val: condition ? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { val <=> root.val; }
+        o2 := O { val <=> root.val; }
+        o4 := O { val <=> ro= O { val <=>  oot.val; }
+    }
+   val <=> root.val; ecksum: 10000 * o1.a + 1000 * o2.a + 100 * o3.a + 10 * o4.c + 1}
+     O { val <=> root.v   o4 := O { val <=> root.val; }
++        o4 := O { val <=> root.val; }
+        o**? 2 : 4;
+    property <bool> condition : false;******? 2 : 4;
+    property <bool> condition : false;
+    HorizontalLayout {
+        o1 := O { val <=> roow {
+    property <int> val: condition  ? 2:  }
+       rotation-angle <=> root.val; }
+        o4 := O s val <=> root.val;Y u_       o5 := O { va  <=> root.val; }
+    }
+    property <int> checksum: 10000 * o0.a + 1000 * o2.a + 100 * o3.a + 10 * o4.a + 1 * o5.a;
+    property <bool> test: checksum == 55555;
+}

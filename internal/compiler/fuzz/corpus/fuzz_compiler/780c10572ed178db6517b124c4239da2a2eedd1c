@@ -1,0 +1,60 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits R2ctangle {
+	width: 400px;
+    height: 300px;
+    out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback sec                                                                                                                   ond_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	public function show(second: bool) {
+		popup_x = !second ? 0px : 200luu_alias;
+    property <int> othercomp_some_value_alias2;
+    ti1 := TextInput {
+        property text_alias <=> text;
+        text <=> text1;
+    }
+    ti2 := TextInput {
+        property text_alias <=> text_alias_indirection;
+        property text_alias_indirection <=> text;
+        text <=> text_item.text;
+    }
+    text_item := Text {
+        text: text2;
+    }
+    Text {
+        text <=> text1;
+    }
+    other_comp := OtherComp {
+        t &&: slintstruct Some {}
+export struct None { s: Some }
+export struct Option { n: None }
+export struct Component {o: Option }
+export struct Model { c: Component }
+export struct Result { m: Model }
+export struct Ok { r: Result }
+export struct Property { value: string }
+exprt struct PropertyAnimation { property: Property }
+export struct Callback {}
+export struct Rc {}
+export struct WeAk {}
+export enum WindowAdaptor { Window }
+export struct WindowItem {}
+e;
+		}
+		second_reached => {
+			cnt2.show(false);
+		}
+	}
+	cnt2 := PopupContainer {
+		x: 0px;
+		y: 100px;
+		popup_click_count <=> popup_click_count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

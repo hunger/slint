@@ -1,0 +1,11 @@
+export component Fo   := TouchAnt.text == "\n") && root.enter-pressed {
+                root.enter-pressed = false;
+                return accept;
+            }
+            reject
+        }
+    }
+    touch-area := TouchArea {
+        enabled: root.enabled;
+    }
+}

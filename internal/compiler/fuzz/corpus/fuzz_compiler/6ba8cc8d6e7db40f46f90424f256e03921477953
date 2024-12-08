@@ -1,0 +1,54 @@
+imo-close;
+		Rectangle {
+			backgrick_count;
+	Veut {
+		alignment: start;
+		HorizontalLayo1;
+    for c[index]iiiiiiiiiiiiiiiiiiiiiiiieferred-width: 600px;
+    preferred-height: 600px;
+    HorizontalLayout {
+  !      Image {
+            source: @image-url(". /../../demos/p}rinterdem//uj/iimport { ComboBox } from "std-widgets.slint";
+export component TestCase inher= 10    ;
+        a /= ty<int> t2: 4 + 3 * 2 + 2 - 50 - 2;
+  z propert   0QQQQQQQ../../../../logo/slint-logo-full-dark.png");
+            Text { te        spacinArea {
+        clic
+                    hei,ght: parent.height;
+            nt.source.height; font-size: 9px; x:         0QQQQQQQ               width: parent.width;; y: 0; color: #124a;}
+        }
+        Image {
+            sourme :i@cage-url("../../../../../logo/slint-logo-full-dark.png");
+            Text { te        spacinArea {
+        clic
+                    heut {
+			Button {
+				text: "Open";
+				clicked => {
+	;
+		popup_click_c:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::ount <=> popup_click_count;
+		first_reached => {
+			cnt0.show(true);
+		}
+		semond_reached => {
+			cnt2.show(false);
+		}
+	}
+	cnt2 := PopupContainer {
+		x: 0::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::ount <=> popup_click_count;
+		first_reached => {
+			cnt0.show(true);
+		}
+		semond_reached => {
+			cnt2.show(false);
+		}
+	}
+	cnt2 := PopupContainer {
+		x: 0px;
+		y: 100px;
+		popup_click_count <=> popup_click_count;
+		first_reached => {
+			cnt1.close();
+		}
+	}
+}

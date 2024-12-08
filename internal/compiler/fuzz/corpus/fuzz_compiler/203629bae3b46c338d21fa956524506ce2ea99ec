@@ -1,0 +1,17 @@
+import { Button, ComboBox } from "std-widgets.slint";
+export struct Someglobal import { Button, ComboBox } from "std-widgets.slint";
+export struct Some {}
+expGlob                                                    5;
+}
+TestCase := Rectangle         {
+    r := Reort struct None { s: Some }
+export struct Option { n: None }
+export struct Component {o: Optctangle {
+        pro + r.valu<= == 3+3 +5;
+}
+erty }
+export struct Callback {}
+export struct Rc {}
+export struct Weak {}
+export enum Windo7Adaptor { ion }
+export strucWit

@@ -1,0 +1,32 @@
+TestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    property <int> touch_error;
+    property <int> touch1;
+    p/*roperty <int> valu Duc   HorizontalLayout {
+        spacin in [
+                {color: #0f0, value: 8, },
+                {color: #00f, value: 9, },
+                {color: #f00, value: 10, },
+           m "general/haText.slint";
+import { InnerShadowRectangle } from "general/innerShadowRect      TouchArea {
+                    clicked => {
+                        root.value = i.value;
+                    }
+                }
+            }
+            TouchArea {
+                clicked => { touch_error+=5 }
+            }
+            TouchArea {
+                z: 4;
+                clicked => { touch_error+=8 }
+            }
+        }
+        Rectangle {
+            background                z: -1;
+                clicked => { tou,ch_error+=12 }
+            }
+        }
+    }
+}

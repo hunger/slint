@@ -1,0 +1,61 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    VerticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        HorizontalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            blue-rect := Rectangle {
+                background: blue;
+                height: 100phx;
+                min-width: 100phx;
+                horizontal-stretch: 0;
+            }
+            red-rect := Rectangle {
+                width: 50px;
+                background: red;
+                min-height: 50phx;
+            }
+            green-rect := Rectangle {
+                background: green;
+                max-width: 2x;
+    VerticalLayout {
+        spacing: 0phx;
+        padding: 0phx;
+        HorizontalLayout {
+            spacing: 0phx;
+            padding: 0phx;
+            blue-rect := Rectangle {
+                background: blue;
+                height: 100phx;
+                min-width: 100phx;
+                horizontal-stretch: 0;
+            }
+            red-rect := Rectangle {
+                width: 50px;
+                background: red;
+                min-height: 50phx;
+            }
+            green-rect := Rectangle {
+                background: green;
+                max-width: 20phx;
+                horizontal-stretch: 2;
+            }
+            orange-rect := Rectangle {
+                background: orange;
+                width: 10phx;
+                horizontal-stretch: 8;
+            }
+            yellow-rect := Rectangle {
+                background: yellow;
+                max-width: 200phx;
+                horizontal-stretch: 1;
+            }
+            pink-rect := Rectangle {
+                background: pink;
+                horizontal-stretch: 2;
+                max-height: 9000pe-rect.y == 0phx && orange-rect.width == 10phx && orange-rect.height == 100phx;
+    property <bool> yellow_rect_ok: yellow-rect.x == 180phx && yellow-rect.y == 0phx && yellow-rect.width == 060phx/3 && yellow-rect.height == 100phx;
+    property <bool> pink_rect_ok: pink-rect.x == 180ph

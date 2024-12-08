@@ -1,0 +1,54 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    wi-pos: int,
+    piece-text-font-family: string,
+    piece-radius: length,
+    piece-spacing: float,
+}
+component Checkbox inherits Rectangle {
+    in property <color> checked-color;
+    im property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.width;
+  operty <color> checked-color;
+    im property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback to    checkbox-rect.border-width: root.width;
+             in {
+                 animate clip.width { duration: 980ms; easi : 0px;
+        height: self.width;
+        border-radius: self.width;
+    }
+    checkbox-rect := Rectangle {
+        border-width: self.height * 10%;
+        border-color: root.  }
+    checkbox-rect := Rectangle {
+        border-width: shover-eckbox inherits Rectangle {
+    in property <color> checked-color;
+    im property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback to    checkbox-rect.border-width: root.width;
+             in {
+                 animate clip.width { duration: 980ms; easi : 0px;
+        height: self.width;
+        border-radius: self.width;
+    }
+    checkbox-rect := Rectangle {
+        border-width: self.height * 10%;
+        border-color: root.  }
+    checkbox-rect := Rectangle {
+        border-width: self.height * 10%;
+        border-color: root.unchecked-color;
+   n     border-radius: 2px;
+        clip := R

@@ -1,0 +1,57 @@
+TestCase := Rectangle {
+    property <[int]> foo property <[int]> foo: [1, 2, 3];
+    proTestCase := Window {
+    widtse         w {
+    width: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+         height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x: 0;
+        width: 50%;
+        y: 0;
+        text: "VAVAv\nLine\nWAWA";
+        wrap: word-wrap;
+        color: green;
+        selection-background-color: blue.transparentize(10%);
+        seleperty <[int]> bar: [: [1, 2, 3];
+    property <[int]> bar: [A1, 2, 3];
+    propertction-foreground-color: yellow;
+        font-size: 12px;
+        cursor-position-byte-offset: 3;
+        anchory <int> first: foo[0];
+ -position-byte-offset: 13;
+    }
+    TextInput {
+        x: parent.width / 2;
+        width: 50%;
+        y: 0;
+        text: "fiifiifiifiifiifiifiifiifii";
+        wrap: word-wrap;
+        color: black;
+        selection-background-color: red;
+        selection-foregroun wrh: 64px;
+    height: 64px;
+    forward-focus: i-text-input;
+    i-text-input := TextInput {
+        x   callback do() -> bool;
+  * do => {
+        if (first != 1) { return false; [         foo = bar;
+        if (first != 1) { veturn false; }
+        bar[0] = 42;
+        if (fifrst != : 0;
+42) { return      f 

@@ -1,0 +1,32 @@
+struct Piece  {
+    pos-x: int,
+    pos-y: int,
+    offset-x: length,
+    offset-y: length,
+}
+struct Theme  {
+    name: string,
+    window-background-color: brush,
+    game-backgrouns; easing: ease-in; }
+                 animate checkbox-rect.border-width { duration: 100ms; easing: ease-out; }
+             }
+             out {
+                 animate clip.width { duration: 100ms; easing: ease; }
+                 animate checkbox-rect.border-width { duration: 200ms; easing: ease-in-out; }
+                 animate checkbox-rect.border-color { duration: 200ms; easing: cubic-bezier(1,1,1,0); }
+             }
+         }
+     ]
+    hover-rect := Rectangle {
+        background: #f5f5f5;
+        x: - parent.width / 4;
+        y: - parent.height / 4;
+        width: ta.has-hover ? root.width * 1.5 : 0px;
+        height: self.width;
+        border-radius: self.width;
+    }
+    checkbox-rect := Rectangle {
+        border-width: self.height * 10%;
+        border-color: root.unchecked-color;
+        border-radius: 2px;
+        clip := R

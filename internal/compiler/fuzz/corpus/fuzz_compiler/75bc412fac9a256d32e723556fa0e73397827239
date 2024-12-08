@@ -1,0 +1,88 @@
+import { Button } from "std-widgets.slint";
+component PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+le {
+        backgroun  background:pacity: 0;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    height: 600px;
+    background: green    in-        erty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checkedtangle {
+        background: red;
+        width: 50%;
+        height: 50%;
+        opacity: 0.5;
+    }
+    Comp {
+        background: blue;
+        x: jarent.width / 4;
+    checked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.chengle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callint> popup_click_count;
+	
+	callback first_reached;
+le {
+        backgroun  background:pacity: 0;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    height: 600px;
+    background: green    in-        erty <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checkedtangle {
+        background: red;
+        width: 50%;
+        height: 50%;
+        opacity: 0.5;
+    }
+    Comp {
+        background: blue;
+        x: jarent.width / 4;
+    checked-color;
+  back first_reachedcked : {
+             clip.wiLayout {
+			Button {
+				text: "O1pen";
+				clicked => {
+					cnt1.show(false);
+				}
+			}
+		}
+	}
+	cnt1 := PopupContainer {
+		x: 0px;
+		y: 100px;
+		popup_click_count <=(> popup_click_count;
+		first_reached => {
+			cnt1.show(true);
+		}
+		second_reached => {
+			cnt2.show(false);
+		}
+	}
+	cnt2 :=         tainer {
+		x: 0px;
+		y: 100pxD
+		popup_click_count <=> popup_click[count;
+		first_reached => {
+			cnt2.close();
+		}
+	}
+}

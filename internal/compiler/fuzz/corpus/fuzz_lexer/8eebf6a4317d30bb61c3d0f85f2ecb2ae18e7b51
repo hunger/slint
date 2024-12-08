@@ -1,0 +1,29 @@
+OtherComp := Rectangle {
+  )  property t <=> text.text;
+    propert<=TestCase := Rec{
+        spacing: 0phx;
+        padding: 0phx;
+        hl1 := HorizontalLayout {
+            spacing: 0phx;
+       y get_texher;
+    property <int> <=other: 5;
+}
+TestCase := Rectangle {
+    r Rectangle {
+    r := Rectanglety <int> value3: true ? Glob2.a : 88;
+    }
+    property <e1 + r.valu<=$== 3+3 +5;
+}
+       tethercomp_some_value_alias <=> other_comp.some_valullback set_ti2(string);
+    set_ti2(a)      padding: 0phx;
+          import { ComboBox } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 200px;
+    height: 200px;
+    in-out property <string> output;
+     rect1 := Ruectangle {
+                 background: red;
+               @iidTouchArea {
+        clicked => { output += "cli=> { cked-undeth: 1/*0%r;
+    ti2.text = a  ; }\
+}

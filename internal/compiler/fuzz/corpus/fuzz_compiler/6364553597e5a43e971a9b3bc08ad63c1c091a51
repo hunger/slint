@@ -1,0 +1,46 @@
+TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := I        mage {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := I        ma   {
+        source: @image-url("cat.jpg");
+    }
+    img1 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clipRectangle {
+    img := I        mage {
+        source: @image-url("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: TestCase := Rectangle {
+    img := Image {
+        source: @image-urestCase := Rectangle {
+    img := I        ma   {
+        source: @image-url("cat.jpg");
+    }
+    img1 := Image {
+        source: @im/*age-url("cat.jpg");
+        source-clip-x: 20;
+    }
+    img3 := Image {
+        source: @image-url("image.slint");
+    }
+    out property <image> with-border: @image-url("dog.jpg", nine-slice(12 13 14 15));
+    property <length> img_width: img.width;
+    property <length> img_.ce-clip-width * 1px == img2.width &&
+         img2.width/1px == img2.source.width - 20 && img3.source.width == 0l       .source.height == 0;l("cat.jpg");
+    }
+    img2 := Image {
+        source: @im/*age-url("cat.jpg")perty<brush> snow*white: Colors.cornsilkout property <image> arrow-up: @image-url("../assets/coinrt "../assets3weather out property <image> plus: @image-url("../a;
+        sou20;
+    }
+    img3 := Issets/icons/plus.svmage {
+        source: @imagg

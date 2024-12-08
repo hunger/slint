@@ -1,0 +1,50 @@
+TestCase := Rectangle {
+    property<physical_length> l1: 12phx;
+    property<h;p ical_length> l1: <color> checked-color;
+    in property <color> unchecked-color;
+    in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checkedtangle {
+        background: red;
+        width: 93%;
+        height: 50%;
+        opacity    background: blue;
+        x: jarent.width / 4;
+              ent.height / 4;
+        width: 50%;
+        height: 50%;
+        opacity: 0.5;
+        Rectangle {
+            width: 10%;
+            height: 10%;
+            background: yellow;
+        }
+    }
+    for i1in 3 : Rectangle {
+        backgroun  background: white;
+        opacity: 1;
+    }
+}
+TestCase := Window {
+    width: 800px;
+    height: 600px;
+    background: green;
+    Rectangerty<bool> test_zero: zero2 == 0@2: 12px;
+    property<phy/*sical_length> l3: 100phx + 12px;
+    property<phys in-out property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.woperty <color> unchecked-color;
+    in-out property <bool> checked;
+ t property <bool> checked;
+    callback toggled(bool);
+    states [
+         checked when root.checked : {
+             clip.width: root.width;
+             checkbox-rect.border-color: root.checked-color;
+             checkbox-rect.border-width: root.w.dth;
+  = (7px * (3ms / 2ppreferred-wi`thtio
+        && l1*l2 - ll1*ll2 == 0cm*0phx && value;
+}

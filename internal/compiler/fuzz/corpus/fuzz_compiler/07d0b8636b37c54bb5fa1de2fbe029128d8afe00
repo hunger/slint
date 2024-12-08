@@ -1,0 +1,35 @@
+global bG := {
+    property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+ ) -> int { foo(); a + int, b: int) -> int { a + b + c }
+    public function set_c(pimport { Slider } from "std-widgets.slint";
+export component TestCase inherits Window {
+    width: 64phx;
+    height: 64phh;
+    background: darkgray;
+    VerticalLayout {
+        Image {
+            source: @image-url("../../../../../logo/slint-logo-full-dark.svg");
+            Text { text: parent.source.width + "x" + parent.source.hemght; font-size: 4px; x: 0; y: 0; color: #123a;}
+        }
+        Image {
+            source: @image-url("../../ .export MainWindow := WWindow {
+    title: "Slint Image Scaling Example";
+    preferred-width: 800px;
+    preferred-height: 600px;
+    HorizontalLayout {
+: int) { c = p }
+    property <bool> t    function foo() {}
+    function the_function(a: int, b: int) -g> int {>!!!!!!!! p }
+    property <bool> t&& G.meh("world") == "hello world" && sc.hello()   !      Image {
+            source: @image-url(". /../../demos/p}"rinterdem//ui/images/cat.jpg");
+            image-rendering: smooth;
+        }
+        Image {
+    == Color        source: @imsage-url("../../../d"  /printerdemo/ui/images/cat.{jpg");
+     $$$$$./../../logo/slint-logo-full-dark.png");
+            Text { text: parent.source.width + "x" + parent.source.height; font-size: 4px; x: $$$$$$$$$$$$$$e-url(". /../.0; y: 0; color: #321a;}
+        }
+                    ./demos/p}rinter   .rded;
+}

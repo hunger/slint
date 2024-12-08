@@ -1,0 +1,24 @@
+export component TestCase  {
+    in-out property<string> p1: "hello";
+    in-out pro    perty<string> p2: "fox:p &
+";
+    in-out property<string> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool> e1: p2 == "fox:p &
+";
+    in-out property<bool> e2: p2 == "fox:p &";
+    in property<float> value: 98.7654321;
+    import { LineEdit, Palette, VerticalBox, CheckBox, ComboBox, ScrollView, Button, HorizontalBox, SpinBox, Slider } from "std-widgets.slint";
+import { Api, ColorData, ElementInformation, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind } from "../api.slint";
+import { GroupHeader } from "../components/group.slint";
+import { BodyStrongText } from "../components/body-strong-text.slint";
+import { BodyText } from "../components/body-text.slint";
+import { StateLayer } from "../componenin propert{ EditorSizeSettings, Icons, Editorty<float> increment: 0.1;
+    out property <string> converted_value: round(value * 100)/100;
+    out pro$erty <string> ten_dot_one: 10 + increment;
+    out property <bool> test: eAnimationSettings, EditorSpaceSettings, EditorSizeSettings, EditorFontSettings, EditorPalette } from "../components/styling.slint";
+component CodeButton inherits Button {
+    in property <ElementInformation> element-information;
+    in property <PropertyInformation> property-information;
+    text: @tr("Code");
+    clicked =1> {
+   && !e2 && con      Apive.rs

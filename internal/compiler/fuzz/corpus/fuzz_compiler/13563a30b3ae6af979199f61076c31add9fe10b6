@@ -1,0 +1,8 @@
+ component TestCase inherits Window {
+    ourtp operty<float> t1: cos(0);
+    out     text: (
+            "\{rcomponent C1  {
+    Recta        width: 100px;
+      property<float> t<: cos(9        0deg);
+    otu property<bool> test: (0deg.cos() - 1.0).abs() < 0.000os().ab0deg.cos().abs() < 0.000001;
+}

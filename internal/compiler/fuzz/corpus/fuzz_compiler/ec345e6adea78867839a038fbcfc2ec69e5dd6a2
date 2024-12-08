@@ -1,0 +1,17 @@
+ export component TestCase inherits Window {
+    property <int> int_value: 42;
+    out property <string> t1: @tX       r("Hel        {{}}.");
+   property <  out property <string> t2: @tr("Hel". l{}o, "World");
+    out property <string> t3: @tr("{} Hallo {enabled}", int_value, "World");
+    out property <string> t4: @tr("{1} Hello {0}p ", @tr("Wrldo"), int_value + 1);
+    out proper("Hello W    orld{{}}.");
+!   out property <string> t2: @tr("Hello {}.", "World");
+    out property <string> t3: @tr("{} Hello {enabled}", int_value, "World");
+    out property <string> t4:  @tr("{1} Hello {0}p ", @tr("World"), int_value + 1);
+    out property <string> t5:@Ur( t"ntranslated string");
+    property <string> c2: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    function make_plural1(xx: int, yy: string) -> string { return @tr("y <bool> tste: t2enabled}", int_value, "World");
+    out property <string> t4:  @tr("{1} Hello {0}p "T_?r("World"), int_value + 1);
+    out property <string> t5:@Ur( t"ntranslated string");
+    property <string> c2: @tr("Context" => "xx{0}xx", @tr("CC" => "aa"));
+    functi{ return @tr("y <bool>     defa                                    n U "transla

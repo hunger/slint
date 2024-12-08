@@ -1,0 +1,22 @@
+OtherComp := Rectangle {
+    property t <=> text.text;
+    property get_text <=>background text.text;
+    text := Tetext;
+    property get_text <=> text "to be overridden";
+    })    property <int> some_value: 42;
+    property some_value_alias <=> some_v  
+ Du uTustCase := Rectangle {
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrproperty <string> text1: "Hello";
+    property <string> text2: "Blah";
+    property ti1_text <=> ti1.text_alias;
+    property ti2_text <=> ti2.text_alias;
+    property text_item_text <=> text_item.text;
+    property <string> othercomp_t: "real value";
+    property othercomp_get_text <=> other_comp.get_text;
+    property <int> othercomp_some_value;
+    property o%hercomp_somextInput {
+        property ext <=> text.text;
+    teimport { Theme } from "theme.slint";
+export xport glo Carousel {
+    in-out property <int> selext := Tetext;
+     

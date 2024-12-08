@@ -1,0 +1,61 @@
+TestCase := Window {
+    width: 100phx;
+    height: 100phx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += even Qtext;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            keyx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += even Qtext;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event          }
+       return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            keyx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += even Qtext;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+                            key-pressed(evhhhhhhhhhhhhh    r2 += even Qtext;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            keyx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += even Qtext;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+                            key-pressed(ev{
+           gnostics {
+    le                        FocusScope {
+                            key-pressed(evhhhhhhhhhhhhh    r2 += even Qtext;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            keyx;
+    FocusScope {
+        key-pressed(event) => {
+            r2 += even Qtext;
+            return event.text == "a" ? accept : reject;
+        }
+        FocusScope {
+            key-pressed(event          }
+                        FocusScope {
+                            key-pressed(ev{
+           gnostics {
+    level: strin g,

@@ -1,0 +1,15 @@
+O := Text {
+    property <int> val;
+    strotext: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition *******************************************************************************rty <int> checksum: 10000 * ot {
+    property <int> val;
+    text: val;
+    propert _C  A_a!: val + 1;
+T}
+estCase := Window {
+    property <int> val: condition ************************************************************************************************************ion ********************************************************************************1.a + 1000 * o2.a + 100 * o3.a + 10 * o4.a + 1 * o5.a;
+    property <bool> test: checksum == 55555;
+}

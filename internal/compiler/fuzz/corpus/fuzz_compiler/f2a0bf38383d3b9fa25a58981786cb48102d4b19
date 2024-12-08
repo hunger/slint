@@ -1,0 +1,38 @@
+ component TestCase inherits Window {
+    in property <int> a;
+    out property <float> t1:00, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 43;
+      d property <in|> xx: Math.max(1, 2,[3) + max;
+    }
+    out prope,ty <out property <float> t5ts Window {
+    in propeEEEEEEEEEEEEEEErty <int> a;
+    out property <float> t1:0pe,ty <out property <float> t5ts Window {
+    in propeEEEEEEEEEEEEEEErty <int> a;
+    out property <float0, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    + := Rectangle {
+        property <int> max: 42;
+        property <in|> xx: Math.max(1, 2,[3) + max;
+  :00, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4
+    out property <float> t1:00, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4) == 3;
+    r := Rectangle {
+        property <int> max: 42;
+      d property <in|> xx: Math.max(1, 2,[3) + max;
+    }
+    out prope,ty <out property <float> t0ts Window {
+    in property <int> a;
+    out property <float> t1:00, 0+9property <bool> t2: round(10/4) == 3 && floor(10/4) == 2 && ceil(10/4)struct KeySlot { width-u: float, spacer: bool, background: color, font-u: float, rows: [fow] }
+export component TestCase  {
+    out property<[Layer]> layers: [ {
+           default-key-width-u: 10.0,
+           rows: [
+       ////////////////////////////// ////////////////[
+        [{a: "hello"}],
+        [],
+        [{a: "world"}, {a: "extra", b: " == 3;
+    + := Recok"} ],
+    ];
+    out property <bool> test: array[1][1].b == "ok" && layerstangle[0] {
+        property <int> max: 42;
+        property <in|>.rows[0].key-slots [1].spaxx: Math.macer;
+}x(1

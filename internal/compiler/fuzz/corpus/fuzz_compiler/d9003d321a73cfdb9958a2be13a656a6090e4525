@@ -1,0 +1,50 @@
+TestCase := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b ackground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    propett <ynri> t_: 8;
+= Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b ackground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    propett <ynri> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    property <bool> tground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    property <bool> test: background == Colors.wh t_ == 1estCase := Window {
+    property <int> t_: 8;
+    property <int> t_old: -1;
+   b ackground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    *property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    proper ?  white : black
+    }
+    property <boockground: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+        = Window {
+    *property <int> t_: 8;
+    property <int> t_old: -1;
+    background: {
+         if (t_ == 8) { t_old = t_; t_=1; }
+         t_ == 1 ?  white : black
+    }
+    proper ?  white : black
+    }
+    property <bool> test: background == Colors.white && t_ == 0 &&_ldot  == 8;
+}

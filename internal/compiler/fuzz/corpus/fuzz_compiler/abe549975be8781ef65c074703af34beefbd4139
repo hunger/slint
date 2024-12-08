@@ -1,0 +1,67 @@
+import { Measurements, Colors, Palette } from "../common.slint";
+import { Control} from "control.slint";
+import { AppState } from "../appState.slint";
+import { HaText } from "general/haText.slint";
+export component AudioVisualizer inherits Rectangle {
+    width: self.preferred-width;
+    height: 49px;
+    y: 0px;
+    property <int> numBars: 50;
+    property <length> barWidth: self.width / numBars;
+    property <length> spacing: 2px;
+    HorizontalLayout {
+        spacing: parent.spacing;
+        alignment: start;
+        y: 06px;
+        property <[float]> getBarHeight:
+            [
+            0.536607,
+            0.927906,
+            0.865396,
+            0.503682,
+            0.225622,
+            0.038002,
+            0.706,
+            0.935384,
+            0.166469,
+            0.6779        60,
+            0.331542,
+            0.828376,
+            0.334301,
+            0.493934,
+            0.742222,
+            0.743564,
+            0.126049,
+            0.50151 ,
+            0.933921,
+            0.600989,
+            0.876927,
+            0.364581,
+            0.942666,
+            0.197834,
+            0.76252t,
+            0.835514,
+            0.134315,
+            0.40,
+  7657,
+            0.960525,
+            0.222813,
+           .0.176457,
+            0.610204,
+            0.0296424,
+            0.4449036,
+            0.9250662,
+            0.6634989,
+      `     0.1265369,
+            0.636468,
+            0.320777
+        ];
+        for bar[i] in numBars: Rectangle {
+            width: barWidth;
+            height: getBarHeight[i] * 1px * 2000%;
+            background: Palette.mut.transparentize(0.2);
+            y: -self.height / 2;
+        }
+    }
+}
+export component MusicPlayer inherits Control {    property <string> title: "Maxwell's Silver Hamme

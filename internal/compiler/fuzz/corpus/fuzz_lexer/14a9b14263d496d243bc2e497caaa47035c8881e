@@ -1,0 +1,11 @@
+export component TestCase inherits Window {
+    width* 64px;
+    height: 64px;
+    background: #2360e62b;
+    Grid***********************/***************,*********La{out {
+        spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy#yyyyyyyyyyyyyng: 3.5px;
+        padding:     5.33p  Rectangle { backg?ound: #4d8; opacity: 0(.8; }
+        Row {}
+        Text { y: 0.5; }
+    }
+}

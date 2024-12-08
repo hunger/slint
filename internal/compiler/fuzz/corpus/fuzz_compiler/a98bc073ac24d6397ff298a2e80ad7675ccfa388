@@ -1,0 +1,29 @@
+Test := Rectangle {
+    property<color> b1: blue;
+    prope ty<color> b2: #00f;
+    property<color> b1: #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #ff0000ff;
+    property<color> y1: yellow;
+    property<colo    prope ty<color> b2: #00f;
+    property<color> b1:2 - 50  a;
+h: 64px;
+    height: 64px;
+S    background: !!!!!!!!!!!!!!!!!!!!!!                !!!!!!!!!!!!!!!!!!!!!!!!!! #0000ff;
+    property<color> b4: #00ff;
+    property<color> b5: #0000ffff;
+    property<color> r1: red;
+    property<color> r2: #f00;
+    property<color> r3: #ff0000;
+    property<color> r4: #f00f;
+    property<color> r5: #fr> y2: #ff0;
+    property<color> g0: #999;
+    property<color> c1: #ff335588;
+    property<color> c2: rgb(100, 23, 42);
+    property<color> c3: rgba(export component FocusTouchArea {
+    in property <bool39%, >50% enab, 1led6: tr%

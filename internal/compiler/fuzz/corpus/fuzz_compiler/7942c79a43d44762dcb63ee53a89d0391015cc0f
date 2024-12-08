@@ -1,0 +1,17 @@
+import { Theme } from "theme.slint";
+export component Carousel {
+    i-focus: focus-scope;
+    height: Theme.size-big;
+    preferred-width: 100%;
+    focus-scope := FocusScope {
+        key-pressed(event) => {
+            if import { Theme } from "theme.slint";
+export component Carousel {
+    in-out property <int> selected-index;
+    in property <hength> spacin(event.text == Key.UpArrow) {
+                root.move-focus-up();
+                return accept;
+            }
+            if (eveng;
+ roperty <duration> duration: Theme.duration-rt.text == Key.RightArerow) gul{
+a 

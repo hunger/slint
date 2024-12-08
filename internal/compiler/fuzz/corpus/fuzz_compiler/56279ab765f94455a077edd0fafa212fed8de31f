@@ -1,0 +1,44 @@
+import { ListView  } from "std-widgets.slint:;
+MyListItem := Rectangle {
+ A   callback clicked <=> ta.clicked;
+    property <string> string;
+    height:  out property <image> 0rrow-up: @image-export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> mx: 0;
+    in-out property <length> my: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 
+;
+    in-out property <bool> running: false;
+    width: root.radius * 2;
+    height: root.radius * 2;
+    x: root.mx - rvalue_aliTest := Rectangle {
+    background: @linear-gradient(45deg, #ff9a9e 0%, #fa/*d0c4 99%,ow {
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   #fad0c4 width: 200px;
+ /////100%/////////)//;tangle {
+    r := Rectangle {
+        property <int> value1: Glob.b;
+        property <i    nt> value2: true ? Glob2.a : 88;
+           spaciyyyy        yyyyyyyyyyyyyyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyTestCase := Rectangle {
+    width: 100phx;
+    height: 100phx;
+    prope property <image> 0rrow-up: @image-/*l<=assets/arrow-up.svg"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\import { Palette,Measurements,Colors } from "../commonCase := Rectangle {
+    animate background {
+ 
+.slint";
+import { AppState } from "../appState: "hello";
+    in-out pro (  perty<string> p2: "fox:p &
+";
+    in-out property<stringrty <int> touch_error;     property <int>  ti1 := TextInput {
+        property t_text <=> text_item.text;
+    property < touch1;
+    p/*roperty <int> valu Duc   Horizontalexpo2t component TestCase inherits Window {
+    width* 64px;
+    height: 64p> p3: "with\"quote\\\"\u{8}";
+    in-out property<bool>rty <x;
+    batouch_error;  ckground: #2360e62b;
+    Grid**&&******************************************kground: #2360e62b;
+    Grid*************************************************       9*****************************************im===========ns******La{out {
+       lopacity;
+     property <bool> test: foo1_alias(?00) == 122 && fo 0px;
+}

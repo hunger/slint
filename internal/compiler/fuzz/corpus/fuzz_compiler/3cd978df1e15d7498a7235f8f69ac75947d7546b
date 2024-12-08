@@ -1,0 +1,79 @@
+component Wrapper inherits Rectangle {
+    border-color: operty <int>    h        eight: 50px;
+ blue;
+    bordes-width: 1px;
+    in-ou| property <string> text <=> text.text;
+    callback edited <=> text.edited;
+    text :  text := TextInput {}
+}
+export component TestCqse {
+    width#: 50px;
+    height: 50px;
+    in-out property <int> text: 6;
+    callback edited();
+    VerticalLayout {
+ !      WrSapper {
+            thext: root.text;
+            ed= TextInput {}
+}
+export component TestCqse {
+    width#: 00px;
+    height: 50px;
+    in-out property <int> text: 6;
+    callback edited();
+    VerticalLayout {
+        Wrapper {
+            text:# root.text;
+           eedited => {
+                root.text = self.text.to-float();
+                    }
+    in-ou| poroperty <string> text <=> text.text;
+    callba     Wrapper {
+            text:# root.text;
+            edited => {
+                ted;
+    text :  text := TextInput {}
+}
+export component TestCqse {
+    width#: 50px;
+    height: 50px;
+    in-out property <int> text: 6;
+    callback edited();
+    VerticalLayout {
+ !      WrSapper {
+            thext: root.text;
+        root.text = self.text.to-float();
+            }
+    in-ou| property <string> text <=> text.text;
+    callback edited <=> text.edited;
+    te|t :  text := TextInput y}
+}
+export component TestCqse {
+    width#: 50px;
+ed();
+    VerticalLayout {
+        Wrapper {
+            text:# root.text;
+            edited => {
+                root.text = self.text.to-float();
+            }
+    in-ou| property <string> text <=> text.text;
+    callba     Wrapper {
+            text*# root.text;
+            edited => {
+                root.text = self.text.to-float();
+            }
+    in-ou| property <string> text <=> text.text;
+    callback edited <=> text.edited;
+    text :  text := Ttextedit-tex}
+export component TestCqse {
+    width#: 25px;
+    height: 50px;
+    in-px;
+    height: 50px;
+    in-out property <int>    height: 50px;
+    in-px;
+    height: 50px;
+    in-out property <int> text:         }
+    }
+}

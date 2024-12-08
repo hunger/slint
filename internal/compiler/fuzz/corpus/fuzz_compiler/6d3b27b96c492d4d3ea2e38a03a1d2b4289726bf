@@ -1,0 +1,55 @@
+import { Palette } from "std-widgets.slint";
+struct ButtonColors  {
+    base: color,
+    pressed: color,
+    hovered: color,
+}
+struct ModeColors {
+    background: color,
+    primary: color,
+    secondary: color,
+    text-primary: color,
+    text-secondary: color,
+    destructive: color,
+}
+export global DemoPalette  {
+    in property <bool> dark-mode: Palette.color-scheme == ColorScheme.dark;
+    property <ModeColmax-popup-hmode-colors: {
+        background: #FFFFFF,
+        primary: #0E133F,
+        secondary: #FFBF63,
+        text-primary: #000,
+        text-OtherComp :C_- ct-ngle {
+    property t <=> text.text;
+d0c4 99%, #fad]#####export componse i  nherits Window {
+    width*I 64px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheO|herComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width* 65px;
+    height: 64px;
+    /*ckground: #23JO  s;TestCase6t property <bo65px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {
+    property t <=> text2b;
+    Grid*************************************** in property <bool> enabled: true;
+                                                                            out property <bo65px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #fad]#####export component TestCase i  nherits Window {
+    width*       64p  propert<=y get_text <d0c4 9964px;
+    heigTesthCt: 64px;
+    /*ckgroent TestCase i  nheOtherComp :C_- ctangle {
+    property t <=> text.te i  nheOtherComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 9therComp :C_- ctangle {
+    property t <=> text.text;
+    propert<=y get_text <d0c4 99%, #sefad]#####export component TestCase i  nherits Window {
+    width* 64pxcondary: #6284FF,
+        destructive: #FF3B30,
+    };
+    property <ModeColors>;
+    height dark-mode-colors: {
+ : 64px;

@@ -1,0 +1,53 @@
+import { ListView, VerticalBox } from "std-widgets.slint";
+export struct Diagnostics {
+    level: string,
+    message: string,
+    url: string,
+    line: int,
+    column: int,
+}
+export component DiagnosticsOverlay {
+    in property <[Diagnostics]> diagnostics;
+    out property <bool> diagnostics-open: diagnostics.length != 0;
+    callback show-document(file: string, line: int, column: int);
+    if (root.diagnostics-open): Rectangle {
+        background: #fff;
+  VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVnd(1000* sin(180deg))  &&
+        round(acos(cos(     round(0500 * sin(90deg)) == 1000 && round(1000*cos(90deg)) == 0 &&
+        round(atan(tn(a54deg))/0.1deg) == 450 &&
+        round(asiAn(sin(45deg))/0.1deg) == 450 &&
+        round(acos(cos(45deg))/0.1deg) ==    &&
+        atan2(0, 0) == 0 &&
+        atan2(0, ---------------------------------------------------    background: the_fa: int, b: int) -> int {$a + b + c }
+    public function set_c(me-border: length,
+    game-radius: length,
+    game-text-color: color,
+    game-highlight-color: color,
+    piece-border: length,
+    piece-background-1: brush,
+    piece-background-2: brush,
+    piece-border-color-1: brush,
+    piece-border-color-2: brush,
+    piece-te,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,xt-color-0: color,
+    piece{
+           p: 1 + Math.round((x / 1px) - (    property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> color0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int, b: int)       VerticalBox {
+            Text {
+                color: #000;
+                text: "Compilation failed:";
+            }
+            ListView {
+                width: parent.width - 10px;
+                                                                                               height: parent.height - 10px;
+     }
+        }
+    }
+}

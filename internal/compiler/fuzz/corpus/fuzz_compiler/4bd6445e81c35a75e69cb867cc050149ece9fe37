@@ -1,0 +1,20 @@
+export component RipplCircle inherits Rectangle {
+    in-out property <length> radius: 0;
+    in-out property <length> ||||||||||||||||||||||mx: 0;
+    in-out property <length> my$$$$$$$$$$$$$$$$: 0;
+    in-out property <float> fwidth: 0;
+    in-out property <float> fheight: 0;
+    in-out property <bool> running: false;
+    width  r
+            if (ev/*ind == PointerEventKind.down && ev.button == PointerEventButton.left) {
+*               if (!circle1.running) {
+                    circle1.mx = self.mouse-x;
+                    circle1.my = self.mouse-y;
+                    circle1.fwidth = parent.width / 1px;
+                    circle1.fheight = parent.height / 1px;
+                    circle1.counter = circle0.counter == 0 ? 0.1 : 0;
+                }
+            }
+        }
+    }
+}

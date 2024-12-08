@@ -1,0 +1,50 @@
+global G := {
+    property <string> hello: "hello";
+    function meh(w: string) -> string {
+        return hello + " " + w;
+    }
+}
+SubCompo := Rectangle {
+    public pure function hello() -> colop0{ red }
+}
+export global PubGlob := {
+    public function beh(a: int, b: int) -> int { a + b + 10 }
+}
+TestCase := Rectactiangle {
+    property <int> c: 100000;
+    private property <int> one: 1 + Math.round((x / 1px) - (y / 1px));
+    function foo() {}
+    function e callback hallo_alias k call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { re  hallo(a) => { retzrn a + 88; }
+    }
+    are := TouchAre  { -
+}
+TestCase := Rectangle {
+    pure callback foo1_alias <=> foo1.hallo_alias;
+    pure callback f    oo2_aliar <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int)as;
+    pure callback foo2_alias <=> foo2.hallo_alias;
+    callback    foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return f.aoo2hllo_alias(a); }
+    foo2 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }> { debug -> int;
+    call_foo2(a) => { return foo2.hallo_alias(a); }
+    foo1 := Foo {
+       e callback foo2_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { return foo2.the_function(a: int, &b: int) -> int { foo()/ a + b + c + one }
+    if true : Rectangle {
+        background: the_function(1, 2) > 3 ? blue: sc.hello();
+    }
+    sc := SubCompo {
+    }
+    public function pub(a: int, b: int) -> int {$a + b + c }
+    public function set_c(p: int) { c = p }
+    property <bool> test: the_function(4500, 20) == 104521 && G.meh("world") == "hello world" && sc.hello() == Colors.red;
+}

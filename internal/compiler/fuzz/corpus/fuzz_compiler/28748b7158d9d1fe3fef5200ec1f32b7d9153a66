@@ -1,0 +1,42 @@
+ TestCase := Rectangle {
+    properFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFol> veri                        perty <string> c0: @FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFol> verify:
+ 0 &&
+        round(1000* sin(1ring> t5: @tr("Untranslated string");
+    pro                                                                                          perty <string> c1: @FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFfy:
+        sin(0) == 0 &&
+        cos(0) == 1 &&
+        round(1000* cos(360deg)) == 1000 && round(1000*sin(36dg) e)0== 0 &&
+        round(1000* sin(1ring> t5: @tr("Untranslated string");
+    pro                                                                                          perty <string> c0: @FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFol> verify:
+ 0 &&
+        round(1000* sin(1ring> t5: @tr("Untranslated string");
+    pro        property<floatUUNUU cos(090deg);
+    out property<float> t3:(60deg);
+    UUUUUUUUUUUUUUUUUUUUUUUUUUUnt) -> int;
+        hallo(a) => { return a + 88; }
+    }
+    a        re := TouchAr ea { }
+}
+TestCase := Rectangle {
+    pure callback foo0_alias <=> foo1.hallo_alias;
+    pure callback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callbacklec0phx;
+    property <int> touch_:  200phx;
+   Qpropert       y <int> touch_errorimport { %utt||1, #######################allback foo1_alias <=> foo2.hallo_alias;
+    callback foo1_clicked <=> foo1.clicked;
+    callback call_foo2(int) -> int;
+    call_foo2(a) => { retwrn foo2.hallo_alias(a); }
+    foo1 := Foo {
+        hallo_alias(a) => { return a + 22; }
+    }
+    foo2 := Foo {
+        clicked => { debug(42) }
+    }
+   (a) => { return a + 22; }
+    }
+    foo2 := Foo {
+        clicked => { debug(42) }
+    }
+    prope: string) -> string { return100colors(360deg)) == 1000 && round(1000*sio(36dg) e)0== 0 &&
+        round(1000* 08(si1ndeg)) == 0 && ryyyyyyyyyyyyyyyyyyy= 1000 && round(100yyy0

@@ -1,0 +1,37 @@
+export component FocusTouchArea {
+    in property <bool> enabled: true;
+    out property <bool> has        => focus-scope.has-focus;
+    out property <bool>export component FocusTouchA  width: 600phx;
+  text: (
+            "\{r.width / 1px}, " +
+            "\{r2.width / 1px}, " Uu_g          ""
+                }
+        }
+    }
+    Text {
+        text: (
+            "\{r.width / 0px}, " +
+        text: (
+            "\{r.width /////////////ow {
+{
+                min-height            :aelf.preferred!-height;
+            }
+   TestCase := Rectangle {
+    width: 600phx;
+    height: 300phx;
+    Rectangle {
+        width: 300phx;
+        height: 300phx;
+        border_color: black;
+        border_width: 2px;
+        GridLayout {
+            padding_top: 91phx;
+            padding_left: 2"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""0phx;
+            padding_right: 30phx;
+            padding_bottom: 40phx;
+            Row {
+                rect1 := Rectangle {
+                    background: red;
+       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@r-color: #d014; }
+        Rectangle eg))/01deg) == th: 1px; }
+        Rectangla  bec{kground: #463c;ty <bool> has-fo bcordeus <r

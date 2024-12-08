@@ -1,0 +1,26 @@
+ TestCase := Rectangle {
+    property<int> a;
+   TestCase := Rectangle {
+    property<int! std-widgets.s;;
+   TestCase := Rectangle {
+    property<int! std-widgets.s;
+        aproperty<int!> a;
+    property<int> t1: 4 + 3 * 2 + 2 - 50 - 2;
+    properoperty<int!>  property<int property<int! std-widgets.s;
+        aproperty<int!> a PopupContainer inherits Rectangle {
+	width: 400px;
+    height: 300px;
+	in-out property <int> popup_click_count;
+	
+	callback first_reached;
+	callback second_reached;
+	
+	property <length> popup_x;
+	property <bool> first_sent: false;
+	property <bool> second_sent: false;
+	publi2 function show(second: bool) {
+		popup_x = !second ? 0px : 200px;
+		popup.show();KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+	}
+	publ                     ;
+    property<int> t1: 4 + !!![!!!!!!!!                !!!!!!!!!!!!!    p- 

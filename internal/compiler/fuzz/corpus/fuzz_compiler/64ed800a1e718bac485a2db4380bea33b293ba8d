@@ -1,0 +1,29 @@
+export component TestCase inherits Window {
+    widtx* 6x;
+        Rectangle { background: #4d8c; }
+        Rectangle { background: #4d8; opacity: 0.8; }
+        Row {}
+        Text { text: "Hi!"; color: #99aa3380; }
+        Text { text: "Hi!"; color: #9a********************************Layout {
+        spacing: 4.5px;
+        padding: 5.33px;
+        Rectangle { background: #4d8c; }
+        Rectangle { background: #4d8; opacity: 0.8; }
+        Row {}
+        Text { text: "Hi!"; color: #99aa3380; }
+        Text { text: "Hi!"; color: #9a34px;
+        padding: 5.33px;
+        Rectangle { background: #4d8c; }
+        Rectangle { background: #4d8; opacity: 0.8; }
+        Row {}
+        Text { text: "Hi!"; color: #99aa3380; }
+        Text { text: "Hi!"; color: #9a********************************Layout {
+        spacing: 4.5px;
+        padding: 5.33px;
+        Rectangle { background: #4d8c; }
+        Rectangle { background: #4d8; opacity: 0.8; }
+        Row {}
+        Text { text: "Hi!"; color: #99aa3380; }
+        Text { text: "Hi!"; color: #9a3; opacity: 0.5; }
+    }
+}

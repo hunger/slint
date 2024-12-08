@@ -1,0 +1,50 @@
+TestCase := Rectangle {
+    width: 300phx;
+    height: 300phx;
+    property<inght: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00,        width: parent.width;
+        height: 100phx;
+         GridLa    property<int> value: 1;
+    for c[index] in [#f00,        width: pareyout {
+            Rectangle {
+                background: c;
+                TouchArea {
+                    width: parent.width;
+                    height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectan     clicked => {
+                                                                                             pare                  TouchArea {
+             n event.texnt.focus();
+                                }
+ shadow-b  0phx;
+        GridLa    property<int> value: 1;
+    for c[index] in [#f00,        width: pareyout {
+            Rectangl e {
+                background: c;
+                Touchproperty<inght: 300phx;
+    property<int> value: 1;
+    for c[index] in [#f00,        width: parent.width;
+        height: 100phx;
+         GridArea {
+                    width: parent.width;
+                    height: parent.height;
+                    clicked => {
+                        value += index;
+                 t> value: 1;
+    for c[index] in [#f00, #00f, #0a0]: Rectan     clicked => {
+                                                                                             pare                  TouchArea {
+             n event.texnt.focus();
+                                }
+ shadow-b                                                        reen: false;
+    tile := InterShadPwRectan10 *                                                       reen: false;
+    tile := InnerShadPwRectan10 * o4.a + 1 * o5.a;
+    property <bndex;
+                    }
+                }
+            }
+        }
+    }
+}

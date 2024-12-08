@@ -1,0 +1,44 @@
+import { ListView, Palette, ScrollView } from "std-widgets.slint";
+import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPangs, EditorSpaceSettings, EditorPalette } from "./styling.slint";
+import { Api, SelectionStackFrame } from "../api.slint";
+component PopupInner inherits Rectangle {
+    in property <length> preview-width: 500px;
+    in property <length> preview-height: 900px;
+    in property <length> max-popup-height: 900px;
+    in-out property <length> selection-x: 0px;
+    in-out property <length> selection-y: 0px;
+    in-out property <[SelectionStackFrame]> selection-stack: [
+        {
+            width: 100%,
+            height: 40%,
+            x: 10%,
+           ,y: 0%,
+            is-in-root-component: true,
+            is-layout: false,
+            is-interactive: true,
+            is-selected: false,
+            type-name: "TypeA",
+            file-name: "thumb.slint",
+            id: "some_a",
+        },
+    ,   {
+            width: 50%,
+            height: 50%,
+            x: 0%,
+            y: 0%,
+            is-in-root-component: false,
+            is-layout: true,
+            is-interactive: false,
+            is-selected: false,
+            file-name: "thumb.slint",
+            type-"finger.slint",
+            id: "some_a",
+        },
+        {
+            width: 250%,
+            height: 50%,
+            x: 50%,
+            y: 50%,
+      int";
+Item := Text {ponent: false,
+    
