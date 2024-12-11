@@ -454,12 +454,18 @@ pub fn filter_sort_selection_stack(
 
     fn filter_fn(frame: &SelectionStackFrame, filter: SelectionStackFilter) -> bool {
         match filter {
-            SelectionStackFilter::Nothing => true,
-            SelectionStackFilter::Layouts => !frame.is_layout,
-            SelectionStackFilter::Interactive => !frame.is_interactive,
-            SelectionStackFilter::LayoutsAndInteractive => {
-                !frame.is_interactive && !frame.is_layout
+            SelectionStackFilter::Nothing => false,
+            SelectionStackFilter::Layouts => frame.is_layout,
+            SelectionStackFilter::Interactive => frame.is_interactive,
+            SelectionStackFilter::Others => !frame.is_interactive && !frame.is_layout,
+            SelectionStackFilter::LayoutsAndInteractive => frame.is_layout || frame.is_interactive,
+            SelectionStackFilter::LayoutsAndOthers => {
+                frame.is_layout || (!frame.is_layout && !frame.is_interactive)
             }
+            SelectionStackFilter::InteractiveAndOthers => {
+                frame.is_interactive || (!frame.is_layout && !frame.is_interactive)
+            }
+            SelectionStackFilter::Everything => true,
         }
     }
 

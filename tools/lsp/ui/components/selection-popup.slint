@@ -1,10 +1,62 @@
 // Copyright © SixtyFPS GmbH <info@slint.dev>
 // SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
 
-import { ListView, Palette, ScrollView, LineEdit, Button } from "std-widgets.slint";
+import { Button, CheckBox, ListView, Palette, ScrollView, LineEdit } from "std-widgets.slint";
 import { EditorFontSettings, EditorSizeSettings, EditorSpaceSettings, EditorPalette } from "./styling.slint";
 import { Api, SelectionStackFrame, SelectionStackFilter } from "../api.slint";
 import { Icons } from "styling.slint";
+
+component FilterList inherits Rectangle {
+    out property <SelectionStackFilter> filter: {
+        if (!lcb.checked && !icb.checked && ocb.checked) {
+            return SelectionStackFilter.Others;
+        } else if (!lcb.checked && icb.checked && !ocb.checked) {
+            return SelectionStackFilter.Interactive;
+        } else if (!lcb.checked && icb.checked && ocb.checked) {
+            return SelectionStackFilter.InteractiveAndOthers;
+        } else if (lcb.checked && !icb.checked && !ocb.checked) {
+            return SelectionStackFilter.Layouts;
+        } else if (lcb.checked && !icb.checked && ocb.checked) {
+            return SelectionStackFilter.LayoutsAndOthers;
+        } else if (lcb.checked && icb.checked && !ocb.checked) {
+            return SelectionStackFilter.LayoutsAndInteractive;
+        } else if (lcb.checked && icb.checked && ocb.checked) {
+            return SelectionStackFilter.Everything;
+        }
+
+        return SelectionStackFilter.Nothing;
+    }
+
+    border-color: Palette.border;
+    border-width: 1px;
+    border-radius: EditorSizeSettings.radius;
+
+    drop-shadow-blur: EditorSpaceSettings.default-padding;
+    drop-shadow-color: Palette.foreground.transparentize(0.9);
+
+    background: Palette.alternate-background;
+
+    VerticalLayout {
+        padding: EditorSpaceSettings.default-padding;
+        spacing: EditorSpaceSettings.default-spacing;
+
+        lcb := CheckBox {
+            text: @tr("Layouts");
+            checked: true;
+        }
+
+        icb := CheckBox {
+            text: @tr("Interactive");
+            checked: true;
+        }
+
+        ocb := CheckBox {
+            text: @tr("Other");
+            checked: true;
+        }
+    }
+}
+    
 
 component PopupInner inherits Rectangle {
     in property <length> preview-width: 500px;
@@ -141,9 +193,6 @@ component PopupInner inherits Rectangle {
     border-color: lightgray;
 
     width: 250px;
-    init => {
-        filter-edit.focus();
-    }
 
     VerticalLayout {
         padding: EditorSpaceSettings.default-padding;
@@ -152,42 +201,22 @@ component PopupInner inherits Rectangle {
         header := HorizontalLayout {
             spacing: EditorSpaceSettings.default-spacing;
 
-            property <SelectionStackFilter> filter: {
-                if (layout-filter.checked && interactive-filter.checked) {
-                    return SelectionStackFilter.LayoutsAndInteractive;
-                } else if (layout-filter.checked) {
-                    return SelectionStackFilter.Layouts;
-                } else if (interactive-filter.checked) {
-                    return SelectionStackFilter.Interactive;
-                } else {
-                    return SelectionStackFilter.Nothing;
-                }
-            
-            }
-
-            Rectangle {
-                width: EditorSizeSettings.default-icon-width * 0.8;
-
-                Image {
-                    source: Icons.filter;
-                    colorize: Palette.alternate-foreground;
-                    width: EditorSizeSettings.default-icon-width * 0.8;
-                    height: EditorSizeSettings.default-icon-width * 0.8;
-                }
+            filter-button := Button {
+                icon: Icons.filter;
+                checkable: true;
+                checked: false;
+                colorize-icon: true;
             }
 
             filter-edit := LineEdit {
                 placeholder-text: "Filter";
                 min-width: 50px;
-            }
 
-            layout-filter := Button {
-                text: "L";
-                checkable: true;
-            }
-            interactive-filter := Button {
-                text: "I";
-                checkable: true;
+                changed has-focus => {
+                    if self.has-focus {
+                        filter-button.checked = false;
+                    }
+                }
             }
         }
 
@@ -196,7 +225,7 @@ component PopupInner inherits Rectangle {
 
             list-view := VerticalLayout {
 
-                for frame[index] in Api.filter-sort-selection-stack(root.selection-stack, filter-edit.text, header.filter): frame-rect := Rectangle {
+                for frame[index] in Api.filter-sort-selection-stack(root.selection-stack, filter-edit.text, filter-list.filter): frame-rect := Rectangle {
                     height: root.frame-height;
 
                     function frame-color(frame: SelectionStackFrame) -> brush {
@@ -372,6 +401,7 @@ component PopupInner inherits Rectangle {
                         }
                         changed has-hover => {
                             if self.has-hover {
+                                filter-button.checked = false;
                                 Api.select-element(frame.element-path, frame.element-offset, frame.x * root.preview-width, frame.y * root.preview-height);
                             } else {
                                 root.unselect-previewed-selection();
@@ -381,6 +411,16 @@ component PopupInner inherits Rectangle {
                 }
             }
         }
+    }
+
+    filter-list := FilterList {
+        x: filter-button.x;
+        y: filter-button.y + filter-button.height;
+
+        width: self.preferred-width;
+        height: self.preferred-height;
+        
+        visible: filter-button.checked;
     }
 }
 
