@@ -1,7 +1,7 @@
 // Copyright © SixtyFPS GmbH <info@slint.dev>
 // SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
 
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use crate::{common, util};
 
@@ -131,7 +131,7 @@ fn fix_imports(
     exporter_path: &Path,
     old_type: &str,
     new_type: &str,
-    fixup_local_use: &dyn Fn(
+    local_rename_function: &dyn Fn(
         &common::DocumentCache,
         &syntax_nodes::Document,
         &i_slint_compiler::parser::TextRange,
@@ -155,10 +155,26 @@ fn fix_imports(
             exporter_path,
             old_type,
             new_type,
-            fixup_local_use,
+            local_rename_function,
             edits,
         );
     }
+}
+
+fn import_path(
+    document_directory: &Path,
+    import_specifier: &syntax_nodes::ImportSpecifier,
+) -> Option<PathBuf> {
+    let import = import_specifier
+        .child_token(SyntaxKind::StringLiteral)
+        .map(|t| t.text().trim_matches('"').to_string())?;
+
+    if import == "std-widgets.slint" || import == "std-widgets.s60" {
+        return None; // No need to ever look at this!
+    }
+
+    // Do not bother with the TypeLoader: It will check the FS, which we do not use:-/
+    Some(i_slint_compiler::pathutils::clean_path(&document_directory.join(import)))
 }
 
 fn fix_import_in_document(
@@ -167,7 +183,7 @@ fn fix_import_in_document(
     exporter_path: &Path,
     old_type: &str,
     new_type: &str,
-    fixup_local_use: &dyn Fn(
+    local_rename_function: &dyn Fn(
         &common::DocumentCache,
         &syntax_nodes::Document,
         &i_slint_compiler::parser::TextRange,
@@ -184,13 +200,9 @@ fn fix_import_in_document(
     };
 
     for import_specifier in document_node.ImportSpecifier() {
-        let import = import_specifier
-            .child_token(SyntaxKind::StringLiteral)
-            .map(|t| t.text().trim_matches('"').to_string())
-            .unwrap_or_default();
-
-        // Do not bother with the TypeLoader: It will check the FS, which we do not use:-/
-        let import_path = i_slint_compiler::pathutils::clean_path(&document_directory.join(import));
+        let Some(import_path) = import_path(&document_directory, &import_specifier) else {
+            continue;
+        };
 
         if import_path != exporter_path {
             continue;
@@ -247,10 +259,17 @@ fn fix_import_in_document(
             }
 
             // Change exports
-            fix_exports(document_cache, document_node, old_type, new_type, fixup_local_use, edits);
+            fix_exports(
+                document_cache,
+                document_node,
+                old_type,
+                new_type,
+                local_rename_function,
+                edits,
+            );
 
             // Change all local usages:
-            fixup_local_use(
+            local_rename_function(
                 document_cache,
                 document_node,
                 &document_node.text_range(),
@@ -267,7 +286,7 @@ fn fix_exports(
     document_node: &syntax_nodes::Document,
     old_type: &str,
     new_type: &str,
-    fixup_local_use: &dyn Fn(
+    local_rename_function: &dyn Fn(
         &common::DocumentCache,
         &syntax_nodes::Document,
         &i_slint_compiler::parser::TextRange,
@@ -339,7 +358,7 @@ fn fix_exports(
                         my_path,
                         old_type,
                         new_type,
-                        fixup_local_use,
+                        local_rename_function,
                         edits,
                     );
                 }
@@ -422,12 +441,17 @@ fn declaration_validity_range(
     i_slint_compiler::parser::TextRange::new(start, document_node.text_range().end())
 }
 
-/// Rename the `DeclaredIdentifier` in a struct/component declartation
-pub fn rename_identifier_from_declaration(
+fn local_rename_function(
     document_cache: &common::DocumentCache,
-    identifier: &syntax_nodes::DeclaredIdentifier,
-    new_type: &str,
-) -> crate::Result<lsp_types::WorkspaceEdit> {
+    identifier: &i_slint_compiler::parser::SyntaxNode,
+) -> &'static dyn Fn(
+    &common::DocumentCache,
+    &syntax_nodes::Document,
+    &i_slint_compiler::parser::TextRange,
+    &str,
+    &str,
+    &mut Vec<common::SingleTextEdit>,
+) {
     fn change_local_element_type(
         document_cache: &common::DocumentCache,
         document_node: &syntax_nodes::Document,
@@ -506,28 +530,313 @@ pub fn rename_identifier_from_declaration(
         });
     }
 
-    let action: Option<
-        &dyn Fn(
-            &common::DocumentCache,
-            &syntax_nodes::Document,
-            &i_slint_compiler::parser::TextRange,
-            &str,
-            &str,
-            &mut Vec<common::SingleTextEdit>,
-        ),
-    > = match identifier.parent().map(|p| p.kind()).unwrap_or(SyntaxKind::Error) {
-        SyntaxKind::Component => Some(&change_local_element_type),
-        SyntaxKind::EnumDeclaration | SyntaxKind::StructDeclaration => {
-            Some(&change_local_data_type)
-        }
-        _ => None,
+    let type_name = main_identifier_text(&identifier);
+    let document = document_cache.get_document_for_source_file(&identifier.source_file).unwrap();
+
+    if document.local_registry.lookup_element(&type_name).is_ok() {
+        &change_local_element_type
+    } else {
+        &change_local_data_type
+    }
+}
+
+fn rename_local_import(
+    document_cache: &common::DocumentCache,
+    internal_name: &syntax_nodes::InternalName,
+    new_type: &str,
+    local_rename_function: &dyn Fn(
+        &common::DocumentCache,
+        &syntax_nodes::Document,
+        &i_slint_compiler::parser::TextRange,
+        &str,
+        &str,
+        &mut Vec<common::SingleTextEdit>,
+    ),
+) -> lsp_types::WorkspaceEdit {
+    let old_type = &main_identifier_text(internal_name);
+    let Some(document) = document_cache.get_document_for_source_file(&internal_name.source_file)
+    else {
+        return Default::default();
+    };
+    let Some(document_node) = &document.node else {
+        return Default::default();
     };
 
-    if let Some(action) = action {
-        rename_declared_identifier(document_cache, identifier, new_type, action)
+    let mut edits = vec![];
+
+    let identifier: syntax_nodes::ImportIdentifier = internal_name.parent().unwrap().into();
+    let external_name = identifier.ExternalName();
+    if main_identifier_text(&external_name) == new_type {
+        edits.push(
+            common::SingleTextEdit::from_path(
+                document_cache,
+                internal_name.source_file.path(),
+                lsp_types::TextEdit {
+                    range: util::node_to_lsp_range(&identifier),
+                    new_text: new_type.to_string(),
+                },
+            )
+            .expect("URL conversion can not fail here"),
+        );
     } else {
-        Err("Can not rename this identifier".into())
+        edits.push(
+            common::SingleTextEdit::from_path(
+                document_cache,
+                internal_name.source_file.path(),
+                lsp_types::TextEdit {
+                    range: util::node_to_lsp_range(&internal_name),
+                    new_text: new_type.to_string(),
+                },
+            )
+            .expect("URL conversion can not fail here"),
+        );
     }
+
+    // Change exports
+    fix_exports(
+        document_cache,
+        document_node,
+        old_type,
+        new_type,
+        local_rename_function,
+        &mut edits,
+    );
+
+    // Change all local usages:
+    local_rename_function(
+        document_cache,
+        document_node,
+        &document_node.text_range(),
+        old_type,
+        new_type,
+        &mut edits,
+    );
+
+    common::create_workspace_edit_from_single_text_edits(edits)
+}
+
+fn rename_local_export_name(
+    document_cache: &common::DocumentCache,
+    export_name: &syntax_nodes::ExportName,
+    new_type: &str,
+    local_rename_function: &dyn Fn(
+        &common::DocumentCache,
+        &syntax_nodes::Document,
+        &i_slint_compiler::parser::TextRange,
+        &str,
+        &str,
+        &mut Vec<common::SingleTextEdit>,
+    ),
+) -> lsp_types::WorkspaceEdit {
+    let old_type = &main_identifier_text(export_name);
+    let Some(document) = document_cache.get_document_for_source_file(&export_name.source_file)
+    else {
+        return Default::default();
+    };
+    let Some(document_node) = &document.node else {
+        return Default::default();
+    };
+
+    let mut edits = vec![];
+
+    let identifier: syntax_nodes::ExportSpecifier = export_name.parent().unwrap().into();
+    let internal_name = identifier.ExportIdentifier();
+    if main_identifier_text(&internal_name) == new_type {
+        edits.push(
+            common::SingleTextEdit::from_path(
+                document_cache,
+                export_name.source_file.path(),
+                lsp_types::TextEdit {
+                    range: util::node_to_lsp_range(&identifier),
+                    new_text: new_type.to_string(),
+                },
+            )
+            .expect("URL conversion can not fail here"),
+        );
+    } else {
+        edits.push(
+            common::SingleTextEdit::from_path(
+                document_cache,
+                export_name.source_file.path(),
+                lsp_types::TextEdit {
+                    range: util::node_to_lsp_range(&internal_name),
+                    new_text: new_type.to_string(),
+                },
+            )
+            .expect("URL conversion can not fail here"),
+        );
+    }
+
+    // Change exports
+    let my_path = document_node.source_file.path();
+    fix_imports(document_cache, my_path, old_type, new_type, local_rename_function, &mut edits);
+
+    common::create_workspace_edit_from_single_text_edits(edits)
+}
+
+pub enum DeclarationNode {
+    DeclaredIdentifier(syntax_nodes::DeclaredIdentifier),
+    InternalName(syntax_nodes::InternalName),
+    ExportName(syntax_nodes::ExportName),
+}
+
+impl DeclarationNode {
+    pub fn rename(
+        &self,
+        document_cache: &common::DocumentCache,
+        new_type: &str,
+    ) -> crate::Result<lsp_types::WorkspaceEdit> {
+        match self {
+            DeclarationNode::DeclaredIdentifier(identifier) => rename_declared_identifier(
+                document_cache,
+                identifier,
+                new_type,
+                local_rename_function(document_cache, identifier),
+            ),
+            DeclarationNode::InternalName(name) => Ok(rename_local_import(
+                document_cache,
+                name,
+                new_type,
+                local_rename_function(document_cache, name),
+            )),
+            DeclarationNode::ExportName(name) => Ok(rename_local_export_name(
+                document_cache,
+                name,
+                new_type,
+                local_rename_function(document_cache, name),
+            )),
+        }
+    }
+}
+
+impl From<syntax_nodes::DeclaredIdentifier> for DeclarationNode {
+    fn from(value: syntax_nodes::DeclaredIdentifier) -> Self {
+        Self::DeclaredIdentifier(value)
+    }
+}
+
+impl From<syntax_nodes::InternalName> for DeclarationNode {
+    fn from(value: syntax_nodes::InternalName) -> Self {
+        Self::InternalName(value)
+    }
+}
+
+impl From<syntax_nodes::ExportName> for DeclarationNode {
+    fn from(value: syntax_nodes::ExportName) -> Self {
+        Self::ExportName(value)
+    }
+}
+
+impl TryFrom<i_slint_compiler::parser::SyntaxNode> for DeclarationNode {
+    type Error = String;
+
+    fn try_from(value: i_slint_compiler::parser::SyntaxNode) -> Result<Self, Self::Error> {
+        match value.kind() {
+            SyntaxKind::DeclaredIdentifier => Ok(Self::DeclaredIdentifier(value.into())),
+            SyntaxKind::InternalName => Ok(Self::InternalName(value.into())),
+            SyntaxKind::ExportName => Ok(Self::ExportName(value.into())),
+            _ => Err("Can not convert into an DeclarationNode".into()),
+        }
+    }
+}
+
+fn find_last_declared_identifier_before(
+    token: i_slint_compiler::parser::SyntaxToken,
+    type_name: &str,
+) -> Option<syntax_nodes::DeclaredIdentifier> {
+    let mut token = Some(token);
+
+    while let Some(t) = token {
+        if t.kind() == SyntaxKind::Identifier {
+            let node = t.parent();
+            if node.kind() == SyntaxKind::DeclaredIdentifier
+                && main_identifier_text(&node) == type_name
+            {
+                return Some(node.into());
+            }
+        }
+        token = t.prev_token();
+    }
+
+    None
+}
+
+pub fn find_declaration_node_before_token(
+    document_cache: &common::DocumentCache,
+    document_node: &syntax_nodes::Document,
+    start_token: Option<&i_slint_compiler::parser::SyntaxToken>,
+    type_name: &str,
+) -> Option<DeclarationNode> {
+    // Exported under a custom name?
+    if start_token.is_none() {
+        for export_item in document_node.ExportsList() {
+            for specifier in export_item.ExportSpecifier() {
+                if let Some(export_name) = specifier.ExportName() {
+                    if main_identifier_text(&export_name) == type_name {
+                        return Some(DeclarationNode::from(export_name));
+                    }
+                }
+            }
+        }
+    }
+
+    // Locally defined?
+    let last_document_token = document_node.last_token();
+    let token = start_token.or_else(|| last_document_token.as_ref())?.clone();
+
+    if let Some(declared_identifier) = find_last_declared_identifier_before(token, &type_name) {
+        return Some(DeclarationNode::from(declared_identifier));
+    }
+
+    // Imported?
+    for import_spec in document_node.ImportSpecifier() {
+        if let Some(import_id) = import_spec.ImportIdentifierList() {
+            for id in import_id.ImportIdentifier() {
+                let external = main_identifier_text(&id.ExternalName());
+                let internal = id.InternalName().map(|i| main_identifier_text(&i));
+
+                if internal.as_ref().map(|i| i.as_str()) == Some(type_name) {
+                    return Some(id.InternalName().unwrap().into());
+                }
+
+                if external == type_name {
+                    let document_path = document_node.source_file.path();
+                    let document_dir = document_path.parent()?;
+                    let path = import_path(document_dir, &import_spec)?;
+                    let import_doc = document_cache.get_document_by_path(&path)?;
+                    let import_doc_node = import_doc.node.as_ref()?;
+
+                    return find_declaration_node_before_token(
+                        document_cache,
+                        import_doc_node,
+                        None,
+                        type_name,
+                    );
+                }
+            }
+        }
+    }
+
+    None
+}
+
+/// Find the closest "rename-able" SyntaxNode
+pub fn find_declaration_node_for_qualified_name(
+    document_cache: &common::DocumentCache,
+    qualified_name: &syntax_nodes::QualifiedName,
+) -> Option<DeclarationNode> {
+    let type_name = main_identifier_text(qualified_name);
+    let source_file = qualified_name.source_file()?;
+    let document = document_cache.get_document_for_source_file(source_file)?;
+
+    let start_token = qualified_name.first_token()?.prev_token()?;
+
+    find_declaration_node_before_token(
+        document_cache,
+        document.node.as_ref()?,
+        Some(&start_token),
+        &type_name,
+    )
 }
 
 /// Helper function to rename a `DeclaredIdentifier`.
@@ -535,7 +844,7 @@ fn rename_declared_identifier(
     document_cache: &common::DocumentCache,
     identifier: &syntax_nodes::DeclaredIdentifier,
     new_type: &str,
-    fixup_local_use: &dyn Fn(
+    local_rename_function: &dyn Fn(
         &common::DocumentCache,
         &syntax_nodes::Document,
         &i_slint_compiler::parser::TextRange,
@@ -596,7 +905,7 @@ fn rename_declared_identifier(
     );
 
     // Change all local usages:
-    fixup_local_use(
+    local_rename_function(
         document_cache,
         document_node,
         &validity_range,
@@ -612,7 +921,7 @@ fn rename_declared_identifier(
             document_node,
             &old_type,
             new_type,
-            fixup_local_use,
+            local_rename_function,
             &mut edits,
         );
 
@@ -620,7 +929,14 @@ fn rename_declared_identifier(
         if export_names.contains(&old_type.to_string()) {
             let my_path = source_file.path();
 
-            fix_imports(document_cache, my_path, &old_type, new_type, fixup_local_use, &mut edits);
+            fix_imports(
+                document_cache,
+                my_path,
+                &old_type,
+                new_type,
+                local_rename_function,
+                &mut edits,
+            );
         }
     }
 
@@ -691,6 +1007,40 @@ mod tests {
 
         result.sort_by_key(|i| i.text_range().start());
         result
+    }
+
+    fn find_node_by_comment(
+        document: &syntax_nodes::Document,
+        suffix: &str,
+    ) -> Option<i_slint_compiler::parser::SyntaxNode> {
+        let comment = document
+            .descendants_with_tokens()
+            .find(|node_or_token| {
+                node_or_token.kind() == SyntaxKind::Comment
+                    && node_or_token
+                        .as_token()
+                        .unwrap()
+                        .text()
+                        .contains(&format!("<- TEST_ME{suffix} "))
+            })?
+            .as_token()?
+            .clone();
+
+        let source_file = document.source_file.clone();
+
+        let mut token = comment.prev_token();
+
+        while let Some(t) = &token {
+            if ![SyntaxKind::Comment, SyntaxKind::Whitespace].contains(&t.kind()) {
+                break;
+            }
+            token = t.prev_token();
+        }
+
+        token.map(|t| i_slint_compiler::parser::SyntaxNode {
+            node: t.parent().unwrap(),
+            source_file: source_file.clone(),
+        })
     }
 
     #[track_caller]
@@ -783,9 +1133,9 @@ export component Bar {
         let identifiers = preview::find_component_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 2);
 
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
 
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
@@ -801,9 +1151,9 @@ export component Bar {
         assert!(edited_text[0].contents.contains("Foo /* <- TEST_ME_7 "));
         assert!(edited_text[0].contents.contains("export { Foo }"));
 
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[1], "XxxYyyZzz")
-                .unwrap();
+        let edit = DeclarationNode::from(identifiers[1].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
 
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
@@ -834,12 +1184,10 @@ export component Bar {
         let doc = document_cache.get_document_by_path(&test::main_test_file_name()).unwrap();
 
         let identifiers = preview::find_component_identifiers(doc.node.as_ref().unwrap(), "Foo");
-        let edit = rename_identifier_from_declaration(
-            &document_cache,
-            identifiers.first().unwrap(),
-            "FooXXX",
-        )
-        .unwrap();
+        assert_eq!(identifiers.len(), 1);
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "FooXxx")
+            .unwrap();
 
         assert_eq!(text_edit::EditIterator::new(&edit).count(), 1);
         // This does not compile as the type was not changed in the _SLINT_LivePreview part!
@@ -878,12 +1226,10 @@ export { Foo as FExport }
             document_cache.get_document_by_path(&test::test_file_name("source.slint")).unwrap();
 
         let identifiers = preview::find_component_identifiers(doc.node.as_ref().unwrap(), "Foo");
-        let edit = rename_identifier_from_declaration(
-            &document_cache,
-            &identifiers.first().unwrap(),
-            "XxxYyyZzz",
-        )
-        .unwrap();
+        assert_eq!(identifiers.len(), 1);
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
 
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
@@ -978,8 +1324,7 @@ export { Foo as User4Fxx }
             .first()
             .cloned()
             .unwrap();
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifier, "XxxYyyZzz").unwrap();
+        let edit = DeclarationNode::from(identifier).rename(&document_cache, "XxxYyyZzz").unwrap();
 
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
@@ -1095,8 +1440,7 @@ export { Foo as User4Fxx }
             .first()
             .cloned()
             .unwrap();
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifier, "XxxYyyZzz").unwrap();
+        let edit = DeclarationNode::from(identifier).rename(&document_cache, "XxxYyyZzz").unwrap();
 
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
@@ -1173,8 +1517,7 @@ export component Foo { }
             .first()
             .cloned()
             .unwrap();
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifier, "XxxYyyZzz").unwrap();
+        let edit = DeclarationNode::from(identifier).rename(&document_cache, "XxxYyyZzz").unwrap();
 
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
@@ -1195,12 +1538,9 @@ export component Foo { }
             document_cache.get_document_by_path(&test::test_file_name("user2.slint")).unwrap();
 
         let identifiers = preview::find_component_identifiers(doc.node.as_ref().unwrap(), "Foo");
-        let edit = rename_identifier_from_declaration(
-            &document_cache,
-            &identifiers.first().unwrap(),
-            "XxxYyyZzz",
-        )
-        .unwrap();
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
 
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
@@ -1251,15 +1591,13 @@ export component Bar {
 
         let identifiers = preview::find_component_identifiers(doc.node.as_ref().unwrap(), "Foo");
 
-        let id = identifiers.first().unwrap();
+        let id = DeclarationNode::from(identifiers.first().unwrap().clone());
 
-        assert!(rename_identifier_from_declaration(&document_cache, id, "Foo").is_err());
-        assert!(rename_identifier_from_declaration(&document_cache, id, "UsedStruct").is_ok());
-        assert!(rename_identifier_from_declaration(&document_cache, id, "UsedEnum").is_ok());
-        assert!(rename_identifier_from_declaration(&document_cache, id, "Baz").is_err());
-        assert!(
-            rename_identifier_from_declaration(&document_cache, id, "HorizontalLayout").is_err()
-        );
+        assert!(id.rename(&document_cache, "Foo").is_err());
+        assert!(id.rename(&document_cache, "UsedStruct").is_ok());
+        assert!(id.rename(&document_cache, "UsedEnum").is_ok());
+        assert!(id.rename(&document_cache, "Baz").is_err());
+        assert!(id.rename(&document_cache, "HorizontalLayout").is_err());
     }
 
     #[test]
@@ -1334,10 +1672,9 @@ export component Bar {
 
         let identifiers = find_struct_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 1);
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
-
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         assert_eq!(edited_text.len(), 1);
@@ -1381,11 +1718,9 @@ export { Foo as FExport }
 
         let identifiers = find_struct_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 1);
-
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
-
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         assert_eq!(edited_text.len(), 1);
@@ -1480,10 +1815,9 @@ export { Foo as User4Fxx }
 
         let identifiers = find_struct_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 1);
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
-
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         for ed in &edited_text {
@@ -1552,10 +1886,9 @@ export { Foo as User4Fxx }
 
         let identifiers = find_enum_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 2);
-
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         assert_eq!(edited_text.len(), 1);
@@ -1565,9 +1898,9 @@ export { Foo as User4Fxx }
         assert!(edited_text[0].contents.contains("property <Foo> bar-prop"));
         assert!(edited_text[0].contents.contains("export { Foo }"));
 
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[1], "XxxYyyZzz")
-                .unwrap();
+        let edit = DeclarationNode::from(identifiers[1].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         assert_eq!(edited_text.len(), 1);
@@ -1614,10 +1947,9 @@ export { Foo as User4Fxx }
 
         let identifiers = find_enum_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 1);
-
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         assert_eq!(edited_text.len(), 1);
@@ -1631,10 +1963,9 @@ export { Foo as User4Fxx }
 
         let identifiers = find_struct_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 1);
-
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         assert_eq!(edited_text.len(), 1);
@@ -1683,10 +2014,9 @@ export { Foo as User4Fxx }
 
         let identifiers = find_enum_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 1);
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
-
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         assert_eq!(edited_text.len(), 1);
@@ -1782,10 +2112,9 @@ export { Foo as User4Fxx }
 
         let identifiers = find_enum_identifiers(doc.node.as_ref().unwrap(), "Foo");
         assert_eq!(identifiers.len(), 1);
-        let edit =
-            rename_identifier_from_declaration(&document_cache, &identifiers[0], "XxxYyyZzz")
-                .unwrap();
-
+        let edit = DeclarationNode::from(identifiers[0].clone())
+            .rename(&document_cache, "XxxYyyZzz")
+            .unwrap();
         let edited_text = compile_test_changes(&document_cache, &edit, false);
 
         for ed in &edited_text {
@@ -1817,4 +2146,393 @@ export { Foo as User4Fxx }
             }
         }
     }
+
+    #[track_caller]
+    fn identifier_eq(
+        id1: &syntax_nodes::DeclaredIdentifier,
+        id2: &syntax_nodes::DeclaredIdentifier,
+    ) {
+        assert_eq!(id1.source_file.path(), id2.source_file.path());
+        assert_eq!(id1.text_range(), id2.text_range());
+    }
+
+    #[test]
+    fn test_rename_component_from_use_ok() {
+        let document_cache = test::compile_test_with_sources(
+            "fluent",
+            HashMap::from([(
+                Url::from_file_path(test::main_test_file_name()).unwrap(),
+                r#"
+component Foo /* Foo 1 */ { }
+
+export component FooBaz {
+    Foo /* <- TEST_ME_1 */ { }
+}
+
+component Foo /* Foo 2 */ { }
+
+component Baz {
+    Foo /* <- TEST_ME_2 */ { }
+}
+
+export component Bar {
+    Foo /* <- TEST_ME_3 */ { }
+    Rectangle {
+        Foo /* <- TEST_ME_4 */ { }
+        Baz { }
+    }
+
+    if true: Rectangle {
+        Foo /* <- TEST_ME_5 */ { }
+    }
+
+    if false: Rectangle {
+        Foo /* <- TEST_ME_6 */ { }
+    }
+
+    for i in [1, 2, 3]: Foo /* <- TEST_ME_7 */ { }
+}
+                    "#
+                .to_string(),
+            )]),
+            true, // Foo 1 is not used or exported... ?!
+        );
+
+        let doc = document_cache.get_document_by_path(&test::main_test_file_name()).unwrap();
+
+        let identifiers =
+            preview::find_component_identifiers(doc.node.as_ref().as_ref().unwrap(), "Foo");
+        assert_eq!(identifiers.len(), 2);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_1").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[0], &id);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_2").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[1], &id);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_3").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[1], &id);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_4").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[1], &id);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_5").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[1], &id);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_6").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[1], &id);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_7").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+
+        identifier_eq(&identifiers[1], &id);
+    }
+
+    #[test]
+    fn test_rename_struct_from_use_ok() {
+        let document_cache = test::compile_test_with_sources(
+            "fluent",
+            HashMap::from([(
+                Url::from_file_path(test::main_test_file_name()).unwrap(),
+                r#"
+struct Foo {
+    test: bool,
+}
+
+struct Bar {
+    bar-test: Foo /* <- TEST_ME_1 */,
+}
+
+export component Bar {
+    property <Foo /* <- TEST_ME_2 */> bar-prop: { test: false };
+}
+                    "#
+                .to_string(),
+            )]),
+            false,
+        );
+
+        let doc = document_cache.get_document_by_path(&test::main_test_file_name()).unwrap();
+
+        let identifiers = find_struct_identifiers(doc.node.as_ref().unwrap(), "Foo");
+        assert_eq!(identifiers.len(), 1);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_1").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[0], &id);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_2").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[0], &id);
+    }
+
+    #[test]
+    fn test_rename_component_from_use_with_export_ok() {
+        let document_cache = test::compile_test_with_sources(
+            "fluent",
+            HashMap::from([
+                (
+                    Url::from_file_path(test::main_test_file_name()).unwrap(),
+                    r#"
+    import { Foo /* Foo 1 */ } from "source.slint";
+    import { UserComponent } from "user.slint";
+    import { User2Component } from "user2.slint";
+    import { Foo as User3Fxx } from "user3.slint";
+    import { User4Fxx } from "user4.slint";
+
+    export component Main {
+        Foo /* <- TEST_ME_1 */ { }
+        UserComponent { }
+        User2Component { }
+        User3Fxx /* <- TEST_ME_2 */ { }
+        User4Fxx /* <- TEST_ME_3 */ { }
+    }
+                    "#
+                    .to_string(),
+                ),
+                (
+                    Url::from_file_path(test::test_file_name("source.slint")).unwrap(),
+                    r#"
+    export component Foo /* Foo 2 */ { }
+                    "#
+                    .to_string(),
+                ),
+                (
+                    Url::from_file_path(test::test_file_name("user.slint")).unwrap(),
+                    r#"
+    import { Foo /* Foo 3 */ as Bar } from "source.slint";
+
+    export component UserComponent {
+        Bar /* <- TEST_ME_4 */ { }
+    }
+
+    export { Bar }
+                    "#
+                    .to_string(),
+                ),
+                (
+                    Url::from_file_path(test::test_file_name("user2.slint")).unwrap(),
+                    r#"
+    import { Foo /* Foo 4 */ as XxxYyyZzz } from "source.slint";
+
+    export component User2Component {
+        XxxYyyZzz /* <- TEST_ME_5 */ { }
+    }
+                    "#
+                    .to_string(),
+                ),
+                (
+                    Url::from_file_path(test::test_file_name("user3.slint")).unwrap(),
+                    r#"
+    import { Foo /* Foo 5 */ } from "source.slint";
+
+    export { Foo /* Foo 6 */ }
+                    "#
+                    .to_string(),
+                ),
+                (
+                    Url::from_file_path(test::test_file_name("user4.slint")).unwrap(),
+                    r#"
+    import { Foo /* Foo 7 */ } from "source.slint";
+
+    export { Foo /* Foo 8 */ as User4Fxx }
+                    "#
+                    .to_string(),
+                ),
+            ]),
+            false,
+        );
+
+        let doc = document_cache.get_document_by_path(&test::main_test_file_name()).unwrap();
+        let source_doc =
+            document_cache.get_document_by_path(&test::test_file_name("source.slint")).unwrap();
+
+        let identifiers =
+            preview::find_component_identifiers(source_doc.node.as_ref().unwrap(), "Foo");
+        assert_eq!(identifiers.len(), 1);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_1").unwrap().into();
+        let DeclarationNode::DeclaredIdentifier(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+        identifier_eq(&identifiers[0], &id);
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_2").unwrap().into();
+        let DeclarationNode::InternalName(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+
+        assert_eq!(id.source_file.path(), test::main_test_file_name());
+
+        let name = find_node_by_comment(doc.node.as_ref().unwrap(), "_3").unwrap().into();
+        let DeclarationNode::ExportName(id) =
+            find_declaration_node_for_qualified_name(&document_cache, &name).unwrap()
+        else {
+            panic!("Unexpected declaration node");
+        };
+
+        assert_eq!(id.source_file.path(), test::test_file_name("user4.slint"));
+    }
+
+    //     #[test]
+    //     fn test_rename_component_from_use_with_export_and_relative_paths_ok() {
+    //         let document_cache = test::compile_test_with_sources(
+    //             "fluent",
+    //             HashMap::from([
+    //                 (
+    //                     Url::from_file_path(test::main_test_file_name()).unwrap(),
+    //                     r#"
+    // import { Foo } from "s/source.slint";
+    // import { UserComponent } from "u/user.slint";
+    // import { User2Component } from "u/user2.slint";
+    // import { Foo as User3Fxx } from "u/user3.slint";
+    // import { User4Fxx } from "u/user4.slint";
+
+    // export component Main {
+    //     Foo { }
+    //     UserComponent { }
+    //     User2Component { }
+    // }
+    //                 "#
+    //                     .to_string(),
+    //                 ),
+    //                 (
+    //                     Url::from_file_path(test::test_file_name("s/source.slint")).unwrap(),
+    //                     r#"
+    // export component Foo { }
+    //                 "#
+    //                     .to_string(),
+    //                 ),
+    //                 (
+    //                     Url::from_file_path(test::test_file_name("u/user.slint")).unwrap(),
+    //                     r#"
+    // import { Foo as Bar } from "../s/source.slint";
+
+    // export component UserComponent {
+    //     Bar { }
+    // }
+
+    // export { Bar }
+    //                 "#
+    //                     .to_string(),
+    //                 ),
+    //                 (
+    //                     Url::from_file_path(test::test_file_name("u/user2.slint")).unwrap(),
+    //                     r#"
+    // import { Foo as XxxYyyZzz } from "../s/source.slint";
+
+    // export component User2Component {
+    //     XxxYyyZzz { }
+    // }
+    //                 "#
+    //                     .to_string(),
+    //                 ),
+    //                 (
+    //                     Url::from_file_path(test::test_file_name("u/user3.slint")).unwrap(),
+    //                     r#"
+    // import { Foo } from "../s/source.slint";
+
+    // export { Foo }
+    //                 "#
+    //                     .to_string(),
+    //                 ),
+    //                 (
+    //                     Url::from_file_path(test::test_file_name("u/user4.slint")).unwrap(),
+    //                     r#"
+    // import { Foo } from "../s/source.slint";
+
+    // export { Foo as User4Fxx }
+    //                 "#
+    //                     .to_string(),
+    //                 ),
+    //             ]),
+    //             false,
+    //         );
+
+    //         let doc =
+    //             document_cache.get_document_by_path(&test::test_file_name("s/source.slint")).unwrap();
+
+    //         let foo_identifier =
+    //             preview::find_component_identifier(doc.node.as_ref().unwrap(), "Foo").unwrap();
+    //         let edit =
+    //             rename_identifier_from_declaration(&document_cache, &foo_identifier, "XxxYyyZzz")
+    //                 .unwrap();
+
+    //         let edited_text = compile_test_changes(&document_cache, &edit, false);
+
+    //         for ed in &edited_text {
+    //             let ed_path = ed.url.to_file_path().unwrap();
+    //             if ed_path == test::main_test_file_name() {
+    //                 assert!(ed.contents.contains("XxxYyyZzz"));
+    //                 assert!(!ed.contents.contains("Foo"));
+    //                 assert!(ed.contents.contains("UserComponent"));
+    //                 assert!(ed.contents.contains("import { XxxYyyZzz as User3Fxx }"));
+    //                 assert!(ed.contents.contains("import { User4Fxx }"));
+    //             } else if ed_path == test::test_file_name("s/source.slint") {
+    //                 assert!(ed.contents.contains("export component XxxYyyZzz {"));
+    //                 assert!(!ed.contents.contains("Foo"));
+    //             } else if ed_path == test::test_file_name("u/user.slint") {
+    //                 assert!(ed.contents.contains("{ XxxYyyZzz as Bar }"));
+    //                 assert!(ed.contents.contains("Bar { }"));
+    //                 assert!(!ed.contents.contains("Foo"));
+    //             } else if ed_path == test::test_file_name("u/user2.slint") {
+    //                 assert!(ed.contents.contains("import { XxxYyyZzz }"));
+    //                 assert!(ed.contents.contains("XxxYyyZzz { }"));
+    //             } else if ed_path == test::test_file_name("u/user3.slint") {
+    //                 assert!(ed.contents.contains("import { XxxYyyZzz }"));
+    //                 assert!(ed.contents.contains("export { XxxYyyZzz }"));
+    //             } else if ed_path == test::test_file_name("u/user4.slint") {
+    //                 assert!(ed.contents.contains("import { XxxYyyZzz }"));
+    //                 assert!(ed.contents.contains("export { XxxYyyZzz as User4Fxx }"));
+    //             } else {
+    //                 unreachable!();
+    //             }
+    //         }
+    //     }
 }
