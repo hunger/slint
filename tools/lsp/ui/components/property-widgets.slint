@@ -52,35 +52,25 @@ component ResettingLineEdit {
 
     callback accepted <=> le.accepted;
     callback edited <=> le.edited;
+    VerticalLayout {
+        le := LineEdit {
+            enabled: root.enabled;
 
-    min-width <=> le.min-width;
-    preferred-width <=> le.preferred-width;
-    max-width <=> le.max-width;
+            width: 100%;
 
-    min-height <=> le.min-height;
-    preferred-height <=> le.preferred-height;
-    max-height <=> le.max-height;
+            text: root.default-text;
+            font-size: 1rem;
 
-    le := LineEdit {
-        enabled: root.enabled;
-
-        width: 100%;
-        height: 100%;
-        x: 0px;
-        y: 0px;
-
-        text: root.default-text;
-        font-size: 1rem;
-
-        // Reset on focus loss:
-        changed has-focus => {
-            if !self.has_focus && text != default-text {
-                if root.can-compile {
-                    root.accepted(self.text);
+            // Reset on focus loss:
+            changed has-focus => {
+                if !self.has_focus && text != default-text {
+                    if root.can-compile {
+                        root.accepted(self.text);
+                    }
+                } else {
+                    self.text = root.default-text;
+                    root.can-compile = true;
                 }
-            } else {
-                self.text = root.default-text;
-                root.can-compile = true;
             }
         }
     }
@@ -304,6 +294,8 @@ component StringWidget {
     in property <string> property-name;
     in property <PropertyValue> property-value;
 
+    property <bool> open: false;
+
     callback code-action();
     callback reset-action();
 
@@ -318,7 +310,6 @@ component StringWidget {
         // set-string-binding(Api.string-to-code(text-rle.text, tr-cb.checked, tr-context.text, tr-plural.text, tr-plural-expression.text), tr-cb.checked);
         set-string-binding(Api.string-to-code(text-rle.text, tr-cb.checked, tr-context.text, "", ""), tr-cb.checked);
     }
-    property <bool> open: false;
 
     childIndicator := ChildIndicator {
         y: content.y + EditorSpaceSettings.default-spacing / 2;
@@ -706,66 +697,32 @@ component EditJsonWidget inherits VerticalLayout {
     }
 }
 
-export component PropertyInformationWidget inherits VerticalLayout {
-    in property <PropertyInformation> property-information;
-    in property <ElementInformation> element-information;
+export component PropertyValueWidget inherits VerticalLayout {
+    in property <PropertyValue> property-value;
+    in property <string> property-name;
     in property <bool> enabled;
 
-    function set-string-binding(text: string, is-translated: bool) {
-        set-code-binding(text);
+    callback set-code-binding(text: string);
+    callback test-code-binding(text: string) -> bool;
+    callback set-string-binding(text: string, is_translated: bool);
+    callback test-string-binding(text: string, is_translated: bool) -> bool;
 
-    }
-    function test-string-binding(text: string, is-translated: bool) -> bool {
-        return (test-code-binding(text));
+    callback reset-action();
+    callback code-action();
 
-    }
-
-    function set-code-binding(text: string) {
-        Api.set-code-binding(
-            element-information.source-uri,
-            element-information.source-version,
-            element-information.range.start,
-            property-information.name,
-            text,
-        );
-    }
-
-    function test-code-binding(text: string) -> bool {
-        return (Api.test-code-binding(
-            root.element-information.source-uri,
-            root.element-information.source-version,
-            root.element-information.range.start,
-            root.property-information.name,
-            text,
-        ));
-    }
-
-    function reset-action() {
-        set-code-binding("");
-    }
-
-    function code-action() {
-        Api.show-document-offset-range(
-            element-information.source-uri,
-            Api.property-declaration-ranges(property-information.name).defined-at.expression-range.start,
-            Api.property-declaration-ranges(property-information.name).defined-at.expression-range.start,
-            true,
-        );
-    }
-
-    if root.property-information.value.kind == PropertyValueKind.boolean: BooleanWidget {
+    if root.property-value.kind == PropertyValueKind.boolean: BooleanWidget {
         enabled <=> root.enabled;
-        property-name: root.property-information.name;
-        property-value: root.property-information.value;
+        property-name: root.property-name;
+        property-value: root.property-value;
 
         set-bool-binding(text) => {
             root.set-code-binding(text);
         }
     }
-    if (root.property-information.value.kind == PropertyValueKind.color) || (root.property-information.value.kind == PropertyValueKind.brush): ColorWidget {
+    if (root.property-value.kind == PropertyValueKind.color) || (root.property-value.kind == PropertyValueKind.brush): ColorWidget {
         enabled <=> root.enabled;
-        property-name: root.property-information.name;
-        property-value: root.property-information.value;
+        property-name: root.property-name;
+        property-value: root.property-value;
 
         test-color-binding(text) => {
             return (Api.string-is-color(text));
@@ -775,10 +732,10 @@ export component PropertyInformationWidget inherits VerticalLayout {
         }
     }
 
-    if root.property-information.value.kind == PropertyValueKind.code: CodeWidget {
+    if root.property-value.kind == PropertyValueKind.code: CodeWidget {
         enabled <=> root.enabled;
-        property-name: root.property-information.name;
-        property-value: root.property-information.value;
+        property-name: root.property-name;
+        property-value: root.property-value;
 
         reset-action() => {
             root.reset-action();
@@ -787,19 +744,19 @@ export component PropertyInformationWidget inherits VerticalLayout {
             root.code-action();
         }
     }
-    if root.property-information.value.kind == PropertyValueKind.enum:  EnumWidget {
+    if root.property-value.kind == PropertyValueKind.enum:  EnumWidget {
         enabled <=> root.enabled;
-        property-name: root.property-information.name;
-        property-value: root.property-information.value;
+        property-name: root.property-name;
+        property-value: root.property-value;
 
         set-enum-binding(text) => {
             root.set-code-binding(text);
         }
     }
-    if root.property-information.value.kind == PropertyValueKind.float: FloatWidget {
+    if root.property-value.kind == PropertyValueKind.float: FloatWidget {
         enabled <=> root.enabled;
-        property-name: root.property-information.name;
-        property-value: root.property-information.value;
+        property-name: root.property-name;
+        property-value: root.property-value;
 
         test-float-binding(text) => {
             return (root.test-code-binding(text));
@@ -808,10 +765,10 @@ export component PropertyInformationWidget inherits VerticalLayout {
             root.set-code-binding(text);
         }
     }
-    if root.property-information.value.kind == PropertyValueKind.integer: IntegerWidget {
+    if root.property-value.kind == PropertyValueKind.integer: IntegerWidget {
         enabled <=> root.enabled;
-        property-name: root.property-information.name;
-        property-value: root.property-information.value;
+        property-name: root.property-name;
+        property-value: root.property-value;
 
         test-integer-binding(text) => {
             return (root.test-code-binding(text));
@@ -820,10 +777,10 @@ export component PropertyInformationWidget inherits VerticalLayout {
             root.set-code-binding(text);
         }
     }
-    if root.property-information.value.kind == PropertyValueKind.string: StringWidget {
+    if root.property-value.kind == PropertyValueKind.string: StringWidget {
         enabled <=> root.enabled;
-        property-name: root.property-information.name;
-        property-value: root.property-information.value;
+        property-name: root.property-name;
+        property-value: root.property-value;
 
         reset-action() => {
             root.reset-action();
@@ -832,20 +789,82 @@ export component PropertyInformationWidget inherits VerticalLayout {
             root.code-action();
         }
 
-        test-string-binding(text, is-translated) => {
-            return (root.test-string-binding(text, is-translated));
+        test-string-binding(text, is_translated) => {
+            return root.test-string-binding(text, is_translated);
         }
 
-        set-string-binding(text, is-translated) => {
-            root.set-string-binding(text, is-translated);
+        set-string-binding(text, is_translated) => {
+            root.set-string-binding(text, is_translated);
         }
     }
 }
 
-export component RuntimePropertyValueWidget inherits HorizontalLayout {
-    in property <RuntimeProperty> runtime-property;
+export component PropertyInformationWidget inherits VerticalLayout {
+    in property <PropertyInformation> property-information;
+    in property <ElementInformation> element-information;
+    in property <bool> enabled;
 
-    alignment: stretch;
+    PropertyValueWidget {
+        property-value: root.property-information.value;
+        property-name: root.property-information.name;
+        enabled: root.enabled;
+
+        set-code-binding(text) => {
+            Api.set-code-binding(
+                element-information.source-uri,
+                element-information.source-version,
+                element-information.range.start,
+                property-information.name,
+                text,
+            );
+        }
+        test-code-binding(text) => {
+            return (Api.test-code-binding(
+                root.element-information.source-uri,
+                root.element-information.source-version,
+                root.element-information.range.start,
+                root.property-information.name,
+                text,
+            ));
+        }
+        set-string-binding(text, is-translated) => {
+            Api.set-code-binding(
+                element-information.source-uri,
+                element-information.source-version,
+                element-information.range.start,
+                property-information.name,
+                text);
+        }
+        test-string-binding(text, is-translated) => {
+            return (Api.test-code-binding(
+                root.element-information.source-uri,
+                root.element-information.source-version,
+                root.element-information.range.start,
+                root.property-information.name,
+                text));
+        }
+        reset-action() => {
+            Api.set-code-binding(
+                element-information.source-uri,
+                element-information.source-version,
+                element-information.range.start,
+                property-information.name,
+                "",
+            );
+        }
+        code-action() => {
+            Api.show-document-offset-range(
+                element-information.source-uri,
+                Api.property-declaration-ranges(property-information.name).defined-at.expression-range.start,
+                Api.property-declaration-ranges(property-information.name).defined-at.expression-range.start,
+                true,
+            );
+        }
+    }
+}
+
+export component RuntimePropertyValueWidget inherits VerticalLayout {
+    in property <RuntimeProperty> runtime-property;
 
     function reset-action() {
         // TODO!
@@ -867,28 +886,6 @@ export component RuntimePropertyValueWidget inherits HorizontalLayout {
 
     property <PropertyValue> value: root.runtime-property.values[0].value;
 
-    if is-simple && value.kind == PropertyValueKind.boolean: BooleanWidget {
-        enabled: root.runtime-property.has-setter;
-        property-name: root.full-prop-name;
-        property-value: value;
-
-        set-bool-binding(text) => {
-            // TODO!
-        }
-    }
-    if is-simple && ((value.kind == PropertyValueKind.color) || (value.kind == PropertyValueKind.brush)): ColorWidget {
-        enabled: root.runtime-property.has-setter;
-        property-name: root.full-prop-name;
-        property-value: value;
-
-        test-color-binding(text) => {
-            return(false); // TODO
-        }
-        set-color-binding(text) => {
-            // TODO!
-        }
-    }
-
     if is-simple && value.kind == PropertyValueKind.code: CodeWidget {
         enabled: root.runtime-property.has-setter;
         property-name: root.full-prop-name;
@@ -901,56 +898,22 @@ export component RuntimePropertyValueWidget inherits HorizontalLayout {
             root.code-action();
         }
     }
-    if is-simple && value.kind == PropertyValueKind.enum:  EnumWidget {
-        enabled: root.runtime-property.has-setter;
-        property-name: root.full-prop-name;
+    if is-simple && value.kind != PropertyValueKind.code: PropertyValueWidget {
         property-value: value;
+        property-name: root.full-prop-name;
+        enabled: root.runtime-property.has-setter;
 
-        set-enum-binding(text) => {
+        set-code-binding(text) => {
             // TODO!
         }
-    }
-    if is-simple && value.kind == PropertyValueKind.float: FloatWidget {
-        enabled: root.runtime-property.has-setter;
-        property-name: root.full-prop-name;
-        property-value: value;
-
-        test-float-binding(text) => {
-            return(false); // TODO
-        }
-        set-float-binding(text) => {
-            // TODO!
-        }
-    }
-    if is-simple && value.kind == PropertyValueKind.integer: IntegerWidget {
-        enabled: root.runtime-property.has-setter;
-        property-name: root.full-prop-name;
-        property-value: value;
-
-        test-integer-binding(text) => {
-            return(false); // TODO
-        }
-        set-integer-binding(text) => {
-            // TODO!
-        }
-    }
-    if is-simple && value.kind == PropertyValueKind.string: StringWidget {
-        enabled: root.runtime-property.has-setter;
-        property-name: root.full-prop-name;
-        property-value: value;
-
-        reset-action() => {
-            root.reset-action();
-        }
-        code-action() => {
-            root.code-action();
-        }
-
-        test-string-binding(text) => {
+        test-code-binding(text) => {
             return(false); // TODO
         }
         set-string-binding(text) => {
             // TODO!
+        }
+        test-string-binding(text) => {
+            return(false); // TODO
         }
     }
     if is-multi-value: EditMultiValueWidget {
@@ -963,7 +926,6 @@ export component RuntimePropertyValueWidget inherits HorizontalLayout {
         property-name: root.full-prop-name;
         property-value: value;
     }
-
 }
 
 export component ExpandableGroup {
