@@ -97,9 +97,9 @@ pub fn create_ui(style: String, experimental: bool) -> Result<PreviewUi, Platfor
     api.on_set_color_binding(super::set_color_binding);
     api.on_property_declaration_ranges(super::property_declaration_ranges);
 
-    // api.on_set_runtime_property();
-    // api.on_set_runtime_array_property();
+    api.on_set_runtime_property(set_runtime_property);
     api.on_set_runtime_json_properties(set_runtime_json_properties);
+    api.on_duplicate_runtime_property_value_table(duplicate_runtime_property_value_table);
 
     api.on_string_to_code(string_to_code);
     api.on_string_to_color(|s| string_to_color(s.as_ref()).unwrap_or_default());
@@ -854,12 +854,13 @@ fn get_code(v: &Option<slint_interpreter::Value>) -> SharedString {
         .into()
 }
 
-#[derive(Default)]
+#[derive(Default, Debug)]
 struct ValueMapping {
     name_prefix: String,
     is_too_complex: bool,
     is_array: bool,
-    values: Vec<NamedPropertyValue>,
+    header: Vec<String>,
+    current_values: Vec<PropertyValue>,
     array_values: Vec<Vec<PropertyValue>>,
 }
 
@@ -874,29 +875,30 @@ fn map_value_and_type(
     eprintln!("### Mapping value {value:?} and type {ty:?}...");
 
     match ty {
-        Type::Float32 => mapping.values.push(NamedPropertyValue {
-            name: mapping.name_prefix.clone().into(),
-            value: PropertyValue {
+        Type::Float32 => {
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
                 kind: PropertyValueKind::Float,
                 value_float: get_value::<f32>(value),
                 value_string: get_value::<f32>(value).to_string().into(),
                 code: get_code(value),
                 ..Default::default()
-            },
-        }),
-        Type::Int32 => mapping.values.push(NamedPropertyValue {
-            name: mapping.name_prefix.clone().into(),
-            value: PropertyValue {
+            });
+        }
+
+        Type::Int32 => {
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
                 kind: PropertyValueKind::Integer,
                 value_int: get_value::<i32>(value),
                 value_string: get_value::<i32>(value).to_string().into(),
                 code: get_code(value),
                 ..Default::default()
-            },
-        }),
-        Type::Duration => mapping.values.push(NamedPropertyValue {
-            name: mapping.name_prefix.clone().into(),
-            value: PropertyValue {
+            });
+        }
+        Type::Duration => {
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
                 kind: PropertyValueKind::Float,
                 value_float: get_value::<f32>(value),
                 value_string: format!("{}{}", get_value::<f32>(value), Unit::Ms).into(),
@@ -905,35 +907,33 @@ fn map_value_and_type(
                 code: get_code(value),
                 default_selection: 1,
                 ..Default::default()
-            },
-        }),
+            });
+        }
         Type::PhysicalLength | Type::LogicalLength | Type::Rem => {
             // TODO: Is this correct? That unit is the Value anyway?!
-            mapping.values.push(NamedPropertyValue {
-                name: mapping.name_prefix.clone().into(),
-                value: PropertyValue {
-                    kind: PropertyValueKind::Float,
-                    value_float: get_value::<f32>(value),
-                    value_string: format!("{}{}", get_value::<f32>(value), Unit::Px).into(),
-                    visual_items: unit_model(&[
-                        Unit::Px,
-                        Unit::Cm,
-                        Unit::Mm,
-                        Unit::In,
-                        Unit::Pt,
-                        Unit::Phx,
-                        Unit::Rem,
-                    ]),
-                    value_int: 0,
-                    code: get_code(value),
-                    default_selection: 0,
-                    ..Default::default()
-                },
-            })
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
+                kind: PropertyValueKind::Float,
+                value_float: get_value::<f32>(value),
+                value_string: format!("{}{}", get_value::<f32>(value), Unit::Px).into(),
+                visual_items: unit_model(&[
+                    Unit::Px,
+                    Unit::Cm,
+                    Unit::Mm,
+                    Unit::In,
+                    Unit::Pt,
+                    Unit::Phx,
+                    Unit::Rem,
+                ]),
+                value_int: 0,
+                code: get_code(value),
+                default_selection: 0,
+                ..Default::default()
+            });
         }
-        Type::Angle => mapping.values.push(NamedPropertyValue {
-            name: mapping.name_prefix.clone().into(),
-            value: PropertyValue {
+        Type::Angle => {
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
                 kind: PropertyValueKind::Float,
                 value_float: get_value::<f32>(value),
                 value_string: format!("{}{}", get_value::<f32>(value), Unit::Deg).into(),
@@ -942,11 +942,11 @@ fn map_value_and_type(
                 code: get_code(value),
                 default_selection: 0,
                 ..Default::default()
-            },
-        }),
-        Type::Percent => mapping.values.push(NamedPropertyValue {
-            name: mapping.name_prefix.clone().into(),
-            value: PropertyValue {
+            });
+        }
+        Type::Percent => {
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
                 kind: PropertyValueKind::Float,
                 value_float: get_value::<f32>(value),
                 value_string: format!("{}{}", get_value::<f32>(value), Unit::Percent).into(),
@@ -955,17 +955,17 @@ fn map_value_and_type(
                 code: get_code(value),
                 default_selection: 0,
                 ..Default::default()
-            },
-        }),
-        Type::String => mapping.values.push(NamedPropertyValue {
-            name: mapping.name_prefix.clone().into(),
-            value: PropertyValue {
+            });
+        }
+        Type::String => {
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
                 kind: PropertyValueKind::String,
                 value_string: get_value::<slint::SharedString>(value),
                 code: get_code(value),
                 ..Default::default()
-            },
-        }),
+            });
+        }
         Type::Color => {
             let color = get_value::<slint::Color>(value);
             let color_string = {
@@ -976,33 +976,32 @@ fn map_value_and_type(
 
                 format!("#{r:02x}{g:02x}{b:02x}{a:02x}")
             };
-            mapping.values.push(NamedPropertyValue {
-                name: mapping.name_prefix.clone().into(),
-                value: PropertyValue {
-                    kind: PropertyValueKind::Color,
-                    value_brush: slint::Brush::SolidColor(color).into(),
-                    value_string: color_string.into(),
-                    code: get_code(value),
-                    ..Default::default()
-                },
-            })
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
+                kind: PropertyValueKind::Color,
+                value_brush: slint::Brush::SolidColor(color).into(),
+                value_string: color_string.into(),
+                code: get_code(value),
+                ..Default::default()
+            });
         }
         Type::Image => todo!(),
-        Type::Bool => mapping.values.push(NamedPropertyValue {
-            name: mapping.name_prefix.clone().into(),
-            value: PropertyValue {
+        Type::Bool => {
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
                 kind: PropertyValueKind::Boolean,
                 value_bool: get_value::<bool>(value),
                 value_string: if get_value::<bool>(value) { "true".into() } else { "false".into() },
                 code: get_code(value),
                 ..Default::default()
-            },
-        }),
+            });
+        }
         Type::Model => todo!(),
         Type::PathData => todo!(),
         Type::Easing => todo!(),
         Type::Brush => todo!(),
         Type::Array(sty) => {
+            eprintln!("Got an array: at {mapping:?}");
             let mut sm = ValueMapping::default();
             sm.name_prefix = mapping.name_prefix.clone();
             map_value_and_type(sty, &None, &mut sm);
@@ -1011,7 +1010,8 @@ fn map_value_and_type(
             mapping.is_array = true;
 
             if !mapping.is_too_complex {
-                mapping.values.extend_from_slice(&sm.values);
+                eprintln!("    complexity is still fine!");
+                mapping.current_values.extend_from_slice(&sm.current_values);
 
                 let array_values = {
                     let model = get_value::<slint::ModelRc<slint_interpreter::Value>>(value);
@@ -1019,58 +1019,68 @@ fn map_value_and_type(
                         .iter()
                         .map(|v| {
                             let mut sm = ValueMapping::default();
+                            sm.array_values = vec![vec![]]; // Do not leave this empty!
                             map_value_and_type(sty, &Some(v), &mut sm);
-                            sm.values.drain(..).map(|v| v.value).collect::<Vec<_>>()
+                            if mapping.header.is_empty() {
+                                mapping.header = sm.header;
+                            }
+                            eprintln!("Collecting a row worth of data: {:?}", sm.current_values);
+                            sm.current_values
                         })
                         .collect()
                 };
                 mapping.array_values = array_values;
+                eprintln!("    Mapping after processing array data: {mapping:?}")
+            } else {
+                eprintln!("    This got too complex!")
             }
         }
         Type::Struct(s) => {
-            eprintln!("      Found a struct:");
             let value_struct = get_value::<slint_interpreter::Struct>(value);
 
             for (f, sty) in s.fields.iter() {
                 let mut sm = ValueMapping::default();
+                sm.array_values = vec![vec![]]; // Do not leave this empty!
                 sm.name_prefix = if mapping.name_prefix.is_empty() {
                     f.to_string()
                 } else {
                     format!("{}.{f}", mapping.name_prefix)
                 };
-                eprintln!("          {} recursion:", sm.name_prefix);
                 map_value_and_type(sty, &value_struct.get_field(f).cloned(), &mut sm);
 
-                mapping.values.extend_from_slice(&sm.values);
+                mapping.header.extend_from_slice(&sm.header);
+                mapping.current_values.extend_from_slice(&sm.current_values);
                 mapping.is_too_complex = mapping.is_too_complex || sm.is_too_complex || sm.is_array;
                 mapping.is_array = false;
             }
         }
         Type::Enumeration(enumeration) => todo!(),
         Type::UnitProduct(items) => todo!(),
-        _ => mapping.values.push(NamedPropertyValue {
-            name: mapping.name_prefix.clone().into(),
-            value: PropertyValue {
+        _ => {
+            mapping.header.push(mapping.name_prefix.clone().into());
+            mapping.current_values.push(PropertyValue {
                 kind: PropertyValueKind::Code,
                 value_string: "???".into(),
                 code: get_code(value),
                 ..Default::default()
-            },
-        }),
+            });
+        }
+    }
+
+    if mapping.array_values.is_empty() {
+        mapping.array_values = vec![std::mem::take(&mut mapping.current_values)];
     }
 
     // Back out when this got too complex and just put the JSON value in:
     if mapping.is_too_complex {
         eprintln!("      TOO COMPLEX!");
         mapping.is_array = false;
-        mapping.values = vec![NamedPropertyValue {
-            name: String::new().into(),
-            value: PropertyValue {
-                kind: PropertyValueKind::Code,
-                code: get_code(value),
-                ..Default::default()
-            },
-        }]
+        mapping.header = vec![String::new()];
+        mapping.array_values = vec![vec![PropertyValue {
+            kind: PropertyValueKind::Code,
+            code: get_code(value),
+            ..Default::default()
+        }]]
     }
 }
 
@@ -1086,8 +1096,12 @@ fn map_runtime_property(rp: &runtime_properties::RuntimeProperty) -> Option<Runt
     map_value_and_type(&rp.ty, &rp.value, &mut mapping);
 
     eprintln!("      >>> complete values for {}:", rp.name);
-    for np in &mapping.values {
-        eprintln!("            >>> {}: {:?}", np.name, np.value);
+    for rnp in &mapping.array_values {
+        eprintln!("          >>> New row:");
+
+        for crp in rnp.iter() {
+            eprintln!("              >>> {crp:?}");
+        }
     }
     eprintln!("      >>> complete values for {}: Done", rp.name);
 
@@ -1104,7 +1118,10 @@ fn map_runtime_property(rp: &runtime_properties::RuntimeProperty) -> Option<Runt
         has_setter,
         prefer_json: mapping.is_too_complex,
         is_array: mapping.is_array,
-        values: Rc::new(VecModel::from(mapping.values)).into(),
+        header: Rc::new(VecModel::from(
+            mapping.header.drain(..).map(|h| slint::SharedString::from(h)).collect::<Vec<_>>(),
+        ))
+        .into(),
         array_values,
     })
 }
@@ -1177,11 +1194,11 @@ pub fn ui_set_runtime_properties(
             {
                 return false;
             }
-            if o.values.row_count() != n.values.row_count() {
+            if o.header.row_count() != n.header.row_count() {
                 return false;
             }
-            for (ov, nv) in o.values.iter().zip(n.values.iter()) {
-                if ov.name != nv.name || !is_value_equal(&ov.value, &nv.value) {
+            for (oh, nh) in o.header.iter().zip(n.header.iter()) {
+                if oh != nh {
                     return false;
                 }
             }
@@ -1233,6 +1250,49 @@ pub fn ui_set_runtime_properties(
     }
 }
 
+fn set_runtime_property(
+    component: SharedString,
+    property_name: SharedString,
+    model: slint::ModelRc<slint::ModelRc<PropertyValue>>,
+) {
+    if model.row_count() == 0 {
+        eprintln!("No value given to set_runtime_property");
+        return;
+    }
+    if property_name.is_empty() {
+        eprintln!("No property name given");
+        return;
+    }
+
+    let component = if component.is_empty() {
+        runtime_properties::RuntimeComponent::Main
+    } else {
+        runtime_properties::RuntimeComponent::Global(component.to_string())
+    };
+
+    let values = model
+        .iter()
+        .map(|r| {
+            r.iter()
+                .map(|c| {
+                    if c.was_edited {
+                        eprintln!("Was edited: {}", c.edited_value);
+                        c.edited_value.to_string()
+                    } else {
+                        eprintln!("Was NOT edited: {}", c.edited_value);
+                        c.value_string.to_string()
+                    }
+                })
+                .collect::<Vec<_>>()
+        })
+        .collect::<Vec<_>>();
+
+    match crate::preview::set_runtime_property(component, property_name.to_string(), values) {
+        Err(e) => eprintln!("Got an error setting runtime value: {e}"),
+        Ok(()) => {}
+    }
+}
+
 fn set_runtime_json_properties(
     component: SharedString,
     property_name: SharedString,
@@ -1254,6 +1314,19 @@ fn set_runtime_json_properties(
             eprintln!("ERROR setting property value: {e}");
         }
     }
+}
+
+fn duplicate_runtime_property_value_table(
+    model: slint::ModelRc<slint::ModelRc<PropertyValue>>,
+) -> slint::ModelRc<slint::ModelRc<PropertyValue>> {
+    let duplicate_model = model
+        .iter()
+        .map(|row| {
+            let duplicate_row = row.iter().map(|cell| cell.clone()).collect::<Vec<_>>();
+            Rc::new(slint::VecModel::from(duplicate_row)).into()
+        })
+        .collect::<Vec<slint::ModelRc<_>>>();
+    std::rc::Rc::new(slint::VecModel::from(duplicate_model)).into()
 }
 
 fn update_properties(
@@ -1972,10 +2045,18 @@ export component Tester {{
 
         eprintln!("***    Basic properties all match, looking at values next...");
 
-        assert_eq!(rp.values.row_count(), expected.values.row_count());
-        for (r, e) in rp.values.iter().zip(expected.values.iter()) {
-            assert_eq!(r.name, e.name);
-            compare_pv(&r.value, &e.value);
+        eprintln!("***    Headers: Received:");
+        for h in rp.header.iter() {
+            eprintln!("***        {h}.");
+        }
+        eprintln!("***    Headers: Expected:");
+        for h in expected.header.iter() {
+            eprintln!("***        {h}.");
+        }
+
+        assert_eq!(rp.header.row_count(), expected.header.row_count());
+        for (r, e) in rp.header.iter().zip(expected.header.iter()) {
+            assert_eq!(r, e);
         }
 
         eprintln!("***    Values all match, looking at array_values next...");
@@ -1999,15 +2080,16 @@ export component Tester {{
             super::RuntimeProperty {
                 name: "test".into(),
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "\"Test\"".into(),
                         kind: super::PropertyValueKind::String,
                         value_string: "Test".into(),
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2024,9 +2106,9 @@ export component Tester {{
             super::RuntimeProperty {
                 name: "test".into(),
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "100".into(),
                         kind: super::PropertyValueKind::Float,
                         value_float: 100.0,
@@ -2042,8 +2124,9 @@ export component Tester {{
                         ]))
                         .into(),
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2060,9 +2143,9 @@ export component Tester {{
             super::RuntimeProperty {
                 name: "test".into(),
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "100000".into(),
                         kind: super::PropertyValueKind::Float,
                         value_float: 100000.0,
@@ -2074,8 +2157,9 @@ export component Tester {{
                         .into(),
                         default_selection: 1,
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2092,9 +2176,9 @@ export component Tester {{
             super::RuntimeProperty {
                 name: "test".into(),
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "36000".into(),
                         kind: super::PropertyValueKind::Float,
                         value_float: 36000.0,
@@ -2107,8 +2191,9 @@ export component Tester {{
                         ]))
                         .into(),
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2125,9 +2210,9 @@ export component Tester {{
             super::RuntimeProperty {
                 name: "test".into(),
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "10".into(),
                         kind: super::PropertyValueKind::Float,
                         value_float: 10.0,
@@ -2135,8 +2220,9 @@ export component Tester {{
                         visual_items: std::rc::Rc::new(slint::VecModel::from(vec!["%".into()]))
                             .into(),
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2153,9 +2239,9 @@ export component Tester {{
             super::RuntimeProperty {
                 name: "test".into(),
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "\"#aabbccff\"".into(),
                         kind: super::PropertyValueKind::Color,
                         value_string: "#aabbccff".into(),
@@ -2163,8 +2249,9 @@ export component Tester {{
                             0xff, 0xaa, 0xbb, 0xcc,
                         )),
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2181,16 +2268,17 @@ export component Tester {{
             super::RuntimeProperty {
                 name: "test".into(),
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "12".into(),
                         kind: super::PropertyValueKind::Integer,
                         value_string: "12".into(),
                         value_int: 12,
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2207,16 +2295,17 @@ export component Tester {{
             super::RuntimeProperty {
                 name: "test".into(),
                 has_getter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "true".into(),
                         kind: super::PropertyValueKind::Boolean,
                         value_string: "true".into(),
                         value_bool: true,
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2234,16 +2323,17 @@ export component Tester {{
                 name: "test".into(),
                 has_getter: true,
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![super::PropertyValue {
                         code: "false".into(),
                         kind: super::PropertyValueKind::Boolean,
                         value_string: "false".into(),
                         value_bool: false,
                         ..Default::default()
-                    },
-                }]))
+                    }]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2261,28 +2351,27 @@ export component Tester {{
                 name: "test".into(),
                 has_getter: true,
                 has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![
-                    super::NamedPropertyValue {
-                        name: "bar".into(),
-                        value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["bar".into(), "count".into()]))
+                    .into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                    slint::VecModel::from(vec![
+                        super::PropertyValue {
                             code: "true".into(),
                             kind: super::PropertyValueKind::Boolean,
                             value_string: "true".into(),
                             value_bool: true,
                             ..Default::default()
                         },
-                    },
-                    super::NamedPropertyValue {
-                        name: "count".into(),
-                        value: super::PropertyValue {
+                        super::PropertyValue {
                             code: "23".into(),
                             kind: super::PropertyValueKind::Integer,
                             value_string: "23".into(),
                             value_int: 23,
                             ..Default::default()
                         },
-                    },
-                ]))
+                    ]),
+                )
+                .into()]))
                 .into(),
                 ..Default::default()
             },
@@ -2292,60 +2381,55 @@ export component Tester {{
     #[test]
     fn test_map_runtime_property_struct_of_structs() {
         validate_rp(
-            "in-out",
-            r#"
-            struct C1 { c1_1: string, c1_2: int }
-            struct C2 { c2_1: string, c2_2: int }
-            struct FooStruct { first: C1, second: C2 }
-            "#,
-            "FooStruct",
-            "{ first: { c1_1: \"first of a kind\", c1_2: 23 }, second: { c2_1: \"second of a kind\", c2_2: 42 } }",
-            super::RuntimeProperty {
-                name: "test".into(),
-                has_getter: true,
-                has_setter: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![
-                    super::NamedPropertyValue {
-                        name: "first.c1-1".into(),
-                        value: super::PropertyValue {
-                            code: "\"first of a kind\"".into(),
-                            kind: super::PropertyValueKind::String,
-                            value_string: "first of a kind".into(),
-                            ..Default::default()
-                        },
-                    },
-                    super::NamedPropertyValue {
-                        name: "first.c1-2".into(),
-                        value: super::PropertyValue {
-                            code: "23".into(),
-                            kind: super::PropertyValueKind::Integer,
-                            value_string: "23".into(),
-                            value_int: 23,
-                            ..Default::default()
-                        },
-                    },
-                    super::NamedPropertyValue {
-                        name: "second.c2-1".into(),
-                        value: super::PropertyValue {
-                            code: "\"second of a kind\"".into(),
-                            kind: super::PropertyValueKind::String,
-                            value_string: "second of a kind".into(),
-                            ..Default::default()
-                        },
-                    },
-                    super::NamedPropertyValue {
-                        name: "second.c2-2".into(),
-                        value: super::PropertyValue {
-                            code: "42".into(),
-                            kind: super::PropertyValueKind::Integer,
-                            value_string: "42".into(),
-                            value_int: 42,
-                            ..Default::default()
-                        },
-                    },
-                ]))
-                .into(),
-                ..Default::default()
+                        "in-out",
+                        r#"
+                        struct C1 { c1_1: string, c1_2: int }
+                        struct C2 { c2_1: string, c2_2: int }
+                        struct FooStruct { first: C1, second: C2 }
+                        "#,
+                                              "FooStruct",
+                        "{ first: { c1_1: \"first of a kind\", c1_2: 23 }, second: { c2_1: \"second of a kind\", c2_2: 42 } }",
+                        super::RuntimeProperty {
+                            name: "test".into(),
+                            has_getter: true,
+                            has_setter:      true,
+                            header: std::rc::Rc::new(slint::VecModel::from(vec![
+                                "first.c1-1".into(),
+                                "first.c1-2".into(),
+                                "second.c2-1".into(),
+                                "second.c2-2".into(),
+                            ])).into(),
+                            array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                                slint::VecModel::from(vec![super::PropertyValue {
+                                        code: "\"first of a kind\"".into(),
+                                        kind: super::PropertyValueKind::String,
+                                        value_string: "first of a kind".into(),
+                                        ..Default::default()
+                                    },
+                                    super::PropertyValue {
+                                        code: "23".into(),
+                                        kind: super::PropertyValueKind::Integer,
+                                        value_string: "23".into(),
+                                        value_int: 23,
+                                        ..Default::default()
+                                    },
+                                    super::PropertyValue {
+                                        code: "\"second of a kind\"".into(),
+                                        kind: super::PropertyValueKind::String,
+                                        value_string: "second of a kind".into(),
+                                        ..Default::default()
+                                    },
+                                    super::PropertyValue {
+                                        code: "42".into(),
+                                        kind: super::PropertyValueKind::Integer,
+                                        value_string: "42".into(),
+                                        value_int: 42,
+                                        ..Default::default()
+                                    },
+                                    ])).into(),
+                            ]))
+                            .into(),
+                     ..Default::default()
             },
         );
     }
@@ -2362,17 +2446,7 @@ export component Tester {{
                 has_getter: true,
                 has_setter: true,
                 is_array: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
-                        code: "".into(),
-                        kind: super::PropertyValueKind::Boolean,
-                        value_bool: false,
-                        value_string: "false".into(),
-                        ..Default::default()
-                    },
-                }]))
-                .into(),
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
                 array_values: std::rc::Rc::new(slint::VecModel::from(vec![
                     std::rc::Rc::new(slint::VecModel::from(vec![super::PropertyValue {
                         code: "true".into(),
@@ -2400,77 +2474,50 @@ export component Tester {{
     #[test]
     fn test_map_runtime_property_array_of_struct() {
         validate_rp(
-            "in-out",
-            r#"
-            struct C1 { c1_1: string, c1_2: int }
-            struct C2 { c2_1: string, c2_2: int }
-            struct FooStruct { first: C1, second: C2 }
-            "#,
-            "[FooStruct]",
-            "[{ first: { c1_1: \"first of a kind\", c1_2: 23 }, second: { c2_1: \"second of a kind\", c2_2: 42 } }]",
-            super::RuntimeProperty {
-                name: "test".into(),
-                has_getter: true,
-                has_setter: true,
-                is_array: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![
-                    super::NamedPropertyValue {
-                        name: "first.c1-1".into(),
-                        value: super::PropertyValue {
-                            kind: super::PropertyValueKind::String,
-                            ..Default::default()
-                        },
-                    },
-                    super::NamedPropertyValue {
-                        name: "first.c1-2".into(),
-                        value: super::PropertyValue {
-                            kind: super::PropertyValueKind::Integer,
-                            value_string: "0".into(),
-                            ..Default::default()
-                        },
-                    },
-                    super::NamedPropertyValue {
-                        name: "second.c2-1".into(),
-                        value: super::PropertyValue {
-                            kind: super::PropertyValueKind::String,
-                            ..Default::default()
-                        },
-                    },
-                    super::NamedPropertyValue {
-                        name: "second.c2-2".into(),
-                        value: super::PropertyValue {
-                            kind: super::PropertyValueKind::Integer,
-                            value_string: "0".into(),
-                            ..Default::default()
-                        },
-                    },
-                ]))
-                .into(),
-                array_values: std::rc::Rc::new(slint::VecModel::from(vec![
-                    std::rc::Rc::new(slint::VecModel::from(vec![
-                        super::PropertyValue {
-                            code: "\"first of a kind\"".into(),
-                            kind: super::PropertyValueKind::String,
-                            value_string: "first of a kind".into(),
-                            ..Default::default()
-                        },
-                        super::PropertyValue {
-                            code: "23".into(),
-                            kind: super::PropertyValueKind::Integer,
-                            value_string: "23".into(),
-                            value_int: 23,
-                            ..Default::default()
-                    },
-                        super::PropertyValue {
-                            code: "\"second of a kind\"".into(),
-                            kind: super::PropertyValueKind::String,
-                            value_string: "second of a kind".into(),
-                            ..Default::default()
-                    },
-                        super::PropertyValue {
-                            code: "42".into(),
-                            kind: super::PropertyValueKind::Integer,
-                            value_string: "42".into(),
+                            "in-out",
+                            r#"
+                            struct C1 { c1_1: string, c1_2: int }
+                            struct C2 { c2_1: string, c2_2: int }
+                            struct FooStruct { first: C1, second: C2 }
+                            "#,
+                            "[FooStruct]",
+                            "[{ first: { c1_1: \"first of a kind\", c1_2: 23 }, second: { c2_1: \"second of a kind\", c2_2: 42 } }]",
+                            super::RuntimeProperty {
+                                name: "test".into(),
+                                has_getter: true,
+                                has_setter: true,
+                                is_array: true,
+                                header: std::rc::Rc::new(slint::VecModel::from(vec![
+                                    "first.c1-1".into(),
+                                    "first.c1-2".into(),
+                                    "second.c2-1".into(),
+                                    "second.c2-2".into(),
+                                ])).into(),
+                                array_values: std::rc::Rc::new(slint::VecModel::from(vec![
+                                    std::rc::Rc::new(slint::VecModel::from(vec![
+                                        super::PropertyValue {
+                                            code: "\"first of a kind\"".into(),
+                                            kind: super::PropertyValueKind::String,
+                                            value_string: "first of a kind".into(),
+                                            ..Default::default()
+                                        },
+                                        super::PropertyValue {
+                                            code: "23".into(),
+                                            kind: super::PropertyValueKind::Integer,
+                                            value_string: "23".into(),
+                                            value_int: 23,
+                                            ..Default::default()
+                                    },
+                                        super::PropertyValue {
+                                            code: "\"second of a kind\"".into(),
+                                            kind: super::PropertyValueKind::String,
+                                            value_string: "second of a kind".into(),
+                                            ..Default::default()
+                                    },
+                                        super::PropertyValue {
+                                            code: "42".into(),
+                                            kind: super::PropertyValueKind::Integer,
+                                            value_string: "42".into(),
                             value_int: 42,
                             ..Default::default()
                     },
@@ -2495,14 +2542,15 @@ export component Tester {{
                 has_getter: true,
                 has_setter: true,
                 prefer_json: true,
-                values: std::rc::Rc::new(slint::VecModel::from(vec![super::NamedPropertyValue {
-                    name: "".into(),
-                    value: super::PropertyValue {
+                header: std::rc::Rc::new(slint::VecModel::from(vec!["".into()])).into(),
+                array_values: std::rc::Rc::new(slint::VecModel::from(vec![std::rc::Rc::new(
+                 slint::VecModel::from(vec![super::PropertyValue {
                         kind: super::PropertyValueKind::Code,
                         code: "{\n  \"first\": [\n    \"first of a kind\",\n    \"second of a kind\"\n  ]\n}".into(),
                         ..Default::default()
                     },
-                }]))
+                        ])).into(),
+                ]))
                 .into(),
                 ..Default::default()
             },

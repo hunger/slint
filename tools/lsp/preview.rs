@@ -969,6 +969,16 @@ fn track_runtime_properties(
     })
 }
 
+fn set_runtime_property(
+    component: runtime_properties::RuntimeComponent,
+    property_name: String,
+    values: Vec<Vec<String>>,
+) -> Result<(), String> {
+    let component_instance = component_instance().expect("No component instance fond");
+
+    runtime_properties::set_runtime_property(&component_instance, component, property_name, values)
+}
+
 fn set_runtime_json_properties(
     component: runtime_properties::RuntimeComponent,
     property_name: Option<String>,

@@ -132,6 +132,67 @@ pub fn query_runtime_properties_and_callbacks(
     result
 }
 
+fn find_component_properties_and_callbacks<'a>(
+    definition: &'a slint_interpreter::ComponentDefinition,
+    component: &RuntimeComponent,
+) -> Result<
+    Box<
+        dyn Iterator<
+                Item = (
+                    String,
+                    (
+                        i_slint_compiler::langtype::Type,
+                        i_slint_compiler::object_tree::PropertyVisibility,
+                    ),
+                ),
+            > + 'a,
+    >,
+    String,
+> {
+    match component {
+        RuntimeComponent::Main => Ok(Box::new(definition.properties_and_callbacks())),
+        RuntimeComponent::Global(g) => Ok(Box::new(
+            definition
+                .global_properties_and_callbacks(g)
+                .ok_or(format!("Global {g} does not exist"))?,
+        )),
+    }
+}
+
+pub fn set_runtime_property(
+    component_instance: &ComponentInstance,
+    component: RuntimeComponent,
+    property_name: String,
+    values: Vec<Vec<String>>,
+) -> Result<(), String> {
+    eprintln!("APPLYING VALUE FROM UI: CI + {component}.{property_name:?}: {values:?}");
+
+    let definition = &component_instance.definition();
+
+    let (_, (ty, vis)) = find_component_properties_and_callbacks(&definition, &component)?
+        .find(|(name, (ty, vis))| name == &property_name)
+        .ok_or(format!("Property name {property_name} not found on component {component}"))?;
+
+    if values.len() == 1 && values[0].len() == 1 {
+        eprintln!("=> Setting a simple value!");
+        let json_value: serde_json::Value = serde_json::from_str(&values[0][0])
+            .map_err(|e| format!("Failed to read value as JSON: {e}"))?;
+        let value = slint_interpreter::json::value_from_json(&ty, &json_value)?;
+
+        eprintln!("=> ACTUALLY Setting a simple value to {value:?}!");
+        match &component {
+            RuntimeComponent::Main => component_instance
+                .set_property(&property_name, value)
+                .map_err(|e| format!("Failed to set property: {e}"))?,
+            RuntimeComponent::Global(g) => component_instance
+                .set_global_property(g, &property_name, value)
+                .map_err(|e| format!("Failed to set global property: {e}"))?,
+        }
+    }
+
+    Ok(())
+}
+
 pub fn set_runtime_json_properties(
     component_instance: &ComponentInstance,
     component: RuntimeComponent,
@@ -145,14 +206,8 @@ pub fn set_runtime_json_properties(
     let mut properties_set = 0_usize;
     let mut failed_properties = vec![];
 
-    let it: Box<dyn Iterator<Item = _>> = match &component {
-        RuntimeComponent::Main => Box::new(definition.properties_and_callbacks()),
-        RuntimeComponent::Global(g) => Box::new(
-            definition
-                .global_properties_and_callbacks(g)
-                .ok_or(vec![format!("Global {g} does not exist")])?,
-        ),
-    };
+    let it =
+        find_component_properties_and_callbacks(&definition, &component).map_err(|e| vec![e])?;
 
     let it: Box<dyn Iterator<Item = _>> = match &property_name {
         None => Box::new(it.filter(|(_, (it, iv))| is_property(it) && has_setter(iv))),
