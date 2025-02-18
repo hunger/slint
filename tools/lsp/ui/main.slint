@@ -16,8 +16,9 @@ import { OutOfDateBox } from "components/out-of-date-box.slint";
 import { PropertyView } from "views/property-view.slint";
 import { RuntimePropertyView } from "views/runtime-property-view.slint";
 
-export { Api }
+import { WindowGlobal } from "windowglobal.slint";
 
+export { Api }
 
 export component PreviewUi inherits Window {
     property <length> border: 20px;
@@ -35,6 +36,13 @@ export component PreviewUi inherits Window {
     icon: @image-url("assets/slint-logo-small-light.png");
     always-on-top <=> Api.always-on-top;
 
+    changed width => {
+        WindowGlobal.window-width = self.width;
+    }
+    changed height => {
+        WindowGlobal.window-height = self.height;
+    }
+    
     VerticalLayout {
         if !Api.show-preview-ui: no-ui-drawing-rect := Rectangle {
             VerticalLayout {

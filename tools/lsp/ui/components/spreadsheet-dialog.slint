@@ -1,0 +1,32 @@
+import { Button } from "std-widgets.slint";
+import { EditorSpaceSettings } from "../components/styling.slint";
+import { Spreadsheet } from "../components/spreadsheet.slint";
+import { Api, RuntimeProperty } from "../api.slint";
+
+import { WindowGlobal } from "../windowglobal.slint";
+
+export component SpreadsheetDialog inherits Dialog {
+    in property <RuntimeProperty> runtime-property;
+
+    width: Math.min(self.preferred-width, WindowGlobal.window-width * 0.9);
+    height: Math.min(self.preferred-height, WindowGlobal.window-height * 0.9);
+
+    title: "Edit Values";
+    
+    VerticalLayout {
+        Spreadsheet {
+            runtime-property: root.runtime-property;
+        }
+        
+        HorizontalLayout {
+            alignment: end;
+            padding: 8px;
+
+            Button { 
+                text: "Close";
+                clicked => {
+                }
+            }
+        }
+    }
+}
