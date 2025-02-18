@@ -1,22 +1,91 @@
 // Copyright © SixtyFPS GmbH <info@slint.dev>
 // SPDX-License-Identifier: MIT
 
-import { Button, LineEdit, HorizontalBox } from "std-widgets.slint";
+import { Button, LineEdit, HorizontalBox, AboutSlint } from "std-widgets.slint";
+
+enum TestEnum {
+    One,
+    Two,
+}
+
+struct C1 {
+    c1_1: string,
+    c1_2: int,
+}
+
+struct C2 {
+    c2_1: string,
+    c2_2: int,
+}
+
+struct TestStruct {
+    c1: C1,
+    c2: C2,
+}
+
+export global Styless {
+    // Colors
+    out property <color> ring: #e2e2e2;
+    out property <color> cardface: #ffd9d9aa;
+    out property <color> title: #afafaf;
+}
 
 export component Counter inherits Window {
-    private property <int> value: 0;
+    in-out property <int> value: 0;
+    in-out property <int> mod-value: 0;
+    in-out property <bool> test-bool: false;
+    in-out property <string> test-string: "START";
+    in-out property <color> test-color: #abc;
+    in-out property <float> test-float: 42.23;
+    in-out property <TestEnum> test-enum: TestEnum.Two;
+    in-out property <TestStruct> test-struct: { c1: { c1_1: "Foobar", c1_2: 42 }, c2: { c2_1: "BarFoo", c2_2: 23 } };
+    in-out property <[bool]> test-array: [ true, false ];
+    in-out property <brush> test-brush;
+    in-out property <length> test-length: 5cm;
+
+
+    changed value => {
+        mod-value = Math.mod(self.value, 2) == 0 ? mod-value + 1 : mod-value + 2;
+        test-bool = Math.mod(self.value, 2) == 0;
+        test-string = Math.mod(self.value, 3) == 0 ? "Foobar" : "BAZZZZZ";
+        test-float += 1;
+        test-enum = Math.mod(self.value, 3) == 0 ? TestEnum.One : TestEnum.Two;
+        test-struct = { c1: { c1_1: test_struct.c1.c1_1, c1_2: test-struct.c1.c1_2 + 1 }, c2: { c2_1: test-struct.c2.c2_1, c2_2: test_struct.c2.c2_2 + 1 } };
+        test-color = test-color.darker(0.1);
+        test-length = test-length + 1px;
+    }
 
     preferred-height: 30px;
 
-    layout := HorizontalBox {
-        LineEdit {
-            enabled: false;
-            text: root.value;
+    VerticalLayout {
+        Rectangle {
+            min-height: 10px;
+            background: test-color;
         }
 
-        Button {
-            clicked => { root.value += 1; }
-            text: "Count";
+        Text {
+            text: "float: \{root.test-float} -- struct-value: \{root.test-struct.c1.c1_1}"; 
+        }
+        Text {
+            text: "array: \{root.test-array.length}"; 
+        }
+        Text {
+            text: "string: \{root.test-string} -- bool: \{root.test-bool ? "true" : "false"}"; 
+        }
+        Text {
+            text: "enum: \{root.test-enum == TestEnum.One ? "one" : "two"} -- length: "+ root.test-length/1px; 
+        }
+
+        layout := HorizontalBox {
+            LineEdit {
+                enabled: false;
+                text: root.value;
+            }
+
+            Button {
+                clicked => { root.value += 1; }
+                text: "Count";
+            }
         }
     }
 }
