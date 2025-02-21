@@ -763,92 +763,137 @@ export component PropertyValueWidget inherits VerticalLayout {
     callback reset-action();
     callback code-action();
 
-    if root.property-value.kind == PropertyValueKind.boolean: BooleanWidget {
-        enabled <=> root.enabled;
-        property-name: root.property-name;
-        property-value: root.property-value;
-
-        set-bool-binding(value) => {
-            root.set-bool-binding(value);
-        }
-    }
-    if (root.property-value.kind == PropertyValueKind.color) || (root.property-value.kind == PropertyValueKind.brush): ColorWidget {
-        enabled <=> root.enabled;
-        property-name: root.property-name;
-        property-value: root.property-value;
-
-        test-color-binding(text) => {
-            return (root.test-color-binding(text));
-        }
-        set-color-binding(text) => {
-            root.set-color-binding(text);
-        }
+    init => {
+        debug("PVW(\{root.property-name}): INIT", property-value.kind);
     }
 
-    if root.property-value.kind == PropertyValueKind.code: CodeWidget {
-        enabled <=> root.enabled;
-        property-name: root.property-name;
-        property-value: root.property-value;
-        has-code-action <=> root.has-code-action;
-
-        reset-action() => {
-            root.reset-action();
-        }
-        code-action() => {
-            root.code-action();
-        }
+    changed property-value => {
+        debug("PVW(\{root.property-name}): property-value CHANGED", property-value.kind);
     }
-    if root.property-value.kind == PropertyValueKind.enum:  EnumWidget {
-        enabled <=> root.enabled;
-        property-name: root.property-name;
-        property-value: root.property-value;
 
-        set-enum-binding(text) => {
-            root.set-enum-binding(text);
-        }
-    }
-    if root.property-value.kind == PropertyValueKind.float: FloatWidget {
-        enabled <=> root.enabled;
-        property-name: root.property-name;
-        property-value: root.property-value;
+    VerticalLayout {
+        Rectangle {
+            clip: true;
+            height: root.property-value.kind == PropertyValueKind.boolean ? self.preferred-height : 0px;
 
-        test-float-binding(text) => {
-            return (root.test-code-binding(text));
-        }
-        set-float-binding(text) => {
-            root.set-code-binding(text);
-        }
-    }
-    if root.property-value.kind == PropertyValueKind.integer: IntegerWidget {
-        enabled <=> root.enabled;
-        property-name: root.property-name;
-        property-value: root.property-value;
+            BooleanWidget {
+                enabled <=> root.enabled;
+                property-name <=> root.property-name;
+                property-value <=> root.property-value;
 
-        test-integer-binding(text) => {
-            return (root.test-code-binding(text));
+                set-bool-binding(value) => {
+                    root.set-bool-binding(value);
+                }
+            }
         }
-        set-integer-binding(text) => {
-            root.set-code-binding(text);
-        }
-    }
-    if root.property-value.kind == PropertyValueKind.string: StringWidget {
-        enabled <=> root.enabled;
-        property-name: root.property-name;
-        property-value: root.property-value;
+        Rectangle {
+            clip: true;
+            height: (root.property-value.kind == PropertyValueKind.color) || (root.property-value.kind == PropertyValueKind.brush)  ? self.preferred-height : 0px;
 
-        reset-action() => {
-            root.reset-action();
-        }
-        code-action() => {
-            root.code-action();
-        }
+            ColorWidget {
+                enabled <=> root.enabled;
+                property-name <=> root.property-name;
+                property-value <=> root.property-value;
 
-        test-string-binding(text, is_translated) => {
-            return root.test-string-binding(text, is_translated);
+                test-color-binding(text) => {
+                    return (root.test-color-binding(text));
+                }
+                set-color-binding(text) => {
+                    root.set-color-binding(text);
+                }
+            }
         }
+        Rectangle {
+            clip: true;
+            height: root.property-value.kind == PropertyValueKind.code ? self.preferred-height : 0px;
 
-        set-string-binding(text, is_translated) => {
-            root.set-string-binding(text, is_translated);
+            CodeWidget {
+                enabled <=> root.enabled;
+                property-name <=> root.property-name;
+                property-value <=> root.property-value;
+
+                reset-action() => {
+                    root.reset-action();
+                }
+                code-action() => {
+                    root.code-action();
+                }
+            }
+        }
+        Rectangle {
+            clip: true;
+            height: root.property-value.kind == PropertyValueKind.enum ? self.preferred-height : 0px;
+
+            EnumWidget {
+                enabled <=> root.enabled;
+                property-name <=> root.property-name;
+                property-value <=> root.property-value;
+
+                set-enum-binding(text) => {
+                    root.set-enum-binding(text);
+                }
+            }
+        }
+        Rectangle {
+            clip: true;
+            height: root.property-value.kind == PropertyValueKind.float ? self.preferred-height : 0px;
+
+            FloatWidget {
+                enabled <=> root.enabled;
+                property-name <=> root.property-name;
+                property-value <=> root.property-value;
+
+                test-float-binding(text) => {
+                    return (root.test-code-binding(text));
+                }
+                set-float-binding(text) => {
+                    root.set-code-binding(text);
+                }
+            }
+        }
+        Rectangle {
+            clip: true;
+            height: root.property-value.kind == PropertyValueKind.integer ? self.preferred-height : 0px;
+
+            IntegerWidget {
+                enabled <=> root.enabled;
+                property-name <=> root.property-name;
+                property-value <=> root.property-value;
+
+                test-integer-binding(text) => {
+                    return (root.test-code-binding(text));
+                }
+                set-integer-binding(text) => {
+                    root.set-code-binding(text);
+                }
+            }
+        }
+        Rectangle {
+            clip: true;
+            height: root.property-value.kind == PropertyValueKind.string ? self.preferred-height : 0px;
+
+            StringWidget {
+                enabled <=> root.enabled;
+                property-name <=> root.property-name;
+                property-value: root.property-value;
+
+                reset-action() => {
+                    root.reset-action();
+                }
+                code-action() => {
+                    root.code-action();
+                }
+
+                test-string-binding(text, is_translated) => {
+                    debug("PVW(\{root.property-name}): test-string-binding called");
+                    return root.test-string-binding(text, is_translated);
+                }
+
+                set-string-binding(text, is_translated) => {
+                    debug("PVW(\{root.property-name}): set-string-binding called");
+                    root.set-string-binding(text, is_translated);
+                }
+            }
         }
     }
 }
