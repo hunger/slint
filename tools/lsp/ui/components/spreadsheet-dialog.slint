@@ -1,31 +1,118 @@
-// Copyright © SixtyFPS GmbH <info@slint.dev>
-// SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
-
-import { Button } from "std-widgets.slint";
+import { Button, Palette, StandardButton, ScrollView } from "std-widgets.slint";
 import { EditorSpaceSettings } from "../components/styling.slint";
 import { Spreadsheet } from "../components/spreadsheet.slint";
+import { Api, PreviewData, PropertyValueTable } from "../api.slint";
 
 import { WindowGlobal } from "../windowglobal.slint";
+import { EditorSizeSettings } from "styling.slint";
 
-export component SpreadsheetDialog inherits Dialog {
-    width: Math.min(self.preferred-width, WindowGlobal.window-width * 0.9);
-    height: Math.min(self.preferred-height, WindowGlobal.window-height * 0.9);
+component SpreadsheetPopup {
+    in property <string> property-group-id;
+    in property <PreviewData> preview-data;
+    in-out property <PropertyValueTable> current-table;
+    private property <length> popup-x;
+    private property <length> popup-y;
 
-    title: "Edit Values";
 
-    VerticalLayout {
-        Spreadsheet {
-        }
+    property <length> content-height;
+    property <length> content-width;
+    public function position-popup(px: length, py: length) {
+        self.popup-x = px;
+        self.popup-y = py;
+    }
+    public function show-popup() {
+        pop.show();
+    }
+    public function hide-pop() {
+        pop.close();
+    }
+    Rectangle {
+        background: blue;
+    }
 
-        HorizontalLayout {
-            alignment: end;
-            padding: 8px;
+pop := PopupWindow {
+    x <=> root.popup-x;
+    y <=> root.popup-y;
 
-            Button {
-                text: "Close";
-                clicked => {
+        close-policy: close-on-click-outside;//no-auto-close;
+        frame := Rectangle {
+            background: Palette.alternate-background;
+            drop-shadow-blur: 30px;
+            drop-shadow-color: black.transparentize(0.5);
+            VerticalLayout {
+                Dialog {
+                    title: root.preview-data.has-setter ? "Edit Values" : "View Values";
+                    content := VerticalLayout {
+                        padding-top: EditorSpaceSettings.default-padding;
+                        spacing: EditorSpaceSettings.default-spacing;
+                        title := Text {
+                            text: spread-sheet.preview-data.name;
+                            horizontal-alignment: center;
+                            font-weight: 800;
+                        }
+
+                        Rectangle {
+                            vertical-stretch: 1;
+                            ScrollView {
+                                viewport-width: spread-sheet.preferred-width;
+                                viewport-height: spread-sheet.preferred-height;
+                                height: 100%;
+                                width: pop.width;
+                                spread-sheet := Spreadsheet {
+                                    init => {
+                                        // position-popup(0,0);
+                                        root.content-height = spread-sheet.preferred-height + title.height + (5 * EditorSpaceSettings.default-spacing) + (2 * EditorSpaceSettings.default-padding) + sb1.height;
+                                        root.content-width = spread-sheet.preferred-width + 2 * EditorSpaceSettings.default-padding;
+                                        pop.width = Math.min(root.content-width, WindowGlobal.window-width * 0.9);
+                                        pop.height = Math.min(root.content-height, WindowGlobal.window-height * 0.85);
+                                        root.popup-x = (spread-sheet.preferred-width < WindowGlobal.window-width * 0.9) ? (WindowGlobal.window-width - root.content-width) / 2 : WindowGlobal.window-width * 0.05;
+                                        root.popup-y = (spread-sheet.preferred-height < WindowGlobal.window-height * 0.85) ? (WindowGlobal.window-height - root.content-height) / 2 : WindowGlobal.window-height * 0.05;
+
+                                        debug("init", "\nss:",spread-sheet.preferred-height,spread-sheet.preferred-width,"\ncontent:", content-width, "x",content-height, "\nframe", frame.x, "x",frame.y,"\npop:", pop.x, "x",pop.y,"\nsspopup:", root.x, "x:",root.y, "\npopup xy:", root.popup-x,"x", root.popup-y);
+                                    }
+                                    property-group-id <=> root.property-group-id;
+                                    preview-data <=> root.preview-data;
+                                    current-table <=> root.current-table;
+                                }
+                            }
+                        }
+                    }
+
+                    sb1 := StandardButton {
+                        kind: StandardButtonKind.ok;
+                        clicked => {
+                            Api.set-property-value-table(root.property-group-id, root.preview-data.name, root.current-table.values, root.current-table.is-array);
+                            hide-pop();
+                        }
+                    }
+
+                    sb2 := StandardButton {
+                        kind: StandardButtonKind.cancel;
+                        clicked => {
+                            hide-pop();
+                        }
+                    }
                 }
             }
         }
+    }
+}
+
+export component SpreadsheetDialog {
+    private property <string> property-group-id;
+    private property <PreviewData> preview-data;
+    private property <PropertyValueTable> current-table;
+
+    public function edit-in-spreadsheet(property-group-id: string, data: PreviewData) {
+        root.property-group-id = property-group-id;
+        root.preview-data = data;
+        root.current-table = Api.get-property-value-table(property-group-id, data.name);
+
+        spreadsheet.show-popup();
+    }
+    spreadsheet := SpreadsheetPopup {
+        property-group-id <=> root.property-group-id;
+        preview-data <=> root.preview-data;
+        current-table <=> root.current-table;
     }
 }

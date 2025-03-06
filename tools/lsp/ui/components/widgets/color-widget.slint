@@ -23,6 +23,8 @@ export component ColorWidget inherits GridLayout {
     callback test-color-binding(text: string) -> bool;
     callback set-color-binding(text: string);
 
+    callback update-display-string(value: string);
+
     spacing-vertical: EditorSpaceSettings.default-spacing;
     width: 100%;
 
@@ -71,6 +73,7 @@ export component ColorWidget inherits GridLayout {
             enabled <=> root.enabled;
 
             set-color-binding(text) => {
+                root.update-display-string(text);
                 root.set-color-binding(text);
             }
             test-color-binding(text) => {
@@ -89,6 +92,7 @@ export component ColorWidget inherits GridLayout {
                 current-color <=> root.current-color;
 
                 set-color-binding(text) => {
+                    root.update-display-string(text);
                     root.set-color-binding(text);
                 }
                 test-color-binding(text) => {
