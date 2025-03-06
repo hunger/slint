@@ -122,6 +122,7 @@ component Cell inherits Rectangle {
 }
 
 export component Spreadsheet inherits ScrollView {
+    in property <string> property-group-id;
     in property <PreviewData> preview-data: {
         name: "Addresses",
         has-getter: true,
@@ -234,10 +235,6 @@ export component Spreadsheet inherits ScrollView {
     property <bool> edit-window-visible: false;
     private property <length> selection-x;
     private property <length> selection-y;
-
-    public function edit-in-spreadsheet(container-name: string, preview-data: PreviewData) {
-         debug("Setting up Spreadsheet:", container-name, preview-data);
-    }
 
     VerticalLayout {
         HorizontalLayout {
