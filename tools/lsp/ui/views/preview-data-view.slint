@@ -3,7 +3,7 @@
 
 import { Palette, ScrollView, VerticalBox }  from "std-widgets.slint";
 
-import { Api, PropertyContainer } from "../api.slint";
+import { Api, PreviewData, PropertyContainer } from "../api.slint";
 import { ExpandableGroup } from "../components/expandable-group.slint";
 import { PreviewDataPropertyValueWidget } from "../components/property-widgets.slint";
 import { EditorSpaceSettings } from "../components/styling.slint";
@@ -14,6 +14,8 @@ export component PreviewDataView inherits ScrollView {
 
     property <length> key-width: self.width / 2.5;
     property <bool> element-loaded: root.preview-data.length > 0;
+
+    callback edit-in-spreadsheet(property-group-id: string, data: PreviewData);
 
     content-layer := VerticalLayout {
         alignment: start;
@@ -45,6 +47,9 @@ export component PreviewDataView inherits ScrollView {
                 for p in ep.properties: PreviewDataPropertyValueWidget {
                     preview-data: p;
                     property-container-id: ep.container-id;
+                    edit-in-spreadsheet(property-group-id, data) => {
+                        root.edit-in-spreadsheet(property-group-id, data);
+                    }
                 }
             }
         }
