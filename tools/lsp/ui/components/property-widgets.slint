@@ -883,14 +883,31 @@ component EditMultiValueWidget inherits VerticalLayout {
 
     callback edit-in-spreadsheet(property-group-id: string, data: PreviewData);
 
-    NameLabel {
-        property-name: root.preview-data.name;
-        property-value: root.property-value;
+    spacing: EditorSpaceSettings.default-spacing;
+    width: 100%;
+
+    HorizontalLayout {
+        Rectangle {
+            width: childIndicator.width;
+        }
+
+        NameLabel {
+            property-name: root.preview-data.name;
+            property-value: root.property-value;
+        }
     }
-    Button {
-        text: preview-data.has-setter ? @tr("Edit") : @tr("View");
-        clicked => {
-            root.edit-in-spreadsheet(root.property-group-id, root.preview-data);
+
+    HorizontalLayout {
+        childIndicator := ChildIndicator {
+            horizontal-stretch: 0;
+            visible: false;
+        }
+
+        Button {
+            text: preview-data.has-setter ? @tr("Edit") : @tr("View");
+            clicked => {
+                root.edit-in-spreadsheet(root.property-group-id, root.preview-data);
+            }
         }
     }
 }
