@@ -4,10 +4,14 @@ import { Spreadsheet } from "../components/spreadsheet.slint";
 import { Api, PreviewData } from "../api.slint";
 
 import { WindowGlobal } from "../windowglobal.slint";
+import { EditorSizeSettings } from "styling.slint";
 
 export component SpreadsheetDialog inherits Dialog {
-    width: Math.min(self.preferred-width, WindowGlobal.window-width * 0.9);
-    height: Math.min(self.preferred-height, WindowGlobal.window-height * 0.9);
+    property <length> dialog-width;
+    property <length> dialog-height;
+    width <=> dialog-width;
+    height <=> dialog-height;
+    
     visible: false;
 
     title: "Edit Values";
@@ -16,14 +20,26 @@ export component SpreadsheetDialog inherits Dialog {
         spread-sheet.property-group-id = property-group-id;
         spread-sheet.preview-data = data;
         spread-sheet.current-table = Api.get-property-value-table(property-group-id, data.name);
+        dialog-width = Math.max(container.width, WindowGlobal.window-width * 0.9);
+        dialog-height = Math.max(container.height, WindowGlobal.window-height * 0.8);
+    
 
         root.visible = true;
     }
-    
-    Rectangle {
+    container:=Rectangle {
         background: Palette.background;
+        drop-shadow-blur: 30px;
+        drop-shadow-color: black.transparentize(0.5);
+        border-radius: EditorSizeSettings.radius;
         
         VerticalLayout {
+            padding-top: EditorSpaceSettings.default-padding;
+            spacing: EditorSpaceSettings.default-spacing;
+            Text {
+                text: spread-sheet.preview-data.name;
+                horizontal-alignment: center;
+                font-weight: 800;
+            }
             spread-sheet := Spreadsheet {
             }
         
@@ -38,6 +54,7 @@ export component SpreadsheetDialog inherits Dialog {
                     }
                 }
             }
+      
         }
     }
 }

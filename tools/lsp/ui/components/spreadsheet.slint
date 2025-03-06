@@ -31,7 +31,7 @@ export component EditWindow inherits Rectangle {
     callback close-editor();
     HorizontalLayout {
         padding: EditorSpaceSettings.default-padding;
-        padding-left: EditorSpaceSettings.default-padding + 15px;
+        padding-left: EditorSpaceSettings.default-padding;
         spacing: EditorSpaceSettings.default-spacing;
         PropertyValueWidget {
             property-value: current-cell.value;
@@ -280,7 +280,7 @@ export component Spreadsheet inherits ScrollView {
     }
 
     if (edit-window-visible): ew := EditWindow {
-        x: current-cell.x > 15px ? current-cell.x - EditorSpaceSettings.default-padding - 15px : 0; // TODO the end needs to be windowWidth - current-cell.x < current.cell.width * 2;
+        x: current-cell.x > 15px ? current-cell.x - EditorSpaceSettings.default-padding - 15px : (current-cell.x + current-cell.width > root.width ? root.width - ew.width : 0); // TODO the end needs to be windowWidth - current-cell.x < current.cell.width * 2;
         y: current-cell.y - EditorSpaceSettings.default-padding;
         current-cell: current-cell;
         save(new-value) => {
