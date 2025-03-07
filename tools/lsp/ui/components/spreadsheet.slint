@@ -1,9 +1,9 @@
 // Copyright © SixtyFPS GmbH <info@slint.dev>
 // SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
 
-import { Palette, Button, LineEdit, CheckBox, ScrollView, VerticalBox } from "std-widgets.slint";
-import { Api, ColorData, ElementInformation, PreviewData, PreviewDataKind, PropertyDeclaration, PropertyGroup, PropertyInformation, PropertyValue, PropertyValueKind, PropertyValueTable } from "../api.slint";
-import { EditorSizeSettings, Icons, EditorAnimationSettings, EditorSpaceSettings, EditorSizeSettings, EditorFontSettings, EditorPalette } from "../components/styling.slint";
+import { Palette } from "std-widgets.slint";
+import { Api, PreviewData, PreviewDataKind, PropertyValue, PropertyValueKind, PropertyValueTable } from "../api.slint";
+import { EditorSizeSettings, Icons, EditorSpaceSettings } from "../components/styling.slint";
 import { PropertyValueWidget } from "../components/property-widgets.slint";
 
 export struct CellData {
@@ -121,7 +121,7 @@ component Cell inherits Rectangle {
     }
 }
 
-export component Spreadsheet inherits ScrollView {
+export component Spreadsheet {
     in property <string> property-group-id;
     in property <PreviewData> preview-data: {
         name: "Addresses",
@@ -302,6 +302,7 @@ export component Spreadsheet inherits ScrollView {
             root.edit-window-visible = false;
         }
     }
+    
     row_menu:= ContextMenuArea {
         in property <int> position;
         Menu {

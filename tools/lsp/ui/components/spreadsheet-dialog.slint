@@ -1,60 +1,77 @@
-import { Button, Palette } from "std-widgets.slint";
+import { Button, Palette, StandardButton, ScrollView } from "std-widgets.slint";
 import { EditorSpaceSettings } from "../components/styling.slint";
 import { Spreadsheet } from "../components/spreadsheet.slint";
-import { Api, PreviewData } from "../api.slint";
+import { Api, PreviewData, PropertyValueTable } from "../api.slint";
 
 import { WindowGlobal } from "../windowglobal.slint";
 import { EditorSizeSettings } from "styling.slint";
 
-export component SpreadsheetDialog inherits Dialog {
-    property <length> dialog-width;
-    property <length> dialog-height;
-    width <=> dialog-width;
-    height <=> dialog-height;
-    
-    visible: false;
+component SpreadsheetPopup inherits PopupWindow {
+    in property <string> property-group-id;
+    in property <PreviewData> preview-data;
+    in property <PropertyValueTable> current-table;
 
-    title: "Edit Values";
+    close-policy: close-on-click-outside;
 
-    public function edit-in-spreadsheet(property-group-id: string, data: PreviewData) {
-        spread-sheet.property-group-id = property-group-id;
-        spread-sheet.preview-data = data;
-        spread-sheet.current-table = Api.get-property-value-table(property-group-id, data.name);
-        dialog-width = Math.max(container.width, WindowGlobal.window-width * 0.9);
-        dialog-height = Math.max(container.height, WindowGlobal.window-height * 0.8);
-    
-
-        root.visible = true;
-    }
-    container:=Rectangle {
-        background: Palette.background;
-        drop-shadow-blur: 30px;
-        drop-shadow-color: black.transparentize(0.5);
-        border-radius: EditorSizeSettings.radius;
+    Rectangle {
+        background: Palette.accent-background;
         
         VerticalLayout {
-            padding-top: EditorSpaceSettings.default-padding;
-            spacing: EditorSpaceSettings.default-spacing;
-            Text {
-                text: spread-sheet.preview-data.name;
-                horizontal-alignment: center;
-                font-weight: 800;
-            }
-            spread-sheet := Spreadsheet {
-            }
-        
-            HorizontalLayout {
-                alignment: end;
-                padding: 8px;
+            Dialog {
+                property <length> dialog-width;
+                property <length> dialog-height;
+    
+                title: root.preview-data.has-setter ? "Edit Values" : "View Values"; 
 
-                Button { 
-                    text: "Close";
-                    clicked => {
-                        root.visible = false;
+                VerticalLayout {
+                    padding-top: EditorSpaceSettings.default-padding;
+                    spacing: EditorSpaceSettings.default-spacing;
+                    Text {
+                        text: spread-sheet.preview-data.name;
+                        horizontal-alignment: center;
+                        font-weight: 800;
+                    }
+                    ScrollView {
+                        spread-sheet := Spreadsheet {
+                            property-group-id <=> root.property-group-id;
+                            preview-data <=> root.preview-data;
+                            current-table <=> root.current-table;
+                        }
                     }
                 }
+
+                StandardButton {
+                    kind: StandardButtonKind.ok;
+                    clicked => {
+                        // TODO: Apply changes!
+                        root.close();
+                    }
+                }
+                StandardButton {
+                    kind: StandardButtonKind.cancel;
+                    clicked => { root.close(); }
+                }
             }
-      
         }
+        }
+}
+
+export component SpreadsheetDialog {
+    private property <string> property-group-id;
+    private property <PreviewData> preview-data;
+    private property <PropertyValueTable> current-table;
+
+    public function edit-in-spreadsheet(property-group-id: string, data: PreviewData) {
+        root.property-group-id = property-group-id;
+        root.preview-data = data;
+        root.current-table = Api.get-property-value-table(property-group-id, data.name);
+
+        spreadsheet.show();
+    }
+
+    spreadsheet := SpreadsheetPopup {
+        property-group-id <=> root.property-group-id;
+        preview-data <=> root.preview-data;
+        current-table <=> root.current-table;
     }
 }
