@@ -11,18 +11,20 @@ component SpreadsheetPopup inherits PopupWindow {
     in property <PreviewData> preview-data;
     in property <PropertyValueTable> current-table;
 
+    width: spread-sheet.preferred-width;
+    height: spread-sheet.preferred-height;
+    x: (WindowGlobal.window-width - self.width)/2;
+    y: (WindowGlobal.window-height - self.height)/2;
     close-policy: close-on-click-outside;
 
     Rectangle {
-        background: Palette.accent-background;
+        background: Palette.alternate-background;
+        drop-shadow-blur: 30px;
+        drop-shadow-color: black.transparentize(0.5);
         
         VerticalLayout {
             Dialog {
-                property <length> dialog-width;
-                property <length> dialog-height;
-    
                 title: root.preview-data.has-setter ? "Edit Values" : "View Values"; 
-
                 VerticalLayout {
                     padding-top: EditorSpaceSettings.default-padding;
                     spacing: EditorSpaceSettings.default-spacing;
@@ -31,13 +33,19 @@ component SpreadsheetPopup inherits PopupWindow {
                         horizontal-alignment: center;
                         font-weight: 800;
                     }
-                    ScrollView {
-                        spread-sheet := Spreadsheet {
+                    HorizontalLayout {
+                        ScrollView {
+                        width: spread-sheet.preferred-width;
+                        height: spread-sheet.preferred-height; 
+                        spread-sheet := Spreadsheet {              
                             property-group-id <=> root.property-group-id;
                             preview-data <=> root.preview-data;
                             current-table <=> root.current-table;
                         }
+                        // Rectangle {width:200px;}
                     }
+                    }
+                    // Rectangle { height: 200px; }
                 }
 
                 StandardButton {
@@ -68,7 +76,8 @@ export component SpreadsheetDialog {
 
         spreadsheet.show();
     }
-
+    x:0;
+    y:0;
     spreadsheet := SpreadsheetPopup {
         property-group-id <=> root.property-group-id;
         preview-data <=> root.preview-data;

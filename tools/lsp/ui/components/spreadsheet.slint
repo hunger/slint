@@ -14,30 +14,32 @@ export struct CellData {
     x: length,
     y: length,
     width: length,
-    height: length
-}
+    height: length}
 
-export component EditWindow inherits Rectangle {
-    in property <CellData> current-cell;
-    drop-shadow-blur: 10px;
-    drop-shadow-color: black.transparentize(0.5);
-    drop-shadow-offset-x: 0;
-    drop-shadow-offset-y: 0;
-    border-radius: EditorSizeSettings.radius;
-    width: self.preferred-width;
-    height: self.preferred-height;
-    background: Palette.alternate-background;
+export component EditWindow inherits PopupWindow {
+    close-policy: close-on-click-outside;
     callback save(string);
     callback close-editor();
-    HorizontalLayout {
-        padding: EditorSpaceSettings.default-padding;
-        padding-left: EditorSpaceSettings.default-padding;
-        spacing: EditorSpaceSettings.default-spacing;
-        PropertyValueWidget {
-            property-value: current-cell.value;
-            visible: true;
-            property-name: current-cell.id;
-            enabled: true;
+    in property <CellData> current-cell;
+    Rectangle {
+        drop-shadow-blur: 10px;
+        drop-shadow-color: black.transparentize(0.5);
+        drop-shadow-offset-x: 0;
+        drop-shadow-offset-y: 0;
+        border-radius: EditorSizeSettings.radius;
+        width: self.preferred-width;
+        height: self.preferred-height;
+        background: Palette.alternate-background;
+        HorizontalLayout {
+            padding: EditorSpaceSettings.default-padding;
+            padding-left: EditorSpaceSettings.default-padding;
+            spacing: EditorSpaceSettings.default-spacing;
+            PropertyValueWidget {
+                property-value: root.current-cell.value;
+                visible: true;
+                property-name: root.current-cell.id;
+                enabled: true;
+            }
         }
     }
 }
@@ -131,110 +133,51 @@ export component Spreadsheet {
     };
     in property <PropertyValueTable> current-table: {
         is-array: true,
-        headers: ["type", "street", "city", "state", "zip", "favorite","color"],
+        headers: ["type", "street", "city", "state", "zip", "favorite", "color"],
         values: [
             [
-                {
-                    kind: PropertyValueKind.string,
-                    value-string: "home"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "123 Oak Lane"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "Richmond"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "VA"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "23226"
-                }, {
-                    kind: PropertyValueKind.boolean,
-                    value-bool: true,
-                    value-string: "True"
-                }, {
-                    kind: PropertyValueKind.color,
-                    value-string: "#ff0000"
-                }
-            ], [
-                {
-                    kind: PropertyValueKind.string,
-                    value-string: "work"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "456 Corporate Blvd"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "Richmond"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "VA"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "23219"
-                }, {
-                    kind: PropertyValueKind.boolean,
-                    value-bool: false,
-                    value-string: "False"
-                }
-            ], [
-                {
-                    kind: PropertyValueKind.string,
-                    value-string: "history"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "123 Oak Lane"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "Richmond"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "VA"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "23226"
-                }, {
-                    kind: PropertyValueKind.boolean,
-                    value-bool: false,
-                    value-string: "False"
-                }, {
-                    kind: PropertyValueKind.color,
-                    value-string: "#aaff00"
-                }
-            ], [
-                {
-                    kind: PropertyValueKind.string,
-                    value-string: "world"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "456 Corporate Blvd"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "Richmond"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "VA"
-                }, {
-                    kind: PropertyValueKind.string,
-                    value-string: "23219"
-                }, {
-                    kind: PropertyValueKind.boolean,
-                    value-bool: false,
-                    value-string: "False"
-                }, {
-                    kind: PropertyValueKind.color,
-                    value-string: "#ff0000"
-                }
+                { kind: PropertyValueKind.string, value-string: "home" },
+                { kind: PropertyValueKind.string, value-string: "123 Oak Lane" },
+                { kind: PropertyValueKind.string, value-string: "Richmond" },
+                { kind: PropertyValueKind.string, value-string: "VA" },
+                { kind: PropertyValueKind.string, value-string: "23226" },
+                { kind: PropertyValueKind.boolean, value-bool: true, value-string: "True" },
+                { kind: PropertyValueKind.color, value-string: "#ff0000" }
+            ],
+            [
+                { kind: PropertyValueKind.string, value-string: "work" },
+                { kind: PropertyValueKind.string, value-string: "456 Corporate Blvd" },
+                { kind: PropertyValueKind.string, value-string: "Richmond" },
+                { kind: PropertyValueKind.string, value-string: "VA" },
+                { kind: PropertyValueKind.string, value-string: "23219" },
+                { kind: PropertyValueKind.boolean, value-bool: false, value-string: "False" }
+            ],
+            [
+                { kind: PropertyValueKind.string, value-string: "history" },
+                { kind: PropertyValueKind.string, value-string: "123 Oak Lane" },
+                { kind: PropertyValueKind.string, value-string: "Richmond" },
+                { kind: PropertyValueKind.string, value-string: "VA" },
+                { kind: PropertyValueKind.string, value-string: "23226" },
+                { kind: PropertyValueKind.boolean, value-bool: false, value-string: "False" },
+                { kind: PropertyValueKind.color, value-string: "#aaff00" }
+            ],
+            [
+                { kind: PropertyValueKind.string, value-string: "world" },
+                { kind: PropertyValueKind.string, value-string: "456 Corporate Blvd" },
+                { kind: PropertyValueKind.string, value-string: "Richmond" },
+                { kind: PropertyValueKind.string, value-string: "VA" },
+                { kind: PropertyValueKind.string, value-string: "23219" },
+                { kind: PropertyValueKind.boolean, value-bool: false, value-string: "False" },
+                { kind: PropertyValueKind.color, value-string: "#ff0000" }
             ]
         ],
-
     };
 
     property <CellData> current-cell;
     property <bool> edit-window-visible: false;
     private property <length> selection-x;
     private property <length> selection-y;
+    property <length> popup-overage: 200px;
 
     VerticalLayout {
         HorizontalLayout {
@@ -254,7 +197,10 @@ export component Spreadsheet {
                     clicked => {
                         root.selection-x = self.x;
                         root.selection-y = self.y;
-                        row_menu.show({x:self.mouse-x + ta.absolute-position.x - row_menu.absolute-position.x,y:self.mouse-y + ta.absolute-position.y - row_menu.absolute-position.y});
+                        row_menu.show({
+                            x:self.mouse-x + ta.absolute-position.x - row_menu.absolute-position.x,
+                            y:self.mouse-y + ta.absolute-position.y - row_menu.absolute-position.y
+                        });
                     }
                 }
             }
@@ -274,15 +220,28 @@ export component Spreadsheet {
                         height: self.height
                     };
                     root.edit-window-visible = true;
+                    ew.show();
                 }
             }
         }
+        // if (root.edit-window-visible): buffer-rect := Rectangle {
+        //     height: root.popup-overage;
+        //     animate height {
+        //         duration: 1s;
+        //         easing: ease-in-out-quad;
+        //     }
+        // }
     }
 
-    if (edit-window-visible): ew := EditWindow {
+    ew := EditWindow {
+        visible: edit-window-visible;
         x: current-cell.x > 15px ? current-cell.x - EditorSpaceSettings.default-padding - 15px : (current-cell.x + current-cell.width > root.width ? root.width - ew.width : 0); // TODO the end needs to be windowWidth - current-cell.x < current.cell.width * 2;
         y: current-cell.y - EditorSpaceSettings.default-padding;
         current-cell: current-cell;
+        init => {
+            root.popup-overage = (ew.y + ew.height > root.height) ? (ew.y + ew.height) - root.height : 0;
+            debug("initing ew");
+        }
         save(new-value) => {
             // Update the specific field based on col index
             // if (current-cell.col == 0) {
@@ -302,16 +261,17 @@ export component Spreadsheet {
             root.edit-window-visible = false;
         }
     }
-    
-    row_menu:= ContextMenuArea {
+    row_menu := ContextMenuArea {
         in property <int> position;
         Menu {
             MenuItem {
                 title: "Add Row Above";
             }
+
             MenuItem {
                 title: "Add Row Below";
             }
+
             MenuItem {
                 title: "Remove Row";
             }
