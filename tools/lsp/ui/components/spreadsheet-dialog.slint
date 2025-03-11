@@ -11,54 +11,51 @@ component SpreadsheetPopup inherits PopupWindow {
     in property <PreviewData> preview-data;
     in property <PropertyValueTable> current-table;
 
-    width: spread-sheet.preferred-width;
-    height: spread-sheet.preferred-height;
-    x: (WindowGlobal.window-width - self.width) / 2;
-    y: (WindowGlobal.window-height - self.height) / 2;
     close-policy: close-on-click-outside;
 
     frame := Rectangle {
+        x <=> root.x;
+        y <=> root.y;
+        width <=> root.width;
+        height <=> root.height;
         background: Palette.alternate-background;
         drop-shadow-blur: 30px;
         drop-shadow-color: black.transparentize(0.5);
         VerticalLayout {
             Dialog {
                 title: root.preview-data.has-setter ? "Edit Values" : "View Values";
-                content:=VerticalLayout {
+                content := VerticalLayout {
                     padding-top: EditorSpaceSettings.default-padding;
                     spacing: EditorSpaceSettings.default-spacing;
-                    Text {
+                    title := Text {
                         text: spread-sheet.preview-data.name;
                         horizontal-alignment: center;
                         font-weight: 800;
                     }
-
-                    HorizontalLayout {
-                        Rectangle {
-                            clip: true;
-                            sv:=ScrollView {
-                                width: spread-sheet.preferred-width;
-                                height: spread-sheet.preferred-height;
-                                VerticalLayout {
-                                    spread-sheet := Spreadsheet {
-                                        init => {
-                                            debug("property-group init");
-                                            root.height = Math.min(spread-sheet.preferred-height, WindowGlobal.window-height * 0.85);
-                                            root.y = (spread-sheet.preferred-height < WindowGlobal.window-height * 0.85) ? (WindowGlobal.window-height - self.height) / 2 : WindowGlobal.window-height * 0.075;
-                                            root.width = Math.min(spread-sheet.preferred-width, WindowGlobal.window-width * 0.9);
-                                            root.x = (spread-sheet.preferred-width < WindowGlobal.window-width * 0.9) ? (WindowGlobal.window-width - self.width) / 2 : WindowGlobal.window-width * 0.05;
-                                        }
-                                        property-group-id <=> root.property-group-id;
-                                        preview-data <=> root.preview-data;
-                                        current-table <=> root.current-table;
-                                    }
-                                }
+                    pr:=Rectangle {
+                        vertical-stretch: 1;
+                    ScrollView {
+                        viewport-width: spread-sheet.preferred-width;
+                        viewport-height: spread-sheet.preferred-height; 
+                        height: 100%;
+                        width: root.width;               
+                        spread-sheet := Spreadsheet {
+                            init => {
+                                debug("property-group init");
+                                root.height = Math.min(spread-sheet.preferred-height + title.height + (5 * EditorSpaceSettings.default-spacing) + (2 * EditorSpaceSettings.default-padding) + sb1.height, WindowGlobal.window-height * 0.85);
+                                root.y = (spread-sheet.preferred-height < WindowGlobal.window-height * 0.85) ? (WindowGlobal.window-height - self.height) / 2 : WindowGlobal.window-height * 0.075;
+                                root.width = Math.min(spread-sheet.preferred-width + 2 * EditorSpaceSettings.default-padding, WindowGlobal.window-width * 0.9);
+                                root.x = (spread-sheet.preferred-width < WindowGlobal.window-width * 0.9) ? (WindowGlobal.window-width - self.width) / 2 : WindowGlobal.window-width * 0.05;
                             }
+                            property-group-id <=> root.property-group-id;
+                            preview-data <=> root.preview-data;
+                            current-table <=> root.current-table;
                         }
                     }
                 }
+                }
 
-                sb1:= StandardButton {
+                sb1 := StandardButton {
                     kind: StandardButtonKind.ok;
                     clicked => {
                         // TODO: Apply changes!
@@ -66,7 +63,7 @@ component SpreadsheetPopup inherits PopupWindow {
                     }
                 }
 
-                sb2:= StandardButton {
+                sb2 := StandardButton {
                     kind: StandardButtonKind.cancel;
                     clicked => {
                         root.close();
