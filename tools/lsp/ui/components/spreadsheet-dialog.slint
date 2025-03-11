@@ -13,19 +13,18 @@ component SpreadsheetPopup inherits PopupWindow {
 
     width: spread-sheet.preferred-width;
     height: spread-sheet.preferred-height;
-    x: (WindowGlobal.window-width - self.width)/2;
-    y: (WindowGlobal.window-height - self.height)/2;
+    x: (WindowGlobal.window-width - self.width) / 2;
+    y: (WindowGlobal.window-height - self.height) / 2;
     close-policy: close-on-click-outside;
 
-    Rectangle {
+    frame := Rectangle {
         background: Palette.alternate-background;
         drop-shadow-blur: 30px;
         drop-shadow-color: black.transparentize(0.5);
-        
         VerticalLayout {
             Dialog {
-                title: root.preview-data.has-setter ? "Edit Values" : "View Values"; 
-                VerticalLayout {
+                title: root.preview-data.has-setter ? "Edit Values" : "View Values";
+                content:=VerticalLayout {
                     padding-top: EditorSpaceSettings.default-padding;
                     spacing: EditorSpaceSettings.default-spacing;
                     Text {
@@ -33,35 +32,49 @@ component SpreadsheetPopup inherits PopupWindow {
                         horizontal-alignment: center;
                         font-weight: 800;
                     }
+
                     HorizontalLayout {
-                        ScrollView {
-                        width: spread-sheet.preferred-width;
-                        height: spread-sheet.preferred-height; 
-                        spread-sheet := Spreadsheet {              
-                            property-group-id <=> root.property-group-id;
-                            preview-data <=> root.preview-data;
-                            current-table <=> root.current-table;
+                        Rectangle {
+                            clip: true;
+                            sv:=ScrollView {
+                                width: spread-sheet.preferred-width;
+                                height: spread-sheet.preferred-height;
+                                VerticalLayout {
+                                    spread-sheet := Spreadsheet {
+                                        init => {
+                                            debug("property-group init");
+                                            root.height = Math.min(spread-sheet.preferred-height, WindowGlobal.window-height * 0.85);
+                                            root.y = (spread-sheet.preferred-height < WindowGlobal.window-height * 0.85) ? (WindowGlobal.window-height - self.height) / 2 : WindowGlobal.window-height * 0.075;
+                                            root.width = Math.min(spread-sheet.preferred-width, WindowGlobal.window-width * 0.9);
+                                            root.x = (spread-sheet.preferred-width < WindowGlobal.window-width * 0.9) ? (WindowGlobal.window-width - self.width) / 2 : WindowGlobal.window-width * 0.05;
+                                        }
+                                        property-group-id <=> root.property-group-id;
+                                        preview-data <=> root.preview-data;
+                                        current-table <=> root.current-table;
+                                    }
+                                }
+                            }
                         }
-                        // Rectangle {width:200px;}
                     }
-                    }
-                    // Rectangle { height: 200px; }
                 }
 
-                StandardButton {
+                sb1:= StandardButton {
                     kind: StandardButtonKind.ok;
                     clicked => {
                         // TODO: Apply changes!
                         root.close();
                     }
                 }
-                StandardButton {
+
+                sb2:= StandardButton {
                     kind: StandardButtonKind.cancel;
-                    clicked => { root.close(); }
+                    clicked => {
+                        root.close();
+                    }
                 }
             }
         }
-        }
+    }
 }
 
 export component SpreadsheetDialog {
@@ -76,8 +89,8 @@ export component SpreadsheetDialog {
 
         spreadsheet.show();
     }
-    x:0;
-    y:0;
+    x: 0;
+    y: 0;
     spreadsheet := SpreadsheetPopup {
         property-group-id <=> root.property-group-id;
         preview-data <=> root.preview-data;
