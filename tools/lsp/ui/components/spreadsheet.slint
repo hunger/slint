@@ -21,7 +21,10 @@ export component EditWindow inherits PopupWindow {
     callback save(string);
     callback close-editor();
     in property <CellData> current-cell;
-    Rectangle {
+    content := Rectangle {
+        changed height => {
+            parent.height = self.height;
+        }
         drop-shadow-blur: 10px;
         drop-shadow-color: black.transparentize(0.5);
         drop-shadow-offset-x: 0;
@@ -30,7 +33,7 @@ export component EditWindow inherits PopupWindow {
         width: self.preferred-width;
         height: self.preferred-height;
         background: Palette.alternate-background;
-        HorizontalLayout {
+        hl:=HorizontalLayout {
             padding: EditorSpaceSettings.default-padding;
             padding-left: EditorSpaceSettings.default-padding;
             spacing: EditorSpaceSettings.default-spacing;
@@ -143,23 +146,13 @@ export component Spreadsheet {
                 { kind: PropertyValueKind.string, value-string: "23226" },
                 { kind: PropertyValueKind.boolean, value-bool: true, value-string: "True" },
                 { kind: PropertyValueKind.color, value-string: "#ff0000" }
-            ],
-            [
+            ],            [
                 { kind: PropertyValueKind.string, value-string: "work" },
                 { kind: PropertyValueKind.string, value-string: "456 Corporate Blvd" },
                 { kind: PropertyValueKind.string, value-string: "Richmond" },
                 { kind: PropertyValueKind.string, value-string: "VA" },
                 { kind: PropertyValueKind.string, value-string: "23219" },
                 { kind: PropertyValueKind.boolean, value-bool: false, value-string: "False" }
-            ],
-            [
-                { kind: PropertyValueKind.string, value-string: "history" },
-                { kind: PropertyValueKind.string, value-string: "123 Oak Lane" },
-                { kind: PropertyValueKind.string, value-string: "Richmond" },
-                { kind: PropertyValueKind.string, value-string: "VA" },
-                { kind: PropertyValueKind.string, value-string: "23226" },
-                { kind: PropertyValueKind.boolean, value-bool: false, value-string: "False" },
-                { kind: PropertyValueKind.color, value-string: "#aaff00" }
             ],
             [
                 { kind: PropertyValueKind.string, value-string: "world" },
@@ -224,13 +217,6 @@ export component Spreadsheet {
                 }
             }
         }
-        // if (root.edit-window-visible): buffer-rect := Rectangle {
-        //     height: root.popup-overage;
-        //     animate height {
-        //         duration: 1s;
-        //         easing: ease-in-out-quad;
-        //     }
-        // }
     }
 
     ew := EditWindow {
@@ -239,8 +225,7 @@ export component Spreadsheet {
         y: current-cell.y - EditorSpaceSettings.default-padding;
         current-cell: current-cell;
         init => {
-            root.popup-overage = (ew.y + ew.height > root.height) ? (ew.y + ew.height) - root.height : 0;
-            debug("initing ew");
+            // root.popup-overage = (ew.y + ew.height > root.height) ? (ew.y + ew.height) - root.height : 0;
         }
         save(new-value) => {
             // Update the specific field based on col index
