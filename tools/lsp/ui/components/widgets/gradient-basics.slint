@@ -1,0 +1,164 @@
+// Copyright © SixtyFPS GmbH <info@slint.dev>
+// SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
+
+import { Preview } from "./color-basics.slint";
+
+import { Api, GradientStop } from "../../api.slint";
+
+component GradientDot inherits Rectangle {
+    in-out property <bool> selected: false;
+
+    in property <length> parent-width;
+    in-out property <[GradientStop]> gradient-stops;
+    in property <int> index;
+
+    in property <int> apply-update;
+
+    x: parent-width * self.gradient-stops[self.index].position - self.width / 2.0;
+    
+    callback select-gradient-stop(position: float, color: color);
+    callback remove-stop();
+    callback update-brush();
+
+    width: self.selected ? 20px : 10px;
+    height: self.selected ? 20px : 10px;
+    border-radius: self.width;
+    background: root.gradient-stops[root.index].color;
+    border-width: root.selected ? 2px : 1px;
+    border-color: root.selected ? black : gray;
+
+    TouchArea {
+        private property <length> x-pos: self.mouse-x + root.x;
+
+        double-clicked => {
+            root.remove-stop();
+        }
+
+        clicked => {
+            if !root.selected {;
+                root.select-gradient-stop(root.gradient-stops[root.index].position, root.gradient-stops[root.index].color);
+            }
+        }
+        moved => {
+            root.gradient-stops[root.index].position = Math.clamp(self.x-pos, 0, root.parent-width) / root.parent-width;
+            root.update-brush();
+        }
+        scroll-event(event) => {
+            if event.delta-y != 0 {
+                root.gradient-stops[root.index].position = Math.clamp(
+                    root.gradient-stops[root.index].position + Math.clamp((event.delta-y / 1px), -0.01, +0.01),
+                    0.0, 1.0);
+                root.update-brush();
+
+                return EventResult.accept;
+            }
+            return EventResult.reject;
+        }
+    }
+}
+
+export component GradientMainContent inherits HorizontalLayout{
+    in-out property <[GradientStop]> gradient-stops;
+    in property <brush> current-brush;
+    in-out property <float> current-position;
+    in-out property <color> current-color;
+
+    out property <bool> has-focus: ta.has-hover;
+
+    callback update-brush();
+
+    out property <int> current-selected-index: -1;
+
+    private property <int> apply-update-to: -1;
+
+    function apply-model-change-to-ui() {
+        if self.current-selected-index >= 0 {
+            self.gradient-stops[self.current-selected-index].position = self.current-position;
+            self.gradient-stops[self.current-selected-index].color = self.current-color;
+
+            self.apply-update-to = self.current-selected-index;
+        }
+    }
+
+    changed current-position => {
+        apply-model-change-to-ui();
+    }
+    changed current-color => {
+        apply-model-change-to-ui();
+    }
+
+    function apply-gradient-stops() {
+        if self.gradient-stops.length > 0 && (self.current-selected-index < 0 || self.current-selected-index >= self.gradient-stops.length) {
+            self.current-selected-index = 1;
+        }
+
+        if self.current-selected-index >= 0 {
+            self.current-position = self.gradient-stops[self.current-selected-index].position;
+            self.current-color = self.gradient-stops[self.current-selected-index].color;
+        }
+    }
+
+    init => {
+        apply-gradient-stops();
+    }
+
+    changed gradient-stops => {
+        apply-gradient-stops();
+    }
+
+    grad := Preview {
+        height: 40px;
+        background: root.current-brush;
+
+        ta := TouchArea {
+            double-clicked => {
+                root.current-selected-index = Api.add-gradient-stop(root.gradient-stops, { position: self.mouse-x / self.width, color: Colors.aquamarine });
+                root.current-color = root.gradient-stops[root.current-selected-index].color;
+                root.current-position = root.gradient-stops[root.current-selected-index].position;
+
+                root.update-brush();
+            }
+            scroll-event(event) => {
+                if event.delta-y != 0 && root.current-selected-index >= 0 {
+                    root.gradient-stops[root.current-selected-index].position = Math.clamp(
+                        root.gradient-stops[root.current-selected-index].position + Math.clamp((event.delta-y / 1px), -0.01, +0.01),
+                        0.0, 1.0);
+                    root.update-brush();
+
+                    root.apply-update-to = root.current-selected-index;
+
+                    return EventResult.accept;
+                }
+                return EventResult.reject;
+            }
+        }
+
+        Rectangle {
+            height: 1px;
+            background: grey;
+
+            for i[index] in root.gradient-stops: GradientDot {
+                selected: root.current-selected-index == index;
+                gradient-stops <=> root.gradient-stops;
+                index: index;
+
+                parent-width: grad.width;
+                
+                select-gradient-stop(p, c) => {
+                    root.current-selected-index = index;
+                    root.current-color = c;
+                    root.current-position = p;
+                }
+
+                remove-stop() => {
+                    Api.remove-gradient-stop(root.gradient-stops, index);
+                    root.update-brush();
+                }
+
+                update-brush() => {
+                    root.update-brush();
+                }
+            }
+        }
+    }
+}

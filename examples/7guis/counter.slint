@@ -29,7 +29,7 @@ export component Counter inherits Window {
     in-out property <float> test-float: 42.23;
     in-out property <TestEnum> test-enum: TestEnum.Two;
     in-out property <TestStruct> test-struct: { c1: "Foobar", c2: 42 };
-    in-out property <brush> test-brush: @linear-gradient(90deg, #f00f 0%, #0f0f 50%, #00ff 100%);
+    in-out property <brush> test-brush: @linear-gradient(45deg, #f00f 0%, #0f0f 50%, #00ff 100%);
     in-out property <length> test-length: 5cm;
 
 
@@ -53,7 +53,7 @@ export component Counter inherits Window {
         }
 
         Rectangle {
-            min-height: 10px;
+            min-height: 40px;
             background: test-brush;
         }
 
