@@ -99,6 +99,9 @@ pub fn create_ui(style: String, experimental: bool) -> Result<PreviewUi, Platfor
 
     api.on_get_property_value(get_property_value);
     api.on_get_property_value_table(get_property_value_table);
+    api.on_insert_row_into_value_table(insert_row_into_value_table);
+    api.on_remove_row_from_value_table(remove_row_from_value_table);
+
     api.on_set_json_preview_data(set_json_preview_data);
 
     api.on_string_to_code(string_to_code);
@@ -1357,6 +1360,57 @@ fn get_property_value_table(
     .into();
 
     PropertyValueTable { is_array, headers, values }
+}
+
+fn insert_row_into_value_table(table: PropertyValueTable, insert_before: i32) {
+    if !table.is_array {
+        return;
+    }
+
+    let model = table.values.clone();
+    let insert_before = (insert_before as usize).clamp(0, model.row_count());
+
+    let Some(vec_model) =
+        model.as_any().downcast_ref::<slint::VecModel<slint::ModelRc<PropertyValue>>>()
+    else {
+        return;
+    };
+
+    let row_data = {
+        let mut result = vec![];
+        if let Some(row) = vec_model.row_data(0) {
+            result = row
+                .iter()
+                .map(|pv| PropertyValue { kind: pv.kind, ..Default::default() })
+                .collect::<Vec<_>>();
+        }
+        result
+    };
+
+    let row_model = Rc::new(slint::VecModel::from(row_data));
+    if vec_model.row_count() == insert_before {
+        vec_model.push(row_model.into());
+    } else {
+        vec_model.insert(insert_before, row_model.into());
+    }
+}
+
+fn remove_row_from_value_table(table: PropertyValueTable, to_remove: i32) {
+    if to_remove < 0 || !table.is_array {
+        return;
+    }
+    let to_remove = to_remove as usize;
+
+    let model = table.values.clone();
+    let Some(vec_model) =
+        model.as_any().downcast_ref::<slint::VecModel<slint::ModelRc<PropertyValue>>>()
+    else {
+        return;
+    };
+
+    if to_remove < vec_model.row_count() {
+        vec_model.remove(to_remove as usize);
+    }
 }
 
 fn set_json_preview_data(

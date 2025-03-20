@@ -514,6 +514,8 @@ export global Api {
     // ## preview data
     pure callback get-property-value(component: string, name: string) -> PropertyValue;
     pure callback get-property-value-table(component: string, name: string) -> PropertyValueTable;
+    pure callback insert-row-into-value-table(table: PropertyValueTable, insert-before: int);
+    pure callback remove-row-from-value-table(table: PropertyValueTable, remove-row: int);
 
     pure callback set-json-preview-data(component: string, name: string, json-value: string) -> string;
 

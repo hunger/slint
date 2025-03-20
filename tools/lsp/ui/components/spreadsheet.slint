@@ -190,6 +190,8 @@ export component Spreadsheet {
                     clicked => {
                         root.selection-x = self.x;
                         root.selection-y = self.y;
+
+                        row_menu.row-number = row;
                         row_menu.show({
                             x:self.mouse-x + ta.absolute-position.x - row_menu.absolute-position.x,
                             y:self.mouse-y + ta.absolute-position.y - row_menu.absolute-position.y
@@ -246,19 +248,30 @@ export component Spreadsheet {
             root.edit-window-visible = false;
         }
     }
+
     row_menu := ContextMenuArea {
-        in property <int> position;
+        in-out property <int> row-number;
+
         Menu {
             MenuItem {
                 title: "Add Row Above";
+                activated() => {
+                    Api.insert-row-into-value-table(root.current_table, row_menu.row-number);
+                }
             }
 
             MenuItem {
                 title: "Add Row Below";
+                activated() => {
+                    Api.insert-row-into-value-table(root.current_table, row_menu.row-number + 1);
+                }
             }
 
             MenuItem {
                 title: "Remove Row";
+                activated() => {
+                    Api.remove-row-from-value-table(root.current_table, row_menu.row-number);
+                }
             }
         }
     }
