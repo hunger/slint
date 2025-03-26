@@ -1,0 +1,26 @@
+// Copyright © SixtyFPS GmbH <info@slint.dev>
+// SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-2.0 OR LicenseRef-Slint-Software-3.0
+
+ TestCase := Rectangle {
+    property<float> t1: @debug-hook(42.3, t1-id);
+    property<float> t2: @debug-hook(abs(-42.3), t2-id);
+}
+/*
+```cpp
+auto handle = TestCase::create();
+assert_eq(instance.get_t1(), 42,3);
+assert_eq(instance.get_t2(), 42,3);
+```
+
+```rust
+let instance = TestCase::new().unwrap();
+assert_eq!(instance.get_t1(), 42.3);
+assert_eq!(instance.get_t2(), 42.3);
+```
+
+```js
+var instance = new slint.TestCase({});
+assert(Math.abs(instance.t1 - 42.3) < 0.0001);
+assert(Math.abs(instance.t2 - 42.3) < 0.0001);
+```
+*/

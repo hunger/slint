@@ -223,6 +223,9 @@ fn parse_expression_helper(p: &mut impl Parser, precedence: OperatorPrecedence) 
 fn parse_at_keyword(p: &mut impl Parser) {
     debug_assert_eq!(p.peek().kind(), SyntaxKind::At);
     match p.nth(1).as_str() {
+        "debug-hook" | "debug_hook" => {
+            parse_debug_hook(p);
+        }
         "image-url" | "image_url" => {
             parse_image_url(p);
         }
@@ -238,7 +241,7 @@ fn parse_at_keyword(p: &mut impl Parser) {
         _ => {
             p.consume();
             p.test(SyntaxKind::Identifier); // consume the identifier, so that autocomplete works
-            p.error("Expected 'image-url', 'tr', 'linear-gradient' or 'radial-gradient' after '@'");
+            p.error("Expected 'debug-hook', 'image-url', 'tr', 'linear-gradient' or 'radial-gradient' after '@'");
         }
     }
 }
@@ -487,6 +490,46 @@ fn parse_image_url(p: &mut impl Parser) {
         }
     }
     if !p.expect(SyntaxKind::RParent) {
+        p.until(SyntaxKind::RParent);
+    }
+}
+
+#[cfg_attr(test, parser_test)]
+/// ```test,AtDebugHook
+/// @debug_hook("foo.png", xyz)
+/// @debug-hook(42, foo)
+/// @debug-hook(43 + 76 * self.something, foo)
+/// @debug-hook(42.3, t1-id)
+/// ```
+fn parse_debug_hook(p: &mut impl Parser) {
+    let mut p = p.start_node(SyntaxKind::AtDebugHook);
+    p.consume(); // "@"
+    p.consume(); // "debug-hook"
+    if !(p.expect(SyntaxKind::LParent)) {
+        p.error("Expected '('");
+        return;
+    }
+
+    if !parse_expression(&mut *p) {
+        return;
+    }
+
+    if !p.test(SyntaxKind::Comma) {
+        p.error("Expected ','");
+        p.until(SyntaxKind::RParent);
+        return;
+    }
+
+    let peek = p.peek();
+    if peek.kind() != SyntaxKind::Identifier {
+        p.error("@debug-hook must contain an identifier as its id");
+        p.until(SyntaxKind::RParent);
+        return;
+    }
+
+    p.expect(SyntaxKind::Identifier);
+
+    if !p.test(SyntaxKind::RParent) {
         p.until(SyntaxKind::RParent);
     }
 }

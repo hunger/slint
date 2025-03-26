@@ -280,6 +280,7 @@ impl Expression {
                     SyntaxKind::Expression => Some(Self::from_expression_node(node.into(), ctx)),
                     SyntaxKind::AtImageUrl => Some(Self::from_at_image_url_node(node.into(), ctx)),
                     SyntaxKind::AtGradient => Some(Self::from_at_gradient(node.into(), ctx)),
+                    SyntaxKind::AtDebugHook => Some(Self::from_at_debug_hook(node.into(), ctx)),
                     SyntaxKind::AtTr => Some(Self::from_at_tr(node.into(), ctx)),
                     SyntaxKind::QualifiedName => Some(Self::from_qualified_name_node(
                         node.clone().into(),
@@ -597,6 +598,18 @@ impl Expression {
             GradKind::Linear { angle } => Expression::LinearGradient { angle, stops },
             GradKind::Radial => Expression::RadialGradient { stops },
         }
+    }
+
+    fn from_at_debug_hook(node: syntax_nodes::AtDebugHook, ctx: &mut LookupCtx) -> Expression {
+        let expression = node.Expression();
+        let expression = Box::new(Expression::from_expression_node(expression.clone(), ctx));
+
+        let Some(id) = node.child_text(SyntaxKind::Identifier) else {
+            ctx.diag.push_error("Cannot find identifier".into(), &node);
+            return Expression::Invalid;
+        };
+
+        Expression::DebugHook { expression, id }
     }
 
     fn from_at_tr(node: syntax_nodes::AtTr, ctx: &mut LookupCtx) -> Expression {
