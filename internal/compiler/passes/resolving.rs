@@ -35,6 +35,20 @@ fn resolve_expression(
     type_loader: &crate::typeloader::TypeLoader,
     diag: &mut BuildDiagnostics,
 ) {
+    if let Expression::DebugHook { expression, .. } = expr {
+        resolve_expression(
+            elem,
+            expression,
+            property_name,
+            property_type,
+            scope,
+            type_register,
+            type_loader,
+            diag,
+        );
+        return;
+    }
+
     if let Expression::Uncompiled(node) = expr {
         let mut lookup_ctx = LookupCtx {
             property_name,

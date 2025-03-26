@@ -25,6 +25,7 @@ mod flickable;
 mod focus_handling;
 pub mod generate_item_indices;
 pub mod infer_aliases_types;
+mod inject_debug_hooks;
 mod inlining;
 mod lower_absolute_coordinates;
 mod lower_accessibility;
@@ -81,6 +82,9 @@ pub async fn run_passes(
     };
 
     let global_type_registry = type_loader.global_type_registry.clone();
+
+    inject_debug_hooks::inject_debug_hooks(doc, type_loader);
+
     run_import_passes(doc, type_loader, diag);
     check_public_api::check_public_api(doc, &type_loader.compiler_config, diag);
 
