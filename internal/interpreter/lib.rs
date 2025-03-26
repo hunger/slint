@@ -79,6 +79,8 @@ compile_error!(
 );
 
 mod api;
+mod debug_hook;
+pub use debug_hook::PropertyValueOverride;
 mod dynamic_item_tree;
 mod dynamic_type;
 mod eval;

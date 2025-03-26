@@ -1306,6 +1306,30 @@ impl ComponentInstance {
         d.set_property(comp.borrow(), &name, value)
     }
 
+    /// Override a `@debug-hook`-ed property value
+    ///
+    /// When in doubt: Set the repeater_index to 0.
+    pub fn set_debug_hook_override_value(
+        &self,
+        id: &str,
+        repeater_index: usize,
+        value: Option<Value>,
+    ) {
+        let id = SmolStr::from(id);
+        crate::debug_hook::set_debug_hook_override_value(id, repeater_index, value);
+    }
+    /// Get the current state of a proerty with a `@debug-hook`-ed value
+    ///
+    /// When in doubt: Set the repeater_index to 0.
+    pub fn get_debug_hook_override_values(
+        &self,
+        id: &str,
+        repeater_index: usize,
+    ) -> crate::PropertyValueOverride {
+        let id = SmolStr::from(id);
+        crate::debug_hook::get_debug_hook_property_value_override(id, repeater_index)
+    }
+
     /// Set a handler for the callback with the given name. A callback with that
     /// name must be defined in the document otherwise an error will be returned.
     ///

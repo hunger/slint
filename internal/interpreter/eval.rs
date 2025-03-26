@@ -396,7 +396,10 @@ pub fn eval_expression(expression: &Expression, local_context: &mut EvalLocalCon
             }
         }
         Expression::EmptyComponentFactory => Value::ComponentFactory(Default::default()),
-        Expression::DebugHook { expression, .. } => eval_expression(expression, local_context),
+        Expression::DebugHook { expression, id } => {
+            let value = eval_expression(expression, local_context);
+            crate::debug_hook::debug_hook_triggered(&local_context.component_instance, id.clone(), value)
+        }
     }
 }
 
