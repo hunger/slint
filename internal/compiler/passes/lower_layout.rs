@@ -798,7 +798,7 @@ fn eval_const_expr(
     span: &dyn crate::diagnostics::Spanned,
     diag: &mut BuildDiagnostics,
 ) -> Option<u16> {
-    match expression {
+    match super::ignore_debug_hooks(expression) {
         Expression::NumberLiteral(v, Unit::None) => {
             if *v < 0. || *v > u16::MAX as f64 || !v.trunc().approx_eq(v) {
                 diag.push_error(format!("'{name}' must be a positive integer"), span);

@@ -13,8 +13,6 @@ pub fn inject_debug_hooks(
         return;
     }
 
-    eprintln!("INJECTING DEBUG HOOKS!");
-
     let mut counter = 1_u64;
 
     doc.visit_all_used_components(|component| {
@@ -35,15 +33,16 @@ fn process_element(element: &object_tree::ElementRc, counter: u64) {
 
     elem.bindings.iter().for_each(|(name, be)| {
         let expr = std::mem::take(&mut be.borrow_mut().expression);
-        be.borrow_mut().expression =
-            if !matches!(&expr, expression_tree::Expression::DebugHook { .. }) {
-                expression_tree::Expression::DebugHook {
+        be.borrow_mut().expression = {
+            match expr {
+                expression_tree::Expression::ElementReference(_)
+                | expression_tree::Expression::DebugHook { .. } => expr,
+                _ => expression_tree::Expression::DebugHook {
                     expression: Box::new(expr),
                     id: property_id(counter, name),
-                }
-            } else {
-                expr
-            };
+                },
+            }
+        }
     });
     elem.debug.first_mut().expect("There was one element a moment ago").element_id = counter;
 }

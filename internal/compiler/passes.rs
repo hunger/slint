@@ -57,6 +57,13 @@ use crate::expression_tree::Expression;
 use crate::namedreference::NamedReference;
 use smol_str::SmolStr;
 
+pub fn ignore_debug_hooks(expr: &Expression) -> &Expression {
+    match expr {
+        Expression::DebugHook { expression, .. } => expression.as_ref(),
+        _ => expr,
+    }
+}
+
 pub async fn run_passes(
     doc: &mut crate::object_tree::Document,
     type_loader: &mut crate::typeloader::TypeLoader,

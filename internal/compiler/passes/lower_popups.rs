@@ -48,7 +48,7 @@ fn lower_popup_window(
     diag: &mut BuildDiagnostics,
 ) {
     if let Some(binding) = popup_window_element.borrow().bindings.get(CLOSE_ON_CLICK) {
-        if popup_window_element.borrow().bindings.get(CLOSE_POLICY).is_some() {
+        if popup_window_element.borrow().bindings.contains_key(CLOSE_POLICY) {
             diag.push_error(
                 "close-policy and close-on-click cannot be set at the same time".into(),
                 &binding.borrow().span,
@@ -59,12 +59,18 @@ fn lower_popup_window(
                 CLOSE_POLICY,
                 &binding.borrow().span,
             );
-            if !matches!(binding.borrow().expression, Expression::BoolLiteral(_)) {
+            if !matches!(
+                super::ignore_debug_hooks(&binding.borrow().expression),
+                Expression::BoolLiteral(_)
+            ) {
                 report_const_error(CLOSE_ON_CLICK, &binding.borrow().span, diag);
             }
         }
     } else if let Some(binding) = popup_window_element.borrow().bindings.get(CLOSE_POLICY) {
-        if !matches!(binding.borrow().expression, Expression::EnumerationValue(_)) {
+        if !matches!(
+            super::ignore_debug_hooks(&binding.borrow().expression),
+            Expression::EnumerationValue(_)
+        ) {
             report_const_error(CLOSE_POLICY, &binding.borrow().span, diag);
         }
     }

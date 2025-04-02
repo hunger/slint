@@ -35,21 +35,7 @@ fn resolve_expression(
     type_loader: &crate::typeloader::TypeLoader,
     diag: &mut BuildDiagnostics,
 ) {
-    if let Expression::DebugHook { expression, .. } = expr {
-        resolve_expression(
-            elem,
-            expression,
-            property_name,
-            property_type,
-            scope,
-            type_register,
-            type_loader,
-            diag,
-        );
-        return;
-    }
-
-    if let Expression::Uncompiled(node) = expr {
+    if let Expression::Uncompiled(node) = super::ignore_debug_hooks(expr) {
         let mut lookup_ctx = LookupCtx {
             property_name,
             property_type,
@@ -1627,7 +1613,9 @@ fn resolve_two_way_bindings(
             &mut |elem, scope| {
                 for (prop_name, binding) in &elem.borrow().bindings {
                     let mut binding = binding.borrow_mut();
-                    if let Expression::Uncompiled(node) = binding.expression.clone() {
+                    if let Expression::Uncompiled(node) =
+                        super::ignore_debug_hooks(&binding.expression.clone())
+                    {
                         if let Some(n) = syntax_nodes::TwoWayBinding::new(node.clone()) {
                             let lhs_lookup = elem.borrow().lookup_property(prop_name);
                             if !lhs_lookup.is_valid() {
@@ -1712,7 +1700,7 @@ fn resolve_two_way_bindings(
                                                         "Link to a {} property is deprecated",
                                                         rhs_lookup.property_visibility
                                                     ),
-                                                    &node,
+                                                    node,
                                                 );
                                             } else {
                                                 diag.push_error(
@@ -1720,7 +1708,7 @@ fn resolve_two_way_bindings(
                                                         "Cannot link to a {} property",
                                                         rhs_lookup.property_visibility
                                                     ),
-                                                    &node,
+                                                    node,
                                                 )
                                             }
                                         }
@@ -1735,13 +1723,13 @@ fn resolve_two_way_bindings(
                                         } else {
                                             diag.push_error(
                                                 "Cannot link input property".into(),
-                                                &node,
+                                                node,
                                             );
                                         }
                                     } else if rhs_lookup.property_visibility
                                         == PropertyVisibility::InOut
                                     {
-                                        diag.push_warning("Linking input properties to input output properties is deprecated".into(), &node);
+                                        diag.push_warning("Linking input properties to input output properties is deprecated".into(), node);
                                         marked_linked_read_only(&nr.element(), nr.name());
                                     } else {
                                         // This is allowed, but then the rhs must also become read only.
