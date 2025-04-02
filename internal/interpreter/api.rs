@@ -1309,6 +1309,8 @@ impl ComponentInstance {
     /// Override a `@debug-hook`-ed property value
     ///
     /// When in doubt: Set the repeater_index to 0.
+    ///
+    /// Setting `value` to `None` removes the override again.
     pub fn set_debug_hook_override_value(
         &self,
         id: &str,
@@ -1317,6 +1319,17 @@ impl ComponentInstance {
     ) {
         let id = SmolStr::from(id);
         crate::debug_hook::set_debug_hook_override_value(id, repeater_index, value);
+    }
+    /// Set a observer for all `@debug-hook`-ed properties that will get called
+    /// for each evaluation of the property.
+    ///
+    /// Setting `value` to `None` removes the observer again.
+    ///
+    /// The observer is called passing in the `id`, the current `repeater_index`
+    /// and the `PropertyValueOverride` with all the interesting values fully up to
+    /// date.
+    pub fn set_debug_hook_observer(&self, observer: Option<crate::debug_hook::Observer>) {
+        crate::debug_hook::set_observer(observer);
     }
     /// Get the current state of a proerty with a `@debug-hook`-ed value
     ///
