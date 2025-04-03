@@ -645,7 +645,9 @@ fn element_require_inlining(elem: &ElementRc) -> bool {
         }
 
         let binding = binding.borrow();
-        if binding.animation.is_some() && matches!(binding.expression, Expression::Invalid) {
+        if binding.animation.is_some()
+            && matches!(super::ignore_debug_hooks(&binding.expression), Expression::Invalid)
+        {
             // If there is an animation but no binding, we must merge the binding with its animation.
             return true;
         }

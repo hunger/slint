@@ -77,7 +77,11 @@ fn resolve_expression(
                 Expression::Invalid
             }
         };
-        *expr = new_expr;
+
+        match expr {
+            Expression::DebugHook { expression, .. } => *expression = Box::new(new_expr),
+            _ => *expr = new_expr,
+        }
     }
 }
 

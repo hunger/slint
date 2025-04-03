@@ -64,6 +64,13 @@ pub fn ignore_debug_hooks(expr: &Expression) -> &Expression {
     }
 }
 
+pub fn ignore_debug_hooks_mut(expr: &mut Expression) -> &mut Expression {
+    match expr {
+        Expression::DebugHook { expression, .. } => expression.as_mut(),
+        _ => expr,
+    }
+}
+
 pub async fn run_passes(
     doc: &mut crate::object_tree::Document,
     type_loader: &mut crate::typeloader::TypeLoader,

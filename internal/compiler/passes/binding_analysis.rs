@@ -287,7 +287,7 @@ fn analyze_binding(
     let mut is_const =
         b.expression.is_constant() && b.two_way_bindings.iter().all(|n| n.is_constant());
 
-    if is_const && matches!(b.expression, Expression::Invalid) {
+    if is_const && matches!(super::ignore_debug_hooks(&b.expression), Expression::Invalid) {
         // check the base
         if let Some(base) = element.borrow().sub_component() {
             is_const = NamedReference::new(&base.root_element, name.clone()).is_constant();

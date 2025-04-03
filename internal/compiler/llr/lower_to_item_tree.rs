@@ -421,7 +421,10 @@ fn lower_sub_component(
         for tw in &binding.two_way_bindings {
             sub_component.two_way_bindings.push((prop.clone(), ctx.map_property_reference(tw)))
         }
-        if !matches!(binding.expression, tree_Expression::Invalid) {
+        if !matches!(
+            crate::passes::ignore_debug_hooks(&binding.expression),
+            tree_Expression::Invalid
+        ) {
             let expression =
                 super::lower_expression::lower_expression(&binding.expression, &mut ctx).into();
 

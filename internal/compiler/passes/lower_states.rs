@@ -214,11 +214,12 @@ fn expression_for_property(element: &ElementRc, name: &str) -> ExpressionForProp
                 return ExpressionForProperty::TwoWayBinding;
             }
             let mut expr = e.expression.clone();
-            if !matches!(expr, Expression::Invalid) {
+            let inner_expr = super::ignore_debug_hooks_mut(&mut expr);
+            if !matches!(inner_expr, Expression::Invalid) {
                 if in_base {
                     // Check that the expression is valid in the new scope
                     let mut has_invalid = false;
-                    expr.visit_recursive_mut(&mut |ex| match ex {
+                    inner_expr.visit_recursive_mut(&mut |ex| match ex {
                         Expression::PropertyReference(nr)
                         | Expression::FunctionCall {
                             function: Callable::Callback(nr) | Callable::Function(nr),

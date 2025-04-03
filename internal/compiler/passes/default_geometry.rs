@@ -304,7 +304,7 @@ fn merge_explicit_constraints(
                 .borrow()
                 .expression
                 .clone();
-            debug_assert!(!matches!(e, Expression::Invalid));
+            debug_assert!(!matches!(super::ignore_debug_hooks(&e), Expression::Invalid));
             values.insert(s.into(), e);
         }
         *expr = Expression::CodeBlock([store, Expression::Struct { ty: s.clone(), values }].into());

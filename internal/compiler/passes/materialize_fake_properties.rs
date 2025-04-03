@@ -11,7 +11,7 @@ use crate::langtype::{ElementType, Type};
 use crate::layout::Orientation;
 use crate::namedreference::NamedReference;
 use crate::object_tree::*;
-use smol_str::SmolStr;
+use smol_str::{format_smolstr, SmolStr};
 use std::collections::BTreeMap;
 use std::rc::Rc;
 
@@ -79,7 +79,7 @@ pub fn materialize_fake_properties(component: &Rc<Component>) {
 fn must_initialize(elem: &Element, prop: &str) -> bool {
     match elem.bindings.get(prop) {
         None => true,
-        Some(b) => matches!(b.borrow().expression, Expression::Invalid),
+        Some(b) => matches!(super::ignore_debug_hooks(&b.borrow().expression), Expression::Invalid),
     }
 }
 
@@ -149,44 +149,63 @@ pub fn initialize(elem: &ElementRc, name: &str) -> Option<Expression> {
         };
     }
 
-    // Hardcode properties for images, because this is a very common call, and this allows
-    // later optimization steps to eliminate these properties.
-    // Note that Rectangles and Empties are similarly optimized in layout_constraint_prop, and
-    // we rely on struct field access simplification for those.
-    if elem.borrow().builtin_type().map_or(false, |n| n.name == "Image") {
-        if elem.borrow().layout_info_prop(Orientation::Horizontal).is_none() {
-            match name {
-                "min-width" => return Some(Expression::NumberLiteral(0., Unit::Px)),
-                "max-width" => return Some(Expression::NumberLiteral(f32::MAX as _, Unit::Px)),
-                "horizontal-stretch" => return Some(Expression::NumberLiteral(0., Unit::None)),
-                _ => {}
+    fn find_expression(elem: &ElementRc, name: &str) -> Option<Expression> {
+        // Hardcode properties for images, because this is a very common call, and this allows
+        // later optimization steps to eliminate these properties.
+        // Note that Rectangles and Empties are similarly optimized in layout_constraint_prop, and
+        // we rely on struct field access simplification for those.
+        if elem.borrow().builtin_type().is_some_and(|n| n.name == "Image") {
+            if elem.borrow().layout_info_prop(Orientation::Horizontal).is_none() {
+                match name {
+                    "min-width" => return Some(Expression::NumberLiteral(0., Unit::Px)),
+                    "max-width" => return Some(Expression::NumberLiteral(f32::MAX as _, Unit::Px)),
+                    "horizontal-stretch" => return Some(Expression::NumberLiteral(0., Unit::None)),
+                    _ => {}
+                }
+            }
+
+            if elem.borrow().layout_info_prop(Orientation::Vertical).is_none() {
+                match name {
+                    "min-height" => return Some(Expression::NumberLiteral(0., Unit::Px)),
+                    "max-height" => {
+                        return Some(Expression::NumberLiteral(f32::MAX as _, Unit::Px))
+                    }
+                    "vertical-stretch" => return Some(Expression::NumberLiteral(0., Unit::None)),
+                    _ => {}
+                }
             }
         }
 
-        if elem.borrow().layout_info_prop(Orientation::Vertical).is_none() {
-            match name {
-                "min-height" => return Some(Expression::NumberLiteral(0., Unit::Px)),
-                "max-height" => return Some(Expression::NumberLiteral(f32::MAX as _, Unit::Px)),
-                "vertical-stretch" => return Some(Expression::NumberLiteral(0., Unit::None)),
-                _ => {}
+        let expr = match name {
+            "min-height" => layout_constraint_prop(elem, "min", Orientation::Vertical),
+            "min-width" => layout_constraint_prop(elem, "min", Orientation::Horizontal),
+            "max-height" => layout_constraint_prop(elem, "max", Orientation::Vertical),
+            "max-width" => layout_constraint_prop(elem, "max", Orientation::Horizontal),
+            "horizontal-stretch" => {
+                layout_constraint_prop(elem, "stretch", Orientation::Horizontal)
             }
-        }
+            "vertical-stretch" => layout_constraint_prop(elem, "stretch", Orientation::Vertical),
+            "preferred-height" => layout_constraint_prop(elem, "preferred", Orientation::Vertical),
+            "preferred-width" => layout_constraint_prop(elem, "preferred", Orientation::Horizontal),
+            "opacity" => Expression::NumberLiteral(1., Unit::None),
+            "visible" => Expression::BoolLiteral(true),
+            _ => return None,
+        };
+
+        Some(expr)
     }
 
-    let expr = match name {
-        "min-height" => layout_constraint_prop(elem, "min", Orientation::Vertical),
-        "min-width" => layout_constraint_prop(elem, "min", Orientation::Horizontal),
-        "max-height" => layout_constraint_prop(elem, "max", Orientation::Vertical),
-        "max-width" => layout_constraint_prop(elem, "max", Orientation::Horizontal),
-        "horizontal-stretch" => layout_constraint_prop(elem, "stretch", Orientation::Horizontal),
-        "vertical-stretch" => layout_constraint_prop(elem, "stretch", Orientation::Vertical),
-        "preferred-height" => layout_constraint_prop(elem, "preferred", Orientation::Vertical),
-        "preferred-width" => layout_constraint_prop(elem, "preferred", Orientation::Horizontal),
-        "opacity" => Expression::NumberLiteral(1., Unit::None),
-        "visible" => Expression::BoolLiteral(true),
-        _ => return None,
-    };
-    Some(expr)
+    let expr = find_expression(elem, name)?;
+
+    let element_id = elem.borrow().debug.first().map(|di| di.element_id).unwrap_or_default();
+    if element_id != 0 {
+        Some(Expression::DebugHook {
+            expression: Box::new(expr),
+            id: format_smolstr!("?{element_id}-{name}"),
+        })
+    } else {
+        Some(expr)
+    }
 }
 
 fn layout_constraint_prop(elem: &ElementRc, field: &str, orient: Orientation) -> Expression {
