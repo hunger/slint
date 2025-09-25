@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-28 03:35+0000\n"
+"POT-Creation-Date: 2025-09-25 03:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,154 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: gallery.slint:14 gallery.slint:40
-msgctxt "App"
-msgid "Slint Widgets Gallery"
-msgstr ""
-
-#: gallery.slint:19
-msgctxt "MenuBar"
-msgid "File"
-msgstr ""
-
-#: gallery.slint:20
-msgctxt "MenuBar"
-msgid "Open"
-msgstr ""
-
-#: gallery.slint:22
-msgctxt "MenuBar"
-msgid "Open Recent"
-msgstr ""
-
-#: gallery.slint:23
-msgctxt "MenuBar"
-msgid "Recent {}"
-msgstr ""
-
-#: gallery.slint:25
-msgctxt "MenuBar"
-msgid "Save"
-msgstr ""
-
-#: gallery.slint:27
-msgctxt "MenuBar"
-msgid "Save As"
-msgstr ""
-
-#: gallery.slint:28
-msgctxt "MenuBar"
-msgid "Name {}"
-msgstr ""
-
-#: gallery.slint:32
-msgctxt "MenuBar"
-msgid "Edit"
-msgstr ""
-
-#: gallery.slint:33
-msgctxt "MenuBar"
-msgid "Copy"
-msgstr ""
-
-#: gallery.slint:34
-msgctxt "MenuBar"
-msgid "Paste"
-msgstr ""
-
-#: gallery.slint:41
-msgctxt "Menu"
-msgid "Controls"
-msgstr ""
-
-#: gallery.slint:41
-msgctxt "Menu"
-msgid "ListView"
-msgstr ""
-
-#: gallery.slint:41
-msgctxt "Menu"
-msgid "TableView"
-msgstr ""
-
-#: gallery.slint:41
-msgctxt "Menu"
-msgid "TextEdit"
-msgstr ""
-
-#: gallery.slint:41
-msgctxt "Menu"
-msgid "Easings"
-msgstr ""
-
-#: gallery.slint:41
-msgctxt "Menu"
-msgid "About"
-msgstr ""
-
-#: ui/pages/page.slint:27
-msgctxt "Page"
-msgid "Widgets enabled"
-msgstr ""
-
-#: ui/pages/page.slint:34
-msgctxt "Page"
-msgid "Dark Mode"
-msgstr ""
-
-#: ui/pages/text_edit_page.slint:9
-msgctxt "TextEditPage"
-msgid "TextEdit"
-msgstr ""
-
-#: ui/pages/text_edit_page.slint:10
-msgctxt "TextEditPage"
-msgid ""
-"Similar to LineEdit, but can be used to enter several lines of text. The "
-"widget can be imported from \"std-widgets.slint\"."
-msgstr ""
-
-#: ui/pages/text_edit_page.slint:14
-msgctxt "TextEditPage"
-msgid "Word-Wrap"
-msgstr ""
-
-#. min-width: 200px;
-#: ui/pages/text_edit_page.slint:18
-msgctxt "TextEditPage"
-msgid ""
-"This is our TextEdit widget, which allows for editing text that spans over "
-"multiple paragraphs.\n"
-"For example this line starts in a new paragraph.\n"
-"\n"
-"When the amount of lines - due to wrapping and number of paragraphs - "
-"exceeds the available vertical height, a vertical scrollbar is shown that "
-"allows scrolling.\n"
-"You may want to enter a bit of text here then in order to make them visible."
-msgstr ""
-
-#: ui/pages/text_edit_page.slint:19
-msgctxt "TextEditPage"
-msgid "Add some text"
-msgstr ""
-
-#: ui/pages/text_edit_page.slint:26
-msgctxt "TextEditPage"
-msgid "No-Wrap"
-msgstr ""
-
-#: ui/pages/about_page.slint:9
-msgctxt "AboutPage"
-msgid "About"
-msgstr ""
-
-#: ui/pages/about_page.slint:11
-msgctxt "AboutPage"
-msgid ""
-"Are you curious now? Check out the docs and getting starteds from the Github "
-"repository and the website https://slint.dev and try it yourself."
-msgstr ""
 
 #: ui/pages/table_view_page.slint:25
 msgctxt "TableViewPage"
@@ -368,6 +220,89 @@ msgctxt "ControlsPage"
 msgid "Content of tab 3"
 msgstr ""
 
+#: ui/pages/easings_page.slint:55
+msgctxt "EasingsPage"
+msgid "Easings"
+msgstr ""
+
+#: ui/pages/easings_page.slint:56
+msgctxt "EasingsPage"
+msgid "Easing demos"
+msgstr ""
+
+#: ui/pages/easings_page.slint:66
+msgctxt "EasingsPage"
+msgid "Animate All"
+msgstr ""
+
+#: ui/pages/easings_page.slint:102
+msgctxt "EasingsPage"
+msgid "Duration:"
+msgstr ""
+
+#: ui/pages/page.slint:27
+msgctxt "Page"
+msgid "Widgets enabled"
+msgstr ""
+
+#: ui/pages/page.slint:34
+msgctxt "Page"
+msgid "Dark Mode"
+msgstr ""
+
+#: ui/pages/text_edit_page.slint:9
+msgctxt "TextEditPage"
+msgid "TextEdit"
+msgstr ""
+
+#: ui/pages/text_edit_page.slint:10
+msgctxt "TextEditPage"
+msgid ""
+"Similar to LineEdit, but can be used to enter several lines of text. The "
+"widget can be imported from \"std-widgets.slint\"."
+msgstr ""
+
+#: ui/pages/text_edit_page.slint:14
+msgctxt "TextEditPage"
+msgid "Word-Wrap"
+msgstr ""
+
+#. min-width: 200px;
+#: ui/pages/text_edit_page.slint:18
+msgctxt "TextEditPage"
+msgid ""
+"This is our TextEdit widget, which allows for editing text that spans over "
+"multiple paragraphs.\n"
+"For example this line starts in a new paragraph.\n"
+"\n"
+"When the amount of lines - due to wrapping and number of paragraphs - "
+"exceeds the available vertical height, a vertical scrollbar is shown that "
+"allows scrolling.\n"
+"You may want to enter a bit of text here then in order to make them visible."
+msgstr ""
+
+#: ui/pages/text_edit_page.slint:19
+msgctxt "TextEditPage"
+msgid "Add some text"
+msgstr ""
+
+#: ui/pages/text_edit_page.slint:26
+msgctxt "TextEditPage"
+msgid "No-Wrap"
+msgstr ""
+
+#: ui/pages/about_page.slint:9
+msgctxt "AboutPage"
+msgid "About"
+msgstr ""
+
+#: ui/pages/about_page.slint:11
+msgctxt "AboutPage"
+msgid ""
+"Are you curious now? Check out the docs and getting starteds from the Github "
+"repository and the website https://slint.dev and try it yourself."
+msgstr ""
+
 #: ui/pages/list_view_page.slint:9 ui/pages/list_view_page.slint:55
 msgctxt "ListViewPage"
 msgid "ListView"
@@ -451,23 +386,88 @@ msgctxt "ListViewPage"
 msgid "consetetur"
 msgstr ""
 
-#: ui/pages/easings_page.slint:55
-msgctxt "EasingsPage"
+#: gallery.slint:14 gallery.slint:40
+msgctxt "App"
+msgid "Slint Widgets Gallery"
+msgstr ""
+
+#: gallery.slint:19
+msgctxt "MenuBar"
+msgid "File"
+msgstr ""
+
+#: gallery.slint:20
+msgctxt "MenuBar"
+msgid "Open"
+msgstr ""
+
+#: gallery.slint:22
+msgctxt "MenuBar"
+msgid "Open Recent"
+msgstr ""
+
+#: gallery.slint:23
+msgctxt "MenuBar"
+msgid "Recent {}"
+msgstr ""
+
+#: gallery.slint:25
+msgctxt "MenuBar"
+msgid "Save"
+msgstr ""
+
+#: gallery.slint:27
+msgctxt "MenuBar"
+msgid "Save As"
+msgstr ""
+
+#: gallery.slint:28
+msgctxt "MenuBar"
+msgid "Name {}"
+msgstr ""
+
+#: gallery.slint:32
+msgctxt "MenuBar"
+msgid "Edit"
+msgstr ""
+
+#: gallery.slint:33
+msgctxt "MenuBar"
+msgid "Copy"
+msgstr ""
+
+#: gallery.slint:34
+msgctxt "MenuBar"
+msgid "Paste"
+msgstr ""
+
+#: gallery.slint:41
+msgctxt "Menu"
+msgid "Controls"
+msgstr ""
+
+#: gallery.slint:41
+msgctxt "Menu"
+msgid "ListView"
+msgstr ""
+
+#: gallery.slint:41
+msgctxt "Menu"
+msgid "TableView"
+msgstr ""
+
+#: gallery.slint:41
+msgctxt "Menu"
+msgid "TextEdit"
+msgstr ""
+
+#: gallery.slint:41
+msgctxt "Menu"
 msgid "Easings"
 msgstr ""
 
-#: ui/pages/easings_page.slint:56
-msgctxt "EasingsPage"
-msgid "Easing demos"
-msgstr ""
-
-#: ui/pages/easings_page.slint:66
-msgctxt "EasingsPage"
-msgid "Animate All"
-msgstr ""
-
-#: ui/pages/easings_page.slint:102
-msgctxt "EasingsPage"
-msgid "Duration:"
+#: gallery.slint:41
+msgctxt "Menu"
+msgid "About"
 msgstr ""
 
