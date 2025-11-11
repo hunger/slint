@@ -501,6 +501,7 @@ struct ValueMapping {
     name_prefix: SharedString,
     is_too_complex: bool,
     is_array: bool,
+    is_struct: bool,
     headers: Vec<SharedString>,
     current_values: Vec<PropertyValue>,
     array_values: Vec<Vec<PropertyValue>>,
@@ -822,6 +823,8 @@ fn map_value_and_type(
         }
         Type::Array(array_ty) => {
             mapping.is_array = true;
+            mapping.is_struct = false;
+
             let model = get_value::<ModelRc<slint_interpreter::Value>>(value);
 
             for (idx, sub_value) in model.iter().enumerate() {
@@ -829,7 +832,8 @@ fn map_value_and_type(
                     ValueMapping { name_prefix: mapping.name_prefix.clone(), ..Default::default() };
                 map_value_and_type(array_ty, &Some(sub_value), &mut sub_mapping);
 
-                let sub_mapping_too_complex = sub_mapping.is_array || sub_mapping.is_too_complex;
+                let sub_mapping_too_complex =
+                    sub_mapping.is_array || sub_mapping.is_struct || sub_mapping.is_too_complex;
                 mapping.is_too_complex = mapping.is_too_complex || sub_mapping_too_complex;
 
                 if sub_mapping_too_complex {
@@ -847,6 +851,7 @@ fn map_value_and_type(
         }
         Type::Struct(s) => {
             mapping.is_array = false;
+            mapping.is_struct = true;
 
             let struct_data = get_value::<slint_interpreter::Struct>(value);
 
@@ -866,7 +871,8 @@ fn map_value_and_type(
                     &mut sub_mapping,
                 );
 
-                let sub_mapping_too_complex = sub_mapping.is_array || sub_mapping.is_too_complex;
+                let sub_mapping_too_complex =
+                    sub_mapping.is_array || sub_mapping.is_struct || sub_mapping.is_too_complex;
 
                 mapping.is_too_complex = mapping.is_too_complex || sub_mapping_too_complex;
 
@@ -952,17 +958,17 @@ fn map_preview_data_property(
     let mut mapping = ValueMapping::default();
     map_value_and_type(&value.ty, &value.value, &mut mapping);
 
-    let is_array = mapping.array_values.len() != 1 || mapping.array_values[0].len() != 1;
+    let is_table = mapping.is_array || mapping.is_struct;
     let is_too_complex = mapping.is_too_complex;
 
     Some(PreviewData {
         name: SharedString::from(&key.property_name),
         has_getter,
         has_setter,
-        kind: match (is_array, is_too_complex) {
+        kind: match (is_table, is_too_complex) {
             (false, false) => PreviewDataKind::Value,
             (true, false) => PreviewDataKind::Table,
-            _ => PreviewDataKind::Json,
+            (_, true) => PreviewDataKind::Json,
         },
     })
 }
